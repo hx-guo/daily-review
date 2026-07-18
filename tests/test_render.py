@@ -50,3 +50,26 @@ def test_render_edge_card_no_dangling_labels(tmp_path):
     assert "Edge Paper Title" in page
     assert "edge abstract text" in page
     assert "TL;DR：" not in page
+
+
+def test_render_shows_revision_history(tmp_path):
+    st = Store(tmp_path / "data")
+    p = Paper(id="arxiv:1", source="arxiv", title="t", authors=["A"], abstract="",
+              categories=["astro-ph.HE"], published="2026-07-14",
+              url="https://arxiv.org/abs/1")
+    day = DayData(
+        date="2026-07-14",
+        review=DailyReview(date="2026-07-14", overview="new overview", highlights="", trends=""),
+        items=[{"paper": p, "score": RelevanceScore(90, ["GRB"], "core", ""),
+                "summary": PaperSummary("arxiv:1", "标题", "A 等", "t", "r", "h", "—")}],
+        revisions=[{"synced": "2026-07-15", "n_papers": 1,
+                    "review": {"date": "2026-07-14", "overview": "old overview",
+                               "highlights": "", "trends": ""}}])
+    st.save_day(day)
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-14.html").read_text(encoding="utf-8")
+    assert "修订历史" in page
+    assert "old overview" in page
+    index = (out / "index.html").read_text(encoding="utf-8")
+    assert "2026-07-14" in index   # as-of date shown on home

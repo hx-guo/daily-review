@@ -8,7 +8,9 @@
 </head>
 <body>
   <header><a href="{{ static_prefix }}index.html"><h1>GECAM 每日文献综述</h1></a>
-    <nav><a href="{{ static_prefix }}archive.html">归档</a></nav></header>
+    <nav><a href="{{ static_prefix }}archive.html">归档</a></nav>
+    {% if latest_date %}<p class="asof">数据截至 arXiv 最新公告日 {{ latest_date }}</p>{% endif %}
+  </header>
   <main>{% block content %}{% endblock %}</main>
   <footer>自动生成 · GECAM Daily Review</footer>
 </body>

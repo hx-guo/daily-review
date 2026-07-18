@@ -31,4 +31,19 @@
   </article>
   {% endfor %}
 </section>
+{% if day.revisions %}
+<section class="revisions">
+  <details>
+    <summary>修订历史（{{ day.revisions|length }} 版）</summary>
+    {% for rev in day.revisions|reverse %}
+    <div class="revision">
+      <h4>同步于 {{ rev.synced }} · 当时 {{ rev.n_papers }} 篇</h4>
+      <p>{{ rev.review.overview }}</p>
+      {% if rev.review.highlights %}<p>{{ rev.review.highlights }}</p>{% endif %}
+      {% if rev.review.trends %}<p>{{ rev.review.trends }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </details>
+</section>
+{% endif %}
 {% endblock %}

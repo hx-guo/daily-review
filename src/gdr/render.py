@@ -18,6 +18,7 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
     env = Environment(loader=FileSystemLoader(str(templates_dir)),
                       autoescape=select_autoescape(["html"]))
     days = store.list_days()
+    latest_date = days[0] if days else None
 
     day_tmpl = env.get_template("day.html")
     index_tmpl = env.get_template("index.html")
@@ -26,14 +27,14 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
     for i, date in enumerate(days):
         day = store.load_day(date)
         items = _ordered_items(day)
-        html = day_tmpl.render(day=day, items=items, static_prefix="../")
+        html = day_tmpl.render(day=day, items=items, static_prefix="../", latest_date=latest_date)
         (out_dir / "day" / f"{date}.html").write_text(html, encoding="utf-8")
         if i == 0:
-            idx = index_tmpl.render(day=day, items=items, static_prefix="")
+            idx = index_tmpl.render(day=day, items=items, static_prefix="", latest_date=latest_date)
             (out_dir / "index.html").write_text(idx, encoding="utf-8")
 
     (out_dir / "archive.html").write_text(
-        archive_tmpl.render(days=days, static_prefix=""), encoding="utf-8")
+        archive_tmpl.render(days=days, static_prefix="", latest_date=latest_date), encoding="utf-8")
 
     dst_static = out_dir / "static"
     if dst_static.exists():
