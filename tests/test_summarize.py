@@ -11,12 +11,15 @@ def test_summarize_uses_fulltext_and_parses(fake_llm_factory):
     reply = json.dumps({
         "title_zh": "磁星巨耀发", "team": "Alice Author 等", "tldr": "研究一次磁星巨耀发",
         "review": "……三到五句……", "highlight": "首次……", "relation": "与 GECAM 磁星课题相关",
+        "authors_en": "Alice Author (MIT)", "corresponding_en": "Alice Author",
     })
     llm = fake_llm_factory([reply])
     s = summarize_paper(_paper(), fulltext="FULL BODY TEXT", llm=llm)
     assert s.title_zh == "磁星巨耀发"
     assert s.paper_id == "arxiv:1"
     assert "FULL BODY TEXT" in llm.calls[0]["user"]
+    assert s.authors_en == "Alice Author (MIT)"
+    assert s.corresponding_en == "Alice Author"
 
 def test_summarize_falls_back_to_abstract(fake_llm_factory):
     llm = fake_llm_factory([json.dumps({"title_zh": "x", "team": "", "tldr": "",
@@ -29,6 +32,7 @@ def test_summarize_bad_output_uses_metadata(fake_llm_factory):
     s = summarize_paper(_paper(), fulltext=None, llm=llm)
     assert s.title_zh == "Magnetar giant flare"
     assert s.review == "A magnetar SGR burst."
+    assert s.authors_en == "" and s.corresponding_en == ""
 
 
 def test_summarize_edge_light(fake_llm_factory):
@@ -48,3 +52,4 @@ def test_summarize_edge_bad_output_falls_back(fake_llm_factory):
     llm = fake_llm_factory(["garbage"])
     s = summarize_edge(_paper(), llm)
     assert s.title_zh == _paper().title               # falls back to english title, never crashes
+    assert s.authors_en == "" and s.corresponding_en == ""

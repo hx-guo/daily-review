@@ -11,7 +11,9 @@ _USER_TMPL = """请为下面这篇论文写一张中文综述卡片，输出 JSO
   "tldr": "一句话核心：这篇干了什么",
   "review": "内容综述，3-5 句：研究对象/数据方法/主要结果/结论",
   "highlight": "亮点：为什么值得关注、创新点",
-  "relation": "与 GECAM 科学目标或高能暂现研究的联系；无则写'—'"
+  "relation": "与 GECAM 科学目标或高能暂现研究的联系；无则写'—'",
+  "authors_en": "英文原文中前3位作者的姓名及其工作单位（从正文/作者块提取，如 'A. Author (Institute X), B. Boss (Institute Y), C. Coauthor (Institute Z)'）；若超过3位在末尾加 ' et al.'；提取不到单位就只给姓名",
+  "corresponding_en": "通讯作者的英文姓名（从正文提取，通常标注 corresponding author / 星号 / 邮箱作者）；提取不到就留空字符串"
 }}
 
 英文标题：{title}
@@ -41,6 +43,8 @@ def summarize_paper(paper: Paper, fulltext: str | None, llm: LLM) -> PaperSummar
             review=str(d.get("review") or ""),
             highlight=str(d.get("highlight") or ""),
             relation=str(d.get("relation") or ""),
+            authors_en=str(d.get("authors_en") or ""),
+            corresponding_en=str(d.get("corresponding_en") or ""),
         )
     except (ValueError, TypeError):
         return PaperSummary(

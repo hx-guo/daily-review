@@ -48,6 +48,8 @@ class PaperSummary:
     review: str
     highlight: str
     relation: str
+    authors_en: str = ""       # first ~3 authors + affiliations, English, from full text
+    corresponding_en: str = ""  # corresponding author, English, from full text
 
     def to_dict(self) -> dict:
         return asdict(self)

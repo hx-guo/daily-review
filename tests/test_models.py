@@ -62,6 +62,16 @@ def test_daydata_revisions_roundtrip():
     assert back.revisions[0]["review"]["overview"] == "o1"
 
 
+def test_paper_summary_backcompat_without_english_fields():
+    old = {"paper_id": "arxiv:1", "title_zh": "标题", "team": "", "tldr": "", "review": "",
+           "highlight": "", "relation": ""}
+    s = PaperSummary.from_dict(old)
+    assert s.authors_en == "" and s.corresponding_en == ""
+    # and round-trip of a full one preserves them
+    s2 = PaperSummary("arxiv:2", "t", "team", "tl", "r", "h", "rel", "A (Inst)", "A")
+    assert PaperSummary.from_dict(s2.to_dict()) == s2
+
+
 def test_daydata_from_dict_without_revisions_defaults_empty():
     p = _paper()
     d = {"date": "2026-07-14",
