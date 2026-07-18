@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 
 
 @dataclass
@@ -77,6 +77,7 @@ class DayData:
     date: str
     review: DailyReview
     items: list[dict]  # {"paper": Paper, "score": RelevanceScore, "summary": PaperSummary | None}
+    revisions: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -90,6 +91,7 @@ class DayData:
                 }
                 for it in self.items
             ],
+            "revisions": self.revisions,
         }
 
     @classmethod
@@ -102,4 +104,4 @@ class DayData:
             }
             for it in d["items"]
         ]
-        return cls(date=d["date"], review=DailyReview.from_dict(d["review"]), items=items)
+        return cls(date=d["date"], review=DailyReview.from_dict(d["review"]), items=items, revisions=d.get("revisions", []))
