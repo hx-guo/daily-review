@@ -18,6 +18,12 @@ class Store:
         path = self.daily_dir / f"{date}.json"
         return DayData.from_dict(json.loads(path.read_text(encoding="utf-8")))
 
+    def load_day_or_none(self, date: str):
+        path = self.daily_dir / f"{date}.json"
+        if not path.exists():
+            return None
+        return DayData.from_dict(json.loads(path.read_text(encoding="utf-8")))
+
     def list_days(self) -> list[str]:
         return sorted((p.stem for p in self.daily_dir.glob("*.json")), reverse=True)
 

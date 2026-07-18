@@ -40,3 +40,10 @@ def test_unseen_ids_is_readonly(tmp_path):
     assert st.unseen_ids(["a", "b"]) == ["a", "b"]      # not persisted
     assert st.mark_seen_papers(["a"]) == ["a"]           # 'a' was genuinely new
     assert st.unseen_ids(["a", "b"]) == ["b"]
+
+
+def test_load_day_or_none(tmp_path):
+    st = Store(tmp_path)
+    assert st.load_day_or_none("2026-07-14") is None
+    st.save_day(_day("2026-07-14"))
+    assert st.load_day_or_none("2026-07-14").date == "2026-07-14"
