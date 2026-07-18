@@ -36,11 +36,11 @@ def summarize_paper(paper: Paper, fulltext: str | None, llm: LLM) -> PaperSummar
         return PaperSummary(
             paper_id=paper.id,
             title_zh=str(d.get("title_zh") or paper.title),
-            team=str(d.get("team", "")),
-            tldr=str(d.get("tldr", "")),
-            review=str(d.get("review", "")),
-            highlight=str(d.get("highlight", "")),
-            relation=str(d.get("relation", "")),
+            team=str(d.get("team") or ""),
+            tldr=str(d.get("tldr") or ""),
+            review=str(d.get("review") or ""),
+            highlight=str(d.get("highlight") or ""),
+            relation=str(d.get("relation") or ""),
         )
     except (ValueError, TypeError):
         return PaperSummary(

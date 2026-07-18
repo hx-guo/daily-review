@@ -34,3 +34,17 @@ def test_fetch_fulltext_non_arxiv_returns_none():
     p = _paper()
     p.source = "journal"
     assert fetch_fulltext(p, http_get=lambda url, timeout=None: None) is None
+
+def test_fetch_fulltext_text_access_raises_returns_none():
+    class Resp:
+        status_code = 200
+        @property
+        def text(self):
+            raise ValueError("decode boom")
+    assert fetch_fulltext(_paper(), http_get=lambda url, timeout=None: Resp()) is None
+
+def test_fetch_fulltext_empty_html_returns_none():
+    class Resp:
+        status_code = 200
+        text = "<html><body></body></html>"
+    assert fetch_fulltext(_paper(), http_get=lambda url, timeout=None: Resp()) is None

@@ -33,3 +33,7 @@ class Store:
         self.seen_path.write_text(json.dumps(sorted(seen), ensure_ascii=False, indent=2),
                                   encoding="utf-8")
         return new
+
+    def unseen_ids(self, ids: list[str]) -> list[str]:
+        seen = self._load_seen()
+        return [i for i in ids if i not in seen]

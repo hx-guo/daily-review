@@ -32,3 +32,21 @@ def test_render_site(tmp_path):
     assert (out / "day" / "2026-07-18.html").exists()
     assert (out / "archive.html").exists()
     assert (out / "static" / "style.css").exists()
+
+
+def test_render_edge_card_no_dangling_labels(tmp_path):
+    st = Store(tmp_path / "data")
+    p = Paper(id="arxiv:e1", source="arxiv", title="Edge Paper Title", authors=["A"],
+              abstract="edge abstract text", categories=["astro-ph.HE"], published="2026-07-18",
+              url="https://arxiv.org/abs/e1")
+    day = DayData(date="2026-07-18",
+                  review=DailyReview(date="2026-07-18", overview="o", highlights="h", trends="t"),
+                  items=[{"paper": p, "score": RelevanceScore(score=10, tags=[], layer="edge", reason=""),
+                          "summary": None}])
+    st.save_day(day)
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-18.html").read_text(encoding="utf-8")
+    assert "Edge Paper Title" in page
+    assert "edge abstract text" in page
+    assert "TL;DR：" not in page

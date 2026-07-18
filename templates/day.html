@@ -15,6 +15,7 @@
       <span class="score">相关性 {{ it.score.score }}</span>
       {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
     </div>
+    {% if it.summary %}
     <h3>{{ it.summary.title_zh }}</h3>
     <p class="orig">{{ it.paper.title }}</p>
     <p class="team">{{ it.summary.team }}</p>
@@ -22,6 +23,10 @@
     <p class="body">{{ it.summary.review }}</p>
     <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
     <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
+    {% else %}
+    <h3>{{ it.paper.title }}</h3>
+    <p class="body">{{ it.paper.abstract }}</p>
+    {% endif %}
     <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
   </article>
   {% endfor %}

@@ -21,11 +21,11 @@ def fetch_fulltext(paper: Paper, http_get=requests.get) -> str | None:
     url = f"https://arxiv.org/html/{bare}"
     try:
         resp = http_get(url, timeout=60)
+        if getattr(resp, "status_code", None) != 200:
+            return None
+        text = extract_text(resp.text)
     except Exception:
         return None
-    if getattr(resp, "status_code", None) != 200:
-        return None
-    text = extract_text(resp.text)
     if not text:
         return None
     return text[: config.FULLTEXT_MAX_CHARS]

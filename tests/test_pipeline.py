@@ -48,3 +48,28 @@ def test_pipeline_skips_already_seen(tmp_path, fake_llm_factory):
     src = StubSource([_paper("2607.1", "GRB paper")])
     day = run("2026-07-18", src, llm, store, fetch_fulltext=lambda p, **k: "BODY")
     assert day.items == []
+
+
+def test_pipeline_skips_failed_paper_and_leaves_it_unseen(tmp_path):
+    class RaisingLLM:
+        def complete(self, model, system, user, temperature=0.3):
+            raise RuntimeError("api down")
+    store = Store(tmp_path / "data")
+    src = StubSource([_paper("2607.9", "GRB paper")])
+    day = run("2026-07-18", src, RaisingLLM(), store, fetch_fulltext=lambda p, **k: "BODY")
+    assert day.items == []                                   # the failing paper was skipped
+    assert store.unseen_ids(["arxiv:2607.9"]) == ["arxiv:2607.9"]  # left unseen → retried next run
+    assert store.load_day("2026-07-18").items == []          # empty day still saved
+
+
+def test_pipeline_marks_processed_papers_seen(tmp_path, fake_llm_factory):
+    llm = fake_llm_factory({
+        "请判断这篇论文与上述范围的相关性": json.dumps({"score": 90, "tags": ["GRB"], "reason": "核心"}),
+        "综述卡片": json.dumps({"title_zh": "标题", "team": "A 等", "tldr": "t",
+                              "review": "r", "highlight": "h", "relation": "—"}),
+        "当日总览": json.dumps({"overview": "今日 1 篇", "highlights": "H", "trends": "T"}),
+    })
+    store = Store(tmp_path / "data")
+    src = StubSource([_paper("2607.1", "GRB paper")])
+    run("2026-07-18", src, llm, store, fetch_fulltext=lambda p, **k: "BODY")
+    assert store.unseen_ids(["arxiv:2607.1"]) == []          # now marked seen

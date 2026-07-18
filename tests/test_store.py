@@ -32,3 +32,11 @@ def test_mark_seen_returns_new_only(tmp_path):
     st = Store(tmp_path)
     assert st.mark_seen_papers(["arxiv:1", "arxiv:2"]) == ["arxiv:1", "arxiv:2"]
     assert st.mark_seen_papers(["arxiv:2", "arxiv:3"]) == ["arxiv:3"]
+
+
+def test_unseen_ids_is_readonly(tmp_path):
+    st = Store(tmp_path)
+    assert st.unseen_ids(["a", "b"]) == ["a", "b"]
+    assert st.unseen_ids(["a", "b"]) == ["a", "b"]      # not persisted
+    assert st.mark_seen_papers(["a"]) == ["a"]           # 'a' was genuinely new
+    assert st.unseen_ids(["a", "b"]) == ["b"]
