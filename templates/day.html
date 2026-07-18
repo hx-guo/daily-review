@@ -16,8 +16,6 @@
       {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
     </div>
     <h3>{{ it.summary.title_zh }}</h3>
-    <p class="orig">{{ it.paper.title }}</p>
-    <p class="team">{{ it.summary.team }}</p>
     <p class="tldr"><b>TL;DR：</b>{{ it.summary.tldr }}</p>
     <p class="body">{{ it.summary.review }}</p>
     <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
@@ -45,14 +43,16 @@
       </div>
       {% if it.summary %}
       <h4>{{ it.summary.title_zh }}</h4>
-      <p class="orig">{{ it.paper.title }}</p>
       {% if it.summary.tldr %}<p class="tldr">{{ it.summary.tldr }}</p>{% endif %}
       {% else %}
       <h4>{{ it.paper.title }}</h4>
-      <p class="body">{{ it.paper.abstract }}</p>
       {% endif %}
-      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
-      <button class="abstract-toggle" type="button">展开摘要</button>
+      <div class="original">
+        {% if it.summary %}<p class="en-title">{{ it.paper.title }}</p>{% endif %}
+        <p class="en-authors">作者：{{ it.paper.authors[:3]|join(', ') }}{% if it.paper.authors|length > 3 %} et al.{% endif %}</p>
+        <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
+        <button class="abstract-toggle" type="button">展开摘要</button>
+      </div>
       <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
     </article>
     {% endfor %}

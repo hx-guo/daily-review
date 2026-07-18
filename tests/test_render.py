@@ -112,6 +112,7 @@ def test_render_edge_collapsed_with_chinese(tmp_path):
     page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
     assert "核心中文" in page
     assert "边缘中文标题" in page
+    assert "作者：B" in page                  # edge cards now show author names
     assert "<details" in page
     assert "边缘相关" in page
 
@@ -132,6 +133,7 @@ def test_render_english_original_block(tmp_path):
     render_site(st, out, TEMPLATES, STATIC)
     page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
     assert "A GRB Study" in page
+    assert page.count("A GRB Study") == 1   # english title shown once (no .orig duplicate)
     assert "Alice A (MIT)" in page
     assert "通讯作者：Alice A" in page
     assert "Full English abstract text here." in page
