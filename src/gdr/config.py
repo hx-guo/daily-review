@@ -19,6 +19,8 @@ FULLTEXT_MAX_CHARS = 24000
 FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
 MAX_CONCURRENCY = int(os.environ.get("GDR_MAX_CONCURRENCY", "6"))
+# arXiv asks for ~3s between API requests; pagination sleeps this long between pages.
+ARXIV_REQUEST_DELAY = float(os.environ.get("GDR_ARXIV_REQUEST_DELAY", "3"))
 
 GECAM_PROFILE = """GECAM（引力波高能电磁对应体全天监测器）团队关注的科学范围，分三层：
 

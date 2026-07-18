@@ -57,7 +57,7 @@ def test_fetch_recent_paginates_and_windows():
             text = _atom(page)
             def raise_for_status(self): pass
         return R()
-    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2)
+    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2, request_delay=0)
     got = src.fetch_recent("2026-07-16", days=3)   # window [2026-07-14, 2026-07-16]
     assert sorted(p.id for p in got) == ["arxiv:2607.14", "arxiv:2607.15", "arxiv:2607.16"]
 
@@ -69,6 +69,34 @@ def test_fetch_recent_terminates_on_misbehaving_pagination():
             text = _atom(page)
             def raise_for_status(self): pass
         return R()
-    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2)
+    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2, request_delay=0)
     got = src.fetch_recent("2026-07-16", days=3)
     assert sorted(p.id for p in got) == ["arxiv:2607.15", "arxiv:2607.16"]  # collected once, no hang
+
+
+def test_fetch_recent_retries_on_429_then_succeeds():
+    good = _atom([("2607.16", "2026-07-16")])
+    calls = {"n": 0}
+    def fake_get(url, params=None, timeout=None):
+        calls["n"] += 1
+        class R:
+            def __init__(self, code, text):
+                self.status_code = code
+                self.text = text
+        return R(429, "") if calls["n"] == 1 else R(200, good)
+    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=100, request_delay=0)
+    got = src.fetch_recent("2026-07-16", days=1)
+    assert [p.id for p in got] == ["arxiv:2607.16"]   # retry recovered the page
+    assert calls["n"] == 2                             # one retry
+
+
+def test_fetch_recent_gives_up_gracefully_on_persistent_429():
+    def fake_get(url, params=None, timeout=None):
+        class R:
+            status_code = 429
+            text = ""
+        return R()
+    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=100,
+                      request_delay=0, max_retries=2)
+    got = src.fetch_recent("2026-07-16", days=1)
+    assert got == []   # no papers, but NO exception raised (pipeline must not crash)

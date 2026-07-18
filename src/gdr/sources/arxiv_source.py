@@ -1,4 +1,5 @@
 import datetime as dt
+import time
 import feedparser
 import requests
 from gdr import config
@@ -46,11 +47,30 @@ def parse_atom(xml: str, date: str) -> list[Paper]:
 
 
 class ArxivSource(Source):
-    def __init__(self, categories: list[str], http_get=requests.get, max_results: int = 300, page_size=None):
+    def __init__(self, categories: list[str], http_get=requests.get, max_results: int = 300,
+                 page_size=None, request_delay=None, max_retries: int = 3):
         self.categories = categories
         self._http_get = http_get
         self.max_results = max_results
         self.page_size = page_size or config.ARXIV_PAGE_SIZE
+        self.request_delay = config.ARXIV_REQUEST_DELAY if request_delay is None else request_delay
+        self.max_retries = max_retries
+
+    def _get_page(self, query: str, offset: int):
+        """Fetch one page; retry with backoff on 429/HTTP/transport errors.
+        Returns the response, or None if it ultimately failed (caller stops paging)."""
+        params = {"search_query": query, "start": offset, "max_results": self.page_size,
+                  "sortBy": "submittedDate", "sortOrder": "descending"}
+        for attempt in range(self.max_retries):
+            try:
+                resp = self._http_get(ARXIV_API, params=params, timeout=60)
+            except Exception:
+                resp = None
+            if resp is not None and getattr(resp, "status_code", 200) == 200:
+                return resp
+            if self.request_delay:
+                time.sleep(self.request_delay * (attempt + 1))
+        return None
 
     def fetch(self, date: str) -> list[Paper]:
         query = " OR ".join(f"cat:{c}" for c in self.categories)
@@ -72,10 +92,9 @@ class ArxivSource(Source):
         offset = 0
         prev_first_id = None
         while offset <= 100 * self.page_size:   # hard safety cap (~100 pages)
-            params = {"search_query": query, "start": offset, "max_results": self.page_size,
-                      "sortBy": "submittedDate", "sortOrder": "descending"}
-            resp = self._http_get(ARXIV_API, params=params, timeout=60)
-            resp.raise_for_status()
+            resp = self._get_page(query, offset)
+            if resp is None:   # page ultimately failed (e.g. arXiv 429) — return what we have so far
+                break
             batch = parse_atom_all(resp.text)
             if not batch:
                 break
@@ -93,4 +112,6 @@ class ArxivSource(Source):
             if reached_older or len(batch) < self.page_size:
                 break
             offset += self.page_size
+            if self.request_delay:   # arXiv politeness: pause between pages
+                time.sleep(self.request_delay)
         return collected
