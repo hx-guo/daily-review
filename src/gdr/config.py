@@ -7,7 +7,8 @@ ARXIV_CATEGORIES = ["astro-ph.HE", "gr-qc", "astro-ph.SR", "astro-ph.CO"]
 # Model tiers. Defaults are display-name-derived; confirm exact ids via scripts/list_models.py.
 MODEL_TRIAGE = os.environ.get("GDR_MODEL_TRIAGE", "deepseek-v4-flash")
 MODEL_WRITE = os.environ.get("GDR_MODEL_WRITE", "deepseek-v4-pro")
-MODEL_SYNTH = os.environ.get("GDR_MODEL_SYNTH", "kimi-k3")
+# synth: glm-5.2 — kimi-k3 was persistently 400-ing on opencode's upstream (2026-07-18).
+MODEL_SYNTH = os.environ.get("GDR_MODEL_SYNTH", "glm-5.2")
 
 LAYER_CORE_MIN = 70
 LAYER_RELATED_MIN = 40

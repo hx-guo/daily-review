@@ -1,0 +1,42 @@
+"""Regenerate the daily-overview review for stored days.
+
+Use this to recover after a synth-stage outage (e.g. a model returning errors,
+which makes `sync` fall back to a "总览生成失败" placeholder) or after changing
+the synth model. It reruns ONLY the daily-overview synth call over each day's
+already-stored summaries — it does NOT refetch, rescore, or resummarize papers,
+and it does NOT touch `revisions` (a failed placeholder is not a real version
+worth archiving, so it is replaced in place).
+
+Usage:
+    OPENCODE_API_KEY=... python scripts/regenerate_reviews.py            # all days
+    OPENCODE_API_KEY=... python scripts/regenerate_reviews.py 2026-07-16 # specific dates
+"""
+import sys
+from pathlib import Path
+
+from gdr import config
+from gdr.llm import OpenCodeLLM
+from gdr.store import Store
+from gdr.daily_review import make_daily_review
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def main():
+    only = set(sys.argv[1:])
+    llm = OpenCodeLLM(api_key=config.get_api_key())
+    store = Store(ROOT / "data")
+    for date in store.list_days():
+        if only and date not in only:
+            continue
+        day = store.load_day(date)
+        summarized = [it for it in day.items if it["summary"]]
+        if not summarized:
+            continue
+        day.review = make_daily_review(date, summarized, llm)
+        store.save_day(day)
+        print(f"{date}: overview regenerated over {len(summarized)} summarized items")
+
+
+if __name__ == "__main__":
+    main()
