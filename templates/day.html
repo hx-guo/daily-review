@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ day.date }} · GECAM 每日文献综述{% endblock %}
+{% block content %}
+<section class="review">
+  <h2>{{ day.date }} 当日总览</h2>
+  <h3>今日概览</h3><p>{{ day.review.overview }}</p>
+  <h3>今日亮点</h3><p>{{ day.review.highlights }}</p>
+  <h3>趋势与联系</h3><p>{{ day.review.trends }}</p>
+</section>
+<section class="papers">
+  {% for it in items %}
+  <article class="card {{ it.score.layer }}">
+    <div class="tags">
+      <span class="layer">{{ it.score.layer }}</span>
+      <span class="score">相关性 {{ it.score.score }}</span>
+      {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+    </div>
+    <h3>{{ it.summary.title_zh }}</h3>
+    <p class="orig">{{ it.paper.title }}</p>
+    <p class="team">{{ it.summary.team }}</p>
+    <p class="tldr"><b>TL;DR：</b>{{ it.summary.tldr }}</p>
+    <p class="body">{{ it.summary.review }}</p>
+    <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
+    <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
+    <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
+  </article>
+  {% endfor %}
+</section>
+{% endblock %}

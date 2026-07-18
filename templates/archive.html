@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}归档 · GECAM 每日文献综述{% endblock %}
+{% block content %}
+<h2>归档</h2>
+<ul class="archive">
+  {% for d in days %}<li><a href="{{ static_prefix }}day/{{ d }}.html">{{ d }}</a></li>{% endfor %}
+</ul>
+{% endblock %}

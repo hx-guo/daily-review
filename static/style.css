@@ -1,0 +1,9 @@
+:root { color-scheme: light dark; }
+body { font-family: system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 1rem; line-height: 1.6; }
+header a { text-decoration: none; color: inherit; }
+.card { border: 1px solid #8884; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+.card.core { border-left: 4px solid #d33; }
+.card.related { border-left: 4px solid #39c; }
+.card.edge { opacity: .8; border-left: 4px solid #999; }
+.tags span { display: inline-block; font-size: .75rem; background: #8882; border-radius: 4px; padding: .1rem .4rem; margin-right: .3rem; }
+.orig { color: #888; font-size: .85rem; }
