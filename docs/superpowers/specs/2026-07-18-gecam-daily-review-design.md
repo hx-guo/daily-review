@@ -206,3 +206,34 @@
 - Phase 3 期刊官网爬虫的具体源与反爬策略（届时细化）。
 - 数据量增长后是否迁 SQLite / 是否需要后端与强搜索（转方案 2）。
 - 是否加订阅推送（邮件 / IM）等分发方式（本期不做）。
+
+## 19. Phase 1.1 修订：同步模型（sync model）
+
+**动机**：Phase 1 首跑（2026-07-18）暴露：workflow 抓"昨天 UTC"且要求 `published` 严格等于该日，但 arXiv 有 1–2 天公告延迟（外加周末不公告），运行时最新可得的 published 日期通常落后今天约 2 天 → 几乎每天抓到 0 篇。本节修订 §6 每日流水线的抓取/归档模型，取代"抓精确的昨天"。
+
+**核心原则：把"发现"与"归档"分离。** 每次运行是一次 **同步（sync）**，而非"生成某一天"。每篇论文永远归档在它自己的**真实 published 日期**下，与被发现的日期无关。
+
+### 19.1 抓取：滚动窗口 + 分页
+- `ArxivSource` 新增 `fetch_recent(end_date, days)`：返回 published 日期落在 `[end_date - days + 1, end_date]` 的全部论文。
+- **分页**：按 `submittedDate` 降序，`start=0, page, 2*page, …` 翻页，直到某页出现 published < 窗口起点或无更多条目。取代原来 `max_results=300` 的硬上限（几天就超 300）。
+- 配置：`FETCH_WINDOW_DAYS = 7`（覆盖公告延迟 + 周末）、`ARXIV_PAGE_SIZE = 100`。
+
+### 19.2 归档：按真实日期 + 回填合并
+- pipeline 改为 `sync(run_date, source, llm, store, …)`：
+  1. `papers = source.fetch_recent(run_date, FETCH_WINDOW_DAYS)` → dedupe。
+  2. `new = store.unseen_ids(...)` 滤掉已综述过的（保证每篇只花一次 AI 成本）。
+  3. **并发**对每篇新论文做 打分 →（core/related）全文 + 单篇综述（见 §19.4）。
+  4. 按每篇的**真实 published 日期分组**；对每个受影响的日期：加载已存在的 `data/daily/<真实日期>.json`（无则空）→ 若已有内容，先把**当前版综述**压入 `revisions`（见 §19.3）→ 合并新论文 → **重新生成该日期的当日总览** → 保存。
+  5. 全部保存后 `mark_seen` 新论文。
+- 首页"最新一天" = 有论文的最新真实日期（`list_days()[0]`），**天然落后日历今天约 1–2 天**（arXiv 真实节奏，非 bug）。首页头部标注"数据截至 arXiv 最新公告日 XX-XX"。
+
+### 19.3 版本留档（三层）
+1. **git 全量存档**：每次 sync 提交整个 `data/`，每个历史版本都在 git 里，可完整复原。
+2. **JSON 内置 `revisions`**：`DayData` 新增 `revisions: list[dict]`，每条 = `{"synced": 运行日, "n_papers": 当时篇数, "review": 当时的 DailyReview.to_dict()}`。回填导致某天内容变化时，把变化前的综述压入。一天通常只在 arXiv 收全前 1–3 天内被回填几次，之后稳定。采用**轻量版**（存历史综述文字 + 篇数 + 同步日；完整整页快照由 git 兜底）。
+3. **站点可看**：日期页底部可折叠"修订历史（N 版）"，逐条展示历史综述 + 当时篇数 + 同步日。
+
+### 19.4 并发
+- §6 Stage 3 的逐篇处理（打分 + 全文 + 综述）**逐篇独立**，改为**有界并发**（`ThreadPoolExecutor`，`MAX_CONCURRENCY = 6`），墙钟时间约降至 1/5–1/8。逐篇 try/except 已就位，单篇失败不影响其他。并发上限受 opencode 速率/额度约束，勿过高。
+
+### 19.5 受影响文件
+`config.py`（窗口/分页/并发常量）、`models.py`（`DayData.revisions`）、`sources/arxiv_source.py`（`fetch_recent` + 分页）、`store.py`（`load_day` 容缺）、`pipeline.py`（`sync` 编排 + 并发 + 分组回填）、`templates/day.html`（修订历史 + 截至日期）、`scripts/run_daily.py`（调 `sync`）、相应测试。
