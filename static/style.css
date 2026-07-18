@@ -16,3 +16,9 @@ header a { text-decoration: none; color: inherit; }
 .edge-papers summary { cursor: pointer; color: #39c; font-weight: 600; margin-bottom: .5rem; }
 .card.edge h4 { margin: .3rem 0; }
 .card.edge .tldr { color: #444; }
+.original { margin-top: .6rem; padding-top: .5rem; border-top: 1px dashed #8883; font-size: .85rem; }
+.en-title { font-weight: 600; }
+.en-authors, .en-corr { color: #666; margin: .2rem 0; }
+.en-abstract { color: #444; margin: .3rem 0; white-space: pre-wrap; }
+.en-abstract.clamped { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.abstract-toggle { font-size: .8rem; background: none; border: 1px solid #8886; border-radius: 4px; padding: .1rem .5rem; cursor: pointer; color: #39c; }

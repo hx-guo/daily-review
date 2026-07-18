@@ -114,3 +114,27 @@ def test_render_edge_collapsed_with_chinese(tmp_path):
     assert "边缘中文标题" in page
     assert "<details" in page
     assert "边缘相关" in page
+
+
+def test_render_english_original_block(tmp_path):
+    st = Store(tmp_path / "data")
+    p = Paper(id="arxiv:1", source="arxiv", title="A GRB Study",
+              authors=["Alice A", "Bob B", "Cara C", "Dan D"],
+              abstract="Full English abstract text here.", categories=["astro-ph.HE"],
+              published="2026-07-16", url="https://arxiv.org/abs/1")
+    summ = PaperSummary("arxiv:1", "中文标题", "团队", "tl", "综述", "亮点", "关联",
+                        authors_en="Alice A (MIT), Bob B (Caltech), Cara C (IHEP), et al.",
+                        corresponding_en="Alice A")
+    day = DayData("2026-07-16", DailyReview("2026-07-16", "o", "", ""),
+                  items=[{"paper": p, "score": RelevanceScore(90, ["GRB"], "core", ""), "summary": summ}])
+    st.save_day(day)
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
+    assert "A GRB Study" in page
+    assert "Alice A (MIT)" in page
+    assert "通讯作者：Alice A" in page
+    assert "Full English abstract text here." in page
+    assert "en-abstract clamped" in page
+    assert "abstract-toggle" in page
+    assert (out / "static" / "search.js").exists()

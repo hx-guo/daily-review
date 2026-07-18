@@ -22,6 +22,13 @@
     <p class="body">{{ it.summary.review }}</p>
     <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
     <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
+    <div class="original">
+      <p class="en-title">{{ it.paper.title }}</p>
+      <p class="en-authors">作者：{% if it.summary.authors_en %}{{ it.summary.authors_en }}{% else %}{{ it.paper.authors[:3]|join(', ') }}{% if it.paper.authors|length > 3 %}, et al.{% endif %}{% endif %}</p>
+      {% if it.summary.corresponding_en %}<p class="en-corr">通讯作者：{{ it.summary.corresponding_en }}</p>{% endif %}
+      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
+      <button class="abstract-toggle" type="button">展开摘要</button>
+    </div>
     <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
   </article>
   {% endfor %}
@@ -44,6 +51,8 @@
       <h4>{{ it.paper.title }}</h4>
       <p class="body">{{ it.paper.abstract }}</p>
       {% endif %}
+      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
+      <button class="abstract-toggle" type="button">展开摘要</button>
       <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
     </article>
     {% endfor %}
