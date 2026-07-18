@@ -43,7 +43,9 @@
         "tldr": "本文提出利用量子计量技术和多探针策略，通过类轴子介导的自旋-自旋相互作用来同时探测类轴子的质量和耦合常数。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -78,7 +80,9 @@
         "tldr": "在二维平坦和五维翘曲几何中，研究了实标量场模型中的紧凑、长程和无真空区域，并分析了二维局域解及其嵌入翘曲AdS5背景时产生的不同膜轮廓。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -118,7 +122,9 @@
         "tldr": "计算了Kerr时空中线性场扰动下Teukolsky方程推迟格林函数的高阶晚期尾部渐近，包括引力（s=-2）扰动的前三阶幂律及对数修正，并提供了小频率展开。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -160,7 +166,9 @@
         "tldr": "本文开发了三种基于太阳系和本地银河系的互补探针来探测标量场暗物质，包括类ADAF耀斑、原子钟搜索和天体测量微透镜，并给出了灵敏度估计和零探测约束。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -203,7 +211,9 @@
         "tldr": "通过计算剪切粘度和电导率，发现了由Schwarzian量子涨落引起的低温增强及非单调温度依赖性等普适特征。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -242,7 +252,9 @@
         "tldr": "论文通过有效二维Schwarzian作用量及四维引力路径积分，研究近极端AdS4对偶黑膜中量子涨落对全息电导率的修正，发现其随温度非单调变化，在极低温下按1/√(CT)增长。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -291,7 +303,9 @@
         "tldr": "在离子阱量子计算机上实现了HaPPY码全息对偶模型，验证了关键公式并观察到类似引力的熵行为",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -338,7 +352,9 @@
         "tldr": "分析了四颗强污染的冷氢大气白矮星，通过光谱建模确定了其大气中5-11种金属的丰度，总吸积率在10^8至10^9 g/s，发现它们吸积的行星残骸成分多样，包括富核、富铁和类似原始球粒陨石的物质，将已知含有五种以上金属的冷白矮星样本增加了50%。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -378,7 +394,9 @@
         "tldr": "本文展示引力波事件聚类如何缓解星系巡天中系统误差对局部原始非高斯性约束的削弱，并发布改进版Multi_CLASS代码。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -422,7 +440,9 @@
         "tldr": "模拟M82星系风的X射线发射并与钱德拉观测比较，发现模拟的X射线亮度和光谱与观测存在显著偏差，并探讨了热传导和宇宙射线等缺失物理过程的影响。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -468,7 +488,9 @@
         "tldr": "在LVK前三次观测运行的高信噪比双黑洞和中质量黑洞双星事件中未发现引力微影的确凿证据，并给出了相对振幅的上限约束。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -508,7 +530,9 @@
         "tldr": "本文论证在非理想量子参考系下，玻恩概率会变得不确定，并证明了关于相对频率的贝尔型定理，同时提出基于脉冲零差检测的量子光学实现方案。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -546,7 +570,9 @@
         "tldr": "通过正向模型同时拟合三种观测样本（天体测量双星、紫外超双星、食双星），约束了稳定质量传输和共包层演化的关键参数，包括临界质量比和共包层效率。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -617,7 +643,9 @@
         "tldr": "通过高斯成分模型分解脉冲轮廓并追踪成分演化，在形状变化事件中维持相位连接计时，获得与标准模板匹配相当的计时精度，并使受影响数据可用于引力波分析。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -658,7 +686,9 @@
         "tldr": "研究了最大不可见QCD轴子的超新星产生和冷却约束，并探讨了切伦科夫探测器中的探测前景，以建立其整体可探测性的稳健下界。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -695,7 +725,9 @@
         "tldr": "本文通过分析7641个合并星系的光谱数据，发现星系合并过程会持续提高O32线比，增强电离态，并推断高O32的绿豌豆星系是处于并合阶段的低质量星系。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -759,7 +791,9 @@
         "tldr": "利用JADES瞬变巡天数据，研究核坍缩超新星速率与恒星形成率密度的关系，发现两者一致，并重建了宇宙恒星形成历史，峰值在红移~2，同时探讨了初始质量函数和尘埃遮蔽的影响。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -795,7 +829,9 @@
         "tldr": "本文提出SquiRels框架，模型不敏感地研究LiMRs对CMB的影响，给出了当前观测限制并展示了未来实验的区分能力。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -832,7 +868,9 @@
         "tldr": "本文结合CosmoFlow数值预测和Planck双谱数据，评估标量宇宙对撞机信号的观测可行性，发现在弱混合下信号太小不可观测，强混合虽能产生更大信号但会扭曲形状并破坏因子化，因此强混合分析对于获得有意义的约束至关重要。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -871,7 +909,9 @@
         "tldr": "使用ALMA Band 1甲醇线观测揭示了V883 Ori盘最内区域存在大量温暖气态甲醇，并约束了其雪线位置。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -910,7 +950,9 @@
         "tldr": "本文开发了一个通用的福克-普朗克框架，用于描述随机扰动下开普勒双星系统的动力学演化，并应用于绝热潮汐、白噪声潮汐和第三体脉冲相遇三种场景，提供了完整的轨道演化方程和稳态分布，可作为天体物理的实用工具。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -951,7 +993,9 @@
         "tldr": "该论文研究了随机衍射透镜的统计特性，并展示了LISA如何通过累积多个引力波源信号来探测10-10^4太阳质量的暗物质晕。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -987,7 +1031,9 @@
         "tldr": "本文证明高阶导数引力有效场论的特征速度独立于度规导数时固有弱双曲，自旋-2扇区的物理障碍无法通过规范选择或约束添加消除。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1028,7 +1074,9 @@
         "tldr": "利用DESI DR1星系功率谱全形分析与Planck和ACT的CMB数据联合约束超轻轴子作为暗物质子组分，在10^{-32}至10^{-24}eV质量范围内给出了最严格的上限，对最小质量将约束改进超过两倍。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1067,7 +1115,9 @@
         "tldr": "提出黑洞形成产生的随机弥漫标量背景（标量海啸）新机制，计算其频谱，并展示可扩展实验灵敏度至标量质量≲10^{-13} eV",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1114,7 +1164,9 @@
         "tldr": "通过反演质子引导中心方程直接测量速度空间扩散系数，为无碰撞等离子体中扩散随机加热提供观测证据，并强调间歇性在加热中的关键作用。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1156,7 +1208,9 @@
         "tldr": "研究了修正引力中SV-MOG正则致密天体的热力学性质和辐射特征，推导了温度、热容、熵修正及吸积盘辐射，发现参数可调节视界和光谱，为区分这类天体提供观测依据。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1198,7 +1252,9 @@
         "tldr": "开发了一个运动学框架，通过光度距离多极推断拉尼亚凯亚超星系团的椭球本征速度场，从而从超新星观测直接重构其大尺度运动学。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1234,7 +1290,9 @@
         "tldr": "本文利用ADM形式研究了非真空初态下各向异性DBI暴胀的线性和非线性原初扰动，计算了功率谱和双谱，并通过与Planck2018及DESI等观测数据对比，约束了模型参数空间，发现各向异性参数c和初态参数N_{k,0}在特定范围内与当前观测相容。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1300,7 +1358,9 @@
         "tldr": "提出Ardua任务概念，结合宽场远紫外光谱和X射线微量热计，首次全面绘制星系周围介质（CGM）的发射图，以研究重子循环。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1343,12 +1403,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12040",
-        "title_zh": "超线性II型超亮超新星SN 2017fck和2019cmv：可能的热核相互作用起源",
-        "team": "第一作者: Daichi Hiramatsu (Las Cumbres Observatory)，通讯作者: Takashi J. Moriya (日本国立天文台)；主要机构包括 Las Cumbres Observatory、加州大学圣巴巴拉分校等；非知名合作组",
-        "tldr": "发现这两颗超亮超新星峰值后的超线性光变曲线与相互作用Ia型超新星(SNe Ia-CSM)高度相似，提出它们可能由热核爆炸与厚星周物质作用驱动，而非传统大质量恒星坍缩。",
-        "review": "研究展示了SN 2017fck和2019cmv的光学测光与光谱，其特征为峰值后“超线性”快速下降，与已知SNe Ia-CSM样本的观测特征一致。通过构建涵盖多种SN Ia亚型及星周物质分布的数值光变曲线模型网格，成功复现了上升时间、峰值光度与下降率等参量空间，并约束星周物质质量在2–11倍太阳质量之间。针对这两个源，推断其星周物质质量高达~6–11倍太阳质量，可能产生于白矮星与大/中等质量伴星的公共包层演化。结论认为，部分超线性II型超亮超新星可能源于热核爆发，峰值光度可达1e44 erg/s。",
-        "highlight": "首次揭示超线性SLSNe-II与SNe Ia-CSM的观测及理论关联，为极端亮度的富氢超亮超新星提供了全新的热核爆发渠道，挑战了传统核心坍缩解释，并强调星周介质在塑造超新星多样性中的重要作用。",
-        "relation": "—"
+        "title_zh": "超线性II型超亮超新星2017fck和2019cmv：可能起源于相互作用热核超新星",
+        "team": "第一作者Daichi Hiramatsu，通讯作者未明确（可能同一人），主要机构涉及加州大学圣巴巴拉分校、拉斯坎帕纳斯天文台、日本国立天文台等；非特定知名合作组",
+        "tldr": "发现两颗超线性光变的II型超亮超新星，通过模型分析认为它们可能是与星周物质相互作用的热核超新星，为超亮超新星热核起源提供新证据。",
+        "review": "本文对II型超亮超新星2017fck和2019cmv的光学观测显示其峰值后光变曲线呈“超线性”下降，与相互作用Ia型超新星（SNe Ia-CSM）相似。作者构建了多种Ia亚型和星周物质分布的数值光变曲线模型网格，再现了SNe Ia-CSM的上升时间、峰值亮度和下降率。推断这两颗超新星的星周物质质量分别约11和6个太阳质量，可能源于白矮星与中等质量或大质量伴星的公共包层演化。结论指出，这类超线性SLSN-II可能具有热核爆发本质，峰值光度可达10^44 erg/s。",
+        "highlight": "首次将超线性SLSN-II与SNe Ia-CSM系统性关联，提出热核起源新通道；构建的模型网格可解释多样性并约束前身星系统；大质量星周物质暗示公共包层演化的重要角色。",
+        "relation": "—",
+        "authors_en": "Daichi Hiramatsu, Takashi J. Moriya, D. Andrew Howell et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -1386,7 +1448,9 @@
         "tldr": "该研究通过将经典能量条件局域地应用于光子球，为广义相对论中所有静态球对称黑洞导出了阴影尺寸、Lyapunov指数与光子环时间延迟等可观测量的解析界限，这些界限独立于具体黑洞解或物质模型，可直接检验强场引力并约束能量条件本身。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1426,7 +1490,9 @@
         "tldr": "提出一种数据驱动的非参数膨胀-增长框架，同时重构暗能量状态方程和暗区耦合，利用多种观测数据检验发现无显著偏离ΛCDM模型的证据。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1487,12 +1553,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12018",
-        "title_zh": "JADES瞬变巡天II：z~5处的体积超新星率",
-        "team": "Christa DeCoursey (亚利桑那大学) 等；主要机构含 STScI、图尔库大学；属 JADES 合作组",
-        "tldr": "利用 JADES 巡天的 83 个超新星候选体，首次在 z~2–5 测量核塌缩超新星与 Ia 型超新星的体积率，结果与恒星形成率密度历史一致。",
-        "review": "样本来自 JWST/NIRCam 深场（~25 arcmin²）两季观测，含 79 个可靠及 4 个边缘 SN 候选，最高红移~4.82。通过模拟~23,000 个单历元 SED 评估分类准确度，给出金样本（光谱/多历元）与全样本两组速率。核塌缩超新星率在 z~2–5 为 4–6×10⁻⁴ yr⁻¹ Mpc⁻³，与恒星形成率密度预期一致，并初步显现 cosmic noon 后的下降趋势；Ia 型超新星率在 z~2–3.6 为~0.3×10⁻⁴ yr⁻¹ Mpc⁻³，误差较大。JWST 成功将超新星体积率测量拓展至 z~5，为宇宙恒星形成历史提供独立约束。",
-        "highlight": "首次在 z>2 利用 JWST/NIRCam 深场数据测量超新星体积率；创新采用单 SED 分类并模拟验证；观测到核塌缩超新星率可能下降的初步信号。",
-        "relation": "—"
+        "title_zh": "JADES暂现源巡天II：红移至z~5的体积超新星率",
+        "team": "第一作者 Christa DeCoursey，主要机构包括亚利桑那大学、图尔库大学、空间望远镜科学研究所等；JADES合作组",
+        "tldr": "首次利用JWST/NIRCam深场数据测量z~2-5核坍缩超新星和Ia型超新星的体积发生率，并评估单次SED分类的可靠性。",
+        "review": "基于JADES深场25平方角分区域的JWST/NIRCam两期深度成像（~30等）发现83颗超新星候选体。通过模拟~23,000个单历元SED，量化了单次光谱能量分布分类在区分核坍缩超新星与Ia型超新星时的准确度随红移的变化。在红移2.06–2.78和2.78–5.06分别测得核坍缩超新星体积率为6.2^{+2.2}_{-1.7}和4.1^{+1.5}_{-1.1} ×10^{-4} Mpc^{-3} yr^{-1}，与基于星系光度的宇宙恒星形成率密度预期相符，并初步显示出在“宇宙正午”后的下降。在红移1.92–3.60测得Ia型超新星率为0.3^{+0.3}_{-0.2} ×10^{-4} Mpc^{-3} yr^{-1}。",
+        "highlight": "首次将体积超新星率测量延伸至z~5，首次直接观测到核坍缩超新星率在宇宙正午后的下降迹象；系统量化了单历元JWST/NIRCam数据分类超新星的准确性；为高红移恒星形成历史和超新星延迟时标模型提供新约束。",
+        "relation": "—",
+        "authors_en": "Christa DeCoursey (Steward Observatory, University of Arizona), Christian Vassallo (Tuorla Observatory, Department of Physics and Astronomy, University of Turku), Louis-Gregory Strolger (Space Telescope Science Institute) et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -1529,7 +1597,9 @@
         "tldr": "回顾了弗里德曼的宇宙学模型及其在20世纪30至60年代苏联被遗忘的历史。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1564,7 +1634,9 @@
         "tldr": "本文发展各向异性分离宇宙框架，推导长波长超视界扰动的完整解，识别推广的守恒量，并建立各向异性δN形式主义，揭示曲率扰动与引力波的耦合。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1603,7 +1675,9 @@
         "tldr": "本文研究了在紫外完备的引力理论中实现无鬼影和快子不稳定性的反弹宇宙解的可能性，发现一般情况下需要负宇宙常数才能避免不稳定性，且高阶导数形式因子的解析性会导致鬼影辐射，但标量模式对宇宙微波背景观测无影响，而张量模式谱被计算并讨论了其影响。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1640,7 +1714,9 @@
         "tldr": "提出一个基于哈密顿量的框架，通过五个物理约束从X射线混响延迟推断活动星系核的日冕几何，在合成和实际数据中验证了方法，支持扩展盘状日冕并反驳了灯柱模型。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1675,7 +1751,9 @@
         "tldr": "构造了嵌入宇宙空洞密度分布的薄壳虫洞，通过Darmois-Israel条件分析表面应力和能量条件，发展其热力学并基于广义和修正宇宙Chaplygin气体状态方程研究径向稳定性，发现修正模型在足够大的线性项下可稳定。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1715,7 +1793,9 @@
         "tldr": "通过分析银河系中心附近亮星的轨迹来约束引力子质量，并讨论了其他天文约束方法。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1755,7 +1835,9 @@
         "tldr": "论文通过粒子模拟和理论分析，研究了超高β等离子体中哨声热通量不稳定性对热输运的调控，揭示了其饱和机制及维度依赖性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1795,7 +1877,9 @@
         "tldr": "在施瓦西时空线性自旋近似下，推导旋转粒子的自旋修正动力学，包括圆轨道、周期轨道、本轮频率和Lyapunov指数，并应用于瞬态QPO和极端质量比螺旋引力波波形。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1832,7 +1916,9 @@
         "tldr": "本文通过重新表述Hadamard重整化方案，首次获得了四维半经典引力中描述黑洞蒸发的准静态解析解，并揭示了其类时视界结构。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1883,7 +1969,9 @@
         "tldr": "基于MDFC和Gaia DR3等数据，构建了包含64,484颗星的绝对流量校准光谱目录，覆盖0.3-30微米，经验证与已有标准吻合良好。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1920,7 +2008,9 @@
         "tldr": "通过Seiberg-Witten映射引入新非对易修正，研究史瓦西黑洞的热力学和蒸发，发现热容呈现三相结构且黑洞寿命比经典情况更长。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1964,7 +2054,9 @@
         "tldr": "通过SPIRou新观测，确认TW Hya的大尺度磁场存在年际变化，吸积率平均约10^-8.33太阳质量/年且有约5倍波动，未发现短周期行星，证实其磁层吸积不稳定，磁层间隙延伸不超过共转半径的33-40%。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2016,7 +2108,9 @@
         "tldr": "论文通过构建贝叶斯模型，利用太阳耀斑数据校准，发现恒星耀斑产生的511 keV辐射远低于银河系观测值，排除其作为正电子主要来源的可能性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2054,11 +2148,13 @@
       "summary": {
         "paper_id": "arxiv:2607.11824",
         "title_zh": "TESS观测的邻近年轻太阳型恒星上星斑与耀斑的时间分辨关联",
-        "team": "第一作者：Daijiro Hitotsuyanagi，日本团队（机构未标注），非知名合作组",
-        "tldr": "利用TESS长期测光数据首次时间分辨地揭示星斑面积与耀斑频率的正相关幂律关系，支持超级耀斑由星斑磁能驱动",
-        "review": "研究对象：三颗邻近年轻太阳型恒星（EK Dra、DS Tuc A、V889 Her）。数据与方法：使用TESS约7年、每扇区~27天的测光，自动探测耀斑并拟合星斑面积与自转周期。主要结果：耀斑频率和星斑面积随时间显著变化，但无明显活动周；两者呈正相关，幂律指数在三星间一致；EK Dra上星斑面积似与自转周期相关，可能暗示大星斑倾向形成于中纬度。结论：太阳的磁活动机制可外推到年轻恒星的极端磁活动。",
-        "highlight": "首次在单星层次建立星斑面积与耀斑频率的时间分辨正相关，给出超级耀斑能量释放率随总磁能变化的观测证据；发现自转周期可能调制星斑尺度，为星斑纬度分布提供新线索",
-        "relation": "—"
+        "team": "第一作者: Daijiro Hitotsuyanagi; 通讯作者: 不详; 主要机构: 不详; 非知名合作组",
+        "tldr": "利用TESS长时标测光数据首次时间分辨地揭示恒星耀斑频率与星斑面积的正相关关系，支持超级耀斑由大星斑磁能驱动。",
+        "review": "研究对象为三颗邻近年轻太阳型恒星（EK Dra、DS Tuc A、V889 Her）。使用TESS约7年的测光数据，自动探测耀斑并导出每个扇区（~27天）的耀斑频率、星斑面积和自转周期。结果发现耀斑频率和星斑面积在不同扇区显著变化，但无明显活动周；两者存在正相关，幂律指数在三颗星间一致。结论是超级耀斑的能量来自大星斑储存的磁能，且磁能释放率随总磁能变化，表明太阳磁活动机制可延伸至极端活动恒星。此外，EK Dra分析提示大星斑可能优先形成于中纬度。",
+        "highlight": "首次在单个恒星上实现时间分辨的星斑-耀斑关联分析，发现一致的幂律关系，为恒星耀斑磁能起源提供直接观测证据；并暗示星斑纬度分布的可能特征。",
+        "relation": "恒星超级耀斑的高能伽马射线辐射是GECAM的重要探测目标之一；本文在光学波段揭示的磁活动机制为理解该类源的高能辐射物理提供了基础。",
+        "authors_en": "Daijiro Hitotsuyanagi, Hiroto Yamada, Daisuke Yamashiki et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -2096,12 +2192,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11780",
-        "title_zh": "固体致密星的潮汐形变与应变积累",
-        "team": "第一作者沈鸿翔，通讯作者高勇、李洪波、徐仁新；主要机构为北京大学物理学院/科维理天文与天体物理研究所、马普引力物理研究所；徐仁新课题组从事奇异星研究，非知名合作组",
-        "tldr": "基于奇异子星模型，建立固体潮汐形变理论，定量给出固体与流体星形变度差异及双星旋近断裂释放的弹性能，提出用多信使观测检验致密星内部物态。",
-        "review": "针对奇异子固体星，发展相对论潮汐扰动方程，计算Love数与形变度Λ，发现1.4倍太阳质量星的固体Λ比流体约小40%，并偏离I-Love普适关系~10%。模拟双星旋近中弹性应变积累，断裂发生在引力波频率数百Hz时，可释放~10^46 erg能量，足以驱动短伽马暴前兆。固体断裂后向流体转变会改变引力波波形和相位，结合前兆电磁辐射，为区分致密星内部是流体还是固体提供多信使途径。",
-        "highlight": "首次将固体奇异子星的潮汐响应与星震能量释放统一量化，给出可同时探测的引力波相位偏差和短暴前兆的预言，为检验脉冲星类致密星的固态假设提供了清晰的多信使信号。",
-        "relation": "本文预言的固体星断裂可产生短伽马暴前兆，且伴随可测引力波特征，与GECAM监测引力波高能电磁对应体、开展多信使研究的目标直接相关，为GECAM数据解释和联合观测提供了理论案例。"
+        "title_zh": "固态致密星的潮汐形变与应变积累",
+        "team": "沈弘祥（北京大学）、高勇（AEI）、李宏波（北京大学）、徐仁新（北京大学）等人；不属于大型合作组",
+        "tldr": "基于奇子星模型，首次系统计算了固态致密星的潮汐形变与旋近破裂，发现固体与流体的形变率差异约40%，积累的应变能约10^46 erg足以驱动短暴前兆，为多信使检验致密星物态提供了新方法。",
+        "review": "本文采用奇子星（strangeon star）物态方程与剪切模量μ≈10^34 erg/cm³，建立固态致密星潮汐响应理论框架，推导并数值求解扰动方程组。结果显示，对于1.4M⊙的奇子星，固体与流体模型的潮汐形变率相差约40%，I–Love普适关系偏离约10%。模拟双星旋近的应变积累发现最大应变在地心附近，当引力波频率达数百赫兹时发生大规模破裂，可释放约10^46 erg弹性能，足以驱动短伽马暴前兆；固-流转变还将在引力波波形与相位中留下可探测的印记。",
+        "highlight": "首次在奇子星框架下同时给出潮汐形变与应变破裂的定量预言，显著差异（~40%）提供了区分固态与流体致密星的观测途径；弹性破裂能量自然衔接短暴前兆，为多信使研究高密物态开辟新窗口。",
+        "relation": "该工作预言的短暴前兆及伴随的引力波信号，为 GECAM 暂现源多信使探测提供了潜在目标，有助于约束致密星物态与前兆机制。",
+        "authors_en": "Hongxiang Shen (School of Physics, Peking University), Yong Gao (Max Planck Institute for Gravitational Physics (Albert Einstein Institute)), Hong-Bo Li (Kavli Institute for Astronomy and Astrophysics, Peking University) et al.",
+        "corresponding_en": "Yong Gao, Hong-Bo Li, Ren-Xin Xu"
       }
     },
     {
@@ -2148,7 +2246,9 @@
         "tldr": "基于JWST NIRCam和MIRI深度观测，构建864,114个点源测光目录，选出1226颗演化星，通过GRAMS模型获取尘埃产生率和碳/氧富集分类，发现氧富集AGB贡献60%尘埃且分布更广，碳富集AGB集中分布。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2184,7 +2284,9 @@
         "tldr": "本文通过局域类时方案计算了黑杆解中的类时纠缠熵和子区域复杂度，发现其非单调行为并揭示了局域帽-视界过渡的几何效应，区别于BTZ解。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2220,7 +2322,9 @@
         "tldr": "本文通过分析SST观测到的巨色球螺旋结构，开发自动检测管道处理2255个等离子体流，提取振荡流动力学，发现磁曲率与高阶振荡模式相关、周期从核心向外臂递减等现象，挑战了标准膨胀模型。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2264,7 +2368,9 @@
         "tldr": "通过差分分子旋转展宽方法分析高分辨率光谱，确认褐矮星DENIS J0255-4700大气中存在由多普勒效应可探测的纬度化学变化，并发现低纬度区域CH4和NH3贫乏，支持赤道云带模型。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2302,7 +2408,9 @@
         "tldr": "通过联合轨道拟合更新了HD 98800系统的轨道解，缩小了掩星事件的预测时间窗口，为未来观测提供了更精确的时间框架。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2343,7 +2451,9 @@
         "tldr": "本文研究了一类由时空扭率产生有效电荷的黑洞，发现扭率增加会降低振荡频率和阻尼率，导致更长的振铃信号，并通过与EHT和LVK观测数据比较约束了扭率参数。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2385,7 +2495,9 @@
         "tldr": "以B1422+231为例，利用TNG100模拟提取的非团块扰动（多极矩m3、m4和椭圆度径向变化），证明了这些扰动能够同时解释平滑宏观模型无法拟合的像位置和流量比异常。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2425,7 +2537,9 @@
         "tldr": "本文研究了非最小导数耦合与热耗散联合作用的温暖DBI暴胀模型，推导了标量谱指数和张标比的解析结果，利用Planck 2018约束参数空间，发现该模型能有效调节谱指数、显著抑制张标比并缓解η问题，是一个观测可行的暴胀模型。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2464,12 +2578,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11670",
-        "title_zh": "BAM代码的电阻性广义相对论磁流体力学扩展：测试与初步应用",
-        "team": "第一作者：Matthew Beaudoin；通讯作者：Tim Dietrich；主要机构：马克斯·普朗克引力物理研究所（阿尔伯特·爱因斯坦研究所）、波茨坦大学；属数值相对论BAM开发团队",
-        "tldr": "为BAM代码引入电阻性GRMHD模块，通过典型测试和双中子星并合模拟，揭示有限电导率导致的非理想磁流体效应。",
-        "review": "本文针对中子星内部及并合过程中的非理想磁流体效应，将BAM数值相对论代码从理想GRMHD扩展至电阻性GRMHD。采用隐显式Runge–Kutta方法处理刚性电导项，并通过特殊相对论基准测试及孤立/双中子星模拟进行验证。对双中子星并合的模拟显示，有限电导率会影响磁场放大与物质抛射，平行电场分量可达总电场强度的10%，表明低密度区域非理想效应不可忽略。该框架为研究并合后残骸长期演化、磁重联及喷流形成等过程提供了关键工具。",
-        "highlight": "首次在BAM代码中实现电阻性GRMHD，能够统一描述星体内部高导电区和外部低导电区，定量评估非理想效应的重要性；采用IMEX方法有效处理刚性源项，数值方法具有前沿性。",
-        "relation": "双中子星并合是短伽马暴的主要引擎，本文研究的非理想MHD过程直接影响喷流形成与电磁辐射，可为GECAM等设备探测的高能暂现事件提供理论支持。"
+        "title_zh": "BAM 代码的电阻性 GRMHD 扩展：测试与首次应用",
+        "team": "第一作者兼通讯作者 Matthew Beaudoin（马克斯·普朗克引力物理研究所/波茨坦大学），合作者包括 Maximiliano Ujevic (ABC 联邦大学) 等；无知名合作组。",
+        "tldr": "在 BAM 数值相对论代码中实现电阻性广义相对论磁流体动力学，并首次用于双中子星并合模拟，揭示非理想 MHD 效应的重要性。",
+        "review": "本文在 BAM 代码中实现了电阻性 GRMHD 框架，采用隐式-显式 Runge–Kutta 方法处理刚性源项，并通过特殊/广义相对论基准测试验证。对孤立及双中子星并合系统进行模拟，研究电导率对磁场放大和物质抛射的影响。结果显示平行电场可达总电场 10%，表明并合后低密度区域非理想效应（欧姆耗散、磁重联）不可忽略。新框架为未来采用更真实微物理的并合遗迹研究铺平道路。",
+        "highlight": "首次在 BAM 代码中实现电阻性 GRMHD，可统一描述高导与低导区域；发现并合后平行电场显著，强调非理想 MHD 过程对短伽马暴中心引擎建模的潜在影响。",
+        "relation": "研究直接模拟双中子星并合中的磁流体过程及物质抛射，有助于理解短伽马暴等电磁对应体产生机制，与 GECAM 监测并合事件高能辐射的科学目标密切相关。",
+        "authors_en": "M. Beaudoin (Max Planck Institute for Gravitational Physics, Potsdam), M. Ujevic (Universidade Federal do ABC, Santo André), R. Jaeger (Universität Potsdam) et al.",
+        "corresponding_en": "Matthew Beaudoin"
       }
     },
     {
@@ -2512,7 +2628,9 @@
         "tldr": "本文通过将原中子星条件纳入包含色超导相的状态方程，沿等重子数线追踪恒星构型，揭示了色超导相的四种演化场景，并发现稳定色超导相仅在最终冷中子星的窄高质量区形成。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2563,7 +2681,9 @@
         "tldr": "本文阐述了平方公里阵列将如何革命性地推动系外行星和超冷矮星的研究，包括首次探测系外行星射电辐射、发现大量超冷矮星，以及利用VLBI探测低质量行星。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2602,7 +2722,9 @@
         "tldr": "研究宇宙线在加速器附近的超扩散分布及γ射线辐射，发现超扩散参数影响分布，且通过γ射线形态可区分超扩散与正常扩散。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2639,12 +2761,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11539",
-        "title_zh": "基于Transformer光谱分类器从SDSS DR7星表中发现的两个最早的光学-紫外潮汐瓦解事件",
-        "team": "第一作者：郑然方；通讯作者：林哲宇、孔旭；主要机构：中国科学技术大学；非大型合作组",
-        "tldr": "开发 PCA 增强的 Transformer 光谱分类器，从 SDSS DR7 星系光谱中挖掘出两个新的潮汐瓦解事件（TDE），其中一个为迄今已知最早的光学-紫外 TDE（2002 年之前）。",
-        "review": "本文针对 SDSS DR7 中超过 70 万条星系光谱，设计并训练了一个 PCA 降维与 Transformer 架构相结合的光谱分类器。该模型以常见超新星、TDE 及各类星系光谱为训练数据，自动筛选出潜在的 TDE 候选体。在应用中发现三个可靠 TDE 信号，其中 SDSS J124225.39+642919.0 和 SDSS J152459.70+045423.1 为全新发现；前者在 GALEX 紫外数据中有对应暂现辐射，且爆发时间早于 2002 年 2 月 11 日，成为已知最早的光学-紫外 TDE。结果表明，即使是在已广泛研究的巡天数据中，机器学习方法仍能有效“考古”发掘遗漏的稀有事例，为 TDE 的大样本统计和物理研究开辟了新途径。",
-        "highlight": "发现了目前已知最早的光学-紫外 TDE，将 TDE 历史时标推前至 2002 年；创新性地将 PCA 与 Transformer 结合用于一维光谱分类，在低信噪比和不同类型宿主星系混合下仍保持高精度；展现了机器学习在档案巡天数据中挖掘珍稀暂现源的强大潜力。",
-        "relation": "—"
+        "title_zh": "基于Transformer光谱分类器在SDSS DR7中发现的两个最早光学-紫外潮汐瓦解事件",
+        "team": "第一作者：Ranfang Zheng（中国科学技术大学），共同通讯作者：Xu Kong、Zheyu Lin（中国科学技术大学/法国巴黎大学），主要机构为中国科学技术大学；非知名合作组",
+        "tldr": "利用PCA增强的Transformer光谱分类器从SDSS DR7巡天数据中挖掘出两个最早的光学-紫外TDE，其中一个可追溯至2002年之前。",
+        "review": "本文构建了PCA增强的Transformer光谱分类器，训练集包含TDE、各类超新星及星系光谱，以区分正常星系与瞬变源特征。将该分类器应用于SDSS DR7约70万条星系光谱，成功识别出三个TDE候选体，其中两个为新发现（SDSS J1242和SDSS J1524）。多波段光变与光谱分析确认其TDE本质：SDSS J1242的紫外爆发不晚于2002年2月，是目前已知最早的光学-紫外TDE；SDSS J1524的爆发发生于2007–2008年。研究表明机器学习方法能从大型光谱巡天档案中有效挖掘被遗漏的罕见暂现源，为未来DESI等巡天数据的TDE搜寻提供了新范式。",
+        "highlight": "首次利用机器学习光谱分类器在广泛使用的SDSS DR7数据中发现TDE；认证了迄今最早的光学-紫外TDE（爆发于2002年之前），将光学TDE发现时间前推；验证了从大光谱数据库中搜索TDE的可行性和高效性。",
+        "relation": "—",
+        "authors_en": "Ranfang Zheng (University of Science and Technology of China, China), Zheyu Lin (Université Paris Cité, CNRS, France; University of Science and Technology of China, China), Xu Kong (University of Science and Technology of China, China), et al.",
+        "corresponding_en": "Xu Kong, Zheyu Lin"
       }
     },
     {
@@ -2689,7 +2813,9 @@
         "tldr": "本文总结GCGPS项目第一阶段，在四个先前无已知脉冲星的球状星团中发现七颗毫秒脉冲星（含三颗双星），并介绍第二阶段计划",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2735,7 +2861,9 @@
         "tldr": "本文提出直接主波束校正框架，通过正则化反演去除互耦合畸变，并表明仅校正主瓣和近旁瓣不足以恢复EoR窗口，需全天空校正。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2780,7 +2908,9 @@
         "tldr": "通过GRMHD模拟研究M87中不同电子加热与分布模型，预测未来VLBI可区分它们。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2818,7 +2948,9 @@
         "tldr": "本文比较了角功率谱和自相关函数在测量宇宙线各向异性中的敏感性，并应用于KASCADE数据，发现铁核质量组在约10度角尺度上有超过2.5个标准差的各向异性迹象。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2861,12 +2993,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11545",
-        "title_zh": "AT2019ijn：一个快速上升、缓慢衰减且射电极亮的蓝色光学暂现源",
-        "team": "丁虎成（第一作者）、舒新文（通讯作者），安徽师范大学、华中师范大学等；非大型合作组",
-        "tldr": "报道了特殊暂现源AT2019ijn，光学快速上升（5.3天）但衰减缓慢（>1月），射电辐射异常明亮且峰值延迟达641天，可能代表一类新的相对论性喷流事件。",
-        "review": "该源位于z=0.2729的矮星系核心，光学g波段峰值M_g=-21.05，色温持续高温蓝（~1.5×10^4 K）。射电峰值光度（2×10^31 erg/s/Hz）比已知射电亮FBOT或超新星亮两个量级以上，可与喷流TDE媲美。射电光变曲线可用离轴相对论喷流（观测角~39°）解释，最可能起源于中等质量黑洞（~1.3×10^5 M_sun）的潮汐瓦解事件，喷流磁星模型不能完全排除。未探测到X射线和γ射线对应体。",
-        "highlight": "首次发现兼具“快升慢衰”光学与极亮、晚期峰值射电的暂现源，突破了现有FBOT/TDE的分类框架；射电峰值延迟超600天且光度极高，为发现离轴喷流暂现源提供新窗口，凸显了射电巡天的重要性。",
-        "relation": "—"
+        "title_zh": "AT2019ijn：一颗快速上升、缓慢衰减的蓝色光学暂现源，具有异常明亮的射电辐射",
+        "team": "第一作者：Hucheng Ding，通讯作者未明确；安徽师范大学物理系，华中师范大学等；非知名合作组",
+        "tldr": "发现一颗快速光学上升、缓慢衰减且伴有极亮延迟射电辐射的暂现源 AT2019ijn，可能来自中等质量黑洞的偏轴相对论性喷流。",
+        "review": "利用 ZTF/ATLAS 光变及 VLA/ASKAP/GMRT 多波段射电数据，研究位于矮星系中心（z=0.2729）的暂现源。光学在 5.3 天升至 Mg=-21.05，色温度约 1.5×10^4 K，缓慢衰减逾月；射电在光学发现后 412 天首现，641 天达峰值 2×10^31 erg/s/Hz，比已知射电亮 FBOT 亮百倍以上。模型给出偏轴（~39°）相对论喷流，中心引擎约 1.3×10^5 M☉。该源可能连接 FBOT 与喷流 TDE。",
+        "highlight": "兼具快速上升光学与极端延迟明亮射电，射电峰值光度创同类之最；揭示偏轴喷流暂现源，凸显射电巡天在发现此类罕见源中的价值。",
+        "relation": "可能伴随高能辐射，为偏轴喷流事件多信使研究提供样本，与 GECAM 高能暂现源科学目标相关。",
+        "authors_en": "Hucheng Ding (Department of Physics, Anhui Normal University), Xinwen Shu (Department of Physics, Anhui Normal University), Luming Sun (Department of Physics, Anhui Normal University) et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -2904,7 +3038,9 @@
         "tldr": "研究一维BEC中具有厚视界的声学黑洞模型，分析粒子产生和密度关联函数以探测类霍金辐射。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2952,12 +3088,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11546",
-        "title_zh": "部分遮蔽极端变脸AGN爆发六年后射电与X射线再增亮",
-        "team": "周天耀、舒新文（安徽师范大学）等，含MIRONG合作组及国内多所机构",
-        "tldr": "通过2500天多波段监测发现SDSS J1548+2208爆发六年后射电和X射线再增亮，支持其极端变脸活动星系核起源，而非恒星潮汐瓦解事件。",
-        "review": "对SDSS J1548+2208进行光学、中红外、X射线和射电约2500天的跟踪观测。中红外与硬X射线流强仍高于爆发前，高电离铁线缓慢演化，表明黑洞吸积活动长期增强。中红外颜色缓慢变蓝，区别于典型恒星潮汐瓦解事件。射电谱在0.65–15 GHz呈独特双峰结构，爆发六年后发现射电再增亮及可能的X射线新耀发。射电演化可用新生外流冲击周围介质解释，指示其为一颗罕见的能发射射电外流的变脸活动星系核。",
-        "highlight": "发现爆发后六年多的晚期射电再增亮；射电谱双峰结构独特；利用中红外颜色鉴别CLAGN与TDE；为变脸AGN射电外流研究提供新样本。",
-        "relation": "—"
+        "title_zh": "部分遮蔽极端变脸活动星系核爆发六年后射电与X射线再增亮",
+        "team": "第一作者：周天瑶（安徽师范大学）；通讯作者：未标注（PI 舒新文可能为通讯作者）；主要机构：安徽师范大学、中国科学技术大学、南京师范大学等；非大型国际合作组",
+        "tldr": "对极端变脸AGN SDSS J1548+2208多波段长期监测，发现爆发六年后射电和X射线再增亮，揭示新生外流与致密云团相互作用。",
+        "review": "本文利用光学、中红外、X射线及射电多波段数据，对部分遮蔽核暂现源SDSS J1548+2208展开约2500天监测。中红外与硬X射线持续高态且高电离线缓慢演化，表明中央黑洞吸积活动长期增强，更支持极端变脸AGN而非恒星潮汐瓦解事件。射电谱形呈现双峰结构并出现晚期再增亮，X射线亦探测到可能的新耀发。再增亮可解释为新生外流膨胀并激波加热不均匀介质。该源为稀有的驱动射电外流的变脸AGN，为研究AGN环境调控机制提供了新线索。",
+        "highlight": "首次在爆发近六年多后探测到射电与X射线再增亮；通过中红外色变行为区分变脸AGN与TDE；揭示了射电频谱的复杂演化与云团冲击特征。",
+        "relation": "—",
+        "authors_en": "T. Zhou (Department of Physics, Anhui Normal University), X. Shu (Department of Physics, Anhui Normal University; Center for Astrophysics and Astronomical Technology, Anhui Normal University), L. Yang (Department of Physics, Anhui Normal University) et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -3010,12 +3148,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11447",
-        "title_zh": "SOLAR-C/EUVST短波相机观测到的耀斑前及活动区等离子体流与结构",
-        "team": "James McKevitt（伦敦大学学院穆拉德空间科学实验室）作为第一作者，联合日本宇宙航空研究开发机构（JAXA）、美国海军研究实验室（NRL）等国际团队；属于国际SOLAR-C合作组",
-        "tldr": "通过前向模拟展示下一代极紫外光谱仪SOLAR-C/EUVST分辨预耀斑活动区精细等离子体流动和结构的能力，性能远超Hinode/EIS",
-        "review": "基于3D MHD模拟的预耀斑活动区大气，合成Fe XII（log T~6.2）辐射，对SOLAR-C/EUVST短波相机（170–210 Å）进行仪器响应模拟。对比Hinode/EIS发现：SOLAR-C/EUVST能分辨Hinode/EIS无法识别的单独磁流管，捕获相邻上下流等离子体间的尖锐速度梯度，多普勒速度测量精度优于1 km/s。结论表明该仪器有望直接观测与耀斑触发相关的低层重联流，验证日冕加热模型。",
-        "highlight": "首次系统性地对SOLAR-C/EUVST进行前向模拟，证明其高空间分辨（~0.4角秒）和宽温度覆盖将直接揭示耀斑前兆和日冕加热的小尺度物理过程，为太阳物理带来突破性观测能力。",
-        "relation": "—"
+        "title_zh": "SOLAR-C/EUVST 短波相机观测到的耀斑前和活动区等离子体流动与结构",
+        "team": "第一作者：James McKevitt（英国伦敦大学学院穆拉德空间科学实验室），合作组：国际 SOLAR-C 团队；通讯作者不明确（可能为 J. McKevitt）；项目由 JAXA/NASA/ESA 等多方合作",
+        "tldr": "利用三维 MHD 模拟和仪器正演，证明下一代极紫外光谱仪 SOLAR-C/EUVST 的短波相机能够分辨耀斑前活动区内 Hinode/EIS 无法识别的精细磁通管结构和速度梯度，为耀斑触发和日冕加热机制研究提供关键诊断能力。",
+        "review": "本研究基于 MURaM 模拟的耀斑前活动区三维大气，合成 Fe XII（约 160 万度）极紫外发射，并对比模拟了 SOLAR-C/EUVST 短波相机（170–210 Å）和当前 Hinode/EIS 的光谱响应。结果表明，EUVST 可清晰分辨 EIS 无法识别的独立磁通管，以及紧邻的上升和下降流之间的急剧速度梯度；多普勒速度测量精度优于 1 km/s。该性能将使 EUVST 能直接观测可能触发耀斑的低层重联流动，并辨别活动区环是由少数丝状结构还是数百个纳米耀斑加热丝组成，从而为日冕加热和太阳爆发机制提供决定性观测约束。",
+        "highlight": "首次公布 SOLAR-C/EUVST 短波相机的预期光谱性能并与 Hinode/EIS 定量对比，验证其分辨日冕精细结构和动态过程的突破性能力；同时提供开源正演软件 ECLIPSE 供全球太阳物理学家进行先期研究。",
+        "relation": "—",
+        "authors_en": "J. McKevitt (University College London, Mullard Space Science Laboratory, UK), S. Matthews (University College London, Mullard Space Science Laboratory, UK), D. H. Brooks (Computational Physics, Inc., USA) et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -3051,7 +3191,9 @@
         "tldr": "首次在超过一维空间数值研究正宇宙常数下爱因斯坦-欧拉系统的Rendall不稳定性，发现其引发前向湍流级联和能量密度范数膨胀，并可能驱动晚期宇宙结构形成。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3095,7 +3237,9 @@
         "tldr": "该论文利用HST STIS近紫外光谱首次直接确认了四个距太阳20 pc内的后共有包层双星中的白矮星成分，给出了有效温度估值并更新了局域白矮星空间密度。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3141,7 +3285,9 @@
         "tldr": "本文回顾了太阳大气中可能导致磁开关形成的大尺度日冕动力学和小尺度动态事件，并讨论了将原位观测与遥感观测联系起来的挑战。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3175,7 +3321,9 @@
         "tldr": "从度规-仿射守恒律推导Belinfante-Rosenfeld对称化，通过平坦时空场理论的仿射提升，将超动量散度作为改进项，并以QED和QCD为例说明。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3216,7 +3364,9 @@
         "tldr": "提出贝叶斯框架，利用MCMC拟合恒星r-过程丰度模式，推断天体物理条件，发现两个组分即可解释多种恒星丰度。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3255,7 +3405,9 @@
         "tldr": "讨论了磁场不均匀性引起的同步辐射光谱畸变，发现对单粒子仅在特定条件下有显著差异，对粒子系综影响可忽略。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3295,7 +3447,9 @@
         "tldr": "本文研究了Kerr-Bertotti-Robinson黑洞在外部电磁背景中的热力学和光学性质，推导了热力学量、零测地线和阴影等，并分析了背景场的影响。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3337,7 +3491,9 @@
         "tldr": "预测SKAO巡天结合星系成团、弱引力透镜和21cm强度图等探针的N×2pt分析，能对ΛCDM参数达到~1%精度，并约束暗能量、中微子质量和曲率。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3375,7 +3531,9 @@
         "tldr": "利用自由数据形式主义直接构造短脉型柯西数据，并证明其可扩展为渐近平坦柯西数据，推广了Li-Yu的结果。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3418,7 +3576,9 @@
         "tldr": "本文利用Gaia DR3数据识别了235个疏散星团-白矮星对，发现潮汐尾中污染严重（>48%），并识别了63个候选双星起源白矮星与47个新IFMR候选者，结合N体模拟对白矮星种群进行解释，为星团动力学和初始-最终质量关系提供了约束。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3457,7 +3617,9 @@
         "tldr": "本文利用轮廓似然方法进行频率论推断，基于脉冲轮廓建模确定中子星半径，结果表明其精度与贝叶斯方法相当但计算更快。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3494,7 +3656,9 @@
         "tldr": "研究了弯曲时空中高频电磁波与轴子标量场的耦合，推导了轴子-麦克斯韦理论的旋光学方程，并分析了光轨迹因轴子场而偏离零测地线的螺旋度相关修正。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3534,7 +3698,9 @@
         "tldr": "利用17.9年Fermi-LAT数据，发现PSZ2 G181.06+48.47星系团存在空间延展（σ≈0.4°）的软GeV伽马射线辐射，其能谱仅在1-3.13 GeV显著，高于5 GeV仅为上限，该发射更符合弥散团内辐射而非点源。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3575,7 +3741,9 @@
         "tldr": "本文开发了一个通过引力波观测重建高红移双黑洞原初功率谱的框架，并分析了LVK数据展示了其可行性",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3613,7 +3781,9 @@
         "tldr": "利用钱德拉和XMM-牛顿的X射线数据分析了超新星遗迹N63A的多温等离子体成分，约束了其年龄、爆炸能量和前身星质量。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3651,7 +3821,9 @@
         "tldr": "提出JAX原生的几何多重网格泊松求解器，在固定网格上替代FFT加速FastPM，在移动网格上使能可微自适应粒子-网格模拟。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3689,7 +3861,9 @@
         "tldr": "通过高分辨率N体模拟发现，暗晕内禀取向信号在欠密环境中比同质量过密环境强约1.5–1.8倍，且源于欠密晕更不球形并与潮汐场对齐更强。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3727,7 +3901,9 @@
         "tldr": "使用O5灵敏度模拟暗汽笛事件，发现引力波传播修正参数$Ξ$的后验分布在改变$Ω_m$时保持稳健，但误差较大（约±36%），表明实现精确约束仍需宿主星系红移。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3761,7 +3937,9 @@
         "tldr": "本文论证虫洞诱导的整体对称性破缺取决于α参数的系综平均，在广泛情况下对称点占主导，从而表明标准轴子质量问题在虫洞有效理论中不会出现。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3803,7 +3981,9 @@
         "tldr": "本文通过引入额外的导数相互作用，消除了非最小耦合矢量引力中标量模式零传播速度导致的强耦合问题，并找到了一个稳定的德西特不动点。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3840,7 +4020,9 @@
         "tldr": "探讨向地球最近的黑洞发射小型星际飞船的可行性，认为虽然目前技术不成熟，但未来20-30年内可能实现，任务将耗时80-100年，科学回报深远。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3878,7 +4060,9 @@
         "tldr": "研究了κ-变形时空中最小长度尺度对RN AdS黑洞热力学的影响，导出修正的霍金温度、熵和焓，发现其相变行为类似于范德瓦尔斯系统但临界比降低，且非对易性扩大了焦耳-汤姆孙膨胀中的冷却区域。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3919,7 +4103,9 @@
         "tldr": "利用费米LAT 14年伽马射线数据和DES Y3/DECADE星系形状数据，通过互相关分析得到模型无关的零结果和基于模板的约3σ信号，并对暗物质湮灭截面和粒子寿命给出了限制。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3953,12 +4139,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10977",
-        "title_zh": "太阳耀斑共轭硬X射线足点不对称的成因",
-        "team": "第一作者：Mirabbos Mirkamalov（中国科大/撒马尔罕国立大学），通讯作者：刘睿（中国科大），合作者：罗荣彬（中国科大）、Arun Kumar Awasthi（德里大学/波兰科学院）；未属知名合作组",
-        "tldr": "针对共轭硬X射线（HXR）足点不对称之谜，利用RHESSI与SDO大样本统计揭示不对称性源于光球垂直电流（PVEC）而非传统磁镜效应。",
-        "review": "研究选取67个M/X级双带耀斑的103个时间段，通过CLEAN算法重建25–50 keV HXR足点，并结合SDO/HMI矢量磁图定量比对。发现共轭足点在光子通量、最大强度和源区面积上显著不对称，但平均强度对称；不对称性与磁场强度比呈正相关（与磁镜效应预测相反），而与无符号PVEC的不对称性呈最强正相关。结果说明电流相关物理过程（重联诱导电场、电流驱动微湍流等）主导了对非热电子的调制与降水，打破了传统磁镜解释。",
-        "highlight": "首次在统计层面建立HXR足点不对称性与光球垂直电流的紧密联系，挑战了长期占主导的磁镜效应解释，揭示了电流在粒子加速中的关键作用。",
-        "relation": "太阳耀斑硬X射线暴是GECAM的观测目标之一；该研究对理解粒子加速与高能辐射机制具有参考意义。"
+        "title_zh": "太阳耀斑中共轭硬X射线足点不对称性的成因",
+        "team": "Mirabbos Mirkamalov（中国科学技术大学、撒马尔罕国立大学），通讯作者刘锐（中国科学技术大学），合作者Runbin Luo（中国科学技术大学）、Arun Kumar Awasthi（德里大学、波兰科学院）；非大型合作组",
+        "tldr": "通过统计发现，光球垂直电流的不对称性与共轭HXR足点的不对称性存在强正相关，挑战了传统磁镜效应解释。",
+        "review": "选取67个M/X级双带耀斑的103个HXR爆发时段，利用RHESSI的HXR成像和SDO/HMI矢量磁图，分析共轭足点在光子通量、最大强度和面积上的不对称性。结果表明：足点在光子通量、最大强度和面积上不对称，但平均强度基本对称；光子通量比与面积比呈线性相关；磁场不对称性与HXR不对称性呈正相关，与磁镜效应预测相反；无符号光球垂直电流的不对称性与HXR不对称性表现出最强的正相关。结论指出，与电流相关的物理过程（重联电场、电流驱动微湍流）可能在调制非热电子产生和沉降中起关键作用。",
+        "highlight": "首次从统计上确立光球垂直电流不对称性与HXR足点不对称性的强烈关联，为耀斑粒子加速机制提供了新思路，颠覆了长期依赖的磁镜效应解释。",
+        "relation": "该工作揭示的高能电子加速与沉降的电流调制机制，可为GECAM等设备在太阳高能辐射监测和粒子加速过程研究中提供重要物理约束。",
+        "authors_en": "Mirabbos Mirkamalov (CAS Key Laboratory of Geospace Environment, Dept. of Geophysics and Planetary Sciences, USTC; Dept. of Nuclear Physics and Astronomy, Samarkand State University), Rui Liu (CAS Key Laboratory of Geospace Environment, Dept. of Geophysics and Planetary Sciences, USTC), Runbin Luo (CAS Key Laboratory of Geospace Environment, Dept. of Geophysics and Planetary Sciences, USTC), et al.",
+        "corresponding_en": "Rui Liu"
       }
     },
     {
@@ -3991,12 +4179,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10980",
-        "title_zh": "利于X级太阳耀斑的磁场位形：违反Joy定律与Hale定律",
-        "team": "第一作者S. Liu，通讯作者J.T. Su、M. Zhang、J.X. Wang；中国科学院国家天文台太阳活动与空间天气重点实验室，无知名大型合作组",
-        "tldr": "基于39个活跃区的64次X级耀斑，发现全局或局部违反Joy/Hale定律的异常磁场倾角与耀斑发生率和强度显著正相关",
-        "review": "选取2008–2025年39个产生X级耀斑的活动区，利用SDO/HMI和GOES数据计算磁倾角，按四象限分类（正常/反Joy/反Hale/反两者）统计耀斑产率。完全遵循定律的“绿”象限产生24个耀斑，而违反Joy的“黄”象限产生36个且耀斑级别更高；仅3个“黑”象限也生4个耀斑。还发现在全局正常活动区中局部倾角异常亦贡献于X级耀斑。结论：异常的全局或局部磁倾是强耀斑活动的关键标志。",
-        "highlight": "首次提出四象限分类法统一评估磁倾对Hale/Joy的遵从性，定量揭示倾角异常与强耀斑的关联，为耀斑预报提供新的物理参数。",
-        "relation": "太阳耀斑是GECAM重点监测的高能暂现源，本研究的磁场异常前兆特征有助于提升GECAM对耀斑高能辐射的物理解释与预报能力。"
+        "title_zh": "利于产生X级太阳耀斑的磁场位形：对乔伊定律与黑尔定律的违反",
+        "team": "S. Liu、J. T. Su、M. Zhang、J. X. Wang，均来自中国科学院国家天文台太阳活动与空间天气重点实验室；非大型合作组",
+        "tldr": "通过分析39个活动区的64次X级耀斑，发现违反黑尔定律和/或乔伊定律的全局或局部磁倾角异常，与耀斑频次和强度的显著增加密切相关。",
+        "review": "该研究利用SDO/HMI矢量磁图，对2008–2025年间39个活动区产生的64个X级耀斑计算了全局磁倾角，并根据对黑尔定律和乔伊定律的遵循情况将活动区分为四个象限。统计显示，违反乔伊定律的“黄象限”和同时违反两定律的“黑象限”活动区的耀斑发生率和级别均高于正常象限；即使在遵循两定律的“绿象限”活动区中，局部倾角异常也贡献了X级耀斑。结果表明，无论全局还是局部的磁倾角异常，都是强耀斑活动的关键前兆。",
+        "highlight": "首次提出统一的四象限磁场倾角分类法，系统量化了违反经典黑尔/乔伊定律的磁场位形对X级耀斑的增强效应，为空间天气预报提供了可量化的新诊断指标。",
+        "relation": "—",
+        "authors_en": "S. Liu (National Astronomical Observatories, Chinese Academy of Sciences), J. T. Su (National Astronomical Observatories, Chinese Academy of Sciences), M. Zhang (National Astronomical Observatories, Chinese Academy of Sciences) et al.",
+        "corresponding_en": ""
       }
     }
   ],

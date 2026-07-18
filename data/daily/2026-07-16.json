@@ -48,7 +48,9 @@
         "tldr": "本文利用基于模拟的推理方法，在包含所有主要天体物理前景的LISA数据中，研究重建宇宙弦信号所需的最小弦张力，发现比无前景估计大约10^5倍。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -88,7 +90,9 @@
         "tldr": "提出了第一个完全一致且相对论性的第一量子化模型，用于两粒子在时间交换κ平面非对易时空上的传播与相互作用，并完整刻画了变形庞加莱对称性及其伽利略极限。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -129,7 +133,9 @@
         "tldr": "论文批判了先前气泡碰撞中粒子产生模型的过度估计和规范依赖，提出了基于高能碰撞部分子描述的新形式，指出极端相对论极限下硬粒子来自洛伦兹收缩壁中量子之间的壳上散射，并应用于重标量、费米子、矢量粒子产生，探讨了对暗物质、轻子生成、引力子产生和原初引力波的影响。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -166,7 +172,9 @@
         "tldr": "通过数值模拟研究膨胀宇宙中引力波的非线性相互作用，发现能量从初始谱峰向长波和短波级联，且级联与振幅的关系符合四波散射模型预测。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -206,7 +214,9 @@
         "tldr": "采用保守方法估计约7000个银河系疏散星团的总质量和半径，并利用Gaia DR3数据研究其三维形状，观察到潮汐尾痕迹，发现远距离视差不确定性导致形状呈针状。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -244,7 +254,9 @@
         "tldr": "本文证明了史瓦西黑洞拟正则模在实轴以下区域内的Weyl定律，通过引入新的伪微分算子演算和复缩放方法给出了阈值能量附近的半经典估计和共振计数。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -285,7 +297,9 @@
         "tldr": "本文通过扰动展开和数值分析研究了非交换时空中带电AdS黑洞的热力学拓扑，揭示了非交换效应对相变拓扑结构的定性修正，并证明了体与边界具有相同的全局热力学拓扑，同时探讨了黑洞热力学第二定律对剩余质量的下界。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -324,7 +338,9 @@
         "tldr": "本文研究了大质量实标量场在具有空间变化有效质量的平行板间的卡西米尔效应，通过精确求解Klein-Gordon方程和zeta函数正则化得到真空能，揭示了其类朗道结构和附加贡献的行为。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -368,7 +384,9 @@
         "tldr": "本文考虑原初黑洞的自旋和五种暗物质晕轮廓，通过尘埃加热机制改进了对原初黑洞作为暗物质成分的约束，发现自旋增强辐射从而加强约束，且约束强度依赖于晕轮廓，等温轮廓最严格，伯克特轮廓最宽松。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -410,7 +428,9 @@
         "tldr": "利用高分辨率Lyman-α森林数据和流体动力学模拟，对暗物质-中微子相互作用强度给出了迄今最强的直接上限，并排除了之前暗示非零相互作用的迹象。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -457,7 +477,9 @@
         "tldr": "本研究结合非LTE镁钇丰度测定与星震学年龄，利用大样本恒星揭示了银河系盘面[Y/Mg]-年龄关系的空间变化。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -493,7 +515,9 @@
         "tldr": "本文利用观测者世界线上的局部测量构建单纯复形，以捕捉动态引力时空中可能涨落的拓扑信息。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -530,7 +554,9 @@
         "tldr": "本文指出并纠正了原文章在简化李纳型方程、忽略积分常数及参数变分法使用上的数学错误，并通过精确解析解证明原文章的主张与正确框架根本矛盾。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -563,11 +589,13 @@
       "summary": {
         "paper_id": "arxiv:2607.15167",
         "title_zh": "吸积毫秒X射线脉冲星SRGA J144459.2-604207爆发衰减的光谱研究",
-        "team": "Amar Deo Chandra（通讯作者），印度Aryabhatta天文研究所；单作者研究，非知名合作组",
-        "tldr": "利用NICER和Swift观测，研究2024年新发现AMXP在爆发衰减、再耀发及宁静态的X射线光谱演化，并探讨再耀发伴随的超快外流与射电辐射。",
-        "review": "本文对2024年新发现吸积毫秒脉冲星SRGA J144459.2-604207的爆发衰减期、再耀发和宁静态的NICER/Swift数据进行了光谱分析。采用吸收康普化模型拟合光谱，发现宁静态亦可用幂律或黑体模型描述。长期宁静态光度可由深地壳加热模型解释，而伴星星冕活动无法单独提供其X射线辐射。再耀发期间探测到近同时的超快外流与射电辐射，通过射电-X射线光度图等探讨了可能的喷流形成机制。",
-        "highlight": "首次系统研究该源从爆发到宁静态的光谱演化；发现再耀发伴随超快外流和射电辐射，为吸积双星中外流-喷流联系提供重要线索。",
-        "relation": "—"
+        "team": "第一作者与通讯作者为Amar Deo Chandra，唯一机构为印度Aryabhatta Research Institute of Observational Sciences，非知名合作组",
+        "tldr": "利用NICER和Swift观测研究新发现AMXP SRGA J144459.2-604207在2024年爆发衰减至宁静态的光谱演化及长期活动，探讨其加热机制与射电-流出关联。",
+        "review": "本文分析NICER和Swift对2024年爆发源SRGA J144459.2-604207在衰减、多次再耀发及宁静态的X射线光谱，用吸收Compton化模型拟合；宁静态光谱也可用幂律或黑体描述。结合历史数据研究约45年宁静态X射线活动，发现可用深地壳加热模型解释，并排除伴星冕活动主导。探测到再耀发与超快流出、射电发射准同时，探讨喷流形成的可能能量机制。",
+        "highlight": "首次详细研究该源爆发衰减全过程；在再耀发中捕捉准同时的X射线-射电辐射、超快流出，为吸积毫秒脉冲星的喷流触发机制提供线索；利用长期历史数据约束宁静态加热模型。",
+        "relation": "该源为X射线暂现源，其多波段辐射关联研究与GECAM等全天监测器对类似高能暂现现象的协同观测和物理机制研究具有参考意义。",
+        "authors_en": "Amar Deo Chandra (Aryabhatta Research Institute of Observational Sciences)",
+        "corresponding_en": "Amar Deo Chandra"
       }
     },
     {
@@ -606,12 +634,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15245",
-        "title_zh": "再发新星北冕座T下一次爆发时间的约束：复发、轨道相位及吸积状态演化",
-        "team": "裴松鹏（一作、通讯），六盘水师范学院等国内多家机构联合，非知名合作组",
-        "tldr": "综合历史复发、轨道相位和吸积状态三种约束，评估北冕座T（T CrB）下一次新星爆发的可能时间窗口，强调条件概率而非确定性预测。",
-        "review": "研究对象为最近且受密集监测的共生再发新星T CrB。利用三个有效历史复发间隔给出条件概率：截至2026年7月11日未爆发，年内爆发概率约30%，一年内约57%。历史爆发轨道相位不唯一，形成ϕ≈0.44和0.62两个松散对，用作监测窗口。分析1946年前兆下降机制，认为难以用纯吸积率下降或标准尘埃消光解释，可能涉及吸积重构与源依赖消光；若2026年新出现的下降为类似前兆，则2026年12月前后爆发仍可能；若亮度持续低于2014–2023高态，则由吸积亏损估计的最早爆发下限在2029年5月左右。",
-        "highlight": "融合复发、相位和吸积状态三重约束，澄清爆发时间的条件性与不确定性；对前兆下降提出“吸积重构+源依赖消光”的复合解释；基于吸积亏损给出最早爆发下限，为监测提供物理参考。",
-        "relation": "—"
+        "title_zh": "天蝎座T（T CrB）再次作为新星爆发的时间约束：复发间隔、轨道相位与吸积态演化",
+        "team": "第一/通讯：裴松鹏（六盘水师范学院）；主要机构：六盘水师范学院、中科院上海天文台、上海交通大学李政道研究所等；非大型合作组",
+        "tldr": "通过复发间隔、轨道相位和近期吸积态演化三种约束，给出T CrB下次爆发的条件概率和监测窗口，而非单一日期预测。",
+        "review": "研究结合历史复发间隔（平均79.86年）、四个历史爆发的轨道相位（形成~0.44和~0.62两组窗口）以及2014–2026年的光学光变（高态、变暗、重新下降），采用条件生存概率和吸积亏损模型评估爆发时间。截至2026年7月11日，2026年内爆发概率为30.2%，未来一年为56.9%；相位窗口给出2026年8月至2030年底的多个监测时段；若吸积速率不足，最早爆发下限约在2029年5月。结论强调数据支持多种条件性诊断场景，最终爆发时刻将检验其底层假设。",
+        "highlight": "创新点：首次将生存分析概率框架与吸积亏损计时相结合，避免单一预测；为观测规划提供清晰的轨道相位监测窗口；对1946年前兆下降提出吸积重构与源相关消光的复合解释。",
+        "relation": "—",
+        "authors_en": "Songpeng Pei (School of Physics and Electrical Engineering, Liupanshui Normal University), Xiaowan Zhang (School of Physics and Electrical Engineering, Liupanshui Normal University), Renzhi Su (Shanghai Astronomical Observatory, Chinese Academy of Sciences) et al.",
+        "corresponding_en": "Songpeng Pei"
       }
     },
     {
@@ -649,12 +679,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15130",
-        "title_zh": "Swift 新视界：BAT-GLIMPSE —— 利用成像与拼接技术实现指向与转动时段的伽马射线定位",
-        "team": "第一作者 Samuele Ronchini（GSSI / INFN）；合作者包含 NASA GSFC、Penn State、Schmidt Sciences 等 Swift BAT 团队成员",
-        "tldr": "开发开源自动化管道 BAT-GLIMPSE，填补 Swift-BAT 转动期间无法在轨触发的空白，实现指向与转动时段的低延迟伽马暂现源定位",
-        "review": "BAT-GLIMPSE 利用 BatAnalysis 包执行编码掩模成像与多时间片镶嵌，自动根据航天器姿态选择分析方法；在 66 个 GUANO 样本中验证，成功恢复 43 个事件的角分精度位置（偏移 ≲5′），转动期间 GRB 恢复率达 88%；在 LIGO-Virgo-KAGRA O4 运行中已实际应用，并已产出 7 次 GCN 通知；该管道与 NITRATES 协同操作，将 Swift-BAT 在轨定位速率提升约一倍，释放了 Swift 在时域与多信使天体物理中的全部潜力。",
-        "highlight": "首次实现 Swift-BAT 转动期间的自动化成像定位，填补关键空白；与 NITRATES 互补，显著提升多信使暂现源快速定位能力；全开源、已实时运行并产出科学结果。",
-        "relation": "BAT-GLIMPSE 与 GECAM 均聚焦高能暂现源快速定位与多信使研究，尤其针对伽马暴和引力波电磁对应体，两者可在协同监测、优势互补方面形成重要合力。"
+        "title_zh": "Swift上新：BAT-GLIMPSE实现指向与转动时段的伽马射线成像和马赛克定位",
+        "team": "第一作者/通讯作者 Samuele Ronchini (意大利 GSSI/INFN)，合作者来自 NASA 戈达德航天飞行中心、宾州州立大学等；属于 Swift-BAT/GUANO 合作组",
+        "tldr": "开发全自动管线 BAT-GLIMPSE，利用 Swift-BAT 转动时段的 TTE 数据实现暂现源成像定位，填补探测盲区。",
+        "review": "BAT-GLIMPSE 基于 BatAnalysis 包，根据卫星姿态自动选择成像或马赛克分析，处理指向和转动期间的数据。用 66 个 GUANO 已报伽马暴验证，成功恢复 43 个暴的角分定位，偏移 < 5′；转动事件恢复率达 88%。该管线已实时运行，与 NITRATES 协同将 Swift-BAT 定位率提升约一倍，在 LIGO–Virgo–KAGRA O4 观测中发挥关键作用。",
+        "highlight": "首次实现 Swift-BAT 转动期间的自动暂现源定位，弥补了以往无法触发的探测盲区；与 NITRATES 互补，大幅提高多信使天体物理的快速响应能力。",
+        "relation": "提升了伽马射线暂现源的广域定位和快速响应能力，尤其适用于短暴和引力波电磁对应体搜寻，与 GECAM 的高能暂现研究目标互补。",
+        "authors_en": "S. Ronchini (Gran Sasso Science Institute / INFN, Italy), T. Parsotan (NASA Goddard Space Flight Center, USA), J. DeLaunay (Pennsylvania State University, USA) et al.",
+        "corresponding_en": "Samuele Ronchini"
       }
     },
     {
@@ -693,7 +725,9 @@
         "tldr": "提出了一类由质量M和自旋a唯一表征、具有克尔视界且无额外主毛的规则轴对称黑洞几何，该家族可描述从规则时空到克尔黑洞的演化并允许准极端构型。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -734,7 +768,9 @@
         "tldr": "基于773个开放星团样本研究双星比率与环境的关系，发现双星比率早期确定且受动力学演化影响小，双星倾向于集中在星团内部。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -776,7 +812,9 @@
         "tldr": "本文考察了事件视界望远镜在生成首张黑洞图像过程中涉及的认识论与美学选择，论证了最有价值的证据并非最终单一图像，而是这些选择所展现的有限变异性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -812,7 +850,9 @@
         "tldr": "本文提出银河系PeV源周围的扩展发射可能源于过去耀斑的回声，并以天鹅座X-3为例进行了讨论。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -854,7 +894,9 @@
         "tldr": "利用ACT CMB透镜数据与VST ATLAS巡天交叉相关，分析星系、LRG和QSO的成团和偏置，发现QSO的σ8低于ΛCDM预期且有效质量异常高，星系在非线性尺度需反偏置。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -894,7 +936,9 @@
         "tldr": "本文利用精确超几何解非微扰处理强混合，分析了双场暴胀系统中等曲率自相互作用导致的宇宙学对撞机信号，发现了挤压双谱中的幂律包络和对数振荡。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -931,7 +975,9 @@
         "tldr": "本文描述了CAMB的重大更新，通过新的超球面贝塞尔函数处理和改进的数值方法，为高精度CMB和大尺度结构巡天提供快速、高精度的透镜化CMB和物质功率谱预测。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -974,7 +1020,9 @@
         "tldr": "本文通过一致地将热质量纳入玻尔兹曼方程，研究了宇宙学一级相变中气泡壁摩擦，发现热质量强烈抑制了红外规范玻色子的贡献，使摩擦主要由顶夸克主导。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1014,7 +1062,9 @@
         "tldr": "本文构建了暗物质混合中子星的自洽单流体相对论平均场模型，通过全局暗物质分数参数自洽描述暗物质分布，系统量化了暗物质对状态方程和宏观性质的影响，并建立了对撞机WIMP模型与多信使观测之间的直接联系。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1051,7 +1101,9 @@
         "tldr": "研究了Gauss-Bonnet参数和时空维度如何调节旋转测试粒子的混沌边界违反行为，发现五维中李雅普诺夫指数随自旋单调增长，而在八、九维度中呈现非单调变化",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1088,7 +1140,9 @@
         "tldr": "通过ALMA 0.88mm连续谱数据和辐射传输模型，计算了上蝎子座136个原行星盘的尘埃质量分布，发现其中位数尘埃质量比年轻盘低约6倍，证实了毫米尘埃在几百万年内的显著耗散。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1128,7 +1182,9 @@
         "tldr": "提出一种基于窄核近似的伪C_ℓ协方差估计方法，处理星表场重叠与离散噪声，在NaMaster中实现。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1162,7 +1218,9 @@
         "tldr": "本文计算了球对称时空中质量粒子沿类双曲测地线的径向作用量，利用特殊函数实现任意后闵可夫斯基阶的精确重求和，并推广到量子情形。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1195,7 +1253,9 @@
         "tldr": "利用复合光谱模型分析RAVE巡天数据，共识别出2813个双线光谱双星候选体，并与t-SNE自动分类结果吻合良好。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1240,7 +1300,9 @@
         "tldr": "通过流体动力学模拟研究双星系统对尘埃生长的影响，发现环双星盘中双星的扰动抑制了尘埃的沉降与生长，导致最大颗粒尺寸比单星盘小五倍，不利于流不稳定性驱动的团簇和行星形成",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1281,7 +1343,9 @@
         "tldr": "提出一种冻结核心多块方法克服DisPerSE在超大尺度宇宙网分析中的内存瓶颈，成功生成Gpc尺度的纤维目录并验证了质量-连接性幂律关系。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1326,7 +1390,9 @@
         "tldr": "本文介绍了针对超冷矮星凌星巡天设计的双通道成像仪DUET，通过二向色分束器和特定近红外滤光片实现同步测光并抑制大气水汽噪声。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1367,7 +1433,9 @@
         "tldr": "该论文研究了自偶环量子引力黑洞时空中极端质量比旋进的轨道动力学和引力波波形，并利用Fisher矩阵分析评估了未来引力波探测器对量子参数的约束能力。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1407,7 +1475,9 @@
         "tldr": "通过分析MeerKAT PTA的4.5年数据，给出了引力子质量的90%置信上限约2×10^{-23} eV/c^2，并预测SKA-PTA十年观测可将灵敏度提升至约10^{-24} eV/c^2。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1446,7 +1516,9 @@
         "tldr": "量化了不同源参数下超高能宇宙线光子通量，发现质子源产额最高，混合成分通量低于实验限值，纯质子情景受现有约束。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1484,7 +1556,9 @@
         "tldr": "本文通过三层对流盒子的数值模拟，研究了快速潮汐强迫下对流流动中的潮汐耗散效率，发现潮汐功率随频率的标度比以往更平缓，且有效湍流粘度仅弱依赖于强迫频率。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1517,12 +1591,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14828",
-        "title_zh": "致密天体建模中的光滑粒子流体动力学方法",
-        "team": "Stephan Rosswog（德国汉堡大学／瑞典AlbaNova大学），个人综述",
-        "tldr": "系统回顾SPH方法及其在致密双星（白矮星、中子星、黑洞）并合模拟中的进展与挑战。",
-        "review": "该综述首先介绍SPH作为牛顿理想气体动力学的数值方法，包括核近似、守恒性、新型无网格导数及激波处理等最新进展。接着扩展到广义相对论SPH，涵盖固定与动态时空中的全数值相对论演化。天体物理部分聚焦于白矮星-白矮星、中子星-中子星和中子星-黑洞系统的引力波驱动并合模拟，亦涉及高星族环境中的动力学碰撞。同时剖析了SPH在自适应性、精确守恒方面的优势，以及处理流体不稳定性、磁场和计算效率方面的挑战。",
-        "highlight": "全面更新版综述，新增全数值相对论SPH等前沿内容，深刻探讨了SPH在致密天体物理中的适用性与最新改进，是数值模拟领域的权威参考资料。",
-        "relation": "与GECAM探测的短伽马暴、引力波电磁对应体等高能暂现源密切相关，SPH对中子星并合等过程的模拟是理解这些事件动力学和辐射机制的理论基石。"
+        "title_zh": "致密天体建模中的SPH方法综述",
+        "team": "Stephan Rosswog（汉堡大学天文台、奥斯卡·克莱因宇宙粒子物理中心）；独立作者，不属大型合作组",
+        "tldr": "系统评述平滑粒子流体动力学（SPH）方法在致密天体模拟中的最新进展，涵盖数值技术、广义相对论推广及白矮星、中子星、黑洞并合应用。",
+        "review": "本文是一篇长篇综述，全面介绍了SPH作为拉格朗日无网格方法在牛顿理想气体动力学中的数值基础与最新改进（如无网格导数、激波处理）。随后详述广义相对论SPH，包含固定与动态时空下的相对论性表述，特别是全数值相对论SPH的最新发展。天体物理部分重点回顾了白矮星-白矮星、双中子星及中子星-黑洞并合的SPH模拟现状，强调引力波驱动的并合过程，并结合微物理输入与多信使影响。",
+        "highlight": "涵盖SPH从基础到前沿的完整谱系，首次系统总结全广义相对论动态时空下的SPH方法；展示了该方法在致密天体并合这一多信使天体物理核心问题中的独特优势与挑战。",
+        "relation": "—",
+        "authors_en": "Stephan Rosswog (Hamburg Observatory, University of Hamburg; The Oskar Klein Centre for Cosmoparticle Physics, AlbaNova University Centre)",
+        "corresponding_en": "Stephan Rosswog"
       }
     },
     {
@@ -1557,7 +1633,9 @@
         "tldr": "本文建立局部障碍并分类类时测地线，证明了单视界Birmingham-Kottler时空在非正宇宙常数与特定闭纤维条件下的$C^0$不可扩展性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1589,12 +1667,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14982",
-        "title_zh": "利用CHIME/FRB第一版星表检验宇宙各向同性",
-        "team": "一作：Jun-Yi Shen，通讯：Yuan-Chuan Zou（华中科技大学）；使用CHIME公开数据，非合作组正式成员",
-        "tldr": "利用CHIME/FRB第一版星表536个FRB，结合两点角相关函数和sigma-map方法检验宇宙各向同性，未发现显著偏离，但受限于小样本量。",
-        "review": "研究使用CHIME/FRB第一版星表的536个快速射电暴（排除银道面、每个重复暴仅计一次），通过两点角相关函数（2PACF）和sigma-map方法检验宇宙学原理的大尺度各向同性。利用CHIME注入数据构建随机样本以校正仪器选择效应，并用对数正态模拟星表和jackknife法估计统计误差。2PACF结果与各向同性期望一致，但协方差矩阵病态，无法进行稳健参数推断；sigma-map的角功率谱未显示显著方向性各向异性，但低多极矩误差较大。现有数据支持宇宙各向同性，但需更大FRB样本以提高灵敏度。",
-        "highlight": "首次利用CHIME/FRB真实数据开展各向同性检验，系统化地使用注入数据校正仪器偏差；联合两种互补统计方法，为未来FRB宇宙学应用提供方法框架。",
-        "relation": "—"
+        "title_zh": "用 CHIME/FRB 星表 I 检验宇宙各向同性",
+        "team": "第一作者 Jun-Yi Shen，通讯作者 Yuan-Chuan Zou；机构未提供，非知名合作组",
+        "tldr": "利用首批 536 个 CHIME FRB 检验宇宙大尺度各向同性，未发现显著偏离。",
+        "review": "研究对象为 CHIME/FRB 第一星表中 536 个快速射电暴，剔除重复暴和低银纬源。采用两点角相关函数（2PACF）和 sigma-map 两种独立方法，以 CHIME 注入数据构建随机星表校正仪器选择效应，并用对数正态模拟估计协方差。2PACF 整体与各向同性一致，但协方差阵病态无法稳健拟合参数；sigma-map 角功率谱无显著方向各向异性，低多极矩误差较大。结论是该样本暂时限制明显，未来更大 FRB 样本有望改善灵敏度。",
+        "highlight": "首次用 CHIME FRB 数据系统检验宇宙学原理，结合注入数据仔细扣除仪器效应，并同时采用方向无关和方向依赖的统计方法。",
+        "relation": "—",
+        "authors_en": "Jun-Yi Shen, Yuan-Chuan Zou",
+        "corresponding_en": "Yuan-Chuan Zou"
       }
     },
     {
@@ -1632,7 +1712,9 @@
         "tldr": "对太阳周围1 kpc内的OB星样本，通过本动速度阈值方法识别逃逸星，得到O型星和B型星的逃逸比例分别为约17.5%和6.9%。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1666,7 +1748,9 @@
         "tldr": "发现Starobinsky引力中黑洞标量化存在多分支结构，并扩展到带电情况，验证了热力学第一定律。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1705,7 +1789,9 @@
         "tldr": "通过分析AR 13664/8的磁场演化等，发现高磁复杂性和多个碰撞极性反转线是其极端CME生产率的关键。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1741,7 +1827,9 @@
         "tldr": "提出使用条件归一化流从多波段背景光图中直接估计未解析星系红移分布的方法，在模拟图像训练下实现亚百分比精度，并验证了其对不完全覆盖和统计不匹配的鲁棒性及层析分析潜力。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1785,7 +1873,9 @@
         "tldr": "提出了一种非微扰解析方法，研究强混合多场暴胀中的原初非高斯性，揭示了非微扰标度律。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1827,7 +1917,9 @@
         "tldr": "本文通过重新检验数据质量控制和多星建模，利用多种统计测试确认宽双星在低加速度下存在MOND型引力异常，并指出声称无异状的结论源于校准偏差或统计不足。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1865,7 +1957,9 @@
         "tldr": "通过建立黑洞背景湍流中颗粒的随机行走模型并求解福克-普朗克方程与模拟轨迹，发现逃逸概率高于平直空间且光谱与观测匹配，从而解释了低频X射线变异性",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1937,12 +2031,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14696",
-        "title_zh": "潮汐撕裂事件2024aepd的早期近红外超与快速盘冕演化",
-        "team": "第一作者吴永新，通讯作者王延安（国家天文台）；主要机构包括国家天文台、图尔库大学、哥本哈根大学、云南大学等，为国际多机构合作组",
-        "tldr": "报道TDE 2024aepd早期（~40天）近红外超过量和X射线谱从热盘主导到冕主导的快速转变。",
-        "review": "对红移0.0835的TDE 2024aepd开展约300天的多波段（X射线、紫外、光学、近红外、射电）监测。X射线谱早期为热盘成分+硬超，178天后转为幂律谱并硬化，指示热冕迅速形成与增强。~40天即探测到显著近红外超，谱形接近平坦幂律（Lν∝ν^0.5），明显偏离紫外-光学黑体的瑞利-金斯尾，更可能源自光球包层的自由-自由再处理。紫外-光学至近红外的谱拐折向高频移动，暗示再处理条件在基本不变的密度结构中演化。这是继AT2019azh和TDE 2025abcr后第三例存在早期近红外超的TDE。",
-        "highlight": "首次清晰展示TDE中吸积盘向冕主导态的快速光谱态转变；早期近红外超的平坦谱支持自由-自由再处理模型，挑战传统尘埃回响解释；为盘冕演化与近红外起源提供新线索。",
-        "relation": "TDE是高能暂现源的重要子类，其吸积盘-冕演化研究有助于理解黑洞吸积物理，可为GECAM等时域高能望远镜的瞬变源监测提供科学背景。"
+        "title_zh": "潮汐瓦解事件2024aepd的早期近红外超与快速盘-冕演化",
+        "team": "第一作者：吴永新 (Yongxin Wu)；通讯作者：王燕南 (Yanan Wang，中科院国家天文台)；主要机构：中科院国家天文台、中科院大学、图尔库大学等；国际合作团队（含 ePESSTO、GTC 等）",
+        "tldr": "在 TDE 2024aepd 中首次同步探测到早期 (~40 天) 近红外超和 X 射线盘-冕快速演化，为星冕形成和再处理机制提供新约束。",
+        "review": "对 ZTF 发现的 TDE 2024aepd (z=0.0835) 进行约 300 天的多波段监测 (光学/紫外/NIR/X 射线)。X 射线谱从初始的热盘主导加硬超出，迅速 (178 天起) 过渡到幂律主导并硬化，表明热冕快速浮现与增强。早期 (~40 天) 探测到显著的近红外超，其平谱幂律形态不能用紫外-光学黑体的瑞利-金斯尾巴解释，自由-自由再处理过程是更自然的起源。这是继 AT2019azh 和 TDE 2025abcr 后第三例报道早期 NIR 超的 TDE，暗示此类超可能普遍存在，并为研究 TDE 吸积、冕形成及再处理提供了宝贵样本。",
+        "highlight": "1) 首次在单一 TDE 中同时捕捉到早期 NIR 超与快速冕演化；2) NIR 超的谱斜率与再处理包层密度结构直接关联，可用于区分尘埃回响与自由-自由辐射；3) 盘-冕状态转变时标仅 ~200 天，为大质量黑洞吸积态的观测性演化研究提供了极佳窗口。",
+        "relation": "—",
+        "authors_en": "Yongxin Wu, Yanan Wang, Thomas M. Reynolds et al.",
+        "corresponding_en": "Yanan Wang"
       }
     },
     {
@@ -1977,12 +2073,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14627",
-        "title_zh": "饱和克尔玻色子云的相对论性潮汐跃迁",
-        "team": "李益坤（中科院新疆天文台/国科大），无知名合作组",
-        "tldr": "计算了克尔黑洞超辐射饱和玻色子云在双星潮汐下的相对论性跃迁矩阵元，发现相对论修正可达~22%，显著影响云耗尽量和双星历史。",
-        "review": "研究旋转黑洞周围的超轻玻色子云在双星潮汐场下的共振跃迁。采用完全相对论性方法：克尔准束缚态、双线性归一化和绝热四极潮汐，计算了五个Δm＝−2通道的矩阵元。与类氢近似相比，相对论结果最大降低21.67%，且当云半径远小于轨道距离时仍有超10%修正。分解分析表明，径向模轮廓贡献约80%的对数变化，双线性归一化约15%，潮汐几何贡献微小。对于中等Landau-Zener绝热性的共振，云耗尽预测修正达13.7%，表明相对论云结构在双星穿越饱和云共振时定量上不可忽略。",
-        "highlight": "首次在物理饱和分支上系统计算相对论性潮汐跃迁矩阵元，揭示类氢近似的不足；厘清了径向模轮廓和双线性归一化作为主要修正来源，为波色子云-双星相互作用的精确建模提供了基准。",
-        "relation": "—"
+        "title_zh": "饱和克尔玻色子云的相对论潮汐跃迁",
+        "team": "Yi-kun Li（中国科学院新疆天文台），单一作者",
+        "tldr": "计算了超辐射饱和标量玻色子云的相对论潮汐跃迁矩阵元，发现与氢原子近似差异最高达21.67%，并分析了修正来源及对云耗散的影响。",
+        "review": "本文研究旋转黑洞周围由超辐射产生的玻色子云在双星潮汐扰动下的共振跃迁。作者针对饱和分支上的|211⟩、|322⟩、|433⟩等主要云态，数值求解克尔准束缚模，采用相对论双线性归一化和绝热四极潮汐扰动，计算了五个Δm=-2跃迁道的矩阵元。与传统的氢原子模型相比，相对论修正最大可达21.67%，且主要来源于径向波函数轮廓（贡献约80%）和双线性归一化（约15%），而相对论潮汐几何贡献很小。将修正应用于Landau-Zener跃迁概率，中等绝热性下云耗散比例的改变达13.7%，表明在双星演化中必须考虑相对论云结构。",
+        "highlight": "首次给出多个主量子数饱和云的相对论跃迁矩阵元谱；通过分量替换分离了径向模式、归一化、潮汐几何的各自贡献；量化了矩阵元修正对云耗散的影响，展示相对论效应的观测重要性。",
+        "relation": "—",
+        "authors_en": "Yi-kun Li (Xinjiang Astronomical Observatory, Chinese Academy of Sciences; University of Chinese Academy of Sciences)",
+        "corresponding_en": "Yi-kun Li"
       }
     }
   ],

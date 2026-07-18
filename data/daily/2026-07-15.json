@@ -39,7 +39,9 @@
         "tldr": "本文提出了新的迎风嵌入式边界SBP算子，提高了精度和谱性质，并通过三维多块网格上的标量波动方程测试验证了其鲁棒性和准确性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -78,7 +80,9 @@
         "tldr": "使用宇宙学磁流体动力学模拟研究了星系合并中的磁场和星系团射电遗迹的起源。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -115,7 +119,9 @@
         "tldr": "本文通过更新CHRONOS和PEA24模型，发现它们高估了太阳总辐照度的长期趋势，使用地磁数据和直接观测约束后得出自蒙德极小期以来增长低于1 Wm⁻²，支持温和变化结论。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -155,7 +161,9 @@
         "tldr": "本文提出了评估X射线反射光谱法测量黑洞自旋质量的框架，基于可检测性、唯一性和稳健性原则，并制定了评估标准和报告清单。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -196,7 +204,9 @@
         "tldr": "本文在谱CR求解器CRESCENDO中实现了新的能量损失过程，改进了能量和压力计算，并提出了基于超新星遗迹的物理注入子网格模型，在理想化设置中测试了这些新实现。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -249,7 +259,9 @@
         "tldr": "利用MeerKAT多频偏振观测和LOFAR数据，揭示了星系团Abell 2034中存在射电遗迹、晕及陡谱丝状结构等复杂弥漫辐射，并通过偏振测量约束了团内磁场强度约为1 μG。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -282,12 +294,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14421",
-        "title_zh": "重复快速射电暴的时序记忆：爆发等待时间的ε-机因果重构",
-        "team": "Tom Kimpson (墨尔本大学数学与统计学院), Joseph O'Leary (斯威本科技大学创新行星研究所/墨尔本大学物理学院)；非知名合作组",
-        "tldr": "首次将ε-机因果重构应用于重复快速射电暴的爆发等待时间序列，发现至少两个源的爆发活动存在隐藏状态记忆，挑战简单的随机发射模型。",
-        "review": "该研究分析FAST和CHIME观测的三个重复快速射电暴（FRB 20121102A、FRB 20201124A、FRB 20220912A）的爆发等待时间序列，使用计算力学中的ε-机重构和CSSR算法，从符号化序列中提取最小预测模型并计算统计复杂度Cμ。结果显示两个FAST源均具有约1比特的统计复杂性（p<0.01），表明其爆发时序存在显著的长期记忆，而FRB 20220912A与无记忆过程一致；记忆时间跨度从数小时到数周，且主要源于不同观测期之间的活动率差异而非单个观测期内。仿真表明CHIME的短观测窗口会抑制类似结构，使FRB 20220912A的结果不明确。结论是至少这两个重复暴的爆发不是无记忆随机过程，而是由一个隐藏状态调制，在不同活动率区间切换，这为FRB发射机制提供了新的模型独立约束。",
-        "highlight": "创新点在于首次将ε-机因果重构引入天体物理暂现源分析，提供了完整的预测性因果架构，超越传统统计方法的局限性；结果揭示了重复FRB存在隐藏物理状态，对现有唯象和理论模型提出了区分性能力的要求。",
-        "relation": "—"
+        "title_zh": "重复快速射电暴的时间记忆：爆发时序因果结构的ε-机器重建",
+        "team": "Tom Kimpson（墨尔本大学）、Joseph O’Leary（斯威本科技大学/墨尔本大学）；非知名合作组",
+        "tldr": "首次将计算力学中的ε-机器重建应用于重复快速射电暴，发现两个FAST源具有约1比特的时间记忆，暗示爆发序列非随机。",
+        "review": "研究对象为FRB 20121102A、FRB 20201124A（FAST）和FRB 20220912A（CHIME）的等待时间序列。采用CSSR算法重构ε-机器，以统计复杂度Cμ量化预测所需的最小记忆。结果表明两个FAST源的Cμ≈1比特，显著偏离随机零假设；CHIME源表现为无记忆，但可能受观测时长限制。结论认为至少两个重复暴的爆发由隐藏状态调制，活动率在不同时段变化，记忆时标跨度数小时至数周。",
+        "highlight": "方法创新：首次将计算力学框架用于天体物理暂现源，提供模型无关的时序记忆约束；揭示重复FRB存在隐藏状态，挑战随机泊松发射模型；可推广至其他暂现源分析。",
+        "relation": "该方法可用于分析伽马暴、磁星暴发等高能暂现源的等待时间结构与隐藏状态，与GECAM科学目标存在潜在方法论关联，为暂现源活动机制研究提供新工具。",
+        "authors_en": "Tom Kimpson (School of Mathematics and Statistics, University of Melbourne), Joseph O'Leary (Innovative Planet Research Institute, Swinburne University of Technology; School of Physics, University of Melbourne)",
+        "corresponding_en": "Tom Kimpson"
       }
     },
     {
@@ -326,7 +340,9 @@
         "tldr": "本研究首次通过三维流体动力学模拟揭示，即使3:1共振半径位于盘外，激变变星盘仍可产生离心率并驱动正超驼峰，为高质量比系统的超驼峰现象提供了新解释。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -365,7 +381,9 @@
         "tldr": "本文在狄利克雷边界条件下将动力学熵定义为与演化零曲面相关的诺特荷，并证明其满足时间局域的第二定律，适用于一般动力学引力系统。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -407,7 +425,9 @@
         "tldr": "利用CAMPOS和VANDAM巡天数据分析512个原恒星盘，发现多重系统中的盘取向优先对齐且偏离随机分布，表明湍流碎片化非主导机制，高阶多重系统在Class I阶段后快速解体。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -490,12 +510,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14355",
-        "title_zh": "VENUS：一个 z=5.13 贫金属 II 型超新星的极暗宿主星系——以超高频率核心坍缩超新星开启金属增丰？",
-        "team": "主要作者：Yoshihisa Asada（多伦多大学 Dunlap 研究所）；多机构国际合作（含德克萨斯大学、哥本哈根大学、约翰·霍普金斯大学等）；隶属 VENUS 合作项目，利用 JWST 透镜场观测。",
-        "tldr": "首次对 z=5.13 的强透镜化贫金属 II 型超新星 SN Eos 的宿主星系进行多波段性质刻画，发现其为极端暗弱的莱曼α发射体，并揭示早期宇宙极低金属丰度环境中的核心坍缩超新星发生率可能异常高。",
-        "review": "研究对象为 JWST 发现的 gravitationally lensed 型 IIP 超新星 SN Eos（z=5.13，多像，总放大率 μ~53），其宿主星系本身极暗（M_UV ≈ -14.4 mag）。通过 NIRCam 图像叠加和点源减除，在静止系紫外和光学波段成功提取出宿主星系的微弱辐射及展宽弧状结构。NIRSpec 光谱显示宿主为一个高等效宽度莱曼α发射线星系，具有极弱的 [O III] 发射（[O III]/Hβ<0.7）和可探测的 Hα，结合超新星贫金属特征，确认宿主气体相金属丰度极低（<1% Z⊙）。结果表明该星系正处于初始化学增丰阶段，且在高红移贫金属矮星系中 CCSNe 的发生率可能比近邻宇宙高得多，可能与初始质量函数、恒星可爆性对金属丰度的依赖或星团中心碰撞有关。",
-        "highlight": "利用强透镜与 JWST 高灵敏度，首次在 z>5 的极暗（M_UV~-14）星系中解析 CCSNe 宿主，证实了极端贫金属环境的存在；为解释 JWST 盲场巡天中大量无宿主超新星候选体提供了物理依据，挑战了标准超新星率假设。",
-        "relation": "—"
+        "title_zh": "VENUS：一个极暗星系在z=5.13寄主贫金属II型超新星——见证以极高频率的核心坍缩超新星进行初始金属增丰？",
+        "team": "Yoshihisa Asada（多伦多大学邓拉普研究所）为第一作者兼通讯作者；主要机构含多伦多大学、得克萨斯大学奥斯汀分校、本古里安大学等；属于VENUS合作组",
+        "tldr": "利用JWST强透镜观测首次表征了一个z=5.13的极暗星系，其寄主的贫金属II型超新星SN Eos揭示了早期宇宙的化学增丰和极高的核心坍缩超新星率",
+        "review": "利用JWST/NIRCam和NIRSpec观测，结合VLT/MUSE数据，对一个被引力透镜放大（μ~53）的z=5.13极暗星系（MUV=-14.4）进行首次表征，该星系寄主了近期确认的贫金属II型超新星SN Eos。通过点源扣除和图像叠加，在紫外波段探测到宿主连续谱，并在光学波段分辨出透镜弧结构的发射线。结果显示该星系为Lyα发射线星系，具有极高等值宽度，而[OIII]线极弱，表明其气体相金属丰度极低（<1%太阳丰度），从而推断SN Eos爆炸于极贫金属环境，是早期化学增丰的直接见证。在如此极暗星系中发现CCSN暗示高红移贫金属环境下的超新星率可能显著更高，为依赖金属丰度的初始质量函数或大质量星可爆性提供线索，也为JWST无宿主超新星的起源提供了解释。",
+        "highlight": "首次在z>5极暗星系中定位并表征金属贫乏CCSN的宿主；强透镜放大突破探测极限，揭示极早期星系的金属增丰初态；极弱[OIII]线指示极低金属丰度，挑战传统发射线诊断；为高红移无宿主超新星提供直接样本。",
+        "relation": "—",
+        "authors_en": "Y. Asada (Dunlap Institute for Astronomy and Astrophysics, U. Toronto), S. Fujimoto (Dept. of Astronomy, U. Texas at Austin), J. F. V. Allingham (Dept. of Physics, Ben-Gurion U. of the Negev) et al.",
+        "corresponding_en": "Yoshihisa Asada"
       }
     },
     {
@@ -528,12 +550,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14337",
-        "title_zh": "黑洞候选体IGR J17091-3624 2022年爆发初期的X射线时间特性（AstroSat观测）",
-        "team": "第一作者：Sree Bhattacherjee；通讯作者：Biplob Sarkar；机构未注明，非知名合作组",
-        "tldr": "利用AstroSat高时间分辨率数据，研究黑洞候选体IGR J17091-3624爆发初期的C型QPO频率、rms和时滞的快速演化。",
-        "review": "研究对象为黑洞X射线双星IGR J17091-3624。利用AstroSat/LAXPC约3天观测，分析2022年爆发初期的快速X射线定时特性。发现C型QPO中心频率从3.30 Hz演化至7.78 Hz，伴随宽带噪声变化；分数rms呈正能量依赖且振幅随时间演变；时滞显示软滞后并随QPO频率演化。这些结果为爆发初期内吸积流几何结构的快速变化提供了重要约束。",
-        "highlight": "首次详细报道该源2022年爆发初期的QPO和时滞演化，捕捉到频率与时滞的快速变化，为吸积流几何演化提供新线索，凸显AstroSat的高时间分辨能力。",
-        "relation": "黑洞暂现源爆发初期的时变研究，与GECAM的高能暂现源多信使监测科学目标相关，可为极早期爆发过程的多波段研究提供时变参照。"
+        "title_zh": "黑洞候选体 IGR J17091-3624 在 2022 年爆发初期的 X 射线时变特性：AstroSat 观测",
+        "team": "Sree Bhattacherjee（第一作者）、Biplob Sarkar（第二作者），机构未提供；非知名合作组",
+        "tldr": "利用 AstroSat 研究 IGR J17091-3624 爆发初期的快速时变，追踪 C 型 QPO 及其能量依赖性的演化。",
+        "review": "使用 AstroSat/LAXPC 约 3 天的高时间分辨率数据，研究黑洞候选体 IGR J17091-3624 在 2022 年爆发初期的 X 射线时变。发现 C 型准周期振荡（QPO）的中心频率从 3.30 Hz 演化至 7.78 Hz，伴随宽带噪声变化。分数 rms 变异呈正能谱依赖且幅度时变，时间延迟表现为软延迟并随 QPO 频率演化。这些结果为爆发初期内吸积流几何的演化提供了观测约束。",
+        "highlight": "首次在爆发初期对该源进行精细时变分析，同时测量 QPO 频率演化和能量依赖的时间延迟，揭示了吸积流几何的动态变化。",
+        "relation": "—",
+        "authors_en": "Sree Bhattacherjee, Biplob Sarkar",
+        "corresponding_en": ""
       }
     },
     {
@@ -570,7 +594,9 @@
         "tldr": "通过全息模型中的受控零能量条件破坏实现小撕裂宇宙学，并揭示非厄米PT对称量子场论对偶中的新非Kasner区域，为小撕裂/CFT对应奠定基础。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -612,7 +638,9 @@
         "tldr": "证明了自由落入BTZ黑洞的原子在Boulware真空中会发出具有霍金温度的普朗克辐射，并揭示了其与相对等效原理及近地平共形量子力学的联系。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -663,7 +691,9 @@
         "tldr": "计算了宇宙光子背景自身γ-γ对产生的电子-正电子对及其次级辐射，并评估了其对宇宙伽马射线背景的贡献。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -700,7 +730,9 @@
         "tldr": "论文通过暴胀期间多矢量凝聚的动力学耦合提出各向同性矢量暗物质产生机制，但发现非高斯性和等曲率涨落约束相互矛盾。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -752,7 +784,9 @@
         "tldr": "本文基于HII星系的L(Hβ)-σ关系构建覆盖z~0至z~14的哈勃图，结合JWST和ALMA数据约束宇宙学参数，验证了HII星系作为独立探针追踪宇宙膨胀历史的可行性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -792,7 +826,9 @@
         "tldr": "通过改进暗物质晕模型并利用高能中微子观测，限制原初黑洞与粒子暗物质共存的参数空间，并讨论了一个促成的U(1)规范模型。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -828,12 +864,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14317",
-        "title_zh": "爱因斯坦探针快X射线暂现源扩展相对论喷流物理参数空间",
-        "team": "第一作者：Connery Chen（内华达大学拉斯维加斯分校）；通讯作者：Yihan Wang（威斯康星大学麦迪逊分校）、Bing Zhang（香港大学）",
-        "tldr": "通过数值模拟检验EP探测的快X射线暂现源（FXT）是否为离轴长暴，发现仅视角效应不足以解释全部事件，暗示其可能源自新的相对论性爆炸参数区。",
-        "review": "本文针对爱因斯坦探针（EP）探测的FXT，采用单成分及多成分喷流结构模型模拟II型伽马暴群体，并与已知样本在Eiso–Ep平面比对。结果显示，离轴观测可重现低光度GRB与X射线闪的能谱特征，但对于部分高光度、极低峰值能量（Ep≲10 keV）的FXT无法解释。作者认为，这些FXT难以单纯用经典长暴的视角效应描述，可能对应更低洛伦兹因子或不同喷流结构，从而拓展了相对论喷流的物理参数空间。",
-        "highlight": "首次利用EP新发现的FXT系统检验离轴GRB假说，揭示经典喷流模型的局限性，为高能暂现源分类和喷流物理提供了新视角。",
-        "relation": "FXT属X/γ射线暂现源，与GECAM的伽马暴及引力波电磁对应体监测目标紧密相关；EP的软X射线与GECAM的硬X射线/伽马射线波段互补，联合研究有助于揭示喷流统一物理图像。"
+        "title_zh": "爱因斯坦探针快X射线暂现源拓展相对论性喷流物理参数空间",
+        "team": "第一/通讯作者 Connery Chen（内华达大学拉斯维加斯分校），合作者 Yihan Wang（威斯康辛大学麦迪逊分校）、Bing Zhang（香港大学）；非大型合作组",
+        "tldr": "研究爱因斯坦探针（EP）探测的快X射线暂现源（FXTs），检验其是否可由经典II型伽马暴偏离轴观测解释，发现部分事件无法拟合，揭示其可能来自新的相对论性喷流参数空间。",
+        "review": "本文利用EP观测的FXTs与已知GRB样本，构建多种喷流结构（tophat、高斯、幂律等）数值模型，模拟不同视角下瞬时辐射的Eiso–Ep分布。标准喷流模型可解释偏离轴GRB 170817A、低光度GRB及部分X射线闪，但无法拟合一些能量较高而Ep极低的FXTs（如EP241113a），其位置远在经典GRB的3σ范围外。结果表明至少部分FXTs并非简单偏离轴经典GRB，可能涉及更低洛伦兹因子、不同喷流结构或额外辐射机制。这一矛盾提示FXTs开辟了暂现源喷流的新物理参数空间。",
+        "highlight": "首次系统性地检验EP-FXTs的偏离轴起源假说，揭示传统喷流模型与观测间的显著矛盾，为探索新爆发现象物理机制提供了直接观测动机。",
+        "relation": "—",
+        "authors_en": "Connery Chen (University of Nevada, Las Vegas), Yihan Wang (University of Wisconsin, Madison), Bing Zhang (University of Hong Kong)",
+        "corresponding_en": "Connery Chen"
       }
     },
     {
@@ -916,7 +954,9 @@
         "tldr": "本文分析了DESI DR1中的12颗高金属丰度白矮星，表征了其元素组成，发现吸积天体成分与内太阳系类似，包括干燥造岩物质和水合星子。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -955,7 +995,9 @@
         "tldr": "本文区分了黑洞自旋在视界尺度偏振测量中的不同特征来源，并回顾了从VLBI观测推断自旋的诊断方法，指出当前对自旋的约束仍然有限。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -991,7 +1033,9 @@
         "tldr": "研究了一维量子力学系统与欧几里得AdS JT引力耦合的效应，推导了观察者的传播子和关联函数，并分析了时间波动和全息解释。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1029,7 +1073,9 @@
         "tldr": "解析求解了振动型Kozai-Lidov循环的长期八极演化，发现其慢动力学等效为简单摆，并给出了轨道翻转的显式判据。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1065,12 +1111,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14356",
-        "title_zh": "Swift J1834.9-0846/W41区域的多波段非热辐射研究",
-        "team": "Manoel F. Sousa（第一作者），Rita C. Dos Anjos，Vitor de Souza（通讯作者）；机构：巴西圣保罗大学圣卡洛斯物理研究所；非知名合作组",
-        "tldr": "多波段能谱建模揭示W41延展TeV辐射由强子主导，中心磁星星风解释点源，并预测CTA可区分形态。",
-        "review": "针对Swift J1834-0846磁星/W41超新星遗迹区域，基于射电至TeV多波段数据，利用MCMC进行轻子与轻子-强子模型的宽带能谱拟合，探索单源与双组分（中心点源+延展）形态。结果显示纯轻子模型因磁场过低被排除，轻子-强子模型与超新星遗迹演化图像一致：延展TeV辐射由强子主导，中心点源由轻子磁星星风解释，限制磁星初始周期<0.2秒。CTA模拟30小时观测可区分形态并延伸能谱至10 TeV以上。",
-        "highlight": "首次对该区域复杂TeV结构进行系统的双组分建模；通过排除纯轻子模型确认强子加速贡献；对磁星诞生性质给出新约束；预言CTA可分辨形态。",
-        "relation": "该磁星是GECAM监测的软伽马重复暴候选源，本文对其星风辐射机制的研究直接关联暂现高能辐射的物理本质。"
+        "title_zh": "Swift J1834.9-0846/W41区域非热辐射的多波段研究",
+        "team": "M. F. Sousa (第一作者), R. C. Dos Anjos, V. de Souza；机构信息缺失",
+        "tldr": "通过多波段能谱建模，用轻子-强子双成分模型解释W41区域的延展TeV辐射和中心点源，并预言CTA可区分形态。",
+        "review": "本文从射电至TeV对Swift J1834-0846/W41区域进行宽带能谱分布建模，利用马尔可夫链蒙特卡洛方法分别检验纯轻子与轻子-强子模型。纯轻子模型因要求不现实的低磁场被排除，而轻子-强子模型给出的磁场强度和非热能预算与年老超新星遗迹高效加速宇宙线的图景一致。在双成分形态框架下，延展TeV辐射由强子过程主导，中心超出成分可用磁星Swift J1834-0846驱动的轻子磁星风云解释，限制其初始自旋周期≤0.2 s。模拟CTA观测表明，30小时曝光即可辨别形态并延伸能谱至10 TeV以上。",
+        "highlight": "首次为W41区域建立统一的轻子-强子双成分模型，揭示磁星风云与强子辐射的协同起源，并给出CTA未来可检验的定量预言。",
+        "relation": "—",
+        "authors_en": "M. F. Sousa, R. C. Dos Anjos, V. de Souza",
+        "corresponding_en": ""
       }
     },
     {
@@ -1103,7 +1151,9 @@
         "tldr": "本文扩展了 SpectralPINN 求解器以计算 Kerr-Newman 准正则模式，通过求解引力与电磁场耦合方程，首次系统计算了矢量主导的光子球模态，并提供了高精度公共数据集。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1156,7 +1206,9 @@
         "tldr": "通过弱透镜测量卫星星系子晕质量，发现子晕-恒星质量比随团心距增加而增加，证实了潮汐剥离等环境效应。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1200,7 +1252,9 @@
         "tldr": "利用APOGEE数据研究疏散星团NGC 752和Ruprecht 147中的原子扩散，通过多种元素丰度差异验证扩散模型并约束了星团年龄估计。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1255,7 +1309,9 @@
         "tldr": "利用LOFAR超深场观测数据，通过同步辐射强度梯度技术首次揭示了阿贝尔2255星系团从核心到维里半径的连贯大尺度磁场拓扑，发现磁场取向与星系团动力学过程相关，并由宇宙学磁流体动力学模拟支持。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1294,7 +1350,9 @@
         "tldr": "提出基于模拟的框架，通过条件归一化流学习HOD参数与EFT偏差参数的映射，形成信息性先验以替代无信息宽先验，从而提升21厘米强度映射的宇宙学约束。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1332,7 +1390,9 @@
         "tldr": "本文从模拟引力角度将AMPS防火墙论证转译到声学黑洞，定义了声学防火墙并预测了可检验的声子量热学信号。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1378,7 +1438,9 @@
         "tldr": "使用绿岸望远镜Ku波段对G107.2+5.20区域进行观测，通过13 GHz数据约束异常微波发射的谱能量分布并识别两个可能的旋转尘埃发射源，表明AME-尘埃相关性随环境变化。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1415,7 +1477,9 @@
         "tldr": "利用CMB各向异性功率谱检验非原初尘埃贡献，发现最多允许约5%的贡献，与GK25估计一致，但排除完全由尘埃贡献CMB的可能性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1452,7 +1516,9 @@
         "tldr": "论文通过冲击波形式扩展了OTOC计算，测试了静态斑块全息术，发现其结果与循环性和正性冲突。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1491,7 +1557,9 @@
         "tldr": "通过分析具有德西特核心的常规施瓦西黑洞族，揭示了内视界携带的熵在坍缩参数减少时逐步释放，最终在闵可夫斯基破缺时作为量子过程消失，并讨论了熵的量子化谱和经典不稳定性规避。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1540,7 +1608,9 @@
         "tldr": "通过新距离测量发现造父变星SV Vul及其星团Alicante 13可能属于一个包含Liu-Pang 1738的更广泛同岁星协复合体，但SV Vul显示过亮。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1582,7 +1652,9 @@
         "tldr": "通过复制扭结关联函数的解析延拓，在二维共形场论中构建了任意时间子区域的时间纠缠熵和Rényi熵，并在全息对偶中用复测地线和复宇宙弦对应，精确验证了边界与体计算的一致性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1619,7 +1691,9 @@
         "tldr": "论文研究透镜星团中超放大恒星的微引力透镜事件，利用其光变曲线探测暗物质中的小尺度结构，并拟合了观测数据。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1655,7 +1729,9 @@
         "tldr": "本文启发式地推导了自旋因子τ的均值和方差关于初始密度-势能交叉相关系数q的解析表达式，并通过Multiverse模拟数据集证明该关系在ΛCDM和wCDM宇宙学及不同平滑尺度下普适有效，从而为通过星系观测重建q并约束早期宇宙物理提供了可能。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1688,12 +1764,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14235",
-        "title_zh": "前随动系无碰撞相对论激波超长模拟：稳态证据与性质",
-        "team": "Garasev & Derishev，俄罗斯应用物理研究所；非知名合作组",
-        "tldr": "通过极长时间PIC模拟首次发现无碰撞相对论正负电子对激波可达到稳态，揭示磁场孤子结构并质疑传统模型对GRB余辉的解释。",
-        "review": "针对未磁化相对论正负电子对激波，在激波前随动系进行2D3V PIC模拟，利用移动壁边界和上游连续注入实现超长时间（>10^5 ω_p^{-1}）演化。发现下游区趋近时间无关的稳态，仅依赖上游温度，而上游前体演化较慢但对观测影响小。粒子费米加速能量有限，未形成真正幂律谱；下游磁场呈现类孤子结构（致密磁化核嵌入延展弱磁区）。稳态参数与GRB余辉观测值差距显著，对传统无碰撞激波模型解释伽马暴提出挑战。",
-        "highlight": "首次证明无碰撞相对论激波在极长演化后存在稳态，突破以往计算时长限制；揭示磁场孤子状拓扑和粒子加速能量饱和；对主流激波模型提出观测-理论偏差质疑。",
-        "relation": "研究GRB相对论激波的粒子加速与磁场产生机制，为理解GECAM等探测的伽马暴高能辐射提供基础物理约束。"
+        "title_zh": "前共动坐标系超长模拟揭示无碰撞相对论激波稳态",
+        "team": "Mikhail Garasev（第一兼通讯作者）、Evgeny Derishev，俄罗斯科学院应用物理研究所；非知名合作组",
+        "tldr": "首次通过前共动系超长PIC模拟（>10⁵ ωₚ⁻¹）证明无碰撞相对论正负电子激波可达到稳态，并揭示其下游磁场孤子结构等关键性质。",
+        "review": "研究对象为无磁化相对论正负电子对激波。采用独创的前共动坐标系2D3V PIC模拟，配合移动壁边界与连续注入，将模拟时长推至105000 ωₚ⁻¹，远超以往纪录。主要结果：激波在约50000 ωₚ⁻¹后进入准稳态，下游性质只依赖上游注入温度，与数值噪声无关；费米加速存在能量上限，未形成真正的幂律尾；下游磁场呈孤子状结构，高磁化致密核心嵌于弱磁化区域。结论认为传统碰撞less激波模型难以再现GRB余辉观测所要求的粒子能量，对其可行性提出质疑。",
+        "highlight": "首次将模拟时长延伸一个量级并捕捉到趋稳迹象；前共动系方法大幅降低计算成本；发现磁场孤子结构和稳态特性；对传统GRB余辉激波模型构成挑战。",
+        "relation": "直接关涉GRB余辉辐射区激波物理，为GECAM及其它高能暂现源探测的辐射机制解释提供关键理论输入。",
+        "authors_en": "Mikhail Garasev (Institute of Applied Physics, Nizhny Novgorod), Evgeny Derishev (Institute of Applied Physics, Nizhny Novgorod)",
+        "corresponding_en": "Mikhail Garasev"
       }
     },
     {
@@ -1731,7 +1809,9 @@
         "tldr": "在Sato超函数框架下，解决了带有时间函数的时空中双曲D-模的整体柯西问题，展示了微局部层理论方法在线性问题中的有效性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1771,7 +1851,9 @@
         "tldr": "本文研究了暗物质晕和额外维度潮汐电荷在黑洞图像中的简并问题，并表明仅利用当前EHT的阴影大小约束无法区分两者。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1808,12 +1890,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14043",
-        "title_zh": "太阳爆发中反螺旋度磁重联的观测证据",
-        "team": "第一作者常金瑞，通讯作者常金瑞、毕毅、杨波等，中国科学院云南天文台",
-        "tldr": "结合多波段观测与NLFFF外推，发现M7.0耀斑中螺旋度相反的磁系统发生重联，支持反螺旋度重联触发太阳爆发的新机制。",
-        "review": "研究2024年3月28日NOAA 13615活动区M7.0耀斑及热通道喷发。利用SDO/AIA、NVST、CHASE、GOES及ASO-S/HXI多波段数据，并通过HMI向量磁图进行非线性无力场外推和自螺旋度诊断。结果显示，喷发前暗条下方存在正螺旋度核心场，上方覆盖负螺旋度系统；喷发过程中脚点连接性从正转负，正螺旋度区域收缩，同时出现远程色球增亮、EUV条纹状结构及核心场足点的硬X射线源。这些现象表明喷发与反螺旋度磁重联密切相关，为反螺旋度重联导致磁场失稳提供了直接观测证据。",
-        "highlight": "首次清晰描绘相反螺旋度磁结构在喷发中的重联特征，多波段证据充分，拓展了对太阳爆发触发机制的认识。",
-        "relation": "—"
+        "title_zh": "太阳爆发中反旋向磁重联的观测证据",
+        "team": "第一作者：Jinrui Chang；通讯作者：Yi Bi；机构：中国科学院云南天文台。非知名合作组。",
+        "tldr": "通过多波段观测和NLFFF外推，为太阳爆发中相反螺度磁重联提供了直接观测证据。",
+        "review": "本文研究了2024年3月28日M7.0级耀斑爆发事件，利用SDO/AIA、NVST、CHASE、ASO-S/HXI等多波段数据与非线性无力场外推。在爆发过程中，低层正螺度核心磁场与上覆负螺度系统发生重联，导致足点连通性改变、正螺度区域收缩，并伴随远区色球增亮、间歇性EUV条纹结构和弱硬X射线源。这些特征表明，反旋向重联可能促使爆发磁结构的失稳。",
+        "highlight": "首次基于多波段观测和磁场外推，清晰地给出太阳爆发中相反螺度磁重联的完整证据链，并揭示了螺度空间演化与能量释放的关系。",
+        "relation": "—",
+        "authors_en": "Jinrui Chang (Yunnan Observatories, Chinese Academy of Sciences; University of Chinese Academy of Sciences), Yi Bi (Yunnan Observatories, Chinese Academy of Sciences; Yunnan Key Laboratory of Solar Physics and Space Science), Bo Yang (Yunnan Observatories, Chinese Academy of Sciences) et al.",
+        "corresponding_en": "Yi Bi"
       }
     },
     {
@@ -1849,7 +1933,9 @@
         "tldr": "本文利用CMB和BAO数据约束弦理论暗维度模型中暗物质由衰变引力子构成的假设，并预测Euclid和LSST等巡天实验检验该模型的能力。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1892,7 +1978,9 @@
         "tldr": "用强子模型和分析方法证明该源TeV伽马射线来自超新星遗迹逃逸的宇宙射线与分子云相互作用",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1927,7 +2015,9 @@
         "tldr": "本文对13颗HgMn星和14颗Am星进行了均匀光谱分析，确认了化学特殊性，研究了丰度与温度关系，并利用MESA演化模型探讨了冷HgMn星和热Am星可能的重叠演化序列。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -1970,7 +2060,9 @@
         "tldr": "本文概述了SKAO生命摇篮工作组如何利用不同频段追踪恒星与行星形成、探测前生命分子、表征系外行星磁场及搜索技术特征，从而为探索宇宙生命起源提供路线图。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2009,7 +2101,9 @@
         "tldr": "从因果作用原理几何推导出爱因斯坦方程，引力耦合常数由正则化长度平方给出，并得到系统的修正项。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2050,7 +2144,9 @@
         "tldr": "本文构建了四维AdS黑洞的视界微观结构模型，将视界面积分解为微观位点，通过组合学导出熵公式及其对数修正，并证明该部分占据态具有包含化学势和Smarr一致激发焓的热力学解释。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2091,7 +2187,9 @@
         "tldr": "本文探讨了SKA在探测日球层密度湍流和无线电波传播效应中的关键作用，强调其高灵敏度对识别射电源精细结构和诊断日球层环境的重要性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2136,7 +2234,9 @@
         "tldr": "通过多种观测分析和联合建模，揭示G6096是一个由三颗主序星组成的层级三合星系统，而非之前认为的包含致密天体的双星。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2174,12 +2274,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13913",
-        "title_zh": "南极长基线甚低频观测太阳耀斑的电离层响应",
-        "team": "Kamen Kozarev（第一/通讯作者），保加利亚科学院天文研究所、索非亚技术大学等；非知名合作组",
-        "tldr": "利用南极基地超长传播路径VLF信号探测太阳耀斑引起的电离层扰动，评估其作为耀斑监测手段的性能与限制。",
-        "review": "研究基于2025年1–2月南极Ohridski基地接收的21.4和24.0 kHz VLF信号，分析250个C、M级耀斑期间振幅响应。通过去除日变化和互相关分析，定义形态匹配与时间合理性双重检测标准。结果表明长基线对电离层D区扰动敏感，M级耀斑检测率达84%，C级约57%，并发现部分强事件VLF峰值早于软X射线峰值。路径光照条件和耀斑能谱是影响检测效率的关键因素。该工作表明南极长基线VLF观测可用于大范围耀斑监测，但需量化传播路径效应与背景变化。",
-        "highlight": "首次利用南极超长基线（>11000 km）VLF实现太阳耀斑电离层探测，揭示了路径集成灵敏度与频率依赖的时间延迟，证实D区电离对耀斑硬X射线的快速响应，为VLF耀斑监测提供了新实证。",
-        "relation": "—"
+        "title_zh": "南极长基线甚低频（VLF）太阳耀斑观测",
+        "team": "第一/通讯作者 Kamen Kozarev（保加利亚科学院天文研究所），合作者来自索非亚技术大学、瓦尔纳海军学院等，非大型合作组",
+        "tldr": "利用南极基地接收跨半球超长路径（>11000 km）的VLF信号，分析250个C/M级耀斑的电离层响应，评估VLF探测耀斑的能力与限制。",
+        "review": "在南极奥赫里德基地连续接收夏威夷（21.4 kHz）和缅因州（24.0 kHz）的海军VLF发射信号，路径长于11000 km。对2025年1月24日–2月8日250个C/M级耀斑进行叠加日变消除后，与GOES-18软X射线做交叉相关分析。总探测效率约60.8%，M级达84.2%，低频21.4 kHz灵敏度更高；耀斑响应时延受能谱和路径光照影响，强事件可出现负延迟。总体表明极区长基线VLF可有效探测较大耀斑，但弱耀斑受背景与传播路径效应限制。",
+        "highlight": "首次利用南极极地站开展长基线VLF耀斑观测；量化了探测效率对耀斑级别、频率和路径光照的依赖；强耀斑的负时延现象支持硬X射线提前电离D层的物理图像。",
+        "relation": "—",
+        "authors_en": "Kamen Kozarev (Institute of Astronomy and NAO, Bulgarian Academy of Sciences), Peter Petkov, Ivaylo Nachev, et al.",
+        "corresponding_en": "Kamen Kozarev"
       }
     },
     {
@@ -2223,7 +2325,9 @@
         "tldr": "这篇综述总结了计算星团成员概率的各种方法，比较了它们的优缺点，并提出了未来需要建立标准星团列表以系统测试和验证方法。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2262,7 +2366,9 @@
         "tldr": "提出一种基于超纯蓝宝石单晶模块阵列的GHz频率固态引力波探测器，用于搜索原初随机引力波背景和轻原初黑洞双星并合。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2297,12 +2403,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13930",
-        "title_zh": "NNStar：面向核物质与中子星物理的端到端 AI 代理",
-        "team": "第一作者：马尧，通讯作者：马永亮，南京大学（前沿科学学院、物理学院）；非知名合作组",
-        "tldr": "开发了一个端到端 AI 代理 NNStar，能自动完成从拉格朗日量构建到中子星质量-半径曲线拟合的全流程，无需人工干预。",
-        "review": "论文构建了一个基于大语言模型（LLM）的自主科学代理 NNStar，将相对论平均场（RMF）模型推导、运动方程求解、β 平衡状态方程构建、TOV 方程积分及贝叶斯联合分析等工具封装为可移植“技能”。代理能够根据自然语言指令自动选择模型、拟合参数并输出核物质饱和性质与中子星质量-半径关系。在已知 Walecka 型模型上验证了准确性，并演示了通过添加六阶自相互作用扩展模型的能力。该框架为高维参数空间中高效约束致密物质状态方程提供了可复现的 AI 驱动范式。",
-        "highlight": "首次将 LLM 代理引入核天体物理工作流自动化，实现“模型－数据－观测”闭环。以可移植“技能”形式交付，不依赖特定平台，易于扩展与复用。符号自动推导与确定性数值求解保障了物理结果的可审计性。",
-        "relation": "—"
+        "title_zh": "NNStar: 用于核物质与中子星物理的端到端 AI 智能体",
+        "team": "Yao Ma（通讯）、Yong-Liang Ma、Jia-Ying Xiong 等；南京大学物理学院/前沿科学学院；非知名合作组",
+        "tldr": "提出并实现了一种可移植的大语言模型智能体技能 NNStar，可全自动执行从拉格朗日量构建到中子星物态方程约束的完整物理流程。",
+        "review": "本文面向核物质状态方程与中子星结构的多尺度约束难题，将相对论平均场模型的符号推导、数值求解、物态方程构建、TOV 积分和贝叶斯评分集成为一个确定性物理引擎。通过将该引擎封装为标准的大语言模型智能体“技能”，NNStar 能够理解自然语言指令，自主规划并调用工具，无需人工干预即可完成模型参数微调和观测对比。论文展示了其可扩展性，例如为 TM1 模型添加六阶标量自相互作用并重新优化，同时测试了多种主流大语言模型驱动该技能的可行性。结果表明，这种基于技能的可信智能体为核天体物理研究提供了可复现、可审计的高效自动化框架。",
+        "highlight": "创新点在于将 LLM 智能体的推理规划能力与确定性的物理计算解耦结合，实现了模型无关、可移植的全自动工作流；支持符号自动推导运动方程，弥补了纯机器学习方法可解释性不足的缺陷。",
+        "relation": "GECAM 主要聚焦伽马暴与引力波电磁对应体，本文虽涉及中子星宏观性质（质量、半径、潮汐形变），但未直接讨论暂现辐射或 GECAM 观测，故无直接联系。",
+        "authors_en": "Yao Ma (School of Frontier Sciences, Nanjing University), Yong-Liang Ma (School of Physics, Nanjing University), Jia-Ying Xiong (School of Physics, Nanjing University)",
+        "corresponding_en": "Yao Ma"
       }
     },
     {
@@ -2337,7 +2445,9 @@
         "tldr": "基于φ映射拓扑流理论，系统研究了正则Bardeen-AdS类黑洞的热力学拓扑，发现了一个新的内部次级子类\\widetilde{W}^{0-}，并划分了参数空间的拓扑相。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2375,7 +2485,9 @@
         "tldr": "研究德西特空间中半经典观测者代数在扰乱时间尺度下的性质，发现时间提前效应破坏KMS条件，OTOC衰减为零并出现自由积代数，挑战了观测者中心静态斑块全息学。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2417,7 +2529,9 @@
         "tldr": "本文采用准绝热近似研究蒸发的宇宙学耦合黑洞，发现宇宙学耦合能显著延迟霍金蒸发或导致质量增长，并利用γ射线观测设定了原初黑洞丰度的约束。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2454,7 +2568,9 @@
         "tldr": "本文利用IRIS光谱观测，在光球到上色球五个高度诊断太阳谱斑中的MHD波周期和传播，发现主导周期在谱斑中不变，2-6分钟波传播到上色球，6分钟为截止周期，波速接近声速，并修正了谱线形成高度。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2495,7 +2611,9 @@
         "tldr": "本文研究类轴子暴胀子通过导数耦合产生右手征中微子的机制及其对非热轻子生成的影响，并确定了与观测重子不对称性一致的参数空间。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2534,7 +2652,9 @@
         "tldr": "将eROSITA X射线数据适配至Gammapy，与H.E.S.S.伽马射线联合分析脉冲星风云，首次在Gammapy中生成MSH 15-52的eROSITA图像并与H.E.S.S.比较。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2575,7 +2695,9 @@
         "tldr": "采用庞加莱截面、李雅普诺夫指数、KS熵和加权Birkhoff平均等方法，研究了完美流体暗物质中量子改进克尔黑洞的光子非线性动力学，揭示了量子引力修正和暗物质参数如何导致从规则到混沌的轨道转变，并探讨了对黑洞阴影和强场引力透镜的观测意义。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2615,7 +2737,9 @@
         "tldr": "通过叠加分析多个AGN-星系团对的伽马射线观测数据，提出了一种增强探测ALP-光子相互作用灵敏度的叠加分析方法，并利用模拟成像大气切伦科夫望远镜观测数据评估了该方法在neV质量范围探索ALP暗物质参数空间的性能。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2650,11 +2774,13 @@
       "summary": {
         "paper_id": "arxiv:2607.13755",
         "title_zh": "中子星内黑洞蒸发产生的高能中微子",
-        "team": "Ioannis Dalianis（塞浦路斯大学物理系），非大型合作组",
-        "tldr": "提出不对称暗物质在中子星内部塌缩形成微观黑洞，其霍金蒸发产生的长寿命粒子逃逸并衰变成高能中微子，为银河系高能中微子天文学提供新机制。",
-        "review": "研究对象为暗物质在中子星内积累、引力塌缩成微观黑洞并经历霍金蒸发的过程，重点关注逃逸的长寿命粒子衰变产生的高能中微子。通过解析暗物质捕获、热化、黑洞形成与蒸发的循环，识别了完全热化和部分热化两种区域，其中部分热化区形成温度显著高于中子星核心的准稳态暗物质云。推导了时间积分霍金辐射谱和次级中微子能谱，计算了银河系及河外弥散中微子通量，预言宽谱结构且谱峰能量在10 TeV以上，空间分布强烈集中于银河系中心。尽管预期事件率较低，但在有利微观和天体物理条件下，可解释晕到的银河系高能中微子通量的约百分之一，为中微子望远镜提供了明确的观测目标。",
-        "highlight": "创新点在于系统整合了中子星内暗物质致密化、热黑洞形成与蒸发的中微子产出链条，首次揭示了部分热化区对应的双温结构及其对重复循环的控制，并给出了特征中微子谱型和空间形态，为连接暗物质、黑洞热力学与高能中微子天文学开辟了新的观测窗口。",
-        "relation": "—"
+        "team": "Ioannis Dalianis（塞浦路斯大学物理系），单一作者",
+        "tldr": "研究非对称暗物质在中子星内部积累并坍缩为微观黑洞，通过霍金蒸发产生高能中微子的完整机制。",
+        "review": "论文提出非对称暗物质被中子星捕获后经自引力坍缩形成微观黑洞，霍金蒸发过程产生长寿命弱相互作用粒子逃逸并衰变为高能中微子。通过分析暗物质热化时间与坍缩循环的竞争，识别出部分热化状态，此时暗物质云温度远高于中子星核心，导致准稳态的重复黑洞形成与蒸发。计算了时间积分霍金发射谱、次级中微子谱以及预期银河系和弥散河外流强，信号特征为峰值能量在10 TeV以上的宽谱和向银心高度集中的空间分布。尽管事件率总体较低，在有利条件下或可解释百分之几的观测银河系高能中微子流，为联系暗物质、致密天体、黑洞热力学与中微子天文学提供了新窗口。",
+        "highlight": "首次系统研究中子星内暗物质微观黑洞作为持续高能中微子源，利用长寿命粒子逃逸机制绕过致密介质吸收，产生独特的宽谱与银心聚集信号，为间接探测霍金蒸发提供了新途径。",
+        "relation": "—",
+        "authors_en": "Ioannis Dalianis (Department of Physics, University of Cyprus, Nicosia 1678, Cyprus)",
+        "corresponding_en": ""
       }
     },
     {
@@ -2693,7 +2819,9 @@
         "tldr": "本文利用机器学习重新校准了RRab星的PAC(Z)关系并首次推导了RRc星的PAC关系，改进了Gaia DR3中RR Lyrae星的红化估计。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2743,7 +2871,9 @@
         "tldr": "为AIMS望远镜设计并实现了一个基于微服务架构的主控系统，实现了渐进式望远镜自动化。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2782,7 +2912,9 @@
         "tldr": "本文利用零响应通道研究在Taiji任务中探测引力量子场论预测的横向标量模式，并证明了该方法的有效性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2823,7 +2955,9 @@
         "tldr": "提出一种科学意图驱动的具身智能太阳望远镜概念系统，通过三层架构实现观测计划生成、执行与自演化闭环，并基于原型验证技术路径的可行性。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2865,7 +2999,9 @@
         "tldr": "利用帕克太阳探测器数据分析了嵌入在近太阳日球层电流片重联喷流剪切层中的12个离子尺度电流片，根据其出平面磁场分量行为分为三类，揭示了重联喷流剪切层是产生次级动力学结构的重要场所。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2904,7 +3040,9 @@
         "tldr": "使用PIC模拟研究无碰撞等离子体中非螺旋磁湍流的逆传输过程，发现其衰变指数低于MHD预测且自相似性因动力学效应被破坏。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2940,7 +3078,9 @@
         "tldr": "研究了暗物质晕中旋转规则海沃德黑洞的薄吸积盘，通过比较四种模型发现量子引力核心与暗物质晕对辐射效率有加性增强，并导致低频简并，该简并仅在高频维恩尾被打破。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -2983,12 +3123,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13625",
-        "title_zh": "KM3NeT/ARCA 与 ANTARES 联合搜寻致密中微子源",
-        "team": "V. Kulikovskiy 等，ANTARES & KM3NeT 合作组",
-        "tldr": "联合 ANTARES 与 KM3NeT/ARCA 数据搜寻点源中微子，未见显著信号，但展示了联合分析潜力。",
-        "review": "研究联合 ANTARES（2008–2022）与正在建设的 KM3NeT/ARCA 的数据，包括两个 ANTARES 和两个 ARCA 阶段样本（总曝光约 4541+336 天），利用 binned likelihood 方法在空间角距与能量维度上进行点源搜索。给出南天 90% CL 灵敏度和 5σ 发现势，并分析了 106 个候选天体。最显著候选 MG3 J225517+2409 的 pre-trial p 值为 1.2×10⁻⁴（3.69σ），考虑多源搜寻后验概率约 0.1，未发现显著信号。联合分析相对 ANTARES 单独分析改善约 10%，展示了 KM3NeT/ARCA 建成后的潜力。",
-        "highlight": "首次联合新旧世代中微子望远镜数据，为在建探测器的协同分析建立框架；对南天致密中微子源给出最灵敏的约束。",
-        "relation": "高能中微子与伽马暴、活动星系核耀发等高能暂现现象可能成协，为 GECAM 所关注的多信使研究提供互补信息。"
+        "title_zh": "KM3NeT/ARCA与ANTARES联合搜寻致密中微子源",
+        "team": "V. Kulikovskiy（INFN热那亚分部）等，代表ANTARES与KM3NeT合作组",
+        "tldr": "首次联合ANTARES与KM3NeT/ARCA数据，用分bin似然法搜寻点源高能中微子，展示联合分析潜力并给出106个候选源的结果。",
+        "review": "利用ANTARES（4541天）与KM3NeT/ARCA（早期19/21线，约336天）的追踪与簇射数据集，采用基于空间角度、重建能量及角误差的多维直方图似然法进行点源搜索。分析了106个预设天体，给出90%置信上限与5σ发现通量；当前灵敏度主要由ANTARES主导，但联合后整体提升约10%。最显著候选源为MG3 J225517+2409，预检验p值1.2×10⁻⁴（3.7σ），但经多次试次校正后显著性明显降低，无显著发现。结果验证了联合框架的可行性，并预示随着ARCA快速扩建，联合分析将在中微子天文学中发挥更关键的作用。",
+        "highlight": "首次实现KM3NeT/ARCA与ANTARES数据的正式联合分析；给出覆盖南天区的点源中微子最严限制；识别出候选源MG3 J225517+2409并展示其前景事件细节；系统评估背景建模不确定性，为未来更大探测器联合奠定方法基础。",
+        "relation": "—",
+        "authors_en": "V. Kulikovskiy (INFN, Sezione di Genova, Italy), B. Caiffi, S. Alves Garre et al.",
+        "corresponding_en": ""
       }
     },
     {
@@ -3026,7 +3168,9 @@
         "tldr": "通过N体模拟证明宇宙空洞的径向速度和速度弥散分布对Type 3相互作用暗能量模型参数敏感，在CMB、BAO、超新星联合约束下偏差约30%，可作为探测暗区相互作用的独立探针。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3075,7 +3219,9 @@
         "tldr": "利用XRISM/Resolve对食双星中子星低质量X射线双星AX J1745.6-2901进行X射线光谱分析，发现其Fe XXVI Lyα吸收线中存在两个离散速度成分（蓝移约-160 km/s和红移约+590 km/s），揭示出吸收气体的双峰速度分布，而非单一连续流。",
         "review": "",
         "highlight": "",
-        "relation": ""
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": ""
       }
     },
     {
@@ -3112,12 +3258,14 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13549",
-        "title_zh": "JW-ASTClaw：面向自主太阳望远镜的通用化多智能体框架及其在中国子午工程中的实现",
-        "team": "Tong Li-Yue (一作) 等，通讯作者未标明，主要机构为中国科学院国家天文台/中国子午工程团队，无特定知名合作组",
-        "tldr": "首次在运行的太阳望远镜上部署基于大语言模型的端到端自主控制系统，实现多智能体协同的实时自适应调度和科学观测",
-        "review": "研究对象为太阳全天面多层磁像仪（SFMM），引入名为JW-ASTClaw的自主控制系统。系统采用“感知-决策-执行”三层多智能体架构，包含数据质量、云层分析和耀斑检测三个感知智能体，中央推理引擎负责融合与冲突解决。在10个观测日的档案数据上，云检测准确率达100%且零误报，活动区数量与NOAA太阳区域摘要报告接近（102 vs. 100）。系统提升了科学驱动观测的可及性，支持快速耀斑响应，并增强恶劣天气下的数据可用性和部分多云时的可观测性。",
-        "highlight": "首次将大语言模型自主系统实际应用于太阳望远镜；框架可移植性高，仅需适配指令接口；云检测和活动区识别验证精度突出；支持从云LLM到本地推理再到规则兜底的优雅降级，适应弱连接场站。",
-        "relation": "—"
+        "title_zh": "JW-ASTClaw: 可推广的自主太阳望远镜多智能体框架及其在中国子午工程中的实现",
+        "team": "第一作者 Li-Yue Tong，通讯作者未明确（可能 Yuan-Yong Deng），中国科学院国家天文台／怀柔太阳观测站；中国子午工程团队",
+        "tldr": "首次在运行中的太阳望远镜上部署基于大语言模型的多智能体全自主控制系统。",
+        "review": "本文介绍 JW-ASTClaw 系统，采用感知-决策-执行三层解耦架构，通过模型上下文协议（MCP）实现感知与决策逻辑的跨仪器复用。三个感知代理（数据质量、云分析、耀斑检测）将资深观测经验编码为 LLM 可调用的规则，实现风震、云况和活动区自动识别。中央推理引擎进行多源融合与冲突消解，支持从云端 LLM、本地推理到规则制动的三级降级，保障野外台站不稳定网络下的运行。跨季节历史数据验证显示云检测准确率 100%，活动区数量与 NOAA 报告基本吻合（102 vs 100），显著提升了目标驱动的观测可及性和坏天气下的数据可用性。",
+        "highlight": "① 首次在运行天文望远镜上实现 LLM 全自主控制；② 三层解耦架构使感知决策逻辑无需修改即可移植到其他望远镜，仅需适配指令接口；③ 三级降级机制确保连接中断时可靠运行；④ 将资深观测员经验编码为明确规则，提升系统透明度和可解释性。",
+        "relation": "—",
+        "authors_en": "Li-Yue Tong, Jia-Ben Lin, Yuan-Yong Deng et al.",
+        "corresponding_en": ""
       }
     }
   ],
