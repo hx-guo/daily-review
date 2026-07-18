@@ -1,0 +1,1056 @@
+{
+  "date": "2026-07-12",
+  "review": {
+    "date": "2026-07-12",
+    "overview": "共收录 5 篇（总览生成失败）。",
+    "highlights": "—",
+    "trends": "—"
+  },
+  "items": [
+    {
+      "paper": {
+        "id": "arxiv:2607.10929",
+        "source": "arxiv",
+        "title": "Investigating the electron temperature of [Ar IV] in planetary nebulae using the DESIRED database",
+        "authors": [
+          "J. García-Rojas",
+          "E. Reyes-Rodríguez",
+          "J. E. Méndez-Delgado",
+          "C. Morisset",
+          "D. Jones",
+          "C. Esteban",
+          "F. F. Rosales-Ortega",
+          "V. Gómez-Llanos",
+          "M. Orte-García",
+          "L. E. Martínez-Rivero",
+          "Y. Hong",
+          "X. Fang"
+        ],
+        "abstract": "(Abridged) We investigate the behaviour of the electron temperature derived from [Ar IV] lines, Te([Ar IV]), in a sample of PNe to characterize the thermal structure of high-excitation gas and compare it with the predictions of standard photoionisation models. Using the DEep Spectra of ionised REgions Data Base Extended (DESIRED-E), we selected a sample of 57 PNe for which Te([Ar IV]), Te([O III]), and ne([Ar IV]) could be determined simultaneously and homogeneously. We performed a detailed comparison between these observational diagnostics and a suite of over 160000 photoionisation models from the Mexican Million Models Database (3MdB). We find that the observed Te([Ar IV]) values are systematically higher than those predicted by pure photoionisation models for a given Te([O III]), i.e. approximately 31 percent of the PNe sample exhibits a Te([Ar IV]) more than 2sigma higher than photoionization model predictions. This discrepancy persists regardless of the specific set of auroral lines used for the diagnostic or the choice of atomic data (transition probabilities and collision strengths) adopted in the calculations. Other high-ionisation Te diagnostics, compiled from the DESIRED database or from the literature, however, do not show such behaviour, though the statistics for these are much more limited. The fact that models succeed for the highest-ionisation species but fail specifically for [Ar IV] suggests that the discrepancy is not due to a global inner-nebula heating mechanism. Instead, it points toward a localized physical effect or a limitation in the current understanding of the ionisation stratification and atomic physics specific to the Argon ion stages. This \"[Ar IV] anomaly\" must be resolved to ensure the reliability of abundance determinations in high-excitation nebulae.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.GA"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10929v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10929v1",
+        "doi": null
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "该论文研究行星状星云中的电子温度，与GECAM关注的伽马暴、磁星、FRB等高能暂现天体完全无关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.11966",
+        "source": "arxiv",
+        "title": "Closed-form representations of extended astrophysical thermonuclear functions",
+        "authors": [
+          "Subrat Parida"
+        ],
+        "abstract": "Reaction rate determination is an essential problem in the theories of cosmological and stellar nucleosynthesis. I investigate the closed-form analytic evaluation of thermonuclear reaction rates, which are necessary for both cosmic and celestial nucleosynthesis. An alternate velocity distribution to the Maxwell-Boltzmann distribution can be considered in nuclear fusion processes occurring in the interior of stars when there is a diversion from hydrostatic equilibrium. The extension of non-resonant reaction rate integrals in standard, cut-off, depletion, and screening instances is examined in this study, utilising the MacDonald distribution. This study is primarily on the use of generalized special functions that represent the extended non-resonant thermonuclear functions in mathematical physics. Moreover, an attempt is made to analyse the reaction probability integrals corresponding to the several forms of the slowly varying cross-section factor S(E).",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.11966v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.11966v1",
+        "doi": "10.1007/s10509-026-04600-5"
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "恒星核合成",
+          "核反应率"
+        ],
+        "layer": "edge",
+        "reason": "论文研究恒星内部核反应率的解析表示，属于恒星天体物理学，与GECAM关注的高能暂现天体及其电磁对应体无直接关联，仅可能间接涉及超新星核合成，相关性极低。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10845",
+        "source": "arxiv",
+        "title": "GroundBIRD: First On-Sky Responsivity Calibration at the Teide Observatory",
+        "authors": [
+          "Alessandro Fasano",
+          "Yonggil Jo",
+          "Ricardo Tanausú Génova-Santos",
+          "Makoto Hattori",
+          "Shunsuke Honda",
+          "Kenichi Karatsu",
+          "Chiko Otani",
+          "Michael Peel",
+          "José Alberto Rubiño-Martín",
+          "Yoshinori Sueno",
+          "Junya Suzuki",
+          "Osamu Tajima",
+          "Tomonaga Tanaka",
+          "Miku Tsujii",
+          "Eunil Won"
+        ],
+        "abstract": "GroundBIRD is a cosmic microwave background (CMB) experiment located at the Teide Observatory (altitude $\\sim2400$ m, Spain) designed to measure large-angular-scale intensity and polarization anisotropies ($\\ell \\gtrsim 6$ to $\\ell \\sim 300$) to constrain the reionization optical depth, $τ$. The instrument employs a rapidly rotating telescope with a fixed elevation of $70$ deg and is equipped with 161 lenslet-coupled kinetic inductance detectors (KIDs): 138 at 145 GHz for CMB observations and 23 at 220 GHz for thermal dust characterization, all operated at $\\sim280$ mK. This scan strategy provides daily coverage of $\\sim$40% of the Northern Hemisphere sky.   We present the first on-sky responsivity calibration model for GroundBIRD, derived from repeated observations of Jupiter using the twelve most stable KIDs from GroundBIRD array 6 (GB06). The analysis establishes and validates a calibration methodology for this detector subset while providing the first empirical characterization of detector responsivity as a function of precipitable water vapor (PWV). We find that the responsivity decreases by approximately 30% across the sampled PWV range and is well described by a linear PWV-dependent model. Comparison with Moon observations reveals distinct detector operating regimes associated with different optical loading conditions.   The Jupiter-based calibration achieves better than 20% precision under typical observing conditions and better than 20% relative stability over a one-month timescale. These results establish the basis for extending the calibration methodology to the full GroundBIRD focal plane.",
+        "categories": [
+          "astro-ph.IM",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10845v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10845v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "宇宙微波背景",
+          "宇宙学"
+        ],
+        "layer": "edge",
+        "reason": "论文涉及CMB观测，与GECAM关注的高能暂现天体无关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10889",
+        "source": "arxiv",
+        "title": "Post-Newtonian N-Body Dynamics in Extended Theories of Gravity",
+        "authors": [
+          "Antonio Tedesco"
+        ],
+        "abstract": "We derive the complete first post-Newtonian (1PN) Lagrangian and corresponding equations of motion for the relativistic $N$-body system in Scalar-Tensor-Fourth-Order Gravity (STFOG), including the Non-Commutative Spectral Geometry (NCSG) sector as a special case. In the regime $Φ\\sim Ψ$ ($γ\\sim 1$), the linearized fourth-order field equations are solved in the Standard Post-Newtonian gauge, and the variational Lagrangian is built directly from the point-particle action. The resulting dynamics is governed by three Yukawa functions $ζ$, $\\mathcal{W}$ and $Ξ$, which encode the scalar, gravitomagnetic and three-body sectors and depend on the effective masses $(m_R,m_Y,m_φ)$ of the additional propagating modes. In this context, we show that the nonlinear metric component ${}^{(4)}\\!g_{00}$ plays no role at 1PN level. The 1PN orbital motion of the above extended theories is thus obtained in closed form, and the Einstein--Infeld--Hoffmann equations are recovered in the corresponding general-relativistic limit. The formalism provides a common framework for the relativistic celestial mechanics of the Solar System, binary pulsars such as PSR J0737-3039, Galactic-center stellar orbits and triple systems.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10889v2",
+        "pdf_url": "https://arxiv.org/pdf/2607.10889v2",
+        "doi": null
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "引力理论",
+          "后牛顿动力学"
+        ],
+        "layer": "edge",
+        "reason": "论文研究扩展引力中的后牛顿N体问题，与GECAM关注的高能暂现源和多信使观测无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10834",
+        "source": "arxiv",
+        "title": "Asteroseismic forward modelling of 36 $β$ Cep pulsators and inferences on their internal differential rotation",
+        "authors": [
+          "Mathijs Vanrespaille",
+          "Dario J. Fritzewski",
+          "Vincent Vanlaer",
+          "Conny Aerts"
+        ],
+        "abstract": "Asteroseismic observations of the interior rotation of main sequence stars have shown that angular momentum transport is much more efficient than expected. Which transport mechanisms are responsible for this is still unclear. Detections of radial differential rotation provide valuable constraints on these transport mechanisms. This has been detected in several massive main sequence $β$ Cep pulsators, even though fewer than ten $β$ Cep stars have been asteroseismically modelled in detail so far. We aim to expand the sample of asteroseismically forward modelled $β$ Cep pulsators to maximally exploit their potential to observationally constrain angular momentum transport mechanisms. To that end, we seek to constrain their rotation profiles. We searched for rotational splitting of non-radial modes in a large $β$ Cep sample with identified mode degrees. These were subjected to a novel forward modelling approach, which consistently accounts for second-order rotation effects using the state-of-the-art StORM oscillation code. We successfully modelled 36 $β$ Cep stars and constrained crucial parameters such as their initial mass, internal rotation frequency, convective core mass, and age. Like in intermediate-mass main sequence stars, the internal rotation rate globally decreases in $β$ Cep stars as they evolve along the main sequence. Radial differential rotation is constrained in 17 $β$ Cep stars. The rotation rate in at least 14 stars varies by more than 10%. Of these 14 stars, ten have their rotation rate decreasing from the core to the surface while it is the opposite in four of them. We affirm that radial differential rotation is common in $β$ Cep stars. Moreover, our constrained rotation profiles suggest that the typical $β$ Cep rotation profile may be non-monotonic.",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10834v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10834v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "恒星物理"
+        ],
+        "layer": "edge",
+        "reason": "论文研究β Cep变星星震学与内部旋转，属于恒星天体物理，不在GECAM关注的高能暂现源、多信使天体物理及相关任务范围内。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10816",
+        "source": "arxiv",
+        "title": "On correlated noise in the LIGO-Virgo network: a test of the stochastic gravitational-wave background hypothesis",
+        "authors": [
+          "S. C. Ulhoa",
+          "B. C. C. Carneiro",
+          "F. L. Carneiro",
+          "L. V. A. Cunha"
+        ],
+        "abstract": "We revisit the inter-detector cross-correlation criterion used in gravitational-wave validation by extending the analysis of Creswell et al.~\\cite{Creswell2017} to nine LIGO--Virgo candidate events from the O2 and O3 observing runs. For each event, we analyze all three detector pairs (H1$\\times$L1, H1$\\times$V1, L1$\\times$V1) and compare the normalized cross-correlation function $C(τ)$ in the event window with an empirical ensemble of $N=200$ surrounding off-source windows, using a band-pass-only pipeline. In 26 of 27 pair-measurements, the event peak is statistically indistinguishable from the corresponding noise ensemble, including all pairs involving the independent Virgo detector. The only exception is GW190412 in the H1$\\times$L1 pair. We conclude that the cross-correlation statistic does not provide a robust standalone separation between event and noise. We interpret the persistence of comparable correlation structure in the LIGO--Virgo pairs as evidence that the strain data may contain a continuous correlated physical component, for which a stochastic gravitational-wave background is a plausible candidate.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10816v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10816v1",
+        "doi": null
+      },
+      "score": {
+        "score": 15,
+        "tags": [
+          "引力波"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦LIGO-Virgo引力波探测中的相关噪声与随机引力波背景假设，不涉及电磁对应体或高能暂现源，与GECAM科学目标关联极弱。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10843",
+        "source": "arxiv",
+        "title": "Comparing twist-free axisymmetric gravitational waves near the black hole threshold",
+        "authors": [
+          "Ananya Adhikari",
+          "Tomáš Ledvinka",
+          "Daniela Cors",
+          "Thomas W. Baumgarte",
+          "Bernd Brügmann",
+          "David Hilditch"
+        ],
+        "abstract": "The threshold of black hole formation in axisymmetric vacuum gravity is proving to be more complicated than had been anticipated but, following recent advances, a consensus between independent codes and methods is emerging. Building on earlier work we provide further details of a comparison between three independent numerical codes (the bamps, prague, and sphGR codes), paying special attention to the relative strengths and weaknesses of each and examining various features of near-threshold collapse of vacuum gravitational waves for the first time. In particular, we observe quasi-universal strong-field features appearing in curvature scalars. Focusing on geometric features on the symmetry axis, we construct reference coordinates to aid the comparison of strong-field data. We evolve, for the first time, time-asymmetric wave initial data within the bamps code. To the extent possible with current methods we compare apparent horizons and attempt to determine what causes difficulties in the classification of these strong-field and highly dynamical spacetimes. In all cases the results from the three codes agree very well.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10843v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10843v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文属于gr-qc数值相对论，研究真空引力波黑洞阈值，与GECAM高能天体物理及多信使研究无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10730",
+        "source": "arxiv",
+        "title": "Scalar-induced gravitational waves from a box-shaped curvature power spectrum",
+        "authors": [
+          "Zu-Cheng Chen",
+          "Lang Liu"
+        ],
+        "abstract": "We compute the stochastic background of gravitational waves (GWs) produced at second order in cosmological perturbation theory by a primordial curvature power spectrum that is flat in $\\ln k$ over a finite band $[k_-,k_+]=[k_*e^{-Δ},k_*e^{+Δ}]$ and vanishes elsewhere. This logarithmic box interpolates between a monochromatic spectrum as $Δ\\to0$ and a locally scale-invariant plateau as $Δ\\to\\infty$, and its sharp boundaries make the geometry of the source convolution unusually transparent. Working in the radiation era, we reduce the convolution to a compact integral over the overlap between the momentum triangle and the box, and evaluate it analytically in two regimes. For a narrow box we show that, to leading order in the width, the spectrum equals the Dirac-spectrum result multiplied by a purely geometric overlap factor $Φ_{\\rm box}(κ,Δ)$; this factor turns the infrared slope from $k^{3}\\ln^{2}k$ into $k^{2}\\ln^{2}k$ at a break $k_b=2k_*\\sinhΔ$. For a broad box we separate the lower edge, the scale-invariant interior, and the upper edge, derive the leading behaviour in each (an infrared $k^{3}\\ln^{2}k$ rise, a scale-invariant plateau, and a quartic cut-off at the hard endpoint $k=2k_+$), and combine them into a single uniform formula cast as a product of two universal, $Δ$-independent edge functions. We also provide an integral-free closed-form surrogate for these edge functions for use in parameter scans.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10730v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10730v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "引力波",
+          "宇宙学"
+        ],
+        "layer": "edge",
+        "reason": "论文研究早期宇宙标量诱导引力波背景，与GECAM关注的引力波电磁对应体和暂现源无关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10718",
+        "source": "arxiv",
+        "title": "Nonlinear electrodynamics and stability of spherically symmetric space-times in scalar-tensor gravity",
+        "authors": [
+          "Kirill A. Bronnikov",
+          "Rustam Ibadov",
+          "Feruza Y. Shaymanova",
+          "Najibullokhon M. Shukurullokhon"
+        ],
+        "abstract": "We study linear perturbations of static, spherically symmetric solutions of scalar-tensor theories (STT) of gravity from the Bergmann-Wagoner-Nordtvedt class, sourced by nonlinear electrodynamics (NED). We obtain a general expression for the effective potential $V_{\\rm eff}$ governing the perturbation dynamics for theories with arbitrary scalar-electromagnetic interaction of the form $L(ψ, F)$, where $ψ$ is a scalar field and $F = F_{μν} F^{μν}$ the electromagnetic invariant. This consideration includes, in particular, arbitrary scalar self-interaction potentials and scalar fields that can be phantom in some regions of space-time (the so-called trapped ghosts). Only radial (monopole) perturbations are considered here as the most likely ones to cause an instability. It is shown, in particular, that if NED has a correct Maxwell weak field limit, the zero charge limit of $V_{\\rm eff}$ does not contain any trace of NED, and the perturbation dynamics is the same as for vacuum STT solutions. The previously obtained stability results for STT-Maxwell solutions are shown to be extended without change to STT-NED solutions with equal electric and magnetic charges, implying $F =0$.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10718v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10718v1",
+        "doi": null
+      },
+      "score": {
+        "score": 0,
+        "tags": [
+          "理论物理",
+          "引力理论"
+        ],
+        "layer": "edge",
+        "reason": "该论文研究标量-张量引力中的非线性电动力学和时空稳定性，属于基础物理理论，与GECAM关注的高能暂现天体和多信使天体物理无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10713",
+        "source": "arxiv",
+        "title": "Regular black holes with Minkowskian cores: causal structure and observational degeneracy",
+        "authors": [
+          "Francisco Tello-Ortiz",
+          "Y. Gómez-Leyton",
+          "Alejandro Rueda",
+          "Kazuharu Bamba",
+          "Manuel González-Espinoza"
+        ],
+        "abstract": "We construct a new family of asymptotically flat static and rotating regular black holes characterized by a Minkowskian core and a finite two-horizon structure. The solutions are obtained within the framework of gravitational decoupling and provide an analytically tractable realization of non-singular black hole geometries with a regular interior and well-defined asymptotic properties. We investigate the optical appearance of the rotating spacetime through shadow observables and ray-traced images of geometrically thin, optically thin accretion disks. Despite the substantial differences between the interior geometry of these solutions and that of singular black holes, their optical signatures are found to remain remarkably close to those of Schwarzschild and Kerr spacetimes with the same asymptotic parameters. Our results show that markedly different black hole interiors may lead to nearly indistinguishable optical appearances, highlighting the challenges of probing the internal structure of compact objects using current shadow and imaging observations.",
+        "categories": [
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10713v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10713v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "其他"
+        ],
+        "layer": "edge",
+        "reason": "规则黑洞的理论研究，与GECAM的高能暂现和多信使观测目标无关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10701",
+        "source": "arxiv",
+        "title": "Rediscussion of eclipsing binaries. Paper 32. The eccentric F-type system EY Cephei",
+        "authors": [
+          "John Southworth"
+        ],
+        "abstract": "EY Cep is a detached eclipsing binary containing two F0 V stars in an orbit with a period of 7.97 d and an eccentricity of 0.440. We determine the physical properties of the system using light-curves from the Transiting Exoplanet Survey Satellite and published spectroscopic measurements. We find masses of 1.523 +/- 0.008 Msun and 1.494 +/- 0.014 Msun, radii of 1.491 +/- 0.004 Rsun and 1.446 +/- 0.004 Rsun, and temperatures of 7070 +/- 170 K and 6990 +/- 150 K. We calculate the system's distance to be 300.3 +/- 3.8 pc, in excellent agreement with the Gaia DR3 parallax, and estimate its age to be 220 Myr. We find no evidence for pulsations, but there are hints of variation in the eclipse times potentially attributable to a third body on a longer-period eccentric orbit.",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10701v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10701v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "食双星",
+          "恒星物理"
+        ],
+        "layer": "edge",
+        "reason": "论文研究普通食双星系统，与GECAM关注的高能暂现源及多信使天体物理无关"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10760",
+        "source": "arxiv",
+        "title": "The KM3NeT 220 PeV event: a neutrino messenger from the grand unification scale?",
+        "authors": [
+          "Vernon Barger"
+        ],
+        "abstract": "The 220~PeV neutrino KM3-230213A, in tension with IceCube and Auger unless narrow, admits a two-body reading: relic decay $X \\to ν\\barν$ with $m_X \\approx 4.4\\times10^{8}$~GeV. Consistency with neutrino and $γ$-ray bounds sets $τ/f \\approx 10^{29}$--$10^{30}$~s, lifetime over relic fraction. For a flavored $^1S_0$ onium, the operator scale lands in the Majorana-mass range of unified models: one Higgs insertion gives a singlet mediator, $M/|C_7|^{1/3} \\approx 10^{14}$--$10^{16}$~GeV across the allowed relic fraction; two give the seesaw window; Dirac or Majorana neutrinos select the branch. We give the construction and its decisive tests.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10760v2",
+        "pdf_url": "https://arxiv.org/pdf/2607.10760v2",
+        "doi": null
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "宇宙线/暗物质"
+        ],
+        "layer": "edge",
+        "reason": "论文讨论220 PeV中微子事件，属于高能中微子宇宙线范畴，与GECAM电磁对应体核心关注相关度较低，但属于astro-ph.HE边缘范围。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10679",
+        "source": "arxiv",
+        "title": "Corrections to inflationary models induced by non-minimal coupling between scalar field and curvature",
+        "authors": [
+          "I. V. Fomin",
+          "S. V. Chervon",
+          "E. S. Dentsel",
+          "B. Mishra"
+        ],
+        "abstract": "In this paper, we consider possible corrections to the characteristics of inflationary models based on a specific parametrization of the non-minimal coupling between the scalar field and curvature. At the inflationary stage, these corrections lead to a deformation of the scalar field potential and a corresponding deviation in the determination of the cosmological perturbation parameters. At the same time, it is shown that the proposed parametrization yields a description of the reheating stage dynamics completely analogous to the case of Einstein gravity with minimal coupling between the scalar field and curvature. For a model-independent analysis of inflationary corrections induced by a non-minimal coupling, a classification of inflationary scenarios based on the expansion in series of the dependence of the tensor-to-scalar ratio on the spectral index of scalar perturbations is considered. It is also shown that this approach allows for the inclusion of well-known inflationary models as special cases.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10679v2",
+        "pdf_url": "https://arxiv.org/pdf/2607.10679v2",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "该论文研究暴胀模型修正，属于宇宙学，与GECAM关注的高能暂现天体和多信使天体物理无关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10818",
+        "source": "arxiv",
+        "title": "Late-time emission-line profiles from kilonova models",
+        "authors": [
+          "S. A. Sim",
+          "O. Just",
+          "Z. Xiong",
+          "A. Bauswein",
+          "L. P. Mulholland",
+          "G. Leck",
+          "G. Martínez-Pinedo",
+          "L. J. Shingles",
+          "C. E. Collins",
+          "F. McNeill",
+          "M. McCann",
+          "C. P. Ballance",
+          "C. A. Ramsbottom"
+        ],
+        "abstract": "Numerical simulations suggest that neutron star mergers eject material with complex, non-spherical density and composition distributions. Here we use two-dimensional configurations of merger ejecta obtained from long-term hydrodynamic simulations to quantify the influence of such ejecta structure on the shapes of spectral lines in the optically thin limit. We consider three example elements of interest for kilonova modelling (selenium, tellurium and tungsten) and illustrate profile shapes for a sample of models and observer orientations. Many of our calculations yield complex profile shapes, including cases with multiple peaks and/or extended wings on scales large enough to be relevant to interpreting observations. For selenium and tellurium, our late-phase profile shapes are most sensitive to the structure of the low-velocity ejecta (~0.1c) launched after the merger from the relic black-hole torus system, while for heavier elements the contribution from the more rapidly expanding and more neutron-rich dynamical ejecta launched right after the merger is more significant and leads to broader line shapes. We also find that the dynamical influence of heating due to the decay of r-process elements can lead to considerably broader peaks than suggested by models that neglect this effect. Although idealised, our calculations demonstrate that line shapes are sensitive to the ejecta structure and could therefore constrain the polar observation angle or underlying properties of the merger that determine the spatial distributions of elements in the ejecta components, such as the binary mass ratio or even the equation of state of high-density matter.",
+        "categories": [
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10818v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10818v1",
+        "doi": null
+      },
+      "score": {
+        "score": 95,
+        "tags": [
+          "kilonova",
+          "引力波电磁对应体",
+          "中子星并合"
+        ],
+        "layer": "core",
+        "reason": "该论文研究千新星晚期发射线轮廓，直接属于引力波电磁对应体（kilonova）的核心科学目标。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.10818",
+        "title_zh": "千新星模型晚期发射线轮廓",
+        "team": "第一/通讯作者 S. A. Sim，贝尔法斯特女王大学；合作单位含 GSI 亥姆霍兹中心、理研、达姆施塔特工大等。非知名合作组。",
+        "tldr": "利用二维抛射物模型，研究千新星晚期发射线轮廓如何受抛射物非球对称结构和观测方向的影响。",
+        "review": "本文选用长期流体力学模拟给出的中子星并合二维轴对称抛射物构型，在光学薄极限下计算硒、碲、钨三种 r 过程元素的晚期发射线轮廓。考虑不同双星模型（对称/非对称、短/长寿命超子星余态、有无 r 过程加热）和观测取向，采用 tracer 粒子与均匀温度/电离假设构建线形。结果表明线宽和形状复杂，常出现多峰或宽翼；对中轻元素（Se、Te）线形主要敏感于低速（≲0.1c）黑洞环抛射物，而对重元素（W）则动力学抛射物贡献突出；r 过程加热会使谱线增宽。结论指出，晚期线形可约束抛射物几何、观测角乃至双星质量比和物态方程。",
+        "highlight": "首次基于多维度抛射物模型系统展示千新星晚期发射线的复杂非对称轮廓，证明线形观测有望成为诊断抛射物结构和双星性质的新工具。",
+        "relation": "千新星是双中子星并合的电磁对应体，本文对其晚期谱线的研究可为 GECAM 等探测引力波事件暂现源的多波段证认和物理参数约束提供重要参考。"
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10672",
+        "source": "arxiv",
+        "title": "Do primordial quark pellets solve the dark matter puzzle?",
+        "authors": [
+          "Domenec Espriu"
+        ],
+        "abstract": "We show that primordial quark pellets (PQP), ultra dense quark matter mini-stars formed at around 1 TeV, naturally arise in a radiation dominated universe if rare baryon overdensities are produced by collapsing Peccei-Quinn domain walls or similar superhorizon structures. Solving the Tolman-Oppenheimer-Volkoff equation with a hot quark equation of state, we find stable solutions with a maximum mass of $10^{-2}$ solar masses and radii of approximately 100 meters, although the formation mechanism favours much smaller objects. Once formed, PQPs cool and evolve intro mini neutron stars or stable strange matter nuggets, depending on the QCD ground state. Formation probabilities of $10^{-9}$ to $10^{-4}$ per horizon volume could suffice to reproduce the present dark matter density without altering Big Bang Nucleosynthesis or requiring entropy dilution. PQPs completely evade microlensing constraints if their mass is below $10^{-7}$ solar masses, a range that could easily accommodate most of the dark matter. PQPs thus potentially constitute a conservative, Standard-Model based, and observationally testable solution to the dark matter puzzle.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO",
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10672v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10672v1",
+        "doi": null
+      },
+      "score": {
+        "score": 25,
+        "tags": [
+          "暗物质"
+        ],
+        "layer": "edge",
+        "reason": "论文主要讨论暗物质候选体，属于GECAM边缘主题中的暗物质相关，与直接科学目标关联不大。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10637",
+        "source": "arxiv",
+        "title": "Detector-level simulation closure of radio air-shower reconstruction with fixed equal-prior geomagnetic templates",
+        "authors": [
+          "Xin Xu",
+          "Pengfei Zhang",
+          "Fufu Yang"
+        ],
+        "abstract": "Autonomous radio arrays reconstruct air showers from trigger-selected ADC traces rather than from ideal electric-field footprints. We present a detector-level simulation-closure test that connects RF-chain-triggered ZHAireS event packages to direction, energy and quality labels. Geometry is reconstructed from voltage amplitudes and station timing. The ADC traces are then inverted through the RF chain, restricted to 50--200 MHz and reduced to the geomagnetic peak amplitude $|E_{x_π}|$ in a radio-core-recentered shower plane. Energy is obtained by fitting a fixed equal-prior mean of locked iron and proton template families. The estimator uses neither the simulated primary label nor an empirical amplitude or zenith scale. Of 972 event packages, 711 pass a common reconstructed-quality gate in the raw-noisy weighted, raw-hard-denoised equal-weight and clean-reference branches. Their mean fractional energy residuals are $+1.20\\%$, $+0.55\\%$ and $-0.10\\%$, with event-to-event scatters of $14.51\\%$, $14.40\\%$ and $14.25\\%$, respectively. The median truth-level opening-angle residual is $0.050^\\circ$ in this selected simulated sample. These aggregate values conceal a zenith-dependent energy residual, from about $-8\\%$ at $60^\\circ$--$70^\\circ$ to $+11\\%$ at $80^\\circ$--$85^\\circ$, with substantially larger biases in sparsely populated edge bins. The results establish an internally consistent reconstruction baseline for selected simulated event packages, not a deployed-array resolution or exposure.",
+        "categories": [
+          "astro-ph.IM",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10637v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10637v1",
+        "doi": null
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "宇宙线",
+          "高能天体物理"
+        ],
+        "layer": "edge",
+        "reason": "该论文关注宇宙线空气簇射的无线电重建，属于高能天体物理边缘主题，与GECAM核心目标不直接相关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10658",
+        "source": "arxiv",
+        "title": "Polarization-dependent observational signatures of Weyl-coupled photons around a black hole",
+        "authors": [
+          "Mao-Yuan Wan",
+          "Chen Wu"
+        ],
+        "abstract": "A photon coupled non-minimally to the Weyl tensor propagates differently in its two linear polarization states: the vacuum around a black hole becomes a birefringent medium. On a Schwarzschild background the coupling $α$ splits the photon sphere and the critical impact parameter of the two polarizations, producing a double shadow and a polarization-dependent photon ring; the two shadow edges separate by $62\\%$ of the shadow radius at $α/M^2=0.75$. We compute a unified set of wave-optical and geometric-optical observables for both polarizations across a range of $α$: greybody factors, absorption cross sections, differential cross sections and their glories, a backward birefringence signal, shadows, photon rings, and null trajectories. The two-polarization scattering matrices are extracted with a Riccati--Hankel matching scheme that keeps the phase-sensitive observables reliable, and the geometric-optics chain is cross-validated with three independent ray tracers. The cleanest diagnostic is the backward signal: it is protected by parity and vanishes identically at $α=0$.",
+        "categories": [
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10658v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10658v1",
+        "doi": null
+      },
+      "score": {
+        "score": 15,
+        "tags": [
+          "黑洞理论",
+          "偏振"
+        ],
+        "layer": "edge",
+        "reason": "论文研究Weyl耦合引起的黑洞双阴影与偏振特征，属于理论引力范畴，与GECAM关注的高能暂现天体和多信使科学目标无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10927",
+        "source": "arxiv",
+        "title": "The Emergence of Astroparticle Physics: From Cosmic-Ray Physics to a new Scientific Field",
+        "authors": [
+          "Luisa Bonolis"
+        ],
+        "abstract": "Astroparticle physics emerged during the late twentieth century as a new interdisciplinary field at the intersection of particle physics, astrophysics, and cosmology. This article examines the historical mechanisms through which it took shape as a distinct scientific field, focusing on the progressive interaction of previously separate experimental cultures, research traditions, and scientific communities. It argues that astroparticle physics emerged not through the simple convergence of established disciplines, but through the gradual reorganization of high-energy research around scientific problems that transcended traditional disciplinary boundaries. Three broad historical trajectories shaped this process: the transformation of postwar cosmic-ray physics; the emergence of a high-energy Universe through relativistic astrophysics and new astronomical windows; and the growing interaction between particle physics and cosmology. Their progressive interaction transformed naturally occurring particles into astrophysical messengers and the Universe itself into a laboratory for investigating fundamental physics beyond the reach of terrestrial accelerators. At the same time, new experimental practices, international collaborations, scientific forums, and institutional structures progressively gave organizational form to this emerging research landscape. More broadly, the emergence of astroparticle physics illustrates how new interdisciplinary fields develop through the co-evolution of scientific questions, experimental cultures, research communities, and institutions.",
+        "categories": [
+          "physics.hist-ph",
+          "astro-ph.HE",
+          "astro-ph.IM"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10927v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10927v1",
+        "doi": null
+      },
+      "score": {
+        "score": 40,
+        "tags": [
+          "宇宙线",
+          "多信使"
+        ],
+        "layer": "related",
+        "reason": "论文回顾了天体粒子物理学的历史，包含宇宙线与多信使研究，属于GECAM关注边缘领域。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.10927",
+        "title_zh": "天体粒子物理学的兴起：从宇宙线物理到新科学领域",
+        "team": "Luisa Bonolis（科学史与科学哲学学者）",
+        "tldr": "从科学史角度考察天体粒子物理学如何从多学科交叉中独立成形，揭示其涌现机制。",
+        "review": "论文以天体粒子物理学在20世纪后期的形成史为对象，通过梳理战后宇宙线物理的转型、高能天体物理新窗口的开启及粒子物理与宇宙学的互动三条历史轨迹，指出该领域并非已有学科的简单汇聚，而是围绕超越传统边界的基本问题逐步重组实验文化与科学社群的结果。自然粒子被重新定义为“天体信使”，宇宙成为超越加速器能标的基础物理实验室；同时，新型国际合作与制度结构为这一新兴领域提供了组织形态。研究强调，跨学科领域的诞生是科学问题、实验文化、研究社区与制度的共同演化过程。",
+        "highlight": "以独特的历史社会学视角，系统揭示了天体粒子物理学的学科构建逻辑，突出实验文化融合与制度创新在交叉领域演化中的关键作用，为理解当代多信使天文学格局提供了深刻的背景分析。",
+        "relation": "天体粒子物理学是高能暂现源（如伽马射线暴、引力波电磁对应体）研究的学科母体，本文的历史梳理有助于从宏观上理解GECAM等当代高能探测实验的科学脉络与定位。"
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10612",
+        "source": "arxiv",
+        "title": "Nucleosynthesis of Pop III and Fe-enriched Pop II Pair-Instability Supernovae",
+        "authors": [
+          "Wenyu Xin",
+          "Ken'ichi Nomoto",
+          "Chun-Ming Yip",
+          "Xianfei Zhang",
+          "Qian-Fan Xing",
+          "Shaolan Bi",
+          "Gang Zhao"
+        ],
+        "abstract": "Recently discovered very metal-poor (VMP) star LAMOST J1010+2358 shows a peculiar abundance pattern that is remarkably well fit by a Pop III pair-instability supernova (PISN) of $\\simeq 260$ M$_\\odot$. Motivated by this, we investigate the nucleosynthetic characteristics of Pop III and Pop II PISNe to provide theoretical constraints for future observations. This paper is divided into two parts. First, we explore the evolution and nucleosynthesis of Pop III PISNe with initial masses of 130 - 300 M$_\\odot$. Our main aim is to investigate how the uncertainty in $^{12}$C$(α,γ)^{16}$O and $^{16}$O+$^{16}$O reaction rates affect their explosion properties and nucleosynthesis. We find that the yields of odd-$Z$ elements are particularly sensitive to the $^{12}$C$(α,γ)^{16}$O rate, while the production of Fe-peak elements shows significant sensitivity to both rates. Second, we investigate the nucleosynthetic features of Pop II PISNe formed in gas enriched exclusively by Pop III PISN ejecta. By employing a time-dependent convection model during the explosion, we demonstrate that metal enrichment increases opacity and triggers vigorous convective mixing. This hydrodynamic effect significantly enhances the explosion energy and $^{56}\\text{Ni}$ production. Consequently, Pop II PISNe exhibit distinct chemical signatures, including a weaker odd-even effect and enhanced Zn-Ge production, providing unique diagnostics for identifying PISN remnants in the early Universe.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10612v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10612v1",
+        "doi": null
+      },
+      "score": {
+        "score": 30,
+        "tags": [
+          "高能暂现天体",
+          "超新星"
+        ],
+        "layer": "edge",
+        "reason": "论文研究超新星核合成，属于高能暂现天体相关物理，但与GECAM核心科学目标（GRB、引力波对应体等）无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10614",
+        "source": "arxiv",
+        "title": "Scalarization of Einstein-Euler-Heisenberg black hole with multiple horizons",
+        "authors": [
+          "Hong Guo",
+          "Yun Soo Myung"
+        ],
+        "abstract": "Scalarizations of the Einstein-Euler-Heisenberg (EEH) black hole (EEHBH) with multiple horizons are investigated in the EEH-scalar theory by introducing a quadratic scalar coupling to the Maxwell term. For mass $M=1$ and Euler-Heisenberg parameter $μ=0.03$, the magnetically charged EEHBH admits four horizon families (low, cold, negative, and hot), with triple horizons appearing in the narrow band of magnetic charge $q\\in[0.95,1.0065]$. The onset scalarization around the low, cold, and high horizons is then analyzed for the magnetic charge $q=0.5,\\,1,\\,2$, implying infinite branches of scalarized black holes for each case. We construct the three fundamental branches of scalarized black holes. From the positivity condition of their mass, we find the upper bounds on primary scalar charges $q_{s}$ for scalarized low and cold horizons. These bounds determine the allowable regions for the Hawking temperature and entropy. Furthermore, we perform a time-domain stability analysis and find that the instabilities arise only at small scalar charge regime. Therefore, stable and physically viable scalarized black holes exist in an intermediate window of the primary scalar charge for low and cold horizon solutions and a lower bound for hot horizon solution.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10614v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10614v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "引力理论"
+        ],
+        "layer": "edge",
+        "reason": "论文属于纯引力理论，与GECAM高能暂现天体监测无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10603",
+        "source": "arxiv",
+        "title": "Einstein Frame Regularization of the JNW Spacetime: From Brans-Dicke Singularity to Ellis Wormhole",
+        "authors": [
+          "A. Bhattacharya",
+          "R. N. Izmailov",
+          "R. Kh. Karimov"
+        ],
+        "abstract": "We propose a novel way to achieve the regularization of the JNW globally naked singularity sourced by the canonical Einstein minimally coupled scalar field (EMS). The key idea is to complexify (Wick rotate) the JNW parameters, which yields a regular metric that surprisingly represents a twice asymptotically flat regular traversable wormhole, famously known as the Ellis class III wormhole sourced by the ghost EMS. We begin by arguing that the JNW solution belongs to a hierarchy of actions describing different gravity theories, which indicates that a regularized version of JNW automatically adds corresponding regular versions to the hierarchy of gravity theories.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10603v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10603v1",
+        "doi": "10.1007/s12648-026-04035-2"
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "理论引力"
+        ],
+        "layer": "edge",
+        "reason": "该论文纯属引力理论中时空解的正则化研究，与GECAM关注的高能暂现天体及多信使天文学无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10600",
+        "source": "arxiv",
+        "title": "A winding number analysis of Schwarzschild black hole stability in light of Planck-scale modified kinematics",
+        "authors": [
+          "Mohsen Khodadi",
+          "Nosratolla Jafari",
+          "Shahin Mamedov"
+        ],
+        "abstract": "Determining whether Planck-scale effects can stabilize black holes addresses fundamental questions about black hole evaporation and quantum gravity consistency. Here, we analyze the thermodynamic topology of Schwarzschild black holes under Planck-scale modified kinematics, using a cubic entropy correction derived from a well-known phenomenological MDR with leading correction \\(ηE^3/E_P\\). Enforcing physical constraints (\\(S'(r_h) > 0\\), \\(T > 0\\)) via the entropy-geometry correspondence, we find a single unstable branch with \\(w = -1\\) and \\(W = -1\\) for both signs of the correction parameter. A second root suggesting stability (\\(w = +1\\)) is excluded due to negative mass/temperature and lies outside the perturbative regime. Thus, this class of MDRs does not yield stable Schwarzschild black holes. However, MDRs with different leading-order corrections may behave otherwise, leaving the search for Planck-scale stabilization an open endeavor.",
+        "categories": [
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10600v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10600v1",
+        "doi": null
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究黑洞热力学拓扑与量子引力修正，完全不属于GECAM关注的暂现源天体物理观测范围。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10607",
+        "source": "arxiv",
+        "title": "Conformal dark matter and MHz gravitational waves",
+        "authors": [
+          "Imtiaz Khan",
+          "Niamat Ullah",
+          "Salvatore Capozziello",
+          "G. Mustafa",
+          "Farruh Atamurotov"
+        ],
+        "abstract": "A localized enhancement of the primordial curvature spectrum can leave two distinct relics: gravitationally produced conformal-fermion dark matter and a scalar-induced stochastic gravitational-wave background. We show that the dark-matter abundance fixes the scalar normalization through the cubic moment of the curvature spectrum, while the induced tensor signal probes its quadratic convolution. This closes the usual normalization freedom in scalar-induced gravitational-wave templates and ties the MHz signal directly to the dark-matter mass, peak scale, and spectral width. A concrete single-field realization demonstrates this mechanism: a Mukhanov--Sasaki evolution produces a broad MHz background that sits safely below the Gaussian primordial-black-hole threshold. In this construction, a null high-frequency search becomes a lower bound on the conformal-fermion mass, while a detection has to reproduce the relic abundance, peak frequency, amplitude, and width from one primordial feature. The result is a testable link between small-scale inflationary structure, superheavy dark matter, and laboratory MHz gravitational-wave searches",
+        "categories": [
+          "astro-ph.CO",
+          "hep-ph"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10607v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10607v1",
+        "doi": null
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "暗物质",
+          "原初引力波"
+        ],
+        "layer": "edge",
+        "reason": "论文研究原初引力波背景与超重暗物质，与GECAM团队核心关注的高能暂现天体（如GRB、引力波电磁对应体、磁星等）无直接关联，属于宇宙学理论范畴，仅可能归入边缘主题中的暗物质相关物理。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10561",
+        "source": "arxiv",
+        "title": "Quantum Horizon and Quantum Membrane Paradigm from Black Hole Quantum Mechanics",
+        "authors": [
+          "Chong-Sun Chu"
+        ],
+        "abstract": "We develop a microscopic quantum membrane paradigm from the matrix quantum mechanics of black holes [1]. It was proposed that a quantum black hole is described by a fuzzy sphere together with a half-filled Fermi sea of horizon partons. We show that the topology of the fuzzy sphere induces a Berry monopole, providing a microscopic origin for the monopole appearing in the tunneling description of the decay of quantum black hole. Because the partons couple to the fuzzy sphere as fundamental degrees of freedom, they are sensitive to this monopole and form Lowest-Landau-Level (LLL) states rather than ordinary propagating two-dimensional fermions. Their guiding-center dynamics generates Ohmic, Hall, and polarization currents on the horizon. To couple these currents to an external electromagnetic field, we introduce a two-block matrix configuration comprising black-hole, environmental, and bifundamental link sectors. Off-diagonal link modes become tachyonic near the fuzzy sphere and condense, dynamically locking the horizon gauge field to the boundary value of the external Maxwell field. The parton current thereby becomes a physical boundary source for the exterior field. Our construction replaces the fictitious membrane of the classical paradigm with a dynamical quantum membrane populated by microscopic LLL degrees of freedom. The resulting boundary condition generalizes the classical ingoing membrane condition and yields explicit quantum, frequency-dependent, and helicity-dependent corrections, offering a possible probe of the microscopic quantum structure of the horizon.",
+        "categories": [
+          "hep-th",
+          "cond-mat.other",
+          "gr-qc",
+          "hep-ph"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10561v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10561v1",
+        "doi": null
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "理论物理",
+          "黑洞量子力学"
+        ],
+        "layer": "edge",
+        "reason": "论文为黑洞量子力学理论探讨，与GECAM关注的伽马暴、引力波电磁对应体、磁星等高能暂现源观测无关。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10533",
+        "source": "arxiv",
+        "title": "Geodesics and shadows of the spindle-deformed Kerr black hole",
+        "authors": [
+          "Hong-Da Lyu",
+          "Mingzhi Wang",
+          "Shoulong Li"
+        ],
+        "abstract": "Recently, a new exact Ricci-flat rotating black-hole solution was constructed in four-dimensional general relativity, in which an additional parameter $B$ characterizes a spindle deformation of the Kerr geometry. We study geodesic motion and black-hole shadows in this spacetime. The Hamilton-Jacobi equation is not exactly separable for either timelike or null geodesics. Remarkably, however, at the leading nontrivial order, ${\\cal O}(B^2)$, null but not timelike geodesics become separable. In the timelike sector, the spindle deformation shifts the innermost stable circular orbit and can give rise to an outermost stable circular orbit. In the null sector, exploiting the perturbatively separated equations, we analytically determine the photon region, equatorial photon orbits, and black-hole shadow, and compare the resulting predictions with direct ray tracing in the exact spacetime. The numerical results validate the perturbative treatment and quantify the deviations from Kerr.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10533v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10533v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "黑洞物理",
+          "测地线",
+          "阴影"
+        ],
+        "layer": "edge",
+        "reason": "论文专注于广义相对论中的黑洞几何和阴影，与GECAM团队的高能暂现天体、多信使观测等科学目标无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10671",
+        "source": "arxiv",
+        "title": "SN 2025aico: Early observations of a faint Type IIb supernova with a low-mass envelope",
+        "authors": [
+          "J. -W. Zhao",
+          "A. Pastorello",
+          "B. Kumar",
+          "Y. -Z. Cai",
+          "A. Dutta",
+          "D. K. Sahu",
+          "A. Reguitti",
+          "R. S. Teja",
+          "H. Das",
+          "T. J. Moriya",
+          "N. Pyykkinen",
+          "K. Valeckas",
+          "G. Valerin",
+          "X. -Z. Zou",
+          "C. Ashall",
+          "S. Bijavara Seshashayana",
+          "G. -W. Du",
+          "G. C. Anupama",
+          "A. L. Bouquin",
+          "S. Campana",
+          "K. Chatterjee",
+          "X. -L. Chen",
+          "X. -L. Du",
+          "N. Elias-Rosa",
+          "Y. Fang",
+          "M. Fraser",
+          "W. Hoogendam",
+          "E. Hsiao",
+          "E. Kankare",
+          "E. P. Lagioia",
+          "W. -Y. Li",
+          "X. -K. Liu",
+          "P. Lundqvist",
+          "K. Matilainen",
+          "J. Martikainen",
+          "K. Medler",
+          "N. Morrell",
+          "Y. Pan",
+          "C. Pfeffer",
+          "G. Rameshan",
+          "T. M. Reynolds",
+          "M. D. Stritzinger",
+          "V. Vuolteenaho",
+          "Z. -Y. Wang",
+          "H. -F. Xiao",
+          "J. -H. Zhang",
+          "X. -W. Liu",
+          "Y. -P. Yang"
+        ],
+        "abstract": "We aimed to investigate the physical properties and the underlying explosion mechanisms of the Type IIb SN 2025aico. Through a comprehensive analysis of early-phase optical light curves and spectroscopic data, we aim to constrain the fundamental explosion parameters and evaluate the physical state of the event. We present early multi-band optical imaging and low-resolution optical spectroscopic follow-up observations of the Type IIb SN 2025aico, spanning approximately 70 days from the explosion. We constrain the properties of SN 2025aico by utilizing a hybrid model that combines shock-cooling emission and radioactively powered diffusion, as well as by analyzing the spectroscopic evolution. We use various approaches to constrain the 56Ni mixing from early data, and also compared our spectra with models to constrain the properties of the progenitor. The explosion epoch of SN 2025aico is estimated to be MJD 61032.69, while the rise time in the r_M-band is 22.30 +/- 0.70 days. The peak pseudo-bolometric luminosity in the optical bands is L_opt = (4.07 +/- 0.10) x 10^41 erg/s. The fitting yields a moderate to relatively low 56Ni mass of M_Ni = 0.033 +0.006/-0.004 M_sun and an ejecta mass of M_ej = 2.79 +0.21/-0.18 M_sun. The photospheric velocity near the bolometric peak, measured from the Fe II lambda 5169 line, is 6450 +180/-160 km/s. The derived envelope properties suggest a compact He-star progenitor possessing an H-rich envelope of M_env approx. 0.01 M_sun and a radius of R_env approx. 6-10 R_sun. The derived physical properties of SN 2025aico indicate an origin from a moderate-mass, stripped He-star in a compact binary system, characterized by a minimal residual hydrogen envelope. The explosion itself demonstrates weak to moderate 56Ni mixing throughout the ejecta.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10671v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10671v1",
+        "doi": null
+      },
+      "score": {
+        "score": 50,
+        "tags": [
+          "新星/超新星激波",
+          "高能暂现天体"
+        ],
+        "layer": "related",
+        "reason": "论文关注早期IIb型超新星，涉及激波冷却发射，属GECAM相关高能暂现天体研究。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.10671",
+        "title_zh": "SN 2025aico：一颗低质量包层的弱IIb型超新星早期观测",
+        "team": "第一作者J.-W. Zhao；通讯作者B. Kumar、Y.-Z. Cai、X.-W. Liu；主要机构为云南大学西南天文研究所、意大利INAF帕多瓦天文台、印度天体物理研究所等；系大中型国际合作，非知名合作组",
+        "tldr": "对一颗低质量氢包层的IIb型超新星SN 2025aico进行早期多波段测光与光谱观测，限定爆炸参数及镍混合程度，推断其前身星为双星系统中的剥蚀He星",
+        "review": "研究近距离（21.5 Mpc）IIb型超新星SN 2025aico，利用70天的多波段光学测光和光谱数据。通过激波冷却+放射性扩散混合模型拟合光变曲线，得到镍质量约0.033 M⊙、抛射物质量约2.79 M⊙、光球速度约6450 km/s。颜色演化呈“U”形并与模型对比，表明镍混合程度较弱。包层质量仅约0.01 M⊙、半径约6-10 R⊙，指示前身星为中等质量几乎完全剥蚀的He星，属紧凑型cIIb，深化了对该类超新星起源和爆炸机制的认知。",
+        "highlight": "丰富早期数据约束了激波冷却和镍混合；首次通过颜色“U”形演化清晰示踪弱镍混合，为紧凑IIb型超新星前身星性质提供新证据",
+        "relation": "—"
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10521",
+        "source": "arxiv",
+        "title": "Quantum corrections as a Bound for Detecting Self-Interacting Ultralight Dark Matter",
+        "authors": [
+          "Jae-Weon Lee",
+          "Chueng-Ryong Ji"
+        ],
+        "abstract": "We investigate the implications of the interactions between ultralight dark matter (ULDM) and the Standard model particles for the effective self-interaction coupling constants of ULDM. Our analysis shows that one-loop quantum corrections can result in a substantial increase in the effective coupling constant, which is tightly constrained by cosmological observations. Our findings highlight the importance of considering quantum corrections in the detection of ULDM.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10521v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10521v1",
+        "doi": null
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "暗物质",
+          "宇宙学",
+          "量子修正"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦超轻暗物质自相互作用与量子修正，属边缘主题中的暗物质物理，与GECAM核心高能暂现天体及多信使研究无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10516",
+        "source": "arxiv",
+        "title": "Radial Evolution of Near-Sun Magnetic Switchbacks Alfvenicity, Occurrence Rate, and Size",
+        "authors": [
+          "Xiaolei Li",
+          "Chen Shi",
+          "Yuliang Ding"
+        ],
+        "abstract": "Magnetic switchbacks, characterized by reversals of magnetic field direction, are widely observed in the inner heliosphere by Parker Solar Probe (PSP). With PSP reaching perihelia near 10Rs, observations from the first 24 encounters enable studies of near-Sun switchback evolution at r > 10Rs. We construct a switchback catalog within 10 < r < 55Rs by identifying magnetic field reversals with stable field magnitude and strahl-electron polarity. Statistical analysis shows that switchback Alfvenicity decreases with increasing radial distance, consistent with solar wind evolution beyond the Alfven critical point. Meanwhile, switchback occurrence rate and spatial size increase with distance, suggesting continued generation and expansion during solar wind propagation. At a given radial distance, the fraction of solar wind containing switchbacks is positively correlated with background solar wind radial velocity (VR) and Alfven Mach number (MA), while the local occurrence rate is mainly controlled by MA. These results suggest that switchback patches preferentially form in faster and higher-MA solar wind. The spatial size of switchbacks shows no clear dependence on MA or VR, implying that their size evolution is probably not determined by source conditions. Solar activity influences switchback evolution through changes in background solar wind properties, with a larger fraction of higher-MA switchbacks during solar minimum. We further identify anisotropy relative to the background magnetic field direction: the local occurrence rate and spatial size are approximately 1.5 times as large in the perpendicular direction as in the parallel direction, indicating distinct magnetic topology of switchback patches",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10516v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10516v1",
+        "doi": null
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "太阳物理",
+          "低相关"
+        ],
+        "layer": "edge",
+        "reason": "论文研究太阳磁开关的径向演化，属于太阳物理（astro-ph.SR），与GECAM团队关注的高能天体物理、引力波电磁对应体、磁星、FRB等核心或相关主题无直接关联。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10524",
+        "source": "arxiv",
+        "title": "Constraining primordial black holes and primordial curvature power spectrum with extragalactic muon neutrino",
+        "authors": [
+          "Yupeng Yang"
+        ],
+        "abstract": "We investigate a mixed dark matter scenario comprising weakly interacting massive particles (WIMPs) and primordial black holes (PBHs). After PBH formation, WIMPs can accrete onto them, forming ultracompact minihalos (UCMHs). The resulting WIMP number density within UCMHs is significantly enhanced compared to classical dark matter halo models, leading to a higher WIMP annihilation rate. Previous studies have focused mainly on the associated gamma-ray flux, we investigate the extragalactic neutrino flux from such annihilation. Considering the annihilation channels $μ^{+}μ^{-}$, $τ^{+}τ^{-}$, and $ν_μ\\barν_μ$, we analyze two classes of neutrino events: upward and contained events. By requiring the neutrino flux from WIMP annihilation around PBHs does not exceed the atmospheric neutrino background, we derive upper limits on the fraction of dark matter in PBHs ($f_{\\rm PBH}$) for a one-year exposure of the IceCube experiment. These limits depend on the annihilation channel, the masses of the WIMP and PBH, and the neutrino event type. The strongest constraints come from the $ν_μ\\barν_μ$ channel, yielding $f_{\\rm PBH} \\sim 10^{-4}$ ($4\\times 10^{-5}$) for contained (upward) events with $m_χ=10^{3}$ GeV and $M_{\\rm PBH}=10^{3} M_{\\odot}$. Based on these bounds on PBHs, we further derive upper limits on the primordial curvature power spectrum $\\mathcal{P}_{\\mathcal{R}}$. From our strongest constraint, we obtain $\\mathcal{P}_{\\mathcal{R}} \\sim 10^{-1.65}$ at the scale $k\\sim 3\\times 10^{12}~\\mathrm{Mpc^{-1}}$.",
+        "categories": [
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10524v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10524v1",
+        "doi": null
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "暗物质",
+          "原初黑洞"
+        ],
+        "layer": "edge",
+        "reason": "论文主要研究原初黑洞与WIMP暗物质湮灭产生的中微子背景约束，属于暗物质物理，为GECAM边缘主题，与核心科学目标关联度低。"
+      },
+      "summary": null
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10568",
+        "source": "arxiv",
+        "title": "Inhibition of Accretion by the Stellar Wind in Misaligned Be/X-ray Binaries",
+        "authors": [
+          "Atsuo T. Okazaki"
+        ],
+        "abstract": "Be/X-ray binaries (BeXRBs) constitute a major subclass of high-mass X-ray binaries. They show intermittent X-ray activity with $L_X > 10^{36} {\\rm erg s}^{-1}$, while remaining quiescent most of the time with $L_X < 10^{34} {\\rm erg s}^{-1}$. BeXRBs generally have eccentric orbits as a result of supernova kicks when neutron stars were born. In these systems, the same kicks are also likely to make the binary orbital axis misaligned with the spin axis of the Be star. In such systems, when the neutron star captures gas from the equatorial disk of the Be star, the resulting accretion disk is in general tilted to both the Be disk plane and to the binary orbital plane. This raises an interesting possibility that in misaligned BeXRBs, the polar wind of the Be star collides with the accretion disk and significantly affects its structure by the large ram pressure. In this paper, we study the effects of the stellar wind on the accretion dynamics in misaligned BeXRBs. Using analytical wind and disk models, we first compare the wind's ram pressure with the gas pressures of the accretion flow to derive a condition for the stellar wind to strongly suppress accretion, and then apply the condition to a sample of BeXRBs whose relevant parameters are well determined or constrained. We find that wind-driven inhibition is a plausible mechanism for suppressing accretion in systems with slowly rotating neutron stars in wide orbits, where the classical propeller mechanism is expected to be inefficient. The effect is particularly important if the accretion flow is hot and low-density, or after the accretion rate has declined from the outburst level.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10568v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10568v1",
+        "doi": null
+      },
+      "score": {
+        "score": 65,
+        "tags": [
+          "高能暂现天体",
+          "X射线暂现",
+          "Be/X射线双星"
+        ],
+        "layer": "related",
+        "reason": "研究Be/X射线双星中的星风抑制吸积机制，属于高能暂现源中的X射线暂现现象，与GECAM相关主题相符。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.10568",
+        "title_zh": "错位Be/X射线双星中星风对吸积的抑制",
+        "team": "第一作者：Atsuo T. Okazaki（日本北海学园大学），单一作者，非知名合作组",
+        "tldr": "在轨道与Be星自转轴错位的Be/X射线双星中，Be星极风冲压可剥离吸积盘，抑制吸积并导致宁静态，尤其适用于长自旋周期中子星系统",
+        "review": "针对错位Be/X射线双星，通过解析模型比较Be星风冲压与标准薄盘及ADAF吸积流的气压，推导出风抑制吸积的临界吸积率。将该判据应用于13个参数已知的银河系BeXRB样本。发现对中子星自旋缓慢、轨道宽的系统，风致抑制比经典螺旋桨机制更可能解释宁静态；此效应在吸积流热而低密度或爆发后吸积率下降时尤为显著。",
+        "highlight": "首次定量提出星风冲压剥离吸积盘作为BeXRB宁静态的新机制，弥补了螺旋桨机制在长自旋周期源中的不足，为理解X射线暂现行为提供新视角",
+        "relation": "与GECAM对高能暂现源的监测目标相关：该机制解释BeXRB的X射线宁静态，有助于理解这类高能暂现源的光变行为"
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.10579",
+        "source": "arxiv",
+        "title": "Wind-driven angular momentum removal and X-ray ionization effects in Roche-lobe overflowing HMXBs",
+        "authors": [
+          "Atsuo T. Okazaki",
+          "Stanley P. Owocki"
+        ],
+        "abstract": "We investigate the dynamical interaction between stellar winds and Roche-lobe overflow (RLO) streams in high-mass X-ray binaries using three-dimensional SPH simulations. We show that the donor wind can exert a strong dynamical influence on the accretion flow. In the absence of X-ray ionization, the wind interacts asymmetrically with the disk and carries retrograde angular momentum, resulting in a net removal of angular momentum and a reduction of the disk size. When X-ray photoionization is included, the response of the system becomes strongly non-monotonic. At high luminosity ($L_X = 10^{38} {\\rm erg s}^{-1}$), wind acceleration is suppressed and the flow approaches the no-wind case. In contrast, at moderate luminosity ($L_X = 10^{37} {\\rm erg s}^{-1}$), the system enters a qualitatively different accretion regime. In this regime, the partially ionized wind becomes dense and dynamically important, strongly perturbing the RLO stream. As a result, the accretion flow transitions from RLO-dominated to wind-dominated, and the RLO stream undergoes a dynamical bifurcation into low- and high-angular-momentum branches. This leads to suppressed disk formation despite the presence of a strong mass supply. These results demonstrate that moderate ionization can be more disruptive than both weak and strong ionization, providing a new mechanism regulating accretion flows in RLO HMXBs.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-12",
+        "url": "https://arxiv.org/abs/2607.10579v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.10579v1",
+        "doi": null
+      },
+      "score": {
+        "score": 40,
+        "tags": [
+          "高能暂现天体",
+          "中子星/黑洞暂现现象"
+        ],
+        "layer": "related",
+        "reason": "论文研究大质量X射线双星中的吸积流和风相互作用，属于中子星/黑洞吸积过程，与GECAM关注的高能暂现天体有间接关联，但非核心科学目标。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.10579",
+        "title_zh": "洛希瓣溢出HMXB中星风驱动的角动量移除与X射线电离效应",
+        "team": "Atsuo T. Okazaki（北海道学院大学）第一/通讯作者，Stanley P. Owocki（德拉瓦大学）合作；非大型合作组",
+        "tldr": "三维SPH模拟揭示，星风可不对称移除吸积盘角动量，而中等X射线电离（~10³⁷ erg/s）通过部分电离星风剧烈扰动洛希瓣溢流，抑制盘形成",
+        "review": "针对洛希瓣溢出（RLO）大质量X射线双星（如Cen X‑3），采用包含星风加速与X射线电离的3D SPH模拟。对比无风、纯星风、强电离（LX=10³⁸ erg/s）和中等电离（10³⁷ erg/s）四种情况。结果显示：无电离时星风不对称作用，移除逆向角动量使盘缩小；强电离完全抑制星风，流态回归无风大吸积盘；中等电离却使部分电离风变密，剧烈偏移RLO流并分叉为高低角动量分支，虽质量供给充足但盘形成受阻。结论认为中等电离比强/弱电离更具破坏性，提出了调控吸积流的新机制。",
+        "highlight": "首次揭示星风直接动力学移除RLO盘角动量，并发现X射线电离对吸积流的“非单调”调制：中等光度破坏性最强，为解释观测中RLO HMXB的吸积盘缺失或X射线态转变提供了新物理图像",
+        "relation": "HMXB是GECAM重点观测的高能暂现源；该机制可解释吸积态跃迁与X射线光变，为GECAM探测的暂现事件（如超巨星快X射线暂现）提供理论支撑"
+      }
+    }
+  ],
+  "revisions": []
+}
