@@ -29,3 +29,22 @@ def test_summarize_bad_output_uses_metadata(fake_llm_factory):
     s = summarize_paper(_paper(), fulltext=None, llm=llm)
     assert s.title_zh == "Magnetar giant flare"
     assert s.review == "A magnetar SGR burst."
+
+
+def test_summarize_edge_light(fake_llm_factory):
+    import json
+    from gdr.summarize import summarize_edge
+    llm = fake_llm_factory([json.dumps({"title_zh": "磁星巨耀发", "tldr": "研究一次磁星巨耀发"})])
+    p = _paper()  # existing helper in this file (english title/abstract)
+    s = summarize_edge(p, llm)
+    assert s.title_zh == "磁星巨耀发"
+    assert s.tldr == "研究一次磁星巨耀发"
+    assert s.review == "" and s.team == ""            # light: no full fields
+    assert p.abstract in llm.calls[0]["user"]         # from abstract, not full text
+
+
+def test_summarize_edge_bad_output_falls_back(fake_llm_factory):
+    from gdr.summarize import summarize_edge
+    llm = fake_llm_factory(["garbage"])
+    s = summarize_edge(_paper(), llm)
+    assert s.title_zh == _paper().title               # falls back to english title, never crashes

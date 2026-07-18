@@ -5,7 +5,7 @@ from gdr import config
 from gdr.dedup import dedupe
 from gdr.fulltext import fetch_fulltext as _real_fetch_fulltext
 from gdr.relevance import score_paper
-from gdr.summarize import summarize_paper
+from gdr.summarize import summarize_paper, summarize_edge
 from gdr.daily_review import make_daily_review
 from gdr.models import DayData, DailyReview
 from gdr.store import Store
@@ -13,15 +13,16 @@ from gdr.store import Store
 
 def _process_paper(paper, llm, fetch_fulltext) -> dict:
     score = score_paper(paper, llm)
-    summary = None
-    if score.layer in ("core", "related") or config.SUMMARIZE_EDGE:
+    if score.layer in ("core", "related"):
         fulltext = fetch_fulltext(paper)
         summary = summarize_paper(paper, fulltext, llm)
+    else:
+        summary = summarize_edge(paper, llm)   # cheap Chinese title + one-liner, from abstract, no full text
     return {"paper": paper, "score": score, "summary": summary}
 
 
 def _review_for(date, items, llm) -> DailyReview:
-    summarized = [it for it in items if it["summary"]]
+    summarized = [it for it in items if it["summary"] and it["score"].layer in ("core", "related")]
     try:
         return make_daily_review(date, summarized, llm)
     except Exception as exc:

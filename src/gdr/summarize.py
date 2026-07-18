@@ -47,3 +47,26 @@ def summarize_paper(paper: Paper, fulltext: str | None, llm: LLM) -> PaperSummar
             paper_id=paper.id, title_zh=paper.title, team=", ".join(paper.authors),
             tldr="", review=paper.abstract, highlight="", relation="—",
         )
+
+
+_EDGE_SYSTEM = "你是高能天体物理文献助手，用简洁中文写作，只输出 JSON。"
+
+_EDGE_USER_TMPL = """把下面这篇论文压缩成一行中文，输出 JSON（仅这两个字段）：
+{{"title_zh": "标题的中文译名", "tldr": "一句话说明这篇论文做了什么"}}
+
+英文标题：{title}
+摘要：{abstract}
+"""
+
+
+def summarize_edge(paper: Paper, llm: LLM) -> PaperSummary:
+    user = _EDGE_USER_TMPL.format(title=paper.title, abstract=paper.abstract)
+    text = llm.complete(model=tier_model("triage"), system=_EDGE_SYSTEM, user=user)
+    try:
+        d = extract_json(text)
+        return PaperSummary(paper_id=paper.id, title_zh=str(d.get("title_zh") or paper.title),
+                            team="", tldr=str(d.get("tldr") or ""),
+                            review="", highlight="", relation="")
+    except (ValueError, TypeError):
+        return PaperSummary(paper_id=paper.id, title_zh=paper.title, team="",
+                            tldr="", review="", highlight="", relation="")

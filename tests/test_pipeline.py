@@ -85,3 +85,20 @@ def test_sync_fans_out_to_multiple_true_dates(tmp_path, fake_llm_factory):
     assert affected == ["2026-07-14", "2026-07-15"]
     assert store.load_day("2026-07-14").items[0]["paper"].id == "arxiv:a"
     assert store.load_day("2026-07-15").items[0]["paper"].id == "arxiv:b"
+
+
+def test_sync_edge_paper_gets_light_summary_no_fulltext(tmp_path, fake_llm_factory):
+    llm = fake_llm_factory({
+        "请判断这篇论文与上述范围的相关性": json.dumps({"score": 20, "tags": [], "reason": "边缘"}),
+        "压缩成一行中文": json.dumps({"title_zh": "边缘译名", "tldr": "一句话"}),
+    })
+    store = Store(tmp_path / "data")
+    src = StubSource([_paper("arxiv:e", "Edge paper", published="2026-07-14")])
+    def no_fulltext(p, **k):
+        raise AssertionError("fetch_fulltext must NOT be called for edge papers")
+    affected = sync("2026-07-18", src, llm, store, fetch_fulltext=no_fulltext, max_workers=2)
+    assert affected == ["2026-07-14"]
+    it = store.load_day("2026-07-14").items[0]
+    assert it["score"].layer == "edge"
+    assert it["summary"].title_zh == "边缘译名"
+    assert it["summary"].tldr == "一句话"

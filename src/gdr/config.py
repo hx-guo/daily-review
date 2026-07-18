@@ -12,7 +12,6 @@ MODEL_SYNTH = os.environ.get("GDR_MODEL_SYNTH", "glm-5.2")
 
 LAYER_CORE_MIN = 70
 LAYER_RELATED_MIN = 40
-SUMMARIZE_EDGE = False
 
 # Max characters of full text sent to the write model (token control).
 FULLTEXT_MAX_CHARS = 24000
