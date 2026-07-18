@@ -1,7 +1,19 @@
 from pathlib import Path
-from gdr.sources.arxiv_source import parse_atom, ArxivSource
+from gdr.sources.arxiv_source import parse_atom, parse_atom_all, ArxivSource
 
 SAMPLE = (Path(__file__).parent / "fixtures" / "arxiv_sample.xml").read_text()
+
+def _atom(entries):  # entries: list of (id, published_date)
+    items = "".join(
+        f'<entry><id>http://arxiv.org/abs/{i}v1</id>'
+        f'<published>{pub}T00:00:00Z</published><title>t {i}</title>'
+        f'<summary>s</summary><author><name>A</name></author>'
+        f'<link href="http://arxiv.org/abs/{i}v1" rel="alternate" type="text/html"/>'
+        f'<category term="astro-ph.HE" scheme="http://arxiv.org/schemas/atom"/></entry>'
+        for i, pub in entries)
+    return ('<?xml version="1.0" encoding="UTF-8"?>'
+            '<feed xmlns="http://www.w3.org/2005/Atom" '
+            'xmlns:arxiv="http://arxiv.org/schemas/atom">' + items + '</feed>')
 
 def test_parse_atom_filters_by_date():
     papers = parse_atom(SAMPLE, date="2026-07-18")
@@ -29,3 +41,22 @@ def test_fetch_uses_injected_http_get():
     assert len(papers) == 1
     assert "astro-ph.HE" in captured["params"]["search_query"]
     assert "gr-qc" in captured["params"]["search_query"]
+
+def test_parse_atom_all_returns_everything():
+    xml = _atom([("2607.1", "2026-07-16"), ("2607.2", "2026-07-15")])
+    assert len(parse_atom_all(xml)) == 2
+
+def test_fetch_recent_paginates_and_windows():
+    all_entries = [("2607.17", "2026-07-17"), ("2607.16", "2026-07-16"),
+                   ("2607.15", "2026-07-15"), ("2607.14", "2026-07-14"),
+                   ("2607.13", "2026-07-13")]  # descending by submittedDate
+    def fake_get(url, params=None, timeout=None):
+        start = params["start"]; n = params["max_results"]
+        page = all_entries[start:start + n]
+        class R:
+            text = _atom(page)
+            def raise_for_status(self): pass
+        return R()
+    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2)
+    got = src.fetch_recent("2026-07-16", days=3)   # window [2026-07-14, 2026-07-16]
+    assert sorted(p.id for p in got) == ["arxiv:2607.14", "arxiv:2607.15", "arxiv:2607.16"]

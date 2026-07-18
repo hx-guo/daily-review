@@ -8,6 +8,7 @@ from gdr.pipeline import run
 class StubSource(Source):
     def __init__(self, papers): self._papers = papers
     def fetch(self, date): return list(self._papers)
+    def fetch_recent(self, end_date: str, days: int): return list(self._papers)
 
 
 def _paper(pid, title):
