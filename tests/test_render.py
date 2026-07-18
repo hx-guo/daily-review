@@ -73,3 +73,21 @@ def test_render_shows_revision_history(tmp_path):
     assert "old overview" in page
     index = (out / "index.html").read_text(encoding="utf-8")
     assert "2026-07-14" in index   # as-of date shown on home
+
+
+def test_render_home_skips_empty_latest_day(tmp_path):
+    st = Store(tmp_path / "data")
+    st.save_day(DayData(date="2026-07-17",
+                        review=DailyReview("2026-07-17", "今日无新文献。", "—", "—"), items=[]))
+    p = Paper(id="arxiv:1", source="arxiv", title="Real GRB", authors=["A"], abstract="",
+              categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/1")
+    st.save_day(DayData(date="2026-07-16",
+                        review=DailyReview("2026-07-16", "16 概览", "", ""),
+                        items=[{"paper": p, "score": RelevanceScore(90, ["GRB"], "core", ""),
+                                "summary": PaperSummary("arxiv:1", "真实暴", "A 等", "t", "r", "h", "—")}]))
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    index = (out / "index.html").read_text(encoding="utf-8")
+    assert "真实暴" in index
+    assert "今日无新文献" not in index
+    assert "2026-07-16" in index

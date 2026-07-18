@@ -74,3 +74,14 @@ def test_sync_backfill_merges_and_snapshots_revision(tmp_path, fake_llm_factory)
     assert day.revisions[0]["n_papers"] == 1
     assert day.revisions[0]["synced"] == "2026-07-18"
     assert store.unseen_ids(["arxiv:2607.1", "arxiv:2607.2"]) == []   # both now seen
+
+
+def test_sync_fans_out_to_multiple_true_dates(tmp_path, fake_llm_factory):
+    store = Store(tmp_path / "data")
+    src = StubSource([_paper("arxiv:a", "GRB A", published="2026-07-14"),
+                      _paper("arxiv:b", "GRB B", published="2026-07-15")])
+    affected = sync("2026-07-18", src, _keyed_llm(fake_llm_factory), store,
+                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
+    assert affected == ["2026-07-14", "2026-07-15"]
+    assert store.load_day("2026-07-14").items[0]["paper"].id == "arxiv:a"
+    assert store.load_day("2026-07-15").items[0]["paper"].id == "arxiv:b"

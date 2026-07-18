@@ -60,3 +60,15 @@ def test_fetch_recent_paginates_and_windows():
     src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2)
     got = src.fetch_recent("2026-07-16", days=3)   # window [2026-07-14, 2026-07-16]
     assert sorted(p.id for p in got) == ["arxiv:2607.14", "arxiv:2607.15", "arxiv:2607.16"]
+
+
+def test_fetch_recent_terminates_on_misbehaving_pagination():
+    page = [("2607.16", "2026-07-16"), ("2607.15", "2026-07-15")]
+    def fake_get(url, params=None, timeout=None):   # ignores `start`, always same page
+        class R:
+            text = _atom(page)
+            def raise_for_status(self): pass
+        return R()
+    src = ArxivSource(["astro-ph.HE"], http_get=fake_get, page_size=2)
+    got = src.fetch_recent("2026-07-16", days=3)
+    assert sorted(p.id for p in got) == ["arxiv:2607.15", "arxiv:2607.16"]  # collected once, no hang

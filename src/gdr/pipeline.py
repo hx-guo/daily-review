@@ -70,5 +70,7 @@ def sync(run_date, source, llm, store: Store, fetch_fulltext=_real_fetch_fulltex
         store.save_day(DayData(date=date, review=review, items=merged, revisions=revisions))
         affected.append(date)
 
+    # Persist "seen" ONLY after all days are saved, and only for papers actually processed —
+    # a paper skipped by an error stays unseen so the next run retries it.
     store.mark_seen_papers([it["paper"].id for it in items])
     return sorted(affected)

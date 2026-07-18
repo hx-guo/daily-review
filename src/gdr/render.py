@@ -18,20 +18,25 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
     env = Environment(loader=FileSystemLoader(str(templates_dir)),
                       autoescape=select_autoescape(["html"]))
     days = store.list_days()
-    latest_date = days[0] if days else None
+    loaded = [(d, store.load_day(d)) for d in days]
+    # Home page + as-of date use the newest day that actually HAS papers. The sync model never
+    # saves an empty day, but a stale/empty file must not wedge the home page onto an empty date.
+    home_date = next((d for d, day in loaded if day.items), days[0] if days else None)
+    latest_date = home_date
 
     day_tmpl = env.get_template("day.html")
     index_tmpl = env.get_template("index.html")
     archive_tmpl = env.get_template("archive.html")
 
-    for i, date in enumerate(days):
-        day = store.load_day(date)
+    for date, day in loaded:
         items = _ordered_items(day)
-        html = day_tmpl.render(day=day, items=items, static_prefix="../", latest_date=latest_date)
-        (out_dir / "day" / f"{date}.html").write_text(html, encoding="utf-8")
-        if i == 0:
-            idx = index_tmpl.render(day=day, items=items, static_prefix="", latest_date=latest_date)
-            (out_dir / "index.html").write_text(idx, encoding="utf-8")
+        (out_dir / "day" / f"{date}.html").write_text(
+            day_tmpl.render(day=day, items=items, static_prefix="../", latest_date=latest_date),
+            encoding="utf-8")
+        if date == home_date:
+            (out_dir / "index.html").write_text(
+                index_tmpl.render(day=day, items=items, static_prefix="", latest_date=latest_date),
+                encoding="utf-8")
 
     (out_dir / "archive.html").write_text(
         archive_tmpl.render(days=days, static_prefix="", latest_date=latest_date), encoding="utf-8")

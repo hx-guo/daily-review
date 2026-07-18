@@ -7,3 +7,8 @@ header a { text-decoration: none; color: inherit; }
 .card.edge { opacity: .8; border-left: 4px solid #999; }
 .tags span { display: inline-block; font-size: .75rem; background: #8882; border-radius: 4px; padding: .1rem .4rem; margin-right: .3rem; }
 .orig { color: #888; font-size: .85rem; }
+.asof { color: #888; font-size: .85rem; margin: .2rem 0 0; }
+.revisions { margin-top: 2rem; border-top: 1px solid #8884; padding-top: .5rem; }
+.revisions summary { cursor: pointer; color: #39c; }
+.revision { border-left: 3px solid #8884; padding-left: .8rem; margin: .8rem 0; }
+.revision h4 { margin: .3rem 0; font-size: .9rem; color: #888; }

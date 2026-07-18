@@ -70,7 +70,8 @@ class ArxivSource(Source):
         query = " OR ".join(f"cat:{c}" for c in self.categories)
         collected: list[Paper] = []
         offset = 0
-        while True:
+        prev_first_id = None
+        while offset <= 100 * self.page_size:   # hard safety cap (~100 pages)
             params = {"search_query": query, "start": offset, "max_results": self.page_size,
                       "sortBy": "submittedDate", "sortOrder": "descending"}
             resp = self._http_get(ARXIV_API, params=params, timeout=60)
@@ -78,6 +79,9 @@ class ArxivSource(Source):
             batch = parse_atom_all(resp.text)
             if not batch:
                 break
+            if batch[0].id == prev_first_id:   # API ignored `start`; stop to avoid an infinite loop
+                break
+            prev_first_id = batch[0].id
             reached_older = False
             for p in batch:
                 if p.published > end_date:
