@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <entry>
+    <id>http://arxiv.org/abs/2607.00001v1</id>
+    <updated>2026-07-18T10:00:00Z</updated>
+    <published>2026-07-18T09:00:00Z</published>
+    <title>A magnetar giant flare study</title>
+    <summary>We analyze a magnetar giant flare observed by GECAM.</summary>
+    <author><name>Alice Author</name></author>
+    <author><name>Bob Boss</name></author>
+    <link href="http://arxiv.org/abs/2607.00001v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2607.00001v1" rel="related" type="application/pdf"/>
+    <arxiv:doi>10.0000/example</arxiv:doi>
+    <category term="astro-ph.HE" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.00002v1</id>
+    <updated>2026-07-17T10:00:00Z</updated>
+    <published>2026-07-17T09:00:00Z</published>
+    <title>An older paper</title>
+    <summary>Published the previous day.</summary>
+    <author><name>Carol Coauthor</name></author>
+    <link href="http://arxiv.org/abs/2607.00002v1" rel="alternate" type="text/html"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
