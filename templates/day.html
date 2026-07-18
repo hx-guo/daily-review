@@ -8,14 +8,13 @@
   <h3>趋势与联系</h3><p>{{ day.review.trends }}</p>
 </section>
 <section class="papers">
-  {% for it in items %}
+  {% for it in main_items %}
   <article class="card {{ it.score.layer }}">
     <div class="tags">
       <span class="layer">{{ it.score.layer }}</span>
       <span class="score">相关性 {{ it.score.score }}</span>
       {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
     </div>
-    {% if it.summary %}
     <h3>{{ it.summary.title_zh }}</h3>
     <p class="orig">{{ it.paper.title }}</p>
     <p class="team">{{ it.summary.team }}</p>
@@ -23,14 +22,34 @@
     <p class="body">{{ it.summary.review }}</p>
     <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
     <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
-    {% else %}
-    <h3>{{ it.paper.title }}</h3>
-    <p class="body">{{ it.paper.abstract }}</p>
-    {% endif %}
     <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
   </article>
   {% endfor %}
 </section>
+{% if edge_items %}
+<section class="edge-papers">
+  <details>
+    <summary>边缘相关（{{ edge_items|length }} 篇 · 低相关性 · 点击展开）</summary>
+    {% for it in edge_items %}
+    <article class="card edge">
+      <div class="tags">
+        <span class="score">相关性 {{ it.score.score }}</span>
+        {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+      </div>
+      {% if it.summary %}
+      <h4>{{ it.summary.title_zh }}</h4>
+      <p class="orig">{{ it.paper.title }}</p>
+      {% if it.summary.tldr %}<p class="tldr">{{ it.summary.tldr }}</p>{% endif %}
+      {% else %}
+      <h4>{{ it.paper.title }}</h4>
+      <p class="body">{{ it.paper.abstract }}</p>
+      {% endif %}
+      <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
+    </article>
+    {% endfor %}
+  </details>
+</section>
+{% endif %}
 {% if day.revisions %}
 <section class="revisions">
   <details>

@@ -12,3 +12,7 @@ header a { text-decoration: none; color: inherit; }
 .revisions summary { cursor: pointer; color: #39c; }
 .revision { border-left: 3px solid #8884; padding-left: .8rem; margin: .8rem 0; }
 .revision h4 { margin: .3rem 0; font-size: .9rem; color: #888; }
+.edge-papers { margin-top: 1.5rem; }
+.edge-papers summary { cursor: pointer; color: #39c; font-weight: 600; margin-bottom: .5rem; }
+.card.edge h4 { margin: .3rem 0; }
+.card.edge .tldr { color: #444; }

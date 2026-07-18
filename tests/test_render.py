@@ -91,3 +91,26 @@ def test_render_home_skips_empty_latest_day(tmp_path):
     assert "真实暴" in index
     assert "今日无新文献" not in index
     assert "2026-07-16" in index
+
+
+def test_render_edge_collapsed_with_chinese(tmp_path):
+    st = Store(tmp_path / "data")
+    core_p = Paper(id="arxiv:c", source="arxiv", title="Core Eng", authors=["A"], abstract="",
+                   categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/c")
+    edge_p = Paper(id="arxiv:e", source="arxiv", title="Edge English Title", authors=["B"],
+                   abstract="eng abs", categories=["astro-ph.HE"], published="2026-07-16",
+                   url="https://arxiv.org/abs/e")
+    day = DayData(date="2026-07-16",
+                  review=DailyReview("2026-07-16", "概览", "", ""),
+                  items=[{"paper": core_p, "score": RelevanceScore(90, ["GRB"], "core", ""),
+                          "summary": PaperSummary("arxiv:c", "核心中文", "A 等", "t", "r", "h", "—")},
+                         {"paper": edge_p, "score": RelevanceScore(20, [], "edge", ""),
+                          "summary": PaperSummary("arxiv:e", "边缘中文标题", "", "边缘一句话", "", "", "")}])
+    st.save_day(day)
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
+    assert "核心中文" in page
+    assert "边缘中文标题" in page
+    assert "<details" in page
+    assert "边缘相关" in page

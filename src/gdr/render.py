@@ -30,12 +30,14 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
 
     for date, day in loaded:
         items = _ordered_items(day)
+        main_items = [it for it in items if it["score"].layer != "edge"]
+        edge_items = [it for it in items if it["score"].layer == "edge"]
         (out_dir / "day" / f"{date}.html").write_text(
-            day_tmpl.render(day=day, items=items, static_prefix="../", latest_date=latest_date),
+            day_tmpl.render(day=day, items=items, main_items=main_items, edge_items=edge_items, static_prefix="../", latest_date=latest_date),
             encoding="utf-8")
         if date == home_date:
             (out_dir / "index.html").write_text(
-                index_tmpl.render(day=day, items=items, static_prefix="", latest_date=latest_date),
+                index_tmpl.render(day=day, items=items, main_items=main_items, edge_items=edge_items, static_prefix="", latest_date=latest_date),
                 encoding="utf-8")
 
     (out_dir / "archive.html").write_text(
