@@ -21,3 +21,8 @@ def test_get_api_key_missing_raises(monkeypatch):
 def test_profile_and_categories_present():
     assert "GRB" in config.GECAM_PROFILE or "伽马暴" in config.GECAM_PROFILE
     assert "astro-ph.HE" in config.ARXIV_CATEGORIES
+
+def test_sync_constants_present():
+    assert config.FETCH_WINDOW_DAYS >= 1
+    assert config.ARXIV_PAGE_SIZE >= 1
+    assert config.MAX_CONCURRENCY >= 1
