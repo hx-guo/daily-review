@@ -17,7 +17,7 @@ from pathlib import Path
 from gdr import config
 from gdr.llm import OpenCodeLLM
 from gdr.store import Store
-from gdr.daily_review import make_daily_review
+from gdr.pipeline import _review_for
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -30,12 +30,14 @@ def main():
         if only and date not in only:
             continue
         day = store.load_day(date)
-        summarized = [it for it in day.items if it["summary"]]
-        if not summarized:
+        # _review_for filters to core/related only (matches the pipeline; excludes edge noise).
+        core_related = [it for it in day.items
+                        if it["summary"] and it["score"].layer in ("core", "related")]
+        if not core_related:
             continue
-        day.review = make_daily_review(date, summarized, llm)
+        day.review = _review_for(date, day.items, llm)
         store.save_day(day)
-        print(f"{date}: overview regenerated over {len(summarized)} summarized items")
+        print(f"{date}: overview regenerated over {len(core_related)} core/related items")
 
 
 if __name__ == "__main__":
