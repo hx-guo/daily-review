@@ -22,19 +22,20 @@ MAX_CONCURRENCY = int(os.environ.get("GDR_MAX_CONCURRENCY", "6"))
 # arXiv asks for ~3s between API requests; pagination sleeps this long between pages.
 ARXIV_REQUEST_DELAY = float(os.environ.get("GDR_ARXIV_REQUEST_DELAY", "3"))
 
-GECAM_PROFILE = """GECAM（引力波高能电磁对应体全天监测器）团队关注的科学范围，分三层：
+TEAM_PROFILE = """高能暂现源研究团队（同时参与 GECAM、Insight-HXMT、SVOM 等高能天文任务）关注的科学范围，分三层：
 
-核心主题（直接科学目标）：
-- 伽马暴 GRB（长/短暴、prompt/余辉、能谱、jet、宿主）
+核心主题（团队直接科学目标）：
+- 伽马暴 GRB（长/短暴、prompt/余辉、能谱、jet、宿主、高红移、GRB 宇宙学）
 - 引力波电磁对应体（BNS/NSBH 并合、kilonova、GW170817-like、O4/O5 后随观测）
 - 磁星 / 软伽马重复暴 SGR（巨耀发、暴发、SGR 1935+2154）
 - 快速射电暴 FRB（尤其高能对应体、FRB–磁星联系）
 - 多信使触发与联合（LIGO/Virgo/KAGRA 引力波、IceCube 中微子）
+- X 射线双星与吸积致密天体（黑洞/中子星吸积、X 射线暂现与暴发、吸积毫秒脉冲星、QPO、X 射线定时与能谱）
 
 相关主题（高能暂现源大类 + 相关任务）：
 - 高能暂现天体：TDE、X/γ 射线暂现、新星/超新星激波、中子星/黑洞暂现现象
 - 太阳耀斑、硬 X 射线爆发、地球伽马闪 TGF
-- 相关任务：Fermi/GBM、Swift、HXMT/Insight、Einstein Probe、SVOM、Integral、Konus-Wind、GECAM
+- 相关任务：GECAM、Insight-HXMT、SVOM、Fermi/GBM、Swift、Einstein Probe、Integral、Konus-Wind、NICER 等
 
 边缘主题（相关度低但不丢弃）：
 - astro-ph.HE 内其余物理（宇宙线、暗物质、AGN 稳态物理等）

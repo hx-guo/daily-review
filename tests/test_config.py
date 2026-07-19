@@ -19,7 +19,7 @@ def test_get_api_key_missing_raises(monkeypatch):
         config.get_api_key()
 
 def test_profile_and_categories_present():
-    assert "GRB" in config.GECAM_PROFILE or "伽马暴" in config.GECAM_PROFILE
+    assert "GRB" in config.TEAM_PROFILE or "伽马暴" in config.TEAM_PROFILE
     assert "astro-ph.HE" in config.ARXIV_CATEGORIES
 
 def test_sync_constants_present():
