@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ day.date }} · GECAM 每日文献综述{% endblock %}
+{% block title %}{{ day.date }} · 高能暂现源每日文献综述{% endblock %}
 
 {% macro anchor(it) %}paper-{{ it.paper.id | replace(':', '-') | replace('.', '-') }}{% endmacro %}
 
