@@ -30,6 +30,8 @@
 {% block content %}
 <div class="layout">
 <nav class="toc">
+  <details class="toc-details" open>
+  <summary>📑 目录</summary>
   <a class="toc-head" href="#overview">📋 当日总览</a>
   {% if core_items %}
   <a class="toc-head" href="#core">🎯 核心（{{ core_items|length }}）</a>
@@ -41,6 +43,7 @@
   {% endif %}
   {% if edge_items %}<a class="toc-head" href="#edge">〰️ 边缘相关（{{ edge_items|length }}）</a>{% endif %}
   {% if day.revisions %}<a class="toc-head" href="#revisions">🕓 修订历史</a>{% endif %}
+  </details>
 </nav>
 <div class="content">
 <section class="review" id="overview">

@@ -174,6 +174,7 @@ def test_render_toc_and_section_anchors(tmp_path):
     render_site(st, out, TEMPLATES, STATIC)
     page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
     assert 'class="toc"' in page
+    assert 'toc-details' in page   # TOC is collapsible
     assert 'href="#core"' in page and 'href="#related"' in page
     assert 'href="#paper-arxiv-c1"' in page      # per-paper jump link
     assert 'id="paper-arxiv-c1"' in page          # matching anchor on the card
