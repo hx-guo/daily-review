@@ -32,12 +32,18 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
         items = _ordered_items(day)
         main_items = [it for it in items if it["score"].layer != "edge"]
         edge_items = [it for it in items if it["score"].layer == "edge"]
+        core_items = [it for it in items if it["score"].layer == "core"]
+        related_items = [it for it in items if it["score"].layer == "related"]
         (out_dir / "day" / f"{date}.html").write_text(
-            day_tmpl.render(day=day, items=items, main_items=main_items, edge_items=edge_items, static_prefix="../", latest_date=latest_date),
+            day_tmpl.render(day=day, items=items, main_items=main_items, edge_items=edge_items,
+                             core_items=core_items, related_items=related_items,
+                             static_prefix="../", latest_date=latest_date),
             encoding="utf-8")
         if date == home_date:
             (out_dir / "index.html").write_text(
-                index_tmpl.render(day=day, items=items, main_items=main_items, edge_items=edge_items, static_prefix="", latest_date=latest_date),
+                index_tmpl.render(day=day, items=items, main_items=main_items, edge_items=edge_items,
+                                   core_items=core_items, related_items=related_items,
+                                   static_prefix="", latest_date=latest_date),
                 encoding="utf-8")
 
     (out_dir / "archive.html").write_text(

@@ -140,3 +140,25 @@ def test_render_english_original_block(tmp_path):
     assert "en-abstract clamped" in page
     assert "abstract-toggle" in page
     assert (out / "static" / "search.js").exists()
+
+
+def test_render_toc_and_section_anchors(tmp_path):
+    st = Store(tmp_path / "data")
+    core = Paper(id="arxiv:c1", source="arxiv", title="Core One", authors=["A"], abstract="",
+                 categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/c1")
+    rel = Paper(id="arxiv:r1", source="arxiv", title="Rel One", authors=["B"], abstract="",
+                categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/r1")
+    day = DayData("2026-07-16", DailyReview("2026-07-16", "o", "", ""), items=[
+        {"paper": core, "score": RelevanceScore(90, ["GRB"], "core", ""),
+         "summary": PaperSummary("arxiv:c1", "核心一", "", "", "", "", "")},
+        {"paper": rel, "score": RelevanceScore(50, [], "related", ""),
+         "summary": PaperSummary("arxiv:r1", "相关一", "", "", "", "", "")}])
+    st.save_day(day)
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
+    assert 'class="toc"' in page
+    assert 'href="#core"' in page and 'href="#related"' in page
+    assert 'href="#paper-arxiv-c1"' in page      # per-paper jump link
+    assert 'id="paper-arxiv-c1"' in page          # matching anchor on the card
+    assert 'id="overview"' in page and 'id="core"' in page
