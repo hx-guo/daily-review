@@ -139,7 +139,23 @@ def test_render_english_original_block(tmp_path):
     assert "Full English abstract text here." in page
     assert "en-abstract clamped" in page
     assert "abstract-toggle" in page
+    assert "中文标题：" in page          # Chinese translation labeled, below the English original
     assert (out / "static" / "search.js").exists()
+
+
+def test_render_et_al_when_authors_truncated(tmp_path):
+    st = Store(tmp_path / "data")
+    p = Paper(id="arxiv:1", source="arxiv", title="T",
+              authors=["A one", "B two", "C three", "D four", "E five"], abstract="abs",
+              categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/1")
+    # authors_en empty -> falls back to first 3 names, must append et al. (5 > 3)
+    summ = PaperSummary("arxiv:1", "中文", "", "", "", "", "")
+    day = DayData("2026-07-16", DailyReview("2026-07-16", "o", "", ""),
+                  items=[{"paper": p, "score": RelevanceScore(90, [], "core", ""), "summary": summ}])
+    st.save_day(day)
+    out = tmp_path / "site"; render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
+    assert "et al." in page
 
 
 def test_render_toc_and_section_anchors(tmp_path):

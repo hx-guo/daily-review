@@ -10,17 +10,18 @@
         <span class="score">相关性 {{ it.score.score }}</span>
         {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
       </div>
-      <h3>{{ it.summary.title_zh }}</h3>
-      <p class="tldr"><b>TL;DR：</b>{{ it.summary.tldr }}</p>
-      <p class="body">{{ it.summary.review }}</p>
-      <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
-      <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
-      <div class="original">
-        <p class="en-title">{{ it.paper.title }}</p>
-        <p class="en-authors">作者：{% if it.summary.authors_en %}{{ it.summary.authors_en }}{% else %}{{ it.paper.authors[:3]|join(', ') }}{% if it.paper.authors|length > 3 %}, et al.{% endif %}{% endif %}</p>
-        {% if it.summary.corresponding_en %}<p class="en-corr">通讯作者：{{ it.summary.corresponding_en }}</p>{% endif %}
-        <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
-        <button class="abstract-toggle" type="button">展开摘要</button>
+      <h3 class="en-title">{{ it.paper.title }}</h3>
+      {% set disp = it.summary.authors_en if it.summary.authors_en else it.paper.authors[:3]|join(', ') %}
+      <p class="en-authors">作者：{{ disp }}{% if it.paper.authors|length > 3 and 'et al' not in disp|lower %} et al.{% endif %}</p>
+      {% if it.summary.corresponding_en %}<p class="en-corr">通讯作者：{{ it.summary.corresponding_en }}</p>{% endif %}
+      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
+      <button class="abstract-toggle" type="button">展开摘要</button>
+      <div class="zh">
+        <p class="zh-title"><b>中文标题：</b>{{ it.summary.title_zh }}</p>
+        <p class="tldr"><b>TL;DR：</b>{{ it.summary.tldr }}</p>
+        <p class="body">{{ it.summary.review }}</p>
+        <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
+        <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
       </div>
       <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
     </article>
@@ -45,8 +46,8 @@
 <section class="review" id="overview">
   <h2>{{ day.date }} 当日总览</h2>
   <h3>今日概览</h3><p>{{ day.review.overview }}</p>
-  <h3>今日亮点</h3><p>{{ day.review.highlights }}</p>
-  <h3>趋势与联系</h3><p>{{ day.review.trends }}</p>
+  <h3>今日亮点</h3><p class="points">{{ day.review.highlights }}</p>
+  <h3>趋势与联系</h3><p class="points">{{ day.review.trends }}</p>
 </section>
 <section class="papers">
   {% if core_items %}<h2 class="layer-head" id="core">🎯 核心（{{ core_items|length }} 篇）</h2>{% endif %}
@@ -64,18 +65,16 @@
         <span class="score">相关性 {{ it.score.score }}</span>
         {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
       </div>
+      <h4 class="en-title">{{ it.paper.title }}</h4>
+      <p class="en-authors">作者：{{ it.paper.authors[:3]|join(', ') }}{% if it.paper.authors|length > 3 %} et al.{% endif %}</p>
+      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
+      <button class="abstract-toggle" type="button">展开摘要</button>
       {% if it.summary %}
-      <h4>{{ it.summary.title_zh }}</h4>
-      {% if it.summary.tldr %}<p class="tldr">{{ it.summary.tldr }}</p>{% endif %}
-      {% else %}
-      <h4>{{ it.paper.title }}</h4>
-      {% endif %}
-      <div class="original">
-        {% if it.summary %}<p class="en-title">{{ it.paper.title }}</p>{% endif %}
-        <p class="en-authors">作者：{{ it.paper.authors[:3]|join(', ') }}{% if it.paper.authors|length > 3 %} et al.{% endif %}</p>
-        <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
-        <button class="abstract-toggle" type="button">展开摘要</button>
+      <div class="zh">
+        <p class="zh-title"><b>中文：</b>{{ it.summary.title_zh }}</p>
+        {% if it.summary.tldr %}<p class="tldr">{{ it.summary.tldr }}</p>{% endif %}
       </div>
+      {% endif %}
       <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
     </article>
     {% endfor %}

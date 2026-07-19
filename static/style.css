@@ -38,3 +38,10 @@ html { scroll-behavior: smooth; }
   .toc { position: static; width: auto; max-height: none; border-right: none; border-bottom: 1px solid #8883; padding-right: 0; padding-bottom: .6rem; }
   .toc .toc-paper { white-space: normal; }
 }
+
+.points { white-space: pre-wrap; }
+.zh { margin-top: .6rem; padding-top: .5rem; border-top: 1px dashed #8883; }
+.zh-title { font-weight: 600; }
+.subtitle { color: #888; font-size: .9rem; margin: .2rem 0 0; }
+footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #8883; color: #888; font-size: .8rem; }
+footer p { margin: .3rem 0; }

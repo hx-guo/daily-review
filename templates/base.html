@@ -3,16 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}GECAM 每日文献综述{% endblock %}</title>
+  <title>{% block title %}高能暂现源 · 每日文献综述{% endblock %}</title>
   <link rel="stylesheet" href="{{ static_prefix }}static/style.css">
 </head>
 <body>
-  <header><a href="{{ static_prefix }}index.html"><h1>GECAM 每日文献综述</h1></a>
+  <header><a href="{{ static_prefix }}index.html"><h1>高能暂现源 · 每日文献综述</h1></a>
+    <p class="subtitle">GECAM · Insight-HXMT · SVOM 团队</p>
     <nav><a href="{{ static_prefix }}archive.html">归档</a></nav>
     {% if latest_date %}<p class="asof">数据截至 arXiv 最新公告日 {{ latest_date }}</p>{% endif %}
   </header>
   <main>{% block content %}{% endblock %}</main>
-  <footer>自动生成 · GECAM Daily Review</footer>
+  <footer>
+    <p>本站每日自动汇总，供高能暂现源研究团队（GECAM · Insight-HXMT · SVOM）内部文献跟踪参考。</p>
+    <p>论文标题、作者、摘要等元数据来自 <a href="https://arxiv.org/" target="_blank" rel="noopener">arXiv</a>，版权归各论文原作者所有；本站与 arXiv 无隶属关系。综述与中文翻译由 AI 自动生成，可能存在错误或遗漏，请以论文原文为准。</p>
+    <p>© 2026 高能暂现源研究团队 · 仅供内部研究用途</p>
+  </footer>
   <script src="{{ static_prefix }}static/search.js"></script>
 </body>
 </html>
