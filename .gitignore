@@ -5,3 +5,7 @@ site/
 .pytest_cache/
 *.pyc
 .superpowers/
+.DS_Store
+.playwright-mcp/
+preview_top.png
+/UI设计简洁升级.zip

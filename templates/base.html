@@ -4,19 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}高能暂现源 · 每日文献综述{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
   <link rel="stylesheet" href="{{ static_prefix }}static/style.css">
 </head>
 <body>
-  <header><a href="{{ static_prefix }}index.html"><h1>高能暂现源 · 每日文献综述</h1></a>
-    <nav><a href="{{ static_prefix }}archive.html">归档</a></nav>
-    {% if latest_date %}<p class="asof">数据截至 arXiv 最新公告日 {{ latest_date }}</p>{% endif %}
+  <header class="site-header">
+    <div class="sh-left">
+      <a class="sh-title" href="{{ static_prefix }}index.html">高能暂现源 · 每日文献综述</a>
+      {% if meta %}<span class="sh-vol">Vol. {{ meta.vol }} · No. {{ '%03d' % meta.no }}</span>{% endif %}
+    </div>
+    <div class="sh-right">
+      {% if meta %}
+      <span class="sh-meta">
+        <span class="sh-date">{{ meta.cn_date }}</span>
+        <span class="sh-div">|</span>
+        <span class="sh-count">收录 {{ meta.n_core + meta.n_related }} 篇（核心 {{ meta.n_core }} · 相关 {{ meta.n_related }} · 边缘 {{ meta.n_edge }}）</span>
+        <span class="sh-div">|</span>
+      </span>
+      {% endif %}
+      <a class="sh-arch" href="{{ static_prefix }}archive.html">归档</a>
+    </div>
   </header>
-  <main>{% block content %}{% endblock %}</main>
-  <footer>
-    <p>本站每日自动汇总，供高能暂现源研究团队内部文献跟踪参考。</p>
-    <p>论文标题、作者、摘要等元数据来自 <a href="https://arxiv.org/" target="_blank" rel="noopener">arXiv</a>，版权归各论文原作者所有；本站与 arXiv 无隶属关系。综述与中文翻译由 AI 自动生成，可能存在错误或遗漏，请以论文原文为准。</p>
-    <p>© 2026 高能暂现源研究团队 · 仅供内部研究用途</p>
-  </footer>
+  <div class="body-wrap">
+    {% block drawer %}{% endblock %}
+    {% block content %}{% endblock %}
+  </div>
   <script src="{{ static_prefix }}static/search.js"></script>
 </body>
 </html>

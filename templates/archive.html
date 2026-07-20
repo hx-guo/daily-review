@@ -1,8 +1,19 @@
 {% extends "base.html" %}
 {% block title %}归档 · 高能暂现源每日文献综述{% endblock %}
 {% block content %}
-<h2>归档</h2>
-<ul class="archive">
-  {% for d in days %}<li><a href="{{ static_prefix }}day/{{ d }}.html">{{ d }}</a></li>{% endfor %}
-</ul>
+<main class="reading">
+  <header class="masthead">
+    <h1>归档</h1>
+    <div class="masthead-sub">ARCHIVE · DAILY LITERATURE REVIEW</div>
+    <div class="masthead-meta">按 arXiv 公告日归档{% if latest_date %}　·　数据截至 {{ latest_date }}{% endif %}</div>
+  </header>
+  <section class="sec">
+    <ul class="archive">
+      {% for d in days %}<li><a href="{{ static_prefix }}day/{{ d }}.html">{{ d }}</a></li>{% endfor %}
+    </ul>
+  </section>
+  <footer class="paper-footer">
+    本站每日自动汇总，供高能暂现源研究团队内部文献跟踪参考 · 元数据来自 arXiv，版权归各原作者所有 · 综述与翻译由 AI 生成，请以原文为准 · © 2026 高能暂现源研究团队
+  </footer>
+</main>
 {% endblock %}

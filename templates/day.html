@@ -1,104 +1,146 @@
 {% extends "base.html" %}
-{% block title %}{{ day.date }} · 高能暂现源每日文献综述{% endblock %}
+{% block title %}{{ meta.cn_date if meta else day.date }} · 高能暂现源每日文献综述{% endblock %}
 
 {% macro anchor(it) %}paper-{{ it.paper.id | replace(':', '-') | replace('.', '-') }}{% endmacro %}
 
-{% macro main_card(it) %}
+{%- macro tagline(it) -%}
+相关性 {{ it.score.score }}{% for t in it.score.tags %}　·　{{ t }}{% endfor %}
+{%- endmacro -%}
+
+{% macro abstract_block(it) %}
+      <div class="abstract-block">
+        <div class="abstract-label"><span class="lbl-cn">原文摘要</span><span class="lbl-en">Abstract</span></div>
+        <div class="abstract-wrap">
+          <p class="abstract clamped">{{ it.paper.abstract }}</p>
+          <span class="abstract-toggle" role="button" tabindex="0">展开 ▾</span>
+        </div>
+      </div>
+{% endmacro %}
+
+{% macro ai_zone(it) %}
+  {%- set hl = it.summary.highlight if it.summary else '' -%}
+  {%- set ctx = (it.summary.review or it.summary.relation) if it.summary else '' -%}
+  {% if hl or ctx %}
+      <div class="ai-zone">
+        <div class="ai-head">
+          <span class="ai-title">AI 综述</span>
+          <span class="ai-cap"><span class="etal">AI-generated</span> · 以原文为准</span>
+        </div>
+        {% if hl %}<div class="ai-block"><span class="ai-label">亮点</span><p class="ai-body">{{ hl }}</p></div>{% endif %}
+        {% if ctx %}<div class="ai-block"><span class="ai-label">脉络与展望</span><p class="ai-body">{{ ctx }}</p></div>{% endif %}
+      </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro paper_card(it, seq) %}
     <article class="card {{ it.score.layer }}" id="{{ anchor(it) }}">
-      <div class="tags">
-        <span class="layer">{{ it.score.layer }}</span>
-        <span class="score">相关性 {{ it.score.score }}</span>
-        {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+      <div class="card-seq">{{ seq }}</div>
+      <div class="card-body">
+        <div class="tagline">{{ tagline(it) }}</div>
+        <h3 class="en-title">{{ it.paper.title }}</h3>
+        {% if it.summary and it.summary.title_zh %}<p class="zh-title">{{ it.summary.title_zh }}</p>{% endif %}
+        <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
+        {{ abstract_block(it) }}
+        {{ ai_zone(it) }}
+        <a class="arxiv-link" href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv:{{ arxiv_id(it.paper) }} ↗</a>
       </div>
-      <h3 class="en-title">{{ it.paper.title }}</h3>
-      {% set disp = it.summary.authors_en if it.summary.authors_en else it.paper.authors[:3]|join(', ') %}
-      <p class="en-authors">作者：{{ disp }}{% if it.paper.authors|length > 3 and 'et al' not in disp|lower %} et al.{% endif %}</p>
-      {% if it.summary.corresponding_en %}<p class="en-corr">通讯作者：{{ it.summary.corresponding_en }}</p>{% endif %}
-      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
-      <button class="abstract-toggle" type="button">展开摘要</button>
-      <div class="zh">
-        <p class="zh-title"><b>中文标题：</b>{{ it.summary.title_zh }}</p>
-        <p class="tldr"><b>TL;DR：</b>{{ it.summary.tldr }}</p>
-        <p class="body">{{ it.summary.review }}</p>
-        <p class="highlight"><b>亮点：</b>{{ it.summary.highlight }}</p>
-        <p class="relation"><b>与我们的关联：</b>{{ it.summary.relation }}</p>
-      </div>
-      <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
     </article>
 {% endmacro %}
 
-{% block content %}
-<div class="layout">
-<nav class="toc">
-  <details class="toc-details" open>
-  <summary>📑 目录</summary>
-  <a class="toc-head" href="#overview">📋 当日总览</a>
-  {% if core_items %}
-  <a class="toc-head" href="#core">🎯 核心（{{ core_items|length }}）</a>
-  {% for it in core_items %}<a class="toc-paper" href="#{{ anchor(it) }}">{{ it.summary.title_zh }}</a>{% endfor %}
-  {% endif %}
-  {% if related_items %}
-  <a class="toc-head" href="#related">🔭 相关（{{ related_items|length }}）</a>
-  {% for it in related_items %}<a class="toc-paper" href="#{{ anchor(it) }}">{{ it.summary.title_zh }}</a>{% endfor %}
-  {% endif %}
-  {% if edge_items %}<a class="toc-head" href="#edge">〰️ 边缘相关（{{ edge_items|length }}）</a>{% endif %}
-  {% if day.revisions %}<a class="toc-head" href="#revisions">🕓 修订历史</a>{% endif %}
-  </details>
-</nav>
-<div class="content">
-<section class="review" id="overview">
-  <h2>{{ day.date }} 当日总览</h2>
-  <h3>今日概览</h3><p>{{ day.review.overview }}</p>
-  <h3>今日亮点</h3><p class="points">{{ day.review.highlights }}</p>
-  <h3>趋势与联系</h3><p class="points">{{ day.review.trends }}</p>
-</section>
-<section class="papers">
-  {% if core_items %}<h2 class="layer-head" id="core">🎯 核心（{{ core_items|length }} 篇）</h2>{% endif %}
-  {% for it in core_items %}{{ main_card(it) }}{% endfor %}
-  {% if related_items %}<h2 class="layer-head" id="related">🔭 相关（{{ related_items|length }} 篇）</h2>{% endif %}
-  {% for it in related_items %}{{ main_card(it) }}{% endfor %}
-</section>
-{% if edge_items %}
-<section class="edge-papers" id="edge">
-  <details>
-    <summary>边缘相关（{{ edge_items|length }} 篇 · 低相关性 · 点击展开）</summary>
-    {% for it in edge_items %}
-    <article class="card edge" id="{{ anchor(it) }}">
-      <div class="tags">
-        <span class="score">相关性 {{ it.score.score }}</span>
-        {% for t in it.score.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+{% block drawer %}
+<div class="toc-drawer" data-drawer>
+  <button class="toc-tab" data-drawer-toggle aria-expanded="false" title="目次">目次 <span class="toc-arrow">›</span></button>
+  <div class="toc-panel" hidden>
+    <div class="toc-panel-inner">
+      <div class="toc-panel-head">
+        <span class="toc-panel-title">目 次 <span class="etal">· Index</span></span>
+        <span class="toc-close" data-drawer-toggle role="button" tabindex="0">×</span>
       </div>
-      <h4 class="en-title">{{ it.paper.title }}</h4>
-      <p class="en-authors">作者：{{ it.paper.authors[:3]|join(', ') }}{% if it.paper.authors|length > 3 %} et al.{% endif %}</p>
-      <div class="en-abstract clamped">{{ it.paper.abstract }}</div>
-      <button class="abstract-toggle" type="button">展开摘要</button>
-      {% if it.summary %}
-      <div class="zh">
-        <p class="zh-title"><b>中文：</b>{{ it.summary.title_zh }}</p>
-        {% if it.summary.tldr %}<p class="tldr">{{ it.summary.tldr }}</p>{% endif %}
-      </div>
+      <a class="toc-overview" href="#overview">当日总览</a>
+      {% if core_items %}
+      <div class="toc-group">核 心 · {{ core_items|length }}</div>
+      {% for it in core_items %}<a class="toc-link" href="#{{ anchor(it) }}">{{ it.summary.title_zh if it.summary and it.summary.title_zh else it.paper.title }}</a>{% endfor %}
       {% endif %}
-      <p class="links"><a href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv</a></p>
-    </article>
-    {% endfor %}
-  </details>
-</section>
-{% endif %}
-{% if day.revisions %}
-<section class="revisions" id="revisions">
-  <details>
-    <summary>修订历史（{{ day.revisions|length }} 版）</summary>
-    {% for rev in day.revisions|reverse %}
-    <div class="revision">
-      <h4>同步于 {{ rev.synced }} · 当时 {{ rev.n_papers }} 篇</h4>
-      <p>{{ rev.review.overview }}</p>
-      {% if rev.review.highlights %}<p>{{ rev.review.highlights }}</p>{% endif %}
-      {% if rev.review.trends %}<p>{{ rev.review.trends }}</p>{% endif %}
+      {% if related_items %}
+      <div class="toc-group">相 关 · {{ related_items|length }}</div>
+      {% for it in related_items %}<a class="toc-link" href="#{{ anchor(it) }}">{{ it.summary.title_zh if it.summary and it.summary.title_zh else it.paper.title }}</a>{% endfor %}
+      {% endif %}
+      {% if edge_items %}<div class="toc-group-plain"><a href="#edge">边缘相关 · {{ edge_items|length }}</a></div>{% endif %}
+      {% if day.revisions %}<div class="toc-group-plain"><a href="#revisions">修订历史 · {{ day.revisions|length }} 版</a></div>{% endif %}
     </div>
-    {% endfor %}
-  </details>
-</section>
-{% endif %}
+  </div>
 </div>
-</div>
+{% endblock %}
+
+{% block content %}
+{% set ns = namespace(sec=0) %}
+<main class="reading">
+  <header class="masthead">
+    <h1>高能暂现源 · 每日文献综述</h1>
+    <div class="masthead-sub">HIGH-ENERGY TRANSIENTS · DAILY LITERATURE REVIEW</div>
+    <div class="masthead-meta">{{ meta.cn_date }} {{ meta.weekday }}　·　数据截至 arXiv 最新公告日</div>
+  </header>
+
+  {% set ns.sec = ns.sec + 1 %}
+  <section class="sec" id="overview">
+    <div class="sec-head"><span class="sec-num">{{ ROMAN[ns.sec] }}.</span><h2>当日总览</h2></div>
+    <p class="overview">{{ day.review.overview }}</p>
+  </section>
+
+  {% if core_items %}
+  {% set ns.sec = ns.sec + 1 %}
+  <div class="sec-head" id="core"><span class="sec-num">{{ ROMAN[ns.sec] }}.</span><h2>核心文献</h2><span class="sec-count">{{ core_items|length }} 篇</span></div>
+  {% for it in core_items %}{{ paper_card(it, '%02d' % loop.index) }}{% endfor %}
+  {% endif %}
+
+  {% if related_items %}
+  {% set ns.sec = ns.sec + 1 %}
+  <div class="sec-head" id="related"><span class="sec-num">{{ ROMAN[ns.sec] }}.</span><h2>相关文献</h2><span class="sec-count">{{ related_items|length }} 篇</span></div>
+  {% for it in related_items %}{{ paper_card(it, '%02d' % (core_items|length + loop.index)) }}{% endfor %}
+  {% endif %}
+
+  {% if edge_items %}
+  <section class="edge-fold" id="edge">
+    <details>
+      <summary class="fold-bar"><span>边缘相关 {{ edge_items|length }} 篇 · 低相关性</span><span class="fold-plus">展开 ＋</span></summary>
+      <div class="fold-body">
+        {% for it in edge_items %}
+        <article class="card edge" id="{{ anchor(it) }}">
+          <div class="card-body">
+            <div class="tagline">{{ tagline(it) }}</div>
+            <h4 class="en-title">{{ it.paper.title }}</h4>
+            <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
+            {{ abstract_block(it) }}
+            {% if it.summary and it.summary.title_zh %}<p class="zh-title-sm">{{ it.summary.title_zh }}{% if it.summary.tldr %}　·　{{ it.summary.tldr }}{% endif %}</p>{% endif %}
+            <a class="arxiv-link" href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv:{{ arxiv_id(it.paper) }} ↗</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </details>
+  </section>
+  {% endif %}
+
+  {% if day.revisions %}
+  <section class="revisions" id="revisions">
+    <details>
+      <summary class="fold-bar"><span>修订历史 {{ day.revisions|length }} 版</span><span class="fold-plus">展开 ＋</span></summary>
+      <div class="fold-body">
+        {% for rev in day.revisions|reverse %}
+        <div class="revision">
+          <h4>同步于 {{ rev.synced }}　·　当时 {{ rev.n_papers }} 篇</h4>
+          <p>{{ rev.review.overview }}</p>
+          {% if rev.review.highlights %}<p>{{ rev.review.highlights }}</p>{% endif %}
+          {% if rev.review.trends %}<p>{{ rev.review.trends }}</p>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </details>
+  </section>
+  {% endif %}
+
+  <footer class="paper-footer">
+    本站每日自动汇总，供高能暂现源研究团队内部文献跟踪参考 · 元数据来自 arXiv，版权归各原作者所有 · 综述与翻译由 AI 生成，请以原文为准 · © 2026 高能暂现源研究团队
+  </footer>
+</main>
 {% endblock %}
