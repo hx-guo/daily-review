@@ -50,7 +50,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -92,7 +94,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -135,7 +139,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -174,7 +180,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -216,7 +224,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -256,7 +266,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -299,7 +311,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -340,7 +354,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -386,7 +402,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -430,7 +448,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -479,7 +499,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -517,7 +539,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -556,7 +580,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -588,14 +614,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15167",
-        "title_zh": "吸积毫秒X射线脉冲星SRGA J144459.2-604207爆发衰减的光谱研究",
-        "team": "第一作者与通讯作者为Amar Deo Chandra，唯一机构为印度Aryabhatta Research Institute of Observational Sciences，非知名合作组",
-        "tldr": "利用NICER和Swift观测研究新发现AMXP SRGA J144459.2-604207在2024年爆发衰减至宁静态的光谱演化及长期活动，探讨其加热机制与射电-流出关联。",
-        "review": "本文分析NICER和Swift对2024年爆发源SRGA J144459.2-604207在衰减、多次再耀发及宁静态的X射线光谱，用吸收Compton化模型拟合；宁静态光谱也可用幂律或黑体描述。结合历史数据研究约45年宁静态X射线活动，发现可用深地壳加热模型解释，并排除伴星冕活动主导。探测到再耀发与超快流出、射电发射准同时，探讨喷流形成的可能能量机制。",
-        "highlight": "首次详细研究该源爆发衰减全过程；在再耀发中捕捉准同时的X射线-射电辐射、超快流出，为吸积毫秒脉冲星的喷流触发机制提供线索；利用长期历史数据约束宁静态加热模型。",
-        "relation": "该源为X射线暂现源，其多波段辐射关联研究与GECAM等全天监测器对类似高能暂现现象的协同观测和物理机制研究具有参考意义。",
-        "authors_en": "Amar Deo Chandra (Aryabhatta Research Institute of Observational Sciences)",
-        "corresponding_en": "Amar Deo Chandra"
+        "title_zh": "吸积毫秒脉冲星 SRGA J144459.2-604207 2024 年爆发衰减的光谱研究",
+        "team": "",
+        "tldr": "利用 NICER 和 Swift 观测该源爆发衰减至宁静态的谱演化，结合长期数据探讨宁静态 X 射线辐射机制及射电–X 射线联系。",
+        "review": "",
+        "highlight": "首次探测到再闪耀期间近同时的超快外流与射电辐射，为吸积-喷流耦合提供新线索；长期宁静态光度可用深层地壳加热模型解释，排除了伴星日冕活动的主要贡献。",
+        "relation": "",
+        "authors_en": "A. D. Chandra (Aryabhatta Research Institute of Observational Sciences, Manora Peak, Nainital, Uttarakhand, 263001, India)",
+        "corresponding_en": "Amar Deo Chandra",
+        "context_outlook": "该源由 [[Mereminskiy+ 2024]] 发现，随后 [[Ng+ 2024a]] 确认其为 447.9 Hz 吸积毫秒 X 射线脉冲星。本文利用 NICER 和 Swift 观测其 2024 年爆发衰减至宁静态的能谱演化，发现宁静态谱可用多种模型描述。整合 ~45 年历史数据得到的长期宁静态光度与深层地壳加热模型一致，表明中子星内部加热可维持较低水平的 X 射线辐射。此外，在再闪耀期间探测到近同时的超快外流和射电辐射（[[Russell+ 2024]]），将源置于射电-X 射线光度平面，为研究喷流形成条件及吸积-外流耦合提供了新样本。未来更高时间分辨率和多波段联合监测有望区分宁静态辐射机制并限制喷流产生的阈值吸积率。",
+        "citations": [
+          {
+            "label": "Mereminskiy+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ng+ 2024a",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Russell+ 2024",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -634,14 +678,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15245",
-        "title_zh": "天蝎座T（T CrB）再次作为新星爆发的时间约束：复发间隔、轨道相位与吸积态演化",
-        "team": "第一/通讯：裴松鹏（六盘水师范学院）；主要机构：六盘水师范学院、中科院上海天文台、上海交通大学李政道研究所等；非大型合作组",
-        "tldr": "通过复发间隔、轨道相位和近期吸积态演化三种约束，给出T CrB下次爆发的条件概率和监测窗口，而非单一日期预测。",
-        "review": "研究结合历史复发间隔（平均79.86年）、四个历史爆发的轨道相位（形成~0.44和~0.62两组窗口）以及2014–2026年的光学光变（高态、变暗、重新下降），采用条件生存概率和吸积亏损模型评估爆发时间。截至2026年7月11日，2026年内爆发概率为30.2%，未来一年为56.9%；相位窗口给出2026年8月至2030年底的多个监测时段；若吸积速率不足，最早爆发下限约在2029年5月。结论强调数据支持多种条件性诊断场景，最终爆发时刻将检验其底层假设。",
-        "highlight": "创新点：首次将生存分析概率框架与吸积亏损计时相结合，避免单一预测；为观测规划提供清晰的轨道相位监测窗口；对1946年前兆下降提出吸积重构与源相关消光的复合解释。",
-        "relation": "—",
-        "authors_en": "Songpeng Pei (School of Physics and Electrical Engineering, Liupanshui Normal University), Xiaowan Zhang (School of Physics and Electrical Engineering, Liupanshui Normal University), Renzhi Su (Shanghai Astronomical Observatory, Chinese Academy of Sciences) et al.",
-        "corresponding_en": "Songpeng Pei"
+        "title_zh": "北冕座 T 下次新星爆发的时间约束：复发周期、轨道相位与吸积态演化",
+        "team": "",
+        "tldr": "结合历史复发间隔、轨道相位和吸积高态对比，给出下次爆发的条件监测窗口，而非确定预测日期。",
+        "review": "",
+        "highlight": "综合三种独立约束，强调情景诊断而非确定性预报；提出 1946 年前兆衰减可能源自吸积重组与源相关消光，若 2026 年衰减持续则暗示近期爆发可能。",
+        "relation": "",
+        "authors_en": "S. Pei (School of Physics and Electrical Engineering, Liupanshui Normal University), X. Zhang (School of Physics and Electrical Engineering, Liupanshui Normal University), R. Su (Shanghai Astronomical Observatory, Chinese Academy of Sciences) et al.",
+        "corresponding_en": "Songpeng Pei",
+        "context_outlook": "过去对北冕座 T（T CrB）的爆发预测多依赖 1946 年爆发前的高态与衰减类比（[[Schaefer 2023a]]；[[Luna+ 2020]]），但衰减的物理本质和复发周期的离散性仍存疑（[[Merc+ 2025]]；[[Luna+ 2026]]）。本文综合历史复发、轨道相位统计和吸积演化模型，构建了基于条件概率的监测窗口，并指出 1946 年极端衰减可能需要吸积重组与源相关消光协同解释（[[Pei+ 2026b]]）。未来实际爆发时刻将检验这些诊断性情景，推动对白矮星吸积历史及新星触发机制的深入理解，也为其他回旋新星的预报方法提供参考。",
+        "citations": [
+          {
+            "label": "Schaefer 2023a",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Luna+ 2020",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Merc+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Luna+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Pei+ 2026b",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -679,14 +751,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15130",
-        "title_zh": "Swift上新：BAT-GLIMPSE实现指向与转动时段的伽马射线成像和马赛克定位",
-        "team": "第一作者/通讯作者 Samuele Ronchini (意大利 GSSI/INFN)，合作者来自 NASA 戈达德航天飞行中心、宾州州立大学等；属于 Swift-BAT/GUANO 合作组",
-        "tldr": "开发全自动管线 BAT-GLIMPSE，利用 Swift-BAT 转动时段的 TTE 数据实现暂现源成像定位，填补探测盲区。",
-        "review": "BAT-GLIMPSE 基于 BatAnalysis 包，根据卫星姿态自动选择成像或马赛克分析，处理指向和转动期间的数据。用 66 个 GUANO 已报伽马暴验证，成功恢复 43 个暴的角分定位，偏移 < 5′；转动事件恢复率达 88%。该管线已实时运行，与 NITRATES 协同将 Swift-BAT 定位率提升约一倍，在 LIGO–Virgo–KAGRA O4 观测中发挥关键作用。",
-        "highlight": "首次实现 Swift-BAT 转动期间的自动暂现源定位，弥补了以往无法触发的探测盲区；与 NITRATES 互补，大幅提高多信使天体物理的快速响应能力。",
-        "relation": "提升了伽马射线暂现源的广域定位和快速响应能力，尤其适用于短暴和引力波电磁对应体搜寻，与 GECAM 的高能暂现研究目标互补。",
-        "authors_en": "S. Ronchini (Gran Sasso Science Institute / INFN, Italy), T. Parsotan (NASA Goddard Space Flight Center, USA), J. DeLaunay (Pennsylvania State University, USA) et al.",
-        "corresponding_en": "Samuele Ronchini"
+        "title_zh": "Swift BAT-GLIMPSE：利用成像与拼接技术实现指向与转向期间的伽马射线定位",
+        "team": "",
+        "tldr": "开发了开源管道 BAT-GLIMPSE，可自主、低时延地利用成像与拼接方法分析 Swift-BAT 数据，对伽马射线暴进行弧分定位，尤其填补了飞船转向期间的定位空白。",
+        "review": "",
+        "highlight": "首次实现 Swift-BAT 在转向期间的自主成像定位，突破了星上触发禁用的限制；与 NITRATES 协同，有望将 BAT 的弧分定位率翻倍。",
+        "relation": "",
+        "authors_en": "S. Ronchini (Gran Sasso Science Institute & INFN), T. Parsotan (NASA Goddard Space Flight Center), J. DeLaunay (Pennsylvania State University) et al.",
+        "corresponding_en": "Samuele Ronchini",
+        "context_outlook": "Swift-BAT 的瞬变源弧分定位传统上依赖星上触发与 GUANO/NITRATES 地面分析系统 [[Tohuvavohu+ 2020]][[DeLaunay & Tohuvavohu 2022]]，但转向期间星上触发被禁用，造成监测盲区。2012 年，Copete 指出利用下传数据可在地面进行成像定位 [[Copete 2012]]，但一直缺乏自动化实现。BAT-GLIMPSE 借助 BatAnalysis 软件包 [[Parsotan+ 2025]]，通过自动选择成像或拼接分析，首次系统性地实现了转向期间的定位，并在 66 个 GRB 样本中得到验证。该管道在 LIGO-Virgo-KAGRA 第四轮观测运行中对预合并警报触发的快速转向响应发挥了关键作用。未来，BAT-GLIMPSE 与 NITRATES 的协同及 ULTRA-Swift 等项目将进一步提升 Swift 在时域与多信使天文学中的探测能力。",
+        "citations": [
+          {
+            "label": "Tohuvavohu+ 2020",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "DeLaunay & Tohuvavohu 2022",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Copete 2012",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Parsotan+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -727,7 +822,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -770,7 +867,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -814,7 +913,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -852,7 +953,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -896,7 +999,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -938,7 +1043,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -977,7 +1084,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1022,7 +1131,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1064,7 +1175,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1103,7 +1216,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1142,7 +1257,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1184,7 +1301,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1220,7 +1339,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1255,7 +1376,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1302,7 +1425,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1345,7 +1470,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1392,7 +1519,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1435,7 +1564,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1477,7 +1608,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1518,7 +1651,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1558,7 +1693,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1591,14 +1728,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14828",
-        "title_zh": "致密天体建模中的SPH方法综述",
-        "team": "Stephan Rosswog（汉堡大学天文台、奥斯卡·克莱因宇宙粒子物理中心）；独立作者，不属大型合作组",
-        "tldr": "系统评述平滑粒子流体动力学（SPH）方法在致密天体模拟中的最新进展，涵盖数值技术、广义相对论推广及白矮星、中子星、黑洞并合应用。",
-        "review": "本文是一篇长篇综述，全面介绍了SPH作为拉格朗日无网格方法在牛顿理想气体动力学中的数值基础与最新改进（如无网格导数、激波处理）。随后详述广义相对论SPH，包含固定与动态时空下的相对论性表述，特别是全数值相对论SPH的最新发展。天体物理部分重点回顾了白矮星-白矮星、双中子星及中子星-黑洞并合的SPH模拟现状，强调引力波驱动的并合过程，并结合微物理输入与多信使影响。",
-        "highlight": "涵盖SPH从基础到前沿的完整谱系，首次系统总结全广义相对论动态时空下的SPH方法；展示了该方法在致密天体并合这一多信使天体物理核心问题中的独特优势与挑战。",
-        "relation": "—",
-        "authors_en": "Stephan Rosswog (Hamburg Observatory, University of Hamburg; The Oskar Klein Centre for Cosmoparticle Physics, AlbaNova University Centre)",
-        "corresponding_en": "Stephan Rosswog"
+        "title_zh": "致密天体建模中的SPH方法",
+        "team": "",
+        "tldr": "全面综述光滑粒子流体动力学（SPH）从牛顿理想流体到全广义相对论动态时空的算法发展，并系统梳理其在白矮星双星、双中子星及中子星-黑洞合并等致密天体模拟中的应用现状与挑战。",
+        "review": "",
+        "highlight": "首次在统一框架下覆盖SPH在牛顿、狭义/广义相对论及动态时空中的最新进展，深入剖析守恒性、自适应性与激波捕获、磁场约束等核心矛盾的应对策略，为多信使天体物理模拟提供算法路线图。",
+        "relation": "",
+        "authors_en": "Stephan Rosswog (Hamburg Observatory, University of Hamburg; The Oskar Klein Centre, AlbaNova University Centre)",
+        "corresponding_en": "Stephan Rosswog",
+        "context_outlook": "SPH方法自[[Gingold & Monaghan 1977]]和[[Lucy 1977]]提出以来，凭借其拉格朗日守恒特性天然适合天体流体模拟。早期[[Benz 1990b]]等将SPH成功用于白矮星碰撞，开启了双星并合研究的新范式。随后[[Rosswog+ 2007a]]等工作将SPH推广到广义相对论框架，使得强场致密天体合并的全物理模拟成为可能。本文所梳理的全数值相对论SPH与动态时空耦合标志着算法进入新阶段，未来结合无网格导数、低耗散激波方案及GPU大规模并行，将进一步提升多信使事件的预测精度。",
+        "citations": [
+          {
+            "label": "Gingold & Monaghan 1977",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Lucy 1977",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Benz 1990b",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Rosswog+ 2007a",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1635,7 +1795,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1667,14 +1829,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14982",
-        "title_zh": "用 CHIME/FRB 星表 I 检验宇宙各向同性",
-        "team": "第一作者 Jun-Yi Shen，通讯作者 Yuan-Chuan Zou；机构未提供，非知名合作组",
-        "tldr": "利用首批 536 个 CHIME FRB 检验宇宙大尺度各向同性，未发现显著偏离。",
-        "review": "研究对象为 CHIME/FRB 第一星表中 536 个快速射电暴，剔除重复暴和低银纬源。采用两点角相关函数（2PACF）和 sigma-map 两种独立方法，以 CHIME 注入数据构建随机星表校正仪器选择效应，并用对数正态模拟估计协方差。2PACF 整体与各向同性一致，但协方差阵病态无法稳健拟合参数；sigma-map 角功率谱无显著方向各向异性，低多极矩误差较大。结论是该样本暂时限制明显，未来更大 FRB 样本有望改善灵敏度。",
-        "highlight": "首次用 CHIME FRB 数据系统检验宇宙学原理，结合注入数据仔细扣除仪器效应，并同时采用方向无关和方向依赖的统计方法。",
-        "relation": "—",
+        "title_zh": "利用CHIME/FRB星表 I 检验宇宙各向同性",
+        "team": "",
+        "tldr": "使用CHIME第一星表536个FRB，结合注入数据校正观测偏差，通过两点角相关函数和sigma-map两种方法检验宇宙各向同性，结果与各向同性一致但受限于样本量。",
+        "review": "",
+        "highlight": "首次将CHIME注入数据系统应用于FRB各向同性检验，同时采用2PACF和sigma-map互补方法，为FRB宇宙学统计提供了稳健的分析框架。",
+        "relation": "",
         "authors_en": "Jun-Yi Shen, Yuan-Chuan Zou",
-        "corresponding_en": "Yuan-Chuan Zou"
+        "corresponding_en": "",
+        "context_outlook": "宇宙学原理作为现代宇宙学的基石，已通过CMB（如COBE、WMAP、Planck）和星系巡天（如SDSS）的观测得到广泛支持，但近期类星体偶极等异常暗示可能存在大尺度方向性。FRB作为新兴宇宙学探针，凭借其河外起源和大量样本优势，正成为检验各向同性的重要工具。本研究利用CHIME/FRB第一星表536个FRB，结合注入数据校正仪器偏差，通过两点角相关函数和sigma-map方法进行各向同性检验，为后续FRB宇宙学应用奠定了方法基础。随着CHIME第二星表等更大样本和相应注入数据的发布，未来有望更精确地约束角功率谱的低阶多极矩，并探索可能的大尺度各向异性信号。",
+        "citations": []
       }
     },
     {
@@ -1714,7 +1878,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1750,7 +1916,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1791,7 +1959,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1829,7 +1999,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1875,7 +2047,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1919,7 +2093,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1959,7 +2135,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2031,14 +2209,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14696",
-        "title_zh": "潮汐瓦解事件2024aepd的早期近红外超与快速盘-冕演化",
-        "team": "第一作者：吴永新 (Yongxin Wu)；通讯作者：王燕南 (Yanan Wang，中科院国家天文台)；主要机构：中科院国家天文台、中科院大学、图尔库大学等；国际合作团队（含 ePESSTO、GTC 等）",
-        "tldr": "在 TDE 2024aepd 中首次同步探测到早期 (~40 天) 近红外超和 X 射线盘-冕快速演化，为星冕形成和再处理机制提供新约束。",
-        "review": "对 ZTF 发现的 TDE 2024aepd (z=0.0835) 进行约 300 天的多波段监测 (光学/紫外/NIR/X 射线)。X 射线谱从初始的热盘主导加硬超出，迅速 (178 天起) 过渡到幂律主导并硬化，表明热冕快速浮现与增强。早期 (~40 天) 探测到显著的近红外超，其平谱幂律形态不能用紫外-光学黑体的瑞利-金斯尾巴解释，自由-自由再处理过程是更自然的起源。这是继 AT2019azh 和 TDE 2025abcr 后第三例报道早期 NIR 超的 TDE，暗示此类超可能普遍存在，并为研究 TDE 吸积、冕形成及再处理提供了宝贵样本。",
-        "highlight": "1) 首次在单一 TDE 中同时捕捉到早期 NIR 超与快速冕演化；2) NIR 超的谱斜率与再处理包层密度结构直接关联，可用于区分尘埃回响与自由-自由辐射；3) 盘-冕状态转变时标仅 ~200 天，为大质量黑洞吸积态的观测性演化研究提供了极佳窗口。",
-        "relation": "—",
-        "authors_en": "Yongxin Wu, Yanan Wang, Thomas M. Reynolds et al.",
-        "corresponding_en": "Yanan Wang"
+        "title_zh": "潮汐瓦解事件2024aepd的早期近红外超出与盘–冕快速演化",
+        "team": "",
+        "tldr": "多波段观测TDE 2024aepd，发现早期近红外超出及X射线谱从热盘到幂律冕的快速转变，为再处理包层模型提供新约束。",
+        "review": "",
+        "highlight": "亮点：成为继AT2019azh和TDE 2025abcr之后第三例具有早期NIR超出的TDE，且首次清晰展示盘–冕协同演化，揭示自由-自由辐射再处理可能普遍存在。",
+        "relation": "",
+        "authors_en": "Yongxin Wu (Key Laboratory of Optical Astronomy, National Astronomical Observatories, CAS), Yanan Wang (Key Laboratory of Optical Astronomy, National Astronomical Observatories, CAS), Thomas M. Reynolds (Tuorla Observatory, University of Turku) et al.",
+        "corresponding_en": "Yanan Wang",
+        "context_outlook": "近年来对TDE的近红外观测仍较匮乏，仅AT2019azh [[Reynolds+ 2026]]和TDE 2025abcr [[Patra+ 2026]]报道过早期NIR超出。本研究在2024aepd中不仅再次探测到该成分，还观测到X射线盘–冕态快速转变，为自由-自由吸收再处理模型提供了新支持 [[Roth+ 2020]]。这些发现暗示早期NIR超出可能非特例，并与FBOT瞬变现象形成联系。未来结合更大样本的早期NIR监测和数值模拟，可望区分尘埃回波与包层再处理，并建立盘–冕形成的统一物理图像。",
+        "citations": [
+          {
+            "label": "Reynolds+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Patra+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Roth+ 2020",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2074,13 +2270,15 @@
       "summary": {
         "paper_id": "arxiv:2607.14627",
         "title_zh": "饱和克尔玻色子云的相对论潮汐跃迁",
-        "team": "Yi-kun Li（中国科学院新疆天文台），单一作者",
-        "tldr": "计算了超辐射饱和标量玻色子云的相对论潮汐跃迁矩阵元，发现与氢原子近似差异最高达21.67%，并分析了修正来源及对云耗散的影响。",
-        "review": "本文研究旋转黑洞周围由超辐射产生的玻色子云在双星潮汐扰动下的共振跃迁。作者针对饱和分支上的|211⟩、|322⟩、|433⟩等主要云态，数值求解克尔准束缚模，采用相对论双线性归一化和绝热四极潮汐扰动，计算了五个Δm=-2跃迁道的矩阵元。与传统的氢原子模型相比，相对论修正最大可达21.67%，且主要来源于径向波函数轮廓（贡献约80%）和双线性归一化（约15%），而相对论潮汐几何贡献很小。将修正应用于Landau-Zener跃迁概率，中等绝热性下云耗散比例的改变达13.7%，表明在双星演化中必须考虑相对论云结构。",
-        "highlight": "首次给出多个主量子数饱和云的相对论跃迁矩阵元谱；通过分量替换分离了径向模式、归一化、潮汐几何的各自贡献；量化了矩阵元修正对云耗散的影响，展示相对论效应的观测重要性。",
-        "relation": "—",
-        "authors_en": "Yi-kun Li (Xinjiang Astronomical Observatory, Chinese Academy of Sciences; University of Chinese Academy of Sciences)",
-        "corresponding_en": "Yi-kun Li"
+        "team": "",
+        "tldr": "计算五个Δm=-2跃迁通道的Kerr准束缚模矩阵元，相对类氢值修正最高达21.67%，并分离径向、归一化和潮汐几何的贡献。",
+        "review": "",
+        "highlight": "首次在饱和分支上系统计算相对论潮汐跃迁，发现可达~22%的修正，挑战了类氢近似的有效性；通过分量替换揭示径向模轮廓修正占主导（~80%），双线性归一化次之，潮汐几何影响极小。",
+        "relation": "",
+        "authors_en": "Yi-kun Li (Xinjiang Astronomical Observatory, CAS / University of Chinese Academy of Sciences)",
+        "corresponding_en": "Yi-kun Li",
+        "context_outlook": "过去该领域普遍采用类氢波函数和牛顿潮汐场估算玻色子云跃迁，但饱和状态下克尔几何对云结构的影响不可忽略。该工作通过数值饱和分支上的精确准束缚模与相对论投影，系统量化了相对论修正，并在广范参数空间内证明其显著性。展望未来，此类修正应纳入双星旋近中的云演化模型，以更准确地预测共振耗散与引力波信号，同时对其它自旋场及高阶跃迁提供方法参考。",
+        "citations": []
       }
     },
     {
@@ -2124,7 +2322,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2163,7 +2363,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2219,7 +2421,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2267,7 +2471,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2311,7 +2517,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2357,7 +2565,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2394,14 +2604,27 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15438",
-        "title_zh": "潮汐瓦解事件的三次射电耀发：喷流-风碰撞及 AT2020vwl 第三次射电耀发的发现",
-        "team": "第一作者 A. Mummery，通讯作者 A. Mummery；主要机构为普林斯顿高等研究院、科廷大学、亚利桑那大学；非知名合作组",
-        "tldr": "提出并验证了潮汐瓦解事件中喷流追上早期外流风壳会产生第三次射电耀发的理论，并在 AT2020vwl 的长期监测中首次发现该耀发。",
-        "review": "该研究在双外流（早期超爱丁顿风与晚期状态转变喷流）统一框架下，预测喷流因速度更快终将赶上风壳，导致密度突增并触发第三次射电耀发。作者开发了包含连续能量注入的相对论外流动力学与同步辐射模型，对 AT2020vwl 的前两次耀发进行前向建模，推断碰撞时间。利用新获取的长期射电监测数据，在预测时刻附近清晰探测到第三个耀发，验证了理论。模型还应用于 ASASSN-15oi 和 AT2024tvd，分别预测只出现微弱变化和即将出现显著第三次耀发。",
-        "highlight": "首次从理论上预言并观测到 TDE 的喷流-风碰撞射电耀发，为区分两种外流提供了运动学判据，并展示了利用长期射电监测诊断吸积外流的新途径。",
-        "relation": "—",
-        "authors_en": "A. Mummery (Institute for Advanced Study), A. J. Goodwin (Curtin University), C. T. Christy (University of Arizona) et al.",
-        "corresponding_en": "A. Mummery"
+        "title_zh": "潮汐瓦解事件的三重射电耀发：喷流-风碰撞及AT2020vwl第三次射电耀发的发现",
+        "team": "",
+        "tldr": "提出TDE中喷流追上风壳导致第三次射电耀发的理论框架，并在AT2020vwl中首次观测到该耀发，验证了双外流统一模型。",
+        "review": "",
+        "highlight": "首次在TDE AT2020vwl中探测到由喷流-风碰撞产生的第三射电耀发，为双外流统一模型提供了直接观测证据；建立了一套从双耀发光变曲线预测碰撞时标的动力学方法。",
+        "relation": "",
+        "authors_en": "A. Mummery (Institute for Advanced Study), A. Goodwin (Curtin University), C. Christy (Steward Observatory) et al.",
+        "corresponding_en": "",
+        "context_outlook": "TDE射电耀发以往呈现 prompt 和 delayed 两类，部分源甚至显示多重耀发（如 [[Cendes+ 2024]]）。Goodwin & Mummery [[Goodwin & Mummery 2026b]] 提出统一的双外流框架：早期超爱丁顿风驱动 prompt 耀发，晚期盘态转变喷流驱动 delayed 耀发。该模型自然预言较快的喷流将追上较慢的风壳，引发第三次射电耀发。本文在 AT2020vwl 中于碰撞时标上发现第三耀发，并预测了 ASASSN-15oi 和 AT2024tvd 的射电演化。未来延长监测更多双耀发 TDE，可检验该模型的普适性，并利用射电碰撞耀发反推外流与核周介质结构。",
+        "citations": [
+          {
+            "label": "Cendes+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Goodwin & Mummery 2026b",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2435,14 +2658,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15453",
-        "title_zh": "评估从参数估计到群体推断的偏心波形系统误差",
-        "team": "Muhammad Zeeshan（第一作者）等，机构未标明",
-        "tldr": "研究比较不同偏心波形模型在引力波参数估计中的差异，并评估其对层级群体推断造成的系统误差。",
-        "review": "本文利用 GWTC-4 目录中的 153 个双黑洞、2 个双中子星和 7 个中子星-黑洞并合事件，对比了两种偏心波形模型（SEOBNRv5EHM、TEOBResumS-DALI）与准圆波形的参数估计结果。两个偏心模型对绝大多数事件给出的源参数一致，但少数事件存在细微系统偏差。通过层级群体分析发现，这些事件级的偏差会累积，导致红移演化、有效自旋分布等群体性质推断出现显著差异；随着引力波目录扩大，系统误差以 √N 倍数增长。作者还构建了一个合成数据框架，用于开展注入研究以检验偏心群体特征的可恢复性。",
-        "highlight": "首次系统评估偏心波形系统误差对群体推断的影响，指出且量化了小样本偏移在层级分析中被放大的风险；提供合成数据测试框架，为利用下一代探测器数据约束双星形成渠道提供了方法论。",
-        "relation": "—",
-        "authors_en": "Muhammad Zeeshan, Richard O'Shaughnessy, Natalie Malagon, et al.",
-        "corresponding_en": ""
+        "title_zh": "评估偏心波形系统误差：从参数估计到总体推断",
+        "team": "",
+        "tldr": "比较两种偏心波形模型对 GWTC-4 紧凑双星的分析，发现模型间系统偏差会累积并显著影响天体物理总体推断（如自旋与红移演化）。",
+        "review": "",
+        "highlight": "首次系统揭示偏心波形模型间微小偏差在层次总体推断中的传播效应，并指出其随样本增大而加剧；同时构建了用于注入测试的合成数据框架，为偏心总体推断的可恢复性研究提供基准。",
+        "relation": "",
+        "authors_en": "Muhammad Zeeshan, Richard O'Shaughnessy, Natalie Malagon et al.",
+        "corresponding_en": "",
+        "context_outlook": "近年来，偏心轨道作为双星起源的重要探针备受关注，尤其在动力学组装系统中。随着 SEOBNRv5EHM 和 TEOBResumS-DALI 等波形模型的发展，从引力波数据中提取偏心信号成为可能，但不同模型间的系统差异可能引入传播误差。本研究通过分析 GWTC-4 样本，证明即使单个事件参数估计中的微小偏差，也会在层次总体推断中积累，显著影响红移演化和有效自旋分布等关键天体物理结论。未来随着引力波事件目录的急剧扩大，波形系统误差将成为精确天体物理推断的瓶颈，亟需更精确的波形建模和稳健的统计处理方案；而作者建立的合成数据框架将为偏心总体推断的可靠性评估提供重要的测试平台。",
+        "citations": []
       }
     },
     {
@@ -2473,14 +2698,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15431",
-        "title_zh": "揭示双黑洞的层级子群体",
-        "team": "Muhammad Zeeshan (一作), Richard O'Shaughnessy (通讯); 主要机构未标明; 非知名合作组",
-        "tldr": "利用多成分混合模型分析259个双黑洞事件，发现不同质量子群的自旋分布特征，挑战已有整体自旋认知。",
-        "review": "本研究基于目前包含259个双黑洞的引力波事件样本，构建了幂律谱加五个高斯峰的多成分混合模型，对各成分独立拟合并合率、质量、自旋及自旋倾角（共享红移演化）。整体质量和红移趋势与以往结果一致，但自旋分析显示：除最低质量成分外，其他成分的自旋均与各向同性分布相符；同时发现了近层级排布的质量峰，却未见到裸层级形成所预期的自旋-质量相关。这表明双黑洞群体的子结构比以往设想的更复杂，不同质量区间的形成渠道可能不同。",
-        "highlight": "首次用多个独立成分解析双黑洞群体，打破“高质量即大自旋各向同性”的单一图像，发现各向同性特征广泛存在于多数质量子群，且层级质量峰缺少自旋关联，对形成机制提出新挑战。",
-        "relation": "—",
+        "title_zh": "揭示双黑洞的层级子群结构",
+        "team": "",
+        "tldr": "利用多分量混合模型分析259个双黑洞样本，发现质量峰呈层级排列，但各分量自旋大多与各向同性一致，与分层形成理论的预期相左。",
+        "review": "",
+        "highlight": "首次构建原生多分量混合模型（幂律+多个高斯峰），独立恢复各分量的并合率、质量和自旋；发现除最低质量分量外，其余分量自旋均与各向同性吻合，挑战了分层形成中自旋-质量关联的预期。",
+        "relation": "",
         "authors_en": "Muhammad Zeeshan, Richard O'Shaughnessy",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "随着引力波探测器灵敏度提升，双黑洞样本已增至259个，为揭示种群内部的亚结构与形成渠道提供了统计基础。先前研究多采用单组分或简单模型，发现质量分布的峰值特征以及自旋随质量演化的整体趋势（低质量端低自旋、趋于对齐，高质量端高自旋、趋于各向同性）。本工作引入多组分混合模型，更精细地分离不同质量峰的自旋分布，结果表明高阶质量峰的自旋并未呈现分层形成理论所预期的强各向同性与关联性。未来随着样本进一步扩大，该类多组分方法可融入动力学和金属丰度等信息，有望系统区分孤立星演化、动力学交换及多层次并合等形成途径，推动对双黑洞起源的统一理解。",
+        "citations": []
       }
     },
     {
@@ -2520,7 +2747,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2555,13 +2784,41 @@
       "summary": {
         "paper_id": "arxiv:2607.15464",
         "title_zh": "AT2018cow紫外/光学平台期的启示",
-        "team": "Wenbin Lu（加州大学伯克利分校），Anthony L. Piro（卡内基科学研究所）；非大型合作组",
-        "tldr": "提出超爱丁顿吸积盘风+外盘辐照模型解释AT2018cow晚期平台，解决传统薄盘要求>200 M☉黑洞与X射线上限的矛盾，并预言JWST可打破中心天体质量简并。",
-        "review": "AT2018cow作为原型明亮快变蓝光学暂现源，晚期HST测光显示持续数年的UV/光学平台，SED呈黑体状（色温≳2×10⁴ K，辐射半径~40 R☉）。传统纯薄吸积盘模型要求中心黑洞质量M≳200 M☉（α≥0.01），但与XMM-Newton得到的M≲100 M☉上限矛盾。本文构建包含超爱丁顿风和几何薄外盘辐照的新模型，对约4年时的四波段HST数据拟合发现1.4 M☉中子星至~100 M☉黑洞均能产生同样好的拟合，源于风光球色温对质量弱敏感的质量简并。模型预言JWST近红外－中红外自由-自由辐射或盘风复合线（HeII λ1640/Hα）可打破简并；盘参数与微潮汐瓦解事件（微TDE）图像一致。",
-        "highlight": "用超爱丁顿风模型统一解释平台期，摆脱对极端大质量黑洞的依赖，并给出可观测的鉴别手段（JWST测光/光谱），解决了X射线观测与盘模型之间的张力。",
-        "relation": "—",
-        "authors_en": "Wenbin Lu (Department of Astronomy, University of California, Berkeley), Anthony L. Piro (The Observatories of the Carnegie Institution for Science)",
-        "corresponding_en": "Wenbin Lu"
+        "team": "",
+        "tldr": "本文用超爱丁顿盘风+照射模型解释AT2018cow晚期紫外/光学平台，避免黑洞质量过大，并指出JWST可打破吸积体质量简并。",
+        "review": "",
+        "highlight": "提出超爱丁顿盘风+外盘照射统一模型，解决了纯薄盘模型所需黑洞质量≳200 M⊙与X射线限制的矛盾；预言JWST近/中红外自由-自由辐射可有效区分吸积体性质。",
+        "relation": "",
+        "authors_en": "Wenbin Lu (Department of Astronomy and Theoretical Astrophysics Center, University of California, Berkeley, CA 94720-3411, USA), Anthony L. Piro (The Observatories of the Carnegie Institution for Science, Pasadena, CA 91101, USA)",
+        "corresponding_en": "Wenbin Lu",
+        "context_outlook": "AT2018cow的长期紫外/光学平台由[[Chen+ 2023]]发现，早期被解释为薄吸积盘辐射（[[Inkenhaag+ 2025]]; [[Winter-Granic & Quataert 2025]]），但纯盘模型要求中心质量≳200 M⊙，与X射线观测上限（[[Migliori+ 2024]]）和对不稳定性质量间隙冲突。本文引入超爱丁顿盘风加外盘照射模型，使1.4 M⊙中子星至100 M⊙黑洞的可信质量区间均可拟合数据，指出质量简并源于风的光球温度对吸积体质量不敏感。未来JWST 近/中红外自由-自由辐射及MIRI发射线观测将有效区分吸积体，并检验微潮汐瓦解事件（[[Perley+ 2019]]）等形成渠道。",
+        "citations": [
+          {
+            "label": "Chen+ 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Inkenhaag+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Winter-Granic & Quataert 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Migliori+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Perley+ 2019",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2667,14 +2924,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15435",
-        "title_zh": "BL Lacertae长时间甚高能耀发的VERITAS多波段研究",
-        "team": "VERITAS合作组，第一作者Atreya Acharyya（南丹麦大学），联合Fermi-LAT、Swift、NuSTAR及光学/射电望远镜等多机构",
-        "tldr": "VERITAS首次探测到BL Lacertae持续约40天的甚高能（VHE）耀发，多波段能谱建模支持同步自康普顿+外逆康普顿（SSC+EC）过程。",
-        "review": "研究对象为BL Lacertae（IBL型耀变体）。2022年10月通过Fermi-LAT触发多波段联测，VERITAS在同年9–12月积累约9.8小时观测，以28σ显著性探测到VHE辐射。时间平均能谱呈对数抛物线型（谱指数3.5，曲率1.1），>350 GeV积分流量约为蟹状星云的10%。该耀发持续约40天，显著长于以往分钟至天量级的VHE耀发，且无明显日内变率。宽带能谱分布（SED）拟合表明，引入外康普顿模型（SSC+EC）优于单区SSC，暗示存在外部光子场贡献，为IBL高能辐射机制提供了新约束。",
-        "highlight": "首次观测到BL Lac长达月的VHE耀发，挑战了此前短时标认知；丰富的多波段同步数据与SED建模揭示了EC过程的重要性，加深了对IBL耀发物理的理解。",
-        "relation": "—",
+        "title_zh": "VERITAS对BL Lacertae长时标甚高能耀斑的多波段研究",
+        "team": "",
+        "tldr": "首次探测到BL Lacertae持续约40天的VHE耀斑，多波段光谱拟合支持SSC+外部逆康普顿（EC）机制。",
+        "review": "",
+        "highlight": "与以往分钟至天尺度的VHE耀斑不同，本次耀斑延续近40天；光谱分析表明单区SSC模型不足，需引入EC成分，为IBL高能辐射机制提供新约束。",
+        "relation": "",
         "authors_en": "A. Acharyya (CP3-Origins, University of Southern Denmark), A. Archer (Department of Physics and Astronomy, DePauw University), P. Bangale (Department of Physics, Temple University) et al.",
-        "corresponding_en": "Claire E. Hinrichs, Atreya Acharyya"
+        "corresponding_en": "Claire E. Hinrichs",
+        "context_outlook": "BL Lacertae是典型IBL，既往VHE耀斑多为短时标事件（[[Arlen+ 2012]]、[[Acciari+ 2019]]）。此次VERITAS观测到长达40天的耀斑，且多波段SED建模倾向包含EC分量，与低峰频BL Lac的表现相似（[[Hervet+ 2015]]）。该结果暗示IBL的高能辐射可能在某些状态下依赖于外部光子场。未来结合更长时间基线的多波段监测和喷流高分辨率成像，有望厘清外部光子场的来源，推动blazar统一模型的完善。",
+        "citations": [
+          {
+            "label": "Arlen+ 2012",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Acciari+ 2019",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Hervet+ 2015",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2714,7 +2989,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2755,7 +3032,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2794,7 +3073,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2834,14 +3115,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15392",
-        "title_zh": "太阳系p-核素丰度：超新星集体中微子振荡的探针",
-        "team": "Alexander Friedland 等（第一/通讯作者），SLAC/斯坦福大学等跨机构团队，非特定合作组",
-        "tldr": "超新星快速集体中微子振荡可将p-核素产额提升两个量级，使太阳系丰度得到合理解释。",
-        "review": "研究对象：核心塌缩超新星中集体中微子振荡对νp过程核合成的影响。数据方法：采用20太阳质量前身星模型，自洽耦合广义相对论稳态流体力学与中微子味转换，并用SkyNet网络计算核合成，系统研究振荡起始半径对产额的影响。主要结果：当振荡在距原中子星表面10 km以内发生时，关键p-核素（92,94Mo, 96,98Ru）和92Nb的产额增强1-2个量级，与太阳系丰度吻合；较远振荡则增强有限。结论：太阳系p-核素丰度模式要求快速集体中微子振荡在近原中子星处启动，为振荡机制提供了首个核合成证据。",
-        "highlight": "首次在νp过程中自洽耦合中微子振荡与流体动力学，揭示加热增强与跨声速转变的竞争效应；利用核合成丰度作为中微子混合半径的诊断工具，开创性连接了微观振荡与宏观元素起源。",
-        "relation": "—",
-        "authors_en": "A. Friedland (SLAC National Accelerator Laboratory, Stanford University), D. J. Li (SLAC National Accelerator Laboratory, Stanford University), G. Lucente (SLAC National Accelerator Laboratory, Stanford University) et al.",
-        "corresponding_en": "Alexander Friedland"
+        "title_zh": "太阳系p核素丰度探测超新星中的集体中微子振荡",
+        "team": "",
+        "tldr": "该研究通过自洽耦合流体动力学与核合成，发现超新星中微子集体振荡可将太阳系关键p核素丰度提升高达两个数量级，使观测获得解释，且振荡起始于距原中子星表面10公里内时匹配最佳。",
+        "review": "",
+        "highlight": "首次自洽考虑了中微子振荡对νp-过程流体动力学的影响，揭示振荡是解释太阳系丰度异常p核素所必需，并为直接探测超新星快集体振荡提供了新途径。",
+        "relation": "",
+        "authors_en": "A. Friedland (SLAC National Accelerator Laboratory, Stanford University, Menlo Park, CA 94025), D. J. Li (SLAC National Accelerator Laboratory, Stanford University, Menlo Park, CA 94025), G. Lucente (SLAC National Accelerator Laboratory, Stanford University, Menlo Park, CA 94025) et al.",
+        "corresponding_en": "Alexander Friedland",
+        "context_outlook": "早在20世纪90年代，已有研究探讨超新星中微子集体振荡对核合成的潜在影响（[[Qian+ 1993]]；[[Pantaleone+ 1994]]），但针对νp-过程的后续研究未自洽耦合振荡引起的流体动力学变化（如[[Xiong+ 2020]]；[[Martinez-Pinedo+ 2011]]）。本工作通过自洽求解稳态广义相对论流体动力学，系统考察了νp-过程对振荡起始半径的敏感性，发现振荡可将92,94Mo和96,98Ru等关键p核素丰度提升最高达60倍，且92Nb产量提高两个数量级，与太阳系观测相符；最佳匹配出现在振荡起始于距原中子星表面10公里以内，指向快集体振荡（FCO）场景。未来，随着更真实的振荡谱和多维模拟的应用，太阳系p核素丰度有望成为限制中微子集体振荡性质乃至超新星爆发机制的‘标准烛光’。",
+        "citations": [
+          {
+            "label": "Qian+ 1993",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Pantaleone+ 1994",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Xiong+ 2020",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Martinez-Pinedo+ 2011",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2880,7 +3184,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2914,14 +3220,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15390",
-        "title_zh": "亮红新星作为激波供能暂现源 I：电子散射翼与对Case B的偏离",
-        "team": "第一作者：Albert Sneppen；通讯作者未标明；机构：丹麦哥本哈根大学尼尔斯·玻尔研究所/宇宙黎明中心、日本东京大学/东北大学等。非知名合作组。",
-        "tldr": "通过6颗亮红新星的光谱分析，发现电子散射翼等激波诊断特征，证明激波光度足以供能亮红新星，并揭示平台期后光谱是研究激波的关键窗口。",
-        "review": "研究对象为6颗覆盖不同光变形态的亮红新星（如V1309 Sco）。利用多波段光谱，在平台期后的光谱中识别出极宽Hα线翼（1000–10000 km/s），解释为光子经热电子（5000–10 000 K）多次散射所致，直接指示激波存在。还发现亮红新星偏离Case B复合线比，约束了上游介质密度（越亮偏离越大）。结论认为激波光度足以支撑这类暂现源的总能量，而平台期光谱缺失宽翼是因辐射转移遮蔽，凸显了平台期后光谱的诊断价值。",
-        "highlight": "首次在亮红新星中系统识别电子散射翼，为激波驱动提供直接光谱证据；证明激波无需额外能源即可解释亮红新星能量；指出平台期后光谱是揭开中心能源的关键窗口；给出利用复合线比诊断激波上游密度的新方法。",
-        "relation": "—",
-        "authors_en": "Albert Sneppen (Cosmic Dawn Center, Niels Bohr Institute, University of Copenhagen), Kenta Hotokezaka (Research Center for the Early Universe, University of Tokyo; Astronomical Institute, Tohoku University), Christopher M. Irwin",
-        "corresponding_en": ""
+        "title_zh": "亮红新星作为激波供能暂现源 I：电子散射翼与对情形B的偏离",
+        "team": "",
+        "tldr": "在多个亮红新星的后平台期光谱中识别出电子散射翼，为激波供能提供直接证据，并利用对情形B的偏离约束星周物质密度。",
+        "review": "",
+        "highlight": "首次在LRNe样本中系统揭示热电子散射造成的极宽线翼（千公里/秒量级），证明激波足以驱动光变而不依赖其他能源，凸显后平台期光谱的诊断价值。",
+        "relation": "",
+        "authors_en": "Albert Sneppen, Kenta Hotokezaka, Christopher M. Irwin",
+        "corresponding_en": "",
+        "context_outlook": "亮红新星的能量供给机制长期存在争论，包括氢复合[[Ivanova+ 2013]]、[[Matsumoto & Metzger 2022]]和激波相互作用[[Metzger & Pejcha 2017]]等模型。本文通过对多个LRNe后平台期光谱的分析，识别出宽达1000–10000 km/s的电子散射翼，其不对称性与宽度可由热电子在激波区散射自然重现，从而为激波供能提供了关键的观测证据。这一工作继承并拓展了[[Huang & Chevalier 2018]]等对星周物质作用区光谱建模的思路，同时利用复合线比对情形B的偏离来诊断上游介质密度。随着未来时域巡天积累更多后期光谱，该框架有望系统区分LRNe的多样性，并精细约束双星合并过程中的物质抛射与激波演化。",
+        "citations": [
+          {
+            "label": "Ivanova+ 2013",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Matsumoto & Metzger 2022",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Metzger & Pejcha 2017",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Huang & Chevalier 2018",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2959,7 +3288,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2995,14 +3326,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15360",
-        "title_zh": "准周期性爆发的多信使前景",
-        "team": "第一作者 Vojtěch Witzany，合作者 Alessia Franchini、Matteo Bonetti 等，无知名合作组",
-        "tldr": "评估准周期性爆发（QPE）作为极端质量比旋进（EMRI）的电磁对应体，与空间引力波探测器 LISA 实现联合探测的潜力与限制。",
-        "review": "研究对象为软 X 射线准周期性爆发（QPE），通常解释为恒星级天体旋进超大质量黑洞的极端质量比旋进（EMRI）。通过比对已知 QPE 样本的轨道周期与 LISA 灵敏频段，发现绝大多数 QPE 对应的引力波频率低于 LISA 探测范围。在考虑 QPE 巡天选择效应和 LISA 仪器限制后，认为当前条件下同时探测到同一 EMRI 事件的概率较低。建议未来 QPE 搜索应着重扩展样本，并优先寻找轨道周期短、落入 LISA 频段的“黄金”事件，以驱动多信使天体物理与宇宙学应用。",
-        "highlight": "首次系统性地量化 QPE 与 LISA EMRI 的协同探测前景，明确现存瓶颈，为优化暂现源巡天和多信使观测策略提供关键指引。",
-        "relation": "QPE 作为一类软 X 射线暂现源，与团队关注的高能暂现源（如伽马暴）在暂现性和多信使研究上具有共性；其方法可为 GECAM/HXMT/SVOM 等设备的协同科学与源证认提供借鉴。",
+        "title_zh": "准周期爆发的多信使探测前景",
+        "team": "",
+        "tldr": "本文评估当前QPE作为LISA引力波源EMRI电磁对应体的可行性，指出多数QPE频率不在LISA波段，呼吁搜寻短周期事件以实现协同探测。",
+        "review": "",
+        "highlight": "首次系统分析QPE与LISA联合探测的潜力，揭示观测选择效应导致协同困难，为多信使标准汽笛测量提供明确策略。",
+        "relation": "",
         "authors_en": "V. Witzany, A. Franchini, M. Bonetti et al.",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "准周期爆发（QPE）被发现以来，被认为可能起源于恒星质量天体旋入超大质量黑洞的极值质量比旋近（EMRI）过程。本文指出当前已知QPE样本的轨道周期普遍较长，其引力波频率多落在LISA灵敏频段之外，时空重合探测面临挑战。未来需通过时域巡天扩大QPE样本，重点搜索短周期“金发”事件，使其进入LISA波段。一旦实现电磁与引力波联合观测，将能精确限制黑洞参数、宿主环境及EMRI形成渠道，同时通过标准汽笛方法独立测量哈勃常数，开启多信使天体物理的新窗口。",
+        "citations": []
       }
     },
     {
@@ -3043,7 +3376,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3082,13 +3417,46 @@
       "summary": {
         "paper_id": "arxiv:2607.15359",
         "title_zh": "X射线准周期爆发的观测",
-        "team": "第一作者 T. Wevers (Schmidt Sciences)，共同贡献作者 J. Chakraborty (MIT)、E. Quintin (ESA)等，通讯作者未标注，主要机构包括Schmidt Sciences、MIT、ESA、Masaryk University、CAB；非特定知名合作组",
-        "tldr": "本篇综述系统总结了X射线准周期爆发（QPE）的发现历史、观测特性及其与潮汐瓦解事件的关联，整理了13个已知QPE源的多样性与共性。",
-        "review": "文章回顾了QPE从GSN 069偶然发现到eROSITA巡天批量发现的历史，并讨论了与TDE的观测联系。总结了QPE的关键观测特征：软X射线热谱、温度-光度滞回、复发时标（数小时至数天）、爆发幅度及长期演化。基于13个已知源样本，展示了多样性（如强度衰减、复发模式变化）以及O-C分析揭示的超周期调制现象，为理论模型提供新约束。",
-        "highlight": "首篇全面汇总13个已知QPE源的观测综述，明确QPE-TDE关联，并展示O-C分析揭示的超周期振荡等新现象，为区分理论模型提供了关键观测依据。",
-        "relation": "—",
-        "authors_en": "T. Wevers (Astrophysics & Space Center, Schmidt Sciences, New York, NY 10011, USA), J. Chakraborty (Department of Physics & Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA), E. Quintin (European Space Agency, European Space Astronomy Centre, Madrid, Spain) et al.",
-        "corresponding_en": ""
+        "team": "",
+        "tldr": "系统综述X射线准周期爆发的发现历史、观测特性及物理关联，汇总已知样本并探讨与潮汐瓦解事件的联系。",
+        "review": "",
+        "highlight": "首篇全面总结QPEs观测特征的综述，梳理已知13个源的爆发参数与长期演化；引入O–C图揭示超周期振荡，为模型鉴别提供关键约束。",
+        "relation": "",
+        "authors_en": "T. Wevers (Astrophysics & Space Center, Schmidt Sciences), J. Chakraborty (MIT), E. Quintin (ESA/ESAC) et al.",
+        "corresponding_en": "",
+        "context_outlook": "QPEs自2019年在GSN 069中被意外发现（[[Miniutti+ 2019]]），通过XMM-Newton和eROSITA等巡天已累计发现13个源，包括RX J1301（[[Giustini+ 2020]]）和eRO-QPE系列（[[Arcodia+ 2021]]）。晚期X射线观测证实QPEs与潮汐瓦解事件（TDEs）存在物理关联，如AT2019qiz（[[Nicholl+ 2024]]）。观测表明QPEs是软X射线准周期爆发现象，光谱演化呈温度滞后环，且部分源表现出明显时变和超周期振荡（[[Chakraborty+ 2024]], [[Miniutti+ 2025]]）。未来需扩大样本并进行多波段协同监测，以甄别轨道器-盘碰撞等理论模型，推动对极端质量比旋近系统的理解。",
+        "citations": [
+          {
+            "label": "Miniutti+ 2019",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Giustini+ 2020",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Arcodia+ 2021",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Nicholl+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Chakraborty+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Miniutti+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -3139,7 +3507,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3181,7 +3551,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3223,7 +3595,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3262,7 +3636,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3302,7 +3678,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3377,14 +3755,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15342",
-        "title_zh": "Ibn 型超新星 SN 2023tsz 的紫外至红外光谱暗示低质量前身星",
-        "team": "第一作者 Sergiy S. Vasylyev，通讯作者未明确标注；多机构合作研究团队",
-        "tldr": "对 Ibn 型超新星 SN 2023tsz 的多波段光谱观测与模型比对，支持其前身星为低质量氦星（~4 M⊙），且演化受双星相互作用影响。",
-        "review": "研究利用 HST/STIS 紫外光谱和地面光学-近红外数据，获取了 SN 2023tsz 在极大后两期的紫外到近红外光谱。光谱中中宽度发射线主导，表明亮度主要来自抛射物与富氦星周物质相互作用形成的冷密壳层。通过与非局部热动平衡辐射转移模型（初始 4 M⊙ 氦星爆炸）对比，成功重现了 He I 线，并揭示需额外 X 射线辐照（~10^8 L⊙）以匹配高电离紫外特征。最佳模型推得冷密壳层半径约 (1.5–2)×10^15 cm，速度约 5×10^7 cm/s，相互作用功率约数倍 10^42 erg/s。该结果增添了 Ibn 型超新星源自低质量氦星、演化受双星影响这一图景的证据。",
-        "highlight": "首次提供 SN 2023tsz 从紫外到红外的完整光谱覆盖，通过辐射转移模拟定量约束了前身星质量和星周相互作用参数，并首次明确指出 X 射线辐照在塑造紫外光谱中的关键作用，支撑低质量氦星起源渠道。",
-        "relation": "—",
+        "title_zh": "紫外至红外光谱研究揭示 Ibn 型 SN 2023tsz 的低质量前身星",
+        "team": "",
+        "tldr": "利用 HST 紫外光谱与地面光学–近红外数据，结合非 LTE 辐射转移模型，证实 SN 2023tsz 为低质量氦星爆发并与富氦 CSM 相互作用，支持双星演化通道。",
+        "review": "",
+        "highlight": "首次对 Ibn 型超新星进行 HST 紫外光谱观测，并与一维非 LTE 模型对比，明确 X 射线照射场对高电离紫外谱线的关键作用，限制前身星质量约 4 M⊙。",
+        "relation": "",
         "authors_en": "Sergiy S. Vasylyev, Griffin Hosseinzadeh, Luc Dessart et al.",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "Ibn 型超新星因与富氦星周物质（CSM）相互作用呈现窄发射线，是探索大质量恒星晚期质量损失与剥壳机制的重要探针。以往研究多依赖光学光谱，对前身星性质与电离机制未能统一约束。SN 2023tsz 的紫外光谱分析表明，额外 X 射线照射场对再现高电离特征不可或缺，且模型指向约 4 M⊙的低质量氦星前身星，与双星剥壳图像一致。这些发现拓展了 Ibn 型前身星的参数空间，显示部分事件可能源于中等质量双星系统。未来结合 JWST 红外光谱及更高精度的辐射流体模拟，有望系统区分单星与双星演化对 CSM 结构的贡献，推动前身星研究的定量化。",
+        "citations": []
       }
     }
   ],

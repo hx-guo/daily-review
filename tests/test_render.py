@@ -174,6 +174,28 @@ def test_render_english_original_block(tmp_path):
     assert (out / "static" / "search.js").exists()
 
 
+def test_render_context_outlook_citation_chips(tmp_path):
+    st = Store(tmp_path / "data")
+    p = Paper(id="arxiv:1", source="arxiv", title="T", authors=["A"], abstract="abs",
+              categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/1")
+    summ = PaperSummary("arxiv:1", "中文", "", "", "", "亮点在此", "",
+                        context_outlook="承接 [[DeLaunay+ 2022]] 与 [[Wijnands+ 2013]]，展望多信使。",
+                        citations=[{"label": "DeLaunay+ 2022", "arxiv": "2205.01346", "doi": ""},
+                                   {"label": "Wijnands+ 2013", "arxiv": "", "doi": ""}])
+    day = DayData("2026-07-16", DailyReview("2026-07-16", "o", "", ""),
+                  items=[{"paper": p, "score": RelevanceScore(90, [], "core", ""), "summary": summ}])
+    st.save_day(day)
+    out = tmp_path / "site"; render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-16.html").read_text(encoding="utf-8")
+    assert "脉络与展望" in page
+    # inline [[markers]] become linked chips, not raw brackets
+    assert "[[" not in page and "]]" not in page
+    assert 'class="cite"' in page
+    assert 'href="https://arxiv.org/abs/2205.01346"' in page       # grounded arXiv id -> direct link
+    assert "ui.adsabs.harvard.edu/search" in page                   # ungrounded -> ADS search fallback
+    assert ">DeLaunay+ 2022</a>" in page and ">Wijnands+ 2013</a>" in page
+
+
 def test_render_et_al_when_authors_truncated(tmp_path):
     st = Store(tmp_path / "data")
     p = Paper(id="arxiv:1", source="arxiv", title="T",

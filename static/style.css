@@ -144,7 +144,11 @@ a { color: var(--accent); text-decoration: none; }
 .ai-block + .ai-block { margin-top: 16px; }
 .ai-label { display: block; font-size: 11px; letter-spacing: 0.2em; font-weight: 600; color: var(--accent-sub); margin-bottom: 5px; }
 .ai-body { margin: 0; font-size: 15px; line-height: 1.95; color: var(--ink-body); text-align: justify; }
-.ai-body .cite { color: var(--cite); border-bottom: 1px dotted var(--cite-rule); }
+.ai-body .cite, a.cite {
+  color: var(--cite); border-bottom: 1px dotted var(--cite-rule);
+  text-decoration: none; white-space: nowrap;
+}
+a.cite:hover { border-bottom-style: solid; }
 
 /* ---------- arXiv link ---------- */
 .arxiv-link {

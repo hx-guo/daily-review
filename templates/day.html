@@ -19,7 +19,7 @@
 
 {% macro ai_zone(it) %}
   {%- set hl = it.summary.highlight if it.summary else '' -%}
-  {%- set ctx = (it.summary.review or it.summary.relation) if it.summary else '' -%}
+  {%- set ctx = (it.summary.context_outlook or it.summary.review or it.summary.relation) if it.summary else '' -%}
   {% if hl or ctx %}
       <div class="ai-zone">
         <div class="ai-head">
@@ -27,7 +27,7 @@
           <span class="ai-cap"><span class="etal">AI-generated</span> · 以原文为准</span>
         </div>
         {% if hl %}<div class="ai-block"><span class="ai-label">亮点</span><p class="ai-body">{{ hl }}</p></div>{% endif %}
-        {% if ctx %}<div class="ai-block"><span class="ai-label">脉络与展望</span><p class="ai-body">{{ ctx }}</p></div>{% endif %}
+        {% if ctx %}<div class="ai-block"><span class="ai-label">脉络与展望</span><p class="ai-body">{{ render_outlook(it.summary) }}</p></div>{% endif %}
       </div>
   {% endif %}
 {% endmacro %}

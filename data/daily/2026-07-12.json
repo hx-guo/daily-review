@@ -51,7 +51,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -89,7 +91,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -142,7 +146,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -180,7 +186,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -220,7 +228,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -260,7 +270,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -300,7 +312,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -340,7 +354,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -381,7 +397,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -423,7 +441,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -461,7 +481,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -499,7 +521,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -537,7 +561,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -581,14 +607,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10818",
-        "title_zh": "千新星模型的晚期发射线轮廓研究",
-        "team": "第一作者兼通讯作者 S. A. Sim，主要机构包括贝尔法斯特女王大学、GSI 亥姆霍兹重离子研究中心等；非特定合作组",
-        "tldr": "利用二维数值模拟研究千新星抛射物结构对晚期发射线轮廓的影响",
-        "review": "本文基于轴对称的双中子星并合抛射物模型（包括对称与不对称质量比、长短暂现寿命），在光学薄假设下计算了硒、碲、钨三种元素的发射线轮廓，并考察不同观测角度的影响。结果显示线轮廓形状复杂，常呈现多峰和宽翼特征；对硒、碲等较轻元素，轮廓主要受低速（≲0.1c）抛射物结构影响，而重元素钨则更依赖于快速膨胀的动力学抛射物。此外，r 过程衰变加热可显著展宽线峰。研究表明晚期发射线轮廓能够反映抛射物几何结构，并有可能约束观测者角度及并合参数。",
-        "highlight": "首次系统探讨了二维非球对称抛射物结构对千新星晚期发射线轮廓的影响，为利用光谱诊断观测几何和核并合性质提供了新思路。",
-        "relation": "—",
-        "authors_en": "S. A. Sim (Astrophysics Research Centre, Queen’s University Belfast), O. Just (GSI Helmholtzzentrum für Schwerionenforschung), Z. Xiong (GSI Helmholtzzentrum für Schwerionenforschung) et al.",
-        "corresponding_en": "S. A. Sim"
+        "title_zh": "千新星模型晚期发射线轮廓",
+        "team": "",
+        "tldr": "利用二维并合抛射物模型，研究硒、碲、钨元素的晚期发射线轮廓，揭示非对称结构与观测方向对线形的显著影响。",
+        "review": "",
+        "highlight": "首次基于多维并合模拟探讨观测方向对千新星晚期谱线轮廓的影响，发现复杂多峰与宽翼结构，并指出其对低速抛射物及r-过程加热的敏感性，为通过谱线诊断并合参数提供新途径。",
+        "relation": "",
+        "authors_en": "S. A. Sim (Astrophysics Research Centre, Queen's University Belfast), O. Just (GSI Helmholtzzentrum für Schwerionenforschung), Z. Xiong (GSI Helmholtzzentrum für Schwerionenforschung) et al.",
+        "corresponding_en": "S. A. Sim",
+        "context_outlook": "此前对千新星晚期谱线的研究多假设球对称抛射物或采用高斯线形（如 [[Hotokezaka+ 2021]]、[[McCann+ 2025]]），未充分考虑多维度抛射物结构及观测倾角的影响。本研究基于 [[Just+ 2023]] 的二维抛射物模型，首次系统探讨了硒、碲、钨三种代表性r-过程元素在不同模型与观测方向下的线轮廓变化，揭示出复杂多峰结构及宽翼特征，并指出低速抛射物成分与r-过程衰变加热的关键作用。尽管早期观测如 AT2017gfo 显示谱形成区近似球对称（[[Sneppen+ 2023]]），但随着光薄相的进入，非对称结构的诊断潜力将逐步凸显。未来结合更真实的电离、温度及不透明度处理，此类分析有望为并合参数（如质量比、状态方程）与观测倾角提供独立约束。",
+        "citations": [
+          {
+            "label": "Hotokezaka+ 2021",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "McCann+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Just+ 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Sneppen+ 2023",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -627,7 +676,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -668,7 +719,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -708,7 +761,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -741,14 +796,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10927",
-        "title_zh": "天体粒子物理学的兴起：从宇宙线物理到新兴科学领域",
-        "team": "Luisa Bonolis（个人作者，机构未知）",
-        "tldr": "一篇历史分析，探讨天体粒子物理学如何从宇宙线物理、粒子物理和天体物理的交叉中演化为独立学科。",
-        "review": "本文考察了20世纪后期天体粒子物理学作为交叉学科的形成过程，重点分析实验文化、研究传统和科学社群的逐步互动。提出该领域并非简单学科汇聚，而是围绕跨学科问题重组高能研究的结果；三条历史轨迹推动了这一过程：战后宇宙线物理的转型、高能宇宙在相对论天体物理和新观测窗口中的浮现，以及粒子物理与宇宙学的互动。这些进展将自然粒子转化为天体信使，将宇宙变成超越加速器极限的基础物理实验室，同时新的实验实践、国际合作与制度结构共同塑造了领域形态。",
-        "highlight": "从科学史角度系统阐释交叉学科如何通过科学问题、实验文化、社群和制度的共同演化而产生，为理解天体粒子物理学的根源提供了新颖视角。",
-        "relation": "—",
+        "title_zh": "天体粒子物理学的兴起：从宇宙线物理到一个新科学领域",
+        "team": "",
+        "tldr": "考察天体粒子物理学作为交叉学科形成的历史机制与路径。",
+        "review": "",
+        "highlight": "从历史视角系统梳理天体粒子物理学的形成历程，揭示其并非学科简单合并，而是围绕超越传统边界的问题，重组实验文化、研究传统与科学社群。",
+        "relation": "",
         "authors_en": "Luisa Bonolis",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "该研究承接对宇宙线物理、高能天体物理及粒子物理交叉历史的探讨，通过分析战后宇宙线转型、高能宇宙窗口的出现及粒子物理与宇宙学互动三条历史轨迹，阐释了天体粒子物理作为独立领域的形成机制。它为理解跨学科领域的起源提供了“问题－文化－社群－制度”协同演化的分析框架，未来研究可进一步细化认知与制度维度的互动细节，或比较其他交叉学科的形成路径。",
+        "citations": []
       }
     },
     {
@@ -793,7 +850,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -831,7 +890,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -870,7 +931,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -908,7 +971,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -951,7 +1016,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -992,7 +1059,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1033,7 +1102,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1112,14 +1183,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10671",
-        "title_zh": "SN 2025aico：对一颗低质量包层暗弱IIb型超新星的早期观测",
-        "team": "第一作者 J.-W. Zhao（云南大学），通讯作者 B. Kumar、Y.-Z. Cai、X.-W. Liu；主要机构包括云南大学、意大利帕多瓦天文台、印度天体物理研究所等；非知名合作组",
-        "tldr": "通过早期多波段测光与光谱，研究暗弱IIb型超新星SN 2025aico，约束其低包层质量、低镍产额及弱镍混合特征。",
-        "review": "本文对IIb型超新星SN 2025aico进行了约70天的早期多波段测光与光谱观测。光变曲线显示短暂的激波冷却和放射性衰变主峰，峰值绝对星等较暗。混合模型拟合得到抛射物质量约2.8 M⊙、56Ni质量约0.033 M⊙，光球速度约6450 km/s。光谱分析证实其为紧凑IIb型，前身星为具有约0.01 M⊙氢包层的He星，直径约6–10 R⊙。早期颜色演化呈U形，表明56Ni在抛射物中仅弱至中等程度混合。",
-        "highlight": "详尽约束了一颗低光度IIb型超新星的物理参数；利用早期颜色演化与模型对比，独立限制了56Ni混合程度；为小质量双星系统前身星演化提供了观测证据。",
-        "relation": "—",
+        "title_zh": "SN 2025aico：低质量包层暗弱IIb型超新星的早期观测",
+        "team": "",
+        "tldr": "利用早期多波段测光与光谱限制SN 2025aico前身星性质，发现其为具有极薄氢包层和弱镍混合的致密He星",
+        "review": "",
+        "highlight": "该事件光度暗弱、包层质量极低（~0.01 M☉），处于cIIb与Ib的过渡区；早期颜色演化清晰显示镍混合程度弱，为限制爆炸参数提供了独特样本",
+        "relation": "",
         "authors_en": "J.-W. Zhao (South-Western Institute for Astronomy Research, Yunnan University), A. Pastorello (INAF - Osservatorio Astronomico di Padova), B. Kumar (South-Western Institute for Astronomy Research, Yunnan University) et al.",
-        "corresponding_en": "B. Kumar, Y.-Z. Cai, X.-W. Liu"
+        "corresponding_en": "B. Kumar, Y.-Z. Cai, X.-W. Liu",
+        "context_outlook": "Type IIb超新星通常根据包层性质分为cIIb和eIIb [[Chevalier & Soderberg 2010]]，其中cIIb具有致密前身星和微弱激波冷却 [[Barmentloo+ 2024]]。SN 2025aico的早期光变曲线呈现短暂的激波冷却和较短的上升时间，符合cIIb特征，但其暗弱的光度暗示极低的氢包层质量（~0.01 M☉），接近Ib型。通过比较早期颜色演化与模型 [[Moriya+ 2020]]，发现其镍混合较弱，与[[Yoon+ 2019]]的预言一致，这对理解SE-SNe的光谱演化至关重要 [[Dessart+ 2015]]。未来随着GOTO等宽场巡天发现更多此类低光度事件，结合极早期光谱与偏振观测，将能够系统研究双星剥离通道的物理细节和爆炸的不对称性。",
+        "citations": [
+          {
+            "label": "Chevalier & Soderberg 2010",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Barmentloo+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Moriya+ 2020",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Yoon+ 2019",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Dessart+ 2015",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1160,7 +1259,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1200,7 +1301,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1238,7 +1341,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1271,14 +1376,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10568",
-        "title_zh": "错位Be/X射线双星中恒星风对吸积的抑制作用",
-        "team": "Atsuo T. Okazaki（北海道工业大学），单人作者，非知名合作组",
-        "tldr": "提出并验证恒星风冲压可抑制错位Be/X射线双星中的吸积，是经典螺旋桨机制的重要补充。",
-        "review": "本文研究轨道轴与Be星星盘轴倾斜的Be/X射线双星，Be星极向风可能冲击倾斜的吸积盘。通过解析模型，比较风冲压和吸积流气压（标准盘与ADAF），导出风致消融的临界吸积率判据。将此判据应用于13个参数已知的系统，发现对于长自转周期中子星在宽轨道上的系统，风抑制比螺旋桨机制更有效；在吸积流热而低密度或爆发后吸积率下降时尤为重要。结论为恒星风是导致BeXRB宁静态的可行机制，完善了暂现行为理论。",
-        "highlight": "首次系统分析错位构型下恒星风冲压对吸积的影响，提供除螺旋桨外另一种宁静机制，对解释长周期脉冲星的状态转变尤其有价值。",
-        "relation": "GECAM以监测X射线暂现源为核心科学目标，Be/X射线双星是重要的暂现天体；本文揭示的恒星风抑制机制有助于理解此类源的爆发‑宁静态转换，可为GECAM暂现源触发、分类和物理参数约束提供理论参考。",
-        "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University, Japan)",
-        "corresponding_en": "Atsuo T. Okazaki"
+        "title_zh": "倾斜 Be/X 射线双星中星风对吸积的抑制作用",
+        "team": "",
+        "tldr": "研究倾斜轨道下 Be 星星风冲压消融吸积盘并抑制吸积的机制，给出临界吸积率条件并应用于 13 个系统。",
+        "review": "",
+        "highlight": "首次系统提出星风消融作为螺旋桨机制之外的第二种吸积抑制途径，尤其适用于长自旋周期、宽轨道的 BeXRB。",
+        "relation": "",
+        "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University)",
+        "corresponding_en": "Atsuo T. Okazaki",
+        "context_outlook": "经典螺旋桨机制（[[Illarionov & Sunyaev 1975]]；[[Stella et al. 1986]]）虽能解释短周期 BeXRB 的态跃迁，但对长自旋系统的猝灭态缺乏解释力。本文在倾斜盘假设下提出星风冲压可消融外吸积盘，与 [[Shakura & Sunyaev 1973]] 标准盘或 [[Narayan & Yi 1994]] ADAF 的临界吸积率标度关系表明，该机制对宽轨道、慢自旋系统尤其有效。未来可结合 [[Björklund et al. 2023]] 等最新星风模型及三维数值模拟，厘清星风消融与螺旋桨机制的协同作用，并检验不同轨道位相下的吸积盘演化。",
+        "citations": [
+          {
+            "label": "Illarionov & Sunyaev 1975",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Stella et al. 1986",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Shakura & Sunyaev 1973",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Narayan & Yi 1994",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Björklund et al. 2023",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1311,14 +1444,22 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10579",
-        "title_zh": "洛希瓣溢出高质量X射线双星中星风驱动的角动量移除与X射线电离效应",
-        "team": "Atsuo T. Okazaki（通讯作者，北海道学芸大学）、Stanley P. Owocki（特拉华大学），非知名合作组",
-        "tldr": "用三维SPH模拟揭示星风与洛希瓣溢出流的动力学作用，发现中等X射线电离可强烈改变吸积流结构并抑制盘形成。",
-        "review": "以Cen X-3为参数原型的RLO HMXB为研究对象，采用3D SPH模拟含星风与RLO流的交互，并引入参数化X射线光致电离模型。无电离时星风施加逆角动量方向力矩，移除角动量导致吸积盘缩小；强电离（Lx=10^38 erg/s）时星风加速被抑制，盘尺寸恢复至接近无风情形；中等电离（Lx=10^37 erg/s）时星风变得致密且动力学显著，将RLO流推开并使其分叉为高、低角动量分支，反而大幅削弱盘形成。结果表明中等电离比弱电离或强电离更具破坏性，为这类系统的吸积流调节提供了新机制。",
-        "highlight": "发现电离程度对吸积流的非单调调制：中等光度下星风-流相互作用最剧烈，可实现从RLO主导到星风主导的转变，并导致吸积盘严重萎缩。",
-        "relation": "—",
+        "title_zh": "洛希瓣溢出高能X射线双星中星风驱动的角动量移除与X射线电离效应",
+        "team": "",
+        "tldr": "利用三维SPH模拟研究星风与RLO流动力学相互作用，发现星风移除逆行角动量缩小吸积盘，中等X射线电离更显著破坏盘形成。",
+        "review": "",
+        "highlight": "首次揭示星风逆行动力学作用，中等电离（Lx=10^37 erg/s）比高/无电离更有效抑制吸积盘，提供吸积流模态转换新机制。",
+        "relation": "",
         "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University), Stanley P. Owocki (Department of Physics & Astronomy, University of Delaware)",
-        "corresponding_en": "Atsuo T. Okazaki"
+        "corresponding_en": "Atsuo T. Okazaki",
+        "context_outlook": "传统的HMXB研究或关注纯星风供食过程（如[[Blondin+ 1990]]），或聚焦RLO盘形成，但星风与RLO流在角动量传输上的直接耦合长期被忽略。本文通过三维SPH模拟发现，星风能向吸积流注入逆行角动量，显著缩小吸积盘；而中等X射线电离使星风密度增大并扰动RLO流，导致盘形成被强烈抑制。这一非线性电离效应为理解RLO HMXBs的可变吸积模态提供了新机制。未来需结合更真实的辐射转移、星风加速计算及参数空间扫描，以预测不同状态下盘的形成与演化。",
+        "citations": [
+          {
+            "label": "Blondin+ 1990",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     }
   ],

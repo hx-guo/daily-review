@@ -48,8 +48,10 @@ class PaperSummary:
     review: str
     highlight: str
     relation: str
-    authors_en: str = ""       # first ~3 authors + affiliations, English, from full text
-    corresponding_en: str = ""  # corresponding author, English, from full text
+    authors_en: str = ""        # first ~3 authors + affiliations, English, from full text
+    corresponding_en: str = ""   # corresponding author, English, from full text
+    context_outlook: str = ""    # 脉络与展望: past-connection → future-trend, with inline [[cite]] markers
+    citations: list[dict] = field(default_factory=list)  # [{label, arxiv, doi}] for the [[cite]] chips
 
     def to_dict(self) -> dict:
         return asdict(self)

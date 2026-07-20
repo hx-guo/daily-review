@@ -48,7 +48,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -95,7 +97,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -136,7 +140,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -172,7 +178,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -212,7 +220,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -256,7 +266,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -294,14 +306,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13268",
-        "title_zh": "神经网络加速的手征平均场模型对核饱和与真空性质的贝叶斯校准",
-        "team": "第一作者：Isaac Legred（伊利诺伊大学厄巴纳-香槟分校）；通讯作者：Isaac Legred；主要机构：伊利诺伊大学厄巴纳-香槟分校、肯特州立大学；非知名合作组",
-        "tldr": "利用神经网络代理模型加速层级贝叶斯推断，校准手征平均场模型的矢量自相互作用参数，以同时符合核饱和和真空实验数据，并揭示参数简并与中子星性质的不确定性。",
-        "review": "研究对象为包含手征对称性的相对论平均场模型（CMF），其参数校准因全味关联和计算昂贵而困难。本文在CMF中引入普适四次矢量自相互作用，并构建神经网络模拟从参数到饱和、真空可观测量的映射，结合bilby与PyTorch实现高效贝叶斯推断。结果显示约99%的参数组合被排除，但可行解在参数空间内广泛分布，且数据主要限制参数组合而非单个值。结论指出参数间高度简并，不同可行模型可导致定性的中子星描述差异，强调联合地面与天体物理约束的必要。",
-        "highlight": "首次在手征平均场中采用完整的四次矢量自相互作用基，并用神经网络大幅加速贝叶斯校准，揭示强参数简并及其对中子星状态方程的显著影响，为多信使研究提供新视角。",
-        "relation": "—",
-        "authors_en": "I. Legred (University of Illinois at Urbana-Champaign), M. R. Pelicer (University of Illinois at Urbana-Champaign), V. Dexheimer (Kent State University) et al.",
-        "corresponding_en": "Isaac Legred"
+        "title_zh": "神经加速的手征平均场模型贝叶斯校准：核饱和与真空性质",
+        "team": "",
+        "tldr": "利用神经网络代理模型加速贝叶斯推断，系统校准手征平均场模型的参数，使其与核饱和性质和真空实验数据一致。",
+        "review": "",
+        "highlight": "首次在完整四次矢量自相互作用基础上，结合神经网络加速与模块化贝叶斯框架（MUSES+bilby+PyTorch）进行校准，揭示参数空间的高度简并性，指出仅凭核饱和数据不足以唯一确定致密物质状态方程。",
+        "relation": "",
+        "authors_en": "I. Legred (University of Illinois at Urbana-Champaign), M. Reinke Pelicer (University of Illinois at Urbana-Champaign), V. Dexheimer (Kent State University) et al.",
+        "corresponding_en": "Isaac Legred",
+        "context_outlook": "手征平均场模型因内禀的 QCD 味对称性，在连接核实验与中子星物理方面具有独特优势，但其高维、强关联的参数空间长期难以系统探索。本研究通过构建神经网络代理模型，将单次物态方程计算加速至可微分形式，使百万级似然评估成为可能，并首次在广义四次矢量自相互作用基础上完成贝叶斯校准；结果显式地展现了参数间的强简并，表明大量不同的参数组合均可满足当前核饱和约束。未来，该方法可自然拓展至有限温度、非平衡输运及夸克–强子相变的研究，并与 NICER、LIGO/Virgo 等多信使天体物理观测深度融合，以打破参数简并、提升致密物质状态方程的确定性。",
+        "citations": []
       }
     },
     {
@@ -342,7 +356,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -379,14 +395,27 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13242",
-        "title_zh": "GRB 211211A瞬时辐射的时间分辨轻子模型研究",
-        "team": "第一作者及通讯作者为 Maria Petropoulou（希腊雅典大学物理系）；合作者包括慕尼黑大学、DESY 等机构；非大型合作组。",
-        "tldr": "利用时间分辨的同步+自康普顿辐射模型对 GRB 211211A 的瞬时谱进行 MCMC 拟合，发现电子冷却模式从快冷却转为慢冷却，并预测了可被 CTAO 探测的 TeV 辐射，要求极端多普勒因子。",
-        "review": "研究对象为长暴 GRB 211211A（致密天体并合起源），利用 Swift/BAT 和 Fermi/GBM 在 0–60 s 内的 8 个时间分辨谱。采用 LeHaMoC 轻子辐射代码同步辐射、逆康普顿散射和光子对产生，通过 MCMC 拟合光谱。结果表明，10 keV–10 MeV 谱可用电子同步辐射解释，前 8 s 为快冷却,随后转为慢冷却；多普勒因子须高达 1000–2500。预测的同步自康普顿辐射延伸到 TeV 能段，若 CTAO 能及时响应或在视场内，可探测到类似暴的 TeV 辐射。极端多普勒因子与余辉喷流洛伦兹因子不一致，可能暗示发射区相对喷流有相对论运动。",
-        "highlight": "首创对 GRB 211211A 进行时间分辨的物理模型光谱拟合，揭示冷却机制转变；预测了 TeV 瞬时辐射并估算可探测性；发现对多普勒因子的严苛限制，为理解 GRB 瞬时辐射区动力学提供新线索。",
-        "relation": "该研究深入揭示了伽马暴瞬时辐射的物理条件，其 TeV 辐射预测与 GECAM 的高能暂现源科学目标（如伽马暴、电磁对应体）紧密相关，为 GECAM 的多波段协同观测与物理分析提供了参考。",
-        "authors_en": "Maria Petropoulou (National and Kapodistrian University of Athens), Maria Gkoni (National and Kapodistrian University of Athens), Konstantinos Xyloportas (National and Kapodistrian University of Athens) et al.",
-        "corresponding_en": "Maria Petropoulou"
+        "title_zh": "GRB 211211A 瞬时辐射的时间分辨轻子模型",
+        "team": "",
+        "tldr": "用数值 SED 模型对 GRB 211211A 的时间分辨瞬时辐射进行轻子拟合，揭示快冷却到慢冷却的演化，并预测 TeV 信号可被 CTAO 探测。",
+        "review": "",
+        "highlight": "首次结合完整轻子辐射转移与贝叶斯推断，同步重塑宽波段能谱，并发现极高多普勒因子（~1000–2500），暗示发射区相对喷流等离子体存在相对论运动。",
+        "relation": "",
+        "authors_en": "Maria Petropoulou (Dept. of Physics, National and Kapodistrian University of Athens), Maria Gkoni, Konstantinos Xyloportas et al.",
+        "corresponding_en": "Maria Petropoulou",
+        "context_outlook": "此前 [[Gompertz+ 2023]] 曾用双平滑拐折幂律谱拟合本暴时间分辨谱，推断出快冷却至慢冷却的过渡；[[Veres+ 2023]] 等则详细分析了其光变特性与多波段对应体，确认致密星合并起源。本文在此基础上引入包含同步辐射、逆康普顿散射与光子对的完整轻子辐射框架，通过 MCMC 获得物理参数的时间演化，并预测同步自康普顿 TeV 辐射可被 CTAO 探测。该工作为今后利用 Fermi 与 CTAO 的联动观测，揭示喷流耗散区的相对论粒子加速与辐射机制提供了新范式。",
+        "citations": [
+          {
+            "label": "Gompertz+ 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Veres+ 2023",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -418,14 +447,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13168",
-        "title_zh": "非稳态噪声建模及其在引力波天文学中的应用",
-        "team": "Neil J. Cornish（通讯作者），蒙大拿州立大学极端引力研究所；单作者，非合作组",
-        "tldr": "提出一种基于动态功率谱的构造性框架来建模引力波数据中的非稳态噪声，并给出 Fourier 域与小波域的显式协方差矩阵。",
-        "review": "本文针对引力波探测器数据的非稳态噪声，定义了一种正定的动态功率谱 S(f,t)=s²(f,t)，并利用 Gram 因子构造噪声协方差矩阵，保证其正半定性。导出了离散 Fourier 域和 Wilson-Daubechies 小波域的噪声协方差矩阵闭合表达式，两者均为 Gramian 矩阵，可借助 FFT 高效计算。通过调制稳态噪声的视角，统一解释了窗口效应、银河双星信号调制等非稳态成分，并讨论了在似然分析中全逆协方差矩阵的重要性。",
-        "highlight": "创新点在于用 Gram 因子直接构造正定的动态谱，避免了 Wigner-Ville 谱的负值问题；显式给出 Fourier 和小波域的协方差矩阵，兼具可解释性与计算可行性，为后续从实测数据中提取 S(f,t) 奠定了基础。",
-        "relation": "—",
+        "title_zh": "非平稳噪声建模：在引力波天文学中的应用",
+        "team": "",
+        "tldr": "提出一个基于动态功率谱 S(f,t) 的通用框架，通过 Gram 因子模型构造正定协方差矩阵，用于建模引力波数据中的非平稳噪声。",
+        "review": "",
+        "highlight": "通过 s(f,t)^2 的正定构造，将传统平稳功率谱自然推广到时变情形，给出了傅里叶域和小波域协方差矩阵的 Gramian 显式表达，方法可解释性强、计算高效，适用于窗函数调制等多种非平稳效应。",
+        "relation": "",
         "authors_en": "Neil J. Cornish (eXtreme Gravity Institute, Department of Physics, Montana State University, Bozeman, Montana 59717, USA)",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "引力波数据分析依赖噪声模型以定义似然函数[[Finn 1992]]，然而实际噪声常表现出非平稳性[[Abbott et al. 2020]]。过往研究多侧重于消除仪器瞬态[[Cornish and Littenberg 2015]]或讨论非平稳对信号搜索的影响[[Zackay et al. 2019]]，缺乏系统性的时变噪声模型。本文提出动态功率谱 S(f,t) 的 Gram 因子框架，正定且易于实现，在傅里叶域和小波域均为 Gramian 矩阵，可统一处理窗函数、空间探测器调制等非平稳问题。该方法为未来从真实数据估计动态谱[[Ghosh and Cornish 2026]]奠定了理论基础，有望显著改善天体物理源参数估计的精度。",
+        "citations": [
+          {
+            "label": "Finn 1992",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Abbott et al. 2020",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Cornish and Littenberg 2015",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Zackay et al. 2019",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ghosh and Cornish 2026",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -461,7 +518,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -502,7 +561,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -535,14 +596,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13275",
-        "title_zh": "双黑洞遗迹的精确铃宕测量",
-        "team": "Achal Kumar、Poulami Dutta Roy 等，佛罗里达大学、华沙大学团队；非大科学合作组",
-        "tldr": "利用 cWB 信号重构对 GWTC‑3 双黑洞铃宕进行贝叶斯分析，获得迄今最严格的 (2,2) 模频率和阻尼时间约束，结果与 GR 一致",
-        "review": "本文针对 GWTC‑3 中的双黑洞并合事件，使用无模型的重构算法 cWB 从 LIGO 数据中提取铃宕信号，有效降低探测器噪声。通过定义基于累积能量的铃宕窗口，将分析起点提前至距信号峰值约 3.5 t<sub>M<sub>f</sub></sub>；采用包含 (2,2,0) 和 (2,2,1) 双模的阻尼正弦模型，利用 BILBY 进行贝叶斯参数估计，并用模拟信号校正重构中的系统偏差。对 GW150914 等事件的分析显示，测量到的频率和阻尼时间均与 GR 预测吻合；联合分析给出频率相对偏差 δf<sub>220</sub> = 0.003<sup>+0.028</sup><sub>-0.028</sub>，阻尼时间相对偏差 δτ<sub>220</sub> = 0.050<sup>+0.081</sup><sub>-0.086</sub>，在误差范围内支持 GR。该方法显著提高了铃宕参数的测量精度，为检验强场引力提供了新手段。",
-        "highlight": "首次将 cWB 重构用于铃宕分析，通过噪声抑制获得更紧约束；提出基于累积能量的铃宕窗口选择方法，避开峰值振幅依赖并提早分析起点；对重构偏差给出系统校正策略，提升可靠性。",
-        "relation": "—",
-        "authors_en": "Achal Kumar (University of Florida), Poulami Dutta Roy (University of Florida), Marek J. Szczepańczyk (University of Warsaw) et al.",
-        "corresponding_en": ""
+        "title_zh": "双黑洞遗迹铃宕信号的精密测量",
+        "team": "",
+        "tldr": "利用相干波暴（cWB）重构信号降噪并优化铃宕窗口选择，对GWTC-3事件进行铃宕分析，得到与广义相对论一致的精确频率与阻尼时间约束。",
+        "review": "",
+        "highlight": "提出基于cWB的波形重构去噪方法和基于累积能量的客观窗口选择，使铃宕分析更接近并合时刻，显著提高了测量精度，为检验广义相对论提供了新手段。",
+        "relation": "",
+        "authors_en": "A. Kumar (University of Florida), P. Dutta Roy (University of Florida), M. J. Szczepańczyk (University of Warsaw) et al.",
+        "corresponding_en": "",
+        "context_outlook": "铃宕信号是检验强场引力的重要窗口，但传统分析常因噪声干扰和较晚的分析窗口导致精度受限。本研究采用相干波暴（cWB）算法进行信号重构，不仅实现了去噪，还通过定义累积能量函数来客观确定铃宕起始时刻，将分析窗口推进至更接近并合阶段，从而大幅提高了频率和阻尼时间的测量精度。该方法在GWTC-3多个双黑洞事件上验证了与广义相对论的一致性。未来，随着探测灵敏度的提升和更多高阶模的探测，基于去噪重构的精密铃宕分析有望实现真正的黑洞光谱学，对引力理论进行更严格的检验。",
+        "citations": []
       }
     },
     {
@@ -584,7 +647,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -618,14 +683,27 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13148",
-        "title_zh": "基于半监督学习的CHIME/FRB第二版星表快速射电暴形态分类",
-        "team": "第一作者：Bo Lin Fan，通讯作者未明确；主要机构：多伦多大学；非知名合作组",
-        "tldr": "利用半监督卷积自编码器对 CHIME/FRB 第二星表数据进行无监督形态分类与重复性预测，识别出三类新形态亚群，证实重复暴与非重复暴形态存在重叠。",
-        "review": "基于 CHIME/FRB 第二星表 4539 个快速射电暴的瀑布图，使用卷积自编码器直接从数据学习低维形态特征，无需人工视觉标注。在模拟的平衡训练集上以半监督方式同时完成形态聚类和重复性二分类，分类器对重复暴的召回率达 86%。除主流群体外，发现三个独立形态类群：短带宽、具有向下漂移子结构的暴；两类占据整个观测频带的极短时宽宽带暴，分别具有低散射和高散射特性。结果表明重复暴与一次性暴在形态空间中大体重叠，但某些类群中重复暴比例显著偏高，印证了以往基于拟合参数的研究。",
-        "highlight": "完全数据驱动，不依赖人工定义的形态标签，可重复性高；独立重现了前人通过目视定义的向下漂移形态，并首次发现两个宽带短暴亚类；将无监督降维与重复性预测联合训练，为大规模暂现源分类提供了新范式。",
-        "relation": "FRB 形态分类及重复性研究可为理解其高能辐射起源提供线索，间接关联 GECAM 对 FRB 高能对应体的搜寻和多信使研究。",
-        "authors_en": "Bo Lin Fan (University of Toronto), Renée Hložek (University of Toronto), Antonio Herrera Martin (University of Toronto)",
-        "corresponding_en": ""
+        "title_zh": "CHIME/FRB第二星表FRB的半监督形态分类",
+        "team": "",
+        "tldr": "利用卷积自编码器对CHIME/FRB第二星表FRB进行无监督形态分类并联合训练重复性分类器，恢复已知形态且发现新亚类。",
+        "review": "",
+        "highlight": "1) 无监督CAE直接从瀑布图学习，无需人工视觉标签；2) 联合训练重复性分类器，模拟训练下对真实重复暴正确率达86%；3) 识别出低散射与高散射两组新的短时宽带暴，并独立重现下降漂移结构；4) 证实重复暴与单次暴在形态上存在显著重叠。",
+        "relation": "",
+        "authors_en": "B. L. Fan (Dunlap Institute for Astronomy and Astrophysics, University of Toronto), R. Hložek (Dunlap Institute for Astronomy and Astrophysics, University of Toronto), A. Herrera Martin (Department of Statistical Sciences, University of Toronto)",
+        "corresponding_en": "",
+        "context_outlook": "近年来，利用大样本对FRB形态-重复性关联的研究逐渐增多：如[[Sun+ 2026a]]通过UMAP降维聚类发现重复暴多呈窄带特征，[[Kumar+ 2025]]使用视觉定义类别进行监督分类。然而这些方法或受限于拟合参数假设，或依赖人工标注一致性。本文通过半监督卷积自编码器直接从瀑布图数据学习低维表示，以完全无监督方式分离出三个异常形态类，并独立重现了此前视觉定义的向下漂移结构，同时将短时宽带暴进一步区分为低散射与高散射亚类；附加的重复性分类分支在模拟数据上达86%准确率。该数据驱动框架为处理更大巡天样本（如后续CHIME/FRB星表）提供了可扩展方案，未来若与偏振、宿主星系等多维信息融合，有望推动FRB从形态分类迈向物理起源的破解。",
+        "citations": [
+          {
+            "label": "Sun+ 2026a",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Kumar+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -666,7 +744,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -709,7 +789,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -749,7 +831,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -789,7 +873,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -823,14 +909,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13152",
-        "title_zh": "核星团动力学：碰撞与双星瓦解的影响",
-        "team": "Barak Rom（普林斯顿大学）、Re'em Sari（希伯来大学），无大型合作组",
-        "tldr": "解析研究了恒星碰撞与双星瓦解如何塑造核星团密度轮廓并调节潮汐破坏事件（TDE）和恒星极端质量比旋近（sEMRI）的产生率",
-        "review": "本文构建解析框架，研究核星团中恒星碰撞、双星瓦解、双体散射和引力波辐射的相互作用。发现内区碰撞主导，密度轮廓呈 n∝r^{-5/4}，由碰撞摧毁和双星瓦解补给平衡决定。该机制抑制短周期潮汐破坏事件（spTDE）和 sEMRI 的形成，并预测不同黑洞质量下的暂现源发生率。模型应用于银河系中心，预测密度轮廓与观测一致，并解释了 S2 轨道内质量限制与恒星 S301 的性质。",
-        "highlight": "首次将碰撞和双星瓦解纳入统一解析框架，解释了较浅的密度轮廓和 QPE/重复 TDE 的起源，对 sEMRI 形成提出动力学挑战",
-        "relation": "论文研究的核星团高能暂现现象（TDE、QPE、恒星碰撞）是 GECAM 时域天文学的重要探测目标，尤其与超大质量黑洞相关的 X 射线爆发",
-        "authors_en": "Barak Rom (Department of Astrophysical Sciences, Princeton University), Re'em Sari (Racah Institute of Physics, The Hebrew University of Jerusalem)",
-        "corresponding_en": ""
+        "title_zh": "核星团动力学：恒星碰撞与瓦解双星的影响",
+        "team": "",
+        "tldr": "结合恒星碰撞与双星瓦解，导出核区密度 n(r)∝r^{-5/4}，并揭示碰撞对 sEMRI 和短周期 TDE 的抑制作用。",
+        "review": "",
+        "highlight": "首次将双星瓦解作为紧致轨道恒星的主要补充机制，与碰撞耗散达成自洽平衡，解释了银河系中心观测到的恒星分布，并对 QPE 起源提出新约束。",
+        "relation": "",
+        "authors_en": "Barak Rom (Princeton University), Re’em Sari (The Hebrew University of Jerusalem)",
+        "corresponding_en": "",
+        "context_outlook": "核区恒星动力学研究长期基于两体散射预言稳态尖峰（[[Bahcall & Wolf 1976]]）。随着碰撞耗散（[[Balberg & Yassur 2023]]）和引力波发射被纳入，双星瓦解（[[Hills 1988]]）对紧致轨道的补充作用逐渐受到关注。本文在[[Rom & Sari 2025]]的多质量框架基础上，首次统一了碰撞消耗与双星注入过程，推导出碰撞调控的 n(r)∝r^{-5/4} 剖面，揭示了碰撞对极端质量比旋进（sEMRI）和短周期 TDE 的强烈抑制。这一结果为银河系中心恒星分布、QPE 和重复 TDE 等现象提供了自洽的动力学解释，未来 LISA 和时域巡天可检验低 sEMRI 率及碰撞主导区恒星缺失的预言。",
+        "citations": [
+          {
+            "label": "Bahcall & Wolf 1976",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Balberg & Yassur 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Hills 1988",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Rom & Sari 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -867,14 +976,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13143",
-        "title_zh": "超高能中微子实验的“软体积”效应",
-        "team": "S. Palmisano（第一作者），通讯作者未标注；INFN 佛罗伦萨分部 & 伽利略理论物理研究所；非大型合作组",
-        "tldr": "建立半解析漂移–扩散方程，利用μ子能量损失将超高能中微子通量映射为望远镜的贯穿μ子事件率。",
-        "review": "针对中微子望远镜中μ子径迹事件，考虑μ子在物质中的传播及软碰撞主导的能量损失，通过玻尔兹曼方程推导出漂移–扩散方程，替代全蒙特卡洛模拟实现快速计算。拟合 IceCube 贯穿μ子数据得到与实验一致的能谱，并重新分析 KM3NeT 的超高能事例，指出其与 IceCube 非探测结果显著紧张（贝叶斯因子=18）。工作为连接中微子通量模型与可观测径迹事件提供了第一性原理桥梁。",
-        "highlight": "首次从第一性原理构建μ子能量损失的漂移–扩散方程，实现半解析快速评估，揭示因μ子传播导致的“软体积”增强效应；可用于精确中微子天文学和新物理搜寻。",
-        "relation": "—",
-        "authors_en": "S. Palmisano (INFN Sezione di Firenze), D. Redigolo (Galileo Galilei Institute for Theoretical Physics, INFN), M. Tammaro (INFN Sezione di Firenze) et al.",
-        "corresponding_en": ""
+        "title_zh": "超高能中微子实验的软体积",
+        "team": "",
+        "tldr": "开发了基于玻尔兹曼方程的半解析框架，将超高能中微子流强映射到望远镜事件率，并引入“软体积”描述贯穿μ子径迹的有效探测体积，应用于IceCube和KM3NeT数据。",
+        "review": "",
+        "highlight": "将μ子能量损失的软碰撞展开至二阶，将玻尔兹曼方程化为漂移-扩散方程，获得贯穿事件率的快速解析公式；重新评估KM3NeT超高能事件与IceCube的紧张程度，系统纳入μ子能量损失的理论不确定性。",
+        "relation": "",
+        "authors_en": "Stefano Palmisano (INFN Sezione di Firenze), Diego Redigolo (Galileo Galilei Institute for Theoretical Physics), Michele Tammaro (INFN Sezione di Firenze) et al.",
+        "corresponding_en": "",
+        "context_outlook": "本研究在前期工作[[Palmisano+ 2025]]的基础上，进一步将半解析玻尔兹曼框架系统化，通过软能量损失展开将输运问题简化为漂移-扩散方程，避免了[[Koehne+ 2013a]]等全蒙卡模拟的繁复，并直接关联微观能量损失过程。利用该框架拟合IceCube贯穿μ子数据，得到扩散流强谱指数与实验吻合，并解释了归一化差异为探测器接受效率因子。针对[[Aiello+ 2025]]报道的KM3NeT超高能径迹事件，我们量化了其与IceCube零观测的紧张程度，确认了[[Palmisano+ 2025]]和[[Li+ 2025]]等所指出的不一致。未来该方案可推广至τ子和级联事件，为精确中微子天文学和新物理搜寻提供第一性原理工具。",
+        "citations": [
+          {
+            "label": "Palmisano+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Koehne+ 2013a",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Aiello+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Li+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -915,7 +1047,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -968,7 +1102,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1013,7 +1149,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1051,7 +1189,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1094,7 +1234,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1138,7 +1280,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1181,7 +1325,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1216,14 +1362,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13130",
-        "title_zh": "冷却粒子分布的同步辐射",
-        "team": "第一作者：Ross Ferguson；通讯作者未明确标注（可能为Ben Margalit）；主要机构：明尼苏达大学物理与天文学院；不属于知名合作组",
-        "tldr": "为冷却电子分布推导了解析的同步辐射发射与吸收系数拟合函数，大幅加速伽马暴等暂现源余辉建模",
-        "review": "本文针对激波下游电子在辐射和绝热冷却下的分布，推导了普遍的解析表达式，并针对注入的幂律和热电子分布分别给出同步辐射 j_ν 和 α_ν 的拟合公式；这些公式可直接替代传统数值积分，用于 GRB、LFBOTs 和 TDEs 等全体积余辉模型，在保持高精度的同时大幅提高计算效率；与 Granot & Sari (2002) 的结果对比，验证了拟合函数的准确性。",
-        "highlight": "首次为冷却粒子同步辐射的局部发射/吸收系数提供解析拟合函数，兼具精度与效率；涵盖幂律和热分布两种情形，便于直接嵌入流体模拟，为暂现源余辉分析提供了实用工具",
-        "relation": "该研究直接服务于伽马暴等暂现源的同步辐射余辉建模，可与GECAM对GRB的高能暂现观测联合应用，提升余辉光变曲线的快速拟合与物理参数制约能力",
+        "title_zh": "来自冷却粒子分布的同步辐射",
+        "team": "",
+        "tldr": "推导了冷却幂律和热电子分布下的同步辐射发射与吸收系数的解析拟合函数，为激波余辉快速建模提供高效工具。",
+        "review": "",
+        "highlight": "首次为局部冷却电子分布提供了同时涵盖幂律与热成分的解析拟合公式，兼具准确性与计算效率，可直接嵌入全立体余辉模型。",
+        "relation": "",
         "authors_en": "Ross Ferguson (University of Minnesota), Ben Margalit (University of Minnesota)",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "同步辐射激波余辉的传统建模多采用单区近似（如 [[Sari+ 1998]]），但全立体模型能够更自洽地描述流体结构，却因需数值求解局部冷却电子分布（如 [[Granot and Sari 2002]]、[[Ressler and Laskar 2017]]）而计算代价高昂。本文在这一局部框架基础上，首次给出了同时包含绝热与同步辐射冷却的幂律和热电子分布函数的解析表达式，并提供了发射与吸收系数的拟合公式。这些拟合函数可大幅提升全立体模型的计算效率，尤其适用于伽马暴、快蓝光暂现源及喷流潮汐瓦解事件的余辉模拟。未来工作可将其推广至含逆康普顿冷却或复合粒子注入谱等更复杂的场景。",
+        "citations": [
+          {
+            "label": "Sari+ 1998",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Granot and Sari 2002",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ressler and Laskar 2017",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1264,7 +1428,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1305,7 +1471,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1346,7 +1514,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1453,7 +1623,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1501,7 +1673,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1543,7 +1717,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1574,14 +1750,47 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13019",
-        "title_zh": "一颗过渡脉冲星的伽马射线模式",
-        "team": "第一作者 Maksat Satybaldiev，通讯作者不详；挪威科技大学（NTNU）及加泰罗尼亚理工大学（UPC），非知名合作组",
-        "tldr": "利用同时性X射线数据在过渡毫秒脉冲星PSR J1023+0038中发现伽马射线模式，且伽马射线与X射线流量反相关",
-        "review": "研究对象为原型过渡毫秒脉冲星PSR J1023+0038，处于亚光度吸积盘态。通过NICER、XMM-Newton等X射线数据识别出X射线低态和高态时段，叠加Fermi-LAT伽马射线光子进行分态能谱分析。结果表明，伽马射线在X射线低态时反而更亮（0.1–100 GeV流量约为高态的4倍），与现有模型预测的伽马-X射线正相关矛盾。提出在伽马射线高态脉冲星风可能缺失，而射电辐射增强，暗示喷流辐射主导GeV伽马射线。",
-        "highlight": "首次在tMSP中发现伽马射线模式并揭示与X射线的反相关性，挑战了脉冲星风-吸积盘相互作用模型，为喷流起源的伽马射线提供新线索",
-        "relation": "—",
-        "authors_en": "M. Satybaldiev (Norwegian University of Science and Technology), M. Linares (Norwegian University of Science and Technology / Universitat Politècnica de Catalunya)",
-        "corresponding_en": ""
+        "title_zh": "过渡脉冲星的伽马射线模式",
+        "team": "",
+        "tldr": "本文发现 PSR J1023+0038 的伽马射线模式与 X 射线反相关，提示喷流而非脉冲星风主导 GeV 辐射。",
+        "review": "",
+        "highlight": "首次在过渡毫秒脉冲星中发现伽马射线模式，且与 X 射线模式反相关，推翻现有模型预测，为理解低吸积率下的粒子加速与辐射机制提供新线索。",
+        "relation": "",
+        "authors_en": "Maksat Satybaldiev (Department of Physics, Norwegian University of Science and Technology, NO-7491 Trondheim, Norway), Manuel Linares (Department of Physics, Norwegian University of Science and Technology, NO-7491 Trondheim, Norway; Departament de Física, EEBE, Universitat Politècnica de Catalunya, Av. Eduard Maristany 16, E-08019 Barcelona, Spain)",
+        "corresponding_en": "",
+        "context_outlook": "过渡毫秒脉冲星 PSR J1023+0038 自发现以来（[[Archibald+ 2009]]），其 X 射线双模行为（[[Linares 2014]]; [[Bogdanov+ 2015]]）及射电反相关（[[Bogdanov+ 2018]]; [[Baglio+ 2023]]）已逐步揭示。先前模型预测伽马射线在 X 射线高态时更亮（[[Veledina+ 2019]]），而本文通过堆叠 Fermi-LAT 数据，首次发现伽马模式与 X 射线反相关，挑战了脉冲星风-盘相互作用模型，并暗示喷流可能主导 GeV 辐射。该发现推动了对低光度吸积流与喷流形成的理解，未来结合更高时间分辨率的伽马监测及多信使观测，有望直接捕捉模式转换过程，并为其他 tMSP 系统提供检验途径。",
+        "citations": [
+          {
+            "label": "Archibald+ 2009",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Linares 2014",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Bogdanov+ 2015",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Bogdanov+ 2018",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Baglio+ 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Veledina+ 2019",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1627,7 +1836,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1660,14 +1871,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12967",
-        "title_zh": "分层抛射物产生伽马暴余辉平台的高分辨率数值计算",
-        "team": "Paul C. Duffell (Purdue University) 第一/通讯作者, Ranadeep Ghosh Dastidar (Purdue University); 非知名合作组",
-        "tldr": "首次通过高分辨数值模拟（Δr/r≲10⁻⁵）验证分层抛射物可在ISM和星风环境下自然产生GRB余辉平台，并给出平台持续时间与特征洛伦兹因子的标度关系。",
-        "review": "本文利用超高分辨率1D相对论流体代码JET模拟分层抛射物在均匀ISM（k=0）和星风（k=2）环境中的演化，并用Firefly代码计算同步辐射光变曲线。数值结果直接证实，分层抛射物在两种介质下均能产生浅衰减的X射线平台，并在反向激波穿越后过渡到标准余辉。平台持续时间对特征洛伦兹因子γ₀高度敏感，推导出精确的标度公式，典型平台对应γ₀≈10–50，而外层物质仍可达到γ>100以产生瞬时辐射。该工作从数值模拟上强有力地支持了分层抛射物解释平台现象的普适性，为取代传统的晚期能量注入模型提供了新范式。",
-        "highlight": "首次用高分辨率数值模拟证明分层抛射物在ISM环境下同样能产生平台，克服了此前“恒定洛伦兹因子”模型只适用于星风介质的局限；精确测量了平台时标-γ₀标度关系；揭示了分层结构是产生平台的简洁自然机制。",
-        "relation": "与GECAM核心科学目标高度相关：研究GRB早期余辉平台的形成机制，为GECAM观测高能暂现源、通过平台特征推断喷流分层和洛伦兹因子提供理论支撑。",
+        "title_zh": "分层喷出物驱动GRB余辉平台的高分辨率数值模拟",
+        "team": "",
+        "tldr": "首次通过高分辨率数值模拟验证分层喷出物结构可天然产生GRB余辉平台，无需晚期能量注入，并定量给出平台时长与喷出物特征洛伦兹因子的标度关系。",
+        "review": "",
+        "highlight": "首次以超高分辨率数值模拟直接验证分层喷出物可产生GRB余辉平台，在ISM和风环境下均得到浅衰减光变曲线；精确标定平台时长与γ0的标度关系，表明典型平台仅需γ0~10-50，无需借助晚期引擎。",
+        "relation": "",
         "authors_en": "Paul C. Duffell (Purdue University), Ranadeep Ghosh Dastidar (Purdue University)",
-        "corresponding_en": "Paul C. Duffell"
+        "corresponding_en": "Paul C. Duffell",
+        "context_outlook": "自Swift发现GRB余辉平台（[[Nousek+ 2006]]）以来，其起源多被归因于晚期能量注入（[[Zhang+ 2006]]），但这面临引擎持续时标等挑战。早期即有解析工作提出分层喷出物在反向激波穿越时可自然产生平台（[[Sari & Mészáros 2000]]），近期[[Sadeh+ 2026]]推导了更详细的标度关系并强调其可统一解释平台与标准余辉（[[Blandford & McKee 1976]]），但缺乏直接数值验证。本文首次通过高分辨率模拟（Δr/r<10^-5）确认分层喷出物在ISM和风环境中均能产生与观测一致的平台光变曲线，并精确标定平台时长与喷出物特征洛伦兹因子γ0的关系，得出现实平台所需γ0~10-50。该结果支持分层结构作为平台起源的普适框架，未来可结合多波段观测约束分层指数（s），并推广至二维喷流拐折与视角效应研究，有望减少对特殊晚期引擎的依赖，完善余辉标准模型。",
+        "citations": [
+          {
+            "label": "Nousek+ 2006",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Zhang+ 2006",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Sari & Mészáros 2000",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Sadeh+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Blandford & McKee 1976",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1730,7 +1969,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1772,7 +2013,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1810,7 +2053,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1855,7 +2100,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1916,7 +2163,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1960,7 +2209,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1999,7 +2250,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2031,14 +2284,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12891",
-        "title_zh": "核心坍缩超新星玻尔兹曼中微子辐射流体力学模拟中动量空间分辨率依赖性",
-        "team": "Ryuichiro Akaho（早稻田大学），单一作者",
-        "tldr": "通过二维超新星模拟，首次系统性研究玻尔兹曼中微子输运中动量空间分辨率对爆炸动力学的影响，发现天顶角与能量分辨率具有完全不同的人工效应。",
-        "review": "本文使用离散坐标法求解二维Boltzmann方程，针对9–40太阳质量多种前身星模型，分别改变动量空间的天顶角、方位角和能量网格分辨率进行模拟。主要结果：(1) 粗天顶角分辨率人为促进爆炸，甚至使不爆发模型变成爆发，因其无法捕捉前向峰化的中微子分布，低估通量因子，延长中微子在增益区的停留时间；(2) 方位角分辨率影响极小，与核球对称性一致；(3) 粗能量分辨率人为抑制爆炸，因为低估了约30–50 MeV中能中微子的加热率。在一维黑洞形成模型中，粗能量分辨率会延迟黑洞形成时间，但角度依赖性弱。",
-        "highlight": "首次在多维动态核心坍缩超新星模拟中，分离并量化动量空间各维度分辨率的人为误差，指出粗天顶角网格是当前Boltzmann输运计算的主要不确定性来源之一，为改善数值方法提供了重要依据。",
-        "relation": "—",
+        "title_zh": "核心坍缩超新星Boltzmann中微子输运的动量空间分辨率依赖性",
+        "team": "",
+        "tldr": "本文通过二维CCSN模拟研究了Boltzmann中微子输运中能量和角度分辨率对爆发的影响，发现粗天顶角网格虚假助爆，粗能量网格则抑制爆发，并延伸到一维黑洞形成情形。",
+        "review": "",
+        "highlight": "首次在二维动态核心坍缩超新星模拟中系统地剖析了中微子输运动量空间（天顶角、方位角、能量）分辨率的影响，揭示了不同维度分辨率的非单调效应，为数值模拟的保真度提供了关键基准。",
+        "relation": "",
         "authors_en": "Ryuichiro Akaho (Faculty of Science and Engineering, Waseda University)",
-        "corresponding_en": "Ryuichiro Akaho"
+        "corresponding_en": "Ryuichiro Akaho",
+        "context_outlook": "既往关于CCSN模拟中动量空间分辨率的系统研究主要局限于一维球对称情形，如角度分辨率影响仅在一维Boltzmann输运中被考察 [[Mezzacappa+ 1993b]]、[[Liebendörfer+ 2004]]，能量分辨率的影响也仅在一维或多维矩方法中被测试 [[Nakazato+ 2007]]、[[Nagakura+ 2021]]。本研究首次在二维动态CCSN模拟中，利用Boltzmann中微子辐射流体动力学逐个变化动量空间维度，揭示了粗天顶角网格人为促进爆发、粗能量网格却抑制爆发的相反效应，对优化网格设计和理解数值误差至关重要。随着快速味转换等新物理的纳入 [[Xiong+ 2025a]]，全动量空间输运对分辨率的要求将更加严苛，亟需发展自适应网格或机器学习加速算法以实现高保真模拟。",
+        "citations": [
+          {
+            "label": "Mezzacappa+ 1993b",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Liebendörfer+ 2004",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Nakazato+ 2007",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Nagakura+ 2021",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Xiong+ 2025a",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2080,7 +2361,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2118,7 +2401,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2157,7 +2442,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2194,7 +2481,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2231,7 +2520,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2268,7 +2559,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2309,7 +2602,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2351,7 +2646,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2429,7 +2726,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2465,14 +2764,47 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12731",
-        "title_zh": "基于遗传算法和真实GRB光变曲线校准的内激波模型",
-        "team": "Manuele Maistrello（第一/通讯作者，费拉拉大学）、Cristiano Guidorzi（INAF博洛尼亚天体物理研究所）、Shiho Kobayashi（利物浦约翰摩尔斯大学）等；无知名合作组",
-        "tldr": "利用遗传算法对内激波模型参数进行系统优化，使模拟光变曲线首次能同时复现多个真实GRB样本的各类统计性质。",
-        "review": "研究采用Swift/BAT、Fermi/GBM和CGRO/BATSE三个长暴样本的光变曲线，通过遗传算法最小化包含平均峰值后轮廓、RMS及三阶矩轮廓、自相关函数、持续时间、信噪比和峰值数分布等六种度量的损失函数，校准Kobayashi et al. (1997)的内激波模型。优化后模型成功重现了观测的平均时间轮廓、高阶统计量以及多种分布特征。结果表明壳层数量服从广义齐普夫分布，发射时间服从负指数分布，揭示中心引擎活动具有随机过程属性，每个壳层发射概率恒定且独立。尽管辐射处理简化，该模型仍能复现关键观测特性，并可预测未来任务（如GECAM、SVOM）的GRB探测群体。",
-        "highlight": "首次对内激波模型实施多统计量同步优化，验证了简化辐射条件下复现GRB光变曲线多样性的能力；揭示了中心引擎间歇性活动与地震古登堡-里克特定律相似，属于复杂系统行为；提供了可用于预测未来高能暂现源探测群体的实用工具。",
-        "relation": "该模型为GRB这类高能暂现现象的光变曲线模拟提供新方法，成果可直接应用于GECAM等未来任务的预期群体预测和数据解释。",
-        "authors_en": "M. Maistrello (University of Ferrara), C. Guidorzi (INAF-OAS Bologna), S. Kobayashi (LJMU) et al.",
-        "corresponding_en": "Manuele Maistrello"
+        "title_zh": "利用遗传算法以真实GRB光变曲线标定的内激波模型",
+        "team": "",
+        "tldr": "首次运用遗传算法对物理内激波模型进行全局标定，使其复现真实GRB光变曲线的多维统计特征，揭示中心引擎的随机活动和地震律般的喷流分布。",
+        "review": "",
+        "highlight": "首次将内激波模型直接与三个探测器真实GRB样本的多种统计性质进行全局优化，成功复现平均轮廓、持续时间、信噪比等分布。发现GRB喷流次数服从广义Zipf分布，与地震的古登堡-里特定律类似，为中央引擎活动提供新约束。",
+        "relation": "",
+        "authors_en": "M. Maistrello (University of Ferrara, INAF-OAS Bologna, INFN Ferrara), C. Guidorzi (same), S. Kobayashi (Liverpool John Moores University), et al.",
+        "corresponding_en": "Manuele Maistrello",
+        "context_outlook": "内激波模型自[[Rees and Meszaros 1994]]提出以来，[[Kobayashi+ 1997]]等奠定了多壳层碰撞动力学基础，但长期缺乏基于真实数据的系统标定。此前，[[Bazzanini+ 2024]]和[[Maistrello+ 2025]]采用遗传算法优化脉冲雪崩模型，虽能复现光变曲线统计性质，却缺少物理耗散过程。本研究首次将同类标定方法应用于物理内激波模型，结合[[Ghirlanda and Salvaterra 2022]]的GRB形成率赋予红移，通过最小化六种独立度量，成功复现BATSE、Swift/BAT和Fermi/GBM真实GRB样本的多种观测分布。优化结果揭示中心引擎的喷流发射时间服从泊松过程，喷流次数呈广义Zipf分布，与地震的古登堡-里特定律[[Gutenberg and Richter 1944]]惊人相似，为中央引擎活动提供了新约束，该标定模型可作为未来多信使任务中GRB群体的预测工具。",
+        "citations": [
+          {
+            "label": "Rees and Meszaros 1994",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Kobayashi+ 1997",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Bazzanini+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Maistrello+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ghirlanda and Salvaterra 2022",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Gutenberg and Richter 1944",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -2520,7 +2852,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2559,7 +2893,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2598,14 +2934,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12769",
-        "title_zh": "评估KAGRA升级方案对双中子星并合多信使观测的影响",
-        "team": "Yuta Michimura（东京大学RESCEU），通讯作者；KAGRA合作组相关研究，主要机构包括东京大学、东北大学等",
-        "tldr": "构建了一种高效评估框架，系统比较了KAGRA宽带与高频灵敏度升级方案在多信使天文学中的表现，发现宽带升级更有利于获取大量定位良好的双中子星并合事件。",
-        "review": "本研究针对KAGRA未来升级的四种灵敏度曲线（宽带BB40、高频HFmod/HF2k/HF3k），利用Fisher矩阵结合探测器工作周期和并合率，在LIGO-Virgo-KAGRA网络下评估双中子星并合的二维天空定位和三维定位体积。结果显示，对同一给定源高频方案HFmod可改善天空定位面积约20%，但宽带方案BB40因探测范围更远，最终能产生更多定位至10³ Mpc³体积内的事件。加入KAGRA后，相比没有KAGRA的网络，该体积内的定位事件数增加约60%。该框架定量论证了探测器升级策略需权衡探测距离与定位精度，并强调了网络整体和运行效率的重要性。",
-        "highlight": "首次在同一框架下系统地比较KAGRA宽带与高频升级方案的多信使收益；开发的计算高效方法可推广至其他探测器网络评估；明确指出了加入灵敏度较低的KAGRA仍能显著提升网络定位能力，对多信使电磁跟踪具有指导意义。",
-        "relation": "与GECAM引力波电磁对应体观测目标紧密相关：优化的探测器升级策略可增加双中子星并合事件的精确天空定位数量，为GECAM等伽马射线暴监视器提供更可靠的触发和指向信息，提升协同观测效率。",
-        "authors_en": "Y. Michimura (University of Tokyo), S. Morisaki (Institute for Cosmic Ray Research, University of Tokyo), K. Hotokezaka (University of Tokyo) et al.",
-        "corresponding_en": "Yuta Michimura"
+        "title_zh": "KAGRA升级方案对双中子星多信使观测的效能评估",
+        "team": "",
+        "tldr": "本文开发一个计算高效框架，结合Fisher矩阵、探测器占空比与并合率，比较了KAGRA宽带与高频升级对双中子星定位及可追踪事件数量的影响。",
+        "review": "",
+        "highlight": "将定位性能与占空比和事件率结合，首次系统评估KAGRA多种升级方案对多信使观测的实际增益；发现宽带升级虽定位精度略低，但因探测量程大而产生更多可追踪事件，KAGRA加入可使10^3 Mpc^3内可追踪事件增加约60%。",
+        "relation": "",
+        "authors_en": "Y. Michimura (RESCEU, Univ. of Tokyo), S. Morisaki (ICRR, Univ. of Tokyo), K. Hotokezaka (RESCEU, Univ. of Tokyo) et al.",
+        "corresponding_en": "Yuta Michimura",
+        "context_outlook": "引力波探测器升级需综合衡量对多信使观测的全局影响。以往研究或侧重灵敏度提升，或聚焦单次事件定位，较少在统一框架下考虑定位、占空比和并合率。本文利用Fisher矩阵高效模拟双中子星并合信号的网络定位性能，并引入占空比模拟实际观测情景，对比了KAGRA的宽带（BB40）与高频优化（HFmod等）方案。结果显示，高频升级虽提升单源定位精度约20%，但宽带升级因到达更远距离而贡献更多可定位事件；且KAGRA加入使定位体积缩小，可追踪事件大幅增加。该评估框架可扩展至其他探测器升级方案的对比，并为包含LIGO-India的未来全球网络协同优化提供参考。",
+        "citations": []
       }
     },
     {
@@ -2647,7 +2985,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2690,7 +3030,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2817,7 +3159,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2857,7 +3201,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2896,7 +3242,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2943,7 +3291,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -2986,7 +3336,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3026,7 +3378,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3067,7 +3421,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3104,14 +3460,37 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12700",
-        "title_zh": "IIb型超新星SN 2024aecx的耦合激波冷却与放射性加热：延展包层及快速光学下降",
-        "team": "Na Wei (华中师范大学), Liang-Duan Liu (华中师范大学, 通讯), Yun-Wei Yu (华中师范大学, 通讯); 主要机构为华中师范大学天体物理研究所; 非知名合作组",
-        "tldr": "利用统一时变辐射扩散模型对IIb型超新星SN 2024aecx的双峰光变曲线建模，揭示其延展包层结构及快速光学下降背后的物理",
-        "review": "SN 2024aecx是一颗邻近的快速演化IIb型超新星，拥有双峰紫外–光学光变曲线。本研究采用扩展的TransFit代码，将早期激波冷却与后续放射性加热纳入同一时变辐射扩散计算，并采用由数值模拟驱动的三分层抛射物密度结构。模型成功复现了短暂早期冷却峰与放射性主峰，据此约束了外层有效半径 (~110 R⊙)、抛射物质量 (2.14 M⊙)、镍质量 (0.05 M⊙) 及陡峭的外层密度斜率 (n_out ≈ 13.3)。结果表明，标准γ射线泄漏模型无法解释主峰后的快速光学衰减，需引入晚期有效光学输出因子，暗示存在额外的光学抑制机制。",
-        "highlight": "首次在统一扩散框架下同时拟合激波冷却与放射性双峰，并将早期光变直接用于限定外层密度梯度；发现快速光学下降需要超越标准放射性扩散的物理，为IIb型超新星的晚期演化提供新线索",
-        "relation": "—",
+        "title_zh": "IIb型超新星SN 2024aecx中激波冷却与放射性加热的耦合：延展包层与快速光学衰减",
+        "team": "",
+        "tldr": "采用统一时变辐射扩散模型同时处理激波冷却与放射性加热，拟合SN 2024aecx的双峰光变曲线，并引入光学输出因子解释其快速晚期衰减。",
+        "review": "",
+        "highlight": "首次在单一扩散框架中同时重现早期冷却峰、放射性主峰与快速光学下降；模型揭示标准γ泄漏机制不足，需额外的晚期光学抑制。",
+        "relation": "",
         "authors_en": "Na Wei (Institute of Astrophysics, Central China Normal University), Yu-Hao Zhang (Institute of Astrophysics, Central China Normal University), Liang-Duan Liu (Institute of Astrophysics, Central China Normal University) et al.",
-        "corresponding_en": "Liang-Duan Liu, Yun-Wei Yu"
+        "corresponding_en": "",
+        "context_outlook": "IIb型超新星通常呈现激波冷却与放射性衰变双峰，过往研究多将两者独立建模（如[[Bersten+ 2012]]、[[Arnett 1982]]）。本文基于[[Liu+ 2025]]的时变扩散框架，将两类加热过程统一于同一计算中，并采用数值驱动的IIb型密度结构直接约束延展包层，发现SN 2024aecx的快速光学衰减无法用标准γ泄漏解释。这一工作凸显了多阶段光变统一建模的重要性，为未来利用早期信号诊断剥离包层结构提供了可推广的方法。随着巡天发现更多快速演化的剥离包层超新星，该耦合方法有望成为连接爆炸机制与星周环境的标准分析路径。",
+        "citations": [
+          {
+            "label": "Filippenko 1988",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Bersten+ 2012",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Arnett 1982",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Liu+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -3154,7 +3533,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3201,7 +3582,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3250,7 +3633,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3291,7 +3676,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3333,7 +3720,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3371,7 +3760,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3410,7 +3801,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3452,7 +3845,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3490,7 +3885,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3533,7 +3930,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3571,7 +3970,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3610,14 +4011,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12558",
-        "title_zh": "紧凑天体中非轴对称快味不稳定性的机器学习探测",
-        "team": "主要作者 Madhurima Chakraborty (中央研究院物理所)、Sajad Abbar (马普物理所)、Meng-Ru Wu (中央研究院天文所)；其他单位包括新罕布什尔大学、GSI 亥姆霍兹重离子研究中心。非大型合作组。",
-        "tldr": "用机器学习，从有限的中微子低阶角矩中识别非轴对称电子轻子数交叉，以判断快味转换发生条件。",
-        "review": "该研究面向核坍缩超新星与中子星并合环境中的中微子快味转换，通过系统性合成数据训练逻辑回归、K近邻、支持向量机和决策树等模型，仅利用数密度比和通量因子等 4 个输入特征即可预测非轴对称 ELN 交叉。训练集基于最大熵角分布并引入相对旋转，覆盖广袤参数空间；在玻尔兹曼输运解和味平衡等多种模拟数据集上验证泛化能力。结果显示模型在大多数测试场景表现良好，但味平衡后重轻子中微子分布不一致会导致性能下降，表明需引入额外特征。该框架为在动态模拟中高效部署 FFC 识别模块提供了重要基础。",
-        "highlight": "首次系统探索机器学习在非轴对称快味交叉探测中的应用，利用参数化合成数据突破模拟数据局限，并详细分析了输入特征一致性对跨数据集泛化的影响。",
-        "relation": "—",
-        "authors_en": "Madhurima Chakraborty (Institute of Physics, Academia Sinica), Sajad Abbar (Max-Planck-Institut für Physik), Meng-Ru Wu (Institute of Physics, Academia Sinica) et al.",
-        "corresponding_en": ""
+        "title_zh": "致密天体中非轴对称快速味不稳定的机器学习检测",
+        "team": "",
+        "tldr": "训练机器学习模型，从合成非轴对称中微子角矩识别ELN过零点，支撑快速味转换融入超新星/并合模拟。",
+        "review": "",
+        "highlight": "通过相对旋转构建系统性非轴对称训练数据，使模型跨不同数据源泛化；揭示输入特征空间一致性对性能的关键作用，指出融合重味信息可进一步提升检测能力。",
+        "relation": "",
+        "authors_en": "Madhurima Chakraborty (Institute of Physics, Academia Sinica), Sajad Abbar (Max-Planck-Institut für Physik (Werner-Heisenberg-Institut)), Meng-Ru Wu (Institute of Physics, Academia Sinica; Institute of Astronomy and Astrophysics, Academia Sinica; Physics Division, National Center for Theoretical Sciences) et al.",
+        "corresponding_en": "",
+        "context_outlook": "先前主要依靠分析或半分析判据从低阶角矩推断ELN过零点（[[Richers 2022]]；[[Cornelius+ 2025]]），近期机器学习开始用于轴对称探测（[[Abbar 2023]]；[[Abbar and Nagakura 2024]]）并初步探索非轴对称情形（[[Abbar+ 2025]]）。本文引入相对帧旋转生成泛化合成训练数据，模型在多种来源的测试集上表现良好，同时发现输入特征空间一致性至关重要。今后需扩展输入特征以处理重味中微子分布差异，ML方法有望作为快速判别器在线耦合至CCSN和NSM大尺度模拟，推动快速味转换的自洽处理。",
+        "citations": [
+          {
+            "label": "Richers 2022",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Cornelius+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Abbar 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Abbar and Nagakura 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Abbar+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -3660,7 +4089,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3706,7 +4137,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -3743,14 +4176,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12285",
-        "title_zh": "脉冲星反glitch：磁性驱动的星震？",
-        "team": "第一作者：Hanyuan Long（北京大学）；通讯作者：Renxin Xu（北京大学）；主要机构：北京大学、中国科学院大学、广州大学；非知名合作组",
-        "tldr": "提出磁应力驱动星震的新机制，统一解释了脉冲星的glitch与反glitch现象，并表明奇异星模型比传统中子星模型更自然地满足观测约束。",
-        "review": "本文聚焦于磁星及其他脉冲星中观测到的反glitch（自转频率突然减小），提出了磁应力触发星震的物理图像。利用磁弹性平衡与von Mises屈服准则，导出临界磁场及|Δν/ν|与磁场强度B的标度关系。收集并对比已知的glitch与反glitch事件数据，发现高B脉冲星的反glitch振幅与模型曲线趋势一致。定量估算表明，要在传统中子星框架下实现所需振幅，内部多极场需比偶极场强约10^6倍，而奇异星全球固态结构下该比值仅需~10^2，因此预言奇异星是更合理的载体。",
-        "highlight": "创新点：首次将星震的驱动力从自引力扩展为磁应力，自然给出glitch和反glitch的统一解释；模型预言了振幅-磁场正相关，并可为区分奇异星与中子星提供新的观测检验手段。",
-        "relation": "—",
+        "title_zh": "脉冲星反glitch：磁力驱动的星震？",
+        "team": "",
+        "tldr": "提出磁应力驱动的星震模型，统一解释脉冲星正、反glitch，并给出B-Δν/ν关系与观测一致。",
+        "review": "",
+        "highlight": "首次从磁应力出发独立驱动星震，自然容纳反glitch；统一框架下给出可检验的磁场-跃变幅度关系，为区分中子星与奇异星提供新途径。",
+        "relation": "",
         "authors_en": "Hanyuan Long, Ruipeng Lu, Weiyang Wang et al.",
-        "corresponding_en": "Renxin Xu"
+        "corresponding_en": "Renxin Xu, Han Yue",
+        "context_outlook": "传统的脉冲星星震模型通常认为故障滑移由自引力驱动，仅能解释正glitch（频率增加）[[Baym and Pines 1971]]。自2013年发现反glitch后 [[Archibald+ 2013]]，传统框架面临挑战。本文提出磁应力驱动的星震假设，可自然统一正、反glitch，且当星体为整体固态的奇异星时 [[Xu 2003]]，星震效应将更为显著 [[Zhou+ 2004]]。未来更多观测（如FAST [[Wang+ 2026]]）与精细磁弹性模型的发展，将推动该假说的验证与完善。",
+        "citations": [
+          {
+            "label": "Baym and Pines 1971",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Archibald+ 2013",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Xu 2003",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Zhou+ 2004",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Wang+ 2026",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     }
   ],

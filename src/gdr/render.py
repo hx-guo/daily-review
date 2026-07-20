@@ -1,7 +1,9 @@
+import html
 import re
 import shutil
 from datetime import date as _date
 from pathlib import Path
+from urllib.parse import quote
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
@@ -76,12 +78,56 @@ def arxiv_id(paper) -> str:
     return (paper.url or "").rstrip("/").rsplit("/", 1)[-1]
 
 
+_CITE_RE = re.compile(r"\[\[(.+?)\]\]")
+
+
+def _cite_href(label: str, cmap: dict) -> str:
+    """Resolve a citation label to a link. Prefer an arXiv id / DOI *only* when the
+    model grounded one from the paper text; otherwise fall back to an ADS search of
+    the label so a chip never points at a wrongly-guessed specific paper."""
+    c = cmap.get(label)
+    if c:
+        aid = (c.get("arxiv") or "").replace("arXiv:", "").replace("arxiv:", "").strip()
+        if aid:
+            return f"https://arxiv.org/abs/{aid}"
+        doi = (c.get("doi") or "").strip()
+        if doi:
+            return "https://doi.org/" + doi
+    return "https://ui.adsabs.harvard.edu/search/q=" + quote(label)
+
+
+def render_outlook(summary) -> Markup:
+    """脉络与展望 body: escape the text, then turn inline `[[作者+年份]]` markers into
+    linked citation chips. Falls back to the legacy review/relation text (no chips)
+    for summaries generated before context_outlook existed."""
+    text = (getattr(summary, "context_outlook", "") if summary else "") or ""
+    if not text:
+        legacy = ((getattr(summary, "review", "") if summary else "")
+                  or (getattr(summary, "relation", "") if summary else "")) or ""
+        return Markup(str(escape(legacy)))
+    cmap = {}
+    for c in (getattr(summary, "citations", None) or []):
+        lbl = (c.get("label") or "").strip()
+        if lbl:
+            cmap[lbl] = c
+    esc = str(escape(text))
+
+    def _repl(m):
+        raw = html.unescape(m.group(1)).strip()
+        href = _cite_href(raw, cmap)
+        return (f'<a class="cite" href="{escape(href)}" target="_blank" '
+                f'rel="noopener">{escape(raw)}</a>')
+
+    return Markup(_CITE_RE.sub(_repl, esc))
+
+
 def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Path) -> None:
     out_dir = Path(out_dir)
     (out_dir / "day").mkdir(parents=True, exist_ok=True)
     env = Environment(loader=FileSystemLoader(str(templates_dir)),
                       autoescape=select_autoescape(["html"]))
     env.globals["render_authors"] = render_authors
+    env.globals["render_outlook"] = render_outlook
     env.globals["arxiv_id"] = arxiv_id
     env.globals["ROMAN"] = _ROMAN
     days = store.list_days()

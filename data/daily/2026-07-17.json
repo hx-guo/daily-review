@@ -48,7 +48,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -90,7 +92,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -129,7 +133,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -171,7 +177,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -210,7 +218,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -245,14 +255,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16160",
-        "title_zh": "SEP-PRISM Data：用于太阳高能粒子预测的多源数据集",
-        "team": "Yian Yu（第一作者）、Yang Chen（通讯作者），密歇根大学统计系与气候与空间科学与工程系、NASA Johnson 空间中心；非特定大型合作组",
-        "tldr": "发布面向24小时提前预报的太阳高能粒子事件多源策展数据集，整合耀斑、活动区磁场、CME等多源观测，构建可直接用于机器学习的监督学习样本。",
-        "review": "该数据集整合了耀斑记录、活动区磁场（SHARP与SMARP校准为SMHARP）、CME目录（DONKI与CDAW统一为CDAWDONKI）、GOES X射线与质子通量，时间覆盖1986年2月至2025年9月。通过跨仪器校准填补早期数据空缺，并将异构数据聚合为固定非重叠24小时窗口的统计量（最小值、均值、最大值），与未来24小时内的运行SEP事件标签配对。最终生成含14 464个标注样本（650个正例）的监督学习数据集，旨在支持可重复的基准测试、模型开发与特征分析。",
-        "highlight": "首次为SEP预测提供融合多源、长时序、一致性强的监督学习数据集；通过跨仪器校准（SMHARP和CDAWDONKI）显著扩展有效覆盖时段，提升样本量；统一的窗口化特征表示可直接适配机器学习流程，推进可重复性研究。",
-        "relation": "—",
-        "authors_en": "Yian Yu (Department of Statistics, University of Michigan), Yang Chen (Department of Statistics, University of Michigan), Lulu Zhao (Department of Climate and Space Sciences and Engineering, University of Michigan) et al.",
-        "corresponding_en": "Yang Chen"
+        "title_zh": "SEP-PRISM数据集：用于太阳高能粒子预测的多源数据集",
+        "team": "",
+        "tldr": "构建并发布多源太阳观测的监督学习数据集SEP-PRISM，用于24小时太阳高能粒子事件预测。",
+        "review": "",
+        "highlight": "统一对准了活动区磁场（SMHARP）和CME记录（CDAWDONKI），将长达40年的异构数据整合为标注样本（14,464个，含650个正例），解决了时间覆盖不足与格式差异问题。",
+        "relation": "",
+        "authors_en": "Y. Yu (Department of Statistics, University of Michigan), Y. Chen (Department of Statistics, University of Michigan), L. Zhao (Department of Climate and Space Sciences and Engineering, University of Michigan) et al.",
+        "corresponding_en": "Yang Chen",
+        "context_outlook": "太阳高能粒子事件预测长期受限于多源数据的时间覆盖不一致与格式异构。本研究构建了覆盖1986年至2025年的SEP-PRISM数据集，整合耀斑、磁场、CME、X射线与质子通量等关键预报因子，并以固定24小时窗口统计量形成监督学习样本。该数据集已用于SEPNET-PRISM实时预测模型，未来可为空间天气预报的基准评估、特征分析与多任务学习提供统一平台，加速数据驱动方法向业务应用的转化。",
+        "citations": []
       }
     },
     {
@@ -286,14 +298,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16136",
-        "title_zh": "偏心率作为放大镜：偏心中子星-黑洞并合带来的精确族群推断",
-        "team": "第一作者/通讯作者 Alberto Salvarese，德克萨斯大学奥斯汀分校；非知名合作组",
-        "tldr": "利用偏心中子星-黑洞并合事件改进的参数精度，增强对NSBH形成通道的族群推断。",
-        "review": "本文模拟偏心与圆轨道两种NSBH族群，对比参数估计的改进对族群推断的影响。结果表明：偏心信号将有效自旋负值的识别比例从22%提升至43%，约每2.5次探测即可发现一例；在30次探测下，对NS质量双峰模型的支持度比圆轨道高约7.5倍；对不同金属丰度BH质量模型的区分能力最高提升10^14倍；并能可靠恢复偏心率分布指数。结论强调偏心并合为揭示致密双星形成历史提供了强大工具。",
-        "highlight": "首次系统量化偏心率对NSBH族群推断的增益；证明偏心可显著提高对NS质量结构、自旋-轨道错位及形成渠道的约束力；对O5等未来观测的优化有指导意义。",
-        "relation": "—",
-        "authors_en": "Alberto Salvarese (Department of Physics, Univ. of Texas at Austin), Hsin-Yu Chen (Department of Physics, Univ. of Texas at Austin), Aaron Zimmerman (Department of Physics, Univ. of Texas at Austin) et al.",
-        "corresponding_en": "Alberto Salvarese"
+        "title_zh": "偏心率作为放大镜：利用偏心中子星–黑洞并合进行精密族群推断",
+        "team": "",
+        "tldr": "研究偏心率增强的参量测量如何改善NSBH形成渠道的族群推断，涵盖自旋、质量及偏心率分布。",
+        "review": "",
+        "highlight": "首次系统量化偏心率对NSBH族群推断的增益：负有效自旋识别率翻倍（~1/2.5事件）；NS质量结构（双峰）得以分辨；金属丰度模型区分度提升高达10^14倍。偏心率分布可直接检验动态形成渠道。",
+        "relation": "",
+        "authors_en": "Alberto Salvarese (Department of Physics, The University of Texas at Austin), Hsin-Yu Chen (Department of Physics, The University of Texas at Austin), Aaron Zimmerman (Department of Physics, The University of Texas at Austin) et al.",
+        "corresponding_en": "Alberto Salvarese",
+        "context_outlook": "既往研究如[[Tibrewal+ 2026]]已发现偏心率可大幅提高NSBH事件的参数测量精度，而GW200105事件也展现出非零偏心率证据（[[Morras+ 2026b]]等），指向非孤立形成。本工作在此基础上量化展示这些精度提升如何转化为族群推断能力的增益。展望未来，随着LVK O5积累更多偏心事件，将可对动力学形成渠道的偏心率分布（如[[Rozner+ 2026]]提出的幂律形式）进行直接检验，并有望揭示致密天体形成历史的更多细节。",
+        "citations": [
+          {
+            "label": "Tibrewal+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Morras+ 2026b",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Rozner+ 2026",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -334,7 +364,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -377,7 +409,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -429,7 +463,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -464,14 +500,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16135",
-        "title_zh": "偏心率与高阶模对中子星-黑洞并合参数估计的影响",
-        "team": "第一作者：Snehal Tibrewal；通讯作者：Snehal Tibrewal；机构：德克萨斯大学奥斯汀分校。非知名合作组",
-        "tldr": "系统研究偏心率对 GW200105 类 NSBH 系统参数估计的影响，发现偏心率越大，内禀参数（质量比、有效自旋等）精度越高，但外禀参数改善有限。",
-        "review": "本文以 GW200105_162426 类似的 NSBH 系统为对象，使用 SEOBNRv5EHM 波形进行不同偏心率（e=0,0.1,0.25）的注入和贝叶斯恢复。结果显示，随着偏心率增大，内禀参数精度显著提升：e=0.25 时偏心率 1σ 不确定度低至 4×10⁻⁴，质量比和有效自旋的约束分别收紧约 20 和 13 倍。但光度距离与天区定位等外禀参数改善有限，可能因高阶模与偏心的信息简并。该研究证实偏心率是改善 NSBH 参数推断的重要途径。",
-        "highlight": "首次系统量化偏心率对 NSBH 参数估计的影响；采用最新含偏心与高阶模的全波形模型；揭示偏心率可大幅提高内禀参数精度，对理解动态形成渠道和未来多信使观测有重要意义。",
-        "relation": "—",
-        "authors_en": "Snehal Tibrewal (University of Texas at Austin), Aasim Jan (University of Texas at Austin), Aaron Zimmerman (University of Texas at Austin) et al.",
-        "corresponding_en": "Snehal Tibrewal"
+        "title_zh": "偏心率与高阶模对中子星-黑洞参数估计的影响",
+        "team": "",
+        "tldr": "利用完整 IMR 波形系统量化偏心率对 GW200105 类 NSBH 系统参数估计的改善，发现内禀参数精度大幅提升",
+        "review": "",
+        "highlight": "首次在具有完整 IMR、高阶模的偏心波形模型 SEOBNRv5EHM 下，量化了偏心率对 NSBH 系统参数估计的改善；对于 e=0.25 的注入，质量比和有效自旋的不确定性分别较准圆情况降低约 20 倍和 13 倍。",
+        "relation": "",
+        "authors_en": "S. Tibrewal (Department of Physics, University of Texas at Austin), A. Jan (Department of Physics, University of Texas at Austin), A. Zimmerman (Department of Physics, University of Texas at Austin) et al.",
+        "corresponding_en": "Snehal Tibrewal",
+        "context_outlook": "针对 GW200105 事件的多项近作报道了轨道偏心信号 [[Morras+ 2026]]、[[Planas+ 2025]]、[[Jan+ 2026a]]，激发了对偏心 NSBH 系统的广泛兴趣。此前基于 Fisher 矩阵的研究 [[Gondán+ 2018]]、[[Favata+ 2022]] 已揭示偏心结构可改善内禀参数测量，但缺乏在当代完整波形模型下的系统验证。本文使用 SEOBNRv5EHM 注入恢复，定量展示了偏心率对质量比、有效自旋等的显著约束增强，而对外禀参数无明显改善，暗示偏心信息与高阶模存在简并。未来工作可引入潮汐、自旋进动等更多物理，以全面评估偏心信号的科学增益，并推动其在真实事件搜索和定位中的应用。",
+        "citations": [
+          {
+            "label": "Morras+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Planas+ 2025",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Jan+ 2026a",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Gondán+ 2018",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Favata+ 2022",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -512,14 +576,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16140",
-        "title_zh": "Z型中子星低质量X射线双星的X射线偏振——II. 光谱偏振分析",
-        "team": "第一作者Andrea Gnarini（NASA马歇尔太空飞行中心/罗马第三大学），联合INAF等多国机构；属IXPE相关国际科学团队",
-        "tldr": "利用IXPE、NICER和NuSTAR对六颗Z源进行分支分辨光谱偏振分析，发现偏振由康普顿化成分主导且沿Z轨迹从~6%降至~3%",
-        "review": "以六颗Z型中子星低质量X射线双星为样本，基于IXPE、NICER和NuSTAR数据开展分支分辨联合光谱偏振拟合。模型包含吸积盘、康普顿化黑体及反射成分，结果显示水平分支偏振度约6%，垂直分支降至3–4%，闪耀分支约束弱。偏振主要来自康普顿化成分，盘偏振<3%但偏振角与康普顿化成分未对齐；偏振度高于传统边界层/展层模型预期，且与倾角及反射贡献无显著相关。",
-        "highlight": "首次对Z源样本进行系统性分支分辨X射线光谱偏振分析，揭示Z轨迹偏振演化，挑战现有吸积几何模型",
-        "relation": "—",
-        "authors_en": "Andrea Gnarini, Francesco Ursini, Giorgio Matt et al.",
-        "corresponding_en": ""
+        "title_zh": "Z型中子星低质量X射线双星的X射线偏振——II. 分光偏振分析",
+        "team": "",
+        "tldr": "利用IXPE、NICER和NuSTAR对六颗Z源进行分支分辨的谱偏振拟合，发现偏振以康普顿化为主，偏振度从水平支的~6%降至正常支的3–4%，盘偏振角与康普顿化不垂直且与反射无关。",
+        "review": "",
+        "highlight": "首次对Z源全样本做统一模型的分支谱偏振分析，揭示偏振度显著高于传统边界层/扩展层模型预期，且盘偏振角与康普顿化明显错位，挑战现有几何图像。",
+        "relation": "",
+        "authors_en": "A. Gnarini, F. Ursini, G. Matt et al.",
+        "corresponding_en": "",
+        "context_outlook": "Z型中子星低质量X射线双星的光谱通常由吸积盘、康普顿化硬成分和反射构成，但康普顿化区的几何结构（如边界层/扩展层或盘冕）始终是未解难题。前期理论工作指出X射线偏振对几何高度敏感 [[Gnarini+ 2022]]，并且反射光子可贡献显著偏振 [[Ursini+ 2023]]。系列工作首篇 [[G25]] 通过颜色-颜色图实现了模型独立的偏振分析，而本文在统一模型下对六颗 Z 源进行了首次分支分辨谱偏振拟合，发现偏振度在水平支高达~6%，且盘与康普顿化偏振角不垂直，这些结果超越了传统几何预期的框架。未来借助更高统计量观测及动态谱偏振模型，有望精确测定吸积流几何，并探究其与喷流活动的关联。",
+        "citations": [
+          {
+            "label": "Gnarini+ 2022",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ursini+ 2023",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "G25",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -558,7 +640,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -592,14 +676,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16119",
-        "title_zh": "发现极端自旋减慢毫秒脉冲星 PSR J0435+3233 的伽马射线脉冲辐射",
-        "team": "张梦清（Mengqing Zhang）、张鹏飞（Pengfei Zhang，通讯）等，云南大学；非知名合作组",
-        "tldr": "利用17.7年Fermi-LAT数据确认4FGL J0435.5+3232为极速自旋减慢毫秒脉冲星PSR J0435+3233的伽马射线对应体，首次探测到脉冲并揭示其极低辐射效率。",
-        "review": "针对FAST新发现的极端毫秒脉冲星PSR J0435+3233（P=3.20 ms, Pdot=4.88e-17, Edot=5.89e37 erg/s），分析约17.7年Fermi-LAT 0.1–500 GeV数据；确认4FGL J0435.5+3232为其伽马射线对应体，在射电历元有效区间内用加权H检验以~6.8σ显著性探测到伽马脉冲，脉冲主要集中于相位0.44–0.69；测得伽马光度约6.26e32 erg/s，表观效率仅η~1.1e-5；该源兼具年轻脉冲星级自旋减慢功率和极低伽马效率，为磁层粒子加速与辐射几何提供新探针。",
-        "highlight": "首次发现极端自旋减慢毫秒脉冲星的伽马脉冲；其自旋减慢功率堪比年轻脉冲星，但伽马效率远低于典型值（~10^{-5}），挑战标准毫秒脉冲星模型，有助于理解极端旋转性质下的磁层物理。",
-        "relation": "—",
-        "authors_en": "Mengqing Zhang (Department of Astronomy, School of Physics and Astronomy, Key Laboratory of Astroparticle Physics of Yunnan Province, Yunnan University), Shengbin Pei (same institution), Pengfei Zhang (same institution)",
-        "corresponding_en": "Pengfei Zhang"
+        "title_zh": "极端自旋减慢毫秒脉冲星 PSR J0435+3233 的 γ 射线脉冲发现",
+        "team": "",
+        "tldr": "首次在 γ 射线波段探测到这颗极特殊毫秒脉冲星的脉冲辐射，揭示其高自旋减慢功率与极低 γ 效率的矛盾。",
+        "review": "",
+        "highlight": "该脉冲星由 FAST 新发现，自旋减慢功率堪比年轻脉冲星，但测得的 γ 射线效率仅为 ~1e-5。本研究利用 Fermi-LAT 数据首次确认其 GeV 脉冲信号，为极端磁层物理提供了罕见探针。",
+        "relation": "",
+        "authors_en": "Mengqing Zhang (Department of Astronomy, Yunnan University), Shengbin Pei (Department of Astronomy, Yunnan University), Pengfei Zhang (Department of Astronomy, Yunnan University)",
+        "corresponding_en": "Pengfei Zhang",
+        "context_outlook": "近期，FAST 观测发现了 PSR J0435+3233（[[Wu+ 2026]]），其极高的自旋减慢功率严重挑战了毫秒脉冲星的标准回旋演化模型。基于 [[Ballet+ 2023]] 发布的 4FGL-DR4 星表，我们利用约 17.7 年的 Fermi-LAT 数据探测到其 γ 射线脉冲，确认了高能对应体，并揭示其极低的 γ 射线效率。这一极端特性可能源于非典型的磁层加速、辐射几何或脉冲星风能量分配，亟需联合射电绝对相位对齐的脉冲轮廓模拟来区分内禀效率与视向效应。未来，新一代高灵敏度 γ 射线望远镜如 [[Fan+ 2022]] 提出的 VLAST 将有能力分离磁层辐射与双星相互作用成分，进一步揭示此类极端脉冲星的高能辐射机制。",
+        "citations": [
+          {
+            "label": "Wu+ 2026",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ballet+ 2023",
+            "arxiv": "2307.12546",
+            "doi": "10.48550/arXiv.2307.12546"
+          },
+          {
+            "label": "Fan+ 2022",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -639,7 +741,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -689,7 +793,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -740,7 +846,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -779,7 +887,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -819,7 +929,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -851,14 +963,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15921",
-        "title_zh": "Stern-Gerlach修正正负电子对重联中的相对论标度与磁化电流反馈：SpinPIC2D验证与非线性区域",
-        "team": "第一作者兼通讯作者：K. Nykyri（Embry-Riddle Aeronautical University）；非知名合作组",
-        "tldr": "利用SpinPIC2D模拟，自洽引入Stern-Gerlach力和磁化电流，研究相对论正负电子对等离子体重联的非线性响应与标度律。",
-        "review": "本文在2.5维PIC模型中自洽实现自旋进动、SG力及磁化电流（J_M=∇×M），验证数值方案并研究弱种子重联。固定γ_tr=2时，归一化磁通增长率在Ξ≥0.7后显著增强（0.12–0.25），机制源于SG力按磁矩分选粒子→改变压力矩→产生层状J_M间接驱动重联。增加γ_tr会抑制分选，但保持Ξ=1时非线性不相似，γ_tr=5出现多X线结构，表明非线性响应同时受Ξ、绝对自旋耦合与磁化电流振幅控制。",
-        "highlight": "首次在动理学模拟中自洽包含SG力与磁化电流反馈，揭示自旋效应可显著改变相对论重联速率与结构，提出Ξ参数作为效应起始指标。",
-        "relation": "—",
+        "title_zh": "Stern-Gerlach修正对等离子体重联的相对论标度与磁化电流反馈：SpinPIC2D验证与非线性研究",
+        "team": "",
+        "tldr": "使用SpinPIC2D模拟验证Stern-Gerlach自旋力对相对论正负电子对磁重联的影响，揭示自旋排序及磁化电流反馈可显著增强重联率。",
+        "review": "",
+        "highlight": "首次在2.5D PIC中耦合SG力与磁化电流反馈，发现自旋分支排序通过压力张量和磁化电流改变重联动力量；定义控制参数Ξ标度效应，指出相对论加速抑制排序但保留电流反馈。",
+        "relation": "",
         "authors_en": "K. Nykyri (Embry–Riddle Aeronautical University)",
-        "corresponding_en": "K. Nykyri"
+        "corresponding_en": "",
+        "context_outlook": "本文继承了作者前期工作提出的SG控制参数Ξ，系统验证了自旋排序和磁化电流对相对论重联的影响。传统相对论重联模拟多忽略自旋，本工作证明在适当参数下自旋效应可显著增强磁通生长并改变拓扑演化。未来需纳入完整BMT进动和QED修正以覆盖强场天体环境，并借助三维模拟和真实粒子分布检验其在磁星、脉冲星风云等高能天体中的可观测特征。",
+        "citations": []
       }
     },
     {
@@ -896,7 +1010,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -935,7 +1051,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -973,7 +1091,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1008,13 +1128,26 @@
       "summary": {
         "paper_id": "arxiv:2607.15955",
         "title_zh": "磁星 CXOU J171405.7-381031 附近的非热辐射",
-        "team": "Manoel F. Sousa（第一/通讯作者），Rita C. Anjos；巴西圣保罗大学、圣卡洛斯联邦大学等；非知名合作组",
-        "tldr": "对磁星 CXOU J1714 周边区域进行多波段非热辐射建模，通过轻子与强子模型约束粒子加速机制，并预测 CTA 的区分能力。",
-        "review": "以磁星 CXOU J1714-3810 及其宿主超新星遗迹 CTB 37B 为对象，整合射电、X 射线、Fermi-LAT 和 H.E.S.S. 数据，利用 Naima 与 MCMC 方法构建轻子及轻子-强子模型。纯轻子模型大致再现 SED，但低估 >10 TeV 的通量；包含中性π介子衰变的轻子-强子模型显著改善高能拟合，所需质子总能量 ≳10⁵¹ erg（稠密环境可降低需求）。磁星星云模型被源形态学排除。CTAO 模拟表明约 50 小时曝光即可约束质子截断能量，为检验强子辐射提供决定性测试。",
-        "highlight": "首次对 CXOU J1714 区域开展多波段细致轻子-强子建模，以 MCMC 约束参数空间；提供了 CTA 鉴别该区域强子辐射的定量预期，为探索磁星环境中的宇宙线加速提供新线索。",
-        "relation": "—",
-        "authors_en": "Manoel F. Sousa (Instituto de Física de São Carlos, Universidade de São Paulo), Rita C. Anjos (Centro de Artes, Humanidades e Tecnologia, Universidade Federal de São Carlos)",
-        "corresponding_en": "Manoel F. Sousa"
+        "team": "",
+        "tldr": "利用轻子和轻子-强子模型结合 MCMC 拟合该磁星区域的多波段 SED，评估粒子加速机制并预测 CTAO 检验能力。",
+        "review": "",
+        "highlight": "首次对 CXOU J1714-3810 区域进行系统的轻子-强子联合建模，用 MCMC 约束粒子参数；轻子-强子模型在 >10 TeV 处改善拟合，提出 CTAO 50 小时观测可区分轻子/强子起源。",
+        "relation": "",
+        "authors_en": "Manoel F. Sousa (Instituto de Física de São Carlos, Universidade de São Paulo), Rita. C. Anjos (Universidade Federal de São Carlos)",
+        "corresponding_en": "Manoel F. Sousa",
+        "context_outlook": "先前 H.E.S.S. 和 Fermi-LAT 观测发现磁星 CXOU J1714–3810 与超新星遗迹 CTB 37B 成协，能谱拟合倾向强子起源但未排除轻子贡献 [[Aharonian+ 2008a]]。Sousa 等人 (2025) 基于 CTAO 预计探测能力对该区域进行了评估，但缺少详细的轻子-强子对比 [[Sousa+ 2025]]。本文用 MCMC 方法全面拟合从射电至 TeV 的 SED，表明纯轻子模型低估最高能段流量，轻子-强子模型通过加入中性介子衰变成分改善描述，所需质子能量可通过高密度环境调节。未来 CTAO 约 50 小时观测将精确测量质子截断能量，为鉴别强子辐射提供关键判据，推动磁星多信使研究。",
+        "citations": [
+          {
+            "label": "Aharonian+ 2008a",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Sousa+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1053,7 +1186,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1100,7 +1235,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1146,7 +1283,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1187,7 +1326,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1227,7 +1368,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1262,7 +1405,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1301,14 +1446,47 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15759",
-        "title_zh": "太阳暗条的三维演化：多点观测",
-        "team": "张清民（通讯作者），中国科学院紫金山天文台；合作者来自京都大学、南京大学、山东大学等",
-        "tldr": "利用多点观测开发新模型首次实现暗条爆发的三维重建，揭示其非径向传播并估算相关CME速度",
-        "review": "本文针对2024年10月8日的一次太阳暗条爆发，联合地球、STEREO-A和Solar Orbiter三视角多波段观测进行三维重建。作者提出了一种基于3DCORE模型的环状磁绳几何模型，并引入偏转角和倾斜角参数。重建结果得到暗条的真实速度约433 km/s，发现其非径向传播：向东偏转约10°、向南偏转约40°，轨迹指向STEREO-A。所关联CME的前缘真实速度估计为1046–1145 km/s。该工作首次将类3DCORE模型用于暗条早期演化重建，验证了非径向运动。",
-        "highlight": "创新性提出融合偏转的类3DCORE几何模型，填补了该模型在暗条早期爆发三维重建中的空白；结合三台探测器视角取得强约束，揭示了暗条大幅度向南偏转的传播特征。",
-        "relation": "—",
-        "authors_en": "Qingmin Zhang (Purple Mountain Observatory, CAS), Jun Dai (Purple Mountain Observatory, CAS; Kyoto University), Beili Ying (Purple Mountain Observatory, CAS), et al.",
-        "corresponding_en": "Qingmin Zhang"
+        "title_zh": "基于多点观测的太阳暗条三维演化",
+        "team": "",
+        "tldr": "提出类3DCORE环形磁绳几何模型，利用地球、STEREO-A和Solar Orbiter的多视角观测对2024年10月8日的暗条喷发进行三维重构，揭示其非径向传播特征和向STEREO-A的运动趋势。",
+        "review": "",
+        "highlight": "首次将类似3DCORE的模型应用于暗条早期三维重构，通过引入偏转角成功描述非径向传播；多视角观测一致显示暗条向STEREO-A方向偏转，为空间天气预报提供观测依据。",
+        "relation": "",
+        "authors_en": "Qingmin Zhang (Purple Mountain Observatory, Chinese Academy of Sciences), Jun Dai (Purple Mountain Observatory, Chinese Academy of Sciences; Astronomical Observatory, Kyoto University), Beili Ying (Purple Mountain Observatory, Chinese Academy of Sciences) et al.",
+        "corresponding_en": "Qingmin Zhang",
+        "context_outlook": "暗条和日冕物质抛射的三维重构从早期的三角测量（[[Inhester 2006]]）和掩模拟合（[[Feng+ 2012]]）发展到正向模型如GCS（[[Thernisien+ 2006]]）和3DCORE（[[Möstl+ 2018]]），但多数假设径向传播。为描述非径向传播，[[Zhang 2021]] 提出修正锥模型，[[Zhang+ 2023]] 发展修正GCS模型。本文在此基础上提出类3DCORE的环形磁绳模型，引入偏转角，并利用地球、STEREO-A和Solar Orbiter的多视角观测首次实现暗条早期三维重构。未来结合L5点等更多空间探测，以及对磁场的更真实模拟，三维重构技术将更可靠地服务于空间天气预报。",
+        "citations": [
+          {
+            "label": "Inhester 2006",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Feng+ 2012",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Thernisien+ 2006",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Möstl+ 2018",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Zhang 2021",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Zhang+ 2023",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1344,14 +1522,32 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15719",
-        "title_zh": "可解释AI用于太阳耀斑预测：模型关注区域的定量磁场分析",
-        "team": "Z. Zheng (南京大学), Q. Hao (通讯作者, 南京大学), C. Li (通讯作者, 南京大学) 等；南京大学太阳物理团队",
-        "tldr": "构建定量可解释AI框架，利用Grad-CAM识别CNN耀斑预测模型的关注区域，并通过定量磁场分析验证其物理相关性。",
-        "review": "利用SDO/HMI向量磁图训练CNN模型，预测未来24小时≥C级耀斑；通过Grad-CAM提取模型关注区域(MFR)，并与SHARP、PIL区域对比，计算16个磁场参数输入SVM/RF/FCNN评估预测能力，并分析MFR的磁复杂度。结果表明，MFR提取的磁场参数具有较高预测能力，耀斑区呈现单极性主导的非平衡复杂结构，符合耀斑物理理论。证实CNN能学习物理有意义的表征，XAI结合定量分析可提升模型可解释性与科学可信度。",
-        "highlight": "首次对CNN耀斑预测模型进行系统的定量磁场验证，超越以往仅定性解释的局限；证明Grad-CAM关注区域不仅对应极性反变线，其磁场参数和复杂度还与耀斑物理特性一致，为深度学习在空间天气预测中的可靠部署提供依据。",
-        "relation": "—",
-        "authors_en": "Z. Zheng (School of Astronomy and Space Science, Nanjing University), Q. Hao (School of Astronomy and Space Science, Nanjing University), C. Li (School of Astronomy and Space Science, Nanjing University) et al.",
-        "corresponding_en": "Q. Hao, C. Li"
+        "title_zh": "太阳耀斑预测中的可解释AI：模型聚焦区域的定量磁场分析",
+        "team": "",
+        "tldr": "提出定量XAI框架，通过Grad-CAM识别CNN耀斑预测模型的聚焦区域(MFR)，并定量验证其磁场参数预测能力与物理一致性",
+        "review": "",
+        "highlight": "首次将XAI从定性提升至定量，证明CNN能从磁图自主学习与耀斑发生相关的物理特征，为深度学习在太阳物理中的可信应用奠定基础",
+        "relation": "",
+        "authors_en": "Z. Zheng (School of Astronomy and Space Science, Nanjing University; Key Laboratory of Modern Astronomy and Astrophysics, Ministry of Education, Nanjing University), Q. Hao (School of Astronomy and Space Science, Nanjing University; Key Laboratory of Modern Astronomy and Astrophysics, Ministry of Education, Nanjing University), C. Li (School of Astronomy and Space Science, Nanjing University; Key Laboratory of Modern Astronomy and Astrophysics, Ministry of Education, Nanjing University) et al.",
+        "corresponding_en": "Q. Hao and C. Li",
+        "context_outlook": "以往研究多通过Grad-CAM等定性显示CNN模型关注极性反转线附近区域（如 [[Huang+ 2018]]、[[Yi+ 2021]]、[[Sun+ 2022a]]），但缺乏系统性定量验证。本文在此基础上，构建了从MFR提取磁场参数并与物理基准区域对比的定量XAI框架，证实MFR不仅具有高预测性能，其磁场复杂性也与耀斑物理理论一致，将可解释性提升至定量层面。该框架为深度学习模型在太阳物理中的科学发现提供了可靠路径，未来可望拓展至其他天体物理问题，并通过结合物理约束网络进一步提升解释性与应用价值。",
+        "citations": [
+          {
+            "label": "Huang+ 2018",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Yi+ 2021",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Sun+ 2022a",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1388,7 +1584,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1430,7 +1628,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1467,14 +1667,42 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15729",
-        "title_zh": "黑洞X射线双星Swift J1727.8-1613中稳定的X射线混响延迟",
-        "team": "第一作者兼通讯作者：Wei Yu（图宾根大学）；合作单位包括图宾根大学、山东理工大学、武汉大学、北京航空航天大学等；非知名合作组",
-        "tldr": "研究Swift J1727.8-1613在2023年爆发中的X射线混响延迟演化，发现软延迟在硬中间态保持恒定，主要归因于硬延迟成分减弱而非内吸积流几何显著变化。",
-        "review": "利用NICER观测数据，分析了从低硬态（LHS）到硬中间态（HIMS）的时延特性。通过傅里叶方法计算延迟-频率和延迟-能量谱，并采用固定1–10 Hz频段测量软延迟幅度以避免硬延迟和相位折叠污染。结果显示，软延迟幅度从LHS的～2 ms增至HIMS的～10 ms后保持恒定，低频硬延迟逐渐减弱甚至反转为软延迟主导。结论认为，混响延迟在HIMS期间变化很小，表明内吸积几何相对稳定；表观演化主要源于硬延迟污染减少，并不必然需要光行时间尺度变化。",
-        "highlight": "提供了一个在宽频段内以低污染研究混响信号的罕见案例；发现混响延迟在HIMS中保持稳定，与常见下降趋势不同；采用固定频率区间的方法有效降低了硬延迟和相位折叠的影响。",
-        "relation": "研究对象为高能暂现源（黑洞X射线双星爆发），可为理解暂现源吸积几何和时变特性提供参考。",
-        "authors_en": "Wei Yu (Institut für Astronomie und Astrophysik, Kepler Center for Astro and Particle Physics, Eberhard Karls Universität, Tübingen, Germany), Sinan Allak, Zi-Xu Yang et al.",
-        "corresponding_en": "Wei Yu"
+        "title_zh": "黑洞X射线双星 Swift J1727.8–1613 中稳定的 X 射线混响滞后",
+        "team": "",
+        "tldr": "分析 NICER 观测发现硬中间态混响滞后几乎不变，演化主要受硬滞后衰减控制，不支持内区几何剧变。",
+        "review": "",
+        "highlight": "首次在 Swift J1727.8–1613 的 HIMS 中发现软滞后振幅在 1–10 Hz 宽带内保持约 10 ms 稳定，且几乎不随频率演化；这不同于其他源中混响常随态演化的现象，表明内区吸积几何在 HIMS 阶段相对恒定，滞后变化主要源于硬滞后成分衰减。",
+        "relation": "",
+        "authors_en": "Wei Yu, Sinan Allak, Zi-Xu Yang et al.",
+        "corresponding_en": "Wei Yu",
+        "context_outlook": "既往对 BHXB 混响滞后的研究表明，软滞后振幅通常随吸积态演化而变化，常被归因于盘截断半径或冕结构的改变（[[De Marco+ 2015]]，[[Kara+ 2019]]）。然而，Swift J1727.8–1613 的硬中间态却呈现出异常稳定的软滞后，与 [[Wang+ 2022]] 报道的一般演化趋势不符，[[Ingram+ 2024]] 也指出其独特性。本文通过系统的频率分辨和能量分辨分析，揭示低频硬滞后的衰减是表观软滞后增长的主要驱动力，暗示内区几何在该态并未显著演化。这一发现为利用宽频带混响信号剥离污染、诊断吸积几何提供了新范本，未来结合高时间分辨观测和辐射转移模拟（如 [[Zhan+ 2025]]）有望进一步区分传播涨落、冕响应与混响成分，实现黑洞双星吸积流的动态层析。",
+        "citations": [
+          {
+            "label": "De Marco+ 2015",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Kara+ 2019",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Wang+ 2022",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Ingram+ 2024",
+            "arxiv": "",
+            "doi": ""
+          },
+          {
+            "label": "Zhan+ 2025",
+            "arxiv": "",
+            "doi": ""
+          }
+        ]
       }
     },
     {
@@ -1520,7 +1748,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1561,7 +1791,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1612,7 +1844,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1656,7 +1890,9 @@
         "highlight": "",
         "relation": "",
         "authors_en": "",
-        "corresponding_en": ""
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
       }
     },
     {
@@ -1688,14 +1924,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15679",
-        "title_zh": "Quintessence暗能量场中Hayward规则黑洞的粘性吸积盘：超越Novikov–Thorne近似",
-        "team": "Sandip Dutta（通讯作者），印度Dinabandhu Andrews Institute of Technology and Management，非知名合作组",
-        "tldr": "将规则黑洞、局部暗能量和非零内边界粘性扭矩统一纳入薄吸积盘框架，揭示辐射效率独立于粘性参数，并预言增强的粘性放大特征。",
-        "review": "本文构建了旋转Hayward规则黑洞与Kiselev Quintessence暗能量场背景下的Shakura–Sunyaev α粘性薄盘模型。通过放弃传统无应力内边界，在ISCO处引入由垂直epicyclic频率解析给出的非零粘性扭矩，超越经典Novikov–Thorne–Page模型。数值结果表明：辐射效率η严格不依赖于α，但对Hayward长度l和暗能量密度ρ_0敏感；基准参数下η达8.71%，高于同自旋Kerr黑洞的7.51%；粘性修正导致内区通量在ISCO附近发散，且几何效应使粘性放大比从Kerr的~4.5%提升至~6.8%。该模型为利用η和光谱形状打破参数简并、并为NICER/NuSTAR观测提供独立于光谱归一化的鉴别信号。",
-        "highlight": "首次结合规则黑洞、局部Quintessence暗能量和超越NTP的粘性内边界条件，揭示了效率-粘性无关性以及几何效应显著放大粘性修正的现象，为观测区分不同黑洞模型提供了干净的诊断。",
-        "relation": "—",
-        "authors_en": "Sandip Dutta (Department of Applied Mathematics, Dinabandhu Andrews Institute of Technology and Management, Kolkata, West Bengal, India)",
-        "corresponding_en": "Sandip Dutta"
+        "title_zh": "嵌入精质暗能量场的Hayward规则黑洞粘性吸积盘：超越Novikov–Thorne近似",
+        "team": "",
+        "tldr": "构建了围绕Hayward规则黑洞且浸于quintessence暗能量场的相对论薄盘模型，引入ISCO处非零粘性力矩，证明辐射效率与α无关而仅由几何参数决定，并给出打破简并的观测策略。",
+        "review": "",
+        "highlight": "首次同时纳入规则核心、局域暗能量和ISCO粘滞力矩三项修正，发现组合几何下效率较同自旋Kerr提升16%且与粘滞参数无关，为NICER/NuSTAR提供仅依赖几何的清晰区分探针。",
+        "relation": "",
+        "authors_en": "S. Dutta (Department of Applied Mathematics, Dinabandhu Andrews Institute of Technology and Management, Kolkata, India)",
+        "corresponding_en": "Sandip Dutta",
+        "context_outlook": "传统Novikov–Thorne薄盘模型依赖奇点、真空和无应力内边界。Hayward规则黑洞解决了奇点问题，Kiselev精质暗能量解则为局域暗能量提供了确切度规修正，而MHD模拟证实ISCO处存在非零磁应力力矩。本文首次将三者整合，在旋转Hayward+暗能量度规下建立粘性盘解析框架，揭示效率-几何简并可由双观测量打破，并量化了内边界力矩对通量的放大效应。该框架未来可结合辐射转移与康普顿化模拟，通过NICER、NuSTAR及X射线偏振数据约束规则黑洞长度标度和暗能量密度，并可推广至其他规则黑洞或暗物质晕模型。",
+        "citations": []
       }
     },
     {
@@ -1730,13 +1968,15 @@
       "summary": {
         "paper_id": "arxiv:2607.15588",
         "title_zh": "高密度声速与并合后动力学",
-        "team": "第一作者 John Stroud（华盛顿大学），通讯作者未明确标注，主要机构包括华盛顿大学与宾夕法尼亚州立大学，非知名合作组",
-        "tldr": "通过参数化声速模型，研究高密度声速导数对双中子星并合残余及引力波峰值频率的影响，发现近似通用关系",
-        "review": "本文引入一个简化的参数化状态方程模型，用声速对重子化学势的斜率参数控制超核密度区的声速行为。利用WhiskyTHC数值相对论代码执行一系列双中子星并合模拟，识别出声速斜率与并合残余性质及引力波峰值频率的关联。结合CoRe数据库进一步分析，发现声速导数与后并合引力波峰值频率存在近似与EOS无关的关系，表明后并合引力波保留了最高密度物态信息。但该关系并非严格准通用，残余的EOS依赖性凸显了分离高密度物理的挑战。",
-        "highlight": "首次系统探索了高密度声速行为对并合后观测特征的影响，通过可控参数框架揭示出声速斜率与引力波频率的关系，为未来多信使观测约束极端物态提供了新思路",
-        "relation": "—",
-        "authors_en": "J. Stroud (Institute for Nuclear Theory, University of Washington), D. Radice (Institute for Gravitation and The Cosmos, Pennsylvania State University), S. Reddy (Institute for Nuclear Theory, University of Washington)",
-        "corresponding_en": ""
+        "team": "",
+        "tldr": "通过声速参数化模型，研究高密度声速斜率对双中子星并合后引力波及抛射物性质的影响，发现声速导数与并合后引力波峰值频率存在近似不依赖于物态的关系。",
+        "review": "",
+        "highlight": "首创以声速导数直接控制高密度物态刚度，揭示其与并合后引力波主频之间的近似EOS-不敏感关联，为从多信使观测中解读最高密度核物质行为开辟了新途径。",
+        "relation": "",
+        "authors_en": "John Stroud (Institute for Nuclear Theory, University of Washington), David Radice (Institute for Gravitation and The Cosmos, The Pennsylvania State University), Sanjay Reddy (Institute for Nuclear Theory, University of Washington)",
+        "corresponding_en": "",
+        "context_outlook": "既往双中子星并合模拟多依赖详细的微物理模型，侧重于低密度区物态约束，缺乏对声速在超高密度段独立影响的系统探索。本工作通过线性参数化方案直接控制声速斜率，在数值相对论模拟中建立起该斜率与并合后遗迹性质、抛射物质量及引力波峰值频率的关联。结果表明，并合后引力波主频能够灵敏反映核物质最高密度处的声速行为，尽管并非严格准普遍关系，仍为未来第三代探测器约束2~8倍饱和密度区物态提供了可行途径。这一发现亦凸显了发展灵活参数化EOS框架、结合代理建模或机器学习高效反演致密物质性质的必要性。",
+        "citations": []
       }
     }
   ],
