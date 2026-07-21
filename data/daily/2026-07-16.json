@@ -2,9 +2,9 @@
   "date": "2026-07-16",
   "review": {
     "date": "2026-07-16",
-    "overview": "今日共收录17篇文献（核心9篇，相关8篇）。主题分布高度集中于高能暂现源与多信使天体物理：潮汐瓦解事件（TDE）及准周期爆发（QPE）占据主导（5篇核心），引力波电磁对应体及多信使探测紧随其后（5篇），其余涵盖中子星X射线暂现、快速射电暴（FRB）、新星与超新星、活动星系核（AGN）及致密天体理论建模。",
-    "highlights": "1. TDE 2024aepd的早期近红外超与快速盘-冕演化：首次同步探测到早期近红外超和X射线盘-冕演化，为星冕形成和再处理机制提供了前所未有的直接约束。\n2. 潮汐瓦解事件的三次射电耀发：在AT2020vwl中首次观测验证了喷流追上早期外流风壳产生第三次射电耀发的理论，是理解TDE复杂外流动力学的里程碑。\n3. X射线准周期爆发（QPE）的观测综述：系统梳理了13个已知QPE源的多样性与共性及其与TDE的关联，为这一新兴领域的后续研究提供了重要参考框架。",
-    "trends": "1. TDE与QPE研究的深度融合：今日多篇核心文献聚焦TDE的盘-冕演化、外流激波及QPE现象，表明TDE已从单一爆发事件研究转向多波段、多阶段演化的系统性物理图景构建。\n2. 多信使与暂现源联合探测的加速：从Swift-BAT填补盲区以服务引力波电磁对应体，到QPE作为EMRI对应体与LISA联合的前景评估，多信使暂现源探测的管线建设与理论预研正同步推进。\n3. 激波供能与外流动力学成为暂现源共性物理：无论是TDE的射电耀发、亮红新星的激波供能还是超新星爆发，外流碰撞与激波加热正成为解释各类暂现源辐射特征的核心机制。"
+    "overview": "今日收录18篇文献，其中core 9篇、related 9篇。主题分布：潮汐瓦解事件4篇（占主导），引力波/多信使4篇，新星与超新星3篇，中子星及X射线暂现2篇，快速射电暴、AGN耀变体、超新星中微子、黑洞玻色子云各1篇。整体呈现高能暂现源多波段刻画与多信使协同探测双轮驱动的格局。",
+    "highlights": "1. BAT-GLIMPSE管道填补Swift-BAT飞船转向期定位空白，实现伽马暴弧分级自主低时延定位，对引力波电磁对应体快速跟进具有直接应用价值。\n2. AT2020vwl第三次射电耀发首次被观测到，喷流追上风壳的理论框架获验证，为TDE双外流统一模型提供关键证据。\n3. TDE 2024aepd早期近红外超出叠加X射线盘–冕快速转变，对再处理包层模型给出新约束，值得与AT2018cow晚期平台期模型对照阅读。\n4. CHIME/FRB星表I以536个FRB检验宇宙各向同性，虽受样本量限制但方法学（注入校正+双统计量）为后续大样本各向异性搜索奠定基础。",
+    "trends": "1. TDE领域正从单次爆发刻画走向多外流、多耀发统一图像：AT2020vwl三重射电耀发、2024aepd盘–冕快转、AT2018cow晚期平台期分别从射电、X射线和紫外/光学三个窗口约束喷流–风–再处理包层物理，形成互补。\n2. 多信使时域天文学基础设施持续完善：BAT-GLIMPSE解决转向期盲区、QPE作为EMRI对应体前景评估、偏心波形系统误差传递至总体推断——三条线索共同指向'电磁对应体可探测性'这一核心命题。\n3. 致密天体数值方法与波形建模进入精度瓶颈期：SPH从牛顿到全GR的系统综述、克尔玻色子云潮汐跃迁21.67%相对论修正、偏心波形模型间累积偏差，均表明系统误差已开始主导天体物理推断。\n4. 暂现源前身星与供能机制诊断趋向光谱精细化：亮红新星电子散射翼直接证认激波供能、SN 2023tsz非LTE建模锁定低质量氦星前身星，反映后平台期光谱诊断正成为约束星周环境与双星通道的新利器。"
   },
   "items": [
     {
@@ -3766,6 +3766,91 @@
         "context_outlook": "Ibn 型超新星因与富氦星周物质（CSM）相互作用呈现窄发射线，是探索大质量恒星晚期质量损失与剥壳机制的重要探针。以往研究多依赖光学光谱，对前身星性质与电离机制未能统一约束。SN 2023tsz 的紫外光谱分析表明，额外 X 射线照射场对再现高电离特征不可或缺，且模型指向约 4 M⊙的低质量氦星前身星，与双星剥壳图像一致。这些发现拓展了 Ibn 型前身星的参数空间，显示部分事件可能源于中等质量双星系统。未来结合 JWST 红外光谱及更高精度的辐射流体模拟，有望系统区分单星与双星演化对 CSM 结构的贡献，推动前身星研究的定量化。",
         "citations": []
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.16342",
+        "source": "arxiv",
+        "title": "Earth as a transducer for ultralight bosonic dark-matter detection",
+        "authors": [
+          "Saarik Kalia",
+          "Ibrahim A. Sulai"
+        ],
+        "abstract": "Ultralight bosonic dark matter (UBDM) that couples to electromagnetism can generate an oscillating magnetic-field signal at the Earth's surface. This is referred to as the \"Earth transducer\" effect, as the Earth converts UBDM into a detectable magnetic field. Similar DM-induced fields in laboratory experiments typically scale with the size $L$ of the experiment. Because the Earth transducer signal instead scales with the large radius of the Earth, $R$, it is one of the most powerful direct probes of UBDM with masses $m_\\mathrm{DM}\\lesssim1/R\\sim3\\times10^{-14}\\,\\mathrm{eV}$. It has many other favorable properties, such as high spatial and temporal coherence and robustness to atmospheric modeling. In this review, we derive the Earth transducer effect and its properties for multiple UBDM models, and discuss current and future prospects to detect it.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-16",
+        "url": "https://arxiv.org/abs/2607.16342v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.16342v1",
+        "doi": null
+      },
+      "score": {
+        "score": 15,
+        "tags": [
+          "暗物质"
+        ],
+        "layer": "edge",
+        "reason": "论文主题为超轻玻色子暗物质探测，属于团队边缘关注的暗物质领域，但非核心高能暂现源研究，相关性较低。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.16342",
+        "title_zh": "地球作为超轻玻色子暗物质探测的换能器",
+        "team": "",
+        "tldr": "综述了地球换能器效应，推导多种超轻玻色子暗物质模型下的信号性质，并讨论检测前景。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.16337",
+        "source": "arxiv",
+        "title": "On Accretion and Neutrino Investigations of Thermodynamically Reconstructed Black Holes from Three-Parameter Generalized Entropy",
+        "authors": [
+          "F. Barzi",
+          "W. El Hadri",
+          "H. El Moumni",
+          "K. Masmar",
+          "S. Mazzou"
+        ],
+        "abstract": "We study accretion and neutrino-sensitive thermal signatures of a static black hole reconstructed from a three-parameter generalized entropy. The construction is thermodynamic by design: the entropy deformation is not mapped to a radial-coordinate redefinition or to a prescribed Reissner--Nordström-like correction. Instead, the generalized entropy fixes the horizon response factor $Ξ_h=dS_G/dS|_{S_h}$. The effective exterior geometry is then reconstructed by requiring its surface-gravity temperature to reproduce the generalized thermodynamic temperature. As a result, the metric preserves the horizon area and the Schwarzschild asymptotics, and reduces smoothly to Schwarzschild when $Ξ_h\\to1$.   The deformation is controlled by $λ_G=1/Ξ_h-1$, while the integer $p\\geq2$ determines the radial localization of the near-horizon correction. We compute the photon sphere, critical shadow scale, circular geodesics, ISCO, Novikov--Thorne flux, disk temperature, radiative efficiency, energy-at-infinity luminosity, a redshifted spectral proxy, and neutrino-sensitive temperature moments. In particular, positive $λ_G$ moves the photon sphere and ISCO inward, decreases the shadow scale, raises the radiative efficiency, and concentrates the energy release toward the inner disk. By contrast, negative $λ_G$ produces the opposite trend.   Finally, the neutrino sector is modeled conservatively using dimensionless temperature moments instead of a full neutrino-dominated accretion flow or annihilation-deposition calculation. The hierarchy among the $ n=4$, $n=6$, and $n=9$ moments reveals that entropy-induced disk deformation becomes increasingly apparent with higher temperature exponents. Thus, observable changes in compact orbits and thin-disk emission can be directly linked to generalized entropy via the horizon response.",
+        "categories": [
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-16",
+        "url": "https://arxiv.org/abs/2607.16337v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.16337v1",
+        "doi": null
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "X射线双星与吸积致密天体"
+        ],
+        "layer": "edge",
+        "reason": "论文研究广义熵重构黑洞的吸积与中微子特征，属于理论黑洞物理，与团队高能暂现源观测研究间接相关，但未涉及具体暂现天体或任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.16337",
+        "title_zh": "三参数广义熵热力学重建黑洞的吸积与中微子研究",
+        "team": "",
+        "tldr": "研究了三参数广义熵热力学重建黑洞的吸积与中微子特征，发现视界响应参数可调控光子球、ISCO、辐射效率等观测性质，并通过中微子温度矩揭示熵诱导的盘形变。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
   "revisions": [
@@ -3777,6 +3862,16 @@
         "overview": "今日概览：共收录7篇文献，其中核心文献4篇，相关文献3篇。主题涵盖致密天体暂现源（AMXP、新星、TDE）、多信使探测技术（Swift-BAT）、宇宙学检验（FRB）、数值模拟（SPH）及基础物理（玻色子云）。",
         "highlights": "1. 潮汐瓦解事件2024aepd的早期近红外超与快速盘-冕演化：首次同步探测到早期近红外超和X射线盘-冕快速演化，为星冕形成和再处理机制提供关键约束。\n2. Swift BAT-GLIMPSE实现转动时段伽马射线成像定位：开发全自动管线挖掘盲区数据，大幅提升多信使时代暂现源的快速定位能力。\n3. 新发现AMXP SRGA J144459.2-604207爆发衰减光谱研究：利用NICER和Swift揭示其光谱演化与加热机制，并探讨射电-流出关联。",
         "trends": "1. 暂现源研究全面迈向多波段与多信使协同：从TDE的近红外与X射线同步演化，到Swift-BAT填补暂现源定位盲区，再到AMXP的射电-流出关联，多波段观测正成为约束暂现源物理机制的标准范式。\n2. 大数据与高灵敏度驱动暂现源宇宙学：CHIME/FRB利用536个大样本检验宇宙各向同性，表明暂现源大样本统计正成为宇宙学研究的新兴工具。\n3. 理论建模与基础物理为观测提供前瞻指引：SPH方法综述与玻色子云相对论潮汐跃迁计算，为中子星并合、黑洞超辐射等前沿探测奠定了数值与理论基础。"
+      }
+    },
+    {
+      "synced": "2026-07-21",
+      "n_papers": 77,
+      "review": {
+        "date": "2026-07-16",
+        "overview": "今日共收录17篇文献（核心9篇，相关8篇）。主题分布高度集中于高能暂现源与多信使天体物理：潮汐瓦解事件（TDE）及准周期爆发（QPE）占据主导（5篇核心），引力波电磁对应体及多信使探测紧随其后（5篇），其余涵盖中子星X射线暂现、快速射电暴（FRB）、新星与超新星、活动星系核（AGN）及致密天体理论建模。",
+        "highlights": "1. TDE 2024aepd的早期近红外超与快速盘-冕演化：首次同步探测到早期近红外超和X射线盘-冕演化，为星冕形成和再处理机制提供了前所未有的直接约束。\n2. 潮汐瓦解事件的三次射电耀发：在AT2020vwl中首次观测验证了喷流追上早期外流风壳产生第三次射电耀发的理论，是理解TDE复杂外流动力学的里程碑。\n3. X射线准周期爆发（QPE）的观测综述：系统梳理了13个已知QPE源的多样性与共性及其与TDE的关联，为这一新兴领域的后续研究提供了重要参考框架。",
+        "trends": "1. TDE与QPE研究的深度融合：今日多篇核心文献聚焦TDE的盘-冕演化、外流激波及QPE现象，表明TDE已从单一爆发事件研究转向多波段、多阶段演化的系统性物理图景构建。\n2. 多信使与暂现源联合探测的加速：从Swift-BAT填补盲区以服务引力波电磁对应体，到QPE作为EMRI对应体与LISA联合的前景评估，多信使暂现源探测的管线建设与理论预研正同步推进。\n3. 激波供能与外流动力学成为暂现源共性物理：无论是TDE的射电耀发、亮红新星的激波供能还是超新星爆发，外流碰撞与激波加热正成为解释各类暂现源辐射特征的核心机制。"
       }
     }
   ]
