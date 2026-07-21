@@ -620,30 +620,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16923",
-        "title_zh": "高北极地区 ALBATROS 阵列的超低频太阳射电连续监测",
+        "title_zh": "来自高北极的ALBATROS连续超低频太阳射电监测",
         "team": "",
-        "tldr": "本文报道了 ALBATROS 阵列在加拿大高北极地区开展的 1–125 MHz 太阳射电爆发观测，展示了该设施在超低频段的动态频谱和偏振测量能力。",
+        "tldr": "首次利用北极地面阵列实现1–125 MHz超低频太阳射电连续动态谱和偏振监测，发现与软X射线爆发高度相关。",
         "review": "",
-        "highlight": "利用北极夏季连续日照和极低电离层截止频率，首次实现地基设备对 30 MHz 以下太阳射电爆发的常规宽带监测，并展示了全 Stokes 偏振和8站同步观测。",
+        "highlight": "ALBATROS阵列利用极地电离层低截止频率和连续日照的独特条件，首次从地面获得1–125 MHz宽带动态谱、全斯托克斯偏振观测，且八个独立站台同时探测到相同爆发，验证了阵列稳定性，为空间天气监测开辟新窗口。",
         "relation": "",
-        "authors_en": "A. Chokshi (McGill University), M. Agrawal (McGill University), C. Barbarie (University of Colorado Boulder) et al.",
+        "authors_en": "Aman Chokshi (Department of Physics, McGill University), Mohan Agrawal (Department of Physics, McGill University), Christopher Barbarie (Department of Electrical, Computer & Energy Engineering, University of Colorado Boulder) et al.",
         "corresponding_en": "Aman Chokshi",
-        "context_outlook": "过去太阳低频射电监测主要依靠 e-Callisto 等地面网络 [[Benz+ 2009]] 和 SunRISE 等空间任务 [[Kasper+ 2022]]，但 30 MHz 以下频段因电离层截止而长期难以从地面常规观测。本研究在北极地区，利用那里电离层等离子体频率可降至 10 MHz 以下的独特条件 [[Bjoland+ 2021]]，通过 ALBATROS 阵列首次获得 1–125 MHz 连续动态频谱和偏振信息。未来，随着干涉成像和亚微秒分辨率数据的分析，该阵列将能在超低频率下追踪日冕爆发源区，为空间天气研究打开新窗口。",
+        "context_outlook": "低于30 MHz的超低频太阳射电波段因电离层截止而长期难以从地面观测，仅能借助空间任务（如[[Kasper+ 2022]]）或利用极地电离层空洞的间歇性机会（[[Bjoland+ 2021]]; [[Gurney+ 2026]]）。ALBATROS阵列部署于加拿大高北极，利用夏季连续日照和极低电离层电子密度的独特条件，首次实现1–125 MHz的宽带动态谱、全斯托克斯偏振以及多台站连续监测。初步结果展现出射电暴与GOES软X射线（[[Machol+ 2020]]）的强时间相关性，八站同时探测验证了阵列稳定性。未来，结合基带电压相关和干涉成像，ALBATROS有望定位低频日冕爆发源并提供亚微秒时间分辨率，推动空间天气研究和低频射电天文学的发展。",
         "citations": [
           {
-            "label": "Benz+ 2009",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Kasper+ 2022",
+            "authors": "Kasper",
+            "year": "2022",
+            "title": "The sun radio interferometer space experiment (sunrise) mission",
+            "ref": "J. Kasper, T. J. W. Lazio, A. Romero-Wolf, J. P. Lux, and T. Neilsen (2022) The sun radio interferometer space experiment (sunrise) mission. In 2022 IEEE Aerospace Conference (AERO), Vol., pp. 1–8. External Links: Document, ISSN 1095-323X",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1109/AERO53065.2022.9843607",
+            "bibcode": "2022aero.conf..106K",
+            "url": "https://doi.org/10.1109/AERO53065.2022.9843607",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Bjoland+ 2021",
+            "authors": "Bjoland",
+            "year": "2021",
+            "title": "Electron Density Depletion Region Observed in the Polar Cap Ionosphere",
+            "ref": "L. M. Bjoland, Y. Ogawa, U. P. Løvhaug, D. A. Lorentzen, S. M. Hatch, and K. Oksavik (2021) Electron Density Depletion Region Observed in the Polar Cap Ionosphere. Journal of Geophysical Research (Space Physics) 126 (1), pp. e28432. External Links: Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1029/2020JA028432",
+            "bibcode": "2021JGRA..12628432B",
+            "url": "https://doi.org/10.1029/2020JA028432",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gurney+ 2026",
+            "authors": "Gurney",
+            "year": "2026",
+            "title": "Validation of ionospheric models at mid- and high-latitudes: climatological performance of waccm-x (sd) and tie-gcm in fof2",
+            "ref": "E. Gurney, D. R. Themens, M. K. Brown, and S. Elvidge (2026) Validation of ionospheric models at mid- and high-latitudes: climatological performance of waccm-x (sd) and tie-gcm in fof2. Space Weather 24 (3), pp. e2025SW004891. Note: e2025SW004891 2025SW004891 External Links: Document, Link, https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2025SW004891",
+            "arxiv": "",
+            "doi": "10.1029/2025SW004891",
+            "bibcode": "2026SpWea..2404891G",
+            "url": "https://doi.org/10.1029/2025SW004891",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Machol+ 2020",
+            "authors": "Machol",
+            "year": "2020",
+            "title": "Chapter 19 - goes-r series solar x-ray and ultraviolet irradiance",
+            "ref": "J. L. Machol, F. G. Eparvier, R. A. Viereck, D. L. Woodraska, M. Snow, E. Thiemann, T. N. Woods, W. E. McClintock, S. Mueller, T. D. Eden, R. Meisner, S. Codrescu, S. D. Bouwer, and A. A. Reinard (2020) Chapter 19 - goes-r series solar x-ray and ultraviolet irradiance. In The GOES-R Series, S. J. Goodman, T. J. Schmit, J. Daniels, and R. J. Redmon (Eds.), pp. 233–242. External Links: ISBN 978-0-12-814327-8, Document, Link",
+            "arxiv": "",
+            "doi": "10.1016/b978-0-12-814327-8.00019-6",
+            "bibcode": "",
+            "url": "https://doi.org/10.1016/b978-0-12-814327-8.00019-6",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -680,35 +717,158 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17006",
-        "title_zh": "中子星物态方程",
+        "title_zh": "中子星的状态方程",
         "team": "",
-        "tldr": "系统梳理了中子星致密物质状态方程的理论框架、历史沿革、当前理解与未来研究方向。",
+        "tldr": "综述了中子星稠密物质状态方程的理论模型、多信使约束及未来探测前景。",
         "review": "",
-        "highlight": "一篇及时且全面的综述，聚焦相对论框架下超子、介子等奇异自由度，并整合了多信使观测与实验约束，为理解致密物质相图提供了清晰指南。",
+        "highlight": "全面整合相对论平均场、手征对称性与夸克解禁闭等理论框架，并结合格点QCD、核实验、NICER半径测量及引力波观测等多信使数据，指出声速非单调结构及千赫兹引力波探测的潜力。",
         "relation": "",
         "authors_en": "Veronica Dexheimer (Center for Nuclear Research, Department of Physics, Kent State University)",
         "corresponding_en": "",
-        "context_outlook": "中子星物态方程的研究始于[[Oppenheimer and Volkoff 1939]]将星体近似为简并中子气。[[Glendenning 2000]]等相对论多组分理论的建立，使得系统描述超子、介子等奇异自由度成为可能。近年来，如[[Jacobsen et al. 2026]]所示，超子耦合方案仍是理论不确定性的主要来源。未来，随着[[Schaffner-Bielich 2020]]所综述的奇异粒子认识的深化，以及引力波、NICER等观测的持续积累，致密物质的状态方程与相图将被更精确地刻画。",
+        "context_outlook": "早期相对论平均场模型（如 [[Serot and Walecka 1986]] 的专著）为中子星状态方程奠定基础，[[Boguta and Bodmer 1977]] 通过非线性标量自相互作用显著改进不可压缩性。[[Glendenning 1997]] 系统阐述了包含奇异物质与夸克解禁闭的致密物质理论。手征对称性模型（如 [[Dexheimer+ 2008b]]）尝试从对称性自发破缺出发统一描述核子质量与相变。近年来，NICER 对 PSR J0030 的半径测量 [[Miller+ 2019]]、GW170817 的双中子星并合潮汐形变 [[Abbott+ 2017a]] 以及 PSR J0740+6620 的精确质量测定 [[Fonseca+ 2021]]，结合格点 QCD 在零重子化学势区域的严格约束 [[Borsanyi+ 2014]] 与重离子碰撞及低能核实验的系统分析 [[Sorensen+ 2024]]，正逐步缩紧状态方程的容许空间。展望未来，下一代千赫兹引力波探测器有望通过并合后信号直接探测声速结构及有限温度效应 [[Bauswein+ 2019]]，而 deci-Hz 空间引力波干涉仪 [[Berti+ 2026]] 将实现早期预警并合事件，开启多信使致密物质研究的新纪元。",
         "citations": [
           {
-            "label": "Oppenheimer and Volkoff 1939",
+            "label": "Serot and Walecka 1986",
+            "authors": "Serot",
+            "year": "1986",
+            "title": "The Relativistic Nuclear Many Body Problem",
+            "ref": "B. D. Serot and J. D. Walecka (1986) The Relativistic Nuclear Many Body Problem . Adv. Nucl. Phys. 16 , pp. 1–327 . External Links: ISBN 978-1-4612-9046-7, 978-1-4613-1857-6",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
-            "label": "Glendenning 2000",
+            "label": "Boguta and Bodmer 1977",
+            "authors": "Boguta",
+            "year": "1977",
+            "title": "Relativistic Calculation of Nuclear Matter and the Nuclear Surface",
+            "ref": "J. Boguta and A. R. Bodmer (1977) Relativistic Calculation of Nuclear Matter and the Nuclear Surface . Nucl. Phys. A 292 , pp. 413–428 . External Links: Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1016/0375-9474(77)90626-1",
+            "bibcode": "1977NuPhA.292..413B",
+            "url": "https://doi.org/10.1016/0375-9474(77)90626-1",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Jacobsen et al. 2026",
+            "label": "Glendenning 1997",
+            "authors": "Glendenning",
+            "year": "1997",
+            "title": "Compact Stars: Nuclear Physics, Particle Physics, and General Relativity",
+            "ref": "N. K. Glendenning (1997) Compact Stars: Nuclear Physics, Particle Physics, and General Relativity . Astronomy and Astrophysics Library , Springer , New York . External Links: Document , ISBN 0-387-94793-0",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "1997csnp.book.....G",
+            "url": "https://ui.adsabs.harvard.edu/abs/1997csnp.book.....G",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Schaffner-Bielich 2020",
+            "label": "Dexheimer+ 2008b",
+            "authors": "Dexheimer",
+            "year": "2008",
+            "title": "Phase transitions in the parity doublet model for dense matter",
+            "ref": "V. Dexheimer, S. Schramm, and D. Zschiesche (2008b) Phase transitions in the parity doublet model for dense matter . Nucl. Phys. A 808 , pp. 191–212 . External Links: 0805.2146 , Document",
+            "arxiv": "0805.3301",
+            "doi": "10.1140/epja/i2008-10652-0",
+            "bibcode": "2008EPJA...38..105D",
+            "url": "https://arxiv.org/abs/0805.3301",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Miller+ 2019",
+            "authors": "Miller",
+            "year": "2019",
+            "title": "PSR J0030+0451 Mass and Radius from NICER Data and Implications for the Properties of Neutron Star Matter",
+            "ref": "M. C. Miller et al. (2019) PSR J0030+0451 Mass and Radius from NICER Data and Implications for the Properties of Neutron Star Matter . Astrophys. J. Lett. 887 (1 ), pp. L24 . External Links: 1904.06795 , Document",
+            "arxiv": "1912.05705",
+            "doi": "10.3847/2041-8213/ab50c5",
+            "bibcode": "2019ApJ...887L..24M",
+            "url": "https://arxiv.org/abs/1912.05705",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abbott+ 2017a",
+            "authors": "Abbott",
+            "year": "2017",
+            "title": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+            "ref": "B. P. Abbott et al. (2017a) GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral . Phys. Rev. Lett. 119 (16 ), pp. 161101 . External Links: 1710.05832 , Document",
+            "arxiv": "1710.05832",
+            "doi": "10.1103/PhysRevLett.119.161101",
+            "bibcode": "2017PhRvL.119p1101A",
+            "url": "https://arxiv.org/abs/1710.05832",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Fonseca+ 2021",
+            "authors": "Fonseca",
+            "year": "2021",
+            "title": "The NANOGrav 12.5 yr Data Set: Observations and Timing of 47 Millisecond Pulsars",
+            "ref": "E. Fonseca et al. (2021) The NANOGrav 12.5 yr Data Set: Observations and Timing of 47 Millisecond Pulsars . Astrophys. J. Suppl. 252 (1 ), pp. 5 . External Links: 2011.11202 , Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Borsanyi+ 2014",
+            "authors": "Borsanyi",
+            "year": "2014",
+            "title": "Full result for the QCD equation of state with 2+1 flavors",
+            "ref": "S. Borsanyi et al. (2014) Full result for the QCD equation of state with 2+1 flavors . Phys. Lett. B 730 , pp. 99–104 . External Links: 1309.5258 , Document",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Sorensen+ 2024",
+            "authors": "Sorensen",
+            "year": "2024",
+            "title": "Dense matter equation of state from heavy-ion collisions",
+            "ref": "A. Sorensen et al. (2024) Dense matter equation of state from heavy-ion collisions . Prog. Part. Nucl. Phys. 134 , pp. 104080 . External Links: 2301.13232 , Document",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Bauswein+ 2019",
+            "authors": "Bauswein",
+            "year": "2019",
+            "title": "Identifying a first-order phase transition in neutron star mergers through gravitational waves",
+            "ref": "A. Bauswein et al. (2019) Identifying a first-order phase transition in neutron star mergers through gravitational waves . Phys. Rev. Lett. 122 (6 ), pp. 061102 . External Links: 1809.01116 , Document",
+            "arxiv": "1809.01116",
+            "doi": "10.1103/PhysRevLett.122.061102",
+            "bibcode": "2019PhRvL.122f1102B",
+            "url": "https://arxiv.org/abs/1809.01116",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Berti+ 2026",
+            "authors": "Berti",
+            "year": "2026",
+            "title": "deci-Hz Gravitational Wave Observations on the Moon and Beyond",
+            "ref": "E. Berti et al. (2026) deci-Hz Gravitational Wave Observations on the Moon and Beyond . External Links: 2602.05923",
+            "arxiv": "2602.05923",
+            "doi": "10.48550/arXiv.2602.05923",
+            "bibcode": "2026arXiv260205923B",
+            "url": "https://arxiv.org/abs/2602.05923",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -873,40 +1033,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16576",
-        "title_zh": "用于天体物理源时空变化建模的四维高斯随机场生成器",
+        "title_zh": "用于模拟天体物理源时空变化性的四维高斯随机场生成器",
         "team": "",
-        "tldr": "提出一个四维非均匀各向异性高斯随机场模型，结合偏离赤道的非测地线Kerr流体运动学，用于生成厚盘和喷流的时变发射。",
+        "tldr": "本文提出统一半解析模型，结合离赤道Kerr流体旋转律与四维高斯随机场，为黑洞厚盘-喷流提供参数化时空变化源。",
         "review": "",
-        "highlight": "首次将四维Matérn随机场与偏离赤道盘的流体运动学相结合，提供统一且可参数化的时变盘-喷流发射模型，可直接应用于相对论辐射转移模拟。",
+        "highlight": "首次在四维SPDE框架中通过复合协方差张量同时嵌入厚盘与喷流结构，实现3+1维可控随机源，并公开即用代码。",
         "relation": "",
-        "authors_en": "A. Cárdenas-Avendaño (Department of Physics, Wake Forest University, USA), D. Rubiera-Garcia (Departamento de Física Teórica and IPARCOS, Universidad Complutense de Madrid, Spain), F. H. Vincent (LIRA, Observatoire de Paris, France)",
-        "corresponding_en": "Alejandro Cárdenas-Avendaño",
-        "context_outlook": "既往半解析黑洞图像模型多局限于赤道平面或静态源（如 [[Palumbo+ 2022]]、[[Cárdenas-Avendaño+ 2023]]），而时变随机场模型仅处理二维情形（[[Lee and Gammie 2021]]，基于 [[Lindgren+ 2011]] 的 SPDE 表示）。本文继承 [[Vincent+ 2022]] 的非测地线 Kerr 流体旋转律，将其推广至偏离赤道的厚盘，并与四维各向异性 Matérn 高斯随机场耦合，实现了首个 3+1 维时变厚盘–喷流发射的参数化模型。该方法为可控地研究光子环结构、黑洞电影中的相关函数及时变统计提供了实现就绪的工具，未来可与 GRMHD 模拟在参数空间互补，并有望扩展到穿透视界的坐标系中。",
+        "authors_en": "A. Cárdenas-Avendaño (Wake Forest University), D. Rubiera-Garcia (Universidad Complutense de Madrid), F. H. Vincent (Observatoire de Paris)",
+        "corresponding_en": "",
+        "context_outlook": "半解析黑洞图像模型长期限于赤道或定常（如[[Cárdenas-Avendaño+ 2023]]），而[[Lee and Gammie 2021]]的SPDE方法虽引入时间变化但仅二维；[[Vincent+ 2022]]给出离赤道厚盘速度场却无随机结构。本文融合二者，构建四维盘-喷流复合协方差，输出可配合辐射传输的时空变化源。未来可向偏振扩展、对标GRMHD数据，并支持多场独立模拟，为下一代黑洞电影分析与参数推断提供新工具。",
         "citations": [
           {
-            "label": "Palumbo+ 2022",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Cárdenas-Avendaño+ 2023",
+            "authors": "Cárdenas-Avendaño",
+            "year": "2023",
+            "title": "Adaptive analytical ray tracing of black hole photon rings",
+            "ref": "A. Cárdenas-Avendaño, A. Lupsasca, and H. Zhu (2023) Adaptive analytical ray tracing of black hole photon rings. Phys. Rev. D 107(4), pp. 043030.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1103/physrevd.107.043030",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevd.107.043030",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Lee and Gammie 2021",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Lindgren+ 2011",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Lee",
+            "year": "2021",
+            "title": "Disks as Inhomogeneous, Anisotropic Gaussian Random Fields",
+            "ref": "D. Lee and C. F. Gammie (2021) Disks as Inhomogeneous, Anisotropic Gaussian Random Fields. ApJ 906(1), pp. 39.",
+            "arxiv": "2011.07151",
+            "doi": "10.3847/1538-4357/abc8f3",
+            "bibcode": "2021ApJ...906...39L",
+            "url": "https://arxiv.org/abs/2011.07151",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Vincent+ 2022",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Vincent",
+            "year": "2022",
+            "title": "Images and photon ring signatures of thick disks around black holes",
+            "ref": "F. H. Vincent, S. E. Gralla, A. Lupsasca, and M. Wielgus (2022) Images and photon ring signatures of thick disks around black holes. A&A 667, pp. A170.",
+            "arxiv": "2206.12066",
+            "doi": "10.1051/0004-6361/202244339",
+            "bibcode": "2022A&A...667A.170V",
+            "url": "https://arxiv.org/abs/2206.12066",
+            "source": "ads",
+            "verified": true
           }
         ]
       }

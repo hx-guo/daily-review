@@ -3037,30 +3037,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16420",
-        "title_zh": "爱因斯坦探针快X射线暂现源在LIGO-Virgo-KAGRA O4b观测运行期的引力波对应体可探测性",
+        "title_zh": "O4b期间爱因斯坦探针快速X射线暂现源的引力波对应体可探测性",
         "team": "",
-        "tldr": "首次对47个爱因斯坦探针快X射线暂现源样本进行系统的引力波对应体搜索，未发现显著关联，并设定了双中子星和中子星-黑洞并合假设下的90%排除距离，不支持近邻致密天体并合起源。",
+        "tldr": "首次系统搜索EP-FXTs的引力波对应体，未发现显著关联，并利用TDR给出排除距离约束。",
         "review": "",
-        "highlight": "首次系统性搜索EP-FXTs的引力波对应体，利用目标探测距离(TDR)框架定量评估了不探测情况下的排除距离，为排除近邻致密双星并合起源提供了重要观测约束。",
+        "highlight": "首次针对非GRB的EP-FXTs进行引力波系统搜索，填补了LVK对应体搜索的空白；采用TDR框架在无探测下给出排除距离，为中子星并合前身星提供限制。",
         "relation": "",
         "authors_en": "A. Chopra, S. Ronchini, B. Banerjee et al.",
         "corresponding_en": "",
-        "context_outlook": "快X射线暂现源(FXTs)的起源尚未明确，已有研究提出致密双星并合可能是部分事件的来源 [[Jonker+ 2013]] [[Xue+ 2019]]，但缺乏引力波直接对应证据。爱因斯坦探针的宽视场观测大幅扩展了FXT样本，为多信使研究提供了新机遇。本文首次对O4b期间47个EP-FXTs进行与GWTC-5候选体的时空符合搜索，未发现显著关联，并采用[[Ronchini+ 2026]]的目标探测距离框架，给出了BNS和NSBH并合假设下的90%排除距离，排除了近邻致密天体并合起源。未来，随着LVK探测器灵敏度提升及EP长期联合观测，有望捕获真正的引力波-快X射线暂现源成协事例，从而严格限制前身星模型。",
+        "context_outlook": "快速X射线暂现源（FXT）的物理起源至今未明，自 [[Soderberg+ 2008]] 首次发现以来，Chandra、XMM-Newton等已积累多个案例（[[Jonker+ 2013]]；[[Xue+ 2019]]），爱因斯坦探针（EP）的发射将FXTs发现率提升了一个数量级。致密双星并合（CBC）被认为是至少部分FXT的可能前身星，其产生的引力波信号可被LIGO-Virgo-KAGRA探测。此前针对FXT的引力波系统搜索尚属空白，本文首次针对EP在O4b期间发现的47例非GRB FXT进行引力波对应体搜索，未发现显著关联，并利用 [[Ronchini+ 2026]] 提出的TDR框架给出排除距离约束。展望未来，随着LVK灵敏度的提升与EP的持续观测，联合探测将有望揭示FXTs中潜在的中子星并合成分，并对前身星模型作出更严格的限定。",
         "citations": [
           {
+            "label": "Soderberg+ 2008",
+            "authors": "Soderberg",
+            "year": "2008",
+            "title": "An extremely luminous X-ray outburst at the birth of a supernova",
+            "ref": "A. M. Soderberg, E. Berger, K. L. Page, P. Schady, J. Parrent, D. Pooley, X.-Y. Wang, E. O. Ofek, A. Cucchiara, A. Rau, E. Waxman, J. D. Simon, D. C.-J. Bock, P. A. Milne, M. J. Page, J. C. Barentine, S. D. Barthelmy, A. P. Beardmore, M. F. Bietenholz, P. Brown, A. Burrows, D. N. Burrows, G. Byrngelson, S. B. Cenko, P. Chandra, J. R. Cummings, D. B. Fox, A. Gal-Yam, N. Gehrels, S. Immler, M. Kasliwal, A. K. H. Kong, H. A. Krimm, S. R. Kulkarni, T. J. Maccarone, P. Mészáros, E. Nakar, P. T. O’Brien, R. A. Overzier, M. de Pasquale, J. Racusin, N. Rea, and D. G. York (2008) An extremely luminous X-ray outburst at the birth of a supernova. Nature 453(7194), pp. 469–474. External Links: Document, 0802.1712, ADS entry",
+            "arxiv": "0802.1712",
+            "doi": "10.1038/nature06997",
+            "bibcode": "2008Natur.453..469S",
+            "url": "https://arxiv.org/abs/0802.1712",
+            "source": "ads",
+            "verified": true
+          },
+          {
             "label": "Jonker+ 2013",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Jonker",
+            "year": "2013",
+            "title": "Discovery of a New Kind of Explosive X-Ray Transient near M86",
+            "ref": "P. G. Jonker, A. Glennie, M. Heida, T. Maccarone, S. Hodgkin, G. Nelemans, J. C. A. Miller-Jones, M. A. P. Torres, and R. Fender (2013) Discovery of a New Kind of Explosive X-Ray Transient near M86. ApJ 779(1), pp. 14. External Links: Document, 1310.7238, ADS entry",
+            "arxiv": "1310.7238",
+            "doi": "10.1088/0004-637X/779/1/14",
+            "bibcode": "2013ApJ...779...14J",
+            "url": "https://arxiv.org/abs/1310.7238",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Xue+ 2019",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Xue",
+            "year": "2019",
+            "title": "A magnetar-powered X-ray transient as the aftermath of a binary neutron-star merger",
+            "ref": "Y. Q. Xue, X. C. Zheng, Y. Li, W. N. Brandt, B. Zhang, B. Luo, B.-B. Zhang, F. E. Bauer, H. Sun, B. D. Lehmer, X.-F. Wu, G. Yang, X. Kong, J. Y. Li, M. Y. Sun, J.-X. Wang, and F. Vito (2019) A magnetar-powered X-ray transient as the aftermath of a binary neutron-star merger. Nature 568(7751), pp. 198–201. External Links: Document, 1904.05368, ADS entry",
+            "arxiv": "1904.05368",
+            "doi": "10.1038/s41586-019-1079-5",
+            "bibcode": "2019Natur.568..198X",
+            "url": "https://arxiv.org/abs/1904.05368",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Ronchini+ 2026",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Ronchini",
+            "year": "2026",
+            "title": "Gravitational wave detectability range informed by external messengers",
+            "ref": "S. Ronchini, A. Chopra, T. Dal Canton, B. Banerjee, A. L. De Santis, and M. Branchesi (2026) Gravitational wave detectability range informed by external messengers. arXiv e-prints, pp. arXiv:2605.21578. External Links: 2605.21578, ADS entry",
+            "arxiv": "2605.21578",
+            "doi": "10.48550/arXiv.2605.21578",
+            "bibcode": "2026arXiv260521578R",
+            "url": "https://arxiv.org/abs/2605.21578",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -3146,25 +3183,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16397",
-        "title_zh": "宁静黑洞暂现源A0620-00的超轨道光变",
+        "title_zh": "宁静态黑洞 X 射线暂现源 A0620–00 的超轨道变化",
         "team": "",
-        "tldr": "利用ZTF、LCO和ATLAS光学监测数据发现A0620-00存在261.9天超轨道周期（振幅～0.2 mag），并排除红噪声，可能源于内吸积流进动。",
+        "tldr": "利用跨越近二十年的多巡天光学数据，发现 A0620–00 存在显著的 ~262 天超轨道周期，并探究其与吸积流进动的内在联系。",
         "review": "",
-        "highlight": "首次在黑洞LMXB中以高置信度（>5σ）确认超轨道周期性，排除红噪声干扰，为研究宁静态吸积盘结构提供关键观测证据。",
+        "highlight": "首次在宁静态黑洞双星中明确探测到稳健的超轨道调制（>5σ），且与源的被动/活跃状态占比随位相的系统性变化密切相关，为内吸积流的几何与动力学提供了新诊断。",
         "relation": "",
-        "authors_en": "Enzo A. Saavedra (Instituto de Astrofísica de Canarias, Spain), Roi Alonso (Instituto de Astrofísica de Canarias, Spain), Teo Muñoz-Darias (Instituto de Astrofísica de Canarias, Spain) et al.",
+        "authors_en": "E. A. Saavedra, R. Alonso, T. Muñoz-Darias et al.",
         "corresponding_en": "",
-        "context_outlook": "宁静黑洞暂现源A0620-00的长期光学行为此前存在争议，[[Leibowitz+ 1998]]仅报告了边缘显著的～255天调制。本研究基于ZTF、LCO和ATLAS近20年的高精度监测，确认了261.9天超轨道周期，且信号不依赖于滤光片波段。在排除红噪声和采样效应后，该周期显示出高统计显著性。这一发现为超轨道调制在黑洞LMXB中的存在提供了坚实证据，可能与内热吸积流的逆行节点进动有关（参见[[Fragile+ 2026]]的讨论）。未来结合X射线和偏振多波段监测，有望进一步揭示吸积盘进动与质量转移率变化的物理机制，推动对黑洞暂现源长期演化规律的理解。",
+        "context_outlook": "A0620–00 的超轨道变化最早由 [[Leibowitz+ 1998]] 暗示存在 ~255 天周期，但当时显著性有限。[[Cantrell+ 2008]] 和 [[Cantrell+ 2010]] 揭示了该源在宁静态下具有被动和活跃两种截然不同的光变行为，然而其长期组织化特征仍不明确。本研究利用 ZTF、LCO、ATLAS 等长时间基线数据，以 >5σ 确立了一致的 ~262 天超轨道周期，并揭示被动/活跃态的占比随超轨道位相的系统性演变。在进动框架下，[[Papaloizou+ 1995]]、[[Larwood+ 1996]] 等人提出的节点进动模型可以解释该信号，且反推出的进动半径（~0.13a）与静止期黑洞中预期的薄盘-热内吸积流过渡区相符。未来，以 Vera C. Rubin 天文台为代表的高节奏巡天将系统检验此类调制在静止黑洞双星中的普遍性，而针对倾斜热内流的结构与进动稳定性的数值模拟则有望从第一性原理阐明其物理起源。",
         "citations": [
           {
             "label": "Leibowitz+ 1998",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Leibowitz",
+            "year": "1998",
+            "title": "Regularities in the long-term optical light curve of the black hole candidate binary A0620-00 (V616 Mon)",
+            "ref": "E. M. Leibowitz, S. Hemar, and M. Orio (1998) Regularities in the long-term optical light curve of the black hole candidate binary A0620-00 (V616 Mon). MNRAS 300 (2), pp. 463–468. External Links: Document, astro-ph/9806119, ADS entry",
+            "arxiv": "astro-ph/9806119",
+            "doi": "10.1046/j.1365-8711.1998.01920.x",
+            "bibcode": "1998MNRAS.300..463L",
+            "url": "https://arxiv.org/abs/astro-ph/9806119",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Fragile+ 2026",
+            "label": "Cantrell+ 2008",
+            "authors": "Cantrell",
+            "year": "2008",
+            "title": "Optical State Changes in the X-Ray-quiescent Black Hole A0620-00",
+            "ref": "A. G. Cantrell, C. D. Bailyn, J. E. McClintock, and J. A. Orosz (2008) Optical State Changes in the X-Ray-quiescent Black Hole A0620-00. ApJ 673 (2), pp. L159. External Links: Document, ADS entry",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/528793",
+            "bibcode": "2008ApJ...673L.159C",
+            "url": "https://doi.org/10.1086/528793",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Cantrell+ 2010",
+            "authors": "Cantrell",
+            "year": "2010",
+            "title": "The Inclination of the Soft X-Ray Transient A0620-00 and the Mass of its Black Hole",
+            "ref": "A. G. Cantrell, C. D. Bailyn, J. A. Orosz, J. E. McClintock, R. A. Remillard, C. S. Froning, J. Neilsen, D. M. Gelino, and L. Gou (2010) The Inclination of the Soft X-Ray Transient A0620-00 and the Mass of its Black Hole. ApJ 710 (2), pp. 1127–1141. External Links: Document, 1001.0261, ADS entry",
+            "arxiv": "1001.0261",
+            "doi": "10.1088/0004-637X/710/2/1127",
+            "bibcode": "2010ApJ...710.1127C",
+            "url": "https://arxiv.org/abs/1001.0261",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Papaloizou+ 1995",
+            "authors": "Papaloizou",
+            "year": "1995",
+            "title": "On the dynamics of tilted discs around young stars",
+            "ref": "J. C. B. Papaloizou and C. Terquem (1995) On the dynamics of tilted discs around young stars. MNRAS 274 (4), pp. 987–1001. External Links: Document, ADS entry",
+            "arxiv": "",
+            "doi": "10.1093/mnras/274.4.987",
+            "bibcode": "1995MNRAS.274..987P",
+            "url": "https://doi.org/10.1093/mnras/274.4.987",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Larwood+ 1996",
+            "authors": "Larwood",
+            "year": "1996",
+            "title": "The tidally induced warping, precession and truncation of accretion discs in binary systems: three-dimensional simulations",
+            "ref": "J. D. Larwood, R. P. Nelson, J. C. B. Papaloizou, and C. Terquem (1996) The tidally induced warping, precession and truncation of accretion discs in binary systems: three-dimensional simulations. MNRAS 282 (2), pp. 597–613. External Links: Document, astro-ph/9604013, ADS entry",
+            "arxiv": "astro-ph/9604013",
+            "doi": "10.1093/mnras/282.2.597",
+            "bibcode": "1996MNRAS.282..597L",
+            "url": "https://arxiv.org/abs/astro-ph/9604013",
+            "source": "ads",
+            "verified": true
           }
         ]
       }

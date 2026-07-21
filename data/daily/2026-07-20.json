@@ -861,30 +861,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.18054",
-        "title_zh": "欠采样图像的叠加与减除",
+        "title_zh": "欠采样图像的协同叠加与减除",
         "team": "",
-        "tldr": "提出 LUTRA 算法，实现欠采样天文图像的最优叠加与瞬变源检测，ZTF 数据上信噪比较现有方法提升约 1.25 倍",
+        "tldr": "本文提出 LUTRA 算法，以数学最优方式处理欠采样图像的叠加与瞬变源检测，在 ZTF 数据上实现信噪比提升约 1.25 倍，并提供开源实现。",
         "review": "",
-        "highlight": "基于傅里叶域频域混叠的矩阵模型，在数学上证明为最优充分统计量；能统一处理不同 PSF 与噪声水平的图像，输出超分辨率结果，有望显著降低瞬变搜索的伪警率。",
+        "highlight": "将以往仅适用于良好采样图像的最优统计框架推广至欠采样情形，通过频域矩阵模型导出可增量更新的充分统计量，实现超分辨率叠合与差分，显著提升了瞬变源检测的灵敏度与巡天效率。",
         "relation": "",
-        "authors_en": "M. Schlanger (Weizmann Institute of Science), B. Zackay (Weizmann Institute of Science)",
+        "authors_en": "Matan Schlanger (Department of Particle Physics and Astrophysics, Weizmann Institute of Science), Barak Zackay (Department of Particle Physics and Astrophysics, Weizmann Institute of Science)",
         "corresponding_en": "Barak Zackay",
-        "context_outlook": "在正常采样图像处理中，[[Zackay & Ofek 2017a]] 等工作已建立了基于充分统计量的最优叠加与差分框架；但针对欠采样图像，传统方法如 Drizzle [[Fruchter & Hook 2002]] 或傅里叶重建 [[Lauer 1999]] 或未达最优，或存在数值稳定性与可更新性局限。本文提出的 LUTRA 方法将混叠效应纳入频率域线性模型，给出了叠加、差分及宇宙线探测的闭合形式最优解，并在 ZTF 数据上取得显著信噪比提升。鉴于当前及未来巡天（如 ULTRASAT、VRO）中欠采样图像占比较高，该工作有望大幅改善瞬变检测的可靠性与效率；后续研究将把方法推广到包含图像间相对旋转的情形。",
+        "context_outlook": "在良好采样下，[[Zackay+ 2017a]]、[[Zackay+ 2017b]] 与 [[Zackay+ 2016]] 已建立最优叠加与差分的统计框架；欠采样处理则常依赖 Drizzle（[[Fruchter+ 2002]]）、傅里叶重建（[[Lauer 1999]]）或模糊后减除（[[Bramich+ 2012]]），这些方法均非最优。本文将统计框架推广至频域矩阵形式，导出叠加与减除的充分统计量，实现超分辨率与增量更新，并在 ZTF 数据上验证了显著的信噪比提升。未来需处理图像相对旋转并集成至 VRO、ULTRASAT 等巡天流水线，同时提升亚像元配准与 PSF 估计精度。",
         "citations": [
           {
-            "label": "Zackay & Ofek 2017a",
-            "arxiv": "",
-            "doi": ""
+            "label": "Zackay+ 2017a",
+            "authors": "Zackay",
+            "year": "2017",
+            "title": "How to coaad images. i. optimal source detection and photometry of point sources using ensembles of images.",
+            "ref": "B. Zackay and E. O. Ofek (2017a) How to coaad images. i. optimal source detection and photometry of point sources using ensembles of images. The Astrophysical Journal 836 (2), pp. 187.",
+            "arxiv": "1512.06872",
+            "doi": "10.3847/1538-4357/836/2/187",
+            "bibcode": "2017ApJ...836..187Z",
+            "url": "https://arxiv.org/abs/1512.06872",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Fruchter & Hook 2002",
+            "label": "Zackay+ 2017b",
+            "authors": "Zackay",
+            "year": "2017",
+            "title": "How to coaad images. ii. a coaddition image that is optimal for any purpose in the background-dominated noise limit.",
+            "ref": "B. Zackay and E. O. Ofek (2017b) How to coaad images. ii. a coaddition image that is optimal for any purpose in the background-dominated noise limit. The Astrophysical Journal 836 (2), pp. 188.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/836/2/188",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/836/2/188",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Zackay+ 2016",
+            "authors": "Zackay",
+            "year": "2016",
+            "title": "Proper image subtraction—optimal transient detection, photometry, and hypothesis testing.",
+            "ref": "B. Zackay, E. O. Ofek, and A. Gal-Yam (2016) Proper image subtraction—optimal transient detection, photometry, and hypothesis testing. The Astrophysical Journal 830 (1), pp. 27.",
+            "arxiv": "1601.02655",
+            "doi": "10.3847/0004-637X/830/1/27",
+            "bibcode": "2016ApJ...830...27Z",
+            "url": "https://arxiv.org/abs/1601.02655",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Fruchter+ 2002",
+            "authors": "Fruchter",
+            "year": "2002",
+            "title": "Drizzle: A Method for the Linear Reconstruction of Undersampled Images.",
+            "ref": "A. S. Fruchter and R. N. Hook (2002) Drizzle: A Method for the Linear Reconstruction of Undersampled Images. Publications of the Astronomical Society of the Pacific 114 (792), pp. 144–152.",
+            "arxiv": "astro-ph/9808087",
+            "doi": "10.1086/338393",
+            "bibcode": "2002PASP..114..144F",
+            "url": "https://arxiv.org/abs/astro-ph/9808087",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Lauer 1999",
+            "authors": "Lauer",
+            "year": "1999",
+            "title": "Combining undersampled dithered images.",
+            "ref": "T. R. Lauer (1999) Combining undersampled dithered images. Publications of the Astronomical Society of the Pacific 111 (756), pp. 227–237.",
+            "arxiv": "astro-ph/9810394",
+            "doi": "10.1086/316319",
+            "bibcode": "1999PASP..111..227L",
+            "url": "https://arxiv.org/abs/astro-ph/9810394",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bramich+ 2012",
+            "authors": "Bramich",
+            "year": "2012",
+            "title": "Difference image analysis: extension to a spatially varying photometric scale factor and other considerations.",
+            "ref": "D. M. Bramich, K. Horne, M. D. Albrow, Y. Tsapras, C. Snodgrass, R. A. Street, M. Hundertmark, N. Kains, F. A. Arellano, J. R. Figuera, and S. Giridhar (2012) Difference image analysis: extension to a spatially varying photometric scale factor and other considerations. Monthly Notices of the Royal Astronomical Society 428 (3), pp. 2275–2289.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/sts184",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/sts184",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -963,35 +1026,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.18124",
-        "title_zh": "未来高精度半径测量识别双胞胎中子星的信息增益量化",
+        "title_zh": "量化未来高精度半径测量在识别孪生中子星中的信息增益",
         "team": "",
-        "tldr": "该文通过贝叶斯框架量化了半径测量精度提升对识别双胞胎中子星的信息增益，发现约0.2 km时信息趋于饱和。",
+        "tldr": "通过模拟不同精度的中子星半径观测，量化贝叶斯推断识别孪生中子星的能力，确定约0.2 km精度为信息增益饱和点。",
         "review": "",
-        "highlight": "首次建立统一框架，结合后验分布、解析区分度指标与信息论测度，明晰了信息增益的三个阶段，并指出σ_R≈0.2 km为科学回报递减的精度阈值，为下一代大型观测设备的设计提供了关键定量参考。",
+        "highlight": "创新地结合后验分布、解析可分辨模型和信息论度量，首次系统揭示了信息增益的三个区间，为下一代高精度观测任务提供了明确的精度基准。",
         "relation": "",
         "authors_en": "Bao-An Li (Department of Physics and Astronomy, East Texas A&M University), Xavier Grundler (Department of Physics and Astronomy, East Texas A&M University)",
         "corresponding_en": "",
-        "context_outlook": "双胞胎中子星作为超致密物质中强子-夸克一级相变的潜在信号，自[[Gerlach 1968]]等早期研究起便受到关注，但迄今未被明确观测到。近期[[Zhang & Li 2025]]和[[Grundler & Li 2025]]分别通过正向建模与贝叶斯推断，在现有观测约束下分析了双胞胎星的形成条件，发现后验分布仍有较大弥散。本文进一步发展了量化信息增益的贝叶斯方法，通过模拟不同精度半径测量发现，σ_R≲0.2 km时对双胞胎星可识别性的信息提取已基本饱和，这与[[Li+ 2024a]]等对状态方程参数收敛性的分析一致。展望未来，该框架不仅为下一代X射线与引力波观测装置提供了明确的精度基准，也为高密物质状态方程贝叶斯推断中的信息回报评估建立了可推广的定量范式。",
+        "context_outlook": "孪生中子星作为强一阶强子-夸克相变的天然探针，其识别依赖精确的半径测量。本研究建立在前期工作的基础上：通过元模型状态方程（[[Zhang+ 2018]]; [[Xie & Li 2020]]）和贝叶斯框架（[[Grundler & Li 2025]]），作者已探索了孪生星的形成条件及可观测量，并揭示了EOS参数推断的信息饱和趋势（[[Li+ 2024a]]）。本文利用模拟数据量化了信息增益随观测精度的演化，明确指认了~0.2 km精度即可令推断接近饱和。该结论为规划下一代高精度X射线和引力波观测（如eXTP、ET、CE）提供了直接而量化的物理指引，且所发展的通用框架可推广至其他天体物理问题的观测优化和科学回报评估。",
         "citations": [
           {
-            "label": "Gerlach 1968",
-            "arxiv": "",
-            "doi": ""
+            "label": "Zhang+ 2018",
+            "authors": "Zhang",
+            "year": "2018",
+            "title": "Combined constraints on the equation of state of dense neutron-rich matter from terrestrial nuclear experiments and observations of neutron stars",
+            "ref": "N. Zhang, B. Li, and J. Xu (2018) Combined constraints on the equation of state of dense neutron-rich matter from terrestrial nuclear experiments and observations of neutron stars. The Astrophysical Journal 859 (2), pp. 90. External Links: Document",
+            "arxiv": "1801.06855",
+            "doi": "10.3847/1538-4357/aac027",
+            "bibcode": "2018ApJ...859...90Z",
+            "url": "https://arxiv.org/abs/1801.06855",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Zhang & Li 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Xie & Li 2020",
+            "authors": "Xie",
+            "year": "2020",
+            "title": "Bayesian inference of the symmetry energy of superdense neutron-rich matter from future radius measurements of massive neutron stars",
+            "ref": "W. Xie and B. Li (2020) Bayesian inference of the symmetry energy of superdense neutron-rich matter from future radius measurements of massive neutron stars. The Astrophysical Journal 899 (1), pp. 4. External Links: Document",
+            "arxiv": "2005.07216",
+            "doi": "10.3847/1538-4357/aba271",
+            "bibcode": "2020ApJ...899....4X",
+            "url": "https://arxiv.org/abs/2005.07216",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Grundler & Li 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Grundler",
+            "year": "2025",
+            "title": "Bayesian quantification of observability and equation of state of twin stars",
+            "ref": "X. Grundler and B. Li (2025) Bayesian quantification of observability and equation of state of twin stars. Phys. Rev. D 112 (10), pp. 103012. External Links: 2506.13677, Document",
+            "arxiv": "2506.13677",
+            "doi": "10.1103/hsd4-j54y",
+            "bibcode": "2025PhRvD.112j3012G",
+            "url": "https://arxiv.org/abs/2506.13677",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Li+ 2024a",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Li",
+            "year": "2024a",
+            "title": "Bayesian inference of fine features of the nuclear equation of state from future neutron star radius measurements to 0.1 km accuracy",
+            "ref": "B. Li, X. Grundler, W. Xie, and N. Zhang (2024a) Bayesian inference of fine features of the nuclear equation of state from future neutron star radius measurements to 0.1 km accuracy. Phys. Rev. D 110 (10), pp. 103040. External Links: 2407.07823, Document",
+            "arxiv": "2407.07823",
+            "doi": "10.1103/PhysRevD.110.103040",
+            "bibcode": "2024PhRvD.110j3040L",
+            "url": "https://arxiv.org/abs/2407.07823",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1219,35 +1314,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17971",
-        "title_zh": "GRBAlpha 与 VZLUSAT-2 立方星观测的伽马射线暂现源完整星表",
+        "title_zh": "GRBAlpha与VZLUSAT-2立方星伽马射线暂现源完整星表",
         "team": "",
-        "tldr": "发布两颗纳卫星在轨近四年探测到的超过300个伽马射线暂现源的最大立方星星表，证明低成本星座可常规监测伽马射线天空。",
+        "tldr": "发布两颗立方星四年观测到的344个伽马射线暂现源（含GRB、太阳耀斑等）的完整星表，证明低成本立方星可常规监测伽马射线天空。",
         "review": "",
-        "highlight": "首次完整公布1U/3U立方星在低地球轨道上的伽马射线暂现源星表，包含史上最亮GRB 221009A和230307A的无饱和数据，探测频率达每周~2个暂现源或~1个GRB，展示了纳卫星星座实现全天监测与多信使追蹤的可行性。",
+        "highlight": "展示了迄今最大的立方星伽马暂现源样本，包括未饱和观测最亮伽马暴GRB 221009A；实证灵敏度可达Fermi/GBM的90%以上，为未来立方星星座全天监测奠定基础。",
         "relation": "",
-        "authors_en": "M. Dafcikova (Department of Theoretical Physics and Astrophysics, Masaryk University), J. Ripa (Department of Theoretical Physics and Astrophysics, Masaryk University), A. Pal (Konkoly Observatory, Budapest) et al.",
+        "authors_en": "Marianna Dafcikova (Department of Theoretical Physics and Astrophysics, Faculty of Science, Masaryk University), Jakub Ripa (Department of Theoretical Physics and Astrophysics, Faculty of Science, Masaryk University), Andras Pal (Konkoly Observatory, Research Centre for Astronomy and Earth Sciences), et al.",
         "corresponding_en": "",
-        "context_outlook": "长久以来，伽马射线暴（GRB）的多信使研究依赖 Swift（[[Gehrels+ 2004]]）、Fermi 等少数大卫星，但受限于窄视场和地球遮挡，难以实现全天覆盖。为此，利用多颗纳卫星组成星座、通过到达时间差进行三角定位的方案被提出（[[Hurley 2020]]；[[Ohno+ 2020]]）。作为 CAMELOT 星座（[[Werner+ 2018]]）的先行者，GRBAlpha 与 VZLUSAT-2 在超紧凑平台上搭载 CsI 闪烁体探测器，验证了低成本、快速研制的小卫星进行伽马射线持续监测的可行性。这两颗立方星近四年的成功运行和超过 300 次暂现源探测，表明纳卫星星座可达到每周探测两个暂现源或一个 GRB 的频次，且至少覆盖 60% 的 Fermi/GBM GRB（5σ）。未来此类星座有望为引力波、中微子等多信使事件提供几乎全天候的即时伽马射线预警，显著提升联合发现概率。",
+        "context_outlook": "从早期火球模型（[[Cavallo and Rees 1978]]）到多信使联合观测（如[[Abbott+ 2017]]对GW170817/GRB 170817A的探测），伽马暴研究突显了全天监测的关键需求。为此，基于立方星的星座概念（例如[[Werner+ 2018]]的CAMELOT）被提出并开展了多项技术验证。本文系统总结了探路者任务GRBAlpha与VZLUSAT-2的完整观测结果，证实了低成本小型探测器能够以每周一个GRB的频率稳定运行，并达到与Fermi/GBM可比的灵敏度。展望未来，由数十颗类似卫星组成的星座将能以高覆盖率和高灵敏度实现全天伽马射线暂现源监测，有力推动引力波、中微子等多信使天文学发展。",
         "citations": [
           {
-            "label": "Gehrels+ 2004",
+            "label": "Cavallo and Rees 1978",
+            "authors": "Cavallo",
+            "year": "1978",
+            "title": "A qualitative study of cosmic fireballs and gamma -ray bursts.",
+            "ref": "G. Cavallo and M. J. Rees (1978). A qualitative study of cosmic fireballs and gamma -ray bursts. MNRAS 183, pp. 359–365.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/183.3.359",
+            "bibcode": "1978MNRAS.183..359C",
+            "url": "https://doi.org/10.1093/mnras/183.3.359",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Hurley 2020",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Ohno+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "label": "Abbott+ 2017",
+            "authors": "Abbott",
+            "year": "2017",
+            "title": "Gravitational Waves and Gamma-Rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A.",
+            "ref": "B. P. Abbott, R. Abbott, T. D. Abbott, S. Abraham, F. Acernese, K. Ackley, C. Adams, V. B. Adya, C. Affeldt, M. Agathos, K. Agatsuma, N. Aggarwal, O. D. Aguiar, L. Aiello, A. Ain, P. Ajith, T. Akutsu, G. Allen, A. Allocca, M. A. Aloy, P. A. Altin, A. Amato, A. Ananyeva, S. B. Anderson, W. G. Anderson, M. Ando, S. V. Angelova, S. Antier, S. Appert, K. Arai, K. Arai, Y. Arai, S. Araki, A. Araya, M. C. Araya, J. S. Areeda, M. Arène, N. Aritomi, N. Arnaud, K. G. Arun, S. Ascenzi, G. Ashton, Y. Aso, S. M. Aston, P. Astone, F. Aubin, P. Aufmuth, K. Aultoneal, C. Austin, V. Avendano, A. Avila-Alvarez, S. Babak, P. Bacon, F. Badaracco, M. K. M. Bader, S. W. Bae, Y. B. Bae, L. Baiotti, R. Bajpai, P. T. Baker, F. Baldaccini, G. Ballardin, S. W. Ballmer, S. Banagiri, J. C. Barayoga, S. E. Barclay, B. C. Barish, D. Barker, K. Barkett, S. Barnum, F. Barone, B. Barr, L. Barsotti, M. Barsuglia, D. Barta, J. Bartlett, M. A. Barton, I. Bartos, R. Bassiri, A. Basti, M. Bawaj, J. C. Bayley, M. Bazzan, B. Bécsy, M. Bejger, I. Belahcene, A. S. Bell, D. Beniwal, B. K. Berger, G. Bergmann, S. Bernuzzi, J. J. Bero, C. P. L. Berry, D. Bersanetti, A. Bertolini, J. Betzwieser, R. Bhandare, J. Bidler, I. A. Bilenko, S. A. Bilgili, G. Billingsley, J. Birch, R. Birney, O. Birnholtz, S. Biscans, S. Biscoveanu, A. Bisht, M. Bitossi, M. A. Bizouard, J. K. Blackburn, C. D. Blair, D. G. Blair, R. M. Blair, S. Bloemen, N. Bode, M. Boer, Y. Boetzel, G. Bogaert, F. Bondu, E. Bonilla, R. Bonnand, P. Booker, B. A. Boom, C. D. Booth, R. Bork, V. Boschi, S. Bose, K. Bossie, V. Bossilkov, J. Bosveld, Y. Bouffanais, A. Bozzi, C. Bradaschia, P. R. Brady, A. Bramley, M. Branchesi, J. E. Brau, T. Briant, J. H. Briggs, F. Brighenti, A. Brillet, M. Brinkmann, V. Brisson, P. Brockill, A. F. Brooks, D. A. Brown, D. D. Brown, S. Brunett, A. Buikema, T. Bulik, H. J. Bulten, A. Buonanno, D. Buskulic, C. Buy, R. L. Byer, M. Cabero, L. Cadonati, G. Cagnoli, C. Cahillane, J. C. Bustillo, T. A. Callister, E. Calloni, J. B. Camp, W. A. Campbell, M. Canepa, K. Cannon, K. C. Cannon, H. Cao, J. Cao, E. Capocasa, F. Carbognani, S. Caride, M. F. Carney, G. Carullo, J. C. Diaz, C. Casentini, S. Caudill, M. Cavaglià, F. Cavalier, R. Cavalieri, G. Cella, P. Cerdá-Durán, G. Cerretani, E. Cesarini, O. Chaibi, K. Chakravarti, S. J. Chamberlin, M. Chan, M. L. Chan, S. Chao, P. Charlton, E. A. Chase, E. Chassande-Mottin, D. Chatterjee, M. Chaturvedi, K. Chatziioannou, B. D. Cheeseboro, C. S. Chen, H. Y. Chen, and K. H. Chen (2017). Gravitational Waves and Gamma-Rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A. ApJ 848 (2), pp. L13.",
+            "arxiv": "1710.05834",
+            "doi": "10.3847/2041-8213/aa920c",
+            "bibcode": "2017ApJ...848L..13A",
+            "url": "https://arxiv.org/abs/1710.05834",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Werner+ 2018",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Werner",
+            "year": "2018",
+            "title": "CAMELOT: Cubesats Applied for MEasuring and LOcalising Transients mission overview",
+            "ref": "N. Werner, J. Řípa, A. Pál, M. Ohno, N. Tarcai, K. Torigoe, K. Tanaka, N. Uchida, L. Mészáros, G. Galgóczi, Y. Fukazawa, T. Mizuno, H. Takahashi, K. Nakazawa, Z. Várhegyi, T. Enoto, H. Odaka, Y. Ichinohe, Z. Frei, and L. Kiss (2018). CAMELOT: Cubesats Applied for MEasuring and LOcalising Transients mission overview. In Space Telescopes and Instrumentation 2018: Ultraviolet to Gamma Ray, J. A. den Herder, S. Nikzad, and K. Nakazawa (Eds.), Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series, Vol. 10699, pp. 106992P.",
+            "arxiv": "1806.03681",
+            "doi": "10.1117/12.2313764",
+            "bibcode": "2018SPIE10699E..2PW",
+            "url": "https://arxiv.org/abs/1806.03681",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1333,30 +1447,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17881",
-        "title_zh": "太阳、日光层和电离层物理学：探路者、先驱与SKAO展望",
+        "title_zh": "太阳、日球层与电离层物理学：探路者、先驱与SKAO展望",
         "team": "",
-        "tldr": "本文综合SKAO 16篇专题，阐述其从日冕到地球电离层全链条等离子体过程的变革性观测能力与科学目标。",
+        "tldr": "本文综述SKAO太阳、日球层和电离层科学工作组的16个专题，重点展示AA4设计基线在日冕加热、太阳爆发、日球层湍流及电离层响应等方面的变革性观测能力。",
         "review": "",
-        "highlight": "SKAO将首次实现50 MHz–15.4 GHz连续频谱的亚角秒成像与全斯托克斯偏振测量，灵敏度提升一个量级，有望突破日冕加热、CME磁场测量及空间天气预测等瓶颈。",
+        "highlight": "SKAO首次融合SKA1-Low与SKA1-Mid实现50 MHz–15.4 GHz无缝覆盖，提供亚角秒成像与全斯托克斯偏振，灵敏度提升一个量级，将使日冕磁学、CME磁场测量和日球层多尺度湍流诊断实现系统性突破。",
         "relation": "",
         "authors_en": "Pietro Zucca, Rohit Sharma, Divya Oberoi et al.",
         "corresponding_en": "",
-        "context_outlook": "过去十年，MWA和LOFAR等新一代射电阵已开始揭示日冕弱非热辐射[[Mondal+ 2020]]和精细结构[[Kontar+ 2017]]，但受限于动态范围和分辨率。SKAO凭借AA4的灵敏度与成像能力，将系统检验纳耀斑假说，并首次实现系统性的日冕磁场直接测量和CME内部磁场层析。与此同时，SKAO的观测将无缝连接日光层等离子体湍流研究，并通过高密度背景源观测推进日光层和电离层诊断。未来与DKIST [[Rimmele+ 2020]]、Solar Orbiter等多信使设施的协同，将构建起从太阳表面到地球空间的完整物理图像，驱动空间天气研究的革命性进步。",
+        "context_outlook": "日冕加热的纳耀斑假说自[[Parker 1988]]提出以来，近期MWA低频观测首次提供了弱势脉冲非热辐射的证据（[[Mondal+ 2020]]；[[Sharma+ 2022]]），为小尺度能量释放研究开辟新窗口。LOFAR等路径阵列已展示对射电暴精细结构成像光谱的诊断潜力（[[Kontar+ 2017]]）。SKAO凭借更高灵敏度与分辨率，将此类研究拓展至统计样本，直接检验物理模型，并结合Solar Orbiter、Parker Solar Probe等多任务协调，实现从太阳到地球空间的端到端实时监测。未来，正向建模与实时空间天气管道的完善、长期巡天以及社区工具的构建将成为推动该领域发展的关键。",
         "citations": [
           {
-            "label": "Mondal+ 2020",
+            "label": "Parker 1988",
+            "authors": "Parker",
+            "year": "1988",
+            "title": "Nanoflares and the solar X-ray corona",
+            "ref": "E. N. Parker (1988) Nanoflares and the solar X-ray corona. The Astrophysical Journal 330, pp. 474–479.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/166485",
+            "bibcode": "1988ApJ...330..474P",
+            "url": "https://doi.org/10.1086/166485",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mondal+ 2020",
+            "authors": "Mondal",
+            "year": "2020",
+            "title": "First radio evidence for impulsive heating contribution to the quiet solar corona",
+            "ref": "S. Mondal, D. Oberoi, and A. Mohan (2020) First radio evidence for impulsive heating contribution to the quiet solar corona. The Astrophysical Journal 893, pp. 28.",
+            "arxiv": "2004.04399",
+            "doi": "10.3847/2041-8213/ab8817",
+            "bibcode": "2020ApJ...895L..39M",
+            "url": "https://arxiv.org/abs/2004.04399",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sharma+ 2022",
+            "authors": "Sharma",
+            "year": "2022",
+            "title": "Detection of Ubiquitous Weak and Impulsive Nonthermal Emissions from the Solar Corona",
+            "ref": "R. Sharma, D. Oberoi, M. Battaglia, and S. Krucker (2022) Detection of Ubiquitous Weak and Impulsive Nonthermal Emissions from the Solar Corona. ApJ 937 (2), pp. 99.",
+            "arxiv": "2208.07147",
+            "doi": "10.3847/1538-4357/ac87fc",
+            "bibcode": "2022ApJ...937...99S",
+            "url": "https://arxiv.org/abs/2208.07147",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Kontar+ 2017",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Rimmele+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Kontar",
+            "year": "2017",
+            "title": "Imaging spectroscopy of solar radio burst fine structures",
+            "ref": "E. P. Kontar, S. Yu, A. A. Kuznetsov, A. G. Emslie, B. Alcock, N. L. S. Jeffrey, V. N. Melnik, N. H. Bian, and P. Subramanian (2017) Imaging spectroscopy of solar radio burst fine structures. Nature Communications 8, pp. 1515.",
+            "arxiv": "1708.06505",
+            "doi": "10.1038/s41467-017-01307-8",
+            "bibcode": "2017NatCo...8.1515K",
+            "url": "https://arxiv.org/abs/1708.06505",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1482,45 +1633,119 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17869",
-        "title_zh": "黑洞自旋-质量关联与气体星团矢量共振弛豫：GW231123 的起源？",
+        "title_zh": "气体星团中黑洞自旋-质量关联与矢量共振弛豫：GW231123的起源？",
         "team": "",
-        "tldr": "提出气体星团吸积模型产生黑洞自旋-质量关联与反排列，结合矢量共振弛豫解释 GW231123 的大质量、高自旋及倾角，获得强贝叶斯证据。",
+        "tldr": "该论文利用气体星团中黑洞吸积增长的自旋-质量关联和矢量共振弛豫机制解释GW231123事件，并通过贝叶斯证据给出验证。",
         "review": "",
-        "highlight": "首次将自旋-质量关联与 VRR 自旋取向分布联合，成功解释挑战质量间隙的 GW231123，为高自旋大质量双黑洞并合提供统一形成渠道。",
+        "highlight": "首次将自旋-质量关联与VRR联合解释LVK最重黑洞合并GW231123，给出强贝叶斯证据，为质量间隙内的超高自旋BBH形成提供统一通道。",
         "relation": "",
-        "authors_en": "Zacharias Roupas (Dipartimento di Fisica 'G. Occhialini', Università degli Studi di Milano-Bicocca; INFN, Sezione di Milano-Bicocca)",
+        "authors_en": "Z. Roupas (Dipartimento di Fisica “G. Occhialini”, Università degli Studi di Milano-Bicocca; Istituto Nazionale di Fisica Nucleare, Sezione di Milano-Bicocca)",
         "corresponding_en": "Zacharias Roupas",
-        "context_outlook": "对质量间隙黑洞（~60–130 M⊙）的形成长期挑战传统理论（[[Farmer+ 2019]]；[[Woosley+ 2021]]）。近期研究指出，致密星团形成初期残余气体吸积可使黑洞质量进入间隙并产生自旋-质量关联（[[Roupas 2025]]；[[Roupas 2026b]]）及自旋反排列（[[Roupas 2026a]]）。本文进一步引入矢量共振弛豫（[[Roupas+ 2017]]）推导自旋相对倾角分布，对 GW231123 进行贝叶斯分析，联合模型获得强证据，支持该形成渠道。未来高自旋大质量事件样本增长将有助于在种群层面检验该渠道与分层并合等其他机制的差异。",
+        "context_outlook": "在[[Roupas 2025]]和[[Roupas 2026b]]中已预测原星团中黑洞吸积残余气体可产生自旋-质量关联，且自旋倾向于反平行于轨道角动量[[Roupas 2026a]]。矢量共振弛豫（VRR）[[Rauch & Tremaine 1996]]可在致密星团中驱动轨道面取向[[Roupas+ 2017]]，即使无中心大质量黑洞也可能运作[[Meiron & Kocsis 2019]]。本文针对GW231123事件[[Abac+ 2025]]，验证其高质高自旋符合关联预测，且VRR平衡态能重现相对自旋倾斜角，联合贝叶斯因子达强证据。该通道为高质高自旋BBH提供统一解释，未来可借高质事件样本进行群体检验以区分阶层合并等场景；JWST等观测的原星团[[Adamo+ 2024]]为该机制提供潜在形成环境。",
         "citations": [
           {
-            "label": "Farmer+ 2019",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Woosley+ 2021",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Roupas 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Roupas",
+            "year": "2025",
+            "title": "Black hole mass function shift in proto-stellar clusters driven by gas accretion",
+            "ref": "Z. Roupas (2025) Black hole mass function shift in proto-stellar clusters driven by gas accretion. A&A 702, pp. A208. External Links: Document, 2509.08448, ADS entry Cited by: §1, §1, §1, §3, §5.",
+            "arxiv": "2509.08448",
+            "doi": "10.1051/0004-6361/202556434",
+            "bibcode": "2025A&A...702A.208R",
+            "url": "https://arxiv.org/abs/2509.08448",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Roupas 2026b",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Roupas",
+            "year": "2026",
+            "title": "Spin-up and spin distribution of stellar black holes grown by gas accretion in proto-stellar clusters",
+            "ref": "Z. Roupas (2026b) Spin-up and spin distribution of stellar black holes grown by gas accretion in proto-stellar clusters. A&A 709, pp. A5. External Links: Document, 2603.18857 Cited by: §1, §1, §1, Figure 1, Figure 1, §2, §2, §3, §5.",
+            "arxiv": "2603.18857",
+            "doi": "10.1051/0004-6361/202558435",
+            "bibcode": "2026A&A...709A...5R",
+            "url": "https://arxiv.org/abs/2603.18857",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Roupas 2026a",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Roupas",
+            "year": "2026",
+            "title": "Accretion-disk formation around orbiting stellar black holes in gaseous star clusters",
+            "ref": "Z. Roupas (2026a) Accretion-disk formation around orbiting stellar black holes in gaseous star clusters. External Links: 2607.12465, Link, ADS entry Cited by: §1, §1, §3, §5.",
+            "arxiv": "2607.12465",
+            "doi": "10.48550/arXiv.2607.12465",
+            "bibcode": "2026arXiv260712465R",
+            "url": "https://arxiv.org/abs/2607.12465",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Rauch & Tremaine 1996",
+            "authors": "Rauch",
+            "year": "1996",
+            "title": "Resonant relaxation in stellar systems",
+            "ref": "K. P. Rauch and S. Tremaine (1996) Resonant relaxation in stellar systems. New A 1 (2), pp. 149–170. External Links: Document, astro-ph/9603018, ADS entry Cited by: §1, §3.",
+            "arxiv": "astro-ph/9603018",
+            "doi": "10.1016/S1384-1076(96)00012-7",
+            "bibcode": "1996NewA....1..149R",
+            "url": "https://arxiv.org/abs/astro-ph/9603018",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Roupas+ 2017",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Roupas",
+            "year": "2017",
+            "title": "Isotropic-Nematic Phase Transitions in Gravitational Systems",
+            "ref": "Z. Roupas, B. Kocsis, and S. Tremaine (2017) Isotropic-Nematic Phase Transitions in Gravitational Systems. ApJ 842 (2), pp. 90. External Links: Document, 1701.03271, ADS entry Cited by: §1, §3, §3, §5.",
+            "arxiv": "1701.03271",
+            "doi": "10.3847/1538-4357/aa7141",
+            "bibcode": "2017ApJ...842...90R",
+            "url": "https://arxiv.org/abs/1701.03271",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Meiron & Kocsis 2019",
+            "authors": "Meiron",
+            "year": "2019",
+            "title": "Resonant Relaxation in Globular Clusters",
+            "ref": "Y. Meiron and B. Kocsis (2019) Resonant Relaxation in Globular Clusters. ApJ 878 (2), pp. 138. External Links: Document, 1806.07894, ADS entry Cited by: §1, §3.",
+            "arxiv": "1806.07894",
+            "doi": "10.3847/1538-4357/ab1b32",
+            "bibcode": "2019ApJ...878..138M",
+            "url": "https://arxiv.org/abs/1806.07894",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abac+ 2025",
+            "authors": "Abac",
+            "year": "2025",
+            "title": "GW231123: A Binary Black Hole Merger with Total Mass 190?265 M⊙",
+            "ref": "A. G. Abac, I. Abouelfettouh, F. Acernese, K. Ackley, C. Adamcewicz, S. Adhicary, D. Adhikari, N. Adhikari, R. X. Adhikari, V. K. Adkins, S. Afroz, A. Agapito, D. Agarwal, M. Agathos, N. Aggarwal, S. Aggarwal, O. D. Aguiar, I.-L. Ahrend, L. Aiello, A. Ain, P. Ajith, T. Akutsu, S. Albanesi, W. Ali, S. Al-Kershi, C. Alléné, A. Allocca, S. Al-Shammari, P. A. Altin, S. Alvarez-Lopez, W. Amar, O. Amarasinghe, A. Amato, F. Amicucci, C. Amra, A. Ananyeva, S. B. Anderson, W. G. Anderson, M. Andia, M. Ando, M. Andrés-Carcasona, T. Andrić, J. Anglin, S. Ansoldi, J. M. Antelis, S. Antier, M. Aoumi, E. Z. Appavuravther, S. Appert, S. K. Apple, K. Arai, C. A. Alvarez, A. Araya, M. C. Araya, M. A. Sedda, J. S. Areeda, N. Aritomi, F. Armato, S. Armstrong, N. Arnaud, M. Arogeti, S. M. Aronson, K. G. Arun, G. Ashton, Y. Aso, L. Asprea, M. Assiduo, S. Assis de Souza Melo, S. M. Aston, P. Astone, F. Attadio, F. Aubin, K. AultONeal, G. Avallone, E. A. Avila, S. Babak, C. Badger, S. Bae, S. Bagnasco, L. Baiotti, R. Bajpai, T. Baka, A. M. Baker, K. A. Baker, T. Baker, G. Baldi, N. Baldicchi, M. Ball, G. Ballardin, S. W. Ballmer, S. Banagiri, B. Banerjee, D. Bankar, T. M. Baptiste, P. Baral, M. Baratti, J. C. Barayoga, B. C. Barish, D. Barker, N. Barman, P. Barneo, F. Barone, B. Barr, L. Barsotti, M. Barsuglia, D. Barta, A. M. Bartoletti, M. A. Barton, I. Bartos, A. Basalaev, R. Bassiri, A. Basti, M. Bawaj, P. Baxi, J. C. Bayley, A. C. Baylor, P. A. Baynard, M. Bazzan, V. M. Bedakihale, F. Beirnaert, M. Bejger, D. Belardinelli, A. S. Bell, D. S. Bellie, L. Bellizzi, W. Benoit, I. Bentara, J. D. Bentley, M. Ben Yaala, S. Bera, F. Bergamin, B. K. Berger, S. Bernuzzi, M. Beroiz, C. P. L. Berry, D. Bersanetti, T. Bertheas, A. Bertolini, J. Betzwieser, D. Beveridge, G. Bevilacqua, N. Bevins, R. Bhandare, R. Bhatt, D. Bhattacharjee, S. Bhattacharyya, S. Bhaumik, S. Bhagwat, V. Biancalana, A. Bianchi, I. A. Bilenko, G. Billingsley, A. Binetti, S. Bini, C. Binu, S. Biot, O. Birnholtz, S. Biscoveanu, A. Bisht, M. Bitossi, M.-A. Bizouard, S. Blaber, J. K. Blackburn, L. A. Blagg, C. D. Blair, D. G. Blair, N. Bode, N. Boettner, G. Boileau, M. Boldrini, G. N. Bolingbroke, A. Bolliand, L. D. Bonavena, R. Bondarescu, F. Bondu, E. Bonilla, M. S. Bonilla, A. Bonino, R. Bonnand, A. Borchers, S. Borhanian, V. Boschi, S. Bose, V. Bossilkov, Y. Bothra, A. Boudon, L. Bourg, M. Boyle, A. Bozzi, C. Bradaschia, P. R. Brady, A. Branch, M. Branchesi, I. Braun, T. Briant, A. Brillet, M. Brinkmann, P. Brockill, E. Brockmueller, and A. F. Brooks (2025) GW231123: A Binary Black Hole Merger with Total Mass 190?265 M⊙. ApJ 993 (1), pp. L25. External Links: Document, 2507.08219, ADS entry Cited by: §1, §2, §2, §4.",
+            "arxiv": "2507.08219",
+            "doi": "10.3847/2041-8213/ae0c9c",
+            "bibcode": "2025ApJ...993L..25A",
+            "url": "https://arxiv.org/abs/2507.08219",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Adamo+ 2024",
+            "authors": "Adamo",
+            "year": "2024",
+            "title": "Bound star clusters observed in a lensed galaxy 460 Myr after the Big Bang",
+            "ref": "A. Adamo, L. D. Bradley, E. Vanzella, A. Claeyssens, B. Welch, J. M. Diego, G. Mahler, M. Oguri, K. Sharon, Abdurro’uf, T. Y. Hsiao, X. Xu, M. Messa, A. E. Lassen, E. Zackrisson, G. Brammer, D. Coe, V. Kokorev, M. Ricotti, A. Zitrin, S. Fujimoto, A. K. Inoue, T. Resseguier, J. R. Rigby, Y. Jiménez-Teja, R. A. Windhorst, T. Hashimoto, and Y. Tamura (2024) Bound star clusters observed in a lensed galaxy 460 Myr after the Big Bang. Nature 632 (8025), pp. 513–516. External Links: Document, 2401.03224, ADS entry Cited by: §4, §5.",
+            "arxiv": "2401.03224",
+            "doi": "10.1038/s41586-024-07703-7",
+            "bibcode": "2024Natur.632..513A",
+            "url": "https://arxiv.org/abs/2401.03224",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1696,50 +1921,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17815",
-        "title_zh": "相位分辨WISE W1–W2诊断揭示UGC 11487的多区域核周尘埃响应",
+        "title_zh": "利用相位分辨的WISE W1–W2诊断揭示UGC 11487的多区域核周尘埃响应",
         "team": "",
-        "tldr": "对MIR选中的TDE候选体UGC 11487进行相位分辨W1–W2分析，发现单一尘埃组分模型被强烈拒绝，揭示其红外余辉需要多区域核周尘埃响应。",
+        "tldr": "本文对MIR选TDE候选体UGC 11487进行十年WISE W1/W2相位分辨分析，发现其尘埃回波呈现延迟、磁滞和系统冷却，证实需要多区域尘埃结构而非单一自相似响应。",
         "review": "",
-        "highlight": "首次对MIR选中的TDE候选体开展相位分辨W1–W2诊断，通过颜色回滞、峰值延迟和正通量中心偏移等证据，强烈拒绝单一尘埃壳模型（ΔBIC=281.7），揭示结构化尘埃响应，为研究被遮蔽核瞬变提供新工具。",
+        "highlight": "首次对MIR选TDE候选体实施相位分辨W1–W2诊断，发现颜色磁滞、W2延迟与有效温度从~900 K降至~500 K；结合射电观测，给出亚秒差距尺度的尘埃再处理证据，为被遮挡的吸积核瞬变提供了新探针。",
         "relation": "",
-        "authors_en": "I. O. Izviekova (Main Astronomical Observatory of the NAS of Ukraine), O. V. Kompaniiets (Main Astronomical Observatory of the NAS of Ukraine), I. B. Vavilova (Main Astronomical Observatory of the NAS of Ukraine)",
+        "authors_en": "I. O. Izviekova (Main Astronomical Observatory of the NAS of Ukraine; International Centre for Astronomical, Medical and Ecological Research), O. V. Kompaniiets (Main Astronomical Observatory of the NAS of Ukraine), I. B. Vavilova (Main Astronomical Observatory of the NAS of Ukraine)",
         "corresponding_en": "",
-        "context_outlook": "MIR回波研究最初集中在光学选择的TDE上，如[[van Velzen+ 2016]]和[[Jiang+ 2016]]展示了WISE颜色变化可约束尘埃温度和尺度。近年来，[[Masterson+ 2024]]和[[Necker+ 2025]]通过红外选发现了大量TDE候选体，表明存在被遮蔽的TDE群。本研究首次对UGC 11487进行相位分辨W1–W2诊断，发现单一尘埃组分无法解释数据，强烈支持结构化多区域响应，这与[[Reynolds+ 2026]]和[[Wu+ 2025]]提出的团块或扩展尘埃结构一致。未来，结合高空间分辨率的射电观测（如[[Golay+ 2025]]对UGC 11487的VLBA观测）和更大样本的MIR回波研究，有望系统刻画核区尘埃的分布与演化，并为区分TDE与AGN活动提供新途径。",
+        "context_outlook": "UGC 11487最初由WISE瞬变管线作为MIR选TDE候选体识别（[[Masterson+ 2024]]），并被列入Flaires尘埃回波星表（[[Necker+ 2025]]）。过去对光学选TDE的WISE研究已揭示尘埃回波的延迟和温度演化（[[Jiang+ 2016]]、[[van Velzen+ 2016]]），但对缺乏光学驱动源的被遮挡事件，仅依赖内部W1–W2相位分辨诊断仍属首次。本文将相位分辨的颜色-星等、磁滞回线和时延分析相结合，证实UGC 11487的尘埃响应需要多温度区域；同时，射电观测（[[Golay+ 2025]]）提供的亚秒差距尺度与MIR时标吻合，暗示MIR-射电联合可追踪核区出流与尘埃的相互作用。未来随着红外巡天灵敏度提升和射电干涉阵高分辨观测的普及，这一方法可推广至更多被遮挡的TDE候选体，为理解星系核短暂增亮阶段的尘埃再处理过程提供系统框架。",
         "citations": [
           {
-            "label": "van Velzen+ 2016",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Jiang+ 2016",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Masterson+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Masterson",
+            "year": "2024",
+            "title": "A New Population of Mid-infrared-selected Tidal Disruption Events: Implications for Tidal Disruption Event Rates and Host Galaxy Properties",
+            "ref": "Masterson, M., De, K., Panagiotou, C., Kara, E., Arcavi, I., Eilers, A., Frostig, D., Gezari, S., Grotova, I., Liu, Z., Malyali, A., Meisner, A. M., Merloni, A., Newsome, M., Rau, A., Simcoe, R. A., and van Velzen, S. (2024). A New Population of Mid-infrared-selected Tidal Disruption Events: Implications for Tidal Disruption Event Rates and Host Galaxy Properties. Apj, 961(2), pp. 211. External Links: Document, 2401.01403. Cited by: §1, §1, §1, §2, §5.1, footnote 1.",
+            "arxiv": "2401.01403",
+            "doi": "10.3847/1538-4357/ad18bb",
+            "bibcode": "2024ApJ...961..211M",
+            "url": "https://arxiv.org/abs/2401.01403",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Necker+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Necker",
+            "year": "2025",
+            "title": "Flaires: A Comprehensive Catalog of Dust-Echo-like Infrared Flares",
+            "ref": "Necker, J., Graikou, E., Kowalski, M., Franckowiak, A., Nordin, J., Pernice, T., van Velzen, S., and Veres, P. M. (2025). Flaires: A Comprehensive Catalog of Dust-Echo-like Infrared Flares. A&A, 695, pp. A228. External Links: Document, 2407.01039. Cited by: §1, §1, §2, §5.1, footnote 1.",
+            "arxiv": "2407.01039",
+            "doi": "10.1051/0004-6361/202451340",
+            "bibcode": "2025A&A...695A.228N",
+            "url": "https://arxiv.org/abs/2407.01039",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Reynolds+ 2026",
-            "arxiv": "",
-            "doi": ""
+            "label": "Jiang+ 2016",
+            "authors": "Jiang",
+            "year": "2016",
+            "title": "The WISE Detection of an Infrared Echo in Tidal Disruption Event ASASSN-14li",
+            "ref": "Jiang, N., Dou, L., Wang, T., Yang, C., Lyu, J., and Zhou, H. (2016). The WISE Detection of an Infrared Echo in Tidal Disruption Event ASASSN-14li. Apj, 828(1), pp. L14. External Links: Document, 1605.04640. Cited by: Appendix B, §1, §3.4, §5.1.",
+            "arxiv": "1605.04640",
+            "doi": "10.3847/2041-8205/828/1/L14",
+            "bibcode": "2016ApJ...828L..14J",
+            "url": "https://arxiv.org/abs/1605.04640",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Wu+ 2025",
+            "label": "van Velzen+ 2016",
+            "authors": "van Velzen",
+            "year": "2016",
+            "title": "Discovery of Transient Infrared Emission from Dust Heated by Stellar Tidal Disruption Flares",
+            "ref": "van Velzen, S., Mendez, A. J., Krolik, J. H., and Gorjian, V. (2016). Discovery of Transient Infrared Emission from Dust Heated by Stellar Tidal Disruption Flares. Apj, 829(1), pp. 19. External Links: Document, 1603.07733. Cited by: Appendix B, §1, §3.4.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/0004-637x/829/1/19",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/0004-637x/829/1/19",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Golay+ 2025",
+            "authors": "Golay",
+            "year": "2025",
+            "title": "Radio Emission from the Infrared Tidal Disruption Event WTP14adeqka: The First Directly Resolved Delayed Outflow from a TDE",
+            "ref": "Golay, W. W., Berger, E., Cendes, Y., Masterson, M., Polisensky, E., Mutel, R. L., Blanchard, P. K., Kumar, H., Margutti, R., Drout, M., Panagiotou, C., De, K., and Kara, E. (2025). Radio Emission from the Infrared Tidal Disruption Event WTP14adeqka: The First Directly Resolved Delayed Outflow from a TDE. arXiv e-prints, pp. arXiv:2508.16756. External Links: Document, 2508.16756. Cited by: §1, §2, §4.5, §5.5, §5.5, §5.6, item 5, §7, footnote 1.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -1775,35 +2030,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17659",
-        "title_zh": "潮汐瓦解事件中的时变吸积盘：长期光变曲线",
+        "title_zh": "含时吸积盘在潮汐瓦解事件中的长期光变曲线",
         "team": "",
-        "tldr": "在时变吸积盘模型中引入修正粘滞性（μ）和盘风（f_w），系统揭示 μ 可调控辐射压不稳定性，从而解释各类 TDE 光变曲线。",
+        "tldr": "本文在 Guo & Qiao (2026) 模型基础上引入粘滞指数 μ 和盘风参数 fw，采用更真实的回落率，系统研究了含时吸积盘光变行为，发现 μ 调控辐射压不稳定性，μ<0.4 时消除不稳定性，μ>0.4 时随 α、β 不同产生振荡或‘衰减至平坦’光变，并成功拟合了多例 TDE 的光学/紫外光变曲线。",
         "review": "",
-        "highlight": "引入粘滞指数 μ 统一调控辐射压不稳定性：μ<0.4 时完全抑制不稳定性，μ>0.4 时光变可呈振荡或衰减拉平型，为 TDE 光变多样性提供统一建模框架。",
+        "highlight": "首次通过单一参数 μ 统一调制辐射压不稳定性的存在性及幅度，实现了从剧烈振荡到完全稳定的过渡，并成功解释不同衰减幅度的观测光变。",
         "relation": "",
-        "authors_en": "Chenlei Guo (National Astronomical Observatories, Chinese Academy of Sciences; University of Chinese Academy of Sciences), Erlin Qiao (National Astronomical Observatories, Chinese Academy of Sciences; University of Chinese Academy of Sciences)",
+        "authors_en": "C. Guo (National Astronomical Observatories, Chinese Academy of Sciences, Beijing 100101, China; School of Astronomy and Space Science, University of Chinese Academy of Sciences, Beijing 100049, China), E. Qiao (National Astronomical Observatories, Chinese Academy of Sciences, Beijing 100101, China; School of Astronomy and Space Science, University of Chinese Academy of Sciences, Beijing 100049, China)",
         "corresponding_en": "Erlin Qiao",
-        "context_outlook": "本文在 [[Guo & Qiao 2026]] 的时变盘模型基础上，引入修正粘滞性指数 μ 和盘风强度 f_w，并采用 [[Guillochon & Ramirez-Ruiz 2013]] 的更现实回落率。过去已提出辐射压不稳定性可能塑造 TDE 光变（如 [[Shen & Matzner 2014]]），而另一些研究通过不同粘滞描述消除不稳定性（如 [[Mummery & Balbus 2020]]）。本工作系统展示了 μ 可调控不稳定性幅度甚至完全抑制，从而统一产生振荡型和衰减变平型光变曲线。未来该模型可结合磁场或广义相对论效应，并用于多波段 TDE 样本拟合，为理解盘粘滞物理提供有力约束。",
+        "context_outlook": "含时吸积盘的演化一直是解释 TDE 光变的重要工具（[[Mummery+ 2020]]; [[Guo+ 2026]]）。辐射压不稳定性作为盘物理的核心预测（[[Lightman+ 1974]]），在 TDE 环境下可显著调制光变（[[Shen+ 2014]]）。本文升级了 [[Guo+ 2026]] 的模型，通过引入粘滞指数 μ 与盘风参数，并采用 [[Guillochon+ 2013]] 的回落率，首次系统揭示了 μ<0.4 时辐射压不稳定性被彻底去除（与 [[Kato+ 2008]] 一致），而 μ>0.4 时视 α 和 β 不同可产生振荡或‘衰减至平坦’光变。该框架成功拟合了 AT2018dyb 等源的长期光学/UV 光变，表明单一吸积盘演化模型可统一解释不同衰减幅度的观测。未来通过构建全面的参数空间库，有望实现 TDE 光变的全局拟合并更精细地区分物理过程。",
         "citations": [
           {
-            "label": "Guo & Qiao 2026",
-            "arxiv": "",
-            "doi": ""
+            "label": "Mummery+ 2020",
+            "authors": "Mummery",
+            "year": "2020",
+            "title": "The spectral evolution of disc dominated tidal disruption events",
+            "ref": "A. Mummery and S. A. Balbus (2020)\nThe spectral evolution of disc dominated tidal disruption events\n.\nMNRAS\n492\n(\n4\n),\npp. 5655–5674\n.\nExternal Links:\nDocument\n,\n1912.06577\nCited by:\n§I\n,\n§I\n,\n§V.1\n,\n§V.2\n.",
+            "arxiv": "1912.06577",
+            "doi": "10.1093/mnras/staa192",
+            "bibcode": "2020MNRAS.492.5655M",
+            "url": "https://arxiv.org/abs/1912.06577",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Guillochon & Ramirez-Ruiz 2013",
-            "arxiv": "",
-            "doi": ""
+            "label": "Guo+ 2026",
+            "authors": "Guo",
+            "year": "2026",
+            "title": "Light curves of time-dependent accretion disks in tidal disruption events",
+            "ref": "C. Guo and E. Qiao (2026)\nLight curves of time-dependent accretion disks in tidal disruption events\n.\nThe Astrophysical Journal\n998\n(\n2\n),\npp. 193\n.\nExternal Links:\nDocument\n,\nLink\nCited by:\n§I\n,\n§I\n,\n§I\n.",
+            "arxiv": "2509.16544",
+            "doi": "10.3847/1538-4357/ae3aa0",
+            "bibcode": "2026ApJ...998..193G",
+            "url": "https://arxiv.org/abs/2509.16544",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Shen & Matzner 2014",
+            "label": "Lightman+ 1974",
+            "authors": "Lightman",
+            "year": "1974",
+            "title": "Black Holes in Binary Systems: Instability of Disk Accretion",
+            "ref": "A. P. Lightman and D. M. Eardley (1974)\nBlack Holes in Binary Systems: Instability of Disk Accretion\n.\nApJ\n187\n,\npp. L1\n.\nExternal Links:\nDocument\nCited by:\n§I\n.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/181377",
+            "bibcode": "1974ApJ...187L...1L",
+            "url": "https://doi.org/10.1086/181377",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Mummery & Balbus 2020",
+            "label": "Shen+ 2014",
+            "authors": "Shen",
+            "year": "2014",
+            "title": "Evolution of Accretion Disks in Tidal Disruption Events",
+            "ref": "R. Shen and C. D. Matzner (2014)\nEvolution of Accretion Disks in Tidal Disruption Events\n.\nApJ\n784\n(\n2\n),\npp. 87\n.\nExternal Links:\nDocument\n,\n1305.5570\nCited by:\n§I\n.",
+            "arxiv": "1305.5570",
+            "doi": "10.1088/0004-637X/784/2/87",
+            "bibcode": "2014ApJ...784...87S",
+            "url": "https://arxiv.org/abs/1305.5570",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Guillochon+ 2013",
+            "authors": "Guillochon",
+            "year": "2013",
+            "title": "Hydrodynamical Simulations to Determine the Feeding Rate of Black Holes by the Tidal Disruption of Stars: The Importance of the Impact Parameter and Stellar Structure",
+            "ref": "J. Guillochon and E. Ramirez-Ruiz (2013)\nHydrodynamical Simulations to Determine the Feeding Rate of Black Holes by the Tidal Disruption of Stars: The Importance of the Impact Parameter and Stellar Structure\n.\nApJ\n767\n(\n1\n),\npp. 25\n.\nExternal Links:\nDocument\n,\n1206.2350\nCited by:\n§II.2\n,\n§II.2\n,\n§II.2\n,\n§III.3.1\n,\n§III.3.1\n.",
+            "arxiv": "1206.2350",
+            "doi": "10.1088/0004-637X/767/1/25",
+            "bibcode": "2013ApJ...767...25G",
+            "url": "https://arxiv.org/abs/1206.2350",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Kato+ 2008",
+            "authors": "Kato",
+            "year": "2008",
+            "title": "Black-Hole Accretion Disks — Towards a New Paradigm —",
+            "ref": "S. Kato, J. Fukue, and S. Mineshige (2008)\nBlack-Hole Accretion Disks — Towards a New Paradigm —\n.\nCited by:\n§I\n.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "2008bhad.book.....K",
+            "url": "https://ui.adsabs.harvard.edu/abs/2008bhad.book.....K",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1889,60 +2202,106 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17682",
-        "title_zh": "X级耀斑不对称非热环的双视角微波与硬X射线约束",
+        "title_zh": "双视角微波与硬X射线约束下X级耀斑中的非对称非热环",
         "team": "",
-        "tldr": "利用地球和Solar Orbiter正背面双视角观测，分析X级耀斑的不对称环，揭示能量依赖电子捕获和沉降过程。",
+        "tldr": "利用SRH微波成像、CBSmm和SolO/STIX数据，从地球正背双视角诊断不对称磁环的电子捕获过程，揭示微波与HXR辐射的相反时序和间歇加速脉动机制。",
         "review": "",
-        "highlight": "首次结合正面与背面视角，通过微波成像和硬X射线时序刻画不对称磁场中粒子输运；发现微波与硬X射线脉冲相位差和光谱差异，排除了MHD波调制。",
+        "highlight": "首次结合多频微波成像与双视角HXR，发现微波谱“软—硬—更硬”与HXR“软—硬—软”的差异，自洽解释为能量依赖捕获；脉动特征指向间歇性粒子加速而非MHD波调制。",
         "relation": "",
-        "authors_en": "Ruifei Huang (Institute of Frontier and Interdisciplinary Science, Shandong University), Yao Chen (Institute of Frontier and Interdisciplinary Science, Shandong University), Victor Melnikov (Central Astronomical Observatory at Pulkovo, Russian Academy of Sciences) et al.",
+        "authors_en": "Ruifei Huang (Center for Integrated Research on Space Science, Astronomy, and Physics, Shandong University), Yao Chen (Center for Integrated Research on Space Science, Astronomy, and Physics, Shandong University), Victor Melnikov (Central Astronomical Observatory at Pulkovo, Russian Academy of Sciences), et al.",
         "corresponding_en": "Yao Chen, Victor Melnikov",
-        "context_outlook": "多视角非热观测是诊断耀斑三维磁场的关键手段。[[Ryan+ 2024]]和[[Collier+ 2024]]曾利用ASO-S/SolO及EOVSA/SolO进行小角度双视角研究，揭示了环结构和准周期振荡；[[Kaltman+ 2026]]进一步结合微波和硬X射线成像推导了磁场强度等参数。本文首次采用正面（地球）与背面（SolO）的独特几何构型，从微波成像光谱和硬X射线总谱的联合分析，约束了不对称环中能量依赖的电子捕获和沉降。未来，随着[[Gan+ 2019]]的ASO-S、[[Müller+ 2020]]的SolO与[[Altyntsev+ 2020]]的SRH、[[Gary+ 2018]]的EOVSA等设备的长期协同，多视角多波段联合诊断将成为耀斑能量释放和粒子加速研究的标配。同时，[[Fleishman+ 2020]]的微波磁场反演与[[Guo+ 2016]]的NLFFF外推结合，有望对三维磁重联提供更精确的观测约束。",
+        "context_outlook": "以往对耀斑非热电子的多视角研究主要依赖单视角微波和HXR（[[Dulk 1985]]；[[White+ 2011]]），近期立体HXR观测（[[Ryan+ 2024]]）和微波联合诊断（[[Collier+ 2024]]；[[Kaltman+ 2026]]）开始揭示三维结构，[[Fleishman+ 2020]]的GSFIT与[[Guo+ 2016]]的NLFFF外推则为磁场反演提供了关键工具。本文利用独特的地球–SolO正背视角，结合SRH成像与STIX数据，揭示了不对称环的能量依赖电子俘获与间歇加速驱动脉动的物理图像。未来，随着多视角射电日像仪（如MUSER、EOVSA）与HXR探测器的协同加密，以及机器学习方法的引入，将实现耀斑三维磁场与粒子输运的高精度实时重建。",
         "citations": [
           {
-            "label": "Ryan+ 2024",
+            "label": "Dulk 1985",
+            "authors": "Dulk",
+            "year": "1985",
+            "title": "",
+            "ref": "Dulk, G. A. 1985, ARA&A, 23, 169, doi:10.1146/annurev.aa.23.090185.001125",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1146/annurev.aa.23.090185.001125",
+            "bibcode": "1985ARA&A..23..169D",
+            "url": "https://doi.org/10.1146/annurev.aa.23.090185.001125",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "White+ 2011",
+            "authors": "White",
+            "year": "2011",
+            "title": "",
+            "ref": "White, S. M., Benz, A. O., Christe, S., & et al. 2011, SSRv, 159, 225, doi:10.1007/s11214-010-9708-1",
+            "arxiv": "",
+            "doi": "10.1007/s11214-010-9708-1",
+            "bibcode": "",
+            "url": "https://doi.org/10.1007/s11214-010-9708-1",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Ryan+ 2024",
+            "authors": "Ryan",
+            "year": "2024",
+            "title": "",
+            "ref": "Ryan, D. F., Massa, P., Battaglia, A. F., et al. 2024, Solar Physics, 299, 114",
+            "arxiv": "",
+            "doi": "10.1007/s11207-024-02341-8",
+            "bibcode": "",
+            "url": "https://doi.org/10.1007/s11207-024-02341-8",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Collier+ 2024",
+            "authors": "Collier",
+            "year": "2024",
+            "title": "",
+            "ref": "Collier, H., Hayes, L. A., Yu, S., & et al. 2024, A&A, 684, A215, doi:10.1051/0004-6361/202348652",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.5281/zenodo.10480704",
+            "bibcode": "2024zndo..10480704C",
+            "url": "https://doi.org/10.5281/zenodo.10480704",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Kaltman+ 2026",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Gan+ 2019",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Müller+ 2020",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Altyntsev+ 2020",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Gary+ 2018",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Kaltman",
+            "year": "2026",
+            "title": "",
+            "ref": "Kaltman, T., Yu, S., Fleishman, G. D., & Ryan, D. F. 2026, Astronomy & Astrophysics, 707, A158",
+            "arxiv": "2602.11853",
+            "doi": "10.1051/0004-6361/202557507",
+            "bibcode": "2026A&A...707A.158K",
+            "url": "https://arxiv.org/abs/2602.11853",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Fleishman+ 2020",
+            "authors": "Fleishman",
+            "year": "2020",
+            "title": "",
+            "ref": "Fleishman, G. D., Gary, D. E., Chen, B., et al. 2020, Science, 367, 278, doi:10.1126/science.aax6874",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1126/science.aax6874",
+            "bibcode": "2020Sci...367..278F",
+            "url": "https://doi.org/10.1126/science.aax6874",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Guo+ 2016",
+            "authors": "Guo",
+            "year": "2016",
+            "title": "",
+            "ref": "Guo, Y., Xia, C., Keppens, R., & Valori, G. 2016, ApJ, 828, 82, doi:10.3847/0004-637X/828/2/82",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1126/science.aad0832",
+            "bibcode": "2016Sci...351..361G",
+            "url": "https://doi.org/10.1126/science.aad0832",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2024,50 +2383,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17685",
-        "title_zh": "连续M级和C级耀斑激发的冕环晃动振荡",
+        "title_zh": "M级和C级连续耀斑激发的冕环晃动振荡",
         "team": "",
-        "tldr": "首次系统对比同一冕环中由连续M和C级耀斑触发的晃动振荡，分析耀斑强度对振荡周期、衰减时间等参数的影响。",
+        "tldr": "利用SDO/AIA探测由连续M、C级耀斑在同一冕环中激发的15次晃动振荡，研究耀斑强度对振荡特性的影响。",
         "review": "",
-        "highlight": "利用难得的连续耀斑事件，揭示了耀斑能量对冕环波动的调控作用；发现94 Å通道的衰减时间并非总是长于131 Å，挑战了此前认知；基于15个事件统计了周期、衰减时间与环长之间的标度关系。",
+        "highlight": "首次在相同冕环中记录到连续M和C级耀斑触发的晃动振荡，揭示周期、阻尼时间等随单个耀斑显著变化，为耀斑能量注入与环物理状态耦合提供了新线索。",
         "relation": "",
-        "authors_en": "Hitesh Paliwal (Aryabhatta Research Institute of Observational Sciences, Indian Institute of Technology Roorkee), S. Krishna Prasad (Aryabhatta Research Institute of Observational Sciences), M. V. Sunil Krishna (Indian Institute of Technology Roorkee, Centre for Space Science and Technology)",
-        "corresponding_en": "",
-        "context_outlook": "慢磁声波和冕环中的晃动振荡研究可追溯至 [[Berghmans+ 2001]] 首先报道的热环内等离子体往复运动，[[Kumar+ 2013]] 利用 SDO/AIA 给出清晰观测，并由 [[Reale 2016]] 正式命名为“晃动振荡”。此后，[[Ofman+ 2002]] 提出热传导是主要阻尼机制，[[Wang+ 2018]] 和 [[Krishna Prasad+ 2021]] 分别从模拟和观测上证实了晃动振荡可逐渐演化为驻波。最近 [[Karakotov+ 2024]] 统计了由 M 级耀斑触发的振荡，揭示部分事件周期明显短于以往 C 级耀斑触发情形。本研究在此背景下，首次系统对比了同一冕环中由连续 M 和 C 级耀斑激发的晃动振荡，发现耀斑强度显著影响振荡周期和衰减时间，且 94 Å 通道的衰减时间并非始终长于 131 Å 通道，挑战了传统多温解释。展望未来，结合多波段快速成像和高精度 DEM 分析，以及三维 MHD 数值模拟，可望厘清不同能级耀斑如何改变冕环热力学状态，并利用晃动振荡作为冕震学探针诊断局部等离子体参数和能量输运过程。",
+        "authors_en": "Hitesh Paliwal (Aryabhatta Research Institute of Observational Sciences, Indian Institute of Technology Roorkee), S. Krishna Prasad (Aryabhatta Research Institute of Observational Sciences), M. V. Sunil Krishna (Indian Institute of Technology Roorkee)",
+        "corresponding_en": "S. Krishna Prasad",
+        "context_outlook": "冕环晃动振荡（sloshing oscillation）被发现以来，[[Kumar+ 2013]]用AIA观测到清晰的单次C级耀斑事件，[[Karakotov+ 2024]]统计了M级耀斑样本，[[Krishna Prasad and Van Doorsselaere 2021]]则揭示晃动可向驻波演化。此前缺乏同一环对不同等级耀斑的响应对比，本文通过连续M/C耀斑事件首次展示振荡属性如何随耀斑变化，为理解耀斑-振荡耦合和阻尼机制多样性提供了观测基础。未来需更大样本统计及三维MHD模拟，以揭示晃动振荡的能量耗散路径和耀斑强度依赖。",
         "citations": [
           {
-            "label": "Berghmans+ 2001",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Kumar+ 2013",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Reale 2016",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Ofman+ 2002",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Wang+ 2018",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Krishna Prasad+ 2021",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Kumar",
+            "year": "2013",
+            "title": "Solar Dynamics Observatory/Atmospheric Imaging Assembly Observations of a Reflecting Longitudinal Wave in a Coronal Loop",
+            "ref": "P. Kumar, D. E. Innes, and B. Inhester (2013) Solar Dynamics Observatory/Atmospheric Imaging Assembly Observations of a Reflecting Longitudinal Wave in a Coronal Loop . ApJ 779 (1), pp. L7 . External Links: Document , 1409.3896 Cited by: §I , §I , §II , Figure 3 , Figure 4 , §IV , §IV .",
+            "arxiv": "1409.3896",
+            "doi": "10.1088/2041-8205/779/1/L7",
+            "bibcode": "2013ApJ...779L...7K",
+            "url": "https://arxiv.org/abs/1409.3896",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Karakotov+ 2024",
+            "authors": "Karakotov",
+            "year": "2024",
+            "title": "Sloshing Oscillations in Hot Coronal Loops Associated with M-Class Flares",
+            "ref": "R. Karakotov, A. Kuznetsov, S. Anfinogentov, and V. M. Nakariakov (2024) Sloshing Oscillations in Hot Coronal Loops Associated with M-Class Flares . Sol. Phys. 299 (12), pp. 163 . External Links: Document Cited by: §I , §II , Figure 4 , §IV , §IV , item 3 .",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1007/s11207-024-02404-w",
+            "bibcode": "2024SoPh..299..163K",
+            "url": "https://doi.org/10.1007/s11207-024-02404-w",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Krishna Prasad and Van Doorsselaere 2021",
+            "authors": "Krishna Prasad",
+            "year": "2021",
+            "title": "Compressive Oscillations in Hot Coronal Loops: Are Sloshing Oscillations and Standing Slow Waves Independent?",
+            "ref": "S. Krishna Prasad and T. Van Doorsselaere (2021) Compressive Oscillations in Hot Coronal Loops: Are Sloshing Oscillations and Standing Slow Waves Independent? . ApJ 914 (2), pp. 81 . External Links: Document , 2104.12038 Cited by: §I , §II , §III , Figure 3 , Figure 4 , §IV , §IV , §IV , §IV , item 2 .",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/abfb01",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/abfb01",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -2208,28 +2571,65 @@
         "paper_id": "arxiv:2607.17556",
         "title_zh": "超越自旋：QCD磁星",
         "team": "",
-        "tldr": "提出统一框架：反常X射线脉冲星、软伽马重复暴、超亮超新星、亮快蓝暂现源和快速射电暴均由大质量中子星夸克解禁形成的QCD磁星驱动，其磁场强度由质量而非自旋决定。",
+        "tldr": "本文提出一个统一框架，用大质量中子星核心的夸克解禁及QCD铁磁性来解释磁星磁场起源，将AXPs、SGRs、SLSNe-I、LFBOTs和FRBs归为同一QCD磁星在不同环境和演化阶段的表现，并通过贝叶斯种群合成重现观测率。",
         "review": "",
-        "highlight": "将磁星超强磁场的起源从传统快速自旋机制转变为质量触发的夸克-胶子动力学（QCD）相变，仅用两个参数（临界质量与临界周期）即统一解释了多种高能暂现现象。模型预言了可观测的过量色散/旋转量及孤立中子星千新星，为检验致密物质相变提供了直接探针。",
+        "highlight": "亮点：将磁星磁场起源从自旋转向质量，首次利用夸克物质铁磁性自发产生~10^15 G表面磁场；用一个统一框架自然解释多种高能暂现源，并给出包括孤立中子星千新星、FRB X射线宁静等可检验预言。",
         "relation": "",
-        "authors_en": "Rachid Ouyed (Department of Physics and Astronomy, University of Calgary, Canada)",
+        "authors_en": "Rachid Ouyed (Department of Physics and Astronomy, University of Calgary)",
         "corresponding_en": "Rachid Ouyed",
-        "context_outlook": "传统磁星模型认为超强磁场由快速旋转中子星通过发电机效应产生（[[Duncan & Thompson 1992]]），但观测到的磁星诞生率与快速旋转中子星比例不符，且相关超新星遗迹缺乏高速特征（[[Vink & Kuiper 2006]]）。快速射电暴（[[Lorimer+ 2007]]）的发现进一步推动了磁星作为中央引擎的研究。本文摒弃自旋限制，提出大质量中子星在自转减慢时触发的夸克解禁产生QCD磁星，其统一框架能同时解释AXP/SGR、SLSN-I、LFBOT与FRB等多类暂现源。未来随着FRB样本的增长，通过测量其色散量和旋转量的宿主剩余量、以及探测孤立中子星伴随的千新星，有望直接验证夸克-强子相变和铁磁致密物质这一核心假设。",
+        "context_outlook": "传统磁星模型认为强磁场由原初中子星快速自旋驱动发电机效应产生（[[Duncan & Thompson 1992]]），但难以解释磁星诞生率远高于快转中子星占比的矛盾。Ouyed近年来发展的夸克新星模型提出，当大质量中子星自旋减慢导致核心压力变化时，夸克解禁触发的QCD铁磁性可产生~10^18 G的核心磁场，从而形成高磁化的混合星（QCD磁星）（[[Ouyed 2025]]; [[Ouyed 2026a]]; [[Ouyed 2026b]]）。本文在此基础上构建统一图像，将磁星、超亮超新星、快速蓝光暂现源和快速射电暴等归为同一物理引擎在不同环境与演化阶段的表现，并通过贝叶斯种群合成成功复现观测发生率。这一自洽框架不仅解释了现有暂现源之间的关联，还预言了孤立中子星的千新星、FRB与X射线宁静的关联等可检验特征，为通过天体物理观测约束强子-夸克相变及致密物质铁磁性提供了新途径。",
         "citations": [
           {
             "label": "Duncan & Thompson 1992",
+            "authors": "Duncan",
+            "year": "1992",
+            "title": "",
+            "ref": "Duncan, R. C., & Thompson, C. 1992, ApJ, 392, L9",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/186413",
+            "bibcode": "1992ApJ...392L...9D",
+            "url": "https://doi.org/10.1086/186413",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Vink & Kuiper 2006",
-            "arxiv": "",
-            "doi": ""
+            "label": "Ouyed 2025",
+            "authors": "Ouyed",
+            "year": "2025",
+            "title": "",
+            "ref": "Ouyed, R. 2025, MNRAS, 543, 3885",
+            "arxiv": "2505.08737",
+            "doi": "10.1093/mnras/staf1745",
+            "bibcode": "2025MNRAS.543.3885O",
+            "url": "https://arxiv.org/abs/2505.08737",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Lorimer+ 2007",
+            "label": "Ouyed 2026a",
+            "authors": "Ouyed",
+            "year": "2026a",
+            "title": "",
+            "ref": "Ouyed, R. 2026a, Research in Astronomy and Astrophysics, 26, 115023",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1088/1674-4527/ae6d94",
+            "bibcode": "2026RAA....26k5023O",
+            "url": "https://doi.org/10.1088/1674-4527/ae6d94",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Ouyed 2026b",
+            "authors": "Ouyed",
+            "year": "2026b",
+            "title": "",
+            "ref": "Ouyed, R. 2026b [arXiv:2603.15791]",
+            "arxiv": "",
+            "doi": "10.1088/1674-4527/ae6d94",
+            "bibcode": "2026RAA....26k5023O",
+            "url": "https://doi.org/10.1088/1674-4527/ae6d94",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2268,20 +2668,41 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17609",
-        "title_zh": "超越广义相对论极限的Finsler引力大质量致密星：GW190814伴星的可能解释",
+        "title_zh": "芬斯勒引力中超越广义相对论极限的大质量致密星：对GW190814次星的可能解释",
         "team": "",
-        "tldr": "在Finsler–Randers引力中采用线性态方程与Heintzmann IIa度规，构建的致密星最大质量可达2.67太阳质量，为GW190814的高质量伴星提供纯几何解释。",
+        "tldr": "在Finsler-Randers引力框架下，利用Heintzmann IIa度规和线性状态方程构建致密星模型，最大质量可达2.67倍太阳质量，为GW190814次星提供几何解释。",
         "review": "",
-        "highlight": "首次在Finsler几何框架下解释GW190814质量间隙天体，证明内禀各向异性能自然提升中子星最大质量，无需奇异物态或极快旋转。",
+        "highlight": "首次在Finsler引力中实现了超越广义相对论静态极限的最大质量，无需奇异物质，为解释GW190814质量间隙天体提供了纯几何途径；同时揭示了Finsler各向异性带来的转动惯量增强与稳定性特征。",
         "relation": "",
         "authors_en": "Praveen J (Department of P.G. Studies and Research in Mathematics, Kuvempu University; Pacif Institute of Cosmology and Selfology), Rajesh Kumar (Mathematical Astrophysics Lab, Department of Mathematics and Statistics, Deen Dayal Upadhyaya Gorakhpur University), Sadaf Fatima (Mathematical Astrophysics Lab, Department of Mathematics and Statistics, Deen Dayal Upadhyaya Gorakhpur University) et al.",
         "corresponding_en": "Rajesh Kumar",
-        "context_outlook": "GW190814事件中2.5–2.67 M⊙的致密天体[[Abbott+ 2020]]位于传统中子星与黑洞之间的“质量间隙”，对广义相对论的最大质量极限和核物质状态方程提出挑战。常规解释需借助超硬物态、强磁场或近开普勒极限的旋转，但往往与潮汐形变等观测约束存在紧张关系。本研究另辟蹊径，在Finsler–Randers几何框架下，利用线性物态方程和Heintzmann IIa度规势，发现Finsler修正可显著提高非旋致密星的最大质量至2.67 M⊙，从而为GW190814伴星提供不依赖转动的纯引力解释。该方法为修改引力在致密星物理中的应用开辟了新途径，未来可通过引入真实微观物态方程、旋转效应以及多信使观测（如NICER、LIGO/Virgo/KAGRA）对Finsler引力参数进行系统约束，进一步检验其与标准GR的差异。",
+        "context_outlook": "GW190814的发现（[[Abbott+ 2020]]）挑战了中子星最大质量的传统认知，激励了修改引力理论中致密星模型的探索。以往研究多借助极端状态方程或快速旋转（[[Zhang+ 2020]]）解释该质量天体，而本研究在Finsler-Randers几何框架下，通过Heintzmann IIa势和线性状态方程构建了各向异性致密星，证实Finslerian修正可将最大质量提升至2.67 M_sun，为GW190814次星提供了一致的理论图像。未来可结合更现实的核物理状态方程、旋转和磁场效应，并利用多信使天文观测进一步检验和约束Finsler引力效应。",
         "citations": [
           {
             "label": "Abbott+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Abbott",
+            "year": "2020",
+            "title": "GW190814: gravitational waves from the coalescence of a 23 solar mass black hole with a 2.6 solar mass compact object",
+            "ref": "R. Abbott, T. Abbott, S. Abraham, F. Acernese, K. Ackley, C. Adams, R. X. Adhikari, V. Adya, C. Affeldt, M. Agathos, et al. (2020) GW190814: gravitational waves from the coalescence of a 23 solar mass black hole with a 2.6 solar mass compact object. The Astrophysical Journal Letters 896(2), pp. L44.",
+            "arxiv": "2006.12611",
+            "doi": "10.3847/2041-8213/ab960f",
+            "bibcode": "2020ApJ...896L..44A",
+            "url": "https://arxiv.org/abs/2006.12611",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zhang+ 2020",
+            "authors": "Zhang",
+            "year": "2020",
+            "title": "GW190814’s secondary component with mass 2.50--2.67 M⊙ as a superfast pulsar",
+            "ref": "N. Zhang and B. Li (2020) GW190814’s secondary component with mass 2.50--2.67 M⊙ as a superfast pulsar. The Astrophysical Journal 902(1), pp. 38.",
+            "arxiv": "2007.02513",
+            "doi": "10.3847/1538-4357/abb470",
+            "bibcode": "2020ApJ...902...38Z",
+            "url": "https://arxiv.org/abs/2007.02513",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2405,30 +2826,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17510",
-        "title_zh": "年轻 Ia 型超新星 SN 2021fxy 的早期光学观测及其分离高速特征",
+        "title_zh": "对具有分离高速特征的年轻Ia型超新星SN 2021fxy的光学观测",
         "team": "",
-        "tldr": "利用早期光学观测研究 SN 2021fxy 的分离高速特征，揭示其速度演化与光球解耦，为 Ia 型超新星爆炸物理提供新线索。",
+        "tldr": "本工作对年轻超新星SN 2021fxy进行了早期光学测光与光谱观测，重点研究其分离的Si II和Ca II红外高速特征（HVF）的速度演化，发现HVF的幂律衰减（~t^{-0.1}）远慢于光球层，暗示存在独立于外层抛射物的密度结构，对理解Ia型超新星爆轰物理提供了新约束。",
         "review": "",
-        "highlight": "极早期光谱中探测到显著分离的 Si II 高速特征（HVFs），其速度演化遵循浅幂律（β≈0.1），明显慢于预期光球膨胀，表明 HVFs 形成于与外部抛射物部分解耦的本征结构，对理解 Ia 型超新星爆炸机制有重要意义。",
+        "highlight": "在SN 2021fxy早期光谱中探测到显著的、与光球成分明显分离的Si II λ6355高速特征，其速度演化呈现缓慢的幂律下降（指数约0.1），与经典光球演化（指数约0.22）显著偏离，表明HVF可能源于爆炸中独立密度结构，而非星周物质相互作用。",
         "relation": "",
-        "authors_en": "L. Li (International Centre of Supernovae, Yunnan Key Laboratory of Supernova Research, Yunnan Observatories, Chinese Academy of Sciences), J. Zhang (International Centre of Supernovae, Yunnan Key Laboratory of Supernova Research, Yunnan Observatories, Chinese Academy of Sciences), Z. Wang (International Centre of Supernovae, Yunnan Key Laboratory of Supernova Research, Yunnan Observatories, Chinese Academy of Sciences; School of Astronomy and Space Science, University of Chinese Academy of Sciences) et al.",
+        "authors_en": "L. Li (International Centre of Supernovae, Yunnan Observatories, CAS), J. Zhang (International Centre of Supernovae, Yunnan Observatories, CAS), Z. Wang (International Centre of Supernovae, Yunnan Observatories, CAS; University of Chinese Academy of Sciences) et al.",
         "corresponding_en": "Jujia Zhang",
-        "context_outlook": "早期光谱中的高速特征（HVFs）在 Ia 型超新星中常见，但其物理起源（本征抛射物结构或星周物质）仍存争议 [[Mazzali+ 2005b]]。近期研究表明 Si II HVFs 在极早期（< -11 天）的探测率可达 ~75%，暗示它们可能是普遍特征 [[Harvey+ 2025]]。本研究对 SN 2021fxy 的观测显示分离 HVFs 的速度演化（β≈0.1）显著慢于光球膨胀预期，表明其形成于与外部抛射物部分解耦的本征结构，为理解爆炸物理提供了新约束。结合先前 UV 分析指出高速物质的影响 [[DerKacy+ 2023]]，此类极早期光谱观测将推动对 HVFs 普遍性的系统研究，并有望通过大样本统计与多维模拟揭示 Ia 型超新星爆炸的精细过程。",
+        "context_outlook": "对SN 2021fxy的早期光学观测填补了[[DerKacy+ 2023]]仅分析紫外数据的空白，揭示出分离的Si ii高速特征（HVF）速度演化（∝ t^{−0.1}）明显偏离光球层（∝ t^{−0.22}），更支持其起源于爆轰过程自身的独立密度结构，而非星周物质相互作用。比较[[Childress+ 2013]]和[[Marion+ 2013]]对SN 2012fr、SN 2009ig的观测，发现类似分离HVF普遍存在且演化相似；[[Ni+ 2023]]对SN 2021aefx早期速度的研究也表明HVF演化可能在不同事件中表现不同。未来需要结合延迟爆轰（如[[Seitenzahl+ 2013]]）和双爆轰（如[[Boos+ 2021]]）模型进行谱线模拟，并通过更大样本的早期高速特征监测，厘清不同爆轰机制下密度结构的形成与演化，同时评估HVF对超新星分类和测距系统的影响。",
         "citations": [
           {
-            "label": "Mazzali+ 2005b",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Harvey+ 2025",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "DerKacy+ 2023",
+            "authors": "DerKacy",
+            "year": "2023",
+            "title": "SN 2021fxy: mid-ultraviolet flux suppression is a common feature of Type Ia supernovae",
+            "ref": "J. M. DerKacy, S. Paugh, E. Baron, P. J. Brown, C. Ashall, C. R. Burns, E. Y. Hsiao, S. Kumar, J. Lu, N. Morrell, M. M. Phillips, M. Shahbandeh, B. J. Shappee, M. D. Stritzinger, M. A. Tucker, Z. Yarbrough, K. Boutsia, P. Hoeflich, L. Wang, L. Galbany, E. Karamehmetoglu, K. Krisciunas, P. Mazzali, A. L. Piro, N. B. Suntzeff, A. Fiore, C. P. Gutiérrez, P. Lundqvist, and A. Reguitti (2023) SN 2021fxy: mid-ultraviolet flux suppression is a common feature of Type Ia supernovae. MNRAS 522(3), pp. 3481–3505.",
+            "arxiv": "2212.06195",
+            "doi": "10.1093/mnras/stad1171",
+            "bibcode": "2023MNRAS.522.3481D",
+            "url": "https://arxiv.org/abs/2212.06195",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Childress+ 2013",
+            "authors": "Childress",
+            "year": "2013",
+            "title": "Spectroscopic Observations of SN 2012fr: A Luminous, Normal Type Ia Supernova with Early High-velocity Features and a Late Velocity Plateau",
+            "ref": "M. J. Childress, R. A. Scalzo, S. A. Sim, B. E. Tucker, F. Yuan, B. P. Schmidt, S. B. Cenko, J. M. Silverman, C. Contreras, E. Y. Hsiao, and et al. (2013) Spectroscopic Observations of SN 2012fr: A Luminous, Normal Type Ia Supernova with Early High-velocity Features and a Late Velocity Plateau. ApJ 770(1), pp. 29.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1088/0004-637x/770/1/29",
+            "bibcode": "",
+            "url": "https://doi.org/10.1088/0004-637x/770/1/29",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Marion+ 2013",
+            "authors": "Marion",
+            "year": "2013",
+            "title": "High-velocity Line Forming Regions in the Type Ia Supernova 2009ig",
+            "ref": "G. H. Marion, J. Vinko, J. C. Wheeler, R. J. Foley, E. Y. Hsiao, P. J. Brown, P. Challis, A. V. Filippenko, P. Garnavich, R. P. Kirshner, and et al. (2013) High-velocity Line Forming Regions in the Type Ia Supernova 2009ig. ApJ 777(1), pp. 40.",
+            "arxiv": "1302.3537",
+            "doi": "10.1088/0004-637X/777/1/40",
+            "bibcode": "2013ApJ...777...40M",
+            "url": "https://arxiv.org/abs/1302.3537",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Ni+ 2023",
+            "authors": "Ni",
+            "year": "2023",
+            "title": "Origin of High-velocity Ejecta, Excess Emission, and Redward Color Evolution in the Infant Type Ia Supernova 2021aefx",
+            "ref": "Y. Q. Ni, D. Moon, M. R. Drout, C. D. Matzner, K. C. C. Leong, S. C. Kim, H. S. Park, and Y. Lee (2023) Origin of High-velocity Ejecta, Excess Emission, and Redward Color Evolution in the Infant Type Ia Supernova 2021aefx. ApJ 959(2), pp. 132.",
+            "arxiv": "2304.00625",
+            "doi": "10.3847/1538-4357/ad0640",
+            "bibcode": "2023ApJ...959..132N",
+            "url": "https://arxiv.org/abs/2304.00625",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Seitenzahl+ 2013",
+            "authors": "Seitenzahl",
+            "year": "2013",
+            "title": "Three-dimensional delayed-detonation models with nucleosynthesis for Type Ia supernovae",
+            "ref": "I. R. Seitenzahl, F. Ciaraldi-Schoolmann, F. K. Röpke, M. Fink, W. Hillebrandt, M. Kromer, R. Pakmor, A. J. Ruiter, S. A. Sim, and S. Taubenberger (2013) Three-dimensional delayed-detonation models with nucleosynthesis for Type Ia supernovae. MNRAS 429(2), pp. 1156–1172.",
+            "arxiv": "1211.3015",
+            "doi": "10.1093/mnras/sts402",
+            "bibcode": "2013MNRAS.429.1156S",
+            "url": "https://arxiv.org/abs/1211.3015",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Boos+ 2021",
+            "authors": "Boos",
+            "year": "2021",
+            "title": "Multidimensional Parameter Study of Double Detonation Type Ia Supernovae Originating from Thin Helium Shell White Dwarfs",
+            "ref": "S. J. Boos, D. M. Townsley, K. J. Shen, S. Caldwell, and B. J. Miles (2021) Multidimensional Parameter Study of Double Detonation Type Ia Supernovae Originating from Thin Helium Shell White Dwarfs. ApJ 919(2), pp. 126.",
+            "arxiv": "2101.12330",
+            "doi": "10.3847/1538-4357/ac07a2",
+            "bibcode": "2021ApJ...919..126B",
+            "url": "https://arxiv.org/abs/2101.12330",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2468,20 +2952,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17488",
-        "title_zh": "II型超新星替代模型：探测低能爆炸及无相互作用情形",
+        "title_zh": "II型超新星的代理模型：探索低能爆炸与无相互作用体系",
         "team": "",
-        "tldr": "本文构建了基于STELLA的神经网络替代模型，可快速生成含或不合星周作用的II型超新星光谱和光变曲线，实现数分钟级贝叶斯参数推断。",
+        "tldr": "构建两个神经网络代理（相互作用与光球层模型）实现II型超新星分钟级贝叶斯推断，成功解析低能量事件。",
         "review": "",
-        "highlight": "亮点：双模型架构覆盖低能爆炸与标准IIP场景；引入潜空间mixup正则化提升光谱连续性；推断速度从天级降至分钟级；在SN2005cs中揭示密近CSM作用证据。",
+        "highlight": "首次为低能量、低光度和星周物质相互作用区域提供专用代理模型；采用latent mixup正则化大幅改善潜在空间连续性，实现从数天到分钟的加速。",
         "relation": "",
-        "authors_en": "Zhengyang Zhang (Yunnan Observatories, CAS; University of Chinese Academy of Sciences), Shuai Zha (Yunnan Observatories, CAS), Nikhil Sarin (University of Cambridge) et al.",
-        "corresponding_en": "",
-        "context_outlook": "随着ZTF和LSST等巡天带来海量暂现源，传统数值模拟的贝叶斯推断面临计算瓶颈。[[Sarin+ 2025]]曾基于stella网格提出II型超新星光变曲线替代模型，然而低能低质量区覆盖不足且未纳入光谱信息。本研究将替代模型扩展至相互作用与无相互作用两种情景，采用自编码器-模拟器设计并引入潜空间mixup正则化，在数分钟内完成原本耗时数天的谱能量分布重建及参数推断。未来该框架可集成入实时瞬变源管线，结合多波段、多信使数据进一步限制星周物质结构与质量损失历史，并有望推广至其他超新星类型。",
+        "authors_en": "Zhengyang Zhang (International Centre of Supernovae, Yunnan Observatories, CAS, Kunming, China; University of the Chinese Academy of Sciences, Beijing, China), Shuai Zha (International Centre of Supernovae, Yunnan Observatories, CAS, Kunming, China), Nikhil Sarin (Kavli Institute for Cosmology & Institute of Astronomy, University of Cambridge, Cambridge, UK), et al.",
+        "corresponding_en": "Bo Wang",
+        "context_outlook": "随着时域巡天进入LSST时代，快速、可扩展的物理建模成为核心需求。先前[[Moriya+ 2023]]基于STELLA构建的II型超新星模拟网格为巡天级样本分析奠定了基础，[[Sarin+ 2025]]进一步发展了代理模型以实现快速光曲线推断，而[[Vogl+ 2025]]则针对光谱模拟开发了TARDIS模拟器。本工作通过将代理模型覆盖范围扩展到低能量、低光度和星周物质相互作用区域，并引入latent mixup正则化改善潜在空间连续性，填补了当前参数空间的建模空白。今后这类代理模型有望处理LSST发现的数万颗II型超新星的实时参数推断，并可结合非局部热动平衡代码提高晚期演化精度。",
         "citations": [
           {
+            "label": "Moriya+ 2023",
+            "authors": "Moriya",
+            "year": "2023",
+            "title": "",
+            "ref": "T. J. Moriya, B. M. Subrayan, D. Milisavljevic, and S. I. Blinnikov, Publ. Astron. Soc. Jpn. 75, 634 (2023), arXiv:2303.01532 [astro-ph.HE].",
+            "arxiv": "2303.01532",
+            "doi": "10.1093/pasj/psad024",
+            "bibcode": "2023PASJ...75..634M",
+            "url": "https://arxiv.org/abs/2303.01532",
+            "source": "ads",
+            "verified": true
+          },
+          {
             "label": "Sarin+ 2025",
+            "authors": "Sarin",
+            "year": "2025",
+            "title": "",
+            "ref": "N. Sarin, T. J. Moriya, A. Singh, A. Gangopadhyay, K.-R. Hinds, S. Schulze, C. M. B. Omand, and K. K. Das, Mon. Not. R. Astron. Soc. 544, 2653 (2025), arXiv:2506.02107 [astro-ph.HE].",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/staf1808",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/staf1808",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Vogl+ 2025",
+            "authors": "Vogl",
+            "year": "2025",
+            "title": "",
+            "ref": "C. Vogl, W. E. Kerzendorf, S. A. Sim, G. Dimitriadis, I. R. Seitenzahl, T. M. Reynolds, L. Galbany, B. Barna, C. E. Collins, and P. Hoflich, Astron. Astrophys. 702, A41 (2025), arXiv:2411.04968 [astro-ph.HE].",
+            "arxiv": "2411.04968",
+            "doi": "10.1051/0004-6361/202452910",
+            "bibcode": "2025A&A...702A..41V",
+            "url": "https://arxiv.org/abs/2411.04968",
+            "source": "ads",
+            "verified": true
           }
         ]
       }

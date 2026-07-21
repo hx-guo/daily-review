@@ -23,6 +23,15 @@ from gdr.citations import resolve_summary
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def _needs_redo(summary) -> bool:
+    """A summary is up to date when it was produced by the current full-text + resolver
+    pipeline: it has 脉络与展望 and every citation carries a resolver `url` key. Older
+    (truncated-text / pre-resolution) summaries are missing one of those."""
+    if not summary.context_outlook:
+        return True
+    return any("url" not in c for c in (summary.citations or []))
+
+
 def _redo(paper, llm):
     summary = summarize_paper(paper, fetch_fulltext(paper), llm)
     resolve_summary(summary, ads_token=config.get_ads_token(), mailto=config.CROSSREF_MAILTO)
@@ -37,7 +46,8 @@ def main():
         day = store.load_day(date)
         todo = [it for it in day.items
                 if it["score"].layer in ("core", "related")
-                and it["summary"] is not None]
+                and it["summary"] is not None
+                and _needs_redo(it["summary"])]
         if not todo:
             continue
         with ThreadPoolExecutor(max_workers=config.MAX_CONCURRENCY) as pool:

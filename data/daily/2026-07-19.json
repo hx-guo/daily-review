@@ -533,25 +533,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17359",
-        "title_zh": "从太阳极紫外增亮到 X 射线恒星耀斑的准周期脉动阻尼时间与周期的普适标度",
+        "title_zh": "太阳EUV增亮至恒星X射线耀斑准周期脉动的普适阻尼标度律",
         "team": "",
-        "tldr": "证实 EUV 增亮、太阳耀斑与恒星耀斑的 QPP 阻尼时间-周期标度一致，支持共同的阻尼机制。",
+        "tldr": "该文发现EUV增亮与太阳/恒星X射线耀斑的衰减相QPP共享阻尼时间-周期幂律标度，暗示共同的MHD波阻尼机制。",
         "review": "",
-        "highlight": "首次将 QPP 标度关系从大尺度耀斑扩展至极小尺度 EUV 增亮，并利用 Solar Orbiter 高分辨率数据证明标度的普适性，为统一物理起源提供了关键证据。",
+        "highlight": "首次将QPP阻尼标度律从X射线耀斑拓展至极小尺度的EUV增亮，并证明其跨越多个量级能量的普适性，为日冕加热与耀斑统一机制提供了关键观测约束。",
         "relation": "",
-        "authors_en": "D. Lim (University of Exeter, UK; Royal Observatory of Belgium, Belgium; KU Leuven, Belgium), T. Van Doorsselaere (KU Leuven, Belgium), V. M. Nakariakov (University of Warwick, UK; Ventspils University of Applied Sciences, Latvia; Universidad Bernardo O’Higgins, Chile) et al.",
-        "corresponding_en": "Daye Lim",
-        "context_outlook": "太阳和恒星耀斑中已发现准周期脉动（QPP）的阻尼时间与周期遵循幂律标度 [[Cho+ 2016]]，但该关系能否延伸至更小尺度的极紫外增亮事件尚不明确。近期观测表明 EUV 增亮同样具有 QPP 特征 [[Lim+ 2025b]]，暗示不同尺度的爆发事件可能共享相似物理过程。本研究通过对大样本 EUV 增亮及太阳耀斑的系统分析，证实两者与已知的 X 射线耀斑共同遵循同一标度规律，支持存在普适的波动阻尼机制。未来结合多波段观测和 MHD 模拟，有望深入揭示 QPP 的激发与衰减过程，并检验该标度在更广泛恒星活动中的适用性。",
+        "authors_en": "D. Lim (University of Exeter), T. Van Doorsselaere (KU Leuven), V. M. Nakariakov (University of Warwick) et al.",
+        "corresponding_en": "D. Lim",
+        "context_outlook": "过去对X射线太阳和恒星耀斑中准周期脉动（QPP）的研究表明，衰减相QPP的阻尼时间与周期之间存在幂律标度关系（[[Cho+ 2016]]）。近期高分辨率观测进一步在尺度更小的太阳极紫外（EUV）增亮事件中探测到了QPP信号（[[Lim+ 2025a]]、[[Lim+ 2025b]]），暗示这些事件可能具有与耀斑类似的振荡机制。本文通过分析EUV增亮和EUV太阳耀斑的大样本，发现阻尼时间—周期的幂律指数与X射线结果一致（α≈0.92），并且该标度在跨越多个量级的能量和空间尺度上持续成立。这种普适性支持QPP阻尼可能由共同的磁流体力学（MHD）波过程（如慢磁声波或扭曲波）主导，其统计性质与已知的冕环波特征相符（[[Nakariakov+ 2019b]]、[[Van Doorsselaere+ 2021]]）。未来结合多波段观测可望区分具体波模，从而将QPP发展为推断耀斑环物理参数的可靠日冕地震学工具。",
         "citations": [
           {
             "label": "Cho+ 2016",
+            "authors": "Cho",
+            "year": "2016",
+            "title": "Comparison of Damped Oscillations in Solar and Stellar X-Ray flares",
+            "ref": "Cho, I. H., Cho, K. S., Nakariakov, V. M., Kim, S., & Kumar, P. 2016, Comparison of Damped Oscillations in Solar and Stellar X-Ray flares, ApJ, 830, 110, doi: 10.3847/0004-637X/830/2/110",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/0004-637X/830/2/110",
+            "bibcode": "2016ApJ...830..110C",
+            "url": "https://doi.org/10.3847/0004-637X/830/2/110",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Lim+ 2025a",
+            "authors": "Lim",
+            "year": "2025",
+            "title": "Quasi-periodic pulsations in extreme-ultraviolet brightenings",
+            "ref": "Lim, D., Van Doorsselaere, T., Berghmans, D., et al. 2025a, Quasi-periodic pulsations in extreme-ultraviolet brightenings, A&A, 698, A65, doi: 10.1051/0004-6361/202554587",
+            "arxiv": "2504.15379",
+            "doi": "10.1051/0004-6361/202554587",
+            "bibcode": "2025A&A...698A..65L",
+            "url": "https://arxiv.org/abs/2504.15379",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Lim+ 2025b",
+            "authors": "Lim",
+            "year": "2025",
+            "title": "Accessing the fine temporal scale of EUV brightenings and their quasi-periodic pulsations: 1-second cadence observations by Solar Orbiter/EUI",
+            "ref": "Lim, D., Van Doorsselaere, T., Narang, N., et al. 2025b, Accessing the fine temporal scale of EUV brightenings and their quasi-periodic pulsations: 1-second cadence observations by Solar Orbiter/EUI, A&A, 704, A58, doi: 10.1051/0004-6361/202557135",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1051/0004-6361/202557135",
+            "bibcode": "",
+            "url": "https://doi.org/10.1051/0004-6361/202557135",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Nakariakov+ 2019b",
+            "authors": "Nakariakov",
+            "year": "2019",
+            "title": "Properties of Slow Magnetoacoustic Oscillations of Solar Coronal Loops by Multi-instrumental Observations",
+            "ref": "Nakariakov, V. M., Kosak, M. K., Kolotkov, D. Y., et al. 2019b, Properties of Slow Magnetoacoustic Oscillations of Solar Coronal Loops by Multi-instrumental Observations, ApJ, 874, L1, doi: 10.3847/2041-8213/ab0c9f",
+            "arxiv": "",
+            "doi": "10.3847/2041-8213/ab0c9f",
+            "bibcode": "2019ApJ...874L...1N",
+            "url": "https://doi.org/10.3847/2041-8213/ab0c9f",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Van Doorsselaere+ 2021",
+            "authors": "Van Doorsselaere",
+            "year": "2021",
+            "title": "Nonlinear Damping of Standing Kink Waves Computed With Elsässer Variables",
+            "ref": "Van Doorsselaere, T., Goossens, M., Magyar, N., Ruderman, M. S., & Ismayilli, R. 2021, Nonlinear Damping of Standing Kink Waves Computed With Elsässer Variables, ApJ, 910, 58, doi: 10.3847/1538-4357/abe630",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/abe630",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/abe630",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -637,40 +692,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17312",
-        "title_zh": "爱因斯坦探针宽视场X射线望远镜校准数据库设计",
+        "title_zh": "爱因斯坦探针卫星宽视场X射线望远镜定标数据库设计",
         "team": "",
-        "tldr": "设计了爱因斯坦探针(EP)宽视场X射线望远镜(WXT)的标准化校准数据库(CALDB)，管理12模块48传感器，集成地面与在轨校准数据。",
+        "tldr": "为EP-WXT设计并实现了一套符合HEASARC标准的定标数据库，系统化管理12个模块、48个CMOS传感器的地面与在轨标定数据，支撑从数据预处理到科学分析的完整流程。",
         "review": "",
-        "highlight": "首颗大规模应用龙虾眼微孔光学(MPO)和CMOS探测器的空间X射线望远镜，其CALDB引入非线性空间校正矩阵和时变探测器模型，解决大视场几何畸变与探测器演化难题，全面兼容HEASARC/OGIP标准。",
+        "highlight": "首次对大规模龙虾眼MPO和CMOS探测器阵列构建标准化CALDB；创新性地引入非对角空间校正矩阵和时变增益插值，有效应对宽视场、多传感器带来的复杂响应管理难题，并为在轨性能退化跟踪提供了灵活架构。",
         "relation": "",
-        "authors_en": "Huaqing Cheng, Hai-Wu Pan, Yuan Liu et al.",
-        "corresponding_en": "Hai-Wu Pan",
-        "context_outlook": "标准化的校准数据库（CALDB）是X射线天文数据精准分析的保障（[[Arnaud+ 2011]]）。爱因斯坦探针（[[Yuan+ 2022]]）的宽视场X射线望远镜（WXT）作为首个大规模应用龙虾眼光学（MPO）和CMOS探测器的空间任务，其校准面临十字形点扩散函数、渐晕（[[Fraser+ 1992]]）以及CMOS长期在轨演化等独特挑战。本工作设计的WXT CALDB在遵循HEASARC标准的基础上，引入非线性空间校正以补偿MPO制造畸变（[[Zhang+ 2022]]；[[Cheng+ 2026b]]），并构建时变框架来追踪探测器性能变化。这一设计为处理复杂光学系统的校准提供了新方案，并有望为未来基于CMOS的X射线天文台树立校准数据库的参考标准。",
+        "authors_en": "Huaqing Cheng, Hai-Wu Pan, Yuan Liu, et al.",
+        "corresponding_en": "Hai-Wu Pan, Yuan Liu",
+        "context_outlook": "X射线天文学长期遵循标准化的定标数据库格式（[[Arnaud+ 2011]]），EP-WXT首次大规模应用龙虾眼光学与CMOS探测器，带来了独特的定标挑战。本文构建的CALDB通过非对角空间校正[[Cheng+ 2026b]]和时变增益插值等设计，实现了对48个CMOS模块的复杂响应管理。在轨性能监测显示增益和能量分辨率保持稳定[[Cheng+ 2026a]]，但低能有效面积已出现类似其他空间任务中观测到的分子污染衰减[[Marshall+ 2004]][[Grant+ 2024]]，后续版本将对其进行建模。未来将通过年度标准源观测与巡天数据复用持续更新CALDB，为基于CMOS的下一代宽视场X射线任务树立定标基准。",
         "citations": [
           {
             "label": "Arnaud+ 2011",
+            "authors": "Arnaud",
+            "year": "2011",
+            "title": "Handbook of X-ray Astronomy",
+            "ref": "K. Arnaud, R. Smith, and A. Siemiginowska (2011)\nHandbook of X-ray Astronomy\n.\nCited by:\n§1\n.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "2011hxra.book.....A",
+            "url": "https://ui.adsabs.harvard.edu/abs/2011hxra.book.....A",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Yuan+ 2022",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Fraser+ 1992",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Zhang+ 2022",
-            "arxiv": "",
-            "doi": ""
+            "label": "Cheng+ 2026a",
+            "authors": "Cheng",
+            "year": "2026a",
+            "title": "In-flight calibration of the Wide-field X-ray Telescope on board the Einstein Probe",
+            "ref": "H. Cheng, H. Pan, Y. Liu, J. Hu, H. Yang, D. Zhao, Z. Ling, Y. Chen, X. Sun, L. Li, G. Jin, W. Wang, X. Yang, H. Liu, C. Zhang, S. Zhang, and W. Yuan (2026a)\nIn-flight calibration of the Wide-field X-ray Telescope on board the Einstein Probe\n.\narXiv e-prints\n,\npp. arXiv:2606.28101\n.\nExternal Links:\nDocument\n,\n2606.28101\nCited by:\n§3.1.4\n,\n§3.2.1\n,\n§3.2.2\n,\n§4\n.",
+            "arxiv": "2506.20369",
+            "doi": "10.1051/0004-6361/202556050",
+            "bibcode": "2026A&A...710A.208C",
+            "url": "https://arxiv.org/abs/2506.20369",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Cheng+ 2026b",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Cheng",
+            "year": "2026b",
+            "title": "In-flight calibration of the Lobster Eye Imager for Astronomy",
+            "ref": "H. Cheng, H. Pan, Y. Liu, J. Hu, H. Yang, D. Zhao, Z. Ling, H. Liu, Y. Chen, X. Sun, L. Li, G. Jin, C. Zhang, S. Zhang, and W. Yuan (2026b)\nIn-flight calibration of the Lobster Eye Imager for Astronomy\n.\nA&A\n710\n,\npp. A208\n.\nExternal Links:\nDocument\n,\n2506.20369\nCited by:\n§1\n,\n§3.1.1\n.",
+            "arxiv": "2506.20369",
+            "doi": "10.1051/0004-6361/202556050",
+            "bibcode": "2026A&A...710A.208C",
+            "url": "https://arxiv.org/abs/2506.20369",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Marshall+ 2004",
+            "authors": "Marshall",
+            "year": "2004",
+            "title": "Composition of the Chandra ACIS contaminant",
+            "ref": "H. L. Marshall, A. Tennant, C. E. Grant, A. P. Hitchcock, S. L. O’Dell, and P. P. Plucinsky (2004)\nComposition of the Chandra ACIS contaminant\n.\nIn\nX-Ray and Gamma-Ray Instrumentation for Astronomy XIII\n,\nK. A. Flanagan and O. H. W. Siegmund (Eds.)\n,\nSociety of Photo-Optical Instrumentation Engineers (SPIE) Conference Series\n, Vol.\n5165\n,\npp. 497–508\n.\nExternal Links:\nDocument\n,\nastro-ph/0308332\nCited by:\n§1\n.",
+            "arxiv": "astro-ph/0308332",
+            "doi": "10.1117/12.508310",
+            "bibcode": "2004SPIE.5165..497M",
+            "url": "https://arxiv.org/abs/astro-ph/0308332",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Grant+ 2024",
+            "authors": "Grant",
+            "year": "2024",
+            "title": "The advanced CCD imaging spectrometer on the Chandra x-ray observatory: twenty-five years of on-orbit operation",
+            "ref": "C. E. Grant, M. W. Bautz, P. P. Plucinsky, and P. G. Ford (2024)\nThe advanced CCD imaging spectrometer on the Chandra x-ray observatory: twenty-five years of on-orbit operation\n.\nIn\nSpace Telescopes and Instrumentation 2024: Ultraviolet to Gamma Ray\n,\nJ. A. den Herder, S. Nikzad, and K. Nakazawa (Eds.)\n,\nSociety of Photo-Optical Instrumentation Engineers (SPIE) Conference Series\n, Vol.\n13093\n,\npp. 130931E\n.\nExternal Links:\nDocument\n,\n2406.18395\nCited by:\n§1\n.",
+            "arxiv": "2406.18395",
+            "doi": "10.1117/12.3018498",
+            "bibcode": "2024SPIE13093E..1EG",
+            "url": "https://arxiv.org/abs/2406.18395",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -722,30 +817,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.17307",
-        "title_zh": "EP-WXT 星上已知 X 射线源星表",
+        "title_zh": "EP-WXT 星载已知 X 射线源星表",
         "team": "",
-        "tldr": "为 EP-WXT 构建并部署星上已知 X 射线源参考星表，实现实时过滤，大幅降低误触发率。",
+        "tldr": "本文为 EP-WXT 构建了包含 9000 个已知 X 射线源的星载参考星表，并在轨验证了其高效过滤恒星耀发等虚假触发的性能。",
         "review": "",
-        "highlight": "首次将包含 ~9,000 源的已知 X 射线源星表直接集成至星上触发系统，在轨成功屏蔽 6,100+ 次活跃恒星的伪触发，验证了该策略的高效性与可靠性。",
+        "highlight": "首次为星载龙虾眼望远镜构建了实时多源合并的已知源星表，通过动态否决半径和缓冲机制有效抑制恒星耀发误触发，在轨成功屏蔽 6121 次冗余警报，保障了对稀有瞬变源的快速响应能力。",
         "relation": "",
-        "authors_en": "He-Yang Liu (National Astronomical Observatories, Chinese Academy of Sciences), Haiwu Pan (National Astronomical Observatories, Chinese Academy of Sciences), Yuan Liu (National Astronomical Observatories, Chinese Academy of Sciences) et al.",
+        "authors_en": "He-Yang Liu, Haiwu Pan, Yuan Liu, et al.",
         "corresponding_en": "Haiwu Pan",
-        "context_outlook": "EP-WXT 的星上星表基于 ROSAT 全天巡天（[[Voges+ 1999]]）和 MAXI 源表（[[Matsuoka+ 2009]]），集成了 9,000 个已知 X 射线源，为实时触发过滤提供了基准。与既往依靠地面后处理筛选暂现源的任务（如 Swift BAT，[[Barthelmy+ 2005]]）不同，EP 首次将自主过滤能力嵌入星载数据处理单元，显着提升了瞬变事件识别的速度与可靠性。在轨运行期间，该星表成功屏蔽了大量活跃恒星的伪触发，验证了其高效性。未来，通过星上自主更新模块，该星表将持续追踪 X 射线天空的长期变化，并可结合机器学习进一步提升触发纯度，为其他大视场巡天任务提供参考。",
+        "context_outlook": "过去，ROSAT 全天巡天（[[Voges+ 1999]]）和 MAXI 长期监测（[[Matsuoka+ 2009]]）为 X 射线源编目奠定了基础，但 EP-WXT 的超大视场导致大量已知源引发误触发。本文通过整合这些历史星表并吸纳恒星耀发候选体（如 [[Eker+ 2008]] 的 CAB 样本和 [[Gershberg+ 1999]] 的 UV Cet 星表），构建了实时过滤系统。在轨验证证明，这一策略有效抑制了超过六千次虚假触发。展望未来，随着龙虾眼技术广泛用于 THESEUS（[[Amati+ 2021]]）、CATCH（[[Schanne 2026]]）等任务，本文的星表构建方法和更新机制将为同类宽场 X 射线监测任务提供直接参考，EP 未来发布的官方星表也有望成为这些后随任务的输入基线。",
         "citations": [
           {
             "label": "Voges+ 1999",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Voges",
+            "year": "1999",
+            "title": "The ROSAT all-sky survey bright source catalogue",
+            "ref": "W. Voges, B. Aschenbach, T. Boller, H. Bräuninger, U. Briel, W. Burkert, K. Dennerl, J. Englhauser, R. Gruber, F. Haberl, G. Hasinger, M. Kürster, E. Pfeffermann, W. Pietsch, P. Predehl, C. Rosso, J. H. M. M. Schmitt, J. Trümper, and H. U. Zimmermann (1999) The ROSAT all-sky survey bright source catalogue. A&A 349, pp. 389–405.",
+            "arxiv": "astro-ph/9909315",
+            "doi": "10.48550/arXiv.astro-ph/9909315",
+            "bibcode": "1999A&A...349..389V",
+            "url": "https://arxiv.org/abs/astro-ph/9909315",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Matsuoka+ 2009",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Matsuoka",
+            "year": "2009",
+            "title": "The MAXI Mission on the ISS: Science and Instruments for Monitoring All-Sky X-Ray Images",
+            "ref": "M. Matsuoka, K. Kawasaki, S. Ueno, et al. (2009) The MAXI Mission on the ISS: Science and Instruments for Monitoring All-Sky X-Ray Images. PASJ 61, pp. 999–1010.",
+            "arxiv": "0906.0631",
+            "doi": "10.1093/pasj/61.5.999",
+            "bibcode": "2009PASJ...61..999M",
+            "url": "https://arxiv.org/abs/0906.0631",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Barthelmy+ 2005",
+            "label": "Eker+ 2008",
+            "authors": "Eker",
+            "year": "2008",
+            "title": "A catalogue of chromospherically active binaries - third edition",
+            "ref": "Z. Eker, N. F. Ak, S. Bilir, D. Doǧru, M. Tüysüz, E. Soydugan, H. Bakış, B. Uğraş, F. Soydugan, M. Erbaş, and J. Weingrill (2008) A catalogue of chromospherically active binaries - third edition. MNRAS 389 (4), pp. 1722–1726.",
+            "arxiv": "0805.4517",
+            "doi": "10.1111/j.1365-2966.2008.13670.x",
+            "bibcode": "2008MNRAS.389.1722E",
+            "url": "https://arxiv.org/abs/0805.4517",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gershberg+ 1999",
+            "authors": "Gershberg",
+            "year": "1999",
+            "title": "Catalogue and bibliography of the UV Cet-type flare stars and related objects in the solar vicinity",
+            "ref": "R. E. Gershberg, M. M. Katsova, M. N. Lovkaya, A. V. Terebizh, and N. I. Shakhovskaya (1999) Catalogue and bibliography of the UV Cet-type flare stars and related objects in the solar vicinity. A&AS 139, pp. 555–558.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1051/aas:1999407",
+            "bibcode": "1999A&AS..139..555G",
+            "url": "https://doi.org/10.1051/aas:1999407",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Amati+ 2021",
+            "authors": "Amati",
+            "year": "2021",
+            "title": "The THESEUS space mission: science goals, requirements and mission concept",
+            "ref": "L. Amati, P. T. O’Brien, D. Götz, E. Bozzo, A. Santangelo, N. Tanvir, F. Frontera, S. Mereghetti, J. P. Osborne, A. Blain, S. Basa, M. Branchesi, L. Burderi, M. Caballero-García, A. J. Castro-Tirado, L. Christensen, R. Ciolfi, A. De Rosa, V. Doroshenko, A. Ferrara, G. Ghirlanda, L. Hanlon, P. Heddermann, I. Hutchinson, C. Labanti, E. Le Floch, H. Lerman, S. Paltani, V. Reglero, L. Rezzolla, P. Rosati, R. Salvaterra, G. Stratta, C. Tenzer, and Theseus Consortium (2021) The THESEUS space mission: science goals, requirements and mission concept. Experimental Astronomy 52 (3), pp. 183–218.",
+            "arxiv": "2104.09531",
+            "doi": "10.1007/s10686-021-09807-8",
+            "bibcode": "2021ExA....52..183A",
+            "url": "https://arxiv.org/abs/2104.09531",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Schanne 2026",
+            "authors": "Schanne",
+            "year": "2026",
+            "title": "Building on SVOM : the CATCH satellite constellation for transient astronomy",
+            "ref": "S. Schanne (2026) Building on SVOM : the CATCH satellite constellation for transient astronomy. arXiv e-prints, pp. arXiv:2605.25959.",
+            "arxiv": "2605.25959",
+            "doi": "10.48550/arXiv.2605.25959",
+            "bibcode": "2026arXiv260525959S",
+            "url": "https://arxiv.org/abs/2605.25959",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
