@@ -614,30 +614,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15167",
-        "title_zh": "吸积毫秒脉冲星 SRGA J144459.2-604207 2024 年爆发衰减的光谱研究",
+        "title_zh": "吸积毫秒X射线脉冲星SRGA J144459.2-604207在2024年爆发衰减的光谱研究",
         "team": "",
-        "tldr": "利用 NICER 和 Swift 观测该源爆发衰减至宁静态的谱演化，结合长期数据探讨宁静态 X 射线辐射机制及射电–X 射线联系。",
+        "tldr": "利用NICER和Swift观测研究2024年爆发衰减至静止态的光谱演化，探索射电-X射线关系及喷流形成机制。",
         "review": "",
-        "highlight": "首次探测到再闪耀期间近同时的超快外流与射电辐射，为吸积-喷流耦合提供新线索；长期宁静态光度可用深层地壳加热模型解释，排除了伴星日冕活动的主要贡献。",
+        "highlight": "发现衰减期多次再耀发，其中一次与超快外流和射电辐射同时，暗示喷流活动；利用深壳加热模型解释长期静止态X射线光度，并估算了螺旋桨光度限制。",
         "relation": "",
-        "authors_en": "A. D. Chandra (Aryabhatta Research Institute of Observational Sciences, Manora Peak, Nainital, Uttarakhand, 263001, India)",
+        "authors_en": "Amar Deo Chandra (Aryabhatta Research Institute of Observational Sciences, Manora Peak, Nainital, Uttarakhand, 263001, India)",
         "corresponding_en": "Amar Deo Chandra",
-        "context_outlook": "该源由 [[Mereminskiy+ 2024]] 发现，随后 [[Ng+ 2024a]] 确认其为 447.9 Hz 吸积毫秒 X 射线脉冲星。本文利用 NICER 和 Swift 观测其 2024 年爆发衰减至宁静态的能谱演化，发现宁静态谱可用多种模型描述。整合 ~45 年历史数据得到的长期宁静态光度与深层地壳加热模型一致，表明中子星内部加热可维持较低水平的 X 射线辐射。此外，在再闪耀期间探测到近同时的超快外流和射电辐射（[[Russell+ 2024]]），将源置于射电-X 射线光度平面，为研究喷流形成条件及吸积-外流耦合提供了新样本。未来更高时间分辨率和多波段联合监测有望区分宁静态辐射机制并限制喷流产生的阈值吸积率。",
+        "context_outlook": "吸积毫秒X射线脉冲星（AMXPs）一般具有较弱的磁场（[[Mukherjee+ 2015]]），其爆发和静止态转换是研究吸积物理的重要窗口（[[Patruno & Watts 2020]]）。SRGA J144459.2-604207是2024年新发现的AMXP（[[Ng+ 2024a]]），本文通过NICER和Swift数据分析了其衰减和再耀发阶段的光谱特性，发现一次再耀发与射电辐射和超快外流近乎同时（[[Russell+ 2024]]），提示可能存在喷流。结合深壳加热模型（[[Brown+ 1998]]），长期静止态的X射线辐射可解释为地壳加热，类似机制也在其他AMXP如SAX J1808.4-3658中通过射电再耀发得到验证（[[Gasealahwe+ 2023]]）。未来多波段同时观测将有助于进一步约束喷流产生条件和外流驱动机制。",
         "citations": [
           {
-            "label": "Mereminskiy+ 2024",
+            "label": "Mukherjee+ 2015",
+            "authors": "Mukherjee",
+            "year": "2015",
+            "title": "The magnetic-field strengths of accreting millisecond pulsars",
+            "ref": "Mukherjee, D., Bult, P., van der Klis, M., & Bhattacharya, D. 2015, The magnetic-field strengths of accreting millisecond pulsars, Monthly Notices of the Royal Astronomical Society, 452, 3994",
+            "arxiv": "1507.02138",
+            "doi": "10.1093/mnras/stv1542",
+            "bibcode": "2015MNRAS.452.3994M",
+            "url": "https://arxiv.org/abs/1507.02138",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Patruno & Watts 2020",
+            "authors": "Patruno",
+            "year": "2020",
+            "title": "Accreting millisecond X-ray pulsars",
+            "ref": "Patruno, A., & Watts, A. L. 2020, Accreting millisecond X-ray pulsars, in Timing Neutron Stars: Pulsations, Oscillations and Explosions (Springer), 143–208",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1007/978-3-662-62110-3_4",
+            "bibcode": "",
+            "url": "https://doi.org/10.1007/978-3-662-62110-3_4",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Ng+ 2024a",
+            "authors": "Ng",
+            "year": "2024a",
+            "title": "NICER Discovery that SRGA J144459. 2–604207 Is an Accreting Millisecond X-Ray Pulsar",
+            "ref": "Ng, M., Ray, P. S., Sanna, A., et al. 2024a, NICER Discovery that SRGA J144459. 2–604207 Is an Accreting Millisecond X-Ray Pulsar, The Astrophysical Journal Letters, 968, L7",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/2041-8213/ad4edb",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/2041-8213/ad4edb",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Russell+ 2024",
+            "authors": "Russell",
+            "year": "2024",
+            "title": "ATCA radio detection of the transient millisecond X-ray pulsar SRGA J144459. 2-604207 at the updated X-ray position from Chandra",
+            "ref": "Russell, T., Carotenuto, F., Eijnden, J., et al. 2024, ATCA radio detection of the transient millisecond X-ray pulsar SRGA J144459. 2-604207 at the updated X-ray position from Chandra, The Astronomer’s Telegram, 16511, 1",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "2024ATel16511....1R",
+            "url": "https://ui.adsabs.harvard.edu/abs/2024ATel16511....1R",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Brown+ 1998",
+            "authors": "Brown",
+            "year": "1998",
+            "title": "Crustal heating and quiescent emission from transiently accreting neutron stars",
+            "ref": "Brown, E. F., Bildsten, L., & Rutledge, R. E. 1998, Crustal heating and quiescent emission from transiently accreting neutron stars, The Astrophysical Journal, 504, L95",
+            "arxiv": "astro-ph/9807179",
+            "doi": "10.1086/311578",
+            "bibcode": "1998ApJ...504L..95B",
+            "url": "https://arxiv.org/abs/astro-ph/9807179",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gasealahwe+ 2023",
+            "authors": "Gasealahwe",
+            "year": "2023",
+            "title": "The 2019 outburst of AMXP SAX J1808. 4–3658 and radio follow up of MAXI J0911–655 and XTE J1701–462",
+            "ref": "Gasealahwe, K., Monageng, I., Fender, R., et al. 2023, The 2019 outburst of AMXP SAX J1808. 4–3658 and radio follow up of MAXI J0911–655 and XTE J1701–462, Monthly Notices of the Royal Astronomical Society, 521, 2806",
+            "arxiv": "",
+            "doi": "10.1093/mnras/stad649",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/stad649",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -678,40 +741,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15245",
-        "title_zh": "北冕座 T 下次新星爆发的时间约束：复发周期、轨道相位与吸积态演化",
+        "title_zh": "北冕座T下次新星爆发的时间约束：复发、轨道相位与吸积状态演化",
         "team": "",
-        "tldr": "结合历史复发间隔、轨道相位和吸积高态对比，给出下次爆发的条件监测窗口，而非确定预测日期。",
+        "tldr": "本文结合历史复发间隔、轨道相位和近期吸积状态演化，对北冕座T下一次爆发时间给出条件性约束，提出吸积不足可能导致爆发推迟。",
         "review": "",
-        "highlight": "综合三种独立约束，强调情景诊断而非确定性预报；提出 1946 年前兆衰减可能源自吸积重组与源相关消光，若 2026 年衰减持续则暗示近期爆发可能。",
+        "highlight": "综合复发概率、轨道相位窗口和吸积亏损时标三个维度进行诊断，而非依赖单一前兆倒计时；2014–2023年高态较暗暗示吸积不足，爆发可能晚至2029年5月之后。",
         "relation": "",
-        "authors_en": "S. Pei (School of Physics and Electrical Engineering, Liupanshui Normal University), X. Zhang (School of Physics and Electrical Engineering, Liupanshui Normal University), R. Su (Shanghai Astronomical Observatory, Chinese Academy of Sciences) et al.",
+        "authors_en": "Songpeng Pei (School of Physics and Electrical Engineering, Liupanshui Normal University), Xiaowan Zhang (School of Physics and Electrical Engineering, Liupanshui Normal University), Renzhi Su (Shanghai Astronomical Observatory, Chinese Academy of Sciences) et al.",
         "corresponding_en": "Songpeng Pei",
-        "context_outlook": "过去对北冕座 T（T CrB）的爆发预测多依赖 1946 年爆发前的高态与衰减类比（[[Schaefer 2023a]]；[[Luna+ 2020]]），但衰减的物理本质和复发周期的离散性仍存疑（[[Merc+ 2025]]；[[Luna+ 2026]]）。本文综合历史复发、轨道相位统计和吸积演化模型，构建了基于条件概率的监测窗口，并指出 1946 年极端衰减可能需要吸积重组与源相关消光协同解释（[[Pei+ 2026b]]）。未来实际爆发时刻将检验这些诊断性情景，推动对白矮星吸积历史及新星触发机制的深入理解，也为其他回旋新星的预报方法提供参考。",
+        "context_outlook": "过去预测多依赖前兆光变类比（如[[Schaefer 2023a]]），但[[Merc+ 2025]]指出该类比不匹配。本文结合复发统计（[[Schneider 2024]]）和[[Fekel+ 2000]]星历给出轨道窗口，并根据[[Munari+ 2025]]的吸积率对比与[[Pei+ 2026b]]的多波段行为，提出吸积亏损诊断框架。未来实际爆发将检验这些情景，推动再发新星爆前物理理解。",
         "citations": [
           {
             "label": "Schaefer 2023a",
+            "authors": "Schaefer",
+            "year": "2023",
+            "title": "The B & V light curves for recurrent nova T CrB from 1842-2022, the unique pre- and post-eruption high-states, the complex period changes, and the upcoming eruption in 2025.5 ± 1.3",
+            "ref": "B. E. Schaefer (2023a) The B & V light curves for recurrent nova T CrB from 1842-2022, the unique pre- and post-eruption high-states, the complex period changes, and the upcoming eruption in 2025.5 ± 1.3 . MNRAS 524 ( 2 ), pp. 3146–3165 . External Links: Document , 2303.04933 Cited by: §1 , §1 , §1 , §2 , §3.3 .",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Luna+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/stad735",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/stad735",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Merc+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Merc",
+            "year": "2025",
+            "title": "Is the symbiotic recurrent nova T CrB late? Recent photometric evolution and comparison with past pre-outburst behaviour",
+            "ref": "J. Merc, Ł. Wyrzykowski, P. G. Beck, P. J. Mikołajczyk, K. Kotysz, P. Zieliński, S. Zola, S. Kurowski, W. Ogłoza, M. Drozdz, C. Galdies, F. Hambsch, S. M. Brincat, B. Joachimczyk, M. Bronikowski, J. Japelj, M. Mihelcic, J. M. Carrasco, U. Burgaz, A. Gurgul, K. Bąkowska, P. Hofbauer, K. Szyszka, J. Golonka, J. K. T. Qvam, J. Zdanavičius, E. Pakštienė, M. Maskoliūnas, V. Čepas, U. Pylypenko, D. Moździerski, F. Dubois, S. Vanaverbeke, J. M. Olszewska, A. Liakos, M. Stojanović, G. Damljanović, A. Popowicz, M. Marzec, M. Badura, B. Gil, A. Pucek, A. Kowalska, M. Szklarz, T. Kvernadze, A. Reguitti, S. Awiphan, M. Dennefeld, and K. Gazeas (2025) Is the symbiotic recurrent nova T CrB late? Recent photometric evolution and comparison with past pre-outburst behaviour . MNRAS 541 ( 1 ), pp. L14–L21 . External Links: Document , 2504.20592 Cited by: §1 , §1 .",
+            "arxiv": "2504.20592",
+            "doi": "10.1093/mnrasl/slaf047",
+            "bibcode": "2025MNRAS.541L..14M",
+            "url": "https://arxiv.org/abs/2504.20592",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Luna+ 2026",
+            "label": "Schneider 2024",
+            "authors": "Schneider",
+            "year": "2024",
+            "title": "When will the Next T CrB Eruption Occur?",
+            "ref": "J. Schneider (2024) When will the Next T CrB Eruption Occur? . Research Notes of the American Astronomical Society 8 ( 10 ), pp. 272 . External Links: Document Cited by: §3.1 , §3.1 .",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/2515-5172/ad8bba",
+            "bibcode": "2024RNAAS...8..272S",
+            "url": "https://doi.org/10.3847/2515-5172/ad8bba",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Fekel+ 2000",
+            "authors": "Fekel",
+            "year": "2000",
+            "title": "Infrared Spectroscopy of Symbiotic Stars. I. Orbits for Well-Known S-Type Systems",
+            "ref": "F. C. Fekel, R. R. Joyce, K. H. Hinkle, and M. F. Skrutskie (2000) Infrared Spectroscopy of Symbiotic Stars. I. Orbits for Well-Known S-Type Systems . AJ 119 ( 3 ), pp. 1375–1388 . External Links: Document Cited by: §1 , §3.2 , Table 1 .",
+            "arxiv": "",
+            "doi": "10.1086/301260",
+            "bibcode": "2000AJ....119.1375F",
+            "url": "https://doi.org/10.1086/301260",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Munari+ 2025",
+            "authors": "Munari",
+            "year": "2025",
+            "title": "T CrB: Overview of the accretion history, Roche-lobe filling, orbital solution, and radiative modeling",
+            "ref": "U. Munari, F. Walter, N. Masetti, P. Valisa, S. Dallaporta, A. Bergamini, G. Cherini, A. Frigo, A. Maitan, C. Marino, G. Mazzacurati, S. Moretti, F. Tabacco, S. Tomaselli, A. Vagnozzi, P. Ochner, and I. Albanese (2025) T CrB: Overview of the accretion history, Roche-lobe filling, orbital solution, and radiative modeling . A&A 701 , pp. A176 . External Links: Document Cited by: §1 , §3.5 , §3.5 , §3.5 , §4 .",
+            "arxiv": "2507.23323",
+            "doi": "10.1051/0004-6361/202555917",
+            "bibcode": "2025A&A...701A.176M",
+            "url": "https://arxiv.org/abs/2507.23323",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Pei+ 2026b",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Pei",
+            "year": "2026",
+            "title": "Multiwavelength study of the pre-eruption dip in the recurrent nova T Coronae Borealis preceding imminent nova eruption",
+            "ref": "S. Pei, X. Zhang, R. Su, Y. Cai, Z. Ou, Q. Li, X. Ren, T. Yang, and M. Li (2026b) Multiwavelength study of the pre-eruption dip in the recurrent nova T Coronae Borealis preceding imminent nova eruption . A&A 706 , pp. A94 . External Links: Document , 2512.19218 Cited by: §1 , §1 , §3.3 , §3.3 .",
+            "arxiv": "2512.19218",
+            "doi": "10.1051/0004-6361/202557346",
+            "bibcode": "2026A&A...706A..94P",
+            "url": "https://arxiv.org/abs/2512.19218",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -751,35 +867,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15130",
-        "title_zh": "Swift BAT-GLIMPSE：利用成像与拼接技术实现指向与转向期间的伽马射线定位",
+        "title_zh": "SWIFT/BAT-GLIMPSE：指向与旋转时段的伽马射线成像定位",
         "team": "",
-        "tldr": "开发了开源管道 BAT-GLIMPSE，可自主、低时延地利用成像与拼接方法分析 Swift-BAT 数据，对伽马射线暴进行弧分定位，尤其填补了飞船转向期间的定位空白。",
+        "tldr": "BAT-GLIMPSE 是一个全自动开源管道，利用 Swift BAT 的 TTE 数据，在指向和旋转模式下通过成像与拼接实现低延迟弧分定位，填补旋转空白，协同 NITRATES 将 BAT 弧分定位率翻倍。",
         "review": "",
-        "highlight": "首次实现 Swift-BAT 在转向期间的自主成像定位，突破了星上触发禁用的限制；与 NITRATES 协同，有望将 BAT 的弧分定位率翻倍。",
+        "highlight": "首次系统性解决 Swift 旋转期间无法自主定位的难题，通过自动选择成像/拼接方法，在 88% 的旋转事件中恢复弧分位置；与 NITRATES 协作可令 BAT 弧分定位率翻倍，已用于 O4 引力波预警实时响应。",
         "relation": "",
-        "authors_en": "S. Ronchini (Gran Sasso Science Institute & INFN), T. Parsotan (NASA Goddard Space Flight Center), J. DeLaunay (Pennsylvania State University) et al.",
+        "authors_en": "S. Ronchini (Gran Sasso Science Institute and INFN, Italy), T. Parsotan (NASA Goddard Space Flight Center, USA), J. DeLaunay (The Pennsylvania State University, USA), et al.",
         "corresponding_en": "Samuele Ronchini",
-        "context_outlook": "Swift-BAT 的瞬变源弧分定位传统上依赖星上触发与 GUANO/NITRATES 地面分析系统 [[Tohuvavohu+ 2020]][[DeLaunay & Tohuvavohu 2022]]，但转向期间星上触发被禁用，造成监测盲区。2012 年，Copete 指出利用下传数据可在地面进行成像定位 [[Copete 2012]]，但一直缺乏自动化实现。BAT-GLIMPSE 借助 BatAnalysis 软件包 [[Parsotan+ 2025]]，通过自动选择成像或拼接分析，首次系统性地实现了转向期间的定位，并在 66 个 GRB 样本中得到验证。该管道在 LIGO-Virgo-KAGRA 第四轮观测运行中对预合并警报触发的快速转向响应发挥了关键作用。未来，BAT-GLIMPSE 与 NITRATES 的协同及 ULTRA-Swift 等项目将进一步提升 Swift 在时域与多信使天文学中的探测能力。",
+        "context_outlook": "Swift BAT 虽然具备弧分定位能力，但在航天器旋转（slew）期间无法触发。[[Copete 2012]] 首次探索了利用旋转数据进行地面定位的可行性。随后，GUANO 系统 [[Tohuvavohu+ 2020]] 使得旋转期间的 TTE 数据得以获取，而 NITRATES 管道 [[DeLaunay+ 2022]] 通过最大似然方法提升了灵敏度，但仍局限于指向模式。BAT-GLIMPSE 基于 BatAnalysis 包 [[Parsotan+ 2025]] 实现了自动化的成像与拼接搜索，首次系统性地填补了旋转定位的空白。未来，与 NITRATES 协同有望将 Swift-BAT 的弧分定位率提升约一倍，并已应用于 ULTRA-Swift 计划以响应引力波预警，其方法体系可推广到其他编码掩模望远镜，为时域和多信使天文学提供持续支持。",
         "citations": [
           {
-            "label": "Tohuvavohu+ 2020",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "DeLaunay & Tohuvavohu 2022",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Copete 2012",
+            "authors": "Copete",
+            "year": "2012",
+            "title": "BAT Slew Survey (BATSS): Slew Data Analysis for the Swift-BAT Coded Aperture Imaging Telescope",
+            "ref": "A. J. Copete (2012) BAT Slew Survey (BATSS): Slew Data Analysis for the Swift-BAT Coded Aperture Imaging Telescope. Ph.D. Thesis, Harvard University, Massachusetts.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "2012PhDT.......316C",
+            "url": "https://ui.adsabs.harvard.edu/abs/2012PhDT.......316C",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Tohuvavohu+ 2020",
+            "authors": "Tohuvavohu",
+            "year": "2020",
+            "title": "Gamma-ray urgent archiver for novel opportunities (guano): swift/bat event data dumps on demand to enable sensitive subthreshold grb searches",
+            "ref": "A. Tohuvavohu, J. A. Kennea, J. DeLaunay, D. M. Palmer, S. B. Cenko, and S. Barthelmy (2020) Gamma-ray urgent archiver for novel opportunities (guano): swift/bat event data dumps on demand to enable sensitive subthreshold grb searches. The Astrophysical Journal 900 (1), pp. 35.",
+            "arxiv": "2005.01751",
+            "doi": "10.3847/1538-4357/aba94f",
+            "bibcode": "2020ApJ...900...35T",
+            "url": "https://arxiv.org/abs/2005.01751",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "DeLaunay+ 2022",
+            "authors": "DeLaunay",
+            "year": "2022",
+            "title": "Harvesting bat-guano with nitrates (non-imaging transient reconstruction and temporal search): detecting and localizing the faintest gamma-ray bursts with a likelihood framework",
+            "ref": "J. DeLaunay and A. Tohuvavohu (2022) Harvesting bat-guano with nitrates (non-imaging transient reconstruction and temporal search): detecting and localizing the faintest gamma-ray bursts with a likelihood framework. The Astrophysical Journal 941 (2), pp. 169.",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/ac9d38",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/ac9d38",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Parsotan+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Parsotan",
+            "year": "2025",
+            "title": "BatAnalysis—A Comprehensive Python Pipeline for Swift BAT Time-tagged Event Data Analysis",
+            "ref": "T. Parsotan, D. M. Palmer, S. Ronchini, J. Delaunay, A. Tohuvavohu, S. Laha, A. Lien, S. B. Cenko, H. Krimm, and C. Markwardt (2025) BatAnalysis—A Comprehensive Python Pipeline for Swift BAT Time-tagged Event Data Analysis. ApJ 988 (1), pp. 23.",
+            "arxiv": "2502.00278",
+            "doi": "10.3847/1538-4357/ade240",
+            "bibcode": "2025ApJ...988...23P",
+            "url": "https://arxiv.org/abs/2502.00278",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1728,37 +1876,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14828",
-        "title_zh": "致密天体建模中的SPH方法",
+        "title_zh": "SPH方法在致密天体建模中的应用",
         "team": "",
-        "tldr": "全面综述光滑粒子流体动力学（SPH）从牛顿理想流体到全广义相对论动态时空的算法发展，并系统梳理其在白矮星双星、双中子星及中子星-黑洞合并等致密天体模拟中的应用现状与挑战。",
+        "tldr": "本文系统性总结了光滑粒子流体动力学（SPH）方法在牛顿和广义相对论框架下的数值进展，并综述了其应用于白矮星、中子星及黑洞合并模拟的现状。",
         "review": "",
-        "highlight": "首次在统一框架下覆盖SPH在牛顿、狭义/广义相对论及动态时空中的最新进展，深入剖析守恒性、自适应性与激波捕获、磁场约束等核心矛盾的应对策略，为多信使天体物理模拟提供算法路线图。",
+        "highlight": "全面更新了SPH数值技术（无网格导数、自适应耗散、广义相对论动态时空等），并系统梳理了双致密星合并模拟在引力波时代的最新成果。",
         "relation": "",
-        "authors_en": "Stephan Rosswog (Hamburg Observatory, University of Hamburg; The Oskar Klein Centre, AlbaNova University Centre)",
+        "authors_en": "Stephan Rosswog (Hamburg Observatory, University of Hamburg; The Oskar Klein Centre for Cosmoparticle Physics, AlbaNova University Centre)",
         "corresponding_en": "Stephan Rosswog",
-        "context_outlook": "SPH方法自[[Gingold & Monaghan 1977]]和[[Lucy 1977]]提出以来，凭借其拉格朗日守恒特性天然适合天体流体模拟。早期[[Benz 1990b]]等将SPH成功用于白矮星碰撞，开启了双星并合研究的新范式。随后[[Rosswog+ 2007a]]等工作将SPH推广到广义相对论框架，使得强场致密天体合并的全物理模拟成为可能。本文所梳理的全数值相对论SPH与动态时空耦合标志着算法进入新阶段，未来结合无网格导数、低耗散激波方案及GPU大规模并行，将进一步提升多信使事件的预测精度。",
-        "citations": [
-          {
-            "label": "Gingold & Monaghan 1977",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Lucy 1977",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Benz 1990b",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Rosswog+ 2007a",
-            "arxiv": "",
-            "doi": ""
-          }
-        ]
+        "context_outlook": "SPH作为拉格朗日无网格方法，因其守恒性和自适应性在天体物理中得到广泛应用。然而传统SPH在激波处理和接触不连续面上存在精度不足的问题。近年来，通过引入高精度无网格导数、自适应耗散和广义体积元等技术，SPH的精确性和稳健性大幅提升，并成功拓展至广义相对论动态时空模拟。在双中子星并合等引力波事件驱动下，未来SPH方法将深度融合有限体积技术、完善磁场和微物理模块，以支持多信使天体物理时代的精密理论建模。",
+        "citations": []
       }
     },
     {
@@ -1829,16 +1956,95 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14982",
-        "title_zh": "利用CHIME/FRB星表 I 检验宇宙各向同性",
+        "title_zh": "利用CHIME/FRB星表I检验宇宙各向同性",
         "team": "",
-        "tldr": "使用CHIME第一星表536个FRB，结合注入数据校正观测偏差，通过两点角相关函数和sigma-map两种方法检验宇宙各向同性，结果与各向同性一致但受限于样本量。",
+        "tldr": "使用536个快速射电暴的双点角相关函数和sigma-map方法检验宇宙各向同性，未发现显著各向异性，但受样本量限制。",
         "review": "",
-        "highlight": "首次将CHIME注入数据系统应用于FRB各向同性检验，同时采用2PACF和sigma-map互补方法，为FRB宇宙学统计提供了稳健的分析框架。",
+        "highlight": "首次基于CHIME/FRB真实暴样本并结合注入数据校正观测偏差进行各向同性检验，揭示了当前小样本统计涨落和协方差病态对约束能力的限制，为未来大样本研究指明方向。",
         "relation": "",
         "authors_en": "Jun-Yi Shen, Yuan-Chuan Zou",
         "corresponding_en": "",
-        "context_outlook": "宇宙学原理作为现代宇宙学的基石，已通过CMB（如COBE、WMAP、Planck）和星系巡天（如SDSS）的观测得到广泛支持，但近期类星体偶极等异常暗示可能存在大尺度方向性。FRB作为新兴宇宙学探针，凭借其河外起源和大量样本优势，正成为检验各向同性的重要工具。本研究利用CHIME/FRB第一星表536个FRB，结合注入数据校正仪器偏差，通过两点角相关函数和sigma-map方法进行各向同性检验，为后续FRB宇宙学应用奠定了方法基础。随着CHIME第二星表等更大样本和相应注入数据的发布，未来有望更精确地约束角功率谱的低阶多极矩，并探索可能的大尺度各向异性信号。",
-        "citations": []
+        "context_outlook": "宇宙各向同性传统上通过CMB（[[Planck Collaboration+ 2020]]）和星系巡天（[[Sarkar+ 2019]]）进行检验，近年类星体偶极（[[Secrest+ 2021]]）等发现提示可能存在大尺度各向异性。快速射电暴作为宇宙学探针（[[Walters+ 2018]]）随样本增长而受到关注。本文基于CHIME/FRB第一星表（[[CHIME/FRB Collaboration+ 2021]]）开展两点角相关和sigma-map分析，未发现显著各向异性，但受限于样本量和协方差矩阵条件。未来CHIME/FRB后续星表（[[CHIME/FRB Collaboration+ 2026]]）及高精度定位将显著提升检验灵敏度。",
+        "citations": [
+          {
+            "label": "Planck Collaboration+ 2020",
+            "authors": "Planck Collaboration",
+            "year": "2020",
+            "title": "Planck 2018 results. VI. Cosmological parameters",
+            "ref": "Planck Collaboration, N. Aghanim, Y. Akrami, M. Ashdown, J. Aumont, C. Baccigalupi, M. Ballardini, A. J. Banday, R. B. Barreiro, N. Bartolo, S. Basak, R. Battye, K. Benabed, J.-P. Bernard, M. Bersanelli, P. Bielewicz, J. J. Bock, J. R. Bond, J. Borrill, F. R. Bouchet, F. Boulanger, M. Bucher, C. Burigana, R. C. Butler, E. Calabrese, J.-F. Cardoso, J. Carron, A. Challinor, H. C. Chiang, J. Chluba, L. P. L. Colombo, C. Combet, D. Contreras, B. P. Crill, F. Cuttaia, P. de Bernardis, G. de Zotti, J. Delabrouille, J.-M. Delouis, E. Di Valentino, J. M. Diego, O. Doré, M. Douspis, A. Ducout, X. Dupac, S. Dusini, G. Efstathiou, F. Elsner, T. A. Enßlin, H. K. Eriksen, Y. Fantaye, M. Farhang, J. Fergusson, R. Fernandez-Cobos, F. Finelli, F. Forastieri, M. Frailis, A. A. Fraisse, E. Franceschi, A. Frolov, S. Galeotta, S. Galli, K. Ganga, R. T. Génova-Santos, M. Gerbino, T. Ghosh, J. González-Nuevo, K. M. Górski, S. Gratton, A. Gruppuso, J. E. Gudmundsson, J. Hamann, W. Handley, F. K. Hansen, D. Herranz, S. R. Hildebrandt, E. Hivon, Z. Huang, A. H. Jaffe, W. C. Jones, A. Karakci, E. Keihänen, R. Keskitalo, K. Kiiveri, J. Kim, T. S. Kisner, L. Knox, N. Krachmalnicoff, M. Kunz, H. Kurki-Suonio, G. Lagache, J.-M. Lamarre, A. Lasenby, M. Lattanzi, C. R. Lawrence, M. Le Jeune, P. Lemos, J. Lesgourgues, F. Levrier, A. Lewis, M. Liguori, P. B. Lilje, M. Lilley, V. Lindholm, M. López-Caniego, P. M. Lubin, Y.-Z. Ma, J. F. Macías-Pérez, G. Maggio, D. Maino, N. Mandolesi, A. Mangilli, A. Marcos-Caballero, M. Maris, P. G. Martin, M. Martinelli, E. Martínez-González, S. Matarrese, N. Mauri, J. D. McEwen, P. R. Meinhold, A. Melchiorri, A. Mennella, M. Migliaccio, M. Millea, S. Mitra, M.-A. Miville-Deschênes, D. Molinari, L. Montier, G. Morgante, A. Moss, P. Natoli, H. U. Nørgaard-Nielsen, L. Pagano, D. Paoletti, B. Partridge, G. Patanchon, H. V. Peiris, F. Perrotta, V. Pettorino, F. Piacentini, L. Polastri, G. Polenta, J.-L. Puget, J. P. Rachen, M. Reinecke, M. Remazeilles, A. Renzi, G. Rocha, C. Rosset, G. Roudier, J. A. Rubiño-Martín, B. Ruiz-Granados, L. Salvati, M. Sandri, M. Savelainen, D. Scott, E. P. S. Shellard, C. Sirignano, G. Sirri, L. D. Spencer, R. Sunyaev, A.-S. Suur-Uski, J. A. Tauber, D. Tavagnacco, M. Tenti, L. Toffolatti, M. Tomasi, T. Trombetti, L. Valenziano, J. Valiviita, B. Van Tent, L. Vibert, P. Vielva, F. Villa, N. Vittorio, B. D. Wandelt, I. K. Wehus, M. White, S. D. M. White, A. Zacchei, and A. Zonca (2020-09) Planck 2018 results. VI. Cosmological parameters. \\aap 641, pp. A6. External Links: Document, 1807.06209",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Sarkar+ 2019",
+            "authors": "Sarkar",
+            "year": "2019",
+            "title": "Testing isotropy in the Universe using photometric and spectroscopic data from the SDSS",
+            "ref": "S. Sarkar, B. Pandey, and R. Khatri (2019-02) Testing isotropy in the Universe using photometric and spectroscopic data from the SDSS. \\mnras 483(2), pp. 2453–2464. External Links: Document, 1810.07410",
+            "arxiv": "1810.07410",
+            "doi": "10.1093/mnras/sty3272",
+            "bibcode": "2019MNRAS.483.2453S",
+            "url": "https://arxiv.org/abs/1810.07410",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Secrest+ 2021",
+            "authors": "Secrest",
+            "year": "2021",
+            "title": "A Test of the Cosmological Principle with Quasars",
+            "ref": "N. J. Secrest, S. von Hausegger, M. Rameez, R. Mohayaee, S. Sarkar, and J. Colin (2021-02) A Test of the Cosmological Principle with Quasars. \\apjl 908(2), pp. L51. External Links: Document, 2009.14826",
+            "arxiv": "2009.14826",
+            "doi": "10.3847/2041-8213/abdd40",
+            "bibcode": "2021ApJ...908L..51S",
+            "url": "https://arxiv.org/abs/2009.14826",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Walters+ 2018",
+            "authors": "Walters",
+            "year": "2018",
+            "title": "Future Cosmological Constraints From Fast Radio Bursts",
+            "ref": "A. Walters, A. Weltman, B. M. Gaensler, Y. Ma, and A. Witzemann (2018-03) Future Cosmological Constraints From Fast Radio Bursts. \\apj 856(1), pp. 65. External Links: Document, 1711.11277",
+            "arxiv": "1711.11277",
+            "doi": "10.3847/1538-4357/aaaf6b",
+            "bibcode": "2018ApJ...856...65W",
+            "url": "https://arxiv.org/abs/1711.11277",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "CHIME/FRB Collaboration+ 2021",
+            "authors": "CHIME/FRB Collaboration",
+            "year": "2021",
+            "title": "The First CHIME/FRB Fast Radio Burst Catalog",
+            "ref": "CHIME/FRB Collaboration, M. Amiri, B. C. Andersen, K. Bandura, S. Berger, M. Bhardwaj, M. M. Boyce, P. J. Boyle, C. Brar, D. Breitman, T. Cassanelli, P. Chawla, T. Chen, J.-F. Cliche, A. Cook, D. Cubranic, A. P. Curtin, M. Deng, M. Dobbs, F. A. Dong, G. Eadie, M. Fandino, E. Fonseca, B. M. Gaensler, U. Giri, D. C. Good, M. Halpern, A. S. Hill, G. Hinshaw, A. Josephy, J. F. Kaczmarek, Z. Kader, J. W. Kania, V. M. Kaspi, T. L. Landecker, D. Lang, C. Leung, D. Li, H. Lin, K. W. Masui, R. McKinven, J. Mena-Parra, M. Merryfield, B. W. Meyers, D. Michilli, N. Milutinovic, A. Mirhosseini, M. Münchmeyer, A. Naidu, L. Newburgh, C. Ng, C. Patel, U. Pen, E. Petroff, T. Pinsonneault-Marotte, Z. Pleunis, M. Rafiei-Ravandi, M. Rahman, S. M. Ransom, A. Renard, P. Sanghavi, P. Scholz, J. R. Shaw, K. Shin, S. R. Siegel, A. E. Sikora, S. Singh, K. M. Smith, I. Stairs, C. M. Tan, S. P. Tendulkar, K. Vanderlinde, H. Wang, D. Wulf, and A. V. Zwaniga (2021-12) The First CHIME/FRB Fast Radio Burst Catalog. \\apjs 257(2), pp. 59. External Links: Document, 2106.04352",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "CHIME/FRB Collaboration+ 2026",
+            "authors": "CHIME/FRB Collaboration",
+            "year": "2026",
+            "title": "The Second CHIME/FRB Catalog of Fast Radio Bursts",
+            "ref": "CHIME/FRB Collaboration, T. Abbott, B. C. Andersen, S. Andrew, K. Bandura, M. Bhardwaj, Y. Bhusare, C. Brar, T. Cassanelli, S. Chatterjee, J. Cliche, A. M. Cook, A. Curtin, M. Dobbs, F. A. Dong, G. Eadie, T. Eftekhari, E. Fonseca, B. M. Gaensler, D. Good, M. Halpern, J. W. T. Hessels, A. Ibik, N. Jain, R. C. Joseph, Z. Kader, V. M. Kaspi, A. Khan, B. Kharel, A. Kumar, T. L. Landecker, D. Lang, A. E. Lanman, M. L’Argent, M. Lazda, C. Leung, D. Z. Li, C. J. Lintott, R. Main, K. W. Masui, S. Mate, K. McGregor, R. McKinven, J. Mena-Parra, B. W. Meyers, D. Michilli, C. Ng, M. Ng, K. Nimmo, G. Noble, A. Pandhi, S. S. Patil, A. B. Pearlman, U. Pen, Z. Pleunis, J. X. Prochaska, M. Rafiei-Ravandi, S. Ransom, A. Renard, M. W. Sammons, K. R. Sand, P. Scholz, V. Shah, K. Shin, S. R. Siegel, S. Sirota, K. Smith, I. Stairs, D. C. Stenning, S. P. Tendulkar, K. Vanderlinde, M. Walmsley, H. Wang, and D. Wulf (2026-03) The Second CHIME/FRB Catalog of Fast Radio Bursts. \\apjs 283(1), pp. 34. External Links: Document, 2601.09399",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          }
+        ]
       }
     },
     {
@@ -2209,30 +2415,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.14696",
-        "title_zh": "潮汐瓦解事件2024aepd的早期近红外超出与盘–冕快速演化",
+        "title_zh": "潮汐瓦解事件2024aepd的早期近红外超与快速盘-冕演化",
         "team": "",
-        "tldr": "多波段观测TDE 2024aepd，发现早期近红外超出及X射线谱从热盘到幂律冕的快速转变，为再处理包层模型提供新约束。",
+        "tldr": "报道了 TDE 2024aepd 的多波段观测，发现早期近红外超及从热主导到非热主导的快速 X 射线态转变，并认为自由-自由辐射是近红外超的可能成因。",
         "review": "",
-        "highlight": "亮点：成为继AT2019azh和TDE 2025abcr之后第三例具有早期NIR超出的TDE，且首次清晰展示盘–冕协同演化，揭示自由-自由辐射再处理可能普遍存在。",
+        "highlight": "首次在早期同时发现 NIR 超和快速盘-冕演化，其平坦的 NIR 谱支持自由-自由辐射模型；X 射线态转变类似于 X 射线双星，为超质量黑洞吸积物理提供了新线索。",
         "relation": "",
-        "authors_en": "Yongxin Wu (Key Laboratory of Optical Astronomy, National Astronomical Observatories, CAS), Yanan Wang (Key Laboratory of Optical Astronomy, National Astronomical Observatories, CAS), Thomas M. Reynolds (Tuorla Observatory, University of Turku) et al.",
+        "authors_en": "Yongxin Wu (Key Laboratory of Optical Astronomy, National Astronomical Observatories, Chinese Academy of Sciences; School of Astronomy and Space Sciences, University of Chinese Academy of Sciences), Yanan Wang (Key Laboratory of Optical Astronomy, National Astronomical Observatories, Chinese Academy of Sciences), Thomas M. Reynolds (Tuorla observatory, Department of Physics and Astronomy, University of Turku; Cosmic Dawn Center (DAWN)) et al.",
         "corresponding_en": "Yanan Wang",
-        "context_outlook": "近年来对TDE的近红外观测仍较匮乏，仅AT2019azh [[Reynolds+ 2026]]和TDE 2025abcr [[Patra+ 2026]]报道过早期NIR超出。本研究在2024aepd中不仅再次探测到该成分，还观测到X射线盘–冕态快速转变，为自由-自由吸收再处理模型提供了新支持 [[Roth+ 2020]]。这些发现暗示早期NIR超出可能非特例，并与FBOT瞬变现象形成联系。未来结合更大样本的早期NIR监测和数值模拟，可望区分尘埃回波与包层再处理，并建立盘–冕形成的统一物理图像。",
+        "context_outlook": "在 TDE 中，传统的尘埃回响模型（[[Lu+ 2016]]）常用于解释红外超，但近期对 AT2019azh（[[Reynolds+ 2026]]）和 TDE 2025abcr（[[Patra+ 2026]]）的观测揭示了早期近红外超，自由-自由辐射模型（[[Roth+ 2020]]）被认为更合理。本文的发现进一步支持了这一机制，并提供了盘-冕演化的证据，类似 X 射线双星的态转变（如 [[Wevers+ 2021]]）。未来更大样本的早期 NIR 监测和更深的 X 射线观测将有助于确认此类超的普遍性并探寻态转变的反相关分支。",
         "citations": [
           {
+            "label": "Lu+ 2016",
+            "authors": "Lu",
+            "year": "2016",
+            "title": "Infrared emission from tidal disruption events - probing the pc-scale dust content around galactic nuclei",
+            "ref": "W. Lu, P. Kumar, and N. J. Evans (2016)\nInfrared emission from tidal disruption events - probing the pc-scale dust content around galactic nuclei\n.\nMNRAS\n458\n(\n1\n),\npp. 575–581\n.\nExternal Links:\nDocument\n,\n1512.00020",
+            "arxiv": "1512.00020",
+            "doi": "10.1093/mnras/stw307",
+            "bibcode": "2016MNRAS.458..575L",
+            "url": "https://arxiv.org/abs/1512.00020",
+            "source": "ads",
+            "verified": true
+          },
+          {
             "label": "Reynolds+ 2026",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Reynolds",
+            "year": "2026",
+            "title": "Infrared observations reveal the reprocessing envelope in the tidal disruption event AT 2019azh",
+            "ref": "T. M. Reynolds, L. Thomsen, S. Mattila, T. Nagao, J. P. Anderson, F. E. Bauer, P. Charalampopoulos, L. Dai, S. Faris, M. Gromadzki, C. P. Gutiérrez, H. Kuncarayakti, C. Inserra, E. Kankare, T. Kravtsov, J. Moldon, S. Moran, M. Pérez Torres, P. Wiseman, and S. van Velzen (2026)\nInfrared observations reveal the reprocessing envelope in the tidal disruption event AT 2019azh\n.\nA&A\n708\n,\npp. A139\n.\nExternal Links:\nDocument\n,\n2506.18489",
+            "arxiv": "2506.18489",
+            "doi": "10.1051/0004-6361/202556056",
+            "bibcode": "2026A&A...708A.139R",
+            "url": "https://arxiv.org/abs/2506.18489",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Patra+ 2026",
+            "authors": "Patra",
+            "year": "2026",
+            "title": "JWST and keck observations of the off-nuclear tidal disruption event tde 2025abcr: an evolving reprocessing layer",
+            "ref": "K. C. Patra, E. R. Liepold, N. Earl, R. J. Foley, C. Ma, S. Gomez, K. W. Davis, E. Ramirez-Ruiz, K. D. French, J. L. Walsh, R. Kaur, K. Taggart, J. Candanoza, V. A. Villar, P. Arunachalam, P. Macias, and S. Tinyanont (2026)\nJWST and keck observations of the off-nuclear tidal disruption event tde 2025abcr: an evolving reprocessing layer\n.\nExternal Links:\n2604.16093\n,\nLink",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
             "label": "Roth+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Roth",
+            "year": "2020",
+            "title": "Radiative Emission Mechanisms",
+            "ref": "N. Roth, E. M. Rossi, J. Krolik, T. Piran, B. Mockler, and D. Kasen (2020)\nRadiative Emission Mechanisms\n.\nSpace Sci. Rev.\n216\n(\n7\n),\npp. 114\n.\nExternal Links:\nDocument\n,\n2008.01117",
+            "arxiv": "2008.01117",
+            "doi": "10.1007/s11214-020-00735-1",
+            "bibcode": "2020SSRv..216..114R",
+            "url": "https://arxiv.org/abs/2008.01117",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Wevers+ 2021",
+            "authors": "Wevers",
+            "year": "2021",
+            "title": "Rapid Accretion State Transitions following the Tidal Disruption Event AT2018fyk",
+            "ref": "T. Wevers, D. R. Pasham, S. van Velzen, J. C. A. Miller-Jones, P. Uttley, K. C. Gendreau, R. Remillard, Z. Arzoumanian, M. Löwenstein, and A. Chiti (2021)\nRapid Accretion State Transitions following the Tidal Disruption Event AT2018fyk\n.\nApJ\n912\n(\n2\n),\npp. 151\n.\nExternal Links:\nDocument\n,\n2101.04692",
+            "arxiv": "2101.04692",
+            "doi": "10.3847/1538-4357/abf5e2",
+            "bibcode": "2021ApJ...912..151W",
+            "url": "https://arxiv.org/abs/2101.04692",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2271,14 +2527,80 @@
         "paper_id": "arxiv:2607.14627",
         "title_zh": "饱和克尔玻色子云的相对论潮汐跃迁",
         "team": "",
-        "tldr": "计算五个Δm=-2跃迁通道的Kerr准束缚模矩阵元，相对类氢值修正最高达21.67%，并分离径向、归一化和潮汐几何的贡献。",
+        "tldr": "计算了饱和克尔玻色子云在相对论准束缚态下的潮汐跃迁矩阵元，发现较氢原子近似最大修正达21.67%，主要源于径向模式变形和双线性归一化。",
         "review": "",
-        "highlight": "首次在饱和分支上系统计算相对论潮汐跃迁，发现可达~22%的修正，挑战了类氢近似的有效性；通过分量替换揭示径向模轮廓修正占主导（~80%），双线性归一化次之，潮汐几何影响极小。",
+        "highlight": "首次在超辐射饱和分支上系统给出五个 Δm=-2 跃迁的相对论修正谱，并定量分离了径向轮廓、双线性归一化和潮汐几何的贡献；修正可超10%，对双星-玻色子云共振耗散的精确建模至关重要。",
         "relation": "",
         "authors_en": "Yi-kun Li (Xinjiang Astronomical Observatory, CAS / University of Chinese Academy of Sciences)",
         "corresponding_en": "Yi-kun Li",
-        "context_outlook": "过去该领域普遍采用类氢波函数和牛顿潮汐场估算玻色子云跃迁，但饱和状态下克尔几何对云结构的影响不可忽略。该工作通过数值饱和分支上的精确准束缚模与相对论投影，系统量化了相对论修正，并在广范参数空间内证明其显著性。展望未来，此类修正应纳入双星旋近中的云演化模型，以更准确地预测共振耗散与引力波信号，同时对其它自旋场及高阶跃迁提供方法参考。",
-        "citations": []
+        "context_outlook": "潮汐共振跃迁传统上采用氢原子波函数和牛顿四极场（[[Baumann+ 2019a]]；[[Baumann+ 2020]]），完整的云演化史则依赖精确的微观矩阵元（[[Tomaselli+ 2024]]）。本文利用相对论准束缚态微扰理论（[[Cannizzaro+ 2024]]）和守恒双线性投影（[[Green+ 2023]]），在饱和分支上计算了五个跃迁的相对论矩阵元，揭示了径向模式变形的主导地位。该结果为耦合轨道-云演化的精密建模提供了关键输入，有助于提升极端质量比旋近中玻色子云信号的预测准确性。",
+        "citations": [
+          {
+            "label": "Baumann+ 2019a",
+            "authors": "Baumann",
+            "year": "2019",
+            "title": "Probing Ultralight Bosons with Binary Black Holes",
+            "ref": "D. Baumann, H. S. Chia, and R. A. Porto, Probing Ultralight Bosons with Binary Black Holes, Phys. Rev. D 99, 044001 (2019a), arXiv:1804.03208 [gr-qc].",
+            "arxiv": "1804.03208",
+            "doi": "10.1103/PhysRevD.99.044001",
+            "bibcode": "2019PhRvD..99d4001B",
+            "url": "https://arxiv.org/abs/1804.03208",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Baumann+ 2020",
+            "authors": "Baumann",
+            "year": "2020",
+            "title": "Gravitational Collider Physics",
+            "ref": "D. Baumann, H. S. Chia, R. A. Porto, and J. Stout, Gravitational Collider Physics, Phys. Rev. D 101, 083019 (2020), arXiv:1912.04932 [gr-qc].",
+            "arxiv": "1912.04932",
+            "doi": "10.1103/PhysRevD.101.083019",
+            "bibcode": "2020PhRvD.101h3019B",
+            "url": "https://arxiv.org/abs/1912.04932",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Tomaselli+ 2024",
+            "authors": "Tomaselli",
+            "year": "2024",
+            "title": "Resonant history of gravitational atoms in black hole binaries",
+            "ref": "G. M. Tomaselli, T. F. M. Spieksma, and G. Bertone, Resonant history of gravitational atoms in black hole binaries, Phys. Rev. D 110, 064048 (2024), arXiv:2403.03147 [gr-qc].",
+            "arxiv": "2403.03147",
+            "doi": "10.1103/PhysRevD.110.064048",
+            "bibcode": "2024PhRvD.110f4048T",
+            "url": "https://arxiv.org/abs/2403.03147",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Cannizzaro+ 2024",
+            "authors": "Cannizzaro",
+            "year": "2024",
+            "title": "Relativistic Perturbation Theory for Black-Hole Boson Clouds",
+            "ref": "E. Cannizzaro, L. Sberna, S. R. Green, and S. Hollands, Relativistic Perturbation Theory for Black-Hole Boson Clouds, Phys. Rev. Lett. 132, 051401 (2024), arXiv:2309.10021 [gr-qc].",
+            "arxiv": "2309.10021",
+            "doi": "10.1103/PhysRevLett.132.051401",
+            "bibcode": "2024PhRvL.132e1401C",
+            "url": "https://arxiv.org/abs/2309.10021",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Green+ 2023",
+            "authors": "Green",
+            "year": "2023",
+            "title": "Conserved currents for a Kerr black hole and orthogonality of quasinormal modes",
+            "ref": "S. R. Green, S. Hollands, L. Sberna, V. Toomani, and P. Zimmerman, Conserved currents for a Kerr black hole and orthogonality of quasinormal modes, Phys. Rev. D 107, 064030 (2023), arXiv:2210.15935 [gr-qc].",
+            "arxiv": "2210.15935",
+            "doi": "10.1103/PhysRevD.107.064030",
+            "bibcode": "2023PhRvD.107f4030G",
+            "url": "https://arxiv.org/abs/2210.15935",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       }
     },
     {
@@ -2604,25 +2926,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15438",
-        "title_zh": "潮汐瓦解事件的三重射电耀发：喷流-风碰撞及AT2020vwl第三次射电耀发的发现",
+        "title_zh": "潮汐瓦解事件的三次射电耀发：喷流-风碰撞与 AT2020vwl 的第三射电耀发发现",
         "team": "",
-        "tldr": "提出TDE中喷流追上风壳导致第三次射电耀发的理论框架，并在AT2020vwl中首次观测到该耀发，验证了双外流统一模型。",
+        "tldr": "基于风-喷流统一框架，本文预测并首次探测到 TDE AT2020vwl 在风与喷流碰撞时产生的第三射电耀发，同时为 ASASSN-15oi 和 AT2024tvd 做出差异化预测。",
         "review": "",
-        "highlight": "首次在TDE AT2020vwl中探测到由喷流-风碰撞产生的第三射电耀发，为双外流统一模型提供了直接观测证据；建立了一套从双耀发光变曲线预测碰撞时标的动力学方法。",
+        "highlight": "首次经由动力学模型预测 TDE 射电耀发时间并获观测证实，验证了早期盘风与后期态转变喷流碰撞产生再增亮的新机制，为统一解释 TDE 射电多样性提供了决定性证据。",
         "relation": "",
-        "authors_en": "A. Mummery (Institute for Advanced Study), A. Goodwin (Curtin University), C. Christy (Steward Observatory) et al.",
-        "corresponding_en": "",
-        "context_outlook": "TDE射电耀发以往呈现 prompt 和 delayed 两类，部分源甚至显示多重耀发（如 [[Cendes+ 2024]]）。Goodwin & Mummery [[Goodwin & Mummery 2026b]] 提出统一的双外流框架：早期超爱丁顿风驱动 prompt 耀发，晚期盘态转变喷流驱动 delayed 耀发。该模型自然预言较快的喷流将追上较慢的风壳，引发第三次射电耀发。本文在 AT2020vwl 中于碰撞时标上发现第三耀发，并预测了 ASASSN-15oi 和 AT2024tvd 的射电演化。未来延长监测更多双耀发 TDE，可检验该模型的普适性，并利用射电碰撞耀发反推外流与核周介质结构。",
+        "authors_en": "A. Mummery (School of Natural Sciences, Institute for Advanced Study), A. J. Goodwin (International Centre for Radio Astronomy Research – Curtin University), C. T. Christy (Department of Astronomy/Steward Observatory) et al.",
+        "corresponding_en": "Andrew Mummery",
+        "context_outlook": "过去研究发现部分 TDE 呈现双射电耀发现象，[[Goodwin & Mummery 2026b]] 提出早期超爱丁顿盘风产生即时耀发、低吸积率态转变喷流产生延迟耀发的统一框架。本文进一步推演：若同一事件先后产生风与喷流，喷流最终追上风壳时密度跳变将引发第三次射电耀发。利用 [[Goodwin+ 2025b]] 的 AT2020vwl 前两次耀发数据建立外流动力学模型，推算出碰撞时间，并首次在新的射电监测中探测到第三耀发，其自吸收频率升高与理论一致。对另两个双耀发源 ASASSN-15oi（数据引自 [[Hajela+ 2025]]）和 AT2024tvd（数据引自 [[Sfaradi+ 2025]]）的建模分别给出弱变化和即将发生强耀发的预测。该框架为甄别 TDE 外流机制、诊断核周介质结构开辟了新窗口，未来对更多多耀发 TDE 的射电监测将检验其普适性，而碰撞后辐射的细致物理也有待进一步建模。",
         "citations": [
           {
-            "label": "Cendes+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "label": "Goodwin & Mummery 2026b",
+            "authors": "Goodwin",
+            "year": "2026",
+            "title": "",
+            "ref": "Goodwin, A. J., & Mummery, A. 2026b, arXiv e-prints, arXiv:2602.14838, doi:10.48550/arXiv.2602.14838",
+            "arxiv": "2602.14838",
+            "doi": "10.48550/arXiv.2602.14838",
+            "bibcode": "2026arXiv260214838G",
+            "url": "https://arxiv.org/abs/2602.14838",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Goodwin & Mummery 2026b",
+            "label": "Goodwin+ 2025b",
+            "authors": "Goodwin",
+            "year": "2025",
+            "title": "",
+            "ref": "Goodwin, A. J., Mummery, A., Laskar, T., et al. 2025b, ApJ, 981, 122, doi:10.3847/1538-4357/adb0b1",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/adb0b1",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/adb0b1",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Hajela+ 2025",
+            "authors": "Hajela",
+            "year": "2025",
+            "title": "",
+            "ref": "Hajela, A., Alexander, K. D., Margutti, R., et al. 2025, ApJ, 983, 29, doi:10.3847/1538-4357/adb620",
+            "arxiv": "2407.19019",
+            "doi": "10.3847/1538-4357/adb620",
+            "bibcode": "2025ApJ...983...29H",
+            "url": "https://arxiv.org/abs/2407.19019",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sfaradi+ 2025",
+            "authors": "Sfaradi",
+            "year": "2025",
+            "title": "",
+            "ref": "Sfaradi, I., Margutti, R., Chornock, R., et al. 2025, ApJ, 992, L18, doi:10.3847/2041-8213/ae0a26",
+            "arxiv": "2508.03807",
+            "doi": "10.3847/2041-8213/ae0a26",
+            "bibcode": "2025ApJ...992L..18S",
+            "url": "https://arxiv.org/abs/2508.03807",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2658,15 +3022,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15453",
-        "title_zh": "评估偏心波形系统误差：从参数估计到总体推断",
+        "title_zh": "评估偏心波形系统误差：从参数估计到星族推断",
         "team": "",
-        "tldr": "比较两种偏心波形模型对 GWTC-4 紧凑双星的分析，发现模型间系统偏差会累积并显著影响天体物理总体推断（如自旋与红移演化）。",
+        "tldr": "比较两种偏心波形模型对GWTC-4事件的分析，揭示模型间系统偏差会随样本数累积，影响星族推断结果，并提出合成数据测试框架。",
         "review": "",
-        "highlight": "首次系统揭示偏心波形模型间微小偏差在层次总体推断中的传播效应，并指出其随样本增大而加剧；同时构建了用于注入测试的合成数据框架，为偏心总体推断的可恢复性研究提供基准。",
+        "highlight": "首次系统研究波形模型差异从单事件参数估计到层次化星族推断的传播效应，指出偏差按√N增长；开发了可检验星族性质恢复能力的合成数据注入方法。",
         "relation": "",
         "authors_en": "Muhammad Zeeshan, Richard O'Shaughnessy, Natalie Malagon et al.",
         "corresponding_en": "",
-        "context_outlook": "近年来，偏心轨道作为双星起源的重要探针备受关注，尤其在动力学组装系统中。随着 SEOBNRv5EHM 和 TEOBResumS-DALI 等波形模型的发展，从引力波数据中提取偏心信号成为可能，但不同模型间的系统差异可能引入传播误差。本研究通过分析 GWTC-4 样本，证明即使单个事件参数估计中的微小偏差，也会在层次总体推断中积累，显著影响红移演化和有效自旋分布等关键天体物理结论。未来随着引力波事件目录的急剧扩大，波形系统误差将成为精确天体物理推断的瓶颈，亟需更精确的波形建模和稳健的统计处理方案；而作者建立的合成数据框架将为偏心总体推断的可靠性评估提供重要的测试平台。",
+        "context_outlook": "近年来，偏心率作为区分致密双星形成渠道（尤其是动力学过程）的探针备受关注，推动了以SEOBNRv5EHM和TEOBResumS-DALI为代表的偏心波形模型发展。先前研究侧重个别事件的偏心分析，但不同模型间的系统偏差对整体星族推断的影响尚不清楚。本文通过大样本比较发现，个别事件的细微相干差异在层次化推断中会累积，导致红移演化、有效自旋分布等星族参数出现偏移。随着引力波星表持续扩大，此类波形系统误差将更突出，未来需发展更稳健的误差处理方法，并结合合成数据框架验证星族推断的可靠性。",
         "citations": []
       }
     },
@@ -2698,15 +3062,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15431",
-        "title_zh": "揭示双黑洞的层级子群结构",
+        "title_zh": "揭示双黑洞的层级亚群结构",
         "team": "",
-        "tldr": "利用多分量混合模型分析259个双黑洞样本，发现质量峰呈层级排列，但各分量自旋大多与各向同性一致，与分层形成理论的预期相左。",
+        "tldr": "利用多成分混合模型分析259个双黑洞事件，发现除最低质量成分外，其余自旋分布均与各向同性一致，且质量峰呈等级结构但缺乏预期的自旋-质量关联。",
         "review": "",
-        "highlight": "首次构建原生多分量混合模型（幂律+多个高斯峰），独立恢复各分量的并合率、质量和自旋；发现除最低质量分量外，其余分量自旋均与各向同性吻合，挑战了分层形成中自旋-质量关联的预期。",
+        "highlight": "首次使用多成分混合模型系统分解双黑洞群体，挑战了传统关于高自旋与高质量关联的图像，为识别不同形成渠道提供了新视角。",
         "relation": "",
         "authors_en": "Muhammad Zeeshan, Richard O'Shaughnessy",
         "corresponding_en": "",
-        "context_outlook": "随着引力波探测器灵敏度提升，双黑洞样本已增至259个，为揭示种群内部的亚结构与形成渠道提供了统计基础。先前研究多采用单组分或简单模型，发现质量分布的峰值特征以及自旋随质量演化的整体趋势（低质量端低自旋、趋于对齐，高质量端高自旋、趋于各向同性）。本工作引入多组分混合模型，更精细地分离不同质量峰的自旋分布，结果表明高阶质量峰的自旋并未呈现分层形成理论所预期的强各向同性与关联性。未来随着样本进一步扩大，该类多组分方法可融入动力学和金属丰度等信息，有望系统区分孤立星演化、动力学交换及多层次并合等形成途径，推动对双黑洞起源的统一理解。",
+        "context_outlook": "随着引力波事例积累到259个，学者开始能揭示双黑洞群体的精细亚结构。先前研究已发现质量谱中存在多个峰以及自旋分布随质量演化的趋势（如低质量区自旋小且趋向平行，高质量区自旋大且各向同性）。本工作采用更灵活的多成分模型，发现大多数成分的自旋各向同性，且质量峰呈近似的等级间隔，但并未出现层级并合理论所预言的自旋-质量强关联。这一差异提示双黑洞的来源可能比预期更复杂，未来需结合更大样本和更丰富的物理模型来进一步甄别。",
         "citations": []
       }
     },
@@ -2783,40 +3147,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15464",
-        "title_zh": "AT2018cow紫外/光学平台期的启示",
+        "title_zh": "AT2018cow 紫外/光学平台期的启示",
         "team": "",
-        "tldr": "本文用超爱丁顿盘风+照射模型解释AT2018cow晚期紫外/光学平台，避免黑洞质量过大，并指出JWST可打破吸积体质量简并。",
+        "tldr": "提出超爱丁顿风+外盘辐照模型解释 AT2018cow 的晚期紫外/光学平台，解除纯薄盘模型对 >200 M⊙ 黑洞的依赖，并预测 JWST 近红外观测可区分吸积天体质量。",
         "review": "",
-        "highlight": "提出超爱丁顿盘风+外盘照射统一模型，解决了纯薄盘模型所需黑洞质量≳200 M⊙与X射线限制的矛盾；预言JWST近/中红外自由-自由辐射可有效区分吸积体性质。",
+        "highlight": "用风致光球层辐射和薄盘再加工机制成功拟合 UV/光学平台，同时避开 XMM-Newton 的 X 射线上限；指出近红外自由‑自由辐射可打破中子星与黑洞的模型简并，并给出 JWST 可检验的定量预言。",
         "relation": "",
         "authors_en": "Wenbin Lu (Department of Astronomy and Theoretical Astrophysics Center, University of California, Berkeley, CA 94720-3411, USA), Anthony L. Piro (The Observatories of the Carnegie Institution for Science, Pasadena, CA 91101, USA)",
         "corresponding_en": "Wenbin Lu",
-        "context_outlook": "AT2018cow的长期紫外/光学平台由[[Chen+ 2023]]发现，早期被解释为薄吸积盘辐射（[[Inkenhaag+ 2025]]; [[Winter-Granic & Quataert 2025]]），但纯盘模型要求中心质量≳200 M⊙，与X射线观测上限（[[Migliori+ 2024]]）和对不稳定性质量间隙冲突。本文引入超爱丁顿盘风加外盘照射模型，使1.4 M⊙中子星至100 M⊙黑洞的可信质量区间均可拟合数据，指出质量简并源于风的光球温度对吸积体质量不敏感。未来JWST 近/中红外自由-自由辐射及MIRI发射线观测将有效区分吸积体，并检验微潮汐瓦解事件（[[Perley+ 2019]]）等形成渠道。",
+        "context_outlook": "前人将 AT2018cow 的紫外/光学平台解释为纯粘性薄吸积盘辐射（[[Chen+2023]]，[[Inkenhaag+2025]]，[[Winter-Granic & Quataert 2025]]），但该模型要求黑洞质量 ≳200 M⊙，与 X 射线上限（[[Migliori+2024]]）冲突。本文引入超爱丁顿盘风的光球和外部薄盘辐照，使吸积天体可从 1.4 M⊙ 中子星至 ~100 M⊙ 黑洞均与观测相容，解决了上述矛盾。模型预言近红外自由‑自由辐射和宽发射线（HeII1640、Hα）可作为质量与盘成分的探针，为 JWST 的判别观测提供了具体目标。该盘风模型自然与微潮汐瓦解事件（micro‑TDE）框架衔接（[[Tsuna & Lu 2025]]，[[Klencki & Metzger 2025]]），未来结合 JWST 测光与细致辐射转移计算有望最终确定 AT2018cow 的中心天体性质。",
         "citations": [
           {
-            "label": "Chen+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "label": "Chen+2023",
+            "authors": "Chen",
+            "year": "2023",
+            "title": "The Late-time Optical and UV Emission of AT2018cow",
+            "ref": "Chen Y., Drout M. R., Piro A. L., Kilpatrick C. D., Foley R. J., Rojas-Bravo C., Magee M. R., 2023, ApJ, 955, 43",
+            "arxiv": "2303.03500",
+            "doi": "10.3847/1538-4357/ace965",
+            "bibcode": "2023ApJ...955...42C",
+            "url": "https://arxiv.org/abs/2303.03500",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Inkenhaag+ 2025",
+            "label": "Inkenhaag+2025",
+            "authors": "Inkenhaag",
+            "year": "2025",
+            "title": "The fading of the late-time plateau of AT2018cow as a clue to the nature of the central engine",
+            "ref": "Inkenhaag A., Levan A. J., Mummery A., Jonker P. G., 2025, MNRAS, 544, L108",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnrasl/slaf107",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnrasl/slaf107",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Winter-Granic & Quataert 2025",
+            "authors": "Winter-Granic",
+            "year": "2025",
+            "title": "Late‑time UV‑optical plateau in AT2018cow: A clue to the compact object?",
+            "ref": "Winter-Granic M., Quataert E., 2025, arXiv e-prints, p. arXiv:2512.09017",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
-            "label": "Migliori+ 2024",
+            "label": "Migliori+2024",
+            "authors": "Migliori",
+            "year": "2024",
+            "title": "XMM-Newton observations of AT2018cow",
+            "ref": "Migliori G., et al., 2024, ApJL, 963, L24",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/2041-8213/ad2764",
+            "bibcode": "2024ApJ...963L..24M",
+            "url": "https://doi.org/10.3847/2041-8213/ad2764",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Perley+ 2019",
+            "label": "Tsuna & Lu 2025",
+            "authors": "Tsuna",
+            "year": "2025",
+            "title": "A Tidal Disruption Origin for the Luminous Fast Blue Optical Transient AT2018cow",
+            "ref": "Tsuna D., Lu W., 2025, ApJ, 986, 84",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/add158",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/add158",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Klencki & Metzger 2025",
+            "authors": "Klencki",
+            "year": "2025",
+            "title": "Failed common-envelope merger as a formation channel for luminous fast blue optical transients",
+            "ref": "Klencki J., Metzger B. D., 2025, arXiv e-prints, p. arXiv:2510.09745",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -2924,30 +3341,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15435",
-        "title_zh": "VERITAS对BL Lacertae长时标甚高能耀斑的多波段研究",
+        "title_zh": "基于VERITAS的BL Lacertae长时标甚高能耀斑的多波段研究",
         "team": "",
-        "tldr": "首次探测到BL Lacertae持续约40天的VHE耀斑，多波段光谱拟合支持SSC+外部逆康普顿（EC）机制。",
+        "tldr": "首次报道BL Lacertae持续约40天的VHE耀斑，多波段建模表明SSC+EIC模型显著优于纯单区SSC模型。",
         "review": "",
-        "highlight": "与以往分钟至天尺度的VHE耀斑不同，本次耀斑延续近40天；光谱分析表明单区SSC模型不足，需引入EC成分，为IBL高能辐射机制提供新约束。",
+        "highlight": "首次探测到BL Lacertae长达一个月以上的VHE耀斑，打破了以往仅观测到分钟至天级快速耀斑的认识；多波段拟合显示外部逆康普顿（EIC）分量对解释持续VHE辐射至关重要，为中等频率峰值BL Lac型天体的辐射机制提供了新约束。",
         "relation": "",
-        "authors_en": "A. Acharyya (CP3-Origins, University of Southern Denmark), A. Archer (Department of Physics and Astronomy, DePauw University), P. Bangale (Department of Physics, Temple University) et al.",
+        "authors_en": "A. Acharyya (University of Southern Denmark), A. Archer (DePauw University), P. Bangale (Temple University) et al.",
         "corresponding_en": "Claire E. Hinrichs",
-        "context_outlook": "BL Lacertae是典型IBL，既往VHE耀斑多为短时标事件（[[Arlen+ 2012]]、[[Acciari+ 2019]]）。此次VERITAS观测到长达40天的耀斑，且多波段SED建模倾向包含EC分量，与低峰频BL Lac的表现相似（[[Hervet+ 2015]]）。该结果暗示IBL的高能辐射可能在某些状态下依赖于外部光子场。未来结合更长时间基线的多波段监测和喷流高分辨率成像，有望厘清外部光子场的来源，推动blazar统一模型的完善。",
+        "context_outlook": "作为IBL（中等频率峰值BL Lac型天体）的原型，BL Lacertae以往观测到的VHE耀斑均为分钟至天级别的快速事件（如 [[Arlen+ 2012]]、[[Abeysekara+ 2018]]、[[Acciari+ 2019]]），其辐射机制在单区同步自康普顿（SSC）和外康普顿（EC）过程之间仍存争议（[[Böttcher+ 2013]]、[[Hervet, O.+ 2015]]）。本研究捕捉到持续约40天的长时标VHE耀斑，与GeV活动明显解耦，多波段建模显示引入外康普顿分量的SSC+EIC模型显著优于纯SSC模型，表明外部光子场在持久VHE辐射中可能起关键作用。结合快速耀斑与长时标耀斑的多样表现，未来需借助更密集的多波段监测与多区、含外辐射场的复杂模型（如多区SSC或更精细的EIC模型），以厘清IBL在不同活动状态下主导辐射机制的变化。",
         "citations": [
           {
             "label": "Arlen+ 2012",
+            "authors": "Arlen",
+            "year": "2012",
+            "title": "RAPID TeV GAMMA-RAY FLARING OF BL LACERTAE",
+            "ref": "T. Arlen, T. Aune, M. Beilicke, W. Benbow, A. Bouvier, J. H. Buckley, V. Bugaev, A. Cesarini, L. Ciupik, M. P. Connolly, W. Cui, R. Dickherber, J. Dumm, M. Errando, A. Falcone, S. Federici, Q. Feng, J. P. Finley, G. Finnegan, L. Fortson, A. Furniss, N. Galante, D. Gall, S. Griffin, J. Grube, G. Gyuk, D. Hanna, J. Holder, T. B. Humensky, P. Kaaret, N. Karlsson, M. Kertzman, Y. Khassen, D. Kieda, H. Krawczynski, F. Krennrich, G. Maier, P. Moriarty, R. Mukherjee, T. Nelson, A. O. i. de Bhróithe, R. A. Ong, M. Orr, N. Park, J. S. Perkins, A. Pichel, M. Pohl, H. Prokoph, J. Quinn, K. Ragan, L. C. Reyes, P. T. Reynolds, E. Roache, D. B. Saxon, M. Schroedter, G. H. Sembroski, D. Staszak, I. Telezhinsky, G. Tešić, M. Theiling, K. Tsurusaki, A. Varlotta, S. Vincent, S. P. Wakely, T. C. Weekes, A. Weinstein, R. Welsing, D. A. Williams, B. Zitzer, S. G. Jorstad, N. R. MacDonald, A. P. Marscher, P. S. Smith, R. C. Walker, T. Hovatta, J. Richards, W. Max-Moerbeck, A. Readhead, M. L. Lister, Y. Y. Kovalev, A. B. Pushkarev, M. A. Gurwell, A. Lähteenmäki, E. Nieppola, M. Tornikoski, and E. Järvelä (2012)\nRAPID TeV GAMMA-RAY FLARING OF BL LACERTAE\n.\nThe Astrophysical Journal\n762\n(\n2\n),\npp. 92\n.\nExternal Links:\nDocument\n,\nLink",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1088/0004-637x/762/2/92",
+            "bibcode": "",
+            "url": "https://doi.org/10.1088/0004-637x/762/2/92",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Abeysekara+ 2018",
+            "authors": "Abeysekara",
+            "year": "2018",
+            "title": "Multiwavelength observations of the blazar BL lacertae: a new fast TeV gamma-ray flare",
+            "ref": "A. U. Abeysekara, W. Benbow, R. Bird, T. Brantseg, R. Brose, M. Buchovecky, J. H. Buckley, V. Bugaev, M. P. Connolly, W. Cui, M. K. Daniel, A. Falcone, Q. Feng, J. P. Finley, L. Fortson, A. Furniss, G. H. Gillanders, I. Gunawardhana, M. Hütten, D. Hanna, O. Hervet, J. Holder, G. Hughes, T. B. Humensky, C. A. Johnson, P. Kaaret, P. Kar, M. Kertzman, F. Krennrich, M. J. Lang, T. T. Y. Lin, S. McArthur, P. Moriarty, R. Mukherjee, S. O’Brien, R. A. Ong, A. N. Otte, N. Park, A. Petrashyk, M. Pohl, E. Pueschel, J. Quinn, K. Ragan, P. T. Reynolds, G. T. Richards, E. Roache, C. Rulten, I. Sadeh, M. Santander, G. H. Sembroski, K. Shahinyan, S. P. Wakely, A. Weinstein, R. M. Wells, P. Wilcox, D. A. Williams, B. Zitzer, S. G. Jorstad, A. P. Marscher, M. L. Lister, Y. Y. Kovalev, A. B. Pushkarev, T. Savolainen, I. Agudo, S. N. Molina, J. L. Gó mez, V. M. Larionov, G. A. Borman, A. A. Mokrushina, M. Tornikoski, A. Lähteenmäki, W. Chamani, S. Enestam, S. Kiehlmann, T. Hovatta, P. S. Smith, and P. Pontrelli (2018)\nMultiwavelength observations of the blazar BL lacertae: a new fast TeV gamma-ray flare\n.\nThe Astrophysical Journal\n856\n(\n2\n),\npp. 95\n.\nExternal Links:\nDocument\n,\nLink",
+            "arxiv": "1802.10113",
+            "doi": "10.3847/1538-4357/aab35c",
+            "bibcode": "2018ApJ...856...95A",
+            "url": "https://arxiv.org/abs/1802.10113",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Acciari+ 2019",
+            "authors": "Acciari",
+            "year": "2019",
+            "title": "A fast, very-high-energy γ-ray flare from BL lacertae during a period of multi-wavelength activity in june 2015",
+            "ref": "V. A. Acciari, S. Ansoldi, L. A. Antonelli, A. A. Engels, D. Baack, A. Babić , B. Banerjee, P. Bangale, U. B. de Almeida, J. A. Barrio, J. B. González, W. Bednarek, E. Bernardini, A. Berti, J. Besenrieder, W. Bhattacharyya, C. Bigongiari, A. Biland, O. Blanch, G. Bonnoli, R. Carosi, G. Ceribella, S. Cikota, S. M. Colak, P. Colin, E. Colombo, J. L. Contreras, J. Cortina, S. Covino, V. D’Elia, P. D. Vela, F. Dazzi, A. D. Angelis, B. D. Lotto, M. Delfino, J. Delgado, F. D. Pierro, E. D. S. Espiñera, A. Domínguez, D. D. Prester, D. Dorner, M. Doro, S. Einecke, D. Elsaesser, V. F. Ramazani, A. Fattorini, A. Fernández-Barral, G. Ferrara, D. Fidalgo, L. Foffano, M. V. Fonseca, L. Font, C. Fruck, D. Galindo, S. Gallozzi, R. J. G. López, M. Garczarczyk, M. Gaug, P. Giammaria, N. Godinović, D. Guberman, D. Hadasch, A. Hahn, T. Hassan, J. Herrera, J. Hoang, D. Hrupec, S. Inoue, K. Ishio, Y. Iwamura, H. Kubo, J. Kushida, D. Kuveždić, A. Lamastra, D. Lelas, F. Leone, E. Lindfors, S. Lombardi, F. Longo, M. López, A. López-Oramas, C. Maggio, P. Majumdar, M. Makariev, G. Maneva, M. Manganaro, K. Mannheim, L. Maraschi, M. Mariotti, M. Martínez, S. Masuda, D. Mazin, M. Minev, J. M. Miranda, R. Mirzoyan, E. Molina, A. Moralejo, V. Moreno, E. Moretti, P. Munar-Adrover, V. Neustroev, A. Niedzwiecki, M. N. Rosillo, C. Nigro, K. Nilsson, D. Ninci, K. Nishijima, K. Noda, L. Nogués, M. Nöthe, S. Paiano, J. Palacio, D. Paneque, R. Paoletti, J. M. Paredes, G. Pedaletti, P. Peñil, M. Peresano, M. Persic, P. G. P. Moroni, E. Prandini, I. Puljak, J. R. Garcia, W. Rhode, M. Ribó, J. Rico, C. Righi, A. Rugliancich, L. Saha, T. Saito, K. Satalecka, T. Schweizer, J. Sitarek, I. Šnidarić, D. Sobczynska, A. Somero, A. Stamerra, M. Strzys, T. Surić, F. Tavecchio, P. Temnikov, T. Terzić, M. Teshima, N. Torres-Albà, S. Tsujimoto, J. van Scherpenberg, G. Vanzo, M. V. Acosta, I. Vovk, M. Will, D. Zarić, F. D’Ammando, K. Hada, S. Jorstad, A. P. Marscher, M. Z. Mobeen, T. Hovatta, V. M. Larionov, G. A. Borman, T. S. Grishina, E. N. Kopatskaya, D. A. Morozova, A. A. Nikiforova, A. Lähteenmäki, M. Tornikoski, and I. Agudo (2019)\nA fast, very-high-energy γ-ray flare from BL lacertae during a period of multi-wavelength activity in june 2015\n.\nAstronomy & Astrophysics\n623\n,\npp. A175\n.\nExternal Links:\nDocument\n,\nLink",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
-            "label": "Hervet+ 2015",
+            "label": "Böttcher+ 2013",
+            "authors": "Böttcher",
+            "year": "2013",
+            "title": "LEPTONIC and hadronic modeling offermi-detected blazars",
+            "ref": "M. Böttcher, A. Reimer, K. Sweeney, and A. Prakash (2013)\nLEPTONIC and hadronic modeling offermi-detected blazars\n.\nThe Astrophysical Journal\n768\n(\n1\n),\npp. 54\n.\nExternal Links:\nISSN 1538-4357\n,\nLink\n,\nDocument",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1088/0004-637x/768/1/54",
+            "bibcode": "",
+            "url": "https://doi.org/10.1088/0004-637x/768/1/54",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Hervet, O.+ 2015",
+            "authors": "Hervet",
+            "year": "2015",
+            "title": "Linking radio and gamma-ray emission in ap librae",
+            "ref": "Hervet, O., Boisson, C., and Sol, H. (2015)\nLinking radio and gamma-ray emission in ap librae\n.\nA&A\n578\n,\npp. A69\n.\nExternal Links:\nDocument\n,\nLink",
+            "arxiv": "1503.01377",
+            "doi": "10.1051/0004-6361/201425330",
+            "bibcode": "2015A&A...578A..69H",
+            "url": "https://arxiv.org/abs/1503.01377",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -3115,35 +3582,106 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15392",
-        "title_zh": "太阳系p核素丰度探测超新星中的集体中微子振荡",
+        "title_zh": "p-核素太阳系丰度探测超新星中的集体中微子振荡",
         "team": "",
-        "tldr": "该研究通过自洽耦合流体动力学与核合成，发现超新星中微子集体振荡可将太阳系关键p核素丰度提升高达两个数量级，使观测获得解释，且振荡起始于距原中子星表面10公里内时匹配最佳。",
+        "tldr": "本文首次自洽耦合流体力学与核合成，系统证明超新星中集体中微子振荡（尤其是快集体振荡）可大幅提升νp-过程产物中p-核素约92,94Mo、96,98Ru和长寿命92Nb的产量，使其与太阳系观测丰度吻合。",
         "review": "",
-        "highlight": "首次自洽考虑了中微子振荡对νp-过程流体动力学的影响，揭示振荡是解释太阳系丰度异常p核素所必需，并为直接探测超新星快集体振荡提供了新途径。",
+        "highlight": "首次实现中微子振荡与νp-过程的自洽流体-核合成耦合，并揭示振荡起始半径的关键作用：近程振荡（距原中子星表面~10 km内）使关键p-核素产量提升最高60倍，且仅当振荡靠近中子星表面时才能解释太阳系丰度模式，从而为探测超新星集体振荡提供了新工具。",
         "relation": "",
-        "authors_en": "A. Friedland (SLAC National Accelerator Laboratory, Stanford University, Menlo Park, CA 94025), D. J. Li (SLAC National Accelerator Laboratory, Stanford University, Menlo Park, CA 94025), G. Lucente (SLAC National Accelerator Laboratory, Stanford University, Menlo Park, CA 94025) et al.",
-        "corresponding_en": "Alexander Friedland",
-        "context_outlook": "早在20世纪90年代，已有研究探讨超新星中微子集体振荡对核合成的潜在影响（[[Qian+ 1993]]；[[Pantaleone+ 1994]]），但针对νp-过程的后续研究未自洽耦合振荡引起的流体动力学变化（如[[Xiong+ 2020]]；[[Martinez-Pinedo+ 2011]]）。本工作通过自洽求解稳态广义相对论流体动力学，系统考察了νp-过程对振荡起始半径的敏感性，发现振荡可将92,94Mo和96,98Ru等关键p核素丰度提升最高达60倍，且92Nb产量提高两个数量级，与太阳系观测相符；最佳匹配出现在振荡起始于距原中子星表面10公里以内，指向快集体振荡（FCO）场景。未来，随着更真实的振荡谱和多维模拟的应用，太阳系p核素丰度有望成为限制中微子集体振荡性质乃至超新星爆发机制的‘标准烛光’。",
+        "authors_en": "Alexander Friedland (SLAC National Accelerator Laboratory, Stanford University), Derek J. Li (SLAC National Accelerator Laboratory, Stanford University; Leinweber Institute for Theoretical Physics, Stanford University), Giuseppe Lucente (SLAC National Accelerator Laboratory, Stanford University), et al.",
+        "corresponding_en": "",
+        "context_outlook": "中微子集体振荡对核合成的影响早在[[Qian+ 1993]]、[[Pantaleone+ 1995]]等工作中被探讨，但主要限于r-过程。近年来，[[Xiong+ 2020]]和[[Martinez-Pinedo+ 2011]]分别探索了快和慢集体振荡对νp-过程的影响，然而并未自洽地耦合流体力学。本研究在[[Wanajo+ 2010]]、[[Friedland+ 2023]]和[[Friedland+ 2025]]所确立的νp-过程优化条件基础上，首次对每个振荡场景重新求解流体力学，系统考察了振荡起始半径对核合成产额的依赖。结果指出，仅当振荡在距中子星表面约10 km内启动时（对应快集体振荡），产额才能跃升至太阳系丰度水平；远程振荡（对应慢集体振荡）仅带来数倍增长，不足以解释观测。未来，需将快集体振荡动力学自洽地融入多维超新星模拟，以进一步检验该结论的稳健性并精细预测核合成产额。",
         "citations": [
           {
             "label": "Qian+ 1993",
+            "authors": "Qian",
+            "year": "1993",
+            "title": "A Connection between flavor mixing of cosmologically significant neutrinos and heavy element nucleosynthesis in supernovae",
+            "ref": "Y.-Z. Qian, G. M. Fuller, G. J. Mathews, R. Mayle, J. R. Wilson and S. E. Woosley, A Connection between flavor mixing of cosmologically significant neutrinos and heavy element nucleosynthesis in supernovae, Phys. Rev. Lett. 71 (1993) 1965.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1103/PhysRevLett.71.1965",
+            "bibcode": "1993PhRvL..71.1965Q",
+            "url": "https://doi.org/10.1103/PhysRevLett.71.1965",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Pantaleone+ 1994",
-            "arxiv": "",
-            "doi": ""
+            "label": "Pantaleone+ 1995",
+            "authors": "Pantaleone",
+            "year": "1995",
+            "title": "Neutrino flavor evolution near a supernova's core",
+            "ref": "J. T. Pantaleone, Neutrino flavor evolution near a supernova's core, Phys. Lett. B 342 (1995) 250 [astro-ph/9405008].",
+            "arxiv": "astro-ph/9405008",
+            "doi": "10.1016/0370-2693(94)01369-N",
+            "bibcode": "1995PhLB..342..250P",
+            "url": "https://arxiv.org/abs/astro-ph/9405008",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Xiong+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Xiong",
+            "year": "2020",
+            "title": "Potential Impact of Fast Flavor Oscillations on Neutrino-driven Winds and Their Nucleosynthesis",
+            "ref": "Z. Xiong, A. Sieverding, M. Sen and Y.-Z. Qian, Potential Impact of Fast Flavor Oscillations on Neutrino-driven Winds and Their Nucleosynthesis, Astrophys. J. 900 (2020) 144 [2006.11414].",
+            "arxiv": "2006.11414",
+            "doi": "10.3847/1538-4357/abac5e",
+            "bibcode": "2020ApJ...900..144X",
+            "url": "https://arxiv.org/abs/2006.11414",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Martinez-Pinedo+ 2011",
+            "authors": "Martinez-Pinedo",
+            "year": "2011",
+            "title": "Effect of collective neutrino flavor oscillations on vp-process nucleosynthesis",
+            "ref": "G. Martinez-Pinedo, B. Ziebarth, T. Fischer and K. Langanke, Effect of collective neutrino flavor oscillations on vp-process nucleosynthesis, Eur. Phys. J. A 47 (2011) 98 [1105.5304].",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Wanajo+ 2010",
+            "authors": "Wanajo",
+            "year": "2011",
+            "title": "Uncertainties in the nu p-process: supernova dynamics versus nuclear physics",
+            "ref": "S. Wanajo, H.-T. Janka and S. Kubono, Uncertainties in the nu p-process: supernova dynamics versus nuclear physics, Astrophys. J. 729 (2011) 46 [1004.4487].",
+            "arxiv": "1004.4487",
+            "doi": "10.1088/0004-637X/729/1/46",
+            "bibcode": "2011ApJ...729...46W",
+            "url": "https://arxiv.org/abs/1004.4487",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Friedland+ 2023",
+            "authors": "Friedland",
+            "year": "2023",
+            "title": "Successful \\(\\nu\\)p-process in neutrino-driven outflows in core-collapse supernovae",
+            "ref": "A. Friedland, P. Mukhopadhyay and A. V. Patwardhan, Successful \\(\\nu\\)p-process in neutrino-driven outflows in core-collapse supernovae, JCAP 02 (2025) 005 [2312.03208].",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Friedland+ 2025",
+            "authors": "Friedland",
+            "year": "2025",
+            "title": "\\(\\nu p\\)-process in core-collapse supernovae: imprints of general relativistic effects",
+            "ref": "A. Friedland, D. J. Li, G. Lucente, I. Padilla-Gay and A. V. Patwardhan, \\(\\nu p\\)-process in core-collapse supernovae: imprints of general relativistic effects, JCAP 02 (2026) 067 [2508.02055].",
+            "arxiv": "",
+            "doi": "10.1088/1475-7516/2026/02/067",
+            "bibcode": "",
+            "url": "https://doi.org/10.1088/1475-7516/2026/02/067",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -3220,35 +3758,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15390",
-        "title_zh": "亮红新星作为激波供能暂现源 I：电子散射翼与对情形B的偏离",
+        "title_zh": "亮红新星作为激波供能暂现源：电子散射翼与Case B复合谱线偏离",
         "team": "",
-        "tldr": "在多个亮红新星的后平台期光谱中识别出电子散射翼，为激波供能提供直接证据，并利用对情形B的偏离约束星周物质密度。",
+        "tldr": "从后平台期光谱识别出电子散射翼和复合线比率偏离，表明激波与星周物质相互作用足以驱动亮红新星的整个光度和光谱多样性。",
         "review": "",
-        "highlight": "首次在LRNe样本中系统揭示热电子散射造成的极宽线翼（千公里/秒量级），证明激波足以驱动光变而不依赖其他能源，凸显后平台期光谱的诊断价值。",
+        "highlight": "首次在六个亮红新星中系统识别电子散射翼，揭示激波加热电子的热展宽和出流速度；通过窄氢复合线比率限定上游介质密度，证明激波光度可统一解释低光到高光事件，无需大质量包层。",
         "relation": "",
         "authors_en": "Albert Sneppen, Kenta Hotokezaka, Christopher M. Irwin",
         "corresponding_en": "",
-        "context_outlook": "亮红新星的能量供给机制长期存在争论，包括氢复合[[Ivanova+ 2013]]、[[Matsumoto & Metzger 2022]]和激波相互作用[[Metzger & Pejcha 2017]]等模型。本文通过对多个LRNe后平台期光谱的分析，识别出宽达1000–10000 km/s的电子散射翼，其不对称性与宽度可由热电子在激波区散射自然重现，从而为激波供能提供了关键的观测证据。这一工作继承并拓展了[[Huang & Chevalier 2018]]等对星周物质作用区光谱建模的思路，同时利用复合线比对情形B的偏离来诊断上游介质密度。随着未来时域巡天积累更多后期光谱，该框架有望系统区分LRNe的多样性，并精细约束双星合并过程中的物质抛射与激波演化。",
+        "context_outlook": "亮红新星(LRNe)被认为是双星并合或共有包层演化的产物，但其供能机制长期存在争议([[Soker & Tylenda 2003]]; [[Soker & Tylenda 2006]])。早期观测在V1309 Sco等源中注意到Hα宽翼([[Mason+ 2010]])，后期更亮事件的光谱也显示类似特征([[Goranskij+ 2016]]; [[Pastorello+ 2019]])，但缺乏物理解释并与理论模型衔接。本研究通过分析六个LRNe的后平台期光谱，明确将宽不对称线翼识别为电子散射翼，同时发现复合线比率偏离Case B，指向更高的周围介质密度，从而与激波供能模型([[Metzger & Pejcha 2017]])自洽。未来对慢激波光变曲线、非球形电子散射、高阶电离线冷却分层以及LSST等巡天激波突破前兆的观测，将进一步检验激波图像并揭示LRNe的多样性起源。",
         "citations": [
           {
-            "label": "Ivanova+ 2013",
-            "arxiv": "",
-            "doi": ""
+            "label": "Soker & Tylenda 2003",
+            "authors": "Soker",
+            "year": "2003",
+            "title": "",
+            "ref": "Soker, N. & Tylenda, R. 2003, ApJ, 582, L105",
+            "arxiv": "astro-ph/0210463",
+            "doi": "10.1086/367759",
+            "bibcode": "2003ApJ...582L.105S",
+            "url": "https://arxiv.org/abs/astro-ph/0210463",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Matsumoto & Metzger 2022",
+            "label": "Soker & Tylenda 2006",
+            "authors": "Soker",
+            "year": "2006",
+            "title": "",
+            "ref": "Soker, N. & Tylenda, R. 2006, MNRAS, 373, 733",
+            "arxiv": "astro-ph/0606467",
+            "doi": "10.1111/j.1365-2966.2006.11056.x",
+            "bibcode": "2006MNRAS.373..733S",
+            "url": "https://arxiv.org/abs/astro-ph/0606467",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mason+ 2010",
+            "authors": "Mason",
+            "year": "2010",
+            "title": "",
+            "ref": "Mason, E., Diaz, M., Williams, R. E., Preston, G., & Bensby, T. 2010, A&A, 516, A108",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1051/0004-6361/200913610",
+            "bibcode": "",
+            "url": "https://doi.org/10.1051/0004-6361/200913610",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Goranskij+ 2016",
+            "authors": "Goranskij",
+            "year": "2016",
+            "title": "",
+            "ref": "Goranskij, V. P., Barsukova, E. A., Spiridonova, O. I., et al. 2016, Astrophysical Bulletin, 71, 82",
+            "arxiv": "1611.04936",
+            "doi": "10.1134/S1990341316010090",
+            "bibcode": "2016AstBu..71...82G",
+            "url": "https://arxiv.org/abs/1611.04936",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Pastorello+ 2019",
+            "authors": "Pastorello",
+            "year": "2019",
+            "title": "",
+            "ref": "Pastorello, A., Mason, E., Taubenberger, S., et al. 2019, A&A, 630, A75",
+            "arxiv": "1906.00812",
+            "doi": "10.1051/0004-6361/201935999",
+            "bibcode": "2019A&A...630A..75P",
+            "url": "https://arxiv.org/abs/1906.00812",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Metzger & Pejcha 2017",
+            "authors": "Metzger",
+            "year": "2017",
+            "title": "",
+            "ref": "Metzger, B. D. & Pejcha, O. 2017, MNRAS, 471, 3200",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Huang & Chevalier 2018",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/stx1768",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/stx1768",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -3326,15 +3922,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15360",
-        "title_zh": "准周期爆发的多信使探测前景",
+        "title_zh": "准周期性喷发的多信使前景",
         "team": "",
-        "tldr": "本文评估当前QPE作为LISA引力波源EMRI电磁对应体的可行性，指出多数QPE频率不在LISA波段，呼吁搜寻短周期事件以实现协同探测。",
+        "tldr": "评估极端质量比旋近产生的准周期性喷发与LISA引力波探测的同时探测潜力，指出当前QPE周期偏长、频率偏低，并提出未来搜寻方向。",
         "review": "",
-        "highlight": "首次系统分析QPE与LISA联合探测的潜力，揭示观测选择效应导致协同困难，为多信使标准汽笛测量提供明确策略。",
+        "highlight": "首次系统量化QPE作为LISA电磁对应体的可行性，揭示当前已知QPE样本几乎无法被LISA同时探测，为多信使协同观测提供关键指引。",
         "relation": "",
         "authors_en": "V. Witzany, A. Franchini, M. Bonetti et al.",
         "corresponding_en": "",
-        "context_outlook": "准周期爆发（QPE）被发现以来，被认为可能起源于恒星质量天体旋入超大质量黑洞的极值质量比旋近（EMRI）过程。本文指出当前已知QPE样本的轨道周期普遍较长，其引力波频率多落在LISA灵敏频段之外，时空重合探测面临挑战。未来需通过时域巡天扩大QPE样本，重点搜索短周期“金发”事件，使其进入LISA波段。一旦实现电磁与引力波联合观测，将能精确限制黑洞参数、宿主环境及EMRI形成渠道，同时通过标准汽笛方法独立测量哈勃常数，开启多信使天体物理的新窗口。",
+        "context_outlook": "近年来，准周期性喷发（QPEs）的发现为研究超大质量黑洞附近的极端质量比旋近（EMRIs）提供了新的电磁窗口。LISA作为未来空间引力波探测器，预期将探测大量EMRI信号。本文通过模拟当前QPE样本与LISA灵敏度，发现大多数QPE的轨道周期（数小时至数天）对应的引力波频率落在LISA敏感频率范围之外，导致联合探测概率极低。此外，QPE搜寻的选效和LISA仪器响应进一步限制了同时观测的可能。该研究推动了对EMRI多信使协同探测策略的思考，未来亟需扩展QPE样本，尤其是探索周期短于约千秒的事件，以进入LISA黄金频段，从而实现引力波与电磁波的联合约束。",
         "citations": []
       }
     },
@@ -3416,45 +4012,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15359",
-        "title_zh": "X射线准周期爆发的观测",
+        "title_zh": "X射线准周期爆发的观测研究",
         "team": "",
-        "tldr": "系统综述X射线准周期爆发的发现历史、观测特性及物理关联，汇总已知样本并探讨与潮汐瓦解事件的联系。",
+        "tldr": "一篇全面综述，总结了X射线准周期爆发（QPEs）的观测特性、宿主星系环境、与潮汐瓦解事件的联系、理论模型约束及未来研究方向。",
         "review": "",
-        "highlight": "首篇全面总结QPEs观测特征的综述，梳理已知13个源的爆发参数与长期演化；引入O–C图揭示超周期振荡，为模型鉴别提供关键约束。",
+        "highlight": "首次对QPE现象进行系统梳理，整合了13个已知源的多波段观测、宿主星系统计、理论挑战与前景，并明确指出与潮汐瓦解事件的深度关联。",
         "relation": "",
-        "authors_en": "T. Wevers (Astrophysics & Space Center, Schmidt Sciences), J. Chakraborty (MIT), E. Quintin (ESA/ESAC) et al.",
+        "authors_en": "T. Wevers (Astrophysics & Space Center, Schmidt Sciences, New York, NY 10011, USA), J. Chakraborty (Department of Physics & Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA), E. Quintin (European Space Agency (ESA), European Space Astronomy Centre (ESAC), Camino Bajo del Castillo s/n, 28692 Villanueva de la Cañada, Madrid, Spain) et al.",
         "corresponding_en": "",
-        "context_outlook": "QPEs自2019年在GSN 069中被意外发现（[[Miniutti+ 2019]]），通过XMM-Newton和eROSITA等巡天已累计发现13个源，包括RX J1301（[[Giustini+ 2020]]）和eRO-QPE系列（[[Arcodia+ 2021]]）。晚期X射线观测证实QPEs与潮汐瓦解事件（TDEs）存在物理关联，如AT2019qiz（[[Nicholl+ 2024]]）。观测表明QPEs是软X射线准周期爆发现象，光谱演化呈温度滞后环，且部分源表现出明显时变和超周期振荡（[[Chakraborty+ 2024]], [[Miniutti+ 2025]]）。未来需扩大样本并进行多波段协同监测，以甄别轨道器-盘碰撞等理论模型，推动对极端质量比旋近系统的理解。",
+        "context_outlook": "自2019年在GSN 069首次发现X射线准周期爆发（QPEs）[[Miniutti+ 2019]]以来，通过eROSITA巡天[[Arcodia+ 2021]]和对潮汐瓦解事件（TDE）的后续X射线监测[[Nicholl+ 2024]]，样本已增至13个。观测证据显示QPEs与TDE紧密相关，宿主星系多为绿谷星系且中心黑洞质量较低[[Wevers+ 2022; Gilbert+ 2025]]。未来，更宽场的X射线巡天、多波段协同监测以及引力波探测将有助于揭示QPE的物理机制，并检验极端质量比旋进（EMRI）和盘不稳定性等模型。",
         "citations": [
           {
             "label": "Miniutti+ 2019",
+            "authors": "Miniutti",
+            "year": "2019",
+            "title": "Nine-hour X-ray quasi-periodic eruptions from a low-mass black hole galactic nucleus",
+            "ref": "G. Miniutti, R. D. Saxton, M. Giustini, K. D. Alexander, R. P. Fender, I. Heywood, I. Monageng, M. Coriat, A. K. Tzioumis, A. M. Read, C. Knigge, P. Gandhi, M. L. Pretorius, and B. Agis-Gonzalez (2019) Nine-hour X-ray quasi-periodic eruptions from a low-mass black hole galactic nucleus. \\nat 573 (7774), pp. 381-384.",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Giustini+ 2020",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.1038/s41586-019-1556-x",
+            "bibcode": "",
+            "url": "https://doi.org/10.1038/s41586-019-1556-x",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Arcodia+ 2021",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Arcodia",
+            "year": "2021",
+            "title": "X-ray quasi-periodic eruptions from two previously quiescent galaxies",
+            "ref": "R. Arcodia, A. Merloni, K. Nandra, J. Buchner, M. Salvato, D. Pasham, R. Remillard, J. Comparat, G. Lamer, G. Ponti, A. Malyali, J. Wolf, Z. Arzoumanian, D. Bogensberger, D. A. H. Buckley, K. Gendreau, M. Gromadzki, E. Kara, M. Krumpe, C. Markwardt, M. E. Ramos-Ceja, A. Rau, M. Schramm, and A. Schwope (2021) X-ray quasi-periodic eruptions from two previously quiescent galaxies. \\nat 592 (7856), pp. 704-707.",
+            "arxiv": "2104.13388",
+            "doi": "10.1038/s41586-021-03394-6",
+            "bibcode": "2021Natur.592..704A",
+            "url": "https://arxiv.org/abs/2104.13388",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Nicholl+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Nicholl",
+            "year": "2024",
+            "title": "Quasi-periodic X-ray eruptions years after a nearby tidal disruption event",
+            "ref": "M. Nicholl, D. R. Pasham, A. Mummery, M. Guolo, K. Gendreau, G. C. Dewangan, E. C. Ferrara, R. Remillard, C. Bonnerot, J. Chakraborty, A. Hajela, V. S. Dhillon, A. F. Gillan, J. Greenwood, M. E. Huber, A. Janiuk, G. Salvesen, S. van Velzen, A. Aamer, K. D. Alexander, C. R. Angus, Z. Arzoumanian, K. Auchettl, E. Berger, T. de Boer, Y. Cendes, K. C. Chambers, T. -W. Chen, R. Chornock, M. D. Fulton, H. Gao, J. H. Gillanders, S. Gomez, B. P. Gompertz, A. C. Fabian, J. Herman, A. Ingram, E. Kara, T. Laskar, A. Lawrence, C. -C. Lin, T. B. Lowe, E. A. Magnier, R. Margutti, S. L. McGee, P. Minguez, T. Moore, E. Nathan, S. R. Oates, K. C. Patra, P. Ramsden, V. Ravi, E. J. Ridley, X. Sheng, S. J. Smartt, K. W. Smith, S. Srivastav, R. Stein, H. F. Stevance, S. G. D. Turner, R. J. Wainscoat, J. Weston, T. Wevers, and D. R. Young (2024) Quasi-periodic X-ray eruptions years after a nearby tidal disruption event. \\nat 634 (8035), pp. 804-808.",
+            "arxiv": "2409.02181",
+            "doi": "10.1038/s41586-024-08023-6",
+            "bibcode": "2024Natur.634..804N",
+            "url": "https://arxiv.org/abs/2409.02181",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Chakraborty+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "label": "Wevers+ 2022",
+            "authors": "Wevers",
+            "year": "2022",
+            "title": "The Host Galaxies of Quasi-periodic Eruptions",
+            "ref": "T. Wevers, D. R. Pasham, P. Jalan, B. Gompertz, S. J. Smartt, K. W. Smith, D. R. Young, S. Srivastav, M. Nicholl, and T.-W. Chen (2022) The Host Galaxies of Quasi-periodic Eruptions. \\apjl 930 (1), pp. L14.",
+            "arxiv": "2201.11751",
+            "doi": "10.1051/0004-6361/202243143",
+            "bibcode": "2022A&A...659L...2W",
+            "url": "https://arxiv.org/abs/2201.11751",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Miniutti+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Gilbert+ 2025",
+            "authors": "Gilbert",
+            "year": "2025",
+            "title": "A Host Galaxy Morphology Link between Quasiperiodic Eruptions and Tidal Disruption Events",
+            "ref": "O. Gilbert, J. J. Ruan, M. Eracleous, D. Haggard, and J. C. Runnoe (2025) A Host Galaxy Morphology Link between Quasiperiodic Eruptions and Tidal Disruption Events. \\apj 994 (2), pp. 209.",
+            "arxiv": "2409.10486",
+            "doi": "10.3847/1538-4357/ae1745",
+            "bibcode": "2025ApJ...994..209G",
+            "url": "https://arxiv.org/abs/2409.10486",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -3755,15 +4386,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15342",
-        "title_zh": "紫外至红外光谱研究揭示 Ibn 型 SN 2023tsz 的低质量前身星",
+        "title_zh": "Ibn型超新星SN 2023tsz的紫外至红外光谱暗示其低质量前身星",
         "team": "",
-        "tldr": "利用 HST 紫外光谱与地面光学–近红外数据，结合非 LTE 辐射转移模型，证实 SN 2023tsz 为低质量氦星爆发并与富氦 CSM 相互作用，支持双星演化通道。",
+        "tldr": "对Ibn型超新星SN 2023tsz的紫外到近红外观测和辐射传输模型分析表明，其前身星可能是一颗低质量氦星，爆炸抛射物与富氦星周物质相互作用主导了光谱特征。",
         "review": "",
-        "highlight": "首次对 Ibn 型超新星进行 HST 紫外光谱观测，并与一维非 LTE 模型对比，明确 X 射线照射场对高电离紫外谱线的关键作用，限制前身星质量约 4 M⊙。",
+        "highlight": "首次获取Ibn型超新星的HST/STIS紫外光谱，结合多波段数据与非局部热动平衡模型，清晰揭示X射线辐照场在电离中的作用，并定量约束壳层参数，为低质量氦星前身星提供了新证据。",
         "relation": "",
         "authors_en": "Sergiy S. Vasylyev, Griffin Hosseinzadeh, Luc Dessart et al.",
         "corresponding_en": "",
-        "context_outlook": "Ibn 型超新星因与富氦星周物质（CSM）相互作用呈现窄发射线，是探索大质量恒星晚期质量损失与剥壳机制的重要探针。以往研究多依赖光学光谱，对前身星性质与电离机制未能统一约束。SN 2023tsz 的紫外光谱分析表明，额外 X 射线照射场对再现高电离特征不可或缺，且模型指向约 4 M⊙的低质量氦星前身星，与双星剥壳图像一致。这些发现拓展了 Ibn 型前身星的参数空间，显示部分事件可能源于中等质量双星系统。未来结合 JWST 红外光谱及更高精度的辐射流体模拟，有望系统区分单星与双星演化对 CSM 结构的贡献，推动前身星研究的定量化。",
+        "context_outlook": "Ibn型超新星是研究大质量恒星晚期质量损失的重要探针，先前研究多依赖光学光谱，紫外窗口及前身星性质尚不明确。本研究通过SN 2023tsz的广泛波段观测与辐射传输建模，直接约束了前身星质量和星周物质参数，暗示其终局演化可能由双星相互作用塑造。未来，通过扩大Ibn型超新星的紫外光谱样本并结合星族合成模型，有望厘清这类超新星的前身星质量分布及双星比例。",
         "citations": []
       }
     },

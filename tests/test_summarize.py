@@ -12,7 +12,8 @@ def test_summarize_uses_fulltext_and_parses(fake_llm_factory):
         "title_zh": "磁星巨耀发", "tldr": "研究一次磁星巨耀发",
         "highlight": "首次……",
         "context_outlook": "承接 [[Kaspi+ 2017]] 的磁星综述，展望 GW 时代的多信使跟踪。",
-        "citations": [{"label": "Kaspi+ 2017", "arxiv": "1703.00068", "doi": ""}],
+        "citations": [{"label": "Kaspi+ 2017", "authors": "Kaspi", "year": "2017",
+                       "title": "Magnetars", "ref": "Kaspi & Beloborodov 2017, ARA&A 55 261"}],
         "authors_en": "Alice Author (MIT)", "corresponding_en": "Alice Author",
     })
     llm = fake_llm_factory([reply])
@@ -23,18 +24,22 @@ def test_summarize_uses_fulltext_and_parses(fake_llm_factory):
     assert s.authors_en == "Alice Author (MIT)"
     assert s.corresponding_en == "Alice Author"
     assert "[[Kaspi+ 2017]]" in s.context_outlook
-    assert s.citations == [{"label": "Kaspi+ 2017", "arxiv": "1703.00068", "doi": ""}]
+    assert s.citations[0]["label"] == "Kaspi+ 2017"
+    assert s.citations[0]["authors"] == "Kaspi" and s.citations[0]["year"] == "2017"
+    assert "ARA&A" in s.citations[0]["ref"]
     # deprecated card fields are no longer generated
     assert s.review == "" and s.relation == "" and s.team == ""
 
 def test_summarize_drops_bad_citations(fake_llm_factory):
     reply = json.dumps({
         "title_zh": "x", "tldr": "t", "highlight": "h", "context_outlook": "c",
-        "citations": [{"label": "Good+ 2020", "arxiv": "1", "doi": ""},
-                      {"label": ""}, "not-a-dict", {"arxiv": "9"}],
+        "citations": [{"label": "Good+ 2020", "authors": "Good", "year": "2020",
+                       "title": "", "ref": "Good et al. 2020"},
+                      {"label": ""}, "not-a-dict", {"authors": "NoLabel"}],
     })
     s = summarize_paper(_paper(), fulltext="B", llm=fake_llm_factory([reply]))
-    assert s.citations == [{"label": "Good+ 2020", "arxiv": "1", "doi": ""}]
+    assert len(s.citations) == 1
+    assert s.citations[0]["label"] == "Good+ 2020"
 
 def test_summarize_falls_back_to_abstract(fake_llm_factory):
     llm = fake_llm_factory([json.dumps({"title_zh": "x", "tldr": "",

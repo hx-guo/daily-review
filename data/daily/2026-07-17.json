@@ -255,16 +255,82 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16160",
-        "title_zh": "SEP-PRISM数据集：用于太阳高能粒子预测的多源数据集",
+        "title_zh": "SEP-PRISM Data：太阳高能粒子预报的多源数据集",
         "team": "",
-        "tldr": "构建并发布多源太阳观测的监督学习数据集SEP-PRISM，用于24小时太阳高能粒子事件预测。",
+        "tldr": "本文构建了一个用于24小时提前预报太阳高能粒子（SEP）事件的多源集成数据集，将耀斑、活动区磁场、CME、GOES软X射线及质子通量统一为监督学习格式。",
         "review": "",
-        "highlight": "统一对准了活动区磁场（SMHARP）和CME记录（CDAWDONKI），将长达40年的异构数据整合为标注样本（14,464个，含650个正例），解决了时间覆盖不足与格式差异问题。",
+        "highlight": "通过回归对齐将SHARP/SMARP磁场数据和DONKI/CDAW CME目录扩展至早期太阳活动周，解决了多源数据时间覆盖不足与格式异构问题；提供了首个可重复使用的统一窗口化SEP预报基准资源。",
         "relation": "",
-        "authors_en": "Y. Yu (Department of Statistics, University of Michigan), Y. Chen (Department of Statistics, University of Michigan), L. Zhao (Department of Climate and Space Sciences and Engineering, University of Michigan) et al.",
+        "authors_en": "Yian Yu (Department of Statistics, University of Michigan), Yang Chen (Department of Statistics, University of Michigan), Lulu Zhao (Department of Climate and Space Sciences and Engineering, University of Michigan) et al.",
         "corresponding_en": "Yang Chen",
-        "context_outlook": "太阳高能粒子事件预测长期受限于多源数据的时间覆盖不一致与格式异构。本研究构建了覆盖1986年至2025年的SEP-PRISM数据集，整合耀斑、磁场、CME、X射线与质子通量等关键预报因子，并以固定24小时窗口统计量形成监督学习样本。该数据集已用于SEPNET-PRISM实时预测模型，未来可为空间天气预报的基准评估、特征分析与多任务学习提供统一平台，加速数据驱动方法向业务应用的转化。",
-        "citations": []
+        "context_outlook": "SEP预报长期受限于观测数据覆盖不完整、事件定义不一致及异构数据源整合困难，制约了模型的可重复比较与业务化检验（[[Whitman+ 2023]]）。本数据集以[[Whitman 2025]]的CLEAR SEP事件目录为标签基础，通过统计对齐融合了[[Bobra+ 2021]]的SHARP/SMARP活动区磁场产品和[[Gopalswamy+ 2025]]的CDAW CME目录，将有效数据回推至1986年，统一构造为固定24小时窗的监督学习样本。基于该数据集开发的SEPNET-PRISM实时预报模型已展现出良好的预报潜力（[[Yu+ 2026]]）。未来，这一开放资源将为模型基准比较、特征分析与多任务学习框架提供标准化平台，有望加速物理先验与深度学习方法相结合的业务化空间天气预报研究。",
+        "citations": [
+          {
+            "label": "Whitman+ 2023",
+            "authors": "Whitman",
+            "year": "2023",
+            "title": "Review of solar energetic particle prediction models",
+            "ref": "K. Whitman, R. Egeland, I. G. Richardson, C. Allison, P. Quinn, J. Barzilla, I. Kitiashvili, V. Sadykov, H. M. Bain, M. Dierckxsens, M. L. Mays, T. Tadesse, K. T. Lee, E. Semones, J. G. Luhmann, M. Núñez, S. M. White, S. W. Kahler, A. G. Ling, D. F. Smart, M. A. Shea, V. Tenishev, S. F. Boubrahimi, B. Aydin, P. Martens, R. Angryk, M. S. Marsh, S. Dalla, N. Crosby, N. A. Schwadron, K. Kozarev, M. Gorby, M. A. Young, M. Laurenza, E. W. Cliver, T. Alberti, M. Stumpo, S. Benella, A. Papaioannou, A. Anastasiadis, I. Sandberg, M. K. Georgoulis, A. Ji, D. Kempton, C. Pandey, G. Li, J. Hu, G. P. Zank, E. Lavasa, G. Giannopoulos, D. Falconer, Y. Kadadi, I. Fernandes, M. A. Dayeh, A. Muñoz-Jaramillo, S. Chatterjee, K. D. Moreland, I. V. Sokolov, I. I. Roussev, A. Taktakishvili, F. Effenberger, T. Gombosi, Z. Huang, L. Zhao, N. Wijsen, A. Aran, S. Poedts, A. Kouloumvakos, M. Paassilta, R. Vainio, A. Belov, E. A. Eroshenko, M. A. Abunina, A. A. Abunin, C. C. Balch, O. Malandraki, M. Karavolos, B. Heber, J. Labrenz, P. Kühl, A. G. Kosovichev, V. Oria, G. M. Nita, E. Illarionov, P. M. O’Keefe, Y. Jiang, S. H. Fereira, A. Ali, E. Paouris, S. Aminalragia-Giamini, P. Jiggens, M. Jin, C. O. Lee, E. Palmerio, A. Bruno, S. Kasapis, X. Wang, Y. Chen, B. Sanahuja, D. Lario, C. Jacobs, D. T. Strauss, R. Steyn, J. van den Berg, B. Swalwell, C. Waterfall, M. Nedal, R. Miteva, M. Dechev, P. Zucca, A. Engell, B. Maze, H. Farmer, T. Kerber, B. Barnett, J. Loomis, N. Grey, B. J. Thompson, J. A. Linker, R. M. Caplan, C. Downs, T. Török, R. Lionello, V. Titov, M. Zhang, and P. Hosseinzadeh (2023) Review of solar energetic particle prediction models. Advances in Space Research 72 (12), pp. 5161–5242. External Links: ISSN 0273-1177, Document",
+            "arxiv": "",
+            "doi": "10.1016/j.asr.2022.08.006",
+            "bibcode": "2023AdSpR..72.5161W",
+            "url": "https://doi.org/10.1016/j.asr.2022.08.006",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Whitman 2025",
+            "authors": "Whitman",
+            "year": "2025",
+            "title": "FetchSEP: CLEAR benchmark dataset version 1.0",
+            "ref": "K. Whitman (2025) FetchSEP: CLEAR benchmark dataset version 1.0. Note: Version CLEAR_Benchmark_v1.0, software External Links: Link",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Bobra+ 2021",
+            "authors": "Bobra",
+            "year": "2021",
+            "title": "SMARPs and SHARPs: two solar cycles of active region data",
+            "ref": "M. G. Bobra, P. J. Wright, X. Sun, and M. J. Turmon (2021-09) SMARPs and SHARPs: two solar cycles of active region data. The Astrophysical Journal Supplement Series 256 (2), pp. 26. External Links: Document",
+            "arxiv": "2108.07918",
+            "doi": "10.3847/1538-4365/ac1f1d",
+            "bibcode": "2021ApJS..256...26B",
+            "url": "https://arxiv.org/abs/2108.07918",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gopalswamy+ 2025",
+            "authors": "Gopalswamy",
+            "year": "2025",
+            "title": "The SOHO LASCO CME catalog – version 2",
+            "ref": "N. Gopalswamy, G. Michałek, S. Yashiro, P. Mäkelä, S. Akiyama, H. Xie, and A. Vourlidas (2025) The SOHO LASCO CME catalog – version 2. External Links: 2407.04165, Link",
+            "arxiv": "",
+            "doi": "10.1017/s1743921325000559",
+            "bibcode": "",
+            "url": "https://doi.org/10.1017/s1743921325000559",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Yu+ 2026",
+            "authors": "Yu",
+            "year": "2026",
+            "title": "Realtime forecasting of solar energetic particle event and proton flux using multi-source solar observations and multi-task deep learning",
+            "ref": "Y. Yu, Y. Chen, L. Zhao, K. Whitman, W. Manchester, and T. Gombosi (2026) Realtime forecasting of solar energetic particle event and proton flux using multi-source solar observations and multi-task deep learning. External Links: 2606.14440, Link",
+            "arxiv": "",
+            "doi": "10.1029/2026jh001247",
+            "bibcode": "",
+            "url": "https://doi.org/10.1029/2026jh001247",
+            "source": "crossref",
+            "verified": true
+          }
+        ]
       }
     },
     {
@@ -298,30 +364,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16136",
-        "title_zh": "偏心率作为放大镜：利用偏心中子星–黑洞并合进行精密族群推断",
+        "title_zh": "偏心率作为放大镜：偏心中子星-黑洞并合带来的高精度族群推断",
         "team": "",
-        "tldr": "研究偏心率增强的参量测量如何改善NSBH形成渠道的族群推断，涵盖自旋、质量及偏心率分布。",
+        "tldr": "本文系统研究偏心率增强的参数估计如何提升中子星-黑洞并合的族群推断能力，涵盖负有效自旋识别、中子星质量分布、黑洞质量金属丰度起源以及偏心率分布约束。",
         "review": "",
-        "highlight": "首次系统量化偏心率对NSBH族群推断的增益：负有效自旋识别率翻倍（~1/2.5事件）；NS质量结构（双峰）得以分辨；金属丰度模型区分度提升高达10^14倍。偏心率分布可直接检验动态形成渠道。",
+        "highlight": "首次量化偏心率改进的参数测量对 NSBH 族群推断的影响；发现在 O5 灵敏度下，每约 2.5 个偏心事件即可明确识别一次负自旋，且能显著提升区分双峰/均匀质量分布和不同金属丰度模型的能力，并有望在 O5 结束前检验动力学形成的普适偏心率分布。",
         "relation": "",
-        "authors_en": "Alberto Salvarese (Department of Physics, The University of Texas at Austin), Hsin-Yu Chen (Department of Physics, The University of Texas at Austin), Aaron Zimmerman (Department of Physics, The University of Texas at Austin) et al.",
+        "authors_en": "A. Salvarese (Department of Physics, The University of Texas at Austin), H.-Y. Chen (Department of Physics, The University of Texas at Austin), A. Zimmerman (Department of Physics, The University of Texas at Austin), et al.",
         "corresponding_en": "Alberto Salvarese",
-        "context_outlook": "既往研究如[[Tibrewal+ 2026]]已发现偏心率可大幅提高NSBH事件的参数测量精度，而GW200105事件也展现出非零偏心率证据（[[Morras+ 2026b]]等），指向非孤立形成。本工作在此基础上量化展示这些精度提升如何转化为族群推断能力的增益。展望未来，随着LVK O5积累更多偏心事件，将可对动力学形成渠道的偏心率分布（如[[Rozner+ 2026]]提出的幂律形式）进行直接检验，并有望揭示致密天体形成历史的更多细节。",
+        "context_outlook": "孤立双星演化倾向于产生近圆形轨道，但 GW200105 的发现 [[Abbott+ 2021]] 及其后续偏心率分析提示动力学形成渠道的可能。近期研究 [[Tibrewal+ 2026]] 表明，偏心率能显著改善 NSBH 并合固有参数的测量精度。本文在此基础上探索了这些改进对族群推断的影响：包括更有效地识别负有效自旋、区分 NS 质量分布结构，以及恢复 BH 质量分布所蕴含的金属丰度信息 [[Broekgaarden+ 2021]]。未来，随着 O5 探测数量的增加，有望直接验证动力学并合的普适偏心率分布 [[Rozner+ 2026]]，从而为揭示 NSBH 的形成历史提供强有力的证据。",
         "citations": [
           {
-            "label": "Tibrewal+ 2026",
-            "arxiv": "",
-            "doi": ""
+            "label": "Abbott+ 2021",
+            "authors": "Abbott",
+            "year": "2021",
+            "title": "",
+            "ref": "",
+            "arxiv": "2010.14527",
+            "doi": "10.1103/PhysRevX.11.021053",
+            "bibcode": "2021PhRvX..11b1053A",
+            "url": "https://arxiv.org/abs/2010.14527",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Morras+ 2026b",
-            "arxiv": "",
-            "doi": ""
+            "label": "Tibrewal+ 2026",
+            "authors": "Tibrewal",
+            "year": "2026",
+            "title": "",
+            "ref": "",
+            "arxiv": "2601.02260",
+            "doi": "10.48550/arXiv.2601.02260",
+            "bibcode": "2026arXiv260102260T",
+            "url": "https://arxiv.org/abs/2601.02260",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Broekgaarden+ 2021",
+            "authors": "Broekgaarden",
+            "year": "2021",
+            "title": "",
+            "ref": "",
+            "arxiv": "2103.02608",
+            "doi": "10.1093/mnras/stab2716",
+            "bibcode": "2021MNRAS.508.5028B",
+            "url": "https://arxiv.org/abs/2103.02608",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Rozner+ 2026",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Rozner",
+            "year": "2026",
+            "title": "",
+            "ref": "",
+            "arxiv": "2606.28293",
+            "doi": "10.48550/arXiv.2606.28293",
+            "bibcode": "2026arXiv260628293R",
+            "url": "https://arxiv.org/abs/2606.28293",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -500,40 +603,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16135",
-        "title_zh": "偏心率与高阶模对中子星-黑洞参数估计的影响",
+        "title_zh": "离心率与高阶模对中子星-黑洞参数估计的影响",
         "team": "",
-        "tldr": "利用完整 IMR 波形系统量化偏心率对 GW200105 类 NSBH 系统参数估计的改善，发现内禀参数精度大幅提升",
+        "tldr": "系统研究离心率和更高阶模对类GW200105的中子星-黑洞系统引力波参数估计的影响，发现离心率可显著改善本征参数约束，但对距离和定位改善有限。",
         "review": "",
-        "highlight": "首次在具有完整 IMR、高阶模的偏心波形模型 SEOBNRv5EHM 下，量化了偏心率对 NSBH 系统参数估计的改善；对于 e=0.25 的注入，质量比和有效自旋的不确定性分别较准圆情况降低约 20 倍和 13 倍。",
+        "highlight": "首次采用完整IMR离心波形模型SEOBNRv5EHM进行注入-恢复研究，量化了离心率对NSBH系统本征参数（质量比、有效自旋）的显著改善，并揭示了离心信息主要通过四极矩贡献而非高阶模，与高阶模信息互补。",
         "relation": "",
         "authors_en": "S. Tibrewal (Department of Physics, University of Texas at Austin), A. Jan (Department of Physics, University of Texas at Austin), A. Zimmerman (Department of Physics, University of Texas at Austin) et al.",
-        "corresponding_en": "Snehal Tibrewal",
-        "context_outlook": "针对 GW200105 事件的多项近作报道了轨道偏心信号 [[Morras+ 2026]]、[[Planas+ 2025]]、[[Jan+ 2026a]]，激发了对偏心 NSBH 系统的广泛兴趣。此前基于 Fisher 矩阵的研究 [[Gondán+ 2018]]、[[Favata+ 2022]] 已揭示偏心结构可改善内禀参数测量，但缺乏在当代完整波形模型下的系统验证。本文使用 SEOBNRv5EHM 注入恢复，定量展示了偏心率对质量比、有效自旋等的显著约束增强，而对外禀参数无明显改善，暗示偏心信息与高阶模存在简并。未来工作可引入潮汐、自旋进动等更多物理，以全面评估偏心信号的科学增益，并推动其在真实事件搜索和定位中的应用。",
+        "corresponding_en": "",
+        "context_outlook": "先前研究已指出引力波离心率可打破参数简并并提高测量精度（[[Favata+ 2022]]，[[Gondán+ 2018]]），近期GW200105事件中离心率证据的报道（[[Morras+ 2026]]）推动了对NSBH系统离心效应更系统的探索。本文通过类GW200105注入实验，首次量化了离心率对质量比、自旋等本征参数的增益幅度（最高可达~20倍），并发现该增益源自离心动力学本身的时频结构，与高阶模贡献弱相独立。该结果意味着未来观测到的离心NSBH事件可为单源参数提供更强约束，有望用于区分动力学形成渠道（[[Stegmann and Klencki 2025]]，[[Romero-Shaw+ 2025]]）；但现阶段离心率测量仍受波形系统及先验选择影响（[[Clarke+ 2026]]），且外禀参数改善有限，需更高信噪比及下一代探测器联合高阶模观测进一步验证。",
         "citations": [
           {
-            "label": "Morras+ 2026",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Planas+ 2025",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Jan+ 2026a",
-            "arxiv": "",
-            "doi": ""
+            "label": "Favata+ 2022",
+            "authors": "Favata",
+            "year": "2022",
+            "title": "Constraining the orbital eccentricity of inspiralling compact binary systems with Advanced LIGO",
+            "ref": "M. Favata, C. Kim, K. G. Arun, J. Kim, and H. W. Lee (2022) Constraining the orbital eccentricity of inspiralling compact binary systems with Advanced LIGO. 105 (2), pp. 023003. External Links: 2108.05861, Document",
+            "arxiv": "2108.05861",
+            "doi": "10.1103/PhysRevD.105.023003",
+            "bibcode": "2022PhRvD.105b3003F",
+            "url": "https://arxiv.org/abs/2108.05861",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Gondán+ 2018",
+            "authors": "Gondán",
+            "year": "2018",
+            "title": "Accuracy of Estimating Highly Eccentric Binary Black Hole Parameters with Gravitational-Wave Detections",
+            "ref": "L. Gondán, B. Kocsis, P. Raffai, and Z. Frei (2018) Accuracy of Estimating Highly Eccentric Binary Black Hole Parameters with Gravitational-Wave Detections. 855 (1), pp. 34. External Links: 1705.10781, Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/aaad0e",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/aaad0e",
+            "source": "crossref",
+            "verified": true
           },
           {
-            "label": "Favata+ 2022",
+            "label": "Morras+ 2026",
+            "authors": "Morras",
+            "year": "2026",
+            "title": "Orbital eccentricity in a neutron star - black hole binary merger",
+            "ref": "G. Morras, G. Pratten, and P. Schmidt (2026) Orbital eccentricity in a neutron star - black hole binary merger. 1000 (1), pp. L2. External Links: 2503.15393, Document",
+            "arxiv": "2503.15393",
+            "doi": "10.3847/2041-8213/ae474c",
+            "bibcode": "2026ApJ..1000L...2M",
+            "url": "https://arxiv.org/abs/2503.15393",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Stegmann and Klencki 2025",
+            "authors": "Stegmann",
+            "year": "2025",
+            "title": "Orbital Eccentricity and Spin–Orbit Misalignment Are Evidence that Neutron Star–Black Hole Mergers Form through Triple Star Evolution",
+            "ref": "J. Stegmann and J. Klencki (2025) Orbital Eccentricity and Spin–Orbit Misalignment Are Evidence that Neutron Star–Black Hole Mergers Form through Triple Star Evolution. Astrophys. J. Lett. 991 (2), pp. L54. External Links: 2506.09121, Document",
+            "arxiv": "2506.09121",
+            "doi": "10.3847/2041-8213/ae055b",
+            "bibcode": "2025ApJ...991L..54S",
+            "url": "https://arxiv.org/abs/2506.09121",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Romero-Shaw+ 2025",
+            "authors": "Romero-Shaw",
+            "year": "2025",
+            "title": "Astrophysical Implications of Eccentricity in Gravitational Waves from Neutron Star-Black Hole Binaries",
+            "ref": "I. Romero-Shaw, J. Stegmann, G. Morras, A. Dorozsmai, and M. Zevin (2025) Astrophysical Implications of Eccentricity in Gravitational Waves from Neutron Star-Black Hole Binaries. External Links: 2512.16289, Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/stag323",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/stag323",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Clarke+ 2026",
+            "authors": "Clarke",
+            "year": "2026",
+            "title": "A universal framework to identify eccentric binary mergers: GW200105 case study",
+            "ref": "T. A. Clarke, I. M. Romero-Shaw, C. Hoy, J. Stegmann, P. D. Lasky, and E. Thrane (2026) A universal framework to identify eccentric binary mergers: GW200105 case study. External Links: 2605.18742",
+            "arxiv": "2605.18742",
+            "doi": "10.48550/arXiv.2605.18742",
+            "bibcode": "2026arXiv260518742C",
+            "url": "https://arxiv.org/abs/2605.18742",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -576,30 +732,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.16140",
-        "title_zh": "Z型中子星低质量X射线双星的X射线偏振——II. 分光偏振分析",
+        "title_zh": "Z型中子星低质量X射线双星的X射线偏振 II. 能谱偏振分析",
         "team": "",
-        "tldr": "利用IXPE、NICER和NuSTAR对六颗Z源进行分支分辨的谱偏振拟合，发现偏振以康普顿化为主，偏振度从水平支的~6%降至正常支的3–4%，盘偏振角与康普顿化不垂直且与反射无关。",
+        "tldr": "对多个Z源进行分支分辨的能谱偏振分析，揭示了康普顿化、盘和反射成分的偏振特性及其沿Z轨迹的演化。",
         "review": "",
-        "highlight": "首次对Z源全样本做统一模型的分支谱偏振分析，揭示偏振度显著高于传统边界层/扩展层模型预期，且盘偏振角与康普顿化明显错位，挑战现有几何图像。",
+        "highlight": "首次统一模型分分支能谱偏振拟合，发现康普顿化偏振普遍高于理论预期，且盘偏振角与康普顿化严重不对齐，挑战标准几何模型。",
         "relation": "",
-        "authors_en": "A. Gnarini, F. Ursini, G. Matt et al.",
+        "authors_en": "Andrea Gnarini, Francesco Ursini, Giorgio Matt et al.",
         "corresponding_en": "",
-        "context_outlook": "Z型中子星低质量X射线双星的光谱通常由吸积盘、康普顿化硬成分和反射构成，但康普顿化区的几何结构（如边界层/扩展层或盘冕）始终是未解难题。前期理论工作指出X射线偏振对几何高度敏感 [[Gnarini+ 2022]]，并且反射光子可贡献显著偏振 [[Ursini+ 2023]]。系列工作首篇 [[G25]] 通过颜色-颜色图实现了模型独立的偏振分析，而本文在统一模型下对六颗 Z 源进行了首次分支分辨谱偏振拟合，发现偏振度在水平支高达~6%，且盘与康普顿化偏振角不垂直，这些结果超越了传统几何预期的框架。未来借助更高统计量观测及动态谱偏振模型，有望精确测定吸积流几何，并探究其与喷流活动的关联。",
+        "context_outlook": "在Part I（[[Gnarini+ 2025]]）模型无关分析基础上，本文首次对多个Z源进行分支分辨的能谱偏振拟合，通过统一基线模型（包含盘、康普顿化及反射成分）揭示了各成分的偏振特性。与过去单源工作（[[Farinelli+ 2023]]、[[Cocchi+ 2023]]、[[La Monaca+ 2024b]]）相比，本文系统考虑了反射偏振贡献，发现盘偏振普遍高于纯电子散射大气预期，且PA与康普顿化成分非正交。这些结果挑战了简单的边界层/扩散层图像，推动了对康普顿化区几何的重新思考。未来eXTP及更精细的理论模型（如[[Farinelli & Cocchi 2025]]、[[Podgorný+ 2025]]）将有助于完整描绘Z源偏振行为。",
         "citations": [
           {
-            "label": "Gnarini+ 2022",
-            "arxiv": "",
-            "doi": ""
+            "label": "Gnarini+ 2025",
+            "authors": "Gnarini",
+            "year": "2025",
+            "title": "",
+            "ref": "Gnarini, A., Ursini, F., Matt, G., et al. 2025, A&A, 699, A230",
+            "arxiv": "2507.00302",
+            "doi": "10.1051/0004-6361/202554573",
+            "bibcode": "2025A&A...699A.230G",
+            "url": "https://arxiv.org/abs/2507.00302",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Ursini+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "label": "Farinelli+ 2023",
+            "authors": "Farinelli",
+            "year": "2023",
+            "title": "",
+            "ref": "Farinelli, R., Fabiani, S., Poutanen, J., et al. 2023, MNRAS, 519, 3681",
+            "arxiv": "2212.13119",
+            "doi": "10.1093/mnras/stac3726",
+            "bibcode": "2023MNRAS.519.3681F",
+            "url": "https://arxiv.org/abs/2212.13119",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "G25",
+            "label": "Cocchi+ 2023",
+            "authors": "Cocchi",
+            "year": "2023",
+            "title": "",
+            "ref": "Cocchi, M., Gnarini, A., Fabiani, S., et al. 2023, A&A, 674, L10",
+            "arxiv": "2306.10965",
+            "doi": "10.1051/0004-6361/202346275",
+            "bibcode": "2023A&A...674L..10C",
+            "url": "https://arxiv.org/abs/2306.10965",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "La Monaca+ 2024b",
+            "authors": "La Monaca",
+            "year": "2024",
+            "title": "",
+            "ref": "La Monaca, F., Di Marco, A., Poutanen, J., et al. 2024b, ApJ, 960, L11",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Farinelli & Cocchi 2025",
+            "authors": "Farinelli",
+            "year": "2025",
+            "title": "",
+            "ref": "Farinelli, R. & Cocchi, M. 2025, A&A, 702, A272",
+            "arxiv": "",
+            "doi": "10.1051/0004-6361/202554222",
+            "bibcode": "",
+            "url": "https://doi.org/10.1051/0004-6361/202554222",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Podgorný+ 2025",
+            "authors": "Podgorný",
+            "year": "2025",
+            "title": "",
+            "ref": "Podgorný, J., Dovčiak, M., Goosmann, R., et al. 2025, arXiv e-prints, arXiv:2507.23687",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -678,28 +897,65 @@
         "paper_id": "arxiv:2607.16119",
         "title_zh": "极端自旋减慢毫秒脉冲星 PSR J0435+3233 的 γ 射线脉冲发现",
         "team": "",
-        "tldr": "首次在 γ 射线波段探测到这颗极特殊毫秒脉冲星的脉冲辐射，揭示其高自旋减慢功率与极低 γ 效率的矛盾。",
+        "tldr": "利用约 17.7 年 Fermi-LAT 数据确认 4FGL J0435.5+3232 为 PSR J0435+3233 的 γ 射线对应体，首次检测到其 γ 射线脉冲（~6.8σ），发现其 γ 射线效率极低（~1.1e-5），尽管自旋减慢功率很高。",
         "review": "",
-        "highlight": "该脉冲星由 FAST 新发现，自旋减慢功率堪比年轻脉冲星，但测得的 γ 射线效率仅为 ~1e-5。本研究利用 Fermi-LAT 数据首次确认其 GeV 脉冲信号，为极端磁层物理提供了罕见探针。",
+        "highlight": "PSR J0435+3233 具有异常大的周期导数（Pdot~4.9e-17）和年轻脉冲星级自旋减慢功率，但 γ 射线脉冲效率极低（~1.1e-5），挑战标准脉冲星辐射模型；该发现为研究极端旋转性质 MSP 的粒子加速和辐射几何提供了新探针。",
         "relation": "",
-        "authors_en": "Mengqing Zhang (Department of Astronomy, Yunnan University), Shengbin Pei (Department of Astronomy, Yunnan University), Pengfei Zhang (Department of Astronomy, Yunnan University)",
+        "authors_en": "Mengqing Zhang, Shengbin Pei, Pengfei Zhang (Department of Astronomy, School of Physics and Astronomy, Key Laboratory of Astroparticle Physics of Yunnan Province, Yunnan University, Kunming 650091, China)",
         "corresponding_en": "Pengfei Zhang",
-        "context_outlook": "近期，FAST 观测发现了 PSR J0435+3233（[[Wu+ 2026]]），其极高的自旋减慢功率严重挑战了毫秒脉冲星的标准回旋演化模型。基于 [[Ballet+ 2023]] 发布的 4FGL-DR4 星表，我们利用约 17.7 年的 Fermi-LAT 数据探测到其 γ 射线脉冲，确认了高能对应体，并揭示其极低的 γ 射线效率。这一极端特性可能源于非典型的磁层加速、辐射几何或脉冲星风能量分配，亟需联合射电绝对相位对齐的脉冲轮廓模拟来区分内禀效率与视向效应。未来，新一代高灵敏度 γ 射线望远镜如 [[Fan+ 2022]] 提出的 VLAST 将有能力分离磁层辐射与双星相互作用成分，进一步揭示此类极端脉冲星的高能辐射机制。",
+        "context_outlook": "PSR J0435+3233 由 [[Wu+ 2026]] 利用 FAST 发现，其极端自旋减慢参数远超典型 MSP，并落在经典自旋加速线之上。[[Smith+ 2023]] 等人指出，高自旋减光度的脉冲星是搜索脉冲 GeV 辐射的优先目标，而 [[Abdo+ 2013]] 已通过 Fermi-LAT 建立起 MSP 作为 γ 射线源的重要族群。本文基于这些认识，利用约 17.7 年 Fermi-LAT 数据检测到该星的 γ 射线脉冲，但其表观效率极低，暗示辐射几何或能量转化机制与典型 MSP 不同。未来，结合绝对相位对齐的射电-γ 射线脉冲轮廓联合建模，有望约束视角与辐射束几何；而新一代 γ 射线望远镜如 VLAST（[[Fan+ 2022]]）将提供更高灵敏度，以区分磁层与双星相互作用成分的贡献。",
         "citations": [
           {
             "label": "Wu+ 2026",
+            "authors": "Wu",
+            "year": "2026",
+            "title": "",
+            "ref": "Wu, Q., Wang, N., Yuan, J., et al. 2026, Nature Astronomy, doi: 10.1038/s41550-026-02836-3",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "2026GCN.43857....1W",
+            "url": "https://ui.adsabs.harvard.edu/abs/2026GCN.43857....1W",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Ballet+ 2023",
-            "arxiv": "2307.12546",
-            "doi": "10.48550/arXiv.2307.12546"
+            "label": "Smith+ 2023",
+            "authors": "Smith",
+            "year": "2023",
+            "title": "",
+            "ref": "Smith, D. A., Abdollahi, S., Ajello, M., et al. 2023, ApJ, 958, 191, doi: 10.3847/1538-4357/acee67",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Abdo+ 2013",
+            "authors": "Abdo",
+            "year": "2013",
+            "title": "",
+            "ref": "Abdo, A. A., Ajello, M., Allafort, A., et al. 2013, ApJS, 208, 17, doi: 10.1088/0067-0049/208/2/17",
+            "arxiv": "1305.4385",
+            "doi": "10.1088/0067-0049/208/2/17",
+            "bibcode": "2013ApJS..208...17A",
+            "url": "https://arxiv.org/abs/1305.4385",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Fan+ 2022",
+            "authors": "Fan",
+            "year": "2022",
+            "title": "",
+            "ref": "Fan, Y. Z., Chang, J., Guo, J. H., et al. 2022, Acta Astronomica Sinica, 63, 27",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -963,16 +1219,82 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15921",
-        "title_zh": "Stern-Gerlach修正对等离子体重联的相对论标度与磁化电流反馈：SpinPIC2D验证与非线性研究",
+        "title_zh": "相对论标度与自旋–电流反馈：Stern-Gerlach 修正的正负电子对等离子体磁重联的 SpinPIC2D 验证和非线性区",
         "team": "",
-        "tldr": "使用SpinPIC2D模拟验证Stern-Gerlach自旋力对相对论正负电子对磁重联的影响，揭示自旋排序及磁化电流反馈可显著增强重联率。",
+        "tldr": "通过 SpinPIC2D 首次自洽模拟了相对论正负电子对等离子体磁重联中 Stern-Gerlach 效应驱动的自旋分类、磁化电流反馈及其对重联率的增强，并系统研究了相对论参数下的标度关系与非线性行为。",
         "review": "",
-        "highlight": "首次在2.5D PIC中耦合SG力与磁化电流反馈，发现自旋分支排序通过压力张量和磁化电流改变重联动力量；定义控制参数Ξ标度效应，指出相对论加速抑制排序但保留电流反馈。",
+        "highlight": "首次在 PIC 框架中完整耦合了 Stern-Gerlach 力、BMT 自旋进动与磁化电流反馈；发现自旋分支分类通过压力张量和磁化电流间接增强重联，提出无量纲参数 Ξ 统一刻画相对论与自旋效应，并揭示非线性阶段取决于绝对耦合强度而非仅 Ξ。",
         "relation": "",
-        "authors_en": "K. Nykyri (Embry–Riddle Aeronautical University)",
-        "corresponding_en": "",
-        "context_outlook": "本文继承了作者前期工作提出的SG控制参数Ξ，系统验证了自旋排序和磁化电流对相对论重联的影响。传统相对论重联模拟多忽略自旋，本工作证明在适当参数下自旋效应可显著增强磁通生长并改变拓扑演化。未来需纳入完整BMT进动和QED修正以覆盖强场天体环境，并借助三维模拟和真实粒子分布检验其在磁星、脉冲星风云等高能天体中的可观测特征。",
-        "citations": []
+        "authors_en": "K. Nykyri (Physical Sciences Department and Centre for Space and Atmospheric Research, Embry–Riddle Aeronautical University, Daytona Beach, Florida 32114, USA)",
+        "corresponding_en": "K. Nykyri",
+        "context_outlook": "传统相对论磁重联研究主要依赖磁化参数 σ 描述重联率，并指出压力耗尽和开放 exhaust 的关键作用 [[Liu+ 2015]] [[Goodbred+ 2022]]。半经典自旋动理学理论早已预见 Stern-Gerlach 力和磁化电流的存在 [[Marklund+ 2007]]，但一直缺乏自洽的 PIC 数值验证。本文在作者先前提出的控制参数 Ξ 基础上 [[Nykyri 2026]]，用 SpinPIC2D 揭示了 SG 自旋分类通过压力张量和磁化电流间接增强重联的动力学途径，并发现 Ξ 参数可有效排序重联的触发，但非线性阶段还依赖于绝对耦合强度。未来需将模型扩展至三维、纳入有限导场和 QED 辐射过程，以模拟磁星磁层等极端天体环境中的自旋-重联相互作用 [[Gong+ 2025]]。",
+        "citations": [
+          {
+            "label": "Liu+ 2015",
+            "authors": "Liu",
+            "year": "2015",
+            "title": "",
+            "ref": "Y.-H. Liu, F. Guo, W. Daughton, H. Li, and M. Hesse, Phys. Rev. Lett. 114, 095002 (2015).",
+            "arxiv": "",
+            "doi": "10.1126/science.aaa3145",
+            "bibcode": "2015Sci...347..970L",
+            "url": "https://doi.org/10.1126/science.aaa3145",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Goodbred+ 2022",
+            "authors": "Goodbred",
+            "year": "2022",
+            "title": "",
+            "ref": "M. Goodbred and Y.-H. Liu, Phys. Rev. Lett. 129, 265101 (2022).",
+            "arxiv": "2301.12111",
+            "doi": "10.1103/PhysRevLett.129.265101",
+            "bibcode": "2022PhRvL.129z5101G",
+            "url": "https://arxiv.org/abs/2301.12111",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Marklund+ 2007",
+            "authors": "Marklund",
+            "year": "2007",
+            "title": "",
+            "ref": "M. Marklund and G. Brodin, Phys. Rev. Lett. 98, 025001 (2007).",
+            "arxiv": "physics/0612062",
+            "doi": "10.1103/PhysRevLett.98.025001",
+            "bibcode": "2007PhRvL..98b5001M",
+            "url": "https://arxiv.org/abs/physics/0612062",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Nykyri 2026",
+            "authors": "Nykyri",
+            "year": "2026",
+            "title": "Stern–Gerlach Spin Sorting and Dynamical Feedback in Relativistic Pair-Plasma Reconnection",
+            "ref": "K. Nykyri, “Stern–Gerlach Spin Sorting and Dynamical Feedback in Relativistic Pair-Plasma Reconnection,” companion manuscript submitted to Phys. Rev. Lett. (2026).",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Gong+ 2025",
+            "authors": "Gong",
+            "year": "2025",
+            "title": "",
+            "ref": "Z. Gong, K. Z. Hatsagortsyan, and C. H. Keitel, Phys. Rev. Lett. 135, 045101 (2025).",
+            "arxiv": "",
+            "doi": "10.1103/c1pk-jmqr",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/c1pk-jmqr",
+            "source": "crossref",
+            "verified": true
+          }
+        ]
       }
     },
     {
@@ -1127,27 +1449,16 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15955",
-        "title_zh": "磁星 CXOU J171405.7-381031 附近的非热辐射",
+        "title_zh": "磁星 CXOU J171405.7-381031 附近的多波段非热辐射研究",
         "team": "",
-        "tldr": "利用轻子和轻子-强子模型结合 MCMC 拟合该磁星区域的多波段 SED，评估粒子加速机制并预测 CTAO 检验能力。",
+        "tldr": "对磁星 CXOU J171405.7-381031 周围区域进行多波段能谱建模，比较轻子与强子辐射机制，并预测 CTAO 观测前景。",
         "review": "",
-        "highlight": "首次对 CXOU J1714-3810 区域进行系统的轻子-强子联合建模，用 MCMC 约束粒子参数；轻子-强子模型在 >10 TeV 处改善拟合，提出 CTAO 50 小时观测可区分轻子/强子起源。",
+        "highlight": "首次对该区域实施轻子-强子联合能谱拟合，利用 MCMC 约束粒子参数；强子模型可更好解释 TeV 以上辐射，环境密度是关键；模拟显示 CTAO 50 小时曝光即可鉴别辐射机制。",
         "relation": "",
-        "authors_en": "Manoel F. Sousa (Instituto de Física de São Carlos, Universidade de São Paulo), Rita. C. Anjos (Universidade Federal de São Carlos)",
+        "authors_en": "Manoel F. Sousa (Instituto de Física de São Carlos, Universidade de São Paulo), Rita. C. Anjos (Centro de Artes, Humanidades e Tecnologia, Universidade Federal de São Carlos)",
         "corresponding_en": "Manoel F. Sousa",
-        "context_outlook": "先前 H.E.S.S. 和 Fermi-LAT 观测发现磁星 CXOU J1714–3810 与超新星遗迹 CTB 37B 成协，能谱拟合倾向强子起源但未排除轻子贡献 [[Aharonian+ 2008a]]。Sousa 等人 (2025) 基于 CTAO 预计探测能力对该区域进行了评估，但缺少详细的轻子-强子对比 [[Sousa+ 2025]]。本文用 MCMC 方法全面拟合从射电至 TeV 的 SED，表明纯轻子模型低估最高能段流量，轻子-强子模型通过加入中性介子衰变成分改善描述，所需质子能量可通过高密度环境调节。未来 CTAO 约 50 小时观测将精确测量质子截断能量，为鉴别强子辐射提供关键判据，推动磁星多信使研究。",
-        "citations": [
-          {
-            "label": "Aharonian+ 2008a",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Sousa+ 2025",
-            "arxiv": "",
-            "doi": ""
-          }
-        ]
+        "context_outlook": "磁星作为高能粒子加速候选天体，近期探测已揭示其周围存在伽马射线辐射，但辐射机制尚未明确。本工作以 CXOU J1714-3810 区域为对象，在超新星遗迹和脉冲星风云框架下，构建了纯轻子与轻子-强子模型，拟合从射电到 TeV 的多波段能谱。分析显示轻子模型可基本重现谱形，但低估最高能段流强，而强子模型通过中性π介子衰变提供了更优拟合，不过所需质子能量高度依赖环境气体密度。未来 CTAO 的 50 小时级曝光将有能力测量质子截断能量，为厘清强子辐射贡献提供决定性判据，推动磁星作为银河宇宙线加速器的研究。",
+        "citations": []
       }
     },
     {
@@ -1448,43 +1759,52 @@
         "paper_id": "arxiv:2607.15759",
         "title_zh": "基于多点观测的太阳暗条三维演化",
         "team": "",
-        "tldr": "提出类3DCORE环形磁绳几何模型，利用地球、STEREO-A和Solar Orbiter的多视角观测对2024年10月8日的暗条喷发进行三维重构，揭示其非径向传播特征和向STEREO-A的运动趋势。",
+        "tldr": "本文设计类3DCORE环状磁绳模型，利用地球、STEREO-A和Solar Orbiter三视角数据重建2024年10月8日暗条爆发过程，揭示其非径向运动与真实速度。",
         "review": "",
-        "highlight": "首次将类似3DCORE的模型应用于暗条早期三维重构，通过引入偏转角成功描述非径向传播；多视角观测一致显示暗条向STEREO-A方向偏转，为空间天气预报提供观测依据。",
+        "highlight": "首次将3DCORE环状几何与非径向偏转结合，实现暗条早期爆发三维重建；近乎正交的Solar Orbiter视角提升了重构可靠性。",
         "relation": "",
         "authors_en": "Qingmin Zhang (Purple Mountain Observatory, Chinese Academy of Sciences), Jun Dai (Purple Mountain Observatory, Chinese Academy of Sciences; Astronomical Observatory, Kyoto University), Beili Ying (Purple Mountain Observatory, Chinese Academy of Sciences) et al.",
         "corresponding_en": "Qingmin Zhang",
-        "context_outlook": "暗条和日冕物质抛射的三维重构从早期的三角测量（[[Inhester 2006]]）和掩模拟合（[[Feng+ 2012]]）发展到正向模型如GCS（[[Thernisien+ 2006]]）和3DCORE（[[Möstl+ 2018]]），但多数假设径向传播。为描述非径向传播，[[Zhang 2021]] 提出修正锥模型，[[Zhang+ 2023]] 发展修正GCS模型。本文在此基础上提出类3DCORE的环形磁绳模型，引入偏转角，并利用地球、STEREO-A和Solar Orbiter的多视角观测首次实现暗条早期三维重构。未来结合L5点等更多空间探测，以及对磁场的更真实模拟，三维重构技术将更可靠地服务于空间天气预报。",
+        "context_outlook": "先前GCS模型[[Thernisien+ 2006]]广泛用于CME重建，3DCORE[[Möstl+ 2018]]则侧重行星际传播；暗条早期偏转的模型化始于修订圆锥模型[[Zhang 2021]]。本文首次将类3DCORE几何与偏转角结合，借助地球、STEREO-A及Solar Orbiter的三视角观测实现暗条爆发早期三维追踪，揭示了其向南偏转等非径向特征。该方法可推广至更多爆发事件，为空间天气预报提供更可靠的CME方向约束。",
         "citations": [
           {
-            "label": "Inhester 2006",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Feng+ 2012",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Thernisien+ 2006",
+            "authors": "Thernisien",
+            "year": "2006",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/508254",
+            "bibcode": "2006ApJ...652..763T",
+            "url": "https://doi.org/10.1086/508254",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Möstl+ 2018",
+            "authors": "Möstl",
+            "year": "2018",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
             "label": "Zhang 2021",
+            "authors": "Zhang",
+            "year": "2021",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Zhang+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.1007/978-981-15-8257-8",
+            "bibcode": "",
+            "url": "https://doi.org/10.1007/978-981-15-8257-8",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -1522,30 +1842,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15719",
-        "title_zh": "太阳耀斑预测中的可解释AI：模型聚焦区域的定量磁场分析",
+        "title_zh": "可解释人工智能用于太阳耀斑预测：模型聚焦区域的定量磁场分析",
         "team": "",
-        "tldr": "提出定量XAI框架，通过Grad-CAM识别CNN耀斑预测模型的聚焦区域(MFR)，并定量验证其磁场参数预测能力与物理一致性",
+        "tldr": "通过Grad-CAM识别CNN耀斑预测模型的聚焦区域，并定量评估其磁场参数与复杂性，证明CNN学到了物理上有意义的耀斑相关特征。",
         "review": "",
-        "highlight": "首次将XAI从定性提升至定量，证明CNN能从磁图自主学习与耀斑发生相关的物理特征，为深度学习在太阳物理中的可信应用奠定基础",
+        "highlight": "亮点：首次对CNN耀斑预测模型的聚焦区域进行系统定量的磁场分析，揭示了这些区域与耀斑发生的物理关联，而非仅定性可视化。",
         "relation": "",
-        "authors_en": "Z. Zheng (School of Astronomy and Space Science, Nanjing University; Key Laboratory of Modern Astronomy and Astrophysics, Ministry of Education, Nanjing University), Q. Hao (School of Astronomy and Space Science, Nanjing University; Key Laboratory of Modern Astronomy and Astrophysics, Ministry of Education, Nanjing University), C. Li (School of Astronomy and Space Science, Nanjing University; Key Laboratory of Modern Astronomy and Astrophysics, Ministry of Education, Nanjing University) et al.",
-        "corresponding_en": "Q. Hao and C. Li",
-        "context_outlook": "以往研究多通过Grad-CAM等定性显示CNN模型关注极性反转线附近区域（如 [[Huang+ 2018]]、[[Yi+ 2021]]、[[Sun+ 2022a]]），但缺乏系统性定量验证。本文在此基础上，构建了从MFR提取磁场参数并与物理基准区域对比的定量XAI框架，证实MFR不仅具有高预测性能，其磁场复杂性也与耀斑物理理论一致，将可解释性提升至定量层面。该框架为深度学习模型在太阳物理中的科学发现提供了可靠路径，未来可望拓展至其他天体物理问题，并通过结合物理约束网络进一步提升解释性与应用价值。",
+        "authors_en": "Z. Zheng (School of Astronomy and Space Science, Nanjing University), Q. Hao (School of Astronomy and Space Science, Nanjing University), C. Li (School of Astronomy and Space Science, Nanjing University) et al.",
+        "corresponding_en": "Q. Hao, C. Li",
+        "context_outlook": "过去基于机器学习的太阳耀斑预测虽取得高性能，但多为黑箱模型。XAI技术如梯度加权类激活映射（Grad-CAM，[[Selvaraju+ 2017]]）已被引入耀斑预测，用于定位模型关注的关键区域（[[Huang+ 2018]]、[[Yi+ 2021]]、[[Sun+ 2022a]]），但这些研究多为定性分析，缺乏系统定量验证。本文发展了一个定量XAI框架，通过Grad-CAM识别模型聚焦区域（MFR），并从磁参数预测能力和磁复杂性两个角度进行物理验证。研究表明MFR的磁场信息能有效预测耀斑，且倾向于呈现单极主导的复杂极性结构，与物理理论一致。这一工作将XAI从定性解释推向定量物理验证，提升了深度学习耀斑预测模型的科学可信度，为未来构建可解释的物理约束模型提供了基础，并可能拓展至其他天体物理爆发现象的研究。",
         "citations": [
           {
-            "label": "Huang+ 2018",
+            "label": "Selvaraju+ 2017",
+            "authors": "Selvaraju",
+            "year": "2017",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1016/j.jclepro.2016.09.056",
+            "bibcode": "2017JCPro.141..989S",
+            "url": "https://doi.org/10.1016/j.jclepro.2016.09.056",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Huang+ 2018",
+            "authors": "Huang",
+            "year": "2018",
+            "title": "",
+            "ref": "",
+            "arxiv": "1812.04041",
+            "doi": "10.3847/2041-8213/aaf740",
+            "bibcode": "2018ApJ...869L..42H",
+            "url": "https://arxiv.org/abs/1812.04041",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Yi+ 2021",
+            "authors": "Yi",
+            "year": "2021",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1002/aenm.202003065",
+            "bibcode": "2021AdEnM..1103065Y",
+            "url": "https://doi.org/10.1002/aenm.202003065",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Sun+ 2022a",
+            "authors": "Sun",
+            "year": "2022",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -1667,40 +2024,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15729",
-        "title_zh": "黑洞X射线双星 Swift J1727.8–1613 中稳定的 X 射线混响滞后",
+        "title_zh": "黑洞X射线双星Swift J1727.8-1613中稳定的X射线回响滞后",
         "team": "",
-        "tldr": "分析 NICER 观测发现硬中间态混响滞后几乎不变，演化主要受硬滞后衰减控制，不支持内区几何剧变。",
+        "tldr": "利用NICER观测研究Swift J1727.8-1613在2023年爆发期间的回响滞后，发现硬中间态（HIMS）中软滞后幅度保持~10 ms的稳定值，暗示内吸积几何变化不大。",
         "review": "",
-        "highlight": "首次在 Swift J1727.8–1613 的 HIMS 中发现软滞后振幅在 1–10 Hz 宽带内保持约 10 ms 稳定，且几乎不随频率演化；这不同于其他源中混响常随态演化的现象，表明内区吸积几何在 HIMS 阶段相对恒定，滞后变化主要源于硬滞后成分衰减。",
+        "highlight": "该源在HIMS中展现出异常稳定的回响滞后，与通常观测到的滞后幅度下降趋势相反；通过固定1–10 Hz频率区间测量，有效隔离了回响成分，表明表观滞后演化主要受硬滞后减弱的影响。",
         "relation": "",
-        "authors_en": "Wei Yu, Sinan Allak, Zi-Xu Yang et al.",
+        "authors_en": "Wei Yu, Sinan Allak, Zi-Xu Yang, et al.",
         "corresponding_en": "Wei Yu",
-        "context_outlook": "既往对 BHXB 混响滞后的研究表明，软滞后振幅通常随吸积态演化而变化，常被归因于盘截断半径或冕结构的改变（[[De Marco+ 2015]]，[[Kara+ 2019]]）。然而，Swift J1727.8–1613 的硬中间态却呈现出异常稳定的软滞后，与 [[Wang+ 2022]] 报道的一般演化趋势不符，[[Ingram+ 2024]] 也指出其独特性。本文通过系统的频率分辨和能量分辨分析，揭示低频硬滞后的衰减是表观软滞后增长的主要驱动力，暗示内区几何在该态并未显著演化。这一发现为利用宽频带混响信号剥离污染、诊断吸积几何提供了新范本，未来结合高时间分辨观测和辐射转移模拟（如 [[Zhan+ 2025]]）有望进一步区分传播涨落、冕响应与混响成分，实现黑洞双星吸积流的动态层析。",
+        "context_outlook": "该研究继承了此前对黑洞X射线双星回响滞后的观测工作（如 [[Kara+ 2019]] 对 MAXI J1820+070 的分析，[[Wang+ 2022]] 的样本研究），发现 Swift J1727.8-1613 在 HIMS 中软滞后幅度保持稳定，与常见趋势相悖。通过选用固定的高频区间最小化硬滞后和相位缠绕污染，为分离回响与传播涨落成分提供了新范例。未来结合 [[Zhan+ 2025]] 的蒙特卡罗辐射转移模拟，有望厘清回响滞后对内吸积几何变化的依赖，并推广至更多源的状态演化研究。",
         "citations": [
           {
-            "label": "De Marco+ 2015",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Kara+ 2019",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Kara",
+            "year": "2019",
+            "title": "",
+            "ref": "",
+            "arxiv": "1901.03877",
+            "doi": "10.1038/s41586-018-0803-x",
+            "bibcode": "2019Natur.565..198K",
+            "url": "https://arxiv.org/abs/1901.03877",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Wang+ 2022",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Ingram+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Wang",
+            "year": "2022",
+            "title": "",
+            "ref": "",
+            "arxiv": "2203.11171",
+            "doi": "10.48550/arXiv.2203.11171",
+            "bibcode": "2022arXiv220311171W",
+            "url": "https://arxiv.org/abs/2203.11171",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Zhan+ 2025",
+            "authors": "Zhan",
+            "year": "2025",
+            "title": "",
+            "ref": "",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.5194/nhess-2024-170-ac1",
+            "bibcode": "",
+            "url": "https://doi.org/10.5194/nhess-2024-170-ac1",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -1924,15 +2295,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.15679",
-        "title_zh": "嵌入精质暗能量场的Hayward规则黑洞粘性吸积盘：超越Novikov–Thorne近似",
+        "title_zh": "Viscous Accretion Disks around Regular Black Holes Embedded in a Quintessence Dark Energy Field: Beyond the Novikov--Thorne Approximation",
         "team": "",
-        "tldr": "构建了围绕Hayward规则黑洞且浸于quintessence暗能量场的相对论薄盘模型，引入ISCO处非零粘性力矩，证明辐射效率与α无关而仅由几何参数决定，并给出打破简并的观测策略。",
+        "tldr": "",
         "review": "",
-        "highlight": "首次同时纳入规则核心、局域暗能量和ISCO粘滞力矩三项修正，发现组合几何下效率较同自旋Kerr提升16%且与粘滞参数无关，为NICER/NuSTAR提供仅依赖几何的清晰区分探针。",
+        "highlight": "",
         "relation": "",
-        "authors_en": "S. Dutta (Department of Applied Mathematics, Dinabandhu Andrews Institute of Technology and Management, Kolkata, India)",
-        "corresponding_en": "Sandip Dutta",
-        "context_outlook": "传统Novikov–Thorne薄盘模型依赖奇点、真空和无应力内边界。Hayward规则黑洞解决了奇点问题，Kiselev精质暗能量解则为局域暗能量提供了确切度规修正，而MHD模拟证实ISCO处存在非零磁应力力矩。本文首次将三者整合，在旋转Hayward+暗能量度规下建立粘性盘解析框架，揭示效率-几何简并可由双观测量打破，并量化了内边界力矩对通量的放大效应。该框架未来可结合辐射转移与康普顿化模拟，通过NICER、NuSTAR及X射线偏振数据约束规则黑洞长度标度和暗能量密度，并可推广至其他规则黑洞或暗物质晕模型。",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "We develop a comprehensive relativistic framework for geometrically thin, optically thick Shakura--Sunyaev $α$-viscous accretion disks around rotating Hayward regular black holes embedded in a quintessence dark energy (DE) field. The static, spherically symmetric building blocks of our spacetime are each exact solutions of the Einstein field equations, sourced respectively by the Hayward non-linear electromagnetic field and a quintessence fluid with equation-of-state parameter $ω<-1/3$; we combine and rotate them following standard practice for this class of models, and we are explicit throughout about the resulting metric's phenomenological status. Abandoning the stress-free inner boundary of the Novikov--Thorne--Page (NTP) model, we analytically incorporate a non-zero viscous torque $\\Tcal_{\\rm in}$ at the innermost stable circular orbit (ISCO) via the relativistic vertical epicyclic frequency $\\Obot(r)$. We prove that the bolometric efficiency $η=[1-E(\\rISCO)]\\times100\\,\\%$ is strictly independent of the viscosity parameter $α$ but sensitive to both the Hayward length scale $l$ and the DE density $ρ_0$, establishing a rigorous two-observable degeneracy-breaking strategy. At benchmark parameters ($j=0.4$, $l=0.5M_{\\BH}$, $ρ_0=2\\times10^{-4}$), the combined geometry yields $η=8.71\\,\\%$, substantially above the vacuum Kerr value $7.51\\,\\%$ at the same spin. The viscosity correction $δ\\Fcal/\\Fcal_{\\rm NTP}$ diverges at $r\\to\\rISCO^+$, amplified by the geometric odification of the boundary pressure: the viscosity amplification ratio rises from $0.80$--$4.52\\,\\%$ (vacuum Kerr) to $0.87$--$6.76\\,\\%$ (Hayward+DE) at $α=0.1$, providing a clean, monotonic observational discriminator accessible to \\textit{NICER} and \\textit{NuSTAR}, independent of the bulk spectral normalisation.",
         "citations": []
       }
     },
@@ -1969,14 +2340,41 @@
         "paper_id": "arxiv:2607.15588",
         "title_zh": "高密度声速与并合后动力学",
         "team": "",
-        "tldr": "通过声速参数化模型，研究高密度声速斜率对双中子星并合后引力波及抛射物性质的影响，发现声速导数与并合后引力波峰值频率存在近似不依赖于物态的关系。",
+        "tldr": "采用单参数控制声速斜率，通过数值相对论模拟揭示其对并合后引力波频率与喷出物的影响，并基于IPAD-TOV框架发现近似普适标度关系。",
         "review": "",
-        "highlight": "首创以声速导数直接控制高密度物态刚度，揭示其与并合后引力波主频之间的近似EOS-不敏感关联，为从多信使观测中解读最高密度核物质行为开辟了新途径。",
+        "highlight": "创新性地用参数化声速模型隔离高密度物态效应，系统研究了其对并合后多信使信号的影响；发现并合后峰值频率与音速积分量间的准通用关系，为提取最高密度物态信息提供新途径。",
         "relation": "",
-        "authors_en": "John Stroud (Institute for Nuclear Theory, University of Washington), David Radice (Institute for Gravitation and The Cosmos, The Pennsylvania State University), Sanjay Reddy (Institute for Nuclear Theory, University of Washington)",
+        "authors_en": "J. Stroud (Institute for Nuclear Theory, University of Washington), D. Radice (Institute for Gravitation and The Cosmos, The Pennsylvania State University), S. Reddy (Institute for Nuclear Theory, University of Washington)",
         "corresponding_en": "",
-        "context_outlook": "既往双中子星并合模拟多依赖详细的微物理模型，侧重于低密度区物态约束，缺乏对声速在超高密度段独立影响的系统探索。本工作通过线性参数化方案直接控制声速斜率，在数值相对论模拟中建立起该斜率与并合后遗迹性质、抛射物质量及引力波峰值频率的关联。结果表明，并合后引力波主频能够灵敏反映核物质最高密度处的声速行为，尽管并非严格准普遍关系，仍为未来第三代探测器约束2~8倍饱和密度区物态提供了可行途径。这一发现亦凸显了发展灵活参数化EOS框架、结合代理建模或机器学习高效反演致密物质性质的必要性。",
-        "citations": []
+        "context_outlook": "过去研究多基于潮汐形变等宏观量建立准通用关系，但这些量主要敏感于核饱和密度附近的物态[[Bauswein+ 2012]]。近期IPAD-TOV框架通过定义本征变量X和Ψ，构造了能直接编码高密度声速积分信息的参数D̃[[Cai+ 2025]]。本文以此为基础，引入可控声速斜率的简化模型，通过全相对论模拟揭示了f_pk与声速微分参数的近线性依赖，并进一步在CoRe数据库中验证了D̃与f_pk的近似EOS无关标度关系，表明并合后引力波确实携带了超出潮汐形变所能给出的最高密度信息。未来，这类参数化方法可拓展至更多声速特征参数，并用于训练代理模型或神经网络仿真器，从而高效联合多信使数据约束极端密度物态方程。",
+        "citations": [
+          {
+            "label": "Bauswein+ 2012",
+            "authors": "Bauswein",
+            "year": "2012",
+            "title": "Measuring neutron-star properties via gravitational waves from binary mergers",
+            "ref": "A. Bauswein and H. Janka (2012) Measuring neutron-star properties via gravitational waves from binary mergers . Phys. Rev. Lett. 108 , pp. 011101 .",
+            "arxiv": "",
+            "doi": "10.1103/physrevlett.108.011101",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevlett.108.011101",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Cai+ 2025",
+            "authors": "Cai",
+            "year": "2025",
+            "title": "Novel scalings of neutron star properties from analyzing dimensionless Tolman–Oppenheimer–Volkoff equations",
+            "ref": "B. Cai and B. Li (2025) Novel scalings of neutron star properties from analyzing dimensionless Tolman–Oppenheimer–Volkoff equations . Eur. Phys. J. A 61 ( 3 ), pp. 55 . External Links: 2501.18676 , Document",
+            "arxiv": "2501.18676",
+            "doi": "10.1140/epja/s10050-025-01507-7",
+            "bibcode": "2025EPJA...61...55C",
+            "url": "https://arxiv.org/abs/2501.18676",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       }
     },
     {

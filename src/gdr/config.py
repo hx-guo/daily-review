@@ -13,8 +13,21 @@ MODEL_SYNTH = os.environ.get("GDR_MODEL_SYNTH", "glm-5.2")
 LAYER_CORE_MIN = 70
 LAYER_RELATED_MIN = 40
 
-# Max characters of full text sent to the write model (token control).
-FULLTEXT_MAX_CHARS = 24000
+# Max characters of full text sent to the write model. Set high enough to read a
+# whole paper (a typical arXiv paper is ~60-100k chars; the reference list — needed
+# for citation resolution — sits at the very end). Only a pathologically long paper
+# is truncated here, and summarize_paper retries with a short body if the model ever
+# rejects an over-long input. ~150k chars ≈ ~38k tokens.
+FULLTEXT_MAX_CHARS = int(os.environ.get("GDR_FULLTEXT_MAX_CHARS", "150000"))
+# Fallback body length used when a full-text write call errors (e.g. context overflow).
+FULLTEXT_RETRY_CHARS = int(os.environ.get("GDR_FULLTEXT_RETRY_CHARS", "24000"))
+
+# Citation link resolution. ADS is the primary resolver (astro-specialised, returns
+# bibcode + arXiv + DOI); Crossref is the token-free fallback. Both are optional — with
+# neither reachable, citation chips fall back to an ADS search of the reference string.
+ADS_API_URL = os.environ.get("ADS_API_URL", "https://api.adsabs.harvard.edu/v1/search/query")
+CROSSREF_API_URL = os.environ.get("CROSSREF_API_URL", "https://api.crossref.org/works")
+CROSSREF_MAILTO = os.environ.get("GDR_CROSSREF_MAILTO", "daily-review@users.noreply.github.com")
 
 FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
@@ -47,6 +60,12 @@ def get_api_key() -> str:
     if not key:
         raise RuntimeError("OPENCODE_API_KEY environment variable is not set")
     return key
+
+
+def get_ads_token() -> str:
+    """ADS API token for citation resolution. Optional — empty when unset, in which
+    case resolution skips ADS and relies on Crossref / search-link fallback."""
+    return os.environ.get("ADS_API_TOKEN", "").strip()
 
 
 def layer_for(score: int) -> str:

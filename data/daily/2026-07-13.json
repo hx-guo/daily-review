@@ -1463,15 +1463,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12040",
-        "title_zh": "超线性II型超亮超新星2017fck和2019cmv：可能起源于相互作用的热核超新星",
+        "title_zh": "超线性II型超亮超新星2017fck和2019cmv：可能的热核起源",
         "team": "",
-        "tldr": "发现两个超线性SLSNe-II的光变特征与Ia-CSM相似，提出其可能源自白矮星与星周物质相互作用的热核超新星。",
+        "tldr": "发现两颗超线性光变的II型超亮超新星，其性质与相互作用的热核超新星（Ia-CSM）一致，模型表明它们可能是白矮星热核爆发并伴有大量星周物质。",
         "review": "",
-        "highlight": "首次揭示SLSNe-II 2017fck和2019cmv具有与Ia-CSM一致的超线性光变曲线和光谱，通过数值模型指出这类超亮超新星可能起源于热核爆炸而非传统核心坍缩，为极高光度事件提供了新解释。",
+        "highlight": "首次明确将超线性II型超亮超新星与热核爆发关联，并构建数值模型网格涵盖不同SN Ia亚型，揭示了一类新的SLSN-II起源通道。",
         "relation": "",
         "authors_en": "Daichi Hiramatsu, Takashi J. Moriya, D. Andrew Howell et al.",
         "corresponding_en": "",
-        "context_outlook": "富氢超亮超新星（SLSNe-II）的极端亮度通常由星周物质（CSM）相互作用解释，但其下方超新星本质长期不明。此前SLSN-II 2006gy曾被提出与Ia型CSM超新星（SNe Ia-CSM）存在关联，暗示热核起源可能。本文通过对SN 2017fck和2019cmv的观测与建模，发现其光变曲线与光谱性质同SNe Ia-CSM高度一致，推得CSM质量高达数倍太阳质量，可能形成于白矮星与伴星的公共包层演化。未来，更大样本的早期多波段监测和星周环境探针将验证热核爆炸在致密CSM中的普遍性，并可能重塑对超亮超新星前身星系统的认知。",
+        "context_outlook": "II型超亮超新星的能量来源普遍认为是星周物质相互作用，但前身星本质长期不明。本工作发现2017fck和2019cmv的超线性光变曲线与已知的Ia-CSM超新星高度相似，并通过数值模拟显示其星周物质质量高达数倍太阳质量，暗示可能来自白矮星与伴星的公共包层演化。这一结果将部分SLSN-II与热核超新星统一起来，为前身星研究开辟了新方向。未来大视场巡天可望发现更多此类事件，借助早期光谱和更精细的双星演化模型，有望解耦热核与芯坍缩起源，并限制星周物质分布。",
         "citations": []
       }
     },
@@ -1619,30 +1619,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12018",
-        "title_zh": "JADES 瞬变巡天 II：红移至~5 的超新星体密度速率",
+        "title_zh": "JADES暂现源巡天 II：z~5的体积超新星发生率",
         "team": "",
-        "tldr": "利用 JADES 瞬变巡天样本，首次计算了 z=2–5 的核坍缩超新星和 Ia 型超新星的体密度速率，并初步探测到 CC 速率在宇宙正午后的下降。",
+        "tldr": "利用JADES深场JWST/NIRCam巡天发现的83颗超新星，首次测量了z~2-5的核坍缩超新星和Ia型超新星体积发生率，并通过模拟单历元SED评估了分类精度。",
         "review": "",
-        "highlight": "首次将超新星体密度速率直接测量推至 z>2，为恒星形成历史提供独立探针；初步观测到 CC SN 速率随红移下降，与宇宙恒星形成率密度演化一致。",
+        "highlight": "首次给出了z>2.5的CC SN体积发生率，初步观测到其随红移在宇宙正午后的下降趋势，与恒星形成率密度的演化一致；同时提供了z~2-5的SN Ia发生率及单历元分类的定量可靠性分析。",
         "relation": "",
-        "authors_en": "Christa DeCoursey (Steward Observatory, University of Arizona), Christian Vassallo (Tuorla Observatory, University of Turku), Louis-Gregory Strolger (Space Telescope Science Institute) et al.",
+        "authors_en": "Christa DeCoursey (Steward Observatory, University of Arizona), Christian Vassallo (Tuorla Observatory, Department of Physics and Astronomy, University of Turku), Louis-Gregory Strolger (Space Telescope Science Institute) et al.",
         "corresponding_en": "",
-        "context_outlook": "以往超新星速率研究主要受限于 z<2.5（如 [[Dahlen+ 2012]] 首次将 CC SN 速率延伸到 z~1；[[Strolger+ 2015]] 利用 HST 数据测量了 z<2.5 的 CC SN 速率；[[Rodney+ 2014]] 首次测量了 z~2.5 的 Ia SN 速率），更高红移处的直接测量一直空缺。本文借助 JADES 巡天 JWST/NIRCam 深度多历元观测，首次将 CC SN 和 Ia SN 的体密度速率拓展到 z~5，揭示出 CC SN 速率在宇宙正午后可能开始下降，与基于星系光度函数推导的恒星形成率密度趋势相符。未来，JWST 更大天区巡天及 Roman 空间望远镜将大幅增加高红移超新星样本，有望精确描绘整个宇宙恒星形成与爆炸的历史图景，并严格检验 Ia 型超新星的延迟时标分布模型。",
+        "context_outlook": "先前HST巡天已测量CC SN发生率至z~2.5（如[[Dahlen+ 2012]]、[[Strolger+ 2015]]、[[Petrushevska+ 2016]]）以及SN Ia发生率至类似红移（[[Rodney+ 2014]]）。本文利用JWST/JADES数据首次将发生率测量推进到z~5，并通过大量模拟明确了单历元SED分类的精度与局限。未来JWST多周期和Roman巡天将极大扩充高红移超新星样本，提高分类可靠性，从而更严格地检验超新星前身星模型和宇宙恒星形成史。",
         "citations": [
           {
             "label": "Dahlen+ 2012",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Dahlen",
+            "year": "2012",
+            "title": "",
+            "ref": "",
+            "arxiv": "1208.0342",
+            "doi": "10.1088/0004-637X/757/1/70",
+            "bibcode": "2012ApJ...757...70D",
+            "url": "https://arxiv.org/abs/1208.0342",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Strolger+ 2015",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Strolger",
+            "year": "2015",
+            "title": "",
+            "ref": "",
+            "arxiv": "1509.06574",
+            "doi": "10.1088/0004-637X/813/2/93",
+            "bibcode": "2015ApJ...813...93S",
+            "url": "https://arxiv.org/abs/1509.06574",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Petrushevska+ 2016",
+            "authors": "Petrushevska",
+            "year": "2016",
+            "title": "",
+            "ref": "",
+            "arxiv": "1607.01617",
+            "doi": "10.1051/0004-6361/201628925",
+            "bibcode": "2016A&A...594A..54P",
+            "url": "https://arxiv.org/abs/1607.01617",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Rodney+ 2014",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Rodney",
+            "year": "2014",
+            "title": "",
+            "ref": "",
+            "arxiv": "1401.7978",
+            "doi": "10.1088/0004-6256/148/1/13",
+            "bibcode": "2014AJ....148...13R",
+            "url": "https://arxiv.org/abs/1401.7978",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2257,15 +2294,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11824",
-        "title_zh": "TESS观测的邻近年轻太阳型恒星上星斑与耀斑的时间分辨关联",
+        "title_zh": "TESS 观测的邻近年轻太阳型恒星中星斑与耀斑的时间分辨关联",
         "team": "",
-        "tldr": "利用TESS约7年数据，首次在单星上时间分辨地研究星斑面积与耀斑频率的关联，发现二者正相关且幂律指数一致。",
+        "tldr": "利用 TESS 约 7 年数据自动探测三颗年轻太阳型恒星的耀斑与星斑，首次在单颗星上建立两者时变正相关关系，支持超级耀斑磁能驱动机制。",
         "review": "",
-        "highlight": "首次在单星上建立星斑-耀斑的长期时变关系，直接证实超级耀斑由大星斑储存的磁能驱动；三颗年轻太阳型恒星呈现统一的幂律依赖，暗示太阳磁活动机制可外推至极端活跃的年轻恒星。",
+        "highlight": "首次在单星层面揭示星斑面积与耀斑频率的同步变化及一致幂律依赖，证明太阳磁活动机制可推广到年轻活跃恒星；还发现自转周期可能影响星斑纬度分布。",
         "relation": "",
         "authors_en": "Daijiro Hitotsuyanagi, Hiroto Yamada, Daisuke Yamashiki et al.",
         "corresponding_en": "",
-        "context_outlook": "此前统计研究已提示超级耀斑与巨星星斑有关，但缺乏对单星的连续时变分析。本研究对EK Draconis、DS Tucanae A和V889 Herculis进行扇区分辨率监测，揭示了耀斑发生率与星斑面积显著正相关，且幂律斜率在不同恒星间相近，有力支持了太阳耀斑的磁能储存/释放图像在年轻活跃星上同样适用。未来结合多色测光或表面成像可进一步测定星斑纬度分布，并探索更长的磁活动周期。",
+        "context_outlook": "过去研究认为超级耀斑由大星斑储存的磁能驱动，但缺乏对单颗星时变关联的约束。本文利用 TESS 长时间基线测光，逐扇区推导耀斑频率、星斑面积和自转周期，发现三颗年轻太阳型恒星（EK Dra、DS Tuc A、V889 Her）的星斑面积与耀斑发生率呈正相关，且幂律指数跨恒星一致。这不仅强化了磁能释放率随总磁能变化的图像，还暗示大星斑倾向出现在中纬度。未来结合更长时序和多波段观测，有望揭示该类恒星的磁活动周和耀斑触发机制，并为年轻恒星-行星系统的空间天气研究奠定基础。",
         "citations": []
       }
     },
@@ -2304,35 +2341,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11780",
-        "title_zh": "固体致密星的潮汐形变与应变积累",
+        "title_zh": "固态致密星的潮汐形变与应变积累",
         "team": "",
-        "tldr": "基于奇子星模型，发展固体致密星潮汐形变框架，揭示固体潮汐形变比流体大约40%，内部应变积累可导致大规模破裂，释放~10^46 erg弹性能，为短伽马暴前兆提供能源机制。",
+        "tldr": "该文在奇子星模型下系统计算了全固态致密星的潮汐形变和内部应变积累，发现～40%的形变差异和中心优先破裂，可解释短伽马暴前兆并留下引力波印记。",
         "review": "",
-        "highlight": "首次系统计算固体奇子星的潮汐形变，发现与流体的差异达约40%，偏离 I-Love 普适关系约10%；同时量化了并合过程中的应变积累与弹性能释放，为多信使探测致密星固态属性开辟了可能。",
+        "highlight": "首次在奇子星框架下统一建模潮汐响应与应变破裂，揭示全固态天体与流体星间显著差异，提出利用引力波与短伽马暴前兆联合检验致密星固态本质的新途径。",
         "relation": "",
-        "authors_en": "Hongxiang Shen (School of Physics, Peking University), Yong Gao (Max Planck Institute for Gravitational Physics (Albert Einstein Institute)), Hong-Bo Li (Kavli Institute for Astronomy and Astrophysics, Peking University), et al.",
-        "corresponding_en": "Yong Gao, Hong-Bo Li, Ren-Xin Xu",
-        "context_outlook": "致密星内部是否为固态一直缺乏直接检验。基于流体假设，GW170817 [[Abbott+ 2017]] 对潮汐形变 Λ 进行了初步约束；而对于固体星，[[Lau+ 2017]] 曾计算固体奇异夸克星的潮汐形变偏差约 60%，[[Zhou+ 2024]] 进一步提出潮汐诱导的星震可作为短伽马暴前兆的能源。本文依托奇子星模型，统一给出了固体潮汐形变的相对论性计算框架，发现固体与流体的 Λ 差异可达约 40%，偏离 I-Love 普遍关系约 10%；同时首次自洽地计算了并合过程中的内部应变积累，表明大规模破裂可释放 ~10^46 erg 弹性能，足以解释短暴前兆。展望未来，随着第三代引力波探测器灵敏度的提升，结合电磁前兆的联合观测，有望通过潮汐响应与应变能释放的双重特征，直接甄别致密星的固体属性，并限制奇异物质的状态方程与剪切模量 [[Shterenberg & Zhou 2025]]。",
+        "authors_en": "H. Shen (School of Physics, Peking University), Y. Gao (Max Planck Institute for Gravitational Physics), H.-B. Li (Kavli Institute for Astronomy and Astrophysics, Peking University) et al.",
+        "corresponding_en": "Yong Gao",
+        "context_outlook": "致密星内部的物态方程是强相互作用的未解问题。前期研究中，中子星薄壳的潮汐修正可忽略不计 [[Gittins+2020]]，流体奇异星（strangeon star）的I–Love关系也与中子星高度一致 [[Gao+2021]]。但完全固态的奇异夸克星在潮汐形变上已展现显著差异 [[Lau+2017]]，且其破裂过程有望在引力波中留下印记 [[Lai+2019]]，并为短伽马暴前兆提供能量 [[Zhou+2024]]。本文在此基础上，首次在奇子星模型中采用Lennard-Jones物态方程和全固态假设，系统给出了潮汐形变（约40%偏差）与应变积累的定量结果，指出破裂始于星体中心而非表面。展望未来，下一代引力波探测器及多信使观测有望通过潮汐响应、波形突变和前兆辐射联合约束剪切模量及破裂强度，从而检验致密星的固态本质和奇子星假说。",
         "citations": [
           {
-            "label": "Abbott+ 2017",
-            "arxiv": "",
-            "doi": ""
+            "label": "Gittins+2020",
+            "authors": "Gittins",
+            "year": "2020",
+            "title": "Tidal deformations of neutron stars with elastic crusts",
+            "ref": "F. Gittins, N. Andersson, and J. P. Pereira (2020) Tidal deformations of neutron stars with elastic crusts. Phys. Rev. D 101 (10), pp. 103025. External Links: 2003.05449, Document",
+            "arxiv": "2003.05449",
+            "doi": "10.1103/PhysRevD.101.103025",
+            "bibcode": "2020PhRvD.101j3025G",
+            "url": "https://arxiv.org/abs/2003.05449",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Lau+ 2017",
+            "label": "Gao+2021",
+            "authors": "Gao",
+            "year": "2021",
+            "title": "Rotation and deformation of strangeon stars in the Lennard-Jones model",
+            "ref": "Y. Gao, X. Lai, L. Shao, and R. Xu (2021) Rotation and deformation of strangeon stars in the Lennard-Jones model. Mon. Not. Roy. Astron. Soc. 509 (2), pp. 2758–2779. External Links: 2109.13234, Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1093/mnras/stab3181",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/stab3181",
+            "source": "crossref",
+            "verified": true
           },
           {
-            "label": "Zhou+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "label": "Lau+2017",
+            "authors": "Lau",
+            "year": "2017",
+            "title": "Tidal deformations of compact stars with crystalline quark matter",
+            "ref": "S. Y. Lau, P. T. Leung, and L. -M. Lin (2017) Tidal deformations of compact stars with crystalline quark matter. Phys. Rev. D 95 (10), pp. 101302. External Links: 1705.01710, Document",
+            "arxiv": "1705.01710",
+            "doi": "10.1103/PhysRevD.95.101302",
+            "bibcode": "2017PhRvD..95j1302L",
+            "url": "https://arxiv.org/abs/1705.01710",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Shterenberg & Zhou 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Lai+2019",
+            "authors": "Lai",
+            "year": "2019",
+            "title": "Strangeons constitute bulk strong matter: Test using GW 170817",
+            "ref": "X. Lai, E. Zhou, and R. Xu (2019) Strangeons constitute bulk strong matter: Test using GW 170817. Eur. Phys. J. A 55 (4), pp. 60. External Links: 1811.00193, Document",
+            "arxiv": "1811.00193",
+            "doi": "10.1140/epja/i2019-12720-8",
+            "bibcode": "2019EPJA...55...60L",
+            "url": "https://arxiv.org/abs/1811.00193",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zhou+2024",
+            "authors": "Zhou",
+            "year": "2024",
+            "title": "The Precursor of GRB211211A: A Tide-induced Giant Quake?",
+            "ref": "E. Zhou et al. (2024) The Precursor of GRB211211A: A Tide-induced Giant Quake? Res. Astron. Astrophys. 24 (2), pp. 025019. External Links: 2305.10682, Document",
+            "arxiv": "2305.10682",
+            "doi": "10.1088/1674-4527/ad0825",
+            "bibcode": "2024RAA....24b5019Z",
+            "url": "https://arxiv.org/abs/2305.10682",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2729,16 +2811,82 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11670",
-        "title_zh": "扩展 BAM 代码至电阻性广义相对论磁流体力学：测试与初步应用",
+        "title_zh": "BAM代码拓展至电阻性广义相对论磁流体力学：测试与初步应用",
         "team": "",
-        "tldr": "本文在数值相对论代码 BAM 中实现电阻性 GRMHD，通过测试和双中子星并合模拟，揭示有限电导率对磁场和物质抛射的影响，平行电场可达总电场 10%。",
+        "tldr": "本文在数值相对论代码BAM中实现了电阻性GRMHD，经测试并应用于双中子星并合模拟，揭示了有限电导率导致的非理想MHD效应。",
         "review": "",
-        "highlight": "首次在 BAM 代码中引入电阻性 GRMHD，可捕捉欧姆耗散与磁重联；发现非理想平行电场分量可达总电场 10%，对并合后低密度区演化有显著影响。",
+        "highlight": "首次在BAM中整合IMEX电阻性GRMHD模块，实现从恒星内部至近真空区域的大范围电导率统一处理；发现平行电场分量可达总电场10%，为非理想效应主导并合后低密度区演化提供证据。",
         "relation": "",
-        "authors_en": "Matthew Beaudoin (Max Planck Institute for Gravitational Physics, Germany; Universität Potsdam, Germany), Maximilano Ujevic (Universidade Federal do ABC, Brazil), Ramon Jaeger (Universität Potsdam, Germany) et al.",
+        "authors_en": "M. Beaudoin (Max Planck Institute for Gravitational Physics (Albert Einstein Institute) and Universität Potsdam), M. Ujevic (Universidade Federal do ABC), R. Jaeger (Universität Potsdam) et al.",
         "corresponding_en": "Matthew Beaudoin",
-        "context_outlook": "此前的双中子星并合模拟多采用理想 GRMHD 近似，但并合后的低密度区可能偏离理想条件。本文在 BAM 框架中实现电阻性 GRMHD，为系统性评估非理想效应提供了新工具，并初步揭示了平行电场的重要性。未来结合更真实的微物理物态方程和电导率模型，有望更准确地模拟磁重联和相对论喷流形成过程。",
-        "citations": []
+        "context_outlook": "在数值相对论领域，电阻性 GRMHD 的实现最早由 [[Palenzuela+ 2009]] 系统阐述，并由 [[Dionysopoulou+ 2013]] 推广至三维动态时空；然而仅有极少数工作（如 [[Dionysopoulou+ 2015]]）将其用于双中子星并合。本文基于 BAM 代码原有的理想 GRMHD 模块 [[Neuweller+ 2025]]，引入有限电导率，并针对电导率的剧烈空间变化设计了稳定的隐式-显式 Runge-Kutta 积分方案。通过一系列标准测试和首次长时间的并合模拟，定量显示了电导率对磁场放大与物质抛射的调节作用，尤其并合后盘风中平行电场可达 10%，暗示非理想效应在该区域不可忽略。未来研究可结合真实的依赖温度与密度的电导率模型（如 [[Harutyunyan+ 2018]]）以及更完整的微物理状态方程，系统评估电阻性过程对喷流引擎、电磁对等体及核合成产物的影响。",
+        "citations": [
+          {
+            "label": "Palenzuela+ 2009",
+            "authors": "Palenzuela",
+            "year": "2009",
+            "title": "Beyond ideal MHD: towards a more complete description of relativistic astrophysical plasmas",
+            "ref": "[100] C. Palenzuela, L. Lehner, O. Reula, and L. Rezzolla (2009-11) Beyond ideal MHD: towards a more complete description of relativistic astrophysical plasmas. Mon. Not. Roy. Astron. Soc. 394, pp. 1727–1740. External Links: 0810.1838, Document",
+            "arxiv": "",
+            "doi": "10.1111/j.1365-2966.2009.14454.x",
+            "bibcode": "",
+            "url": "https://doi.org/10.1111/j.1365-2966.2009.14454.x",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Dionysopoulou+ 2013",
+            "authors": "Dionysopoulou",
+            "year": "2013",
+            "title": "General-relativistic resistive magnetohydrodynamics in three dimensions: Formulation and tests",
+            "ref": "[42] K. Dionysopoulou, D. Alic, C. Palenzuela, L. Rezzolla, and B. Giacomazzo (2013-08) General-relativistic resistive magnetohydrodynamics in three dimensions: Formulation and tests. Physical Review D 88, pp. 044020. External Links: ISSN 1550-79980556-2821, Document",
+            "arxiv": "1208.3487",
+            "doi": "10.1103/PhysRevD.88.044020",
+            "bibcode": "2013PhRvD..88d4020D",
+            "url": "https://arxiv.org/abs/1208.3487",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Dionysopoulou+ 2015",
+            "authors": "Dionysopoulou",
+            "year": "2015",
+            "title": "General-relativistic resistive-magnetohydrodynamic simulations of binary neutron stars",
+            "ref": "[43] K. Dionysopoulou, D. Alic, and L. Rezzolla (2015-10) General-relativistic resistive-magnetohydrodynamic simulations of binary neutron stars. Physical Review D 92, pp. 084064. External Links: ISSN 1550-79980556-2821, Document",
+            "arxiv": "1502.02021",
+            "doi": "10.1103/PhysRevD.92.084064",
+            "bibcode": "2015PhRvD..92h4064D",
+            "url": "https://arxiv.org/abs/1502.02021",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Neuweller+ 2025",
+            "authors": "Neuweller",
+            "year": "2025",
+            "title": "BAM: a numerical relativity code for the age of multi-messenger astronomy. I. General relativity and magnetohydrodynamics",
+            "ref": "[96] A. Neuweiler, T. Dietrich, M. Ujevic, K. Kiuchi, B. Brügmann, and S. Bernuzzi (2025-05) BAM: a numerical relativity code for the age of multi-messenger astronomy. I. General relativity and magnetohydrodynamics. Astron. Astrophys. (submitted). External Links: 2505.01365, Document",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Harutyunyan+ 2018",
+            "authors": "Harutyunyan",
+            "year": "2018",
+            "title": "Electrical resistivity and Hall effect in binary neutron star mergers",
+            "ref": "[62] A. Harutyunyan, A. Nathanail, L. Rezzolla, and A. Sedrakian (2018-11) Electrical resistivity and Hall effect in binary neutron star mergers. European Physical Journal A 54, pp. 191. External Links: ISSN 1434-6001, Document",
+            "arxiv": "1803.09215",
+            "doi": "10.1140/epja/i2018-12624-1",
+            "bibcode": "2018EPJA...54..191H",
+            "url": "https://arxiv.org/abs/1803.09215",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       }
     },
     {
@@ -2920,35 +3068,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11539",
-        "title_zh": "SDSS DR7中两个最早的光学-UV潮汐瓦解事件：Transformer光谱分类器的发现",
+        "title_zh": "基于Transformer光谱分类器揭示的SDSS DR7中两个最早的光学-UV潮汐瓦解事件",
         "team": "",
-        "tldr": "利用PCA增强的Transformer光谱分类器在SDSS DR7中发现2个新TDE，其中1个为迄今最早的光学-UV TDE，展示机器学习在档案巡天中挖掘稀有事件的潜力。",
+        "tldr": "开发PCA-Transformer光谱分类器并在SDSS DR7中发现两个新TDE，其中一个是已知最早的光学-UV TDE。",
         "review": "",
-        "highlight": "首次实现基于单次光谱的机器学习TDE识别，无需光变信息；从广泛使用的SDSS DR7中挖掘出两个隐藏TDE，将已知最早光学-UV TDE时间推前至2002年。",
+        "highlight": "利用机器学习从广泛使用的SDSS DR7光谱库中成功挖掘出两个被忽视的早期TDE，特别是SDSS J124225.39+642919.0发生于2002年之前，刷新了光学-UV TDE的最早记录，展示了深度学习挖掘存档数据的强大能力。",
         "relation": "",
         "authors_en": "Ranfang Zheng (University of Science and Technology of China), Zheyu Lin (Université Paris Cité, CNRS), Xu Kong (University of Science and Technology of China) et al.",
-        "corresponding_en": "",
-        "context_outlook": "过去光学/UV TDE主要通过光变巡天（如 [[van Velzen+ 2011]]）发现，随后 ZTF 等时域巡天确定了光谱分类经验标准（[[van Velzen+ 2021a]]; [[Hammerstein+ 2023]]）。本工作受此启发，将作者此前成功的光度 Transformer 分类器（[[Zheng+ 2026]]）拓展至光谱，首次从单次光谱中高效识别 TDE。该 PCA–Transformer 方法挖掘出两个隐藏事件，证明档案光谱巡天中仍有大量早期 TDE 待发现。随着 DESI 等海量光谱巡天推进，此方法可望系统发现数百个新事件，推进 TDE 统计研究和环境关联探索。",
+        "corresponding_en": "Xu Kong",
+        "context_outlook": "早期光学-UV TDE的发现依赖于GALEX和SDSS的专项搜寻 [[Gezari+ 2006]] [[van Velzen+ 2011]]，ZTF等时域巡天将TDE发现率提升至每年数十例并建立了光谱分类标准 [[van Velzen+ 2021a]]。本研究在先前Transformer光变分类器 [[Zheng+ 2026]] 基础上，引入PCA-Transformer架构与MgFormer [[Wen+ 2024]]，首次在SDSS DR7光谱库中高效搜寻TDE，成功发现两个距今近二十年或十多年的新TDE。未来该方法将拓展至DESI等更大规模光谱巡天 [[DESI Collaboration+ 2025]]，结合丰富的时域数据有望实现TDE的统计完备样本，提升对早期宇宙TDE的探测能力。",
         "citations": [
           {
+            "label": "Gezari+ 2006",
+            "authors": "Gezari",
+            "year": "2006",
+            "title": "Ultraviolet Detection of the Tidal Disruption of a Star by a Supermassive Black Hole",
+            "ref": "Gezari, S., Martin, D. C., Milliard, B., et al. 2006, Ultraviolet Detection of the Tidal Disruption of a Star by a Supermassive Black Hole, ApJ, 653, L25, doi: 10.1086/509918",
+            "arxiv": "astro-ph/0612069",
+            "doi": "10.1086/509918",
+            "bibcode": "2006ApJ...653L..25G",
+            "url": "https://arxiv.org/abs/astro-ph/0612069",
+            "source": "ads",
+            "verified": true
+          },
+          {
             "label": "van Velzen+ 2011",
+            "authors": "van Velzen",
+            "year": "2011",
+            "title": "Optical Discovery of Probable Stellar Tidal Disruption Flares",
+            "ref": "van Velzen, S., Farrar, G. R., Gezari, S., et al. 2011, Optical Discovery of Probable Stellar Tidal Disruption Flares, ApJ, 741, 73, doi: 10.1088/0004-637X/741/2/73",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1088/0004-637x/741/2/73",
+            "bibcode": "",
+            "url": "https://doi.org/10.1088/0004-637x/741/2/73",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "van Velzen+ 2021a",
+            "authors": "van Velzen",
+            "year": "2021",
+            "title": "Seventeen Tidal Disruption Events from the First Half of ZTF Survey Observations: Entering a New Era of Population Studies",
+            "ref": "van Velzen, S., Gezari, S., Hammerstein, E., et al. 2021a, Seventeen Tidal Disruption Events from the First Half of ZTF Survey Observations: Entering a New Era of Population Studies, ApJ, 908, 4, doi: 10.3847/1538-4357/abc258",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Hammerstein+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/abc258",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/abc258",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Zheng+ 2026",
+            "authors": "Zheng",
+            "year": "2026",
+            "title": "TTC: Transformer-based TDE Classifier for the Wide Field Survey Telescope (WFST)",
+            "ref": "Zheng, R., Lin, Z., Kong, X., et al. 2026, TTC: Transformer-based TDE Classifier for the Wide Field Survey Telescope (WFST), ApJ, 999, 181, doi: 10.3847/1538-4357/ae3153",
+            "arxiv": "2512.24782",
+            "doi": "10.3847/1538-4357/ae3153",
+            "bibcode": "2026ApJ...999..181Z",
+            "url": "https://arxiv.org/abs/2512.24782",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Wen+ 2024",
+            "authors": "Wen",
+            "year": "2024",
+            "title": "Mgformer: Multi-group transformer for multivariate time series classification",
+            "ref": "Wen, J., Zhang, N., Lu, X., Hu, Z., & Huang, H. 2024, Mgformer: Multi-group transformer for multivariate time series classification, Engineering Applications of Artificial Intelligence, 133, 108633, doi: https://doi.org/10.1016/j.engappai.2024.108633",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1016/j.engappai.2024.108633",
+            "bibcode": "",
+            "url": "https://doi.org/10.1016/j.engappai.2024.108633",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "DESI Collaboration+ 2025",
+            "authors": "DESI Collaboration",
+            "year": "2025",
+            "title": "Data Release 1 of the Dark Energy Spectroscopic Instrument",
+            "ref": "DESI Collaboration, Abdul-Karim, M., Adame, A. G., et al. 2025, Data Release 1 of the Dark Energy Spectroscopic Instrument, https://arxiv.org/abs/2503.14745",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -3183,35 +3389,145 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11545",
-        "title_zh": "AT2019ijn：快上升、慢衰减的蓝色光学暂现源及其极亮射电辐射",
+        "title_zh": "AT2019ijn：快速上升、缓慢衰减且具有极亮射电辐射的蓝色光学暂现源",
         "team": "",
-        "tldr": "发现一个介于 LFBOT 和 TDE 之间的快升慢衰光学暂现源，其射电辐射极亮且延迟峰值，可能源自中等质量黑洞的离轴喷流，揭示了射电巡天在寻找此类事件中的独特价值。",
+        "tldr": "发现一例兼具LFBOT快上升和TDE慢衰减特征的光学暂现源，射电辐射极端明亮且延迟641天达峰，倾向由中等质量黑洞潮汐瓦解驱动的离轴喷流。",
         "review": "",
-        "highlight": "1) 光学光变快速上升（~5天）却缓慢衰减（>月），不同于典型 LFBOTs；2) 射电辐射峰值延迟至 641 天，光度比已知射电 LFBOTs/超新星亮两个量级以上，与喷流 TDEs 相当；3) 可用离轴相对论喷流（视角~39°）解释，暗示一类新的相对论性光学暂现源。",
+        "highlight": "光学演化打破常规LFBOT分类，射电延迟峰远超已知事件且光度高两个量级，首次揭示离轴相对论喷流在类似暂现源中的存在证据。",
         "relation": "",
-        "authors_en": "H. Ding (Anhui Normal University), X. Shu (Anhui Normal University), L. Sun (Anhui Normal University) et al.",
+        "authors_en": "H. Ding (Department of Physics, Anhui Normal University), X. Shu (Department of Physics, Anhui Normal University), L. Sun (Department of Physics, Anhui Normal University) et al.",
         "corresponding_en": "",
-        "context_outlook": "快速演化蓝色暂现源（FBOTs）自 [[Drout+ 2014]] 首次定义以来，其高光度亚类（LFBOTs）的起源一直存在争议。AT2019ijn 的光学光变兼具快速上升和缓慢衰减特征，填补了 LFBOTs 与 TDEs 之间的空白，与近期发现的过渡型暂现源 [[Somalwar+ 2025]] 遥相呼应。尤其引人注目的是，其射电辐射异常明亮且峰值延迟，亮度远超已知射电 LFBOTs [[Yao+ 2022]]，但与喷流 TDEs（如 [[Hammerstein+ 2026]] 模型化的 AT2022cmc）相当，强烈支持其源自中等质量黑洞的离轴喷流。未来，随着 VLASS 等新一代射电巡天的持续监测，有望发现更多此类光学隐秘而射电明亮的离轴事件，为研究中等质量黑洞爆发、喷流物理及多信使关联提供宝贵样本。",
+        "context_outlook": "AT2019ijn的快速光学上升与蓝色特征类似LFBOTs，但其缓慢衰减更接近TDEs（[[Yao+ 2023]]）。射电亮度和延迟峰与离轴喷流TDEs（如[[Andreoni+ 2022]]、[[Cendes+ 2021]]）一致，表明需要偏离视线方向的相对论喷流。过去对LFBOTs的动力来源多考虑磁星或恒星级黑洞（[[Margutti+ 2019]]、[[Coppejans+ 2020]]），但极高的射电能量更支持中等质量黑洞潮汐瓦解（IMBH TDE）情景（[[Perley+ 2019]]、[[Zhang+ 2022]]）。近期发现的偏核TDEs为IMBH喷流提供了新线索（[[Lin+ 2018]]、[[Zhang+ 2025]]、[[Shu+ 2025]]）。未来光学与射电协同巡天有望揭示这类新型相对论暂现源的统计性质，并限制喷流产生的物理条件。",
         "citations": [
           {
-            "label": "Drout+ 2014",
-            "arxiv": "",
-            "doi": ""
+            "label": "Yao+ 2023",
+            "authors": "Yao",
+            "year": "2023",
+            "title": "Tidal Disruption Event Demographics with the Zwicky Transient Facility: Volumetric Rates, Luminosity Function, and Implications for the Local Black Hole Mass Function",
+            "ref": "Y. Yao, V. Ravi, S. Gezari, S. van Velzen, W. Lu, S. Schulze, J. J. Somalwar, S. R. Kulkarni, E. Hammerstein, M. Nicholl, M. J. Graham, D. A. Perley, S. B. Cenko, R. Stein, A. Ricarte, U. Chadayammuri, E. Quataert, E. C. Bellm, J. S. Bloom, R. Dekany, A. J. Drake, S. L. Groom, A. A. Mahabal, T. A. Prince, R. Riddle, B. Rusholme, Y. Sharma, J. Sollerman, and L. Yan (2023) Tidal Disruption Event Demographics with the Zwicky Transient Facility: Volumetric Rates, Luminosity Function, and Implications for the Local Black Hole Mass Function. \\apj 955 (1), pp. L6. External Links: Document, 2303.06523",
+            "arxiv": "2303.06523",
+            "doi": "10.3847/2041-8213/acf216",
+            "bibcode": "2023ApJ...955L...6Y",
+            "url": "https://arxiv.org/abs/2303.06523",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Somalwar+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Cendes+ 2021",
+            "authors": "Cendes",
+            "year": "2021",
+            "title": "Radio Monitoring of the Tidal Disruption Event Swift J164449.3+573451. IV. Continued Fading and Non-relativistic Expansion",
+            "ref": "Y. Cendes, T. Eftekhari, E. Berger, and E. Polisensky (2021) Radio Monitoring of the Tidal Disruption Event Swift J164449.3+573451. IV. Continued Fading and Non-relativistic Expansion. \\apj 908 (2), pp. 125. External Links: Document, 2011.00074",
+            "arxiv": "2011.00074",
+            "doi": "10.3847/1538-4357/abd323",
+            "bibcode": "2021ApJ...908..125C",
+            "url": "https://arxiv.org/abs/2011.00074",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Yao+ 2022",
-            "arxiv": "",
-            "doi": ""
+            "label": "Andreoni+ 2022",
+            "authors": "Andreoni",
+            "year": "2022",
+            "title": "A very luminous jet from the disruption of a star by a massive black hole",
+            "ref": "I. Andreoni, M. W. Coughlin, D. A. Perley, Y. Yao, W. Lu, S. B. Cenko, H. Kumar, S. Anand, A. Y. Q. Ho, M. M. Kasliwal, A. de Ugarte Postigo, A. Sagués-Carracedo, S. Schulze, D. A. Kann, S. R. Kulkarni, J. Sollerman, N. Tanvir, A. Rest, L. Izzo, J. J. Somalwar, D. L. Kaplan, T. Ahumada, G. C. Anupama, K. Auchettl, S. Barway, E. C. Bellm, V. Bhalerao, J. S. Bloom, M. Bremer, M. Bulla, E. Burns, S. Campana, P. Chandra, P. Charalampopoulos, J. Cooke, V. D’Elia, K. K. Das, D. Dobie, J. F. Agüí Fernández, J. Freeburn, C. Fremling, S. Gezari, S. Goode, M. J. Graham, E. Hammerstein, V. R. Karambelkar, C. D. Kilpatrick, E. C. Kool, M. Krips, R. R. Laher, G. Leloudas, A. Levan, M. J. Lundquist, A. A. Mahabal, M. S. Medford, M. C. Miller, A. Möller, K. P. Mooley, A. J. Nayana, G. Nir, P. T. H. Pang, E. Paraskeva, R. A. Perley, G. Petitpas, M. Pursiainen, V. Ravi, R. Ridden-Harper, R. Riddle, M. Rigault, A. C. Rodriguez, B. Rusholme, Y. Sharma, I. A. Smith, R. D. Stein, C. Thöne, A. Tohuvavohu, F. Valdes, J. van Roestel, S. D. Vergani, Q. Wang, and J. Zhang (2022) A very luminous jet from the disruption of a star by a massive black hole. Nature 612 (7940), pp. 430–434. External Links: Document, 2211.16530",
+            "arxiv": "2211.16530",
+            "doi": "10.1038/s41586-022-05465-8",
+            "bibcode": "2022Natur.612..430A",
+            "url": "https://arxiv.org/abs/2211.16530",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Hammerstein+ 2026",
+            "label": "Margutti+ 2019",
+            "authors": "Margutti",
+            "year": "2019",
+            "title": "An Embedded X-Ray Source Shines through the Aspherical AT 2018cow: Revealing the Inner Workings of the Most Luminous Fast-evolving Optical Transients",
+            "ref": "R. Margutti, B. D. Metzger, R. Chornock, I. Vurm, N. Roth, B. W. Grefenstette, V. Savchenko, R. Cartier, J. F. Steiner, G. Terreran, B. Margalit, G. Migliori, D. Milisavljevic, K. D. Alexander, M. Bietenholz, P. K. Blanchard, E. Bozzo, D. Brethauer, I. V. Chilingarian, D. L. Coppejans, L. Ducci, C. Ferrigno, W. Fong, D. Götz, C. Guidorzi, A. Hajela, K. Hurley, E. Kuulkers, P. Laurent, S. Mereghetti, M. Nicholl, D. Patnaude, P. Ubertini, J. Banovetz, N. Bartel, E. Berger, E. R. Coughlin, T. Eftekhari, D. D. Frederiks, A. V. Kozlova, T. Laskar, D. S. Svinkin, M. R. Drout, A. MacFadyen, and K. Paterson (2019) An Embedded X-Ray Source Shines through the Aspherical AT 2018cow: Revealing the Inner Workings of the Most Luminous Fast-evolving Optical Transients. \\apj 872 (1), pp. 18. External Links: Document, 1810.10720",
+            "arxiv": "1810.10720",
+            "doi": "10.3847/1538-4357/aafa01",
+            "bibcode": "2019ApJ...872...18M",
+            "url": "https://arxiv.org/abs/1810.10720",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Coppejans+ 2020",
+            "authors": "Coppejans",
+            "year": "2020",
+            "title": "A Mildly Relativistic Outflow from the Energetic, Fast-rising Blue Optical Transient CSS161010 in a Dwarf Galaxy",
+            "ref": "D. L. Coppejans, R. Margutti, G. Terreran, A. J. Nayana, E. R. Coughlin, T. Laskar, K. D. Alexander, M. Bietenholz, D. Caprioli, P. Chandra, M. R. Drout, D. Frederiks, C. Frohmaier, K. H. Hurley, C. S. Kochanek, M. MacLeod, A. Meisner, P. E. Nugent, A. Ridnaia, D. J. Sand, D. Svinkin, C. Ward, S. Yang, A. Baldeschi, I. V. Chilingarian, Y. Dong, C. Esquivia, W. Fong, C. Guidorzi, P. Lundqvist, D. Milisavljevic, K. Paterson, D. E. Reichart, B. Shappee, M. C. Stroh, S. Valenti, B. A. Zauderer, and B. Zhang (2020) A Mildly Relativistic Outflow from the Energetic, Fast-rising Blue Optical Transient CSS161010 in a Dwarf Galaxy. \\apj 895 (1), pp. L23. External Links: Document, 2003.10503",
+            "arxiv": "2003.10503",
+            "doi": "10.3847/2041-8213/ab8cc7",
+            "bibcode": "2020ApJ...895L..23C",
+            "url": "https://arxiv.org/abs/2003.10503",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Perley+ 2019",
+            "authors": "Perley",
+            "year": "2019",
+            "title": "The fast, luminous ultraviolet transient AT2018cow: extreme supernova, or disruption of a star by an intermediate-mass black hole?",
+            "ref": "D. A. Perley, P. A. Mazzali, L. Yan, S. B. Cenko, S. Gezari, K. Taggart, N. Blagorodnova, C. Fremling, B. Mockler, A. Singh, N. Tominaga, M. Tanaka, A. M. Watson, T. Ahumada, G. C. Anupama, C. Ashall, R. L. Becerra, D. Bersier, V. Bhalerao, J. S. Bloom, N. R. Butler, C. Copperwheat, M. W. Coughlin, K. De, A. J. Drake, D. A. Duev, S. Frederick, J. J. González, A. Goobar, M. Heida, A. Y. Q. Ho, J. Horst, T. Hung, R. Itoh, J. E. Jencson, M. M. Kasliwal, N. Kawai, T. Khanam, S. R. Kulkarni, B. Kumar, H. Kumar, A. S. Kutyrev, W. H. Lee, K. Maeda, A. Mahabal, K. L. Murata, J. D. Neill, C. Ngeow, B. Penprase, E. Pian, R. Quimby, E. Ramirez-Ruiz, M. G. Richer, C. G. Román-Zúñiga, D. K. Sahu, S. Srivastav, Q. Socia, J. Sollerman, Y. Tachibana, F. Taddia, S. Tinyanont, E. Troja, C. Ward, J. Wee, and P. Yu (2019) The fast, luminous ultraviolet transient AT2018cow: extreme supernova, or disruption of a star by an intermediate-mass black hole?. \\mnras 484 (1), pp. 1031–1049. External Links: Document, 1808.00969",
+            "arxiv": "1808.00969",
+            "doi": "10.1093/mnras/sty3420",
+            "bibcode": "2019MNRAS.484.1031P",
+            "url": "https://arxiv.org/abs/1808.00969",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zhang+ 2022",
+            "authors": "Zhang",
+            "year": "2022",
+            "title": "A Possible 250 s X-Ray Quasi-periodicity in the Fast Blue Optical Transient AT2018cow",
+            "ref": "W. Zhang, X. Shu, J. Chen, L. Sun, R. Shen, L. Tao, C. Chen, N. Jiang, L. Dou, Y. Qin, X. Zhang, L. Zhang, J. Qu, and T. Wang (2022) A Possible 250 s X-Ray Quasi-periodicity in the Fast Blue Optical Transient AT2018cow. Research in Astronomy and Astrophysics 22 (12), pp. 125016. External Links: Document, 2210.04190",
+            "arxiv": "2210.04190",
+            "doi": "10.1088/1674-4527/ac9c4b",
+            "bibcode": "2022RAA....22l5016Z",
+            "url": "https://arxiv.org/abs/2210.04190",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Lin+ 2018",
+            "authors": "Lin",
+            "year": "2018",
+            "title": "A luminous X-ray outburst from an intermediate-mass black hole in an off-centre star cluster",
+            "ref": "D. Lin, J. Strader, E. R. Carrasco, D. Page, A. J. Romanowsky, J. Homan, J. A. Irwin, R. A. Remillard, O. Godet, N. A. Webb, H. Baumgardt, R. Wijnands, D. Barret, P. Duc, J. P. Brodie, and S. D. J. Gwyn (2018) A luminous X-ray outburst from an intermediate-mass black hole in an off-centre star cluster. Nature Astronomy 2, pp. 656–661. External Links: Document, 1806.05692",
+            "arxiv": "1806.05692",
+            "doi": "10.1038/s41550-018-0493-1",
+            "bibcode": "2018NatAs...2..656L",
+            "url": "https://arxiv.org/abs/1806.05692",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zhang+ 2025",
+            "authors": "Zhang",
+            "year": "2025",
+            "title": "An 85-s X-ray quasi-periodicity after a stellar tidal disruption by a candidate intermediate-mass black hole",
+            "ref": "W. Zhang, X. Shu, L. Sun, R. Shen, L. Dou, N. Jiang, and T. Wang (2025) An 85-s X-ray quasi-periodicity after a stellar tidal disruption by a candidate intermediate-mass black hole. Nature Astronomy 9, pp. 702–709. External Links: Document, 2503.01156",
+            "arxiv": "2503.01156",
+            "doi": "10.1038/s41550-025-02502-0",
+            "bibcode": "2025NatAs...9..702Z",
+            "url": "https://arxiv.org/abs/2503.01156",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Shu+ 2025",
+            "authors": "Shu",
+            "year": "2025",
+            "title": "EP241021a: A Months-duration X-Ray Transient with Luminous Optical and Radio Emission",
+            "ref": "X. Shu, L. Yang, H. Yang, F. Xu, J. Chen, R. A. J. Eyles-Ferris, L. Dai, Y. Yu, R. Shen, L. Sun, H. Ding, W. Zheng, N. Jiang, W. Li, N. Sun, D. Xu, Z. Zhang, C. Jin, A. Rau, T. Wang, X. Wu, W. Yuan, B. Zhang, K. Nandra, A. V. Filippenko, F. Poidevin, R. Soria, A. Kumar, D. S. Aguado, F. An, T. An, J. An, M. Andrews, R. Anutarawiramkul, P. Baldini, T. G. Brink, P. Butpan, Z. Cai, A. J. Castro-Tirado, H. Cheng, W. Cui, J. Farah, S. Fu, J. P. U. Fynbo, X. Gao, D. Han, X. Han, D. A. Howell, J. Hu, S. Jiang, B. Kumar, ... (2025) EP241021a: A Months-duration X-Ray Transient with Luminous Optical and Radio Emission. \\apj 990 (1), pp. L29. External Links: Document, 2505.07665",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/2041-8213/adf4cd",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/2041-8213/adf4cd",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -3303,30 +3619,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11546",
-        "title_zh": "部分遮蔽极端变脸活动星系核爆发六年后射电与X射线再增亮观测",
+        "title_zh": "部分遮蔽的极端变脸活动星系核在爆发六年后射电和X射线流量再增亮",
         "team": "",
-        "tldr": "报告SDSS J1548+2208在爆发六年后射电和X射线再次增亮，支持其为极端变脸AGN，而非常规TDE。",
+        "tldr": "对SDSS J1548+2208的多波段长期监测，发现爆发六年后射电和X射线再增亮，证认为极端变脸AGN而非TDE，其射电谱双峰可用外流与云团作用解释。",
         "review": "",
-        "highlight": "发现爆发后约六年射电再增亮及可能的X射线新耀发；MIR颜色缓慢变蓝可与TDE快速变红区分，为鉴别两类事件提供新探针。",
+        "highlight": "首次在变脸AGN中观测到爆发后约六年的射电和X射线流量显著再增亮；射电谱呈罕见的双峰结构，为外流冲击环核致密云提供了观测证据。",
         "relation": "",
-        "authors_en": "T. Zhou (Anhui Normal University), X. Shu (Anhui Normal University), L. Yang (Anhui Normal University), et al.",
+        "authors_en": "T. Zhou (Department of Physics, Anhui Normal University, Wuhu, Anhui 241002, China), X. Shu (Department of Physics, Anhui Normal University, Wuhu, Anhui 241002, China; Center for Astrophysics and Astronomical Technology, Anhui Normal University, Wuhu, Anhui 241002, China), L. Yang (Department of Physics, Anhui Normal University, Wuhu, Anhui 241002, China) et al.",
         "corresponding_en": "",
-        "context_outlook": "SDSS J1548+2208最初由[[Jiang+ 2021]]通过MIR巡天发现为遮蔽核暂现源，[[Somalwar+ 2022]]进行早期多波段分析，认为可能是TDE或AGN极端耀发。本文基于~2500天监测发现MIR颜色缓慢变蓝，与典型TDE快速变红不符([[Yao+ 2025]])，更支持极端变脸AGN解释，且爆发后六年射电再增亮及复杂谱形暗示外流与不均匀环境相互作用。未来长期多波段监测有望揭示此类源环境调控机制，并为区分TDE与CLAGN提供新判据。",
+        "context_outlook": "SDSS J1548+2208最初由 [[Jiang+ 2021]] 在中红外核暂现源巡天中发现，并被 [[Somalwar+ 2022]] 作为射电暂现源报道，但其本质（TDE或极端AGN耀发）未定。本文通过长期多波段监测，利用 [[Yao+ 2025]] 的中红外颜色变化率方法以及极长的X射线上升时标（与 [[Guolo+ 2024]] 的TDE样本不符）排除了TDE，确认为部分遮蔽的极端变脸AGN。射电谱双峰和晚时再增亮可用外流冲击环核致密云团解释，类似 [[Mou and Shu 2025]] 和 [[Zhuang+ 2025]] 的数值模拟预测，表明射电外流可在变脸AGN中产生。未来亚秒差距尺度上的尘埃和气体分布成像有望揭示驱动变脸现象的环境因素。",
         "citations": [
           {
             "label": "Jiang+ 2021",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Jiang",
+            "year": "2021",
+            "title": "Mid-infrared Outbursts in Nearby Galaxies (MIRONG). I. Sample Selection and Characterization",
+            "ref": "N. Jiang, T. Wang, L. Dou, X. Shu, X. Hu, H. Liu, Y. Wang, L. Yan, Z. Sheng, C. Yang, L. Sun, and H. Zhou (2021) Mid-infrared Outbursts in Nearby Galaxies (MIRONG). I. Sample Selection and Characterization. ApJS 252 (2), pp. 32. Document, 2012.06806.",
+            "arxiv": "2012.06806",
+            "doi": "10.3847/1538-4365/abd1dc",
+            "bibcode": "2021ApJS..252...32J",
+            "url": "https://arxiv.org/abs/2012.06806",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Somalwar+ 2022",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Somalwar",
+            "year": "2022",
+            "title": "The Nascent Milliquasar VT J154843.06+220812.6: Tidal Disruption Event or Extreme Accretion State Change?",
+            "ref": "J. J. Somalwar, V. Ravi, D. Dong, M. Graham, G. Hallinan, C. Law, W. Lu, and S. T. Myers (2022) The Nascent Milliquasar VT J154843.06+220812.6: Tidal Disruption Event or Extreme Accretion State Change? ApJ 929 (2), pp. 184. Document, 2108.12431.",
+            "arxiv": "2108.12431",
+            "doi": "10.3847/1538-4357/ac5e29",
+            "bibcode": "2022ApJ...929..184S",
+            "url": "https://arxiv.org/abs/2108.12431",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Yao+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Yao",
+            "year": "2025",
+            "title": "Distinguishing Tidal Disruption Events and Changing-look Active Galactic Nuclei via Variation in Mid-infrared Color",
+            "ref": "Y. Yao, J. Ye, L. Sun, N. Jiang, M. Masterson, and X. Shu (2025) Distinguishing Tidal Disruption Events and Changing-look Active Galactic Nuclei via Variation in Mid-infrared Color. ApJS 281 (1), pp. 7. Document, 2503.10053.",
+            "arxiv": "2503.10053",
+            "doi": "10.3847/1538-4365/ae047a",
+            "bibcode": "2025ApJS..281....7Y",
+            "url": "https://arxiv.org/abs/2503.10053",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Guolo+ 2024",
+            "authors": "Guolo",
+            "year": "2024",
+            "title": "A Systematic Analysis of the X-Ray Emission in Optically Selected Tidal Disruption Events: Observational Evidence for the Unification of the Optically and X-Ray-selected Populations",
+            "ref": "M. Guolo, S. Gezari, Y. Yao, S. van Velzen, E. Hammerstein, S. B. Cenko, and Y. M. Tokayer (2024) A Systematic Analysis of the X-Ray Emission in Optically Selected Tidal Disruption Events: Observational Evidence for the Unification of the Optically and X-Ray-selected Populations. ApJ 966 (2), pp. 160. Document, 2308.13019.",
+            "arxiv": "2308.13019",
+            "doi": "10.3847/1538-4357/ad2f9f",
+            "bibcode": "2024ApJ...966..160G",
+            "url": "https://arxiv.org/abs/2308.13019",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mou and Shu 2025",
+            "authors": "Mou",
+            "year": "2025",
+            "title": "Numerical Studies on the Radio Afterglows in TDE: Bow Shock",
+            "ref": "G. Mou and X. Shu (2025) Numerical Studies on the Radio Afterglows in TDE: Bow Shock. arXiv e-prints, pp. arXiv:2510.25033. Document, 2510.25033.",
+            "arxiv": "2510.25033",
+            "doi": "10.48550/arXiv.2510.25033",
+            "bibcode": "2025arXiv251025033M",
+            "url": "https://arxiv.org/abs/2510.25033",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zhuang+ 2025",
+            "authors": "Zhuang",
+            "year": "2025",
+            "title": "Interaction of an Outflow with Surrounding Gaseous Clouds as the Origin of Late-time Radio Flares in Tidal Disruption Events",
+            "ref": "J. Zhuang, R. Shen, G. Mou, and W. Lu (2025) Interaction of an Outflow with Surrounding Gaseous Clouds as the Origin of Late-time Radio Flares in Tidal Disruption Events. ApJ 979 (2), pp. 109. Document, 2406.08012.",
+            "arxiv": "2406.08012",
+            "doi": "10.3847/1538-4357/ad9b98",
+            "bibcode": "2025ApJ...979..109Z",
+            "url": "https://arxiv.org/abs/2406.08012",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -3381,30 +3760,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.11447",
-        "title_zh": "SOLAR-C/EUVST 短波相机对耀斑前活动区等离子体流与结构的观测",
+        "title_zh": "SOLAR-C/EUVST短波相机看到的耀斑前和活动区等离子体流动与结构",
         "team": "",
-        "tldr": "通过正向模拟对比 SOLAR-C/EUVST 与 Hinode/EIS 的诊断性能，证明 EUVST 可分辨单个磁通管和速度梯度，为耀斑触发与日冕加热的精细观测奠定基础",
+        "tldr": "本文通过前向建模模拟SOLAR-C/EUVST短波相机对三维MHD耀斑前活动区的观测，并与Hinode/EIS对比，展示其可分辨更细腻的等离子体流和结构，为理解耀斑触发提供新能力。",
         "review": "",
-        "highlight": "下一代极紫外光谱仪 SOLAR-C/EUVST 将首次以约 0.4 角秒分辨率覆盖 0.02–15 MK 等离子体；本研究基于三维 MHD 模拟，定量揭示其流场与结构分辨力较 Hinode/EIS 的显著提升，是任务科学产出的重要预评估。",
+        "highlight": "下一代极紫外光谱仪EUVST具备0.4角秒空间分辨率、0.02–15 MK温度覆盖和0.5秒极短曝光，首次揭示可分辨300公里尺度速度梯度和多束流管，有望直接观测耀斑触发过程的等离子体特征。",
         "relation": "",
-        "authors_en": "James McKevitt (University College London, Mullard Space Science Laboratory), Sarah Matthews (University College London, Mullard Space Science Laboratory), David H. Brooks (Computational Physics, Inc.) et al.",
+        "authors_en": "J. McKevitt (University College London, Mullard Space Science Laboratory, UK; University of Vienna, Institute of Astrophysics, Austria), S. Matthews (University College London, Mullard Space Science Laboratory, UK), D. H. Brooks (Computational Physics, Inc., USA) et al.",
         "corresponding_en": "James McKevitt",
-        "context_outlook": "以往 Hinode/EIS 受限于空间分辨率，难以分辨耀斑前活动区的精细速度梯度与磁通管结构 [[Kosugi+ 2007]]；Hi-C 等火箭成像仪虽达亚角秒分辨，但时长有限 [[Kobayashi+ 2014]]。本研究利用 Cheung 等的三维 MHD 耀斑前活动区模拟 [[Cheung+ 2018]]，首次对 SOLAR-C/EUVST 短波相机进行系统性正向模拟，证实其可分辨独立磁通管及相邻上升/下降流，多普勒速度精度优于 1 km/s。该预研方法将推动任务预规划，未来结合全波段和时序模拟，有望直接捕捉与耀斑触发相关的低层重联出流并区分加热模型中的束流数目，开启仪器-理论联合设计的新阶段。",
+        "context_outlook": "既往研究利用Hinode/EIS等已发现耀斑前存在非热致宽和上流等前兆信号[[Harra 2023; Imada+ 2014]]，但因空间分辨率不足难以直接解析触发过程。[[Cheung+ 2018]]三维MHD模拟提供了包含耀斑触发前复杂磁拓扑的活动区模型。本研究通过前向建模展示EUVST可清晰分辨模拟中约300公里分离的上喷和下喷流，并捕捉到与耀斑触发相关的低空重联特征，为直接观测磁重联驱动的耀班触发了可能。未来联合MUSE等高时间分辨率成像仪，EUVST有望系统追踪太阳大气从能量积累到爆发的全链条，推动日冕加热和耀斑物理的突破。",
         "citations": [
           {
-            "label": "Kosugi+ 2007",
+            "label": "Harra 2023",
+            "authors": "Harra",
+            "year": "2023",
+            "title": "Coronal spectroscopy: Probing sources of slow solar wind in active regions, and the early phases of solar flares",
+            "ref": "L. K. Harra (2023) Coronal spectroscopy: Probing sources of slow solar wind in active regions, and the early phases of solar flares. Advances in Space Research 71 (4), pp. 1893–1899. External Links: ISSN 02731177, Link, Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1016/j.asr.2022.05.061",
+            "bibcode": "2023AdSpR..71.1893H",
+            "url": "https://doi.org/10.1016/j.asr.2022.05.061",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Kobayashi+ 2014",
-            "arxiv": "",
-            "doi": ""
+            "label": "Imada+ 2014",
+            "authors": "Imada",
+            "year": "2014",
+            "title": "Coronal behavior before the large flare onset",
+            "ref": "S. Imada, Y. Bamba, and K. Kusano (2014) Coronal behavior before the large flare onset. Publications of the Astronomical Society of Japan 66 (SP1), pp. S17. External Links: ISSN 2053-051X, 0004-6264, Link, Document",
+            "arxiv": "1408.2585",
+            "doi": "10.1093/pasj/psu092",
+            "bibcode": "2014PASJ...66S..17I",
+            "url": "https://arxiv.org/abs/1408.2585",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Cheung+ 2018",
+            "authors": "Cheung",
+            "year": "2018",
+            "title": "A comprehensive three-dimensional radiative magnetohydrodynamic simulation of a solar flare",
+            "ref": "M. C. M. Cheung, M. Rempel, G. Chintzoglou, F. Chen, P. Testa, J. Martínez-Sykora, A. Sainz Dalda, M. L. DeRosa, A. Malanushenko, V. Hansteen, B. De Pontieu, M. Carlsson, B. Gudiksen, and S. W. McIntosh (2018) A comprehensive three-dimensional radiative magnetohydrodynamic simulation of a solar flare. Nature Astronomy 3 (2), pp. 160–166. External Links: ISSN 2397-3366, Link, Document",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1038/s41550-018-0629-3",
+            "bibcode": "",
+            "url": "https://doi.org/10.1038/s41550-018-0629-3",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -4436,45 +4839,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10977",
-        "title_zh": "太阳耀斑中共轭硬 X 射线足点不对称性的成因",
+        "title_zh": "太阳耀斑共轭硬X射线足点不对称的原因",
         "team": "",
-        "tldr": "统计研究发现硬 X 射线足点不对称性与光球垂直电流不对称性强正相关，挑战磁镜解释，揭示电流相关过程的重要性。",
+        "tldr": "通过统计67个双带耀斑的103个HXR爆发，发现足点不对称与无符号光球垂直电流强烈正相关，而非传统磁镜效应。",
         "review": "",
-        "highlight": "基于 103 个耀斑时段的大样本统计，首次揭示无符号光球垂直电流（PVEC）的不对称性与 HXR 足点不对称性强烈相关，且磁场不对称性关系与磁镜效应预测相反，将电流驱动过程推向前台。",
+        "highlight": "首次系统揭示无符号PVEC不对称与HXR足点不对称的强正相关；发现磁场不对称与HXR不对称正相关，挑战磁镜效应主流解释。",
         "relation": "",
-        "authors_en": "M. Mirkamalov (CAS Key Lab of Geospace Environment, USTC / Samarkand State University), R. Liu (USTC), R. Luo (USTC) et al.",
+        "authors_en": "M. Mirkamalov (CAS Key Lab. of Geospace Environment, USTC; Samarkand State Univ.), R. Liu (CAS Key Lab. of Geospace Environment, USTC), R. Luo (CAS Key Lab. of Geospace Environment, USTC) et al.",
         "corresponding_en": "Rui Liu",
-        "context_outlook": "耀斑硬 X 射线足点的不对称性自 [[Sakao 1994]] 起备受关注，传统磁镜效应可解释部分 S 型事件，但 [[Goff+ 2004]] 与 [[Yang+ 2012]] 发现的 N 型事件暗示需考虑不对称注入与等离子体密度等因素（[[Daou and Alexander 2016]]）。[[Haerendel 2017]] 提出垂直电流作用，但统计研究（[[Zimovets+ 2020]]）未获确证。本文通过系统分析，首次揭示无符号 PVEC 不对称与 HXR 不对称的强正相关，且磁场不对称趋势与磁镜预言相反，将电流相关物理过程（重联感应电场、电流驱动微湍流）确立为关键调制机制。未来，结合三维磁重联模拟与高能粒子动力学，并利用 Solar Orbiter 等新一代观测，可望深入探明非热电子加速与沉降的微观物理图像。",
+        "context_outlook": "既往研究多将HXR足点不对称归因于磁镜效应（[[Sakao 1994]]），但大量N型事件表明需考虑其他机制（[[Goff+ 2004]]）。[[Haerendel 2017]]提出与强电流相关的场向电位降可能贡献于电子加速，但早期统计未发现HXR强度与垂直电流的显著关联（[[Zimovets+ 2020]]）。本文用大样本系统检验证实，无符号PVEC不对称与HXR不对称呈强正相关，提示重联相关的电流系统主导了非热电子的空间分配。未来结合更高时空分辨率观测与三维磁重联模拟，有望清晰揭示电流层如何调制电子束注入足点的物理细节。",
         "citations": [
           {
             "label": "Sakao 1994",
+            "authors": "Sakao",
+            "year": "1994",
+            "title": "Characteristics of solar flare hard X-ray sources as revealed with the Hard X-ray Telescope aboard the Yohkoh satellite",
+            "ref": "T. Sakao (1994) Characteristics of solar flare hard X-ray sources as revealed with the Hard X-ray Telescope aboard the Yohkoh satellite. Ph.D. Thesis, University of Tokyo, Japan.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
             "label": "Goff+ 2004",
+            "authors": "Goff",
+            "year": "2004",
+            "title": "Relating magnetic field strengths to hard X-ray emission in solar flares",
+            "ref": "C. P. Goff, S. A. Matthews, L. van Driel-Gesztelyi, and L. K. Harra (2004) Relating magnetic field strengths to hard X-ray emission in solar flares. A&A 423, pp. 363–372. External Links: Document Cited by: §I, §I, §III.2, §III.2, §IV.1.",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Yang+ 2012",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Daou and Alexander 2016",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.1051/0004-6361:20040392",
+            "bibcode": "2004A&A...423..363G",
+            "url": "https://doi.org/10.1051/0004-6361:20040392",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Haerendel 2017",
+            "authors": "Haerendel",
+            "year": "2017",
+            "title": "Evidence for Field-parallel Electron Acceleration in Solar Flares",
+            "ref": "G. Haerendel (2017) Evidence for Field-parallel Electron Acceleration in Solar Flares. ApJ 847 (2), pp. 113. External Links: Document Cited by: §I, §I, §III.3, §IV.2.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/aa8995",
+            "bibcode": "2017ApJ...847..113H",
+            "url": "https://doi.org/10.3847/1538-4357/aa8995",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Zimovets+ 2020",
+            "authors": "Zimovets",
+            "year": "2020",
+            "title": "Relationships between Photospheric Vertical Electric Currents and Hard X-Ray Sources in Solar Flares: Statistical Study",
+            "ref": "I. V. Zimovets, I. N. Sharykin, and W. Q. Gan (2020) Relationships between Photospheric Vertical Electric Currents and Hard X-Ray Sources in Solar Flares: Statistical Study. ApJ 891 (2), pp. 138. External Links: Document, 2002.06646 Cited by: §I.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/ab75be",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/ab75be",
+            "source": "crossref",
+            "verified": true
           }
         ]
       }
@@ -4509,30 +4934,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10980",
-        "title_zh": "有利于X级耀斑的磁场位形：违反Joy和Hale定律",
+        "title_zh": "有利于X级太阳耀斑的磁场位形：违反Joy定律与Hale定律",
         "team": "",
-        "tldr": "统计39个活动区64个X级耀斑，发现违反Joy或Hale定律的磁倾角异常区产生更多更强耀斑。",
+        "tldr": "基于四象限分类法统计64次X级耀斑，发现全球磁倾角违反Hale/Joy定律的活动区具有更高的耀斑产率和强度，且局部倾角异常同样关键。",
         "review": "",
-        "highlight": "提出磁倾角四象限（绿/黄/红/黑）分类法，统一评估Hale与Joy定律的遵从性；揭示违反Joy定律（黄色象限）耀斑产率与强度显著高于正常区，且局部反极特征同样促进大耀斑。",
+        "highlight": "构建了同时评估Hale和Joy定律遵从性的四象限分类框架，首次系统量化全球与局部磁倾角异常与X级耀斑的关系；发现反Joy活动区耀斑产率比正常区高50%，且X5+耀斑仅出现在异常象限。",
         "relation": "",
-        "authors_en": "S. Liu (State Key Laboratory of Solar Activity and Space Weather, National Astronomical Observatories, Chinese Academy of Sciences), J. T. Su (State Key Laboratory of Solar Activity and Space Weather, National Astronomical Observatories, Chinese Academy of Sciences; School of Astronomy and Space Sciences, University of Chinese Academy of Sciences), M. Zhang (State Key Laboratory of Solar Activity and Space Weather, National Astronomical Observatories, Chinese Academy of Sciences; School of Astronomy and Space Sciences, University of Chinese Academy of Sciences) et al.",
+        "authors_en": "S. Liu (National Astronomical Observatories, Chinese Academy of Sciences), J.T. Su (National Astronomical Observatories, Chinese Academy of Sciences; University of Chinese Academy of Sciences), M. Zhang (National Astronomical Observatories, Chinese Academy of Sciences; University of Chinese Academy of Sciences) et al.",
         "corresponding_en": "",
-        "context_outlook": "既往研究已指出反Hale/Joy活动区具有更高耀斑发生率 [[Tian+ 2002]]、[[Toriumi+ 2017]]，但很少将磁倾角异常作为独立象限系统诊断。本研究构建的四象限框架解耦了全球与局部倾角效应，发现Joy定律违反者贡献了最多X级耀斑，且正常活动区内的局部反极亦是强耀斑诱因。该框架可集成到空间天气耀斑预警模型中；未来结合磁浮现模拟 [[Toriumi+ 2014]] 与电流螺度分析，有望追溯异常倾角的起源与爆发触发过程。",
+        "context_outlook": "长期以来，天文学家已发现违反Hale和Joy定律的活动区（如 [[Tian+ 2002]]、[[Tian+ 2005]]）更易产生耀斑，统计研究（[[Chintzoglou+ 2015]]；[[Toriumi+ 2017]]；[[Zhou+ 2019]]）进一步表明异常倾角与高耀斑产率相关，但大多未将磁倾角异常作为独立因子加以量化。本文提出四象限分类法，将活动区磁倾角状态统一划分为正常（绿色）、反Joy（黄色）、反Hale（红色）和反Hale-Joy（黑色），系统评估了39个活动区64次X级耀斑的全球与局部倾角特性，发现反Joy/反Hale区域具有更高的耀斑产率与强度，且局部倾角异常在全局正常区域中也普遍存在。未来，该分类框架可融入耀斑预报模型，并推动进一步揭示局部异常倾角的形成机制及其能量积累过程，同时探讨纯反Hale（红色）区域罕见的物理原因。",
         "citations": [
           {
             "label": "Tian+ 2002",
+            "authors": "Tian",
+            "year": "2002",
+            "title": "The Most Violent Super-Active Regions in the 22nd and 23rd Cycles",
+            "ref": "Tian, L., Liu, Y., & Wang, J. 2002, The Most Violent Super-Active Regions in the 22nd and 23rd Cycles, Sol. Phys., 209, 361, doi: 10.1023/A:1021270202680",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1023/A:1021270202680",
+            "bibcode": "2002SoPh..209..361T",
+            "url": "https://doi.org/10.1023/A:1021270202680",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Tian+ 2005",
+            "authors": "Tian",
+            "year": "2005",
+            "title": "Magnetic Twist and Writhe of δ Active Regions",
+            "ref": "Tian, L., Alexander, D., Liu, Y., & Yang, J. 2005, Magnetic Twist and Writhe of δ Active Regions, Sol. Phys., 229, 63, doi: 10.1007/s11207-005-3524-x",
+            "arxiv": "",
+            "doi": "10.1007/s11207-005-3524-x",
+            "bibcode": "2005SoPh..229...63T",
+            "url": "https://doi.org/10.1007/s11207-005-3524-x",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Chintzoglou+ 2015",
+            "authors": "Chintzoglou",
+            "year": "2015",
+            "title": "Formation of Magnetic Flux Ropes during a Confined Flaring Well before the Onset of a Pair of Major Coronal Mass Ejections",
+            "ref": "Chintzoglou, G., Patsourakos, S., & Vourlidas, A. 2015, Formation of Magnetic Flux Ropes during a Confined Flaring Well before the Onset of a Pair of Major Coronal Mass Ejections, ApJ, 809, 34, doi: 10.1088/0004-637X/809/1/34",
+            "arxiv": "1507.01165",
+            "doi": "10.1088/0004-637X/809/1/34",
+            "bibcode": "2015ApJ...809...34C",
+            "url": "https://arxiv.org/abs/1507.01165",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Toriumi+ 2017",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Toriumi",
+            "year": "2017",
+            "title": "Magnetic Properties of Solar Active Regions That Govern Large Solar Flares and Eruptions",
+            "ref": "Toriumi, S., Schrijver, C. J., Harra, L. K., Hudson, H., & Nagashima, K. 2017, Magnetic Properties of Solar Active Regions That Govern Large Solar Flares and Eruptions, ApJ, 834, 56, doi: 10.3847/1538-4357/834/1/56",
+            "arxiv": "1611.05047",
+            "doi": "10.3847/1538-4357/834/1/56",
+            "bibcode": "2017ApJ...834...56T",
+            "url": "https://arxiv.org/abs/1611.05047",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Toriumi+ 2014",
+            "label": "Zhou+ 2019",
+            "authors": "Zhou",
+            "year": "2019",
+            "title": "Multiple Magnetic Reconnections Driven by a Large-scale Magnetic Flux Rope",
+            "ref": "Zhou, G. P., Tan, C. M., Su, Y. N., et al. 2019, Multiple Magnetic Reconnections Driven by a Large-scale Magnetic Flux Rope, ApJ, 873, 23, doi: 10.3847/1538-4357/ab01cf",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4357/ab01cf",
+            "bibcode": "2019ApJ...873...23Z",
+            "url": "https://doi.org/10.3847/1538-4357/ab01cf",
+            "source": "ads",
+            "verified": true
           }
         ]
       }

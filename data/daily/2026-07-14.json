@@ -306,16 +306,56 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13268",
-        "title_zh": "神经加速的手征平均场模型贝叶斯校准：核饱和与真空性质",
+        "title_zh": "手征平均场模型对核饱和与真空性质的神经网络加速贝叶斯校准",
         "team": "",
-        "tldr": "利用神经网络代理模型加速贝叶斯推断，系统校准手征平均场模型的参数，使其与核饱和性质和真空实验数据一致。",
+        "tldr": "利用神经网络加速贝叶斯推断，探索手征平均场（CMF）模型参数空间，发现核物质约束主要作用于参数组合而非单个耦合，并揭示了可行中子星物态方程的多样性。",
         "review": "",
-        "highlight": "首次在完整四次矢量自相互作用基础上，结合神经网络加速与模块化贝叶斯框架（MUSES+bilby+PyTorch）进行校准，揭示参数空间的高度简并性，指出仅凭核饱和数据不足以唯一确定致密物质状态方程。",
+        "highlight": "首次在完整 SU(3) 手征框架下进行贝叶斯校准，并引入广义四阶矢量自相互作用；利用神经网络模拟器实现百万级参数集的快速评估，系统揭示了参数空间中广泛但高度简并的可行区域，为未来结合天体物理多信使观测提供了新方向。",
         "relation": "",
-        "authors_en": "I. Legred (University of Illinois at Urbana-Champaign), M. Reinke Pelicer (University of Illinois at Urbana-Champaign), V. Dexheimer (Kent State University) et al.",
-        "corresponding_en": "Isaac Legred",
-        "context_outlook": "手征平均场模型因内禀的 QCD 味对称性，在连接核实验与中子星物理方面具有独特优势，但其高维、强关联的参数空间长期难以系统探索。本研究通过构建神经网络代理模型，将单次物态方程计算加速至可微分形式，使百万级似然评估成为可能，并首次在广义四次矢量自相互作用基础上完成贝叶斯校准；结果显式地展现了参数间的强简并，表明大量不同的参数组合均可满足当前核饱和约束。未来，该方法可自然拓展至有限温度、非平衡输运及夸克–强子相变的研究，并与 NICER、LIGO/Virgo 等多信使天体物理观测深度融合，以打破参数简并、提升致密物质状态方程的确定性。",
-        "citations": []
+        "authors_en": "Isaac Legred (Illinois Center for Advanced Studies of the Universe, Department of Physics, University of Illinois at Urbana-Champaign), Mateus Reinke Pelicer (Illinois Center for Advanced Studies of the Universe, Department of Physics, University of Illinois at Urbana-Champaign), Veronica Dexheimer (Center for Nuclear Research, Department of Physics, Kent State University) et al.",
+        "corresponding_en": "",
+        "context_outlook": "手征平均场模型先前多在简化核子扇区或选择性相互作用下进行校准（[[Dexheimer+ 2015]]、[[Dexheimer+ 2019]]、[[Malik+ 2024]]）。本研究首次在完整 SU(3) 味结构与扩展的四阶矢量自相互作用基底上，利用神经网络加速贝叶斯推断探索参数空间，表明核物质性质主要约束耦合组合而非单个参数，导致饱和相容模型在中子星性质上呈现巨大差异。未来纳入更丰富的核物质约束、中子物质计算、重离子碰撞数据及多信使天体物理观测，可打破当前参数简并，推动对致密物质本质的统一理解。",
+        "citations": [
+          {
+            "label": "Dexheimer+ 2015",
+            "authors": "Dexheimer",
+            "year": "2015",
+            "title": "Reconciling Nuclear and Astrophysical Constraints",
+            "ref": "V. Dexheimer, R. Negreiros, and S. Schramm (2015) Reconciling Nuclear and Astrophysical Constraints. Phys. Rev. C 92 (1), pp. 012801.",
+            "arxiv": "1503.07785",
+            "doi": "10.1103/PhysRevC.92.012801",
+            "bibcode": "2015PhRvC..92a2801D",
+            "url": "https://arxiv.org/abs/1503.07785",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Dexheimer+ 2019",
+            "authors": "Dexheimer",
+            "year": "2019",
+            "title": "What do we learn about vector interactions from GW170817?",
+            "ref": "V. Dexheimer, R. de Oliveira Gomes, S. Schramm, and H. Pais (2019) What do we learn about vector interactions from GW170817? J. Phys. G 46 (3), pp. 034002.",
+            "arxiv": "1810.06109",
+            "doi": "10.1088/1361-6471/ab01f0",
+            "bibcode": "2019JPhG...46c4002D",
+            "url": "https://arxiv.org/abs/1810.06109",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Malik+ 2024",
+            "authors": "Malik",
+            "year": "2024",
+            "title": "Astrophysics and nuclear physics informed interactions in dense matter: Inclusion of PSR J0437-4715",
+            "ref": "T. Malik, V. Dexheimer, and C. Providência (2024) Astrophysics and nuclear physics informed interactions in dense matter: Inclusion of PSR J0437-4715. Phys. Rev. D 110 (4), pp. 043042.",
+            "arxiv": "2404.07936",
+            "doi": "10.1103/PhysRevD.110.043042",
+            "bibcode": "2024PhRvD.110d3042M",
+            "url": "https://arxiv.org/abs/2404.07936",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       }
     },
     {
@@ -395,25 +435,67 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13242",
-        "title_zh": "GRB 211211A 瞬时辐射的时间分辨轻子模型",
+        "title_zh": "GRB 211211A暂现辐射的时变轻子辐射建模",
         "team": "",
-        "tldr": "用数值 SED 模型对 GRB 211211A 的时间分辨瞬时辐射进行轻子拟合，揭示快冷却到慢冷却的演化，并预测 TeV 信号可被 CTAO 探测。",
+        "tldr": "通过时变轻子辐射模型拟合GRB 211211A的瞬时光谱，揭示辐射区具有极高多普勒因子，暗示喷流内存在相对论性等离子体团运动。",
         "review": "",
-        "highlight": "首次结合完整轻子辐射转移与贝叶斯推断，同步重塑宽波段能谱，并发现极高多普勒因子（~1000–2500），暗示发射区相对喷流等离子体存在相对论运动。",
+        "highlight": "首次以数值模型系统拟合该暴的时间分辨光谱，揭示从快冷却到慢冷却的演化，并指出要解释极端多普勒需求需引入喷流内相对论运动，为磁重联模型提供支持。",
         "relation": "",
-        "authors_en": "Maria Petropoulou (Dept. of Physics, National and Kapodistrian University of Athens), Maria Gkoni, Konstantinos Xyloportas et al.",
+        "authors_en": "M. Petropoulou (Department of Physics, National and Kapodistrian University of Athens), M. Gkoni (Department of Physics, National and Kapodistrian University of Athens), K. Xyloportas (Department of Physics, National and Kapodistrian University of Athens) et al.",
         "corresponding_en": "Maria Petropoulou",
-        "context_outlook": "此前 [[Gompertz+ 2023]] 曾用双平滑拐折幂律谱拟合本暴时间分辨谱，推断出快冷却至慢冷却的过渡；[[Veres+ 2023]] 等则详细分析了其光变特性与多波段对应体，确认致密星合并起源。本文在此基础上引入包含同步辐射、逆康普顿散射与光子对的完整轻子辐射框架，通过 MCMC 获得物理参数的时间演化，并预测同步自康普顿 TeV 辐射可被 CTAO 探测。该工作为今后利用 Fermi 与 CTAO 的联动观测，揭示喷流耗散区的相对论粒子加速与辐射机制提供了新范式。",
+        "context_outlook": "该工作基于 [[Gompertz+ 2023]] 对GRB 211211A的细致时间分辨光谱分析，通过数值谱模型限制辐射区物理参数，揭示了从快冷却到慢冷却的演化。所得极端 Doppler 因子与 [[Rastinejad+ 2022]] 的余辉喷流洛伦兹因子不匹配，促使作者考虑发射区在喷流内相对论运动的图像，类似于 [[Petropoulou+ 2016]] 提出的框架，并自然关联于磁重联驱动的等离子体团（[[Sironi+ 2016]]）。未来结合PIC模拟的粒子分布并针对单脉冲进行时变拟合，有望进一步辨析耗散机制。",
         "citations": [
           {
             "label": "Gompertz+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Gompertz",
+            "year": "2023",
+            "title": "",
+            "ref": "Gompertz et al. (2023)\nGompertz, B. P., Ravasio, M. E., Nicholl, M., et al. 2023, Nature Astronomy, 7, 67",
+            "arxiv": "2205.05008",
+            "doi": "10.1038/s41550-022-01819-4",
+            "bibcode": "2023NatAs...7...67G",
+            "url": "https://arxiv.org/abs/2205.05008",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Veres+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "label": "Rastinejad+ 2022",
+            "authors": "Rastinejad",
+            "year": "2022",
+            "title": "",
+            "ref": "Rastinejad et al. (2022)\nRastinejad, J. C., Gompertz, B. P., Levan, A. J., et al. 2022, Nature, 612, 223",
+            "arxiv": "2204.10864",
+            "doi": "10.1038/s41586-022-05390-w",
+            "bibcode": "2022Natur.612..223R",
+            "url": "https://arxiv.org/abs/2204.10864",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Petropoulou+ 2016",
+            "authors": "Petropoulou",
+            "year": "2016",
+            "title": "",
+            "ref": "Petropoulou et al. (2016)\nPetropoulou, M., Giannios, D., & Sironi, L. 2016, MNRAS, 462, 3325",
+            "arxiv": "1606.07447",
+            "doi": "10.1093/mnras/stw1832",
+            "bibcode": "2016MNRAS.462.3325P",
+            "url": "https://arxiv.org/abs/1606.07447",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sironi+ 2016",
+            "authors": "Sironi",
+            "year": "2016",
+            "title": "",
+            "ref": "Sironi et al. (2016)\nSironi, L., Giannios, D., & Petropoulou, M. 2016, MNRAS, 462, 48",
+            "arxiv": "1605.02071",
+            "doi": "10.1093/mnras/stw1620",
+            "bibcode": "2016MNRAS.462...48S",
+            "url": "https://arxiv.org/abs/1605.02071",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -447,40 +529,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13168",
-        "title_zh": "非平稳噪声建模：在引力波天文学中的应用",
+        "title_zh": "非稳态噪声建模及其在引力波天文学中的应用",
         "team": "",
-        "tldr": "提出一个基于动态功率谱 S(f,t) 的通用框架，通过 Gram 因子模型构造正定协方差矩阵，用于建模引力波数据中的非平稳噪声。",
+        "tldr": "提出基于动态功率谱 Gram 因子的正定非稳态噪声协方差模型，给出傅里叶域与小波域闭式表达，并应用于引力波窗函数及调制噪声分析。",
         "review": "",
-        "highlight": "通过 s(f,t)^2 的正定构造，将传统平稳功率谱自然推广到时变情形，给出了傅里叶域和小波域协方差矩阵的 Gramian 显式表达，方法可解释性强、计算高效，适用于窗函数调制等多种非平稳效应。",
+        "highlight": "以 Gram 因子分解 S(f,t)=s²(f,t) 确保动态谱正定性，避免传统 Wigner-Ville 谱负值问题；闭式给出傅里叶与小波噪声协方差矩阵，提供高效似然计算与噪声模拟方案，并揭示对角近似的显著缺陷。",
         "relation": "",
-        "authors_en": "Neil J. Cornish (eXtreme Gravity Institute, Department of Physics, Montana State University, Bozeman, Montana 59717, USA)",
+        "authors_en": "Neil J. Cornish (eXtreme Gravity Institute, Department of Physics, Montana State University)",
         "corresponding_en": "",
-        "context_outlook": "引力波数据分析依赖噪声模型以定义似然函数[[Finn 1992]]，然而实际噪声常表现出非平稳性[[Abbott et al. 2020]]。过往研究多侧重于消除仪器瞬态[[Cornish and Littenberg 2015]]或讨论非平稳对信号搜索的影响[[Zackay et al. 2019]]，缺乏系统性的时变噪声模型。本文提出动态功率谱 S(f,t) 的 Gram 因子框架，正定且易于实现，在傅里叶域和小波域均为 Gramian 矩阵，可统一处理窗函数、空间探测器调制等非平稳问题。该方法为未来从真实数据估计动态谱[[Ghosh and Cornish 2026]]奠定了理论基础，有望显著改善天体物理源参数估计的精度。",
+        "context_outlook": "传统 Wigner-Ville 谱（[[Martin+ 1985]]）虽能表征非稳态噪声，但其双线性构造会产生干扰项甚至负值；后续平滑改进（[[Lu+ 2009]]；[[Dechant+ 2015]]）仍未根本解决正定性问题。本文从动态功率谱 S(f,t) 的 Gram 因子分解出发，构造了天然半正定的噪声协方差矩阵，并给出了傅里叶域与小波域的显式闭形解，清晰揭示了窗函数（[[Talbot+ 2021]]）与空间探测器调制（[[Digman+ 2022]]）导致的非平稳特征及其对信噪比的显著影响。基于该框架，[[Ghosh+ 2026]] 将发展从真实数据估计动态谱的方法，并系统评估非稳态噪声对致密双星并合等长时间引力波信号参数估计的影响，有望成为下一代探测器数据处理的标准组件。",
         "citations": [
           {
-            "label": "Finn 1992",
+            "label": "Martin+ 1985",
+            "authors": "Martin",
+            "year": "1985",
+            "title": "",
+            "ref": "W. Martin and P. Flandrin, IEEE Transactions on Acoustics, Speech, and Signal Processing 33, 1461 (1985).",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1071/PH850929",
+            "bibcode": "1985AuJPh..38..929M",
+            "url": "https://doi.org/10.1071/PH850929",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Abbott et al. 2020",
-            "arxiv": "",
-            "doi": ""
+            "label": "Lu+ 2009",
+            "authors": "Lu",
+            "year": "2009",
+            "title": "The wiener-khinchin theorem for non-wide sense stationary random processes",
+            "ref": "W. Lu and N. Vaswani, The wiener-khinchin theorem for non-wide sense stationary random processes (2009), eprint 0904.0602, URL https://arxiv.org/abs/0904.0602.",
+            "arxiv": "0904.0602",
+            "doi": "10.48550/arXiv.0904.0602",
+            "bibcode": "2009arXiv0904.0602L",
+            "url": "https://arxiv.org/abs/0904.0602",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Cornish and Littenberg 2015",
-            "arxiv": "",
-            "doi": ""
+            "label": "Dechant+ 2015",
+            "authors": "Dechant",
+            "year": "2015",
+            "title": "",
+            "ref": "A. Dechant and E. Lutz, Physical Review Letters 115 (2015), ISSN 1079-7114, URL http://dx.doi.org/10.1103/PhysRevLett.115.080603.",
+            "arxiv": "1408.4617",
+            "doi": "10.1103/PhysRevLett.114.183602",
+            "bibcode": "2015PhRvL.114r3602D",
+            "url": "https://arxiv.org/abs/1408.4617",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Zackay et al. 2019",
+            "label": "Talbot+ 2021",
+            "authors": "Talbot",
+            "year": "2021",
+            "title": "",
+            "ref": "C. Talbot, E. Thrane, S. Biscoveanu, and R. Smith, Phys. Rev. Res. 3, 043049 (2021), eprint 2106.13785.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1103/physrevresearch.3.043049",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevresearch.3.043049",
+            "source": "crossref",
+            "verified": true
           },
           {
-            "label": "Ghosh and Cornish 2026",
+            "label": "Digman+ 2022",
+            "authors": "Digman",
+            "year": "2022",
+            "title": "",
+            "ref": "M. C. Digman and N. J. Cornish, Astrophys. J. 940, 10 (2022), eprint 2206.14813.",
+            "arxiv": "2206.14813",
+            "doi": "10.3847/1538-4357/ac9139",
+            "bibcode": "2022ApJ...940...10D",
+            "url": "https://arxiv.org/abs/2206.14813",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Ghosh+ 2026",
+            "authors": "Ghosh",
+            "year": "2026",
+            "title": "",
+            "ref": "S. Ghosh and N. J. Cornish, In Preparation (2026).",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           }
         ]
       }
@@ -596,16 +731,56 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13275",
-        "title_zh": "双黑洞遗迹铃宕信号的精密测量",
+        "title_zh": "双黑洞并合遗迹的精密 ringdown 测量",
         "team": "",
-        "tldr": "利用相干波暴（cWB）重构信号降噪并优化铃宕窗口选择，对GWTC-3事件进行铃宕分析，得到与广义相对论一致的精确频率与阻尼时间约束。",
+        "tldr": "本文提出基于 cWB 去噪重建和累积能量窗口的精密 ringdown 分析方法，对 GWTC-3 的 16 个双黑洞事件进行测量，得到与广义相对论一致的约束。",
         "review": "",
-        "highlight": "提出基于cWB的波形重构去噪方法和基于累积能量的客观窗口选择，使铃宕分析更接近并合时刻，显著提高了测量精度，为检验广义相对论提供了新手段。",
+        "highlight": "利用 cWB 重建信号实现去噪，并基于累积能量定义 ringdown 起始窗口，使分析可始于并合后约 3.5 t_Mf，有效抑制非高斯噪声，相比传统方法大幅提升了 QNM 频率和阻尼时间的测量精度。",
         "relation": "",
-        "authors_en": "A. Kumar (University of Florida), P. Dutta Roy (University of Florida), M. J. Szczepańczyk (University of Warsaw) et al.",
+        "authors_en": "Achal Kumar (Physics Department, University of Florida), Poulami Dutta Roy (Physics Department, University of Florida), Marek J. Szczepańczyk (Faculty of Physics, University of Warsaw) et al.",
         "corresponding_en": "",
-        "context_outlook": "铃宕信号是检验强场引力的重要窗口，但传统分析常因噪声干扰和较晚的分析窗口导致精度受限。本研究采用相干波暴（cWB）算法进行信号重构，不仅实现了去噪，还通过定义累积能量函数来客观确定铃宕起始时刻，将分析窗口推进至更接近并合阶段，从而大幅提高了频率和阻尼时间的测量精度。该方法在GWTC-3多个双黑洞事件上验证了与广义相对论的一致性。未来，随着探测灵敏度的提升和更多高阶模的探测，基于去噪重构的精密铃宕分析有望实现真正的黑洞光谱学，对引力理论进行更严格的检验。",
-        "citations": []
+        "context_outlook": "已有的双黑洞并合 ringdown 分析通常依赖于 IMR 波形模型或在信号峰值后较晚时刻（8–10 t_Mf）截取数据，导致测量精度受模型不确定性和低信噪比的影响 [[Carullo+ 2019], [Abbott+ 2025]]。本文提出了一种利用 cWB 重建信号并结合基于累积能量的 ringdown 窗口选取的方法，显著降低了探测器噪声干扰并允许从并合后约 3.5 t_Mf 开始分析，从而获得更紧的 QNM 参数约束。对 GWTC-3 的 16 个事件分析结果与 GR 一致，联合约束优于 GWTC-4 的相应检验 [[Abac+ 2026]]。随着探测器网络灵敏度提升和事件积累，该方法为黑洞光谱学和强引力场处的广义相对论精密检验提供了有力工具。",
+        "citations": [
+          {
+            "label": "Carullo+ 2019",
+            "authors": "Carullo",
+            "year": "2019",
+            "title": "Observational Black Hole Spectroscopy: A time-domain multimode analysis of GW150914",
+            "ref": "G. Carullo, W. Del Pozzo, and J. Veitch (2019) Observational Black Hole Spectroscopy: A time-domain multimode analysis of GW150914. Phys. Rev. D 99 (12), pp. 123029. Note: [Erratum: Phys.Rev.D 100, 089903 (2019)] External Links: 1902.07527, Document.",
+            "arxiv": "1902.07527",
+            "doi": "10.1103/PhysRevD.99.123029",
+            "bibcode": "2019PhRvD..99l3029C",
+            "url": "https://arxiv.org/abs/1902.07527",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abbott+ 2025",
+            "authors": "Abbott",
+            "year": "2025",
+            "title": "Tests of General Relativity with GWTC-3",
+            "ref": "R. Abbott et al. (2025) Tests of General Relativity with GWTC-3. Phys. Rev. D 112 (8), pp. 084080. External Links: 2112.06861, Document.",
+            "arxiv": "2112.06861",
+            "doi": "10.1103/PhysRevD.112.084080",
+            "bibcode": "2025PhRvD.112h4080A",
+            "url": "https://arxiv.org/abs/2112.06861",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abac+ 2026",
+            "authors": "Abac",
+            "year": "2026",
+            "title": "GWTC-4.0: Tests of General Relativity. III. Tests of the Remnants",
+            "ref": "A. G. Abac et al. (2026-03) GWTC-4.0: Tests of General Relativity. III. Tests of the Remnants. External Links: 2603.19021.",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          }
+        ]
       }
     },
     {
@@ -683,25 +858,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13148",
-        "title_zh": "CHIME/FRB第二星表FRB的半监督形态分类",
+        "title_zh": "基于第二期CHIME/FRB星表的快速射电暴半监督形态分类",
         "team": "",
-        "tldr": "利用卷积自编码器对CHIME/FRB第二星表FRB进行无监督形态分类并联合训练重复性分类器，恢复已知形态且发现新亚类。",
+        "tldr": "利用卷积自编码器对CHIME/FRB二期数据进行无监督聚类，发现宽带散射/非散射两类新子群，并给出重复暴预测，表明形态重叠显著。",
         "review": "",
-        "highlight": "1) 无监督CAE直接从瀑布图学习，无需人工视觉标签；2) 联合训练重复性分类器，模拟训练下对真实重复暴正确率达86%；3) 识别出低散射与高散射两组新的短时宽带暴，并独立重现下降漂移结构；4) 证实重复暴与单次暴在形态上存在显著重叠。",
+        "highlight": "1）完全数据驱动的无监督分类，不需人工标记，更具可重复性；2）新识别出散射特性迥异的两个宽带暴子类，提示传播环境的影响；3）证实重复暴与一次性暴形态重叠，挑战了仅凭形态判定重复性的做法。",
         "relation": "",
-        "authors_en": "B. L. Fan (Dunlap Institute for Astronomy and Astrophysics, University of Toronto), R. Hložek (Dunlap Institute for Astronomy and Astrophysics, University of Toronto), A. Herrera Martin (Department of Statistical Sciences, University of Toronto)",
+        "authors_en": "Bo Lin Fan (Dunlap Institute for Astronomy and Astrophysics, University of Toronto; David A. Dunlap Department for Astronomy and Astrophysics, University of Toronto), Renée Hložek (Dunlap Institute for Astronomy and Astrophysics, University of Toronto; David A. Dunlap Department for Astronomy and Astrophysics, University of Toronto), Antonio Herrera Martin (Department of Statistical Sciences, University of Toronto; David A. Dunlap Department for Astronomy and Astrophysics, University of Toronto)",
         "corresponding_en": "",
-        "context_outlook": "近年来，利用大样本对FRB形态-重复性关联的研究逐渐增多：如[[Sun+ 2026a]]通过UMAP降维聚类发现重复暴多呈窄带特征，[[Kumar+ 2025]]使用视觉定义类别进行监督分类。然而这些方法或受限于拟合参数假设，或依赖人工标注一致性。本文通过半监督卷积自编码器直接从瀑布图数据学习低维表示，以完全无监督方式分离出三个异常形态类，并独立重现了此前视觉定义的向下漂移结构，同时将短时宽带暴进一步区分为低散射与高散射亚类；附加的重复性分类分支在模拟数据上达86%准确率。该数据驱动框架为处理更大巡天样本（如后续CHIME/FRB星表）提供了可扩展方案，未来若与偏振、宿主星系等多维信息融合，有望推动FRB从形态分类迈向物理起源的破解。",
+        "context_outlook": "尽管已有研究利用视觉分类或拟合参数（如 fitburst）对快速射电暴进行形态分类，并将其与重复性关联（[[Pleunis+ 2021]]），但随着 CHIME/FRB 第二次数据释放（[[Chime/FRB Collaboration+ 2026]]），样本量剧增使得形态重叠更加明显。本文采用卷积自编码器进行无监督聚类，直接从瀑布图提取特征，不仅独立恢复了此前人工定义的线性负漂移重复暴类别（[[Faber+ 2024]]），还首次在数据驱动下分离出散射与非散射两类宽带短时标暴，暗示它们可能经历不同的传播环境。该工作证实了重复暴与一次性暴在形态空间存在连续过渡，因此无法仅凭形态唯一确定重复性。未来若结合 CHIME/FRB 基带数据（[[Sand+ 2025]]）突破毫秒级时间分辨、并校正侧瓣效应，有望区分仪器效应与内禀窄带辐射，并检验 [[Metzger+ 2022]] 提出的激波-密度屏统一模型。",
         "citations": [
           {
-            "label": "Sun+ 2026a",
-            "arxiv": "",
-            "doi": ""
+            "label": "Pleunis+ 2021",
+            "authors": "Pleunis",
+            "year": "2021",
+            "title": "Fast Radio Burst Morphology in the First CHIME/FRB Catalog",
+            "ref": "Z. Pleunis, D. C. Good, V. M. Kaspi, R. Mckinven, S. M. Ransom, P. Scholz, K. Bandura, M. Bhardwaj, P. J. Boyle, C. Brar, T. Cassanelli, P. Chawla, F. (Adam) Dong, E. Fonseca, B. M. Gaensler, A. Josephy, J. F. Kaczmarek, C. Leung, H. Lin, K. W. Masui, J. Mena-Parra, D. Michilli, C. Ng, C. Patel, M. Rafiei-Ravandi, M. Rahman, P. Sanghavi, K. Shin, K. M. Smith, I. H. Stairs, and S. P. Tendulkar (2021) Fast Radio Burst Morphology in the First CHIME/FRB Catalog. ApJ 923 (1), pp. 1. External Links: Document, 2106.04356.",
+            "arxiv": "2106.04356",
+            "doi": "10.3847/1538-4357/ac33ac",
+            "bibcode": "2021ApJ...923....1P",
+            "url": "https://arxiv.org/abs/2106.04356",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Kumar+ 2025",
+            "label": "Chime/FRB Collaboration+ 2026",
+            "authors": "Chime/FRB Collaboration",
+            "year": "2026",
+            "title": "The Second CHIME/FRB Catalog of Fast Radio Bursts",
+            "ref": "Chime/FRB Collaboration, T. Abbott, B. C. Andersen, S. Andrew, K. Bandura, M. Bhardwaj, Y. Bhusare, C. Brar, T. Cassanelli, S. Chatterjee, J. Cliche, A. M. Cook, A. Curtin, M. Dobbs, F. A. Dong, G. Eadie, T. Eftekhari, E. Fonseca, B. M. Gaensler, D. Good, M. Halpern, J. W. T. Hessels, A. Ibik, N. Jain, R. C. Joseph, Z. Kader, V. M. Kaspi, A. Khan, B. Kharel, A. Kumar, T. L. Landecker, D. Lang, A. E. Lanman, M. L'Argent, M. Lazda, C. Leung, D. Z. Li, C. J. Lintott, R. Main, K. W. Masui, S. Mate, K. McGregor, R. McKinven, J. Mena-Parra, B. W. Meyers, D. Michilli, C. Ng, M. Ng, K. Nimmo, G. Noble, A. Pandhi, S. S. Patil, A. B. Pearlman, U. Pen, Z. Pleunis, J. X. Prochaska, M. Rafiei-Ravandi, S. Ransom, A. Renard, M. W. Sammons, K. R. Sand, P. Scholz, V. Shah, K. Shin, S. R. Siegel, S. Sirota, K. Smith, I. Stairs, D. C. Stenning, S. P. Tendulkar, K. Vanderlinde, M. Walmsley, H. Wang, and D. Wulf (2026) The Second CHIME/FRB Catalog of Fast Radio Bursts. ApJS 283 (1), pp. 34. External Links: Document, 2601.09399.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Faber+ 2024",
+            "authors": "Faber",
+            "year": "2024",
+            "title": "Morphologies of Bright Complex Fast Radio Bursts with CHIME/FRB Voltage Data",
+            "ref": "J. T. Faber, D. Michilli, R. Mckinven, J. Su, A. B. Pearlman, K. Nimmo, R. A. Main, V. Kaspi, M. Bhardwaj, S. Chatterjee, A. P. Curtin, M. Dobbs, G. Eadie, B. M. Gaensler, Z. Kader, C. Leung, K. W. Masui, A. Pandhi, E. Petroff, Z. Pleunis, M. Rafiei-Ravandi, K. R. Sand, P. Scholz, K. Shin, K. Smith, and I. Stairs (2024) Morphologies of Bright Complex Fast Radio Bursts with CHIME/FRB Voltage Data. ApJ 974 (2), pp. 274. External Links: Document, 2312.14133.",
+            "arxiv": "2312.14133",
+            "doi": "10.3847/1538-4357/ad59aa",
+            "bibcode": "2024ApJ...974..274F",
+            "url": "https://arxiv.org/abs/2312.14133",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sand+ 2025",
+            "authors": "Sand",
+            "year": "2025",
+            "title": "Morphology of 137 Fast Radio Bursts Down to Microsecond Timescales from the First CHIME/FRB Baseband Catalog",
+            "ref": "K. R. Sand, A. P. Curtin, D. Michilli, V. M. Kaspi, E. Fonseca, K. Nimmo, Z. Pleunis, K. Shin, M. Bhardwaj, C. Brar, M. Dobbs, G. M. Eadie, B. M. Gaensler, R. C. Joseph, C. Leung, R. Main, K. W. Masui, R. Mckinven, A. Pandhi, A. B. Pearlman, M. Rafiei-Ravandi, M. W. Sammons, K. Smith, and I. H. Stairs (2025) Morphology of 137 Fast Radio Bursts Down to Microsecond Timescales from the First CHIME/FRB Baseband Catalog. ApJ 979 (2), pp. 160. External Links: Document, 2408.13215.",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/ad9b11",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/ad9b11",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Metzger+ 2022",
+            "authors": "Metzger",
+            "year": "2022",
+            "title": "A toy model for the time–frequency structure of fast radio bursts: implications for the chime/frb burst dichotomy",
+            "ref": "B. D. Metzger, N. Sridhar, B. Margalit, P. Beniamini, and L. Sironi (2022) A toy model for the time–frequency structure of fast radio bursts: implications for the chime/frb burst dichotomy. The Astrophysical Journal 925 (2), pp. 135. External Links: ISSN 1538-4357, Link, Document.",
+            "arxiv": "2110.10738",
+            "doi": "10.3847/1538-4357/ac3b4a",
+            "bibcode": "2022ApJ...925..135M",
+            "url": "https://arxiv.org/abs/2110.10738",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -909,35 +1139,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13152",
-        "title_zh": "核星团动力学：恒星碰撞与瓦解双星的影响",
+        "title_zh": "核星团动力学：碰撞与瓦解双星的影响",
         "team": "",
-        "tldr": "结合恒星碰撞与双星瓦解，导出核区密度 n(r)∝r^{-5/4}，并揭示碰撞对 sEMRI 和短周期 TDE 的抑制作用。",
+        "tldr": "研究核星团中恒星碰撞与双星瓦解的动力学效应，推导出由碰撞–注入平衡决定的恒星密度轮廓n∝r^{-5/4}，计算了短周期潮汐瓦解、恒星级极端质量比旋进及碰撞的发生率，并应用于银河系中心。",
         "review": "",
-        "highlight": "首次将双星瓦解作为紧致轨道恒星的主要补充机制，与碰撞耗散达成自洽平衡，解释了银河系中心观测到的恒星分布，并对 QPE 起源提出新约束。",
+        "highlight": "首次系统统一了恒星碰撞耗散与双星（Hills机制）补充的稳态动力学图像，得到n∝r^{-5/4}的密度轮廓；揭示碰撞对sEMRI形成的严峻挑战，并为银河系中心S301的发现和恒星分布提供自洽解释。",
         "relation": "",
-        "authors_en": "Barak Rom (Princeton University), Re’em Sari (The Hebrew University of Jerusalem)",
+        "authors_en": "Barak Rom (Department of Astrophysical Sciences, Princeton University), Re’em Sari (Racah Institute of Physics, The Hebrew University of Jerusalem)",
         "corresponding_en": "",
-        "context_outlook": "核区恒星动力学研究长期基于两体散射预言稳态尖峰（[[Bahcall & Wolf 1976]]）。随着碰撞耗散（[[Balberg & Yassur 2023]]）和引力波发射被纳入，双星瓦解（[[Hills 1988]]）对紧致轨道的补充作用逐渐受到关注。本文在[[Rom & Sari 2025]]的多质量框架基础上，首次统一了碰撞消耗与双星注入过程，推导出碰撞调控的 n(r)∝r^{-5/4} 剖面，揭示了碰撞对极端质量比旋进（sEMRI）和短周期 TDE 的强烈抑制。这一结果为银河系中心恒星分布、QPE 和重复 TDE 等现象提供了自洽的动力学解释，未来 LISA 和时域巡天可检验低 sEMRI 率及碰撞主导区恒星缺失的预言。",
+        "context_outlook": "传统上，核星团中心由两体散射主导，预期形成Bahcall–Wolf尖峰，密度轮廓为 n∝r^{-7/4} 或 n∝r^{-3/2}（[[Bahcall & Wolf 1976]]；[[Bahcall & Wolf 1977]]）。然而，银河系中心观测到的年老恒星分布更平坦（[[Gallego-Cano+ 2018]]；[[Schödel+ 2018]]），暗示存在额外动力学过程。近期研究指出恒星碰撞会抑制恒星级极端质量比旋近（sEMRI）的形成（[[Balberg & Yassur 2023]]），而双星瓦解（Hills机制）可补充紧密束缚轨道上的恒星（[[Ashkenazy & Balberg 2025]]）。本工作系统地纳入碰撞耗散与双星注入的平衡，推导出统一的稳态密度轮廓 n∝r^{-5/4}，并据此给出短周期潮汐瓦解事件（spTDEs）和 sEMRI 的形成率，成功解释了银河系中心恒星分布和 S301 等新发现。未来 Vera Rubin 和 ULTRASAT 等大视场时域巡天将检验这一碰撞调节的核区结构，并进一步约束准周期爆发（QPE）等瞬变现象的起源。",
         "citations": [
           {
             "label": "Bahcall & Wolf 1976",
+            "authors": "Bahcall",
+            "year": "1976",
+            "title": "",
+            "ref": "Bahcall, J. N., & Wolf, R. A. 1976, ApJ, 209, 214, doi:10.1086/154711",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/154711",
+            "bibcode": "1976ApJ...209..214B",
+            "url": "https://doi.org/10.1086/154711",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bahcall & Wolf 1977",
+            "authors": "Bahcall",
+            "year": "1977",
+            "title": "",
+            "ref": "Bahcall, J. N., & Wolf, R. A. 1977, ApJ, 216, 883, doi:10.1086/155534",
+            "arxiv": "",
+            "doi": "10.1086/155534",
+            "bibcode": "1977ApJ...216..883B",
+            "url": "https://doi.org/10.1086/155534",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gallego-Cano+ 2018",
+            "authors": "Gallego-Cano",
+            "year": "2018",
+            "title": "",
+            "ref": "Gallego-Cano, E., Schödel, R., Dong, H., et al. 2018, A&A, 609, A26, doi:10.1051/0004-6361/201730451",
+            "arxiv": "",
+            "doi": "10.1051/0004-6361/201730451",
+            "bibcode": "",
+            "url": "https://doi.org/10.1051/0004-6361/201730451",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Schödel+ 2018",
+            "authors": "Schödel",
+            "year": "2018",
+            "title": "",
+            "ref": "Schödel, R., Gallego-Cano, E., Dong, H., et al. 2018, A&A, 609, A27, doi:10.1051/0004-6361/201730452",
+            "arxiv": "",
+            "doi": "10.1051/0004-6361/201730452",
+            "bibcode": "",
+            "url": "https://doi.org/10.1051/0004-6361/201730452",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Balberg & Yassur 2023",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Balberg",
+            "year": "2023",
+            "title": "",
+            "ref": "Balberg, S., & Yassur, G. 2023, ApJ, 952, 149, doi:10.3847/1538-4357/acdd73",
+            "arxiv": "2305.04997",
+            "doi": "10.3847/1538-4357/acdd73",
+            "bibcode": "2023ApJ...952..149B",
+            "url": "https://arxiv.org/abs/2305.04997",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Hills 1988",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Rom & Sari 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Ashkenazy & Balberg 2025",
+            "authors": "Ashkenazy",
+            "year": "2025",
+            "title": "",
+            "ref": "Ashkenazy, Y., & Balberg, S. 2025, A&A, 695, A98, doi:10.1051/0004-6361/202453249",
+            "arxiv": "2412.07491",
+            "doi": "10.1051/0004-6361/202453249",
+            "bibcode": "2025A&A...695A..98A",
+            "url": "https://arxiv.org/abs/2412.07491",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -976,35 +1264,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13143",
-        "title_zh": "超高能中微子实验的软体积",
+        "title_zh": "超高能中微子实验中的软体积",
         "team": "",
-        "tldr": "开发了基于玻尔兹曼方程的半解析框架，将超高能中微子流强映射到望远镜事件率，并引入“软体积”描述贯穿μ子径迹的有效探测体积，应用于IceCube和KM3NeT数据。",
+        "tldr": "发展半解析框架，将超高能中微子流强映射为缪子径迹事例率，量化“软体积”效应，并应用于 IceCube 和 KM3NeT 数据分析。",
         "review": "",
-        "highlight": "将μ子能量损失的软碰撞展开至二阶，将玻尔兹曼方程化为漂移-扩散方程，获得贯穿事件率的快速解析公式；重新评估KM3NeT超高能事件与IceCube的紧张程度，系统纳入μ子能量损失的理论不确定性。",
+        "highlight": "首次在输运方程中纳入缪子能量损失的二阶扩散项，提供快速且精确的替代全模拟方法；揭示软体积对事例率的增强，重评 KM3NeT 与 IceCube 张力。",
         "relation": "",
-        "authors_en": "Stefano Palmisano (INFN Sezione di Firenze), Diego Redigolo (Galileo Galilei Institute for Theoretical Physics), Michele Tammaro (INFN Sezione di Firenze) et al.",
+        "authors_en": "S. Palmisano (INFN Sezione di Firenze), D. Redigolo (Galileo Galilei Institute for Theoretical Physics, INFN), M. Tammaro (INFN Sezione di Firenze) et al.",
         "corresponding_en": "",
-        "context_outlook": "本研究在前期工作[[Palmisano+ 2025]]的基础上，进一步将半解析玻尔兹曼框架系统化，通过软能量损失展开将输运问题简化为漂移-扩散方程，避免了[[Koehne+ 2013a]]等全蒙卡模拟的繁复，并直接关联微观能量损失过程。利用该框架拟合IceCube贯穿μ子数据，得到扩散流强谱指数与实验吻合，并解释了归一化差异为探测器接受效率因子。针对[[Aiello+ 2025]]报道的KM3NeT超高能径迹事件，我们量化了其与IceCube零观测的紧张程度，确认了[[Palmisano+ 2025]]和[[Li+ 2025]]等所指出的不一致。未来该方案可推广至τ子和级联事件，为精确中微子天文学和新物理搜寻提供第一性原理工具。",
+        "context_outlook": "该工作直接建立在 [[Palmisano+ 2025]] 所提出的输运方程框架之上，将其从纯漂移近似推广至包含能量扩散的二阶展开，从而更精确地处理了缪子的随机能量损失。与传统基于有效面积的解析方法 [[Gaisser+ 2016]] 相比，该框架保留了缪子能量的全微分信息，并允许对输运系数的不确定性进行快速边缘化。通过对 PROPOSAL [[Koehne+ 2013a]] 中完整 QED 截面的蒙特卡罗模拟进行标定，作者得到了漂移和扩散系数的先验分布，并将其传播到流强参数的推断中。展望未来，随着 IceCube、KM3NeT 等实验数据的积累，该半解析映射可直接用于精密中微子天文学，包括对瞬变源、暗物质衰变等非标准能谱的搜索；同时，通过直接测量软体积与探测器体积之比，可为检验缪子传播模型及寻找新物理提供独立探针。",
         "citations": [
           {
             "label": "Palmisano+ 2025",
+            "authors": "Palmisano",
+            "year": "2025",
+            "title": "Exploring ultra-high energy neutrino experiments through the lens of the transport equation",
+            "ref": "S. Palmisano, D. Redigolo, M. Tammaro, and A. Tesi (2025) Exploring ultra-high energy neutrino experiments through the lens of the transport equation. External Links: 2507.10665.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1007/jhep03(2026)223",
+            "bibcode": "",
+            "url": "https://doi.org/10.1007/jhep03(2026)223",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Gaisser+ 2016",
+            "authors": "Gaisser",
+            "year": "2016",
+            "title": "Cosmic Rays and Particle Physics: 2nd Edition",
+            "ref": "T. K. Gaisser, R. Engel, and E. Resconi (2016) Cosmic Rays and Particle Physics: 2nd Edition. Cambridge University Press. External Links: ISBN 978-0-521-01646-9.",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
             "label": "Koehne+ 2013a",
+            "authors": "Koehne",
+            "year": "2013",
+            "title": "PROPOSAL: A tool for propagation of charged leptons",
+            "ref": "J. H. Koehne, K. Frantzen, M. Schmitz, T. Fuchs, W. Rhode, D. Chirkin, and J. Becker Tjus (2013a) PROPOSAL: A tool for propagation of charged leptons. Comput. Phys. Commun. 184, pp. 2070–2090. External Links: Document.",
             "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Aiello+ 2025",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Li+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "doi": "10.1016/j.cpc.2013.04.001",
+            "bibcode": "2013CoPhC.184.2070K",
+            "url": "https://doi.org/10.1016/j.cpc.2013.04.001",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1362,30 +1669,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13130",
-        "title_zh": "来自冷却粒子分布的同步辐射",
+        "title_zh": "冷却粒子分布的同步辐射",
         "team": "",
-        "tldr": "推导了冷却幂律和热电子分布下的同步辐射发射与吸收系数的解析拟合函数，为激波余辉快速建模提供高效工具。",
+        "tldr": "该论文导出了考虑辐射与绝热冷却的同步辐射发射和吸收系数的解析拟合函数，用于高效计算天体物理激波的谱。",
         "review": "",
-        "highlight": "首次为局部冷却电子分布提供了同时涵盖幂律与热成分的解析拟合公式，兼具准确性与计算效率，可直接嵌入全立体余辉模型。",
+        "highlight": "通过精确的解析拟合函数，替代了传统数值积分，首次同时涵盖功率律和热电子分布的全频率冷却行为，可直接应用于全体积激波模型。",
         "relation": "",
-        "authors_en": "Ross Ferguson (University of Minnesota), Ben Margalit (University of Minnesota)",
+        "authors_en": "Ross Ferguson (School of Physics and Astronomy, University of Minnesota, Minneapolis, MN 55455, USA), Ben Margalit (School of Physics and Astronomy, University of Minnesota, Minneapolis, MN 55455, USA)",
         "corresponding_en": "",
-        "context_outlook": "同步辐射激波余辉的传统建模多采用单区近似（如 [[Sari+ 1998]]），但全立体模型能够更自洽地描述流体结构，却因需数值求解局部冷却电子分布（如 [[Granot and Sari 2002]]、[[Ressler and Laskar 2017]]）而计算代价高昂。本文在这一局部框架基础上，首次给出了同时包含绝热与同步辐射冷却的幂律和热电子分布函数的解析表达式，并提供了发射与吸收系数的拟合公式。这些拟合函数可大幅提升全立体模型的计算效率，尤其适用于伽马暴、快蓝光暂现源及喷流潮汐瓦解事件的余辉模拟。未来工作可将其推广至含逆康普顿冷却或复合粒子注入谱等更复杂的场景。",
+        "context_outlook": "在激波加速电子的同步辐射模型中，冷却效应会改变电子能谱和辐射系数。以往研究多采用单区简化模型或局域数值方法（如[[Granot+Sari 2002]]、[[Ressler+Laskar 2017]]）来处理冷却，计算成本较高。本文在局域冷却框架下推导了功率律和热电子分布的发射与吸收系数解析拟合函数，可便捷地嵌入全体积激波模型（如[[Ferguson+Margalit 2026]]），显著提升计算效率。这些拟合函数已成功应用于伽马射线暴余辉建模，未来可进一步扩展至包含逆康普顿散射、非相对论修正及同步自吸收等过程，并用于校准全局单区模型。",
         "citations": [
           {
-            "label": "Sari+ 1998",
-            "arxiv": "",
-            "doi": ""
+            "label": "Granot+Sari 2002",
+            "authors": "Granot",
+            "year": "2002",
+            "title": "The Shape of Spectral Breaks in Gamma-Ray Burst Afterglows",
+            "ref": "J. Granot and R. Sari (2002) The Shape of Spectral Breaks in Gamma-Ray Burst Afterglows. ApJ 568 (2), pp. 820–829.",
+            "arxiv": "astro-ph/0108027",
+            "doi": "10.1086/338966",
+            "bibcode": "2002ApJ...568..820G",
+            "url": "https://arxiv.org/abs/astro-ph/0108027",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Granot and Sari 2002",
-            "arxiv": "",
-            "doi": ""
+            "label": "Ressler+Laskar 2017",
+            "authors": "Ressler",
+            "year": "2017",
+            "title": "Thermal Electrons in Gamma-Ray Burst Afterglows",
+            "ref": "S. M. Ressler and T. Laskar (2017) Thermal Electrons in Gamma-Ray Burst Afterglows. ApJ 845 (2), pp. 150.",
+            "arxiv": "1706.01885",
+            "doi": "10.3847/1538-4357/aa8268",
+            "bibcode": "2017ApJ...845..150R",
+            "url": "https://arxiv.org/abs/1706.01885",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Ressler and Laskar 2017",
-            "arxiv": "",
-            "doi": ""
+            "label": "Ferguson+Margalit 2026",
+            "authors": "Ferguson",
+            "year": "2026",
+            "title": "Numerical Modeling of Relativistic Effects in Synchrotron-emitting Shocks",
+            "ref": "R. Ferguson and B. Margalit (2026) Numerical Modeling of Relativistic Effects in Synchrotron-emitting Shocks. ApJ 1000 (1), pp. 16.",
+            "arxiv": "2509.16313",
+            "doi": "10.3847/1538-4357/ae3a93",
+            "bibcode": "2026ApJ..1000...16F",
+            "url": "https://arxiv.org/abs/2509.16313",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1750,45 +2081,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.13019",
-        "title_zh": "过渡脉冲星的伽马射线模式",
+        "title_zh": "过渡脉冲星中的伽马射线模式",
         "team": "",
-        "tldr": "本文发现 PSR J1023+0038 的伽马射线模式与 X 射线反相关，提示喷流而非脉冲星风主导 GeV 辐射。",
+        "tldr": "首次在过渡毫秒脉冲星PSR J1023+0038中发现伽马射线模式，与X射线模式反相关，支持伽马射线主要来自喷流。",
         "review": "",
-        "highlight": "首次在过渡毫秒脉冲星中发现伽马射线模式，且与 X 射线模式反相关，推翻现有模型预测，为理解低吸积率下的粒子加速与辐射机制提供新线索。",
+        "highlight": "发现tMSP伽马射线模式且与X射线反相关，直接证伪了脉冲星风-盘相互作用的正相关预测，为喷流模型提供了关键支持。",
         "relation": "",
-        "authors_en": "Maksat Satybaldiev (Department of Physics, Norwegian University of Science and Technology, NO-7491 Trondheim, Norway), Manuel Linares (Department of Physics, Norwegian University of Science and Technology, NO-7491 Trondheim, Norway; Departament de Física, EEBE, Universitat Politècnica de Catalunya, Av. Eduard Maristany 16, E-08019 Barcelona, Spain)",
+        "authors_en": "Maksat Satybaldiev (Department of Physics, Norwegian University of Science and Technology), Manuel Linares (Department of Physics, Norwegian University of Science and Technology; Departament de Física, EEBE, Universitat Politècnica de Catalunya)",
         "corresponding_en": "",
-        "context_outlook": "过渡毫秒脉冲星 PSR J1023+0038 自发现以来（[[Archibald+ 2009]]），其 X 射线双模行为（[[Linares 2014]]; [[Bogdanov+ 2015]]）及射电反相关（[[Bogdanov+ 2018]]; [[Baglio+ 2023]]）已逐步揭示。先前模型预测伽马射线在 X 射线高态时更亮（[[Veledina+ 2019]]），而本文通过堆叠 Fermi-LAT 数据，首次发现伽马模式与 X 射线反相关，挑战了脉冲星风-盘相互作用模型，并暗示喷流可能主导 GeV 辐射。该发现推动了对低光度吸积流与喷流形成的理解，未来结合更高时间分辨率的伽马监测及多信使观测，有望直接捕捉模式转换过程，并为其他 tMSP 系统提供检验途径。",
+        "context_outlook": "过渡毫秒脉冲星（tMSP）处于吸积与旋转供能交汇的独特阶段，其亚光度盘态呈现快速模式切换特征（[[Linares 2014]]）。过去对原型星PSR J1023+0038的多波段研究发现X射线与射电辐射在模式间反相关（[[Bogdanov+ 2018]]），并提出了喷流模型（[[Baglio+ 2023]]）或盘内移模型（[[Campana+ 2016]]）来解释。本研究首次发现该系统的GeV伽马射线同样存在模式变化，且与X射线模式反相关，这一结果与之前预测伽马–X射线正相关的脉冲星风加热盘模型（[[Veledina+ 2019]]）相矛盾，而更自然地支持了喷流作为伽马射线主要来源的图景。未来通过更高精度的伽马射线计时观测直接捕获模式切换的快速变化，以及将同类分析方法推广至其他tMSP候选体（如3FGL J1544.6–1125，[[Gusinskaia+ 2025]]），将有助于厘清亚光度盘态下粒子加速和辐射的普遍机制。同时，随着MeV–GeV波段探测能力的提升，将能更准确地限定不同辐射分量的贡献，推动吸积–喷流–脉冲星风相互作用理论的检验与完善。",
         "citations": [
           {
-            "label": "Archibald+ 2009",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
             "label": "Linares 2014",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Bogdanov+ 2015",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Linares",
+            "year": "2014",
+            "title": "X-Ray States of Redback Millisecond Pulsars",
+            "ref": "M. Linares (2014)\nLinares, M. 2014, X-Ray States of Redback Millisecond Pulsars, ApJ, 795, 72, doi:10.1088/0004-637X/795/1/72",
+            "arxiv": "1406.2384",
+            "doi": "10.1088/0004-637X/795/1/72",
+            "bibcode": "2014ApJ...795...72L",
+            "url": "https://arxiv.org/abs/1406.2384",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Bogdanov+ 2018",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Bogdanov",
+            "year": "2018",
+            "title": "Simultaneous Chandra and VLA Observations of the Transitional Millisecond Pulsar PSR J1023+0038: Anti-correlated X-Ray and Radio Variability",
+            "ref": "S. Bogdanov et al. (2018)\nBogdanov, S., Deller, A. T., Miller-Jones, J. C. A., et al. 2018, Simultaneous Chandra and VLA Observations of the Transitional Millisecond Pulsar PSR J1023+0038: Anti-correlated X-Ray and Radio Variability, ApJ, 856, 54, doi:10.3847/1538-4357/aaaeb9",
+            "arxiv": "1709.08574",
+            "doi": "10.3847/1538-4357/aaaeb9",
+            "bibcode": "2018ApJ...856...54B",
+            "url": "https://arxiv.org/abs/1709.08574",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Baglio+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Baglio",
+            "year": "2023",
+            "title": "Matter ejections behind the highs and lows of the transitional millisecond pulsar PSR J1023+0038",
+            "ref": "M. C. Baglio et al. (2023)\nBaglio, M. C., Coti Zelati, F., Campana, S., et al. 2023, Matter ejections behind the highs and lows of the transitional millisecond pulsar PSR J1023+0038, A&A, 677, A30, doi:10.1051/0004-6361/202346418",
+            "arxiv": "2305.14509",
+            "doi": "10.1051/0004-6361/202346418",
+            "bibcode": "2023A&A...677A..30B",
+            "url": "https://arxiv.org/abs/2305.14509",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Campana+ 2016",
+            "authors": "Campana",
+            "year": "2016",
+            "title": "A physical scenario for the high and low X-ray luminosity states in the transitional pulsar PSR J1023+0038",
+            "ref": "S. Campana et al. (2016)\nCampana, S., Coti Zelati, F., Papitto, A., et al. 2016, A physical scenario for the high and low X-ray luminosity states in the transitional pulsar PSR J1023+0038, A&A, 594, A31, doi:10.1051/0004-6361/201629035",
+            "arxiv": "1607.06245",
+            "doi": "10.1051/0004-6361/201629035",
+            "bibcode": "2016A&A...594A..31C",
+            "url": "https://arxiv.org/abs/1607.06245",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Veledina+ 2019",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Veledina",
+            "year": "2019",
+            "title": "Pulsar Wind-heated Accretion Disk and the Origin of Modes in Transitional Millisecond Pulsar PSR J1023+0038",
+            "ref": "A. Veledina et al. (2019)\nVeledina, A., Nättilä, J., & Beloborodov, A. M. 2019, Pulsar Wind-heated Accretion Disk and the Origin of Modes in Transitional Millisecond Pulsar PSR J1023+0038, ApJ, 884, 144, doi:10.3847/1538-4357/ab44c6",
+            "arxiv": "1906.02519",
+            "doi": "10.3847/1538-4357/ab44c6",
+            "bibcode": "2019ApJ...884..144V",
+            "url": "https://arxiv.org/abs/1906.02519",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gusinskaia+ 2025",
+            "authors": "Gusinskaia",
+            "year": "2025",
+            "title": "Simultaneous radio and X-ray observations of the transitional millisecond pulsar candidate 3FGL J1544.6-1125",
+            "ref": "N. V. Gusinskaia et al. (2025)\nGusinskaia, N. V., Jaodand, A. D., Hessels, J. W. T., et al. 2025, Simultaneous radio and X-ray observations of the transitional millisecond pulsar candidate 3FGL J1544.6-1125, MNRAS, 536, 99, doi:10.1093/mnras/stae2577",
+            "arxiv": "2411.05977",
+            "doi": "10.1093/mnras/stae2577",
+            "bibcode": "2025MNRAS.536...99G",
+            "url": "https://arxiv.org/abs/2411.05977",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1871,40 +2250,106 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12967",
-        "title_zh": "分层喷出物驱动GRB余辉平台的高分辨率数值模拟",
+        "title_zh": "基于分层抛射物的高分辨率数值计算研究伽马射线暴余辉平台期",
         "team": "",
-        "tldr": "首次通过高分辨率数值模拟验证分层喷出物结构可天然产生GRB余辉平台，无需晚期能量注入，并定量给出平台时长与喷出物特征洛伦兹因子的标度关系。",
+        "tldr": "高分辨率数值模拟证实，GRB 喷流中的分层抛射物结构可以自然产生余辉平台期，并给出了平台持续时间与特征洛伦兹因子的标度关系。",
         "review": "",
-        "highlight": "首次以超高分辨率数值模拟直接验证分层喷出物可产生GRB余辉平台，在ISM和风环境下均得到浅衰减光变曲线；精确标定平台时长与γ0的标度关系，表明典型平台仅需γ0~10-50，无需借助晚期引擎。",
+        "highlight": "首次以 $\\Delta r/r\\lesssim 10^{-5}$ 的超高分辨率数值模拟验证了分层抛射物模型的动力学和辐射特征，提供了精确的平台期标度关系；证实典型平台源于低特征洛伦兹因子（$\\gamma_0\\sim 20$）但包含高速尾部（$\\gamma>100$）的抛射物，统一解释了平台与瞬时辐射。",
         "relation": "",
         "authors_en": "Paul C. Duffell (Purdue University), Ranadeep Ghosh Dastidar (Purdue University)",
         "corresponding_en": "Paul C. Duffell",
-        "context_outlook": "自Swift发现GRB余辉平台（[[Nousek+ 2006]]）以来，其起源多被归因于晚期能量注入（[[Zhang+ 2006]]），但这面临引擎持续时标等挑战。早期即有解析工作提出分层喷出物在反向激波穿越时可自然产生平台（[[Sari & Mészáros 2000]]），近期[[Sadeh+ 2026]]推导了更详细的标度关系并强调其可统一解释平台与标准余辉（[[Blandford & McKee 1976]]），但缺乏直接数值验证。本文首次通过高分辨率模拟（Δr/r<10^-5）确认分层喷出物在ISM和风环境中均能产生与观测一致的平台光变曲线，并精确标定平台时长与喷出物特征洛伦兹因子γ0的关系，得出现实平台所需γ0~10-50。该结果支持分层结构作为平台起源的普适框架，未来可结合多波段观测约束分层指数（s），并推广至二维喷流拐折与视角效应研究，有望减少对特殊晚期引擎的依赖，完善余辉标准模型。",
+        "context_outlook": "自 Swift 发现 GRB 余辉平台期（[[Nousek+ 2006]]；[[Zhang+ 2006]]）以来，其起源曾主要归结为晚期能量注入，但面临引擎持续时标过长的困难。多个研究提出平台期可能与早期滑行或反向激波穿越减速阶段相关（[[Shen+ 2012]]；[[Dereli-Bégué+ 2022]]），然而这些模型对环境密度分布有严格依赖。[[Sari+ 2000]] 最早推导了分层抛射物的自相似解，[[Granot+ 2006]] 将其用于余辉建模，[[Sadeh+ 2026]] 进一步给出了详细标度并主张该模型普适解释平台期。本研究通过前所未有的高分辨率数值流体模拟与辐射后处理，确认了分层抛射物模型能够同时适用于 ISM 和风环境，精准标定了平台持续时间与特征洛伦兹因子 $\\gamma_0$ 的依赖关系，得出典型平台要求 $\\gamma_0\\sim 10-50$，且少量高速物质（$\\gamma>100$）自然存在。未来，利用多波段（特别是光学–X射线）同时拟合有望减少参数简并，进而检验平台时长与瞬时辐射效率的关联，高分辨率壳层碰撞模拟还将揭示分层结构的形成机制。",
         "citations": [
           {
             "label": "Nousek+ 2006",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Nousek",
+            "year": "2006",
+            "title": "Evidence for a Canonical Gamma-Ray Burst Afterglow Light Curve in the Swift XRT Data",
+            "ref": "J. A. Nousek, C. Kouveliotou, D. Grupe, K. L. Page, J. Granot, E. Ramirez-Ruiz, S. K. Patel, D. N. Burrows, V. Mangano, S. Barthelmy, A. P. Beardmore, S. Campana, M. Capalbi, G. Chincarini, G. Cusumano, A. D. Falcone, N. Gehrels, P. Giommi, M. R. Goad, O. Godet, C. P. Hurkett, J. A. Kennea, A. Moretti, P. T. O'Brien, J. P. Osborne, P. Romano, G. Tagliaferri, and A. A. Wells (2006)\nEvidence for a Canonical Gamma-Ray Burst Afterglow Light Curve in the Swift XRT Data\nApJ 642, pp. 389–400\nExternal Links: astro-ph/0508332, Document\nCited by: §I.",
+            "arxiv": "astro-ph/0508332",
+            "doi": "10.1086/500724",
+            "bibcode": "2006ApJ...642..389N",
+            "url": "https://arxiv.org/abs/astro-ph/0508332",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Zhang+ 2006",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Zhang",
+            "year": "2006",
+            "title": "Physical Processes Shaping Gamma-Ray Burst X-Ray Afterglow Light Curves: Theoretical Implications from the Swift X-Ray Telescope Observations",
+            "ref": "B. Zhang, Y. Z. Fan, J. Dyks, S. Kobayashi, P. Mészáros, D. N. Burrows, J. A. Nousek, and N. Gehrels (2006)\nPhysical Processes Shaping Gamma-Ray Burst X-Ray Afterglow Light Curves: Theoretical Implications from the Swift X-Ray Telescope Observations\nApJ 642, pp. 354–370\nExternal Links: astro-ph/0508321, Document\nCited by: §I, §I, §I.",
+            "arxiv": "astro-ph/0508321",
+            "doi": "10.1086/500723",
+            "bibcode": "2006ApJ...642..354Z",
+            "url": "https://arxiv.org/abs/astro-ph/0508321",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Sari & Mészáros 2000",
+            "label": "Shen+ 2012",
+            "authors": "Shen",
+            "year": "2012",
+            "title": "Coasting External Shock in Wind Medium: An Origin for the X-Ray Plateau Decay Component in Swift Gamma-Ray Burst Afterglows",
+            "ref": "R. Shen and C. D. Matzner (2012)\nCoasting External Shock in Wind Medium: An Origin for the X-Ray Plateau Decay Component in Swift Gamma-Ray Burst Afterglows\nApJ 744 (1), pp. 36\nExternal Links: Document, 1109.3453\nCited by: §I.",
+            "arxiv": "1109.3453",
+            "doi": "10.1088/0004-637X/744/1/36",
+            "bibcode": "2012ApJ...744...36S",
+            "url": "https://arxiv.org/abs/1109.3453",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Dereli-Bégué+ 2022",
+            "authors": "Dereli-Bégué",
+            "year": "2022",
+            "title": "A wind environment and Lorentz factors of tens explain gamma-ray bursts X-ray plateau",
+            "ref": "H. Dereli-Bégué, A. Pe’er, F. Ryde, S. R. Oates, B. Zhang, and M. G. Dainotti (2022)\nA wind environment and Lorentz factors of tens explain gamma-ray bursts X-ray plateau\nNature Communications 13, pp. 5611\nExternal Links: Document, 2207.11066\nCited by: §I.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1038/s41467-022-32881-1",
+            "bibcode": "",
+            "url": "https://doi.org/10.1038/s41467-022-32881-1",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Sari+ 2000",
+            "authors": "Sari",
+            "year": "2000",
+            "title": "Impulsive and Varying Injection in Gamma-Ray Burst Afterglows",
+            "ref": "R. Sari and P. Mészáros (2000)\nImpulsive and Varying Injection in Gamma-Ray Burst Afterglows\nApJ 535 (1), pp. L33–L37\nExternal Links: Document, astro-ph/0003406\nCited by: §I, §I, §II, Figure 2, §IV.",
+            "arxiv": "astro-ph/0003406",
+            "doi": "10.1086/312689",
+            "bibcode": "2000ApJ...535L..33S",
+            "url": "https://arxiv.org/abs/astro-ph/0003406",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Granot+ 2006",
+            "authors": "Granot",
+            "year": "2006",
+            "title": "Distribution of gamma-ray burst ejecta energy with Lorentz factor",
+            "ref": "J. Granot and P. Kumar (2006)\nDistribution of gamma-ray burst ejecta energy with Lorentz factor\nMNRAS 366 (1), pp. L13–L16\nExternal Links: Document, astro-ph/0511049\nCited by: §I.",
+            "arxiv": "astro-ph/0511049",
+            "doi": "10.1111/j.1745-3933.2005.00121.x",
+            "bibcode": "2006MNRAS.366L..13G",
+            "url": "https://arxiv.org/abs/astro-ph/0511049",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Sadeh+ 2026",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Blandford & McKee 1976",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Sadeh",
+            "year": "2026",
+            "title": "The hydrodynamics of stratified ultrarelativistic outflows and the origin of GRB X-ray plateaus",
+            "ref": "G. Sadeh, K. Hotokezaka, and M. Shibata (2026)\nThe hydrodynamics of stratified ultrarelativistic outflows and the origin of GRB X-ray plateaus\nMNRAS 549 (3), pp. stag833\nExternal Links: Document, 2602.24085\nCited by: §I, §I, §II, §II, §III.1, §V.1, footnote 2.",
+            "arxiv": "2602.24085",
+            "doi": "10.1093/mnras/stag833",
+            "bibcode": "2026MNRAS.549ag833S",
+            "url": "https://arxiv.org/abs/2602.24085",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2284,40 +2729,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12891",
-        "title_zh": "核心坍缩超新星Boltzmann中微子输运的动量空间分辨率依赖性",
+        "title_zh": "核心坍缩超新星玻尔兹曼中微子输运模拟的动量空间分辨率依赖性",
         "team": "",
-        "tldr": "本文通过二维CCSN模拟研究了Boltzmann中微子输运中能量和角度分辨率对爆发的影响，发现粗天顶角网格虚假助爆，粗能量网格则抑制爆发，并延伸到一维黑洞形成情形。",
+        "tldr": "首次在二维动力学模拟中分别改变中微子动量空间的天顶角、方位角和能量分辨率，系统研究其对超新星爆炸及黑洞形成的影响。",
         "review": "",
-        "highlight": "首次在二维动态核心坍缩超新星模拟中系统地剖析了中微子输运动量空间（天顶角、方位角、能量）分辨率的影响，揭示了不同维度分辨率的非单调效应，为数值模拟的保真度提供了关键基准。",
+        "highlight": "发现粗天顶角分辨率人为促进爆炸，粗能量分辨率抑制爆炸；能量分辨率的影响对矩方法同样适用；未来需通过双分辨率等技巧逼近收敛。",
         "relation": "",
         "authors_en": "Ryuichiro Akaho (Faculty of Science and Engineering, Waseda University)",
         "corresponding_en": "Ryuichiro Akaho",
-        "context_outlook": "既往关于CCSN模拟中动量空间分辨率的系统研究主要局限于一维球对称情形，如角度分辨率影响仅在一维Boltzmann输运中被考察 [[Mezzacappa+ 1993b]]、[[Liebendörfer+ 2004]]，能量分辨率的影响也仅在一维或多维矩方法中被测试 [[Nakazato+ 2007]]、[[Nagakura+ 2021]]。本研究首次在二维动态CCSN模拟中，利用Boltzmann中微子辐射流体动力学逐个变化动量空间维度，揭示了粗天顶角网格人为促进爆发、粗能量网格却抑制爆发的相反效应，对优化网格设计和理解数值误差至关重要。随着快速味转换等新物理的纳入 [[Xiong+ 2025a]]，全动量空间输运对分辨率的要求将更加严苛，亟需发展自适应网格或机器学习加速算法以实现高保真模拟。",
+        "context_outlook": "既往对中微子输运动量空间分辨率的研究主要局限于 1D 球对称情形，例如角度分辨率仅在 [[Mezzacappa+ 1993b]] [[Thompson+ 2003]] 中检验，能量分辨率则在 [[Marek+ 2009]] [[Nagakura+ 2021]] 等矩方法或多维模拟中涉及；少数多维稳态研究曾同时变化角度与能量分辨率（[[Richers+ 2017]]）。本文首次在 2D CCSN 动力学模拟中分别考察天顶角、方位角和能量分辨率，揭示了粗天顶角网格人为促进爆炸、粗能量网格抑制爆炸的相反趋势。这一发现对广泛使用的矩方法同样适用，因为能量分辨率是两种输运方法的共同要素。未来可通过双分辨率技巧（如 [[Ito+ 2026]]）在有限资源下逼近收敛解。",
         "citations": [
           {
             "label": "Mezzacappa+ 1993b",
+            "authors": "Mezzacappa",
+            "year": "1993",
+            "title": "Type II Supernovae and Boltzmann Neutrino Transport: The Infall Phase",
+            "ref": "A. Mezzacappa and S. W. Bruenn (1993b) Type II Supernovae and Boltzmann Neutrino Transport: The Infall Phase . ApJ 405 , pp. 637 . External Links: Document Cited by: §1 .",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/172394",
+            "bibcode": "1993ApJ...405..637M",
+            "url": "https://doi.org/10.1086/172394",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Liebendörfer+ 2004",
-            "arxiv": "",
-            "doi": ""
+            "label": "Thompson+ 2003",
+            "authors": "Thompson",
+            "year": "2003",
+            "title": "Shock Breakout in Core-Collapse Supernovae and Its Neutrino Signature",
+            "ref": "T. A. Thompson, A. Burrows, and P. A. Pinto (2003) Shock Breakout in Core-Collapse Supernovae and Its Neutrino Signature . ApJ 592 ( 1 ), pp. 434–456 . External Links: Document , astro-ph/0211194 Cited by: §1 .",
+            "arxiv": "astro-ph/0211194",
+            "doi": "10.1086/375701",
+            "bibcode": "2003ApJ...592..434T",
+            "url": "https://arxiv.org/abs/astro-ph/0211194",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Nakazato+ 2007",
-            "arxiv": "",
-            "doi": ""
+            "label": "Marek+ 2009",
+            "authors": "Marek",
+            "year": "2009",
+            "title": "Delayed Neutrino-Driven Supernova Explosions Aided by the Standing Accretion-Shock Instability",
+            "ref": "A. Marek and H.-Th. Janka (2009) Delayed Neutrino-Driven Supernova Explosions Aided by the Standing Accretion-Shock Instability . ApJ 694 ( 1 ), pp. 664–696 . External Links: Document , 0708.3372 Cited by: §1 .",
+            "arxiv": "0708.3372",
+            "doi": "10.1088/0004-637X/694/1/664",
+            "bibcode": "2009ApJ...694..664M",
+            "url": "https://arxiv.org/abs/0708.3372",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Nagakura+ 2021",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Nagakura",
+            "year": "2021",
+            "title": "Core-collapse supernova neutrino emission and detection informed by state-of-the-art three-dimensional numerical models",
+            "ref": "H. Nagakura, A. Burrows, D. Vartanyan, and D. Radice (2021) Core-collapse supernova neutrino emission and detection informed by state-of-the-art three-dimensional numerical models . MNRAS 500 ( 1 ), pp. 696–717 . External Links: Document , 2007.05000 Cited by: §1 .",
+            "arxiv": "2007.05000",
+            "doi": "10.1093/mnras/staa2691",
+            "bibcode": "2021MNRAS.500..696N",
+            "url": "https://arxiv.org/abs/2007.05000",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Xiong+ 2025a",
+            "label": "Richers+ 2017",
+            "authors": "Richers",
+            "year": "2017",
+            "title": "A Detailed Comparison of Multidimensional Boltzmann Neutrino Transport Methods in Core-collapse Supernovae",
+            "ref": "S. Richers, H. Nagakura, C. D. Ott, J. Dolence, K. Sumiyoshi, and S. Yamada (2017) A Detailed Comparison of Multidimensional Boltzmann Neutrino Transport Methods in Core-collapse Supernovae . ApJ 847 ( 2 ), pp. 133 . External Links: Document , 1706.06187 Cited by: §1 .",
+            "arxiv": "1706.06187",
+            "doi": "10.3847/1538-4357/aa8bb2",
+            "bibcode": "2017ApJ...847..133R",
+            "url": "https://arxiv.org/abs/1706.06187",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Ito+ 2026",
+            "authors": "Ito",
+            "year": "2026",
+            "title": "A Dual-resolution Prescription for the Discrete Ordinates Method for Boltzmann Neutrino Transport. I. Proof of Principle and the Resolution of the Collision Term",
+            "ref": "A. Ito, R. Akaho, H. Nagakura, and S. Yamada (2026) A Dual-resolution Prescription for the Discrete Ordinates Method for Boltzmann Neutrino Transport. I. Proof of Principle and the Resolution of the Collision Term . ApJS 284 ( 1 ), pp. 11 . External Links: Document Cited by: §4 .",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.3847/1538-4365/ae552b",
+            "bibcode": "2026ApJS..284...11I",
+            "url": "https://doi.org/10.3847/1538-4365/ae552b",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2764,45 +3262,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12731",
-        "title_zh": "利用遗传算法以真实GRB光变曲线标定的内激波模型",
+        "title_zh": "用遗传算法校准真实伽马射线暴光变曲线的内激波模型",
         "team": "",
-        "tldr": "首次运用遗传算法对物理内激波模型进行全局标定，使其复现真实GRB光变曲线的多维统计特征，揭示中心引擎的随机活动和地震律般的喷流分布。",
+        "tldr": "利用遗传算法首次系统优化内激波模型参数，成功再现多仪器GRB光变曲线的平均及分布性质，揭示中心引擎的随机发射规律。",
         "review": "",
-        "highlight": "首次将内激波模型直接与三个探测器真实GRB样本的多种统计性质进行全局优化，成功复现平均轮廓、持续时间、信噪比等分布。发现GRB喷流次数服从广义Zipf分布，与地震的古登堡-里特定律类似，为中央引擎活动提供新约束。",
+        "highlight": "首次对物理内激波模型进行多仪器、多指标联合校准，发现壳层数目符合广义Zipf分布（类地震Gutenberg-Richter律）且发射时间呈指数衰减，为GRB中心引擎活动提供定量约束。",
         "relation": "",
-        "authors_en": "M. Maistrello (University of Ferrara, INAF-OAS Bologna, INFN Ferrara), C. Guidorzi (same), S. Kobayashi (Liverpool John Moores University), et al.",
+        "authors_en": "M. Maistrello (University of Ferrara), C. Guidorzi (University of Ferrara, INAF-OAS Bologna), S. Kobayashi (Liverpool John Moores University) et al.",
         "corresponding_en": "Manuele Maistrello",
-        "context_outlook": "内激波模型自[[Rees and Meszaros 1994]]提出以来，[[Kobayashi+ 1997]]等奠定了多壳层碰撞动力学基础，但长期缺乏基于真实数据的系统标定。此前，[[Bazzanini+ 2024]]和[[Maistrello+ 2025]]采用遗传算法优化脉冲雪崩模型，虽能复现光变曲线统计性质，却缺少物理耗散过程。本研究首次将同类标定方法应用于物理内激波模型，结合[[Ghirlanda and Salvaterra 2022]]的GRB形成率赋予红移，通过最小化六种独立度量，成功复现BATSE、Swift/BAT和Fermi/GBM真实GRB样本的多种观测分布。优化结果揭示中心引擎的喷流发射时间服从泊松过程，喷流次数呈广义Zipf分布，与地震的古登堡-里特定律[[Gutenberg and Richter 1944]]惊人相似，为中央引擎活动提供了新约束，该标定模型可作为未来多信使任务中GRB群体的预测工具。",
+        "context_outlook": "早期内激波模型由[[Rees & Meszaros 1994]]提出，[[Kobayashi+ 1997]]的模拟定性表明壳层碰撞可产生多变光变曲线，但参数未定量校准。[[Maistrello+ 2025]]建立了基于遗传算法的脉冲雪崩模型校准框架，能复现任形貌却缺乏物理基础。本工作将GA校准迁移至内激波模型，首次结合三个真实GRB星表的多项统计指标联合优化，使模型参数得到物理约束并揭示中心引擎的随机活动。未来可通过引入激波微物理和高纬度辐射效应，提升能谱-时变相关性的预测能力，并为SVOM等未来探测器提供GRB族群模拟与触发算法测试的物理工具。",
         "citations": [
           {
-            "label": "Rees and Meszaros 1994",
-            "arxiv": "",
-            "doi": ""
+            "label": "Rees & Meszaros 1994",
+            "authors": "Rees",
+            "year": "1994",
+            "title": "Unsteady outflow models for cosmological gamma-ray bursts",
+            "ref": "M. J. Rees and P. Meszaros (1994) Unsteady outflow models for cosmological gamma-ray bursts. ApJ 430, pp. L93–L96. External Links: arXiv:astro-ph/9404038, Document, ADS entry.",
+            "arxiv": "astro-ph/9404038",
+            "doi": "10.1086/187446",
+            "bibcode": "1994ApJ...430L..93R",
+            "url": "https://arxiv.org/abs/astro-ph/9404038",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Kobayashi+ 1997",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Bazzanini+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Kobayashi",
+            "year": "1997",
+            "title": "Can Internal Shocks Produce the Variability in Gamma-Ray Bursts?",
+            "ref": "S. Kobayashi, T. Piran, and R. Sari (1997) Can Internal Shocks Produce the Variability in Gamma-Ray Bursts? ApJ 490, pp. 92. External Links: arXiv:astro-ph/9705013, Document, ADS entry.",
+            "arxiv": "astro-ph/9705013",
+            "doi": "10.1086/512791",
+            "bibcode": "1997ApJ...490...92K",
+            "url": "https://arxiv.org/abs/astro-ph/9705013",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Maistrello+ 2025",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Ghirlanda and Salvaterra 2022",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Gutenberg and Richter 1944",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Maistrello",
+            "year": "2025",
+            "title": "An advanced pulse-avalanche stochastic model of long gamma-ray burst light curves",
+            "ref": "M. Maistrello, L. Ferro, L. Bazzanini, R. Maccary, and C. Guidorzi (2025) An advanced pulse-avalanche stochastic model of long gamma-ray burst light curves. A&A 697, pp. A76. External Links: Document, ADS entry.",
+            "arxiv": "2504.01569",
+            "doi": "10.1051/0004-6361/202553821",
+            "bibcode": "2025A&A...697A..76M",
+            "url": "https://arxiv.org/abs/2504.01569",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -2934,16 +3441,56 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12769",
-        "title_zh": "KAGRA升级方案对双中子星多信使观测的效能评估",
+        "title_zh": "评估KAGRA升级方案对双中子星并合多信使观测的影响",
         "team": "",
-        "tldr": "本文开发一个计算高效框架，结合Fisher矩阵、探测器占空比与并合率，比较了KAGRA宽带与高频升级对双中子星定位及可追踪事件数量的影响。",
+        "tldr": "构建了一个结合Fisher矩阵定位估计、探测器占空比与双中子星并合率的评估框架，系统比较了KAGRA未来宽带与高频优化升级方案的多信使性能。",
         "review": "",
-        "highlight": "将定位性能与占空比和事件率结合，首次系统评估KAGRA多种升级方案对多信使观测的实际增益；发现宽带升级虽定位精度略低，但因探测量程大而产生更多可追踪事件，KAGRA加入可使10^3 Mpc^3内可追踪事件增加约60%。",
+        "highlight": "创新框架综合定位精度与事件率，揭示宽带升级虽定位略逊但年事件率更优；KAGRA加入使高精度定位事件数增加约60%。",
         "relation": "",
-        "authors_en": "Y. Michimura (RESCEU, Univ. of Tokyo), S. Morisaki (ICRR, Univ. of Tokyo), K. Hotokezaka (RESCEU, Univ. of Tokyo) et al.",
+        "authors_en": "Yuta Michimura (Research Center for the Early Universe, Graduate School of Science, University of Tokyo; Kavli Institute for the Physics and Mathematics of the Universe, University of Tokyo), Soichiro Morisaki (Institute for Cosmic Ray Research, University of Tokyo), Kenta Hotokezaka (Research Center for the Early Universe, Graduate School of Science, University of Tokyo) et al.",
         "corresponding_en": "Yuta Michimura",
-        "context_outlook": "引力波探测器升级需综合衡量对多信使观测的全局影响。以往研究或侧重灵敏度提升，或聚焦单次事件定位，较少在统一框架下考虑定位、占空比和并合率。本文利用Fisher矩阵高效模拟双中子星并合信号的网络定位性能，并引入占空比模拟实际观测情景，对比了KAGRA的宽带（BB40）与高频优化（HFmod等）方案。结果显示，高频升级虽提升单源定位精度约20%，但宽带升级因到达更远距离而贡献更多可定位事件；且KAGRA加入使定位体积缩小，可追踪事件大幅增加。该评估框架可扩展至其他探测器升级方案的对比，并为包含LIGO-India的未来全球网络协同优化提供参考。",
-        "citations": []
+        "context_outlook": "自GW170817验证多信使观测潜力（[[Abbott+ 2017]]）以来，优化探测器网络以提升定位能力成为核心议题。已有工作显示，KAGRA即使灵敏度有限也能显著增强联合定位（[[Li+ 2026]]），KAGRA合作组也提出了多种升级方案（[[Akutsu+ 2025]]）。然而，此前缺少将定位性能、占空比与事件率统一的多信使评估框架。本研究提出的方法填补了这一空白，揭示了宽带升级在年事件率上的优势，并可为未来其他探测器升级及网络布局提供高效的定量分析工具。",
+        "citations": [
+          {
+            "label": "Abbott+ 2017",
+            "authors": "Abbott",
+            "year": "2017",
+            "title": "Multi-messenger observations of a binary neutron star merger",
+            "ref": "B. P. Abbott et al. (2017) Multi-messenger observations of a binary neutron star merger. The Astrophysical Journal Letters 848 (2), pp. L12. External Links: Document",
+            "arxiv": "1710.05833",
+            "doi": "10.3847/2041-8213/aa91c9",
+            "bibcode": "2017ApJ...848L..12A",
+            "url": "https://arxiv.org/abs/1710.05833",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Li+ 2026",
+            "authors": "Li",
+            "year": "2026",
+            "title": "Investigating the effect of sensitivity of kagra on sky localization of gravitational-wave sources from compact binary coalescences",
+            "ref": "A. K. Y. Li et al. (2026) Investigating the effect of sensitivity of kagra on sky localization of gravitational-wave sources from compact binary coalescences. External Links: 2604.13580",
+            "arxiv": "2604.13580",
+            "doi": "10.48550/arXiv.2604.13580",
+            "bibcode": "2026arXiv260413580L",
+            "url": "https://arxiv.org/abs/2604.13580",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Akutsu+ 2025",
+            "authors": "Akutsu",
+            "year": "2025",
+            "title": "Decadal upgrade strategy for kagra toward post-o5 gravitational-wave astronomy",
+            "ref": "T. Akutsu et al. (2025) Decadal upgrade strategy for kagra toward post-o5 gravitational-wave astronomy. External Links: 2508.03392",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          }
+        ]
       }
     },
     {
@@ -3460,35 +4007,106 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12700",
-        "title_zh": "IIb型超新星SN 2024aecx中激波冷却与放射性加热的耦合：延展包层与快速光学衰减",
+        "title_zh": "IIb型超新星 SN 2024aecx 的耦合激波冷却与放射性加热：延展包层与快速光学衰减",
         "team": "",
-        "tldr": "采用统一时变辐射扩散模型同时处理激波冷却与放射性加热，拟合SN 2024aecx的双峰光变曲线，并引入光学输出因子解释其快速晚期衰减。",
+        "tldr": "将激波冷却与放射性加热耦合于单一时间依赖扩散模型，对 IIb 型超新星 SN 2024aecx 的多波段光变曲线进行统一拟合，揭示其陡峭的外层密度分布和低质量抛射物，并发现标准模型无法解释快速晚期光学下降。",
         "review": "",
-        "highlight": "首次在单一扩散框架中同时重现早期冷却峰、放射性主峰与快速光学下降；模型揭示标准γ泄漏机制不足，需额外的晚期光学抑制。",
+        "highlight": "首次在时变辐射扩散框架下统一拟合 IIb 型超新星的早期冷却峰、放射性主峰和晚期衰减；通过直接约束外层密度斜率，获得低质量延展包层的证据；提出有效光学输出因子以量化标准模型未能解释的快速光学下降，为晚期物理过程提供诊断手段。",
         "relation": "",
         "authors_en": "Na Wei (Institute of Astrophysics, Central China Normal University), Yu-Hao Zhang (Institute of Astrophysics, Central China Normal University), Liang-Duan Liu (Institute of Astrophysics, Central China Normal University) et al.",
-        "corresponding_en": "",
-        "context_outlook": "IIb型超新星通常呈现激波冷却与放射性衰变双峰，过往研究多将两者独立建模（如[[Bersten+ 2012]]、[[Arnett 1982]]）。本文基于[[Liu+ 2025]]的时变扩散框架，将两类加热过程统一于同一计算中，并采用数值驱动的IIb型密度结构直接约束延展包层，发现SN 2024aecx的快速光学衰减无法用标准γ泄漏解释。这一工作凸显了多阶段光变统一建模的重要性，为未来利用早期信号诊断剥离包层结构提供了可推广的方法。随着巡天发现更多快速演化的剥离包层超新星，该耦合方法有望成为连接爆炸机制与星周环境的标准分析路径。",
+        "corresponding_en": "Liang-Duan Liu",
+        "context_outlook": "传统上，IIb 型超新星的早期激波冷却峰和放射性主峰常独立处理，例如解析冷却模型 [[Piro 2015]] 和 [[Sapir & Waxman 2017]]，以及简化放射性扩散模型 [[Arnett 1982]]。近期对 SN 2024aecx 的双峰观测研究（[[Zou+ 2026]]；[[Xi+ 2026]]）已确认其 IIb 分类，但未将两阶段纳入统一扩散框架。本研究利用扩展的 TransFit 程序 [[Liu+ 2025]]，在一维时变辐射扩散中同时演化激波沉积热能与镍衰变加热，并采用破折幂律密度剖面直接拟合早期光变得到陡峭外层密度斜率。结果可自然解释早期冷却峰和主峰，但标准 γ 泄漏下的扩散模型衰减过慢，为此引入有效光学输出因子，暗示可能存在晚期红外再辐射、尘埃形成或几何效应等额外物理过程，与 SN 2024aecx 的近红外超测 [[Tinyanont+ 2026]] 相呼应。未来结合晚期光谱与红外观测，将有助于区分这些机制，完善对剥离包层超新星晚期能量输运的理解。",
         "citations": [
           {
-            "label": "Filippenko 1988",
-            "arxiv": "",
-            "doi": ""
+            "label": "Piro 2015",
+            "authors": "Piro",
+            "year": "2015",
+            "title": "Using Double-peaked Supernova Light Curves to Study Extended Material",
+            "ref": "Piro, A. L. 2015, Using Double-peaked Supernova Light Curves to Study Extended Material, ApJ, 808, L51, doi:10.1088/2041-8205/808/2/L51",
+            "arxiv": "1505.07103",
+            "doi": "10.1088/2041-8205/808/2/L51",
+            "bibcode": "2015ApJ...808L..51P",
+            "url": "https://arxiv.org/abs/1505.07103",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Bersten+ 2012",
-            "arxiv": "",
-            "doi": ""
+            "label": "Sapir & Waxman 2017",
+            "authors": "Sapir",
+            "year": "2017",
+            "title": "UV/Optical Emission from the Expanding Envelopes of Type II Supernovae",
+            "ref": "Sapir, N., & Waxman, E. 2017, UV/Optical Emission from the Expanding Envelopes of Type II Supernovae, ApJ, 838, 130, doi:10.3847/1538-4357/aa64df",
+            "arxiv": "1607.03700",
+            "doi": "10.3847/1538-4357/aa64df",
+            "bibcode": "2017ApJ...838..130S",
+            "url": "https://arxiv.org/abs/1607.03700",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Arnett 1982",
+            "authors": "Arnett",
+            "year": "1982",
+            "title": "Type I supernovae. I - Analytic solutions for the early part of the light curve",
+            "ref": "Arnett, W. D. 1982, Type I supernovae. I - Analytic solutions for the early part of the light curve, ApJ, 253, 785, doi:10.1086/159681",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/159681",
+            "bibcode": "1982ApJ...253..785A",
+            "url": "https://doi.org/10.1086/159681",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zou+ 2026",
+            "authors": "Zou",
+            "year": "2026",
+            "title": "SN 2024aecx: A Double-peaked Rapidly Evolving Type IIb Supernova at 11 Mpc",
+            "ref": "Zou, X., Kumar, B., Teja, R. S., et al. 2026, SN 2024aecx: A Double-peaked Rapidly Evolving Type IIb Supernova at 11 Mpc, ApJ, 997, 77, doi:10.3847/1538-4357/ae21dd",
+            "arxiv": "2505.19831",
+            "doi": "10.3847/1538-4357/ae21dd",
+            "bibcode": "2026ApJ...997...77Z",
+            "url": "https://arxiv.org/abs/2505.19831",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Xi+ 2026",
+            "authors": "Xi",
+            "year": "2026",
+            "title": "SN 2024aecx: A Fast-evolving Type IIb Supernova with a Prominent Shock-cooling Peak",
+            "ref": "Xi, Q., Sun, N.-C., Aguado, D., et al. 2026, SN 2024aecx: A Fast-evolving Type IIb Supernova with a Prominent Shock-cooling Peak, ApJ, 998, 98, doi:10.3847/1538-4357/ae2d06",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/ae2d06",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/ae2d06",
+            "source": "crossref",
+            "verified": true
           },
           {
             "label": "Liu+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Liu",
+            "year": "2025",
+            "title": "TransFit: An Efficient Framework for Transient Light-curve Fitting with Time-dependent Radiative Diffusion",
+            "ref": "Liu, L.-D., Zhang, Y.-H., Yu, Y.-W., et al. 2025, TransFit: An Efficient Framework for Transient Light-curve Fitting with Time-dependent Radiative Diffusion, ApJ, 992, 20, doi:10.3847/1538-4357/adfed6",
+            "arxiv": "2505.13825",
+            "doi": "10.3847/1538-4357/adfed6",
+            "bibcode": "2025ApJ...992...20L",
+            "url": "https://arxiv.org/abs/2505.13825",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Tinyanont+ 2026",
+            "authors": "Tinyanont",
+            "year": "2026",
+            "title": "An infrared echo from a circumstellar disk in the hydrogen- and helium-poor SN 2024aecx",
+            "ref": "Tinyanont, S., Wangnok, K., Andrews, J. E., et al. 2026, An infrared echo from a circumstellar disk in the hydrogen- and helium-poor SN 2024aecx, arXiv e-prints, arXiv:2602.02691, doi:10.48550/arXiv.2602.02691",
+            "arxiv": "2602.02691",
+            "doi": "10.3847/1538-4357/ae623e",
+            "bibcode": "2026ApJ..1004....6T",
+            "url": "https://arxiv.org/abs/2602.02691",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -4011,40 +4629,106 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12558",
-        "title_zh": "致密天体中非轴对称快速味不稳定的机器学习检测",
+        "title_zh": "致密天体非轴对称快速味不稳定性的机器学习检测",
         "team": "",
-        "tldr": "训练机器学习模型，从合成非轴对称中微子角矩识别ELN过零点，支撑快速味转换融入超新星/并合模拟。",
+        "tldr": "利用合成数据训练机器学习分类器，基于中微子低阶角矩探测非轴对称电子轻子数过零点，并在多种仿真数据上泛化测试，揭示特征一致性对模型性能的关键影响。",
         "review": "",
-        "highlight": "通过相对旋转构建系统性非轴对称训练数据，使模型跨不同数据源泛化；揭示输入特征空间一致性对性能的关键作用，指出融合重味信息可进一步提升检测能力。",
+        "highlight": "首次通过相对标架旋转生成系统性的非轴对称训练集，仅用四个输入特征即可在多种真实仿真数据（1D CCSN、NSM射线追踪、蒙特卡洛）上实现良好泛化；明确显示忽略重轻子中微子信息将导致味平衡后的识别失败，为未来整合完整味信息的ML探索奠定基础。",
         "relation": "",
-        "authors_en": "Madhurima Chakraborty (Institute of Physics, Academia Sinica), Sajad Abbar (Max-Planck-Institut für Physik (Werner-Heisenberg-Institut)), Meng-Ru Wu (Institute of Physics, Academia Sinica; Institute of Astronomy and Astrophysics, Academia Sinica; Physics Division, National Center for Theoretical Sciences) et al.",
+        "authors_en": "M. Chakraborty (Institute of Physics, Academia Sinica), S. Abbar (Max-Planck-Institut für Physik), M.-R. Wu (Institute of Physics, Academia Sinica) et al.",
         "corresponding_en": "",
-        "context_outlook": "先前主要依靠分析或半分析判据从低阶角矩推断ELN过零点（[[Richers 2022]]；[[Cornelius+ 2025]]），近期机器学习开始用于轴对称探测（[[Abbar 2023]]；[[Abbar and Nagakura 2024]]）并初步探索非轴对称情形（[[Abbar+ 2025]]）。本文引入相对帧旋转生成泛化合成训练数据，模型在多种来源的测试集上表现良好，同时发现输入特征空间一致性至关重要。今后需扩展输入特征以处理重味中微子分布差异，ML方法有望作为快速判别器在线耦合至CCSN和NSM大尺度模拟，推动快速味转换的自洽处理。",
+        "context_outlook": "早先解析与数值方法利用低阶中微子角矩推断ELN过零点（[[Dasgupta+ 2018]]; [[Richers 2022]]），但多局限于轴对称分布。机器学习方法近期被引入以提升探测效率与灵活性，最初针对轴对称ELN交叉（[[Abbar 2023]]; [[Abbar & Nagakura 2024]]），而后扩展至非轴对称情形（[[Abbar+ 2025]]）。本文通过构造非轴对称训练集并测试多种ML分类器，发现模型能较好地泛化至CCSN与NSM仿真数据（[[Xiong+ 2024]]; [[Wu+ 2017a]]），同时揭示出忽略重轻子中微子信息会导致味平衡后探测失败。未来需整合完整味信息并推动ML预测模块在在线模拟中的应用，以加速FFC在致密天体中的自洽研究。",
         "citations": [
           {
-            "label": "Richers 2022",
-            "arxiv": "",
-            "doi": ""
+            "label": "Dasgupta+ 2018",
+            "authors": "Dasgupta",
+            "year": "2018",
+            "title": "Simple method of diagnosing fast flavor conversions of supernova neutrinos",
+            "ref": "B. Dasgupta, A. Mirizzi, and M. Sen (2018)\nSimple method of diagnosing fast flavor conversions of supernova neutrinos\n.\nPhys. Rev.\nD98\n(\n10\n),\npp. 103001\n.\nExternal Links:\nDocument\n,\n1807.03322\nCited by:\n§I\n.",
+            "arxiv": "1807.03322",
+            "doi": "10.1103/PhysRevD.98.103001",
+            "bibcode": "2018PhRvD..98j3001D",
+            "url": "https://arxiv.org/abs/1807.03322",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Cornelius+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Richers 2022",
+            "authors": "Richers",
+            "year": "2022",
+            "title": "Evaluating approximate flavor instability metrics in neutron star mergers",
+            "ref": "S. Richers (2022)\nEvaluating approximate flavor instability metrics in neutron star mergers\n.\nPhys. Rev. D\n106\n(\n8\n),\npp. 083005\n.\nExternal Links:\n2206.08444\n,\nDocument\nCited by:\n§I\n.",
+            "arxiv": "2206.08444",
+            "doi": "10.1103/PhysRevD.106.083005",
+            "bibcode": "2022PhRvD.106h3005R",
+            "url": "https://arxiv.org/abs/2206.08444",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Abbar 2023",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Abbar",
+            "year": "2023",
+            "title": "Applications of machine learning to detecting fast neutrino flavor instabilities in core-collapse supernova and neutron star merger models",
+            "ref": "S. Abbar (2023)\nApplications of machine learning to detecting fast neutrino flavor instabilities in core-collapse supernova and neutron star merger models\n.\nPhys. Rev. D\n107\n(\n10\n),\npp. 103006\n.\nExternal Links:\n2303.05560\n,\nDocument\nCited by:\n§I\n,\n§II\n.",
+            "arxiv": "2303.05560",
+            "doi": "10.1103/PhysRevD.107.103006",
+            "bibcode": "2023PhRvD.107j3006A",
+            "url": "https://arxiv.org/abs/2303.05560",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Abbar and Nagakura 2024",
-            "arxiv": "",
-            "doi": ""
+            "label": "Abbar & Nagakura 2024",
+            "authors": "Abbar",
+            "year": "2024",
+            "title": "Detecting fast neutrino flavor conversions with machine learning",
+            "ref": "S. Abbar and H. Nagakura (2024)\nDetecting fast neutrino flavor conversions with machine learning\n.\nPhys. Rev. D\n109\n(\n2\n),\npp. 023033\n.\nExternal Links:\n2310.03807\n,\nDocument\nCited by:\n§I\n.",
+            "arxiv": "2310.03807",
+            "doi": "10.1103/PhysRevD.109.023033",
+            "bibcode": "2024PhRvD.109b3033A",
+            "url": "https://arxiv.org/abs/2310.03807",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Abbar+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Abbar",
+            "year": "2025",
+            "title": "Machine learning-based detection of nonaxisymmetric fast neutrino flavor instabilities in core-collapse supernovae",
+            "ref": "S. Abbar, A. Harada, and H. Nagakura (2025)\nMachine learning-based detection of nonaxisymmetric fast neutrino flavor instabilities in core-collapse supernovae\n.\nPhys. Rev. D\n111\n(\n6\n),\npp. 063077\n.\nExternal Links:\n2401.10915\n,\nDocument\nCited by:\n§I\n.",
+            "arxiv": "2401.10915",
+            "doi": "10.1103/PhysRevD.111.063077",
+            "bibcode": "2025PhRvD.111f3077A",
+            "url": "https://arxiv.org/abs/2401.10915",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Xiong+ 2024",
+            "authors": "Xiong",
+            "year": "2024",
+            "title": "Fast neutrino flavor conversions in a supernova: Emergence, evolution, and effects",
+            "ref": "Z. Xiong, M. Wu, M. George, C. Lin, N. K. Largani, T. Fischer, and G. Martínez-Pinedo (2024)\nFast neutrino flavor conversions in a supernova: Emergence, evolution, and effects\n.\nPhys. Rev. D\n109\n(\n12\n),\npp. 123008\n.\nExternal Links:\n2402.19252\n,\nDocument\nCited by:\n§I\n,\n§III.3\n.",
+            "arxiv": "2402.19252",
+            "doi": "10.1103/PhysRevD.109.123008",
+            "bibcode": "2024PhRvD.109l3008X",
+            "url": "https://arxiv.org/abs/2402.19252",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Wu+ 2017a",
+            "authors": "Wu",
+            "year": "2017",
+            "title": "Imprints of neutrino-pair flavor conversions on nucleosynthesis in ejecta from neutron-star merger remnants",
+            "ref": "M. Wu, I. Tamborra, O. Just, and H. Janka (2017a)\nImprints of neutrino-pair flavor conversions on nucleosynthesis in ejecta from neutron-star merger remnants\n.\nPhys. Rev. D\n96\n,\npp. 123015\n.\nExternal Links:\nDocument\n,\nLink\nCited by:\n§III.2\n.",
+            "arxiv": "1711.00477",
+            "doi": "10.1103/PhysRevD.96.123015",
+            "bibcode": "2017PhRvD..96l3015W",
+            "url": "https://arxiv.org/abs/1711.00477",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -4176,40 +4860,106 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.12285",
-        "title_zh": "脉冲星反glitch：磁力驱动的星震？",
+        "title_zh": "脉冲星反自转突变：磁力驱动的星震？",
         "team": "",
-        "tldr": "提出磁应力驱动的星震模型，统一解释脉冲星正、反glitch，并给出B-Δν/ν关系与观测一致。",
+        "tldr": "提出磁应力诱发星震统一解释脉冲星自转突增与突减，给出磁场与幅度的标度关系并与观测比较。",
         "review": "",
-        "highlight": "首次从磁应力出发独立驱动星震，自然容纳反glitch；统一框架下给出可检验的磁场-跃变幅度关系，为区分中子星与奇异星提供新途径。",
+        "highlight": "传统引力星震模型无法解释反自转突变，本文首次提出磁力驱动星震可同时产生自转突增和突减，且在整体固态的奇异子星框架下幅度可自然匹配观测。",
         "relation": "",
-        "authors_en": "Hanyuan Long, Ruipeng Lu, Weiyang Wang et al.",
-        "corresponding_en": "Renxin Xu, Han Yue",
-        "context_outlook": "传统的脉冲星星震模型通常认为故障滑移由自引力驱动，仅能解释正glitch（频率增加）[[Baym and Pines 1971]]。自2013年发现反glitch后 [[Archibald+ 2013]]，传统框架面临挑战。本文提出磁应力驱动的星震假设，可自然统一正、反glitch，且当星体为整体固态的奇异星时 [[Xu 2003]]，星震效应将更为显著 [[Zhou+ 2004]]。未来更多观测（如FAST [[Wang+ 2026]]）与精细磁弹性模型的发展，将推动该假说的验证与完善。",
+        "authors_en": "Hanyuan Long (School of Physics, Peking University), Ruipeng Lu (School of Physics, Peking University), Weiyang Wang (School of Astronomy and Space Sciences, University of Chinese Academy of Sciences), et al.",
+        "corresponding_en": "Renxin Xu",
+        "context_outlook": "传统的星震模型（[[Baym+1971]]）仅能产生自转突增，无法解释近年来在磁星及旋转供能脉冲星中陆续发现的反自转突变（[[Archibald+2013]]；[[Hu+2024]]；[[Tuo+2024]]）。本文提出，磁应力可引发星震并导致转动惯量增减，从而统一产生自转突增与突减，且所需磁场强度及幅度关系在整体固态的奇异子星框架下（[[Lu+2023]]）与观测相符。未来，更精确的磁弹性耦合数值模拟和高灵敏度射电望远镜（如 FAST，[[Wang+2026]]）的观测，不仅可检验此机制，更有望为辨识脉冲星究竟是传统中子星还是奇异子星提供新判据（[[Xia+2025]]）。",
         "citations": [
           {
-            "label": "Baym and Pines 1971",
+            "label": "Baym+1971",
+            "authors": "Baym",
+            "year": "1971",
+            "title": "Neutron starquakes and pulsar speedup",
+            "ref": "G. Baym and D. Pines (1971) Neutron starquakes and pulsar speedup. Annals of Physics 66 (2), pp. 816–835. External Links: ISSN 0003-4916, Document, Link Cited by: §1.",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1016/0003-4916(71)90084-4",
+            "bibcode": "1971AnPhy..66..816B",
+            "url": "https://doi.org/10.1016/0003-4916(71)90084-4",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Archibald+ 2013",
-            "arxiv": "",
-            "doi": ""
+            "label": "Archibald+2013",
+            "authors": "Archibald",
+            "year": "2013",
+            "title": "An anti-glitch in a magnetar",
+            "ref": "R. F. Archibald, V. M. Kaspi, C.-Y. Ng, et al. (2013) An anti-glitch in a magnetar. Nature 497, pp. 591–593. External Links: Document, Link Cited by: §1.",
+            "arxiv": "1305.6894",
+            "doi": "10.1038/nature12159",
+            "bibcode": "2013Natur.497..591A",
+            "url": "https://arxiv.org/abs/1305.6894",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Xu 2003",
+            "label": "Hu+2024",
+            "authors": "Hu",
+            "year": "2024",
+            "title": "Detection of anti-glitches in rotation-powered pulsars",
+            "ref": "C.-P. Hu, C.-Y. Ng, L.-C. C. Lin, et al. (2024) Detection of anti-glitches in rotation-powered pulsars. Astronomy & Astrophysics. Note: in press. External Links: 2404.18158, Link Cited by: §1.",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
           },
           {
-            "label": "Zhou+ 2004",
-            "arxiv": "",
-            "doi": ""
+            "label": "Tuo+2024",
+            "authors": "Tuo",
+            "year": "2024",
+            "title": "Discovery of the First Antiglitch Event in the Rotation-powered Pulsar PSR B0540-69",
+            "ref": "Y. Tuo, M. M. Serim, M. Antonelli, L. Ducci, A. Vahdat, M. Ge, A. Santangelo, and F. Xie (2024) Discovery of the First Antiglitch Event in the Rotation-powered Pulsar PSR B0540-69. ApJ 967 (1), pp. L13. External Links: Document, 2404.18158 Cited by: §1.",
+            "arxiv": "2404.18158",
+            "doi": "10.3847/2041-8213/ad4488",
+            "bibcode": "2024ApJ...967L..13T",
+            "url": "https://arxiv.org/abs/2404.18158",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Wang+ 2026",
-            "arxiv": "",
-            "doi": ""
+            "label": "Lu+2023",
+            "authors": "Lu",
+            "year": "2023",
+            "title": "Quakes of compact stars",
+            "ref": "R. Lu, H. Yue, X. Lai, W. Wang, S. Zhang, and R. Xu (2023) Quakes of compact stars. Monthly Notices of the Royal Astronomical Society 520 (3), pp. 4289–4300. External Links: ISSN 1365-2966, Link, Document Cited by: §2.",
+            "arxiv": "2301.10615",
+            "doi": "10.1093/mnras/stad270",
+            "bibcode": "2023MNRAS.520.4289L",
+            "url": "https://arxiv.org/abs/2301.10615",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Xia+2025",
+            "authors": "Xia",
+            "year": "2025",
+            "title": "Strange matter",
+            "ref": "C. Xia, X. Lai, and R. Xu (2025) Strange matter. International Journal of Modern Physics A 40 (34), pp. 2550180. External Links: Document, 2511.01146 Cited by: §1, §3, §4.",
+            "arxiv": "2511.01146",
+            "doi": "10.1142/S0217751X25501805",
+            "bibcode": "2025IJMPA..4050180X",
+            "url": "https://arxiv.org/abs/2511.01146",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Wang+2026",
+            "authors": "Wang",
+            "year": "2026",
+            "title": "To Understand the Radiative Processes of Pulsars and Fast Radio Bursts with the FAST",
+            "ref": "W. Wang, S. Cao, Z. Huang, J. Lu, Y. Men, L. Meng, J. Niu, Z. Pan, P. Wang, D. Zhou, Y. Feng, J. Han, J. Jiang, B. Liu, R. Luo, H. Wang, S. Wang, T. Wang, Z. Wang, H. Xu, J. Xu, R. Xu, Y. Xu, Y. Yan, Z. Yan, Y. Zhou, S. Chen, Y. Dai, M. Ge, Z. Jiang, K. Lee, Y. Lian, K. Liu, L. Qian, H. Tong, L. Wang, Y. Wang, Z. Xu, J. Yao, D. Yin, L. Zhang, and W. Zhu (2026) To Understand the Radiative Processes of Pulsars and Fast Radio Bursts with the FAST. Chinese Physics Letters 43 (5), pp. 051103. External Links: Document, 2604.09987 Cited by: §3.",
+            "arxiv": "2604.09987",
+            "doi": "10.1088/0256-307X/43/5/051103",
+            "bibcode": "2026ChPhL..43e1103W",
+            "url": "https://arxiv.org/abs/2604.09987",
+            "source": "ads",
+            "verified": true
           }
         ]
       }

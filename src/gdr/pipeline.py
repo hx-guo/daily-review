@@ -2,6 +2,7 @@ import sys
 import collections
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from gdr import config
+from gdr.citations import resolve_summary
 from gdr.dedup import dedupe
 from gdr.fulltext import fetch_fulltext as _real_fetch_fulltext
 from gdr.relevance import score_paper
@@ -16,6 +17,7 @@ def _process_paper(paper, llm, fetch_fulltext) -> dict:
     if score.layer in ("core", "related"):
         fulltext = fetch_fulltext(paper)
         summary = summarize_paper(paper, fulltext, llm)
+        resolve_summary(summary, ads_token=config.get_ads_token(), mailto=config.CROSSREF_MAILTO)
     else:
         summary = summarize_edge(paper, llm)   # cheap Chinese title + one-liner, from abstract, no full text
     return {"paper": paper, "score": score, "summary": summary}

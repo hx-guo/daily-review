@@ -607,35 +607,93 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10818",
-        "title_zh": "千新星模型晚期发射线轮廓",
+        "title_zh": "千新星模型晚期的发射线轮廓",
         "team": "",
-        "tldr": "利用二维并合抛射物模型，研究硒、碲、钨元素的晚期发射线轮廓，揭示非对称结构与观测方向对线形的显著影响。",
+        "tldr": "利用二维并合抛射物模型，系统研究非球对称结构对千新星晚期光学薄发射线轮廓的影响，揭示轮廓形态对元素种类、抛射物加热及观测方向的敏感性。",
         "review": "",
-        "highlight": "首次基于多维并合模拟探讨观测方向对千新星晚期谱线轮廓的影响，发现复杂多峰与宽翼结构，并指出其对低速抛射物及r-过程加热的敏感性，为通过谱线诊断并合参数提供新途径。",
+        "highlight": "首次基于长期动力学模拟的二维抛射物结构计算多种元素的线轮廓，发现线轮廓可呈现多峰、扩展翼等复杂形态，r-过程加热显著展宽线心，并指出这些特征可约束并合参数及观测倾角。",
         "relation": "",
-        "authors_en": "S. A. Sim (Astrophysics Research Centre, Queen's University Belfast), O. Just (GSI Helmholtzzentrum für Schwerionenforschung), Z. Xiong (GSI Helmholtzzentrum für Schwerionenforschung) et al.",
+        "authors_en": "S. A. Sim (Astrophysics Research Centre, Queen's University Belfast), O. Just (GSI Helmholtzzentrum für Schwerionenforschung, RIKEN), Z. Xiong (GSI Helmholtzzentrum für Schwerionenforschung), et al.",
         "corresponding_en": "S. A. Sim",
-        "context_outlook": "此前对千新星晚期谱线的研究多假设球对称抛射物或采用高斯线形（如 [[Hotokezaka+ 2021]]、[[McCann+ 2025]]），未充分考虑多维度抛射物结构及观测倾角的影响。本研究基于 [[Just+ 2023]] 的二维抛射物模型，首次系统探讨了硒、碲、钨三种代表性r-过程元素在不同模型与观测方向下的线轮廓变化，揭示出复杂多峰结构及宽翼特征，并指出低速抛射物成分与r-过程衰变加热的关键作用。尽管早期观测如 AT2017gfo 显示谱形成区近似球对称（[[Sneppen+ 2023]]），但随着光薄相的进入，非对称结构的诊断潜力将逐步凸显。未来结合更真实的电离、温度及不透明度处理，此类分析有望为并合参数（如质量比、状态方程）与观测倾角提供独立约束。",
+        "context_outlook": "千新星早期光谱由于高光深呈现球对称特征 [[Sneppen+ 2023]]，但晚期光学薄时线轮廓可反映抛射物几何 [[Jerkstrand 2017]]。以往多数晚期发射线研究采用一维或高斯近似 [[Hotokezaka+ 2023]]，而本文基于二维并合模拟 [[Just+ 2023]] 首次系统探究了不同元素在不同方向的轮廓变化。未来需要在三维模型中考虑温度/电离梯度、谱线混叠和残余光深 [[Pognan+ 2023]]，有望通过线轮廓观测约束径向元素分层及并合参数如质量比和状态方程 [[Sneppen+ 2026]]。",
         "citations": [
           {
-            "label": "Hotokezaka+ 2021",
-            "arxiv": "",
-            "doi": ""
+            "label": "Sneppen+ 2023",
+            "authors": "Sneppen",
+            "year": "2023",
+            "title": "Spherical symmetry in the kilonova AT2017gfo/GW170817",
+            "ref": "A. Sneppen, D. Watson, A. Bauswein, O. Just, R. Kotak, E. Nakar, D. Poznanski, and S. Sim (2023) Spherical symmetry in the kilonova AT2017gfo/GW170817. Nature 614(7948), pp. 436–439. External Links: Document, 2302.06621 Cited by: §1, §5.",
+            "arxiv": "2302.06621",
+            "doi": "10.1038/s41586-022-05616-x",
+            "bibcode": "2023Natur.614..436S",
+            "url": "https://arxiv.org/abs/2302.06621",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "McCann+ 2025",
-            "arxiv": "",
-            "doi": ""
+            "label": "Jerkstrand 2017",
+            "authors": "Jerkstrand",
+            "year": "2017",
+            "title": "Spectra of Supernovae in the Nebular Phase",
+            "ref": "A. Jerkstrand (2017) Spectra of Supernovae in the Nebular Phase. In Handbook of Supernovae, A. W. Alsabti and P. Murdin (Eds.), pp. 795–842. External Links: Document Cited by: §1, §1, §5.",
+            "arxiv": "1702.06702",
+            "doi": "10.1007/978-3-319-21846-5_29",
+            "bibcode": "2017hsn..book..795J",
+            "url": "https://arxiv.org/abs/1702.06702",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Hotokezaka+ 2023",
+            "authors": "Hotokezaka",
+            "year": "2023",
+            "title": "Tellurium emission line in kilonova AT 2017gfo",
+            "ref": "K. Hotokezaka, M. Tanaka, D. Kato, and G. Gaigalas (2023) Tellurium emission line in kilonova AT 2017gfo. MNRAS 526(1), pp. L155–L159. External Links: Document, 2307.00988 Cited by: §1, §4.",
+            "arxiv": "2307.00988",
+            "doi": "10.1093/mnrasl/slad128",
+            "bibcode": "2023MNRAS.526L.155H",
+            "url": "https://arxiv.org/abs/2307.00988",
+            "source": "ads",
+            "verified": true
           },
           {
             "label": "Just+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "authors": "Just",
+            "year": "2023",
+            "title": "End-to-end Kilonova Models of Neutron Star Mergers with Delayed Black Hole Formation",
+            "ref": "O. Just, V. Vijayan, Z. Xiong, S. Goriely, T. Soultanis, A. Bauswein, J. Guilet, H. -Th. Janka, and G. Martínez-Pinedo (2023) End-to-end Kilonova Models of Neutron Star Mergers with Delayed Black Hole Formation. ApJ 951(1), pp. L12. External Links: Document, 2302.10928 Cited by: §1, §2.3.",
+            "arxiv": "2302.10928",
+            "doi": "10.3847/2041-8213/acdad2",
+            "bibcode": "2023ApJ...951L..12J",
+            "url": "https://arxiv.org/abs/2302.10928",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Sneppen+ 2023",
-            "arxiv": "",
-            "doi": ""
+            "label": "Pognan+ 2023",
+            "authors": "Pognan",
+            "year": "2023",
+            "title": "NLTE spectra of kilonovae",
+            "ref": "Q. Pognan, J. Grumer, A. Jerkstrand, and S. Wanajo (2023) NLTE spectra of kilonovae. MNRAS 526(4), pp. 5220–5248. External Links: Document, 2309.01134 Cited by: §1, §6.",
+            "arxiv": "2309.01134",
+            "doi": "10.1093/mnras/stad3106",
+            "bibcode": "2023MNRAS.526.5220P",
+            "url": "https://arxiv.org/abs/2309.01134",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sneppen+ 2026",
+            "authors": "Sneppen",
+            "year": "2026",
+            "title": "Helium as an indicator of the neutron-star merger remnant lifetime and its potential for equation of state constraints",
+            "ref": "A. Sneppen, O. Just, A. Bauswein, R. Damgaard, D. Watson, L. J. Shingles, C. E. Collins, S. A. Sim, Z. Xiong, G. Martínez-Pinedo, T. Soultanis, and V. Vijayan (2026) Helium as an indicator of the neutron-star merger remnant lifetime and its potential for equation of state constraints. Phys. Rev. D 113(6), pp. 063038. External Links: Document, 2411.03427 Cited by: Table 1, Table 1, §5.",
+            "arxiv": "2411.03427",
+            "doi": "10.1103/5j43-l6xr",
+            "bibcode": "2026PhRvD.113f3038S",
+            "url": "https://arxiv.org/abs/2411.03427",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -796,15 +854,15 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10927",
-        "title_zh": "天体粒子物理学的兴起：从宇宙线物理到一个新科学领域",
+        "title_zh": "天体粒子物理学的兴起：从宇宙线物理到新科学领域",
         "team": "",
-        "tldr": "考察天体粒子物理学作为交叉学科形成的历史机制与路径。",
+        "tldr": "本文通过历史分析，揭示天体粒子物理如何从战后宇宙线物理、相对论天体物理和粒子宇宙学三条轨迹的互动中，形成以宇宙为实验室的新型交叉学科。",
         "review": "",
-        "highlight": "从历史视角系统梳理天体粒子物理学的形成历程，揭示其并非学科简单合并，而是围绕超越传统边界的问题，重组实验文化、研究传统与科学社群。",
+        "highlight": "强调新领域的诞生是科学问题、实验文化、研究社群与制度协同演化的结果，而非学科简单汇合，为跨学科研究提供了新的史学视角。",
         "relation": "",
         "authors_en": "Luisa Bonolis",
         "corresponding_en": "",
-        "context_outlook": "该研究承接对宇宙线物理、高能天体物理及粒子物理交叉历史的探讨，通过分析战后宇宙线转型、高能宇宙窗口的出现及粒子物理与宇宙学互动三条历史轨迹，阐释了天体粒子物理作为独立领域的形成机制。它为理解跨学科领域的起源提供了“问题－文化－社群－制度”协同演化的分析框架，未来研究可进一步细化认知与制度维度的互动细节，或比较其他交叉学科的形成路径。",
+        "context_outlook": "天体粒子物理的形成并非一蹴而就，而是建立在战后宇宙线物理、相对论天体物理与粒子宇宙学三条历史轨迹的逐渐交织之上。既往研究往往侧重单一传统，本文则凸显了不同实验文化与科学共同体围绕“宇宙作为实验室”这一共同目标而重新组织高能研究的动态过程。这一重构催生了新的实验实践、国际合作与制度框架，使得天体粒子物理成为一个独立领域。展望未来，多信使天文学与下一代地下/空间实验将进一步推动方法论的整合，并深化对极端条件下基本物理的理解。该案例也为研究其他跨学科领域的涌现机制提供了富有启发性的分析框架。",
         "citations": []
       }
     },
@@ -1183,40 +1241,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10671",
-        "title_zh": "SN 2025aico：低质量包层暗弱IIb型超新星的早期观测",
+        "title_zh": "SN 2025aico：对一颗低质量包层的暗淡 IIb 型超新星的早期观测",
         "team": "",
-        "tldr": "利用早期多波段测光与光谱限制SN 2025aico前身星性质，发现其为具有极薄氢包层和弱镍混合的致密He星",
+        "tldr": "基于早期多波段测光与光谱观测，研究低光度 IIb 型超新星 SN 2025aico，约束其前身星为具有极薄氢包层的紧凑 He 星，并揭示弱 56Ni 混合特征。",
         "review": "",
-        "highlight": "该事件光度暗弱、包层质量极低（~0.01 M☉），处于cIIb与Ib的过渡区；早期颜色演化清晰显示镍混合程度弱，为限制爆炸参数提供了独特样本",
+        "highlight": "利用早期颜色演化和光球速度与模型对比，为弱 56Ni 混合提供观测证据；通过休克冷却模型与前身星模型，限制其为短周期双星中的低质量 He 星，弥合了紧凑型 IIb 与 Ib 型超新星之间的空隙。",
         "relation": "",
-        "authors_en": "J.-W. Zhao (South-Western Institute for Astronomy Research, Yunnan University), A. Pastorello (INAF - Osservatorio Astronomico di Padova), B. Kumar (South-Western Institute for Astronomy Research, Yunnan University) et al.",
+        "authors_en": "J.-W. Zhao (South-Western Institute for Astronomy Research, Yunnan University; Yunnan Key Laboratory of Survey Science, Yunnan University), A. Pastorello (INAF - Osservatorio Astronomico di Padova), B. Kumar (South-Western Institute for Astronomy Research, Yunnan University; Yunnan Key Laboratory of Survey Science, Yunnan University) et al.",
         "corresponding_en": "B. Kumar, Y.-Z. Cai, X.-W. Liu",
-        "context_outlook": "Type IIb超新星通常根据包层性质分为cIIb和eIIb [[Chevalier & Soderberg 2010]]，其中cIIb具有致密前身星和微弱激波冷却 [[Barmentloo+ 2024]]。SN 2025aico的早期光变曲线呈现短暂的激波冷却和较短的上升时间，符合cIIb特征，但其暗弱的光度暗示极低的氢包层质量（~0.01 M☉），接近Ib型。通过比较早期颜色演化与模型 [[Moriya+ 2020]]，发现其镍混合较弱，与[[Yoon+ 2019]]的预言一致，这对理解SE-SNe的光谱演化至关重要 [[Dessart+ 2015]]。未来随着GOTO等宽场巡天发现更多此类低光度事件，结合极早期光谱与偏振观测，将能够系统研究双星剥离通道的物理细节和爆炸的不对称性。",
+        "context_outlook": "SN IIb 是介于 II 型和 Ib 型之间的过渡类型，其前身星是经历显著包层剥离的大质量星。[[Chevalier and Soderberg 2010]] 根据包层性质将其分为紧凑型 (cIIb) 和延展型 (eIIb)。SN 2025aico 的光变与光谱特征与 cIIb 事件（如 SN 2022ngb [[Zhao+ 2026]]）相似，表明前身星为具有极薄氢包层的 He 星。光变拟合给出的低包层质量和小半径支持前身星在近距离双星中通过物质转移形成，与 [[Yoon+ 2017]] 的演化模型一致。未来利用 Mephisto 等多波段同时测光有望捕捉更早期的颜色信息，更精确地限制镍混合程度；结合 Einstein Probe 的 X 射线观测可探测休克突破信号，深化对低光度 IIb 型超新星的认识。",
         "citations": [
           {
-            "label": "Chevalier & Soderberg 2010",
-            "arxiv": "",
-            "doi": ""
+            "label": "Chevalier and Soderberg 2010",
+            "authors": "Chevalier",
+            "year": "2010",
+            "title": "Type IIb Supernovae with Compact and Extended Progenitors",
+            "ref": "R. A. Chevalier and A. M. Soderberg (2010)\nType IIb Supernovae with Compact and Extended Progenitors\n.\nApJ\n711\n(\n1\n),\npp. L40–L43\n.\nExternal Links:\nDocument\n,\n0911.3408\n,\nADS entry",
+            "arxiv": "0911.3408",
+            "doi": "10.1088/2041-8205/711/1/L40",
+            "bibcode": "2010ApJ...711L..40C",
+            "url": "https://arxiv.org/abs/0911.3408",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Barmentloo+ 2024",
-            "arxiv": "",
-            "doi": ""
+            "label": "Zhao+ 2026",
+            "authors": "Zhao",
+            "year": "2026",
+            "title": "SN 2022ngb: a faint, slowly evolving type iib supernova with a low-mass envelope",
+            "ref": "Zhao, J.-W., Benetti, S., Cai, Y.-Z., Pastorello, A., Elias-Rosa, N., Reguitti, A., Valerin, G., Wang, Z.-Y., Cappellaro, E., Feng, G.-F., Fiore, A., Fitzpatrick, B., Fraser, M., Isern, J., Kankare, E., Kravtsov, T., Kumar, B., Lundqvist, P., Matilainen, K., Mattila, S., Mazzali, P. A., Moran, S., Ochner, P., Peng, Z.-H., Reynolds, T. M., Salmaso, I., Srivastav, S., Stritzinger, M. D., Taubenberger, S., Tomasella, L., Vinkó, J., Wheeler, J. C., Williams, S., Pei, S.-P., Yang, Y.-J., Liu, X.-K., Liu, X.-W., and Yang, Y.-P. (2026)\nSN 2022ngb: a faint, slowly evolving type iib supernova with a low-mass envelope\n.\nA&A\n706\n,\npp. A271\n.\nExternal Links:\nDocument\n,\nLink",
+            "arxiv": "2512.09384",
+            "doi": "10.1051/0004-6361/202557619",
+            "bibcode": "2026A&A...706A.271Z",
+            "url": "https://arxiv.org/abs/2512.09384",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Moriya+ 2020",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Yoon+ 2019",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Dessart+ 2015",
-            "arxiv": "",
-            "doi": ""
+            "label": "Yoon+ 2017",
+            "authors": "Yoon",
+            "year": "2017",
+            "title": "Type Ib and IIb Supernova Progenitors in Interacting Binary Systems",
+            "ref": "S. Yoon, L. Dessart, and A. Clocchiatti (2017)\nType Ib and IIb Supernova Progenitors in Interacting Binary Systems\n.\nApJ\n840\n(\n1\n),\npp. 10\n.\nExternal Links:\nDocument\n,\n1701.02089\n,\nADS entry",
+            "arxiv": "1701.02089",
+            "doi": "10.3847/1538-4357/aa6afe",
+            "bibcode": "2017ApJ...840...10Y",
+            "url": "https://arxiv.org/abs/1701.02089",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1376,40 +1448,54 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10568",
-        "title_zh": "倾斜 Be/X 射线双星中星风对吸积的抑制作用",
+        "title_zh": "错位 Be/X 射线双星中星风对吸积的抑制",
         "team": "",
-        "tldr": "研究倾斜轨道下 Be 星星风冲压消融吸积盘并抑制吸积的机制，给出临界吸积率条件并应用于 13 个系统。",
+        "tldr": "本文解析比较星风冲压与吸积流压力，提出星风消融机制可在长自旋周期系统中抑制吸积并触发宁静态。",
         "review": "",
-        "highlight": "首次系统提出星风消融作为螺旋桨机制之外的第二种吸积抑制途径，尤其适用于长自旋周期、宽轨道的 BeXRB。",
+        "highlight": "首次系统对比风压与吸积盘气压，给出临界吸积率；发现 ADAF 比标准盘更易被星风吹散，为宽轨道 BeXRB 的宁静态提供互补于螺旋桨机制的新解释。",
         "relation": "",
-        "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University)",
+        "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University, Sapporo 062-0911, Japan)",
         "corresponding_en": "Atsuo T. Okazaki",
-        "context_outlook": "经典螺旋桨机制（[[Illarionov & Sunyaev 1975]]；[[Stella et al. 1986]]）虽能解释短周期 BeXRB 的态跃迁，但对长自旋系统的猝灭态缺乏解释力。本文在倾斜盘假设下提出星风冲压可消融外吸积盘，与 [[Shakura & Sunyaev 1973]] 标准盘或 [[Narayan & Yi 1994]] ADAF 的临界吸积率标度关系表明，该机制对宽轨道、慢自旋系统尤其有效。未来可结合 [[Björklund et al. 2023]] 等最新星风模型及三维数值模拟，厘清星风消融与螺旋桨机制的协同作用，并检验不同轨道位相下的吸积盘演化。",
+        "context_outlook": "在 Be/X 射线双星中，爆发态与宁静态的转变通常由螺旋桨机制解释（[[Illarionov+ 1975]]）。该机制在短自旋周期系统中可有效抑制吸积（[[Stella+ 1986]]），但对长周期系统抑制能力不足（[[Okazaki 2026]]）。本文提出，对于轨道与 Be 星自转轴错位的系统，星风可凭借巨大冲压直接吹散吸积流，成为另一种抑制机制。分析表明风驱消融对热的低密度 ADAF 流尤为有效，可补充螺旋桨机制在长周期系统中的作用。未来需通过流体力学模拟检验多轨道周期的累积消融效应及吸积盘再形成过程。",
         "citations": [
           {
-            "label": "Illarionov & Sunyaev 1975",
+            "label": "Illarionov+ 1975",
+            "authors": "Illarionov",
+            "year": "1975",
+            "title": "",
+            "ref": "Illarionov, A. F., & Sunyaev, R. A. 1975, A&A, 39, 185",
             "arxiv": "",
-            "doi": ""
+            "doi": "",
+            "bibcode": "1975A&A....39..185I",
+            "url": "https://ui.adsabs.harvard.edu/abs/1975A&A....39..185I",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Stella et al. 1986",
+            "label": "Stella+ 1986",
+            "authors": "Stella",
+            "year": "1986",
+            "title": "",
+            "ref": "Stella, L., White, N. E., & Rosner, R. 1986, ApJ, 308, 669, doi: 10.1086/164538",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/164538",
+            "bibcode": "1986ApJ...308..669S",
+            "url": "https://doi.org/10.1086/164538",
+            "source": "ads",
+            "verified": true
           },
           {
-            "label": "Shakura & Sunyaev 1973",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Narayan & Yi 1994",
-            "arxiv": "",
-            "doi": ""
-          },
-          {
-            "label": "Björklund et al. 2023",
-            "arxiv": "",
-            "doi": ""
+            "label": "Okazaki 2026",
+            "authors": "Okazaki",
+            "year": "2026",
+            "title": "",
+            "ref": "Okazaki, A. 2026, in 87th Fujihara Seminar: The 50th Anniversary Workshop of the Disk Instability Model in Compact Binary Stars, 24",
+            "arxiv": "2607.10568",
+            "doi": "10.48550/arXiv.2607.10568",
+            "bibcode": "2026arXiv260710568O",
+            "url": "https://arxiv.org/abs/2607.10568",
+            "source": "ads",
+            "verified": true
           }
         ]
       }
@@ -1444,20 +1530,80 @@
       },
       "summary": {
         "paper_id": "arxiv:2607.10579",
-        "title_zh": "洛希瓣溢出高能X射线双星中星风驱动的角动量移除与X射线电离效应",
+        "title_zh": "罗希瓣溢流高能X射线双星中风驱动的角动量移除与X射线电离效应",
         "team": "",
-        "tldr": "利用三维SPH模拟研究星风与RLO流动力学相互作用，发现星风移除逆行角动量缩小吸积盘，中等X射线电离更显著破坏盘形成。",
+        "tldr": "利用三维SPH模拟研究RLO HMXBs中星风与RLO流的动力学相互作用，揭示中等X射线电离使吸积流从RLO主导向风主导转变并产生流分岔。",
         "review": "",
-        "highlight": "首次揭示星风逆行动力学作用，中等电离（Lx=10^37 erg/s）比高/无电离更有效抑制吸积盘，提供吸积流模态转换新机制。",
+        "highlight": "首次揭示X射线电离对RLO吸积流的非单调效应：中等电离（Lx=10^37 erg/s）比弱、强电离更具破坏性，导致盘被抑制；发现星风移除角动量使盘缩小，并描述RLO流的动力学分岔，为吸积模式转变提供了新机制。",
         "relation": "",
-        "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University), Stanley P. Owocki (Department of Physics & Astronomy, University of Delaware)",
+        "authors_en": "Atsuo T. Okazaki (Faculty of Engineering, Hokkai-Gakuen University, Sapporo 062-0911, Japan), Stanley P. Owocki (Department of Physics & Astronomy, University of Delaware, Newark, DE 19716, USA)",
         "corresponding_en": "Atsuo T. Okazaki",
-        "context_outlook": "传统的HMXB研究或关注纯星风供食过程（如[[Blondin+ 1990]]），或聚焦RLO盘形成，但星风与RLO流在角动量传输上的直接耦合长期被忽略。本文通过三维SPH模拟发现，星风能向吸积流注入逆行角动量，显著缩小吸积盘；而中等X射线电离使星风密度增大并扰动RLO流，导致盘形成被强烈抑制。这一非线性电离效应为理解RLO HMXBs的可变吸积模态提供了新机制。未来需结合更真实的辐射转移、星风加速计算及参数空间扫描，以预测不同状态下盘的形成与演化。",
+        "context_outlook": "以往对RLO HMXBs的研究多忽略星风的动力学作用，而星风与吸积盘的相互作用在风吸积系统（[[Blondin+ 1990]]）和Be星盘（[[Kee+ 2016]]）中已有讨论。X射线电离对星风的影响早期由[[Hatchett & McCray 1977]]和[[Stevens & Kallman 1990]]提出，但缺乏在RLO背景下的研究。本工作通过三维SPH模拟揭示了中等电离导致的风致角动量移除和RLO流分岔，为理解Cen X-3等系统的观测变异性（如[[Mochizuki+ 2024]]）提供了新视角。未来需要更长时标、自洽X射线反馈的模拟，并结合辐射转移计算以建立与观测的直接联系。",
         "citations": [
           {
             "label": "Blondin+ 1990",
+            "authors": "Blondin",
+            "year": "1990",
+            "title": "",
+            "ref": "Blondin et al. (1990) Blondin, J. M., Kallman, T. R., Fryxell, B. A., & Taam, R. E. 1990, ApJ, 356, 591",
             "arxiv": "",
-            "doi": ""
+            "doi": "10.1086/168865",
+            "bibcode": "1990ApJ...356..591B",
+            "url": "https://doi.org/10.1086/168865",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Kee+ 2016",
+            "authors": "Kee",
+            "year": "2016",
+            "title": "",
+            "ref": "Kee et al. (2016) Kee, N. D., Owocki, S., & Sundqvist, J. O. 2016, MNRAS, 458, 2323",
+            "arxiv": "1602.07874",
+            "doi": "10.1093/mnras/stw471",
+            "bibcode": "2016MNRAS.458.2323K",
+            "url": "https://arxiv.org/abs/1602.07874",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Hatchett & McCray 1977",
+            "authors": "Hatchett",
+            "year": "1977",
+            "title": "",
+            "ref": "Hatchett & McCray (1977) Hatchett, S., & McCray, R. 1977, ApJ, 211, 552",
+            "arxiv": "",
+            "doi": "10.1086/154962",
+            "bibcode": "1977ApJ...211..552H",
+            "url": "https://doi.org/10.1086/154962",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Stevens & Kallman 1990",
+            "authors": "Stevens",
+            "year": "1990",
+            "title": "",
+            "ref": "Stevens & Kallman (1990) Stevens, I. R., & Kallman, T. R. 1990, ApJ, 365, 321",
+            "arxiv": "",
+            "doi": "10.1086/169486",
+            "bibcode": "1990ApJ...365..321S",
+            "url": "https://doi.org/10.1086/169486",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mochizuki+ 2024",
+            "authors": "Mochizuki",
+            "year": "2024",
+            "title": "",
+            "ref": "Mochizuki et al. (2024) Mochizuki, Y., Tsujimoto, M., Kelley, R. L., et al. 2024, ApJ, 977, L21",
+            "arxiv": "2411.12978",
+            "doi": "10.3847/2041-8213/ad946d",
+            "bibcode": "2024ApJ...977L..21M",
+            "url": "https://arxiv.org/abs/2411.12978",
+            "source": "ads",
+            "verified": true
           }
         ]
       }

@@ -82,18 +82,25 @@ _CITE_RE = re.compile(r"\[\[(.+?)\]\]")
 
 
 def _cite_href(label: str, cmap: dict) -> str:
-    """Resolve a citation label to a link. Prefer an arXiv id / DOI *only* when the
-    model grounded one from the paper text; otherwise fall back to an ADS search of
-    the label so a chip never points at a wrongly-guessed specific paper."""
+    """Resolve a citation label to a link. Prefer the verified `url` the resolver
+    attached (ADS bibcode / arXiv / DOI); otherwise fall back to an ADS search of the
+    reference string (or label) so a chip lands on the right paper rather than a
+    wrongly-guessed specific one."""
     c = cmap.get(label)
     if c:
+        url = (c.get("url") or "").strip()
+        if url:
+            return url
         aid = (c.get("arxiv") or "").replace("arXiv:", "").replace("arxiv:", "").strip()
         if aid:
             return f"https://arxiv.org/abs/{aid}"
         doi = (c.get("doi") or "").strip()
         if doi:
             return "https://doi.org/" + doi
-    return "https://ui.adsabs.harvard.edu/search/q=" + quote(label)
+        query = (c.get("ref") or "").strip() or label
+    else:
+        query = label
+    return "https://ui.adsabs.harvard.edu/search/q=" + quote(query)
 
 
 def render_outlook(summary) -> Markup:

@@ -1,14 +1,13 @@
-"""Backfill the redesigned per-paper summary (亮点 + 脉络与展望 + citations) onto
-already-stored core/related papers by re-running `summarize_paper` (which reads full
-text) with the current prompt.
+"""Backfill the redesigned per-paper summary (亮点 + 脉络与展望 + resolved citations)
+onto already-stored core/related papers by re-running `summarize_paper` (now reading
+the WHOLE paper, not a truncated head) and `resolve_summary` (ADS/Crossref links).
 
-One-time migration for data summarized before `context_outlook`/`citations` existed;
-normal `sync` produces them inline going forward. Idempotent (skips summaries that
-already have `context_outlook`). Concurrent. Leaves edge items and `revisions`
-untouched.
+One-time migration: re-runs every core/related paper because earlier summaries were
+based on a truncated head of the text and used an older citation schema. Concurrent.
+Leaves edge items and `revisions` untouched.
 
 Usage:
-    OPENCODE_API_KEY=... python scripts/backfill_outlook.py
+    OPENCODE_API_KEY=... ADS_API_TOKEN=... python scripts/backfill_outlook.py
 """
 import sys
 from pathlib import Path
@@ -19,12 +18,15 @@ from gdr.llm import OpenCodeLLM
 from gdr.store import Store
 from gdr.fulltext import fetch_fulltext
 from gdr.summarize import summarize_paper
+from gdr.citations import resolve_summary
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
 def _redo(paper, llm):
-    return summarize_paper(paper, fetch_fulltext(paper), llm)
+    summary = summarize_paper(paper, fetch_fulltext(paper), llm)
+    resolve_summary(summary, ads_token=config.get_ads_token(), mailto=config.CROSSREF_MAILTO)
+    return summary
 
 
 def main():
@@ -35,8 +37,7 @@ def main():
         day = store.load_day(date)
         todo = [it for it in day.items
                 if it["score"].layer in ("core", "related")
-                and it["summary"] is not None
-                and not it["summary"].context_outlook]
+                and it["summary"] is not None]
         if not todo:
             continue
         with ThreadPoolExecutor(max_workers=config.MAX_CONCURRENCY) as pool:

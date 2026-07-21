@@ -26,6 +26,7 @@ jobs:
       - name: Run daily pipeline
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
         run: python scripts/run_daily.py
       - name: Commit data
         run: |

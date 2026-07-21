@@ -180,8 +180,11 @@ def test_render_context_outlook_citation_chips(tmp_path):
               categories=["astro-ph.HE"], published="2026-07-16", url="https://arxiv.org/abs/1")
     summ = PaperSummary("arxiv:1", "中文", "", "", "", "亮点在此", "",
                         context_outlook="承接 [[DeLaunay+ 2022]] 与 [[Wijnands+ 2013]]，展望多信使。",
-                        citations=[{"label": "DeLaunay+ 2022", "arxiv": "2205.01346", "doi": ""},
-                                   {"label": "Wijnands+ 2013", "arxiv": "", "doi": ""}])
+                        citations=[  # resolved: DeLaunay has a verified ADS/arXiv url; Wijnands unresolved
+                            {"label": "DeLaunay+ 2022", "url": "https://arxiv.org/abs/2205.01346",
+                             "source": "ads", "verified": True, "ref": "DeLaunay et al. 2022"},
+                            {"label": "Wijnands+ 2013", "url": "", "source": "", "verified": False,
+                             "ref": "Wijnands et al. 2013 MNRAS 432 2366"}])
     day = DayData("2026-07-16", DailyReview("2026-07-16", "o", "", ""),
                   items=[{"paper": p, "score": RelevanceScore(90, [], "core", ""), "summary": summ}])
     st.save_day(day)
@@ -191,8 +194,9 @@ def test_render_context_outlook_citation_chips(tmp_path):
     # inline [[markers]] become linked chips, not raw brackets
     assert "[[" not in page and "]]" not in page
     assert 'class="cite"' in page
-    assert 'href="https://arxiv.org/abs/2205.01346"' in page       # grounded arXiv id -> direct link
-    assert "ui.adsabs.harvard.edu/search" in page                   # ungrounded -> ADS search fallback
+    assert 'href="https://arxiv.org/abs/2205.01346"' in page       # resolved -> direct link
+    # unresolved -> ADS search of the reference string (not a guessed specific paper)
+    assert "ui.adsabs.harvard.edu/search/q=Wijnands" in page
     assert ">DeLaunay+ 2022</a>" in page and ">Wijnands+ 2013</a>" in page
 
 
