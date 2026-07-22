@@ -30,4 +30,4 @@ pytest -q
 
 见 `docs/superpowers/specs/2026-07-18-gecam-daily-review-design.md`。数据 JSON 提交进 `data/`；渲染 HTML 作为 Pages 构件部署，不进 git。
 
-数据源通过统一适配器合并。ADS 默认查询正式期刊论文，并用主题词和重点天文期刊做宽召回；可通过 `GDR_ADS_QUERY` 覆盖查询表达式。
+数据源通过统一适配器合并。ADS 默认跨期刊查询命中高能暂现源与多信使主题的正式论文；可通过 `GDR_ADS_QUERY` 覆盖查询表达式。

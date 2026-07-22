@@ -27,4 +27,5 @@ def test_sync_constants_present():
     assert config.ARXIV_PAGE_SIZE >= 1
     assert config.ADS_PAGE_SIZE >= 1
     assert "property:refereed" in config.ADS_INGEST_QUERY
+    assert "bibstem:" not in config.ADS_INGEST_QUERY  # never ingest whole journal issues
     assert config.MAX_CONCURRENCY >= 1

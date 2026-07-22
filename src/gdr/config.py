@@ -6,7 +6,9 @@ ARXIV_CATEGORIES = ["astro-ph.HE", "gr-qc", "astro-ph.SR", "astro-ph.CO"]
 
 # ADS is the published-journal complement to arXiv. `entdate` is added by
 # ADSSource at request time; this base query stays configurable so a deployment
-# can widen or narrow its journal/subject coverage without a code change.
+# can widen or narrow its subject coverage without a code change. Requiring a
+# topic match is intentional: selecting whole journals made the first ADS run
+# ingest hundreds of unrelated papers from batch-indexed issues.
 _ADS_TOPICS = (
     'abs:("gamma-ray burst" OR GRB OR magnetar OR "soft gamma repeater" OR '
     '"fast radio burst" OR FRB OR "gravitational wave" OR kilonova OR '
@@ -16,10 +18,9 @@ _ADS_TOPICS = (
     '"X-ray binary" OR GECAM OR "Insight-HXMT" OR SVOM OR "Einstein Probe" OR '
     '"Fermi GBM" OR Swift OR NICER)'
 )
-_ADS_JOURNALS = "bibstem:(ApJ OR ApJL OR ApJS OR A&A OR MNRAS OR NatAs OR RAA)"
 ADS_INGEST_QUERY = os.environ.get(
     "GDR_ADS_QUERY",
-    f"database:astronomy property:refereed doctype:article ({_ADS_TOPICS} OR {_ADS_JOURNALS})",
+    f"database:astronomy property:refereed doctype:article {_ADS_TOPICS}",
 )
 
 # Model tiers. Defaults are display-name-derived; confirm exact ids via scripts/list_models.py.
