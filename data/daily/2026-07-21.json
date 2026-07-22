@@ -2,9 +2,35 @@
   "date": "2026-07-21",
   "review": {
     "date": "2026-07-21",
-    "overview": "今日收录 16 篇。",
-    "highlights": "（综述生成失败）",
-    "trends": "—"
+    "overview": "该研究首次对过渡毫秒脉冲星的盘-磁层相互作用进行广义相对论磁流体力学模拟，并后处理含热同步辐射、逆康普顿散射的辐射转移，成功用星风加热盘再现了高/低X射线模式的光谱差异。这是tMSP模式切换物理机制长期未解问题上的突破性模拟进展，直接服务于团队X射线双星与吸积致密天体方向的核心科学目标。",
+    "highlights": "1. 短伽马暴磁星Bp–P0标度关系首次建立，斜率与长暴一致：基于33个Swift短暴样本首次推导磁星磁场-周期标度关系，斜率∼0.84与长暴高度吻合，证实磁星自旋平衡机制普适性；同时发现短暴磁星磁场更强、对应吸积率高约一个量级，为区分两类暴前身星通道提供关键定量依据。\n2. 完全自洽新星模型首次同时复现V1723 Sco光学与软X射线光变：首次将完全自洽新星爆发模型应用于极快新星V1723 Sco，成功同时拟合光学和软X射线光变曲线，证实GeV伽马射线与光学极大处激波形成同期，并揭示激波壳层光学薄，为非超亮新星的激波物理提供了观测约束。\n3. Be/X射线双星多波段变率与吸积动力学系统综述：系统整合光学与X射线观测数据，从秒到年时标梳理Be/X射线双星暂现爆发与星周盘状态的关联，为吸积物理提供统一现象学框架，对团队X射线双星研究具有参考价值。",
+    "trends": "1. tMSP星风加热盘模型的X射线模式光谱预测需与后续X射线多波段观测（如NICER/XMM）对比验证\n2. 短暴磁星Bp–P0标度关系截距高于长暴的结论依赖33个Swift短暴样本，需更多短暴事件尤其是有延展辐射的样本扩充统计\n3. V1723 Sco激波壳层光学薄结论可由未来Fermi-LAT对极快新星GeV辐射的系统性监测进一步检验",
+    "headline_level": "headline",
+    "headline": "GRMHD+辐射转移首次揭示过渡毫秒脉冲星X射线模式切换的星风加热机制",
+    "headline_paper_id": "arxiv:2607.19113",
+    "headline_reason": "该研究首次对过渡毫秒脉冲星的盘-磁层相互作用进行广义相对论磁流体力学模拟，并后处理含热同步辐射、逆康普顿散射的辐射转移，成功用星风加热盘再现了高/低X射线模式的光谱差异。这是tMSP模式切换物理机制长期未解问题上的突破性模拟进展，直接服务于团队X射线双星与吸积致密天体方向的核心科学目标。",
+    "developments": [
+      {
+        "paper_id": "arxiv:2607.18698",
+        "title": "短伽马暴磁星Bp–P0标度关系首次建立，斜率与长暴一致",
+        "reason": "基于33个Swift短暴样本首次推导磁星磁场-周期标度关系，斜率∼0.84与长暴高度吻合，证实磁星自旋平衡机制普适性；同时发现短暴磁星磁场更强、对应吸积率高约一个量级，为区分两类暴前身星通道提供关键定量依据。"
+      },
+      {
+        "paper_id": "arxiv:2607.18595",
+        "title": "完全自洽新星模型首次同时复现V1723 Sco光学与软X射线光变",
+        "reason": "首次将完全自洽新星爆发模型应用于极快新星V1723 Sco，成功同时拟合光学和软X射线光变曲线，证实GeV伽马射线与光学极大处激波形成同期，并揭示激波壳层光学薄，为非超亮新星的激波物理提供了观测约束。"
+      },
+      {
+        "paper_id": "arxiv:2607.18980",
+        "title": "Be/X射线双星多波段变率与吸积动力学系统综述",
+        "reason": "系统整合光学与X射线观测数据，从秒到年时标梳理Be/X射线双星暂现爆发与星周盘状态的关联，为吸积物理提供统一现象学框架，对团队X射线双星研究具有参考价值。"
+      }
+    ],
+    "watchlist": [
+      "tMSP星风加热盘模型的X射线模式光谱预测需与后续X射线多波段观测（如NICER/XMM）对比验证",
+      "短暴磁星Bp–P0标度关系截距高于长暴的结论依赖33个Swift短暴样本，需更多短暴事件尤其是有延展辐射的样本扩充统计",
+      "V1723 Sco激波壳层光学薄结论可由未来Fermi-LAT对极快新星GeV辐射的系统性监测进一步检验"
+    ]
   },
   "items": [
     {
@@ -31,12 +57,12 @@
       },
       "score": {
         "score": 5,
-        "tags": [
-          "广义相对论",
-          "正质量定理"
-        ],
+        "tags": [],
         "layer": "edge",
-        "reason": "论文涉及广义相对论中的正质量定理，与高能暂现天体物理无关。"
+        "reason": "纯广义相对论数学结果，与高能暂现源研究无关。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论渐近平直初始数据和dominant energy condition下的正质量定理，未涉及任何天文暂现源或观测任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19320",
@@ -75,13 +101,13 @@
         }
       },
       "score": {
-        "score": 20,
-        "tags": [
-          "引力波",
-          "多信使触发与联合"
-        ],
+        "score": 10,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文讨论引力波探测器散射光噪声，属于探测器技术，与团队关注的多信使联合观测间接相关，但非核心科学目标。"
+        "reason": "论文主题与高能暂现源团队的科学目标和任务能力无直接或间接关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要只讨论引力波探测器（LIGO, CE, ET）的散射光噪声估计，未涉及任何高能暂现源、电磁对应体或多信使联合观测。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19299",
@@ -267,12 +293,12 @@
       },
       "score": {
         "score": 10,
-        "tags": [
-          "恒星形成",
-          "宇宙学"
-        ],
+        "tags": [],
         "layer": "edge",
-        "reason": "论文利用Euclid和Planck数据研究恒星形成历史，与团队的高能暂现源研究范围几乎无直接关联。"
+        "reason": "论文研究内容与高能暂现源及团队目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均未提及任何高能暂现源、团队任务（如GECAM、HXMT、SVOM等）或相关现象，主要讨论Euclid任务与Planck CIB互相关推断恒星形成历史，分类为astro-ph.CO。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19290",
@@ -323,15 +349,15 @@
         }
       },
       "score": {
-        "score": 35,
+        "score": 50,
         "tags": [
-          "数值模拟",
-          "GPU加速",
-          "自适应网格细化",
-          "高能暂现源相关方法"
+          "太阳耀斑"
         ],
-        "layer": "edge",
-        "reason": "介绍GPU加速的AMR框架AGILE，可应用于高能暂现源数值模拟，但不直接研究具体高能暂现源，属于边缘相关。"
+        "layer": "related",
+        "reason": "论文介绍通用GPU AMR框架，可用于太阳耀斑等高能暂现的数值模拟，属于可迁移方法，间接服务团队科学关注",
+        "relation": "enabling",
+        "core_path": "",
+        "evidence": "摘要明确提及应用于太阳物理应用，提供了一种GPU加速的AMR框架，可用于模拟包括太阳耀斑在内的高能天体物理过程"
       },
       "summary": {
         "paper_id": "arxiv:2607.19277",
@@ -370,14 +396,13 @@
         }
       },
       "score": {
-        "score": 35,
-        "tags": [
-          "引力波",
-          "脉冲星计时阵列",
-          "天空映射"
-        ],
+        "score": 10,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究脉冲星计时阵列的引力波天空映射，属于低频引力波领域，与团队关注的高能暂现源无直接关联，但属于astro-ph.HE范畴内的边缘主题。"
+        "reason": "论文主题为纳赫兹引力波探测方法，与高能暂现源及团队科学目标无直接联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要主要讨论脉冲星计时阵列的引力波天空映射和角分辨率极限，未涉及高能暂现源或团队任务目标"
       },
       "summary": {
         "paper_id": "arxiv:2607.19329",
@@ -418,14 +443,13 @@
         }
       },
       "score": {
-        "score": 20,
-        "tags": [
-          "暗物质",
-          "宇宙学",
-          "边缘主题"
-        ],
+        "score": 10,
+        "tags": [],
         "layer": "edge",
-        "reason": "研究衰变暗物质对晕质量函数的影响，属于暗物质宇宙学，与团队高能暂现源核心研究范围相关性较低，但属于边缘主题中的暗物质范畴。"
+        "reason": "该论文属于理论宇宙学，与高能暂现源研究团队的科学关注无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均讨论衰减暗物质宇宙学中的晕质量函数，未提及任何高能暂现源、观测或相关任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19244",
@@ -464,11 +488,12 @@
       },
       "score": {
         "score": 20,
-        "tags": [
-          "太阳耀斑"
-        ],
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究日冕加热机制，涉及纳米耀斑等暂现过程，但与团队核心高能暂现源目标直接关联弱，仅间接相关于太阳耀斑主题。"
+        "reason": "论文主题为太阳日冕加热的模拟研究，不属于团队关注的高能暂现现象",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要讨论太阳日冕加热的物理过程，不涉及高能暂现现象、爆发或耀斑"
       },
       "summary": {
         "paper_id": "arxiv:2607.19225",
@@ -513,14 +538,15 @@
         }
       },
       "score": {
-        "score": 30,
+        "score": 20,
         "tags": [
-          "致密星",
-          "状态方程",
-          "超子"
+          "X射线双星与吸积致密天体"
         ],
         "layer": "edge",
-        "reason": "研究中子星内部超子出现及状态方程，属于致密星理论，与团队暂现源观测主题关联较弱。"
+        "reason": "论文关注中子星内部结构，属于理论物理，与高能暂现团队目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论夸克星、超子星及状态方程，未涉及任何暂现现象。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19220",
@@ -563,14 +589,13 @@
         }
       },
       "score": {
-        "score": 0,
-        "tags": [
-          "BHB星",
-          "LAMOST",
-          "恒星大气参数"
-        ],
+        "score": 5,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究蓝水平分支星的大气参数，属于恒星天体物理，与高能暂现源科学范围无关。"
+        "reason": "论文研究内容为恒星大气参数测定，与高能暂现源研究团队的科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要仅讨论BHB星的大气参数测定和银河晕结构，未涉及任何高能暂现源或团队关注的任务与现象。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19175",
@@ -608,10 +633,15 @@
         }
       },
       "score": {
-        "score": 0,
-        "tags": [],
+        "score": 10,
+        "tags": [
+          "太阳耀斑"
+        ],
         "layer": "edge",
-        "reason": "论文研究太阳大气水平速度场重建，属于太阳物理方法验证，与团队高能暂现源科学范围无关"
+        "reason": "论文主题是太阳大气动力学方法，与团队关注的太阳耀斑等高能暂现现象无直接联系，属于边缘关注",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均聚焦于太阳大气水平速度场重建方法验证，未提及任何高能暂现、耀斑爆发或团队相关任务"
       },
       "summary": {
         "paper_id": "arxiv:2607.19169",
@@ -652,14 +682,15 @@
         }
       },
       "score": {
-        "score": 65,
+        "score": 40,
         "tags": [
-          "超新星",
-          "白矮星吸积",
-          "双星演化"
+          "高能暂现天体"
         ],
         "layer": "related",
-        "reason": "研究超新星前身双星系统，属于高能暂现源相关主题（超新星激波范畴），但非团队核心目标。"
+        "reason": "论文通过双星演化模型预测超新星前身星可能性，但未涉及高能暂现观测或团队任务方法，属于背景研究",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题'Will a Supernova explode in CD-30°11223?'直接联系超新星，摘要结论'cannot be regarded as the potential progenitor of Supernova Ia'表明该研究属于超新星前身星理论"
       },
       "summary": {
         "paper_id": "arxiv:2607.19222",
@@ -753,14 +784,15 @@
         }
       },
       "score": {
-        "score": 55,
+        "score": 60,
         "tags": [
-          "引力波",
-          "奇异星",
-          "致密天体"
+          "引力波电磁对应体"
         ],
         "layer": "related",
-        "reason": "论文围绕GW170817后引力波回波约束奇异星质量，与团队多信使引力波科学相关，但偏重理论修正引力，非核心高能暂现现象。"
+        "reason": "论文主题为修改引力下的奇怪星质量上限，利用引力波回波作为探针，与引力波暂现源相关，但未涉及电磁波或团队任务，故为相关层级",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中提及GW170817和引力波回波，研究奇怪星最大质量，与团队关注的致密天体及引力波事件相关"
       },
       "summary": {
         "paper_id": "arxiv:2607.19298",
@@ -2716,10 +2748,14 @@
       "score": {
         "score": 40,
         "tags": [
-          "多信使触发与联合"
+          "多信使触发与联合",
+          "由暂现源样本驱动的总体统计、宇宙学与基础物理应用"
         ],
         "layer": "related",
-        "reason": "基于LIGO/Virgo/KAGRA引力波数据进行广义相对论检验，与团队关注的多信使引力波事件部分相关，但未涉及电磁对应体，关联性中等。"
+        "reason": "论文对引力波信号进行广义相对论检验，属于基础物理应用，与团队的多信使引力波方向有间接联系，但不直接服务于高能暂现研究目标。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中明确提到使用LIGO-Virgo-KAGRA引力波数据对广义相对论进行检验（tests of general relativity using observed binary signals in GWTC-5.0），属于基础物理应用，与团队多信使引力波方向相关，但未涉及高能暂现或电磁对应体。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19293",
@@ -2756,14 +2792,16 @@
         }
       },
       "score": {
-        "score": 50,
+        "score": 65,
         "tags": [
-          "引力波",
-          "探测器校准",
-          "多信使"
+          "多信使触发与联合",
+          "引力波电磁对应体"
         ],
         "layer": "related",
-        "reason": "论文介绍AdvancedVirgo+探测器校准与应变重建，对引力波多信使天文学有支撑作用，与团队关注的引力波电磁对应体后随观测相关。"
+        "reason": "论文主要贡献为引力波探测器校准与应变重建方法，工具性地服务于引力波瞬态探测，与团队的引力波多信使科学目标使能相关。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "摘要提及AdvancedVirgo+探测器参与O4运行，探测到约173个双致密天体并合瞬态引力波源，并通过校准重建应变数据用以分析。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19273",
@@ -2840,10 +2878,13 @@
         }
       },
       "score": {
-        "score": 0,
+        "score": 5,
         "tags": [],
         "layer": "edge",
-        "reason": "论文为纯理论广义相对论解，涉及虫洞与黑洞，与高能暂现源观测无关。"
+        "reason": "论文主题为理论引力解，与高能暂现源研究团队的科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要描述的是虫洞与黑洞的真空爱因斯坦方程解，未涉及任何高能暂现天体或任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19145",
@@ -2882,12 +2923,12 @@
       },
       "score": {
         "score": 10,
-        "tags": [
-          "暗物质",
-          "黑洞阴影"
-        ],
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究黑洞阴影受暗物质和等离子体影响，属于理论黑洞成像，与团队核心高能暂现源研究无直接关联，仅与边缘暗物质主题有微弱联系。"
+        "reason": "论文主要关注黑洞阴影的等离子体效应，而非团队核心的高能暂现现象，属于边缘兴趣",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要研究旋转巴丁黑洞在等离子体和暗物质中的阴影修改，属于理论黑洞光学，与高能暂现源无直接关联"
       },
       "summary": {
         "paper_id": "arxiv:2607.19152",
@@ -2924,10 +2965,13 @@
         }
       },
       "score": {
-        "score": 5,
+        "score": 0,
         "tags": [],
         "layer": "edge",
-        "reason": "论文探讨量子引力中的等效原理检验，与团队关注的高能暂现源及天体物理观测无直接关联。"
+        "reason": "论文属于量子引力基础物理，与高能暂现源研究无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论量子时钟纠缠和广义相对论的量子原理，未涉及任何高能暂现天体或团队任务"
       },
       "summary": {
         "paper_id": "arxiv:2607.19141",
@@ -2969,10 +3013,13 @@
         }
       },
       "score": {
-        "score": 0,
+        "score": 10,
         "tags": [],
         "layer": "edge",
-        "reason": "论文关于冷白矮星碳污染大气的多波段光谱建模，属于恒星大气物理，与团队关注的高能暂现源核心主题无关。"
+        "reason": "主题不在团队关注的高能暂现源范围内",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要主要讨论冷白矮星的大气建模和多波长光谱，未涉及高能暂现源"
       },
       "summary": {
         "paper_id": "arxiv:2607.19002",
@@ -3013,15 +3060,15 @@
         }
       },
       "score": {
-        "score": 95,
+        "score": 90,
         "tags": [
-          "X射线双星与吸积致密天体",
-          "吸积毫秒脉冲星",
-          "中子星",
-          "高能暂现源"
+          "X射线双星与吸积致密天体"
         ],
         "layer": "core",
-        "reason": "论文研究过渡毫秒脉冲星的X射线辐射机制，涉及吸积致密天体和中子星吸积过程，属于团队核心主题。"
+        "reason": "论文基于数值模拟揭示tMSPs X射线模的物理机制，直接服务于X射线双星领域的前沿科学问题。",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "标题和摘要研究过渡毫秒脉冲星的X射线模起源，使用GRMHD＋辐射转移模拟，直接解释高低X射线模的光谱和自旋演化，属于中子星吸积与X射线双星核心科学问题。"
       },
       "summary": {
         "paper_id": "arxiv:2607.19113",
@@ -3058,13 +3105,13 @@
         }
       },
       "score": {
-        "score": 30,
-        "tags": [
-          "太阳活动",
-          "日冕物质抛射"
-        ],
+        "score": 20,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究太阳日冕物质抛射的预测，属于太阳物理领域，与团队关注的太阳耀斑等高能太阳活动相关，但非直接的高能暂现源研究。"
+        "reason": "论文专注于CME预测，与团队高能暂现核心目标无直接关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题提及日冕物质抛射(CME)与太阳磁场，摘要聚焦CME参数预测，未涉及高能暂现观测。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18971",
@@ -3104,13 +3151,13 @@
         }
       },
       "score": {
-        "score": 30,
-        "tags": [
-          "引力波",
-          "致密天体"
-        ],
+        "score": 20,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文主要研究奇异致密天体的引力波回波与吸积过程，与高能暂现源观察相关性较低，但涉及致密天体吸积和引力波，有一定边缘相关性。"
+        "reason": "论文主要研究致密天体吸积过程中的引力波特征，与团队高能暂现源研究目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要仅讨论引力波echo和ringdown，不涉及高能暂现源或电磁对应体。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18919",
@@ -3157,14 +3204,16 @@
         }
       },
       "score": {
-        "score": 95,
+        "score": 75,
         "tags": [
           "多信使触发与联合",
-          "IceCube",
-          "中微子源"
+          "宇宙学与基础物理应用"
         ],
-        "layer": "core",
-        "reason": "利用IceCube中微子数据联合电磁观测约束非弹性截面，属于团队核心的多信使联合研究领域。"
+        "layer": "related",
+        "reason": "论文利用多信使中微子源数据约束粒子物理截面，属于暂现源样本驱动的基础物理应用，但主要贡献在粒子物理而非暂现源本身，故归为相关",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "使用IceCube与TXS 0506+056、NGC 1068、银河系平面等关联的中微子数据，并通过电磁观测约束天体物理输入，提取非弹性pp和pγ截面的双边界限"
       },
       "summary": {
         "paper_id": "arxiv:2607.19254",
@@ -3270,14 +3319,13 @@
         }
       },
       "score": {
-        "score": 20,
-        "tags": [
-          "暗物质",
-          "黑洞吸积",
-          "理论天体物理"
-        ],
+        "score": 10,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究黑洞对复杂标量波包的吸积，属于暗物质理论，与高能暂现源无直接关联，列入边缘主题。"
+        "reason": "论文研究的是Schwarzschild黑洞对标量场波包的吸积，属于理论物理范畴，与高能暂现源无直接联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均未提及任何高能暂现源或团队相关任务，研究的是标量场波包吸积，属于暗物质/基础物理理论"
       },
       "summary": {
         "paper_id": "arxiv:2607.18920",
@@ -3321,10 +3369,13 @@
         }
       },
       "score": {
-        "score": 1,
+        "score": 0,
         "tags": [],
         "layer": "edge",
-        "reason": "论文研究δ Scuti型变星的星震学建模，属于恒星物理范畴，与高能暂现源研究团队关注的核心及相关主题均无关联。"
+        "reason": "论文主题为恒星脉动星震学，不在高能暂现源研究范围内",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要仅涉及δ Scuti星的星震学建模，与高能暂现源研究无关"
       },
       "summary": {
         "paper_id": "arxiv:2607.18889",
@@ -3365,14 +3416,13 @@
         }
       },
       "score": {
-        "score": 5,
-        "tags": [
-          "理论物理",
-          "引力",
-          "数学物理"
-        ],
+        "score": 10,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文研究广义Killing张量，属于引力理论和数学物理，与高能暂现天体物理科学范围无直接关联。"
+        "reason": "论文与高能暂现源研究及团队目标无实质联系，属于纯理论广义相对论与数学物理范畴。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题及摘要专注于高维旋转黑洞时空中的广义Killing张量数学性质，未涉及任何高能暂现源、观测任务或团队重点关注的天体现象。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18871",
@@ -3412,14 +3462,15 @@
         }
       },
       "score": {
-        "score": 75,
+        "score": 60,
         "tags": [
-          "新星",
-          "暂现源",
-          "光学光谱"
+          "高能暂现天体"
         ],
-        "layer": "core",
-        "reason": "研究新星V1405 Cas的光谱和时变演化，属于高能暂现源相关主题中的新星/超新星激波范畴。"
+        "layer": "related",
+        "reason": "新星是团队关注的高能暂现天体类型之一，但论文完全基于光学观测与建模，未使用高能数据或团队任务，与核心高能目标关联较弱",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题为Optical Spectroscopy and Temporal Evolution of the Nova V1405 Cas，摘要明确研究新星V1405 Cas的光度光变和光谱演化，并使用Cloudy进行光致电离建模；新星属于高能暂现天体中的新星/超新星激波范畴"
       },
       "summary": {
         "paper_id": "arxiv:2607.19138",
@@ -3512,10 +3563,13 @@
         }
       },
       "score": {
-        "score": 0,
+        "score": 5,
         "tags": [],
         "layer": "edge",
-        "reason": "论文属于引力理论模型，与高能暂现源观测和物理无直接关联。"
+        "reason": "纯理论黑洞内部模型，与高能暂现源、多信使、吸积暂现等团队核心目标无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论frozen star（冻结星）模型，这是一种黑洞内部替代模型，属于纯引力理论和弦论，未涉及任何高能暂现天体观测、事件或团队任务能力"
       },
       "summary": {
         "paper_id": "arxiv:2607.18851",
@@ -3553,15 +3607,15 @@
         }
       },
       "score": {
-        "score": 95,
+        "score": 85,
         "tags": [
-          "X 射线双星",
-          "吸积致密天体",
-          "中子星吸积",
-          "X 射线暂现"
+          "X射线双星与吸积致密天体"
         ],
         "layer": "core",
-        "reason": "该论文综述Be/X射线双星现象学，直接属于团队核心主题中的X射线双星与吸积致密天体领域。"
+        "reason": "论文系统总结Be/X射线双星的现象学和变率，该类系统是团队X射线双星与吸积致密天体研究方向的核心天体。",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "标题明确聚焦Be/X射线双星，摘要说明其作为中子星高质量X射线双星并在X射线暴发期间表现为暂现源，综述其光学X射线现象学和变率"
       },
       "summary": {
         "paper_id": "arxiv:2607.18980",
@@ -3601,15 +3655,13 @@
         }
       },
       "score": {
-        "score": 30,
-        "tags": [
-          "AGN",
-          "致密对称天体",
-          "伽马射线",
-          "Fermi-LAT"
-        ],
+        "score": 20,
+        "tags": [],
         "layer": "edge",
-        "reason": "该论文搜索致密对称天体的伽马射线发射，属于AGN稳态物理，与团队专注的高能暂现源核心主题相关性较低，但属于边缘相关主题。"
+        "reason": "论文研究CSO样本的伽马射线发射，与高能暂现源没有实质联系，仅使用Fermi-LAT数据，不在团队暂现源目标范围内。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要：使用16年Fermi-LAT数据搜索CSO样本的γ射线发射，未发现显著信号，仅在一个CSO附近探测到信号但未确认关联。研究内容为CSO的γ射线发射性质，非高能暂现现象。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18810",
@@ -3651,7 +3703,10 @@
         "score": 10,
         "tags": [],
         "layer": "edge",
-        "reason": "论文研究黑洞的量子模拟，与高能暂现源观测范围不直接相关"
+        "reason": "论文主要贡献于量子模拟和基础物理，与高能暂现源研究团队的观测目标及任务能力无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论利用横场Ising模型模拟史瓦西黑洞背景中的Majorana费米子，属于量子模拟和弯曲时空量子场论的理论研究，未涉及高能暂现天体观测、任务或方法。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18805",
@@ -3693,12 +3748,12 @@
       },
       "score": {
         "score": 15,
-        "tags": [
-          "引力波",
-          "宇宙学相变"
-        ],
+        "tags": [],
         "layer": "edge",
-        "reason": "本研究讨论QCD相变与畴壁，属于理论宇宙学，与团队专注的高能暂现天体（如GRB、FRB、磁星等）无直接关联，仅边缘涉及引力波。"
+        "reason": "论文关于早期宇宙相变产生的引力波，不属于团队关注的高能暂现源范畴",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要提到gravitational waves through domain wall annihilation，但与高能暂现源无关"
       },
       "summary": {
         "paper_id": "arxiv:2607.18800",
@@ -3735,12 +3790,13 @@
         }
       },
       "score": {
-        "score": 10,
-        "tags": [
-          "黑洞理论"
-        ],
+        "score": 20,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文关于gravastar与黑洞热力学稳定性，属于引力理论，与高能暂现源观测无直接关联"
+        "reason": "纯理论黑洞模型研究，与团队主要关注的高能暂现现象及任务无直接或间接联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题 'From gravastar to central singularity' 和摘要讨论规则黑洞模型的热力学不稳定性，未涉及高能暂现源、任务或观测。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18764",
@@ -3785,14 +3841,15 @@
         }
       },
       "score": {
-        "score": 35,
+        "score": 15,
         "tags": [
-          "地球伽马闪TGF",
-          "XMM-Newton",
-          "太阳风电荷交换"
+          "太阳耀斑、硬X射线爆发、地球伽马闪 TGF"
         ],
         "layer": "edge",
-        "reason": "研究地球磁层X射线发射，属于团队相关主题中的地球高能现象（TGF类似），但非暂现源，间接相关。"
+        "reason": "论文主题为地球磁层 X 射线发射，与团队核心暂现源方向和任务目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题明确研究 'Earth's Magnetospheric X-ray Emission'，摘要聚焦于太阳风电荷交换引起的磁层 X 射线发射及其 3D 结构建模，未涉及任何高能暂现源或团队任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18743",
@@ -3832,12 +3889,13 @@
         }
       },
       "score": {
-        "score": 40,
-        "tags": [
-          "X射线双星与吸积致密天体"
-        ],
-        "layer": "related",
-        "reason": "研究黑洞吸积盘成像与阴影，与团队关注的黑洞吸积过程理论相关，但非暂现源直接研究。"
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为理论黑洞成像与度规偏差测试，与高能暂现源及团队任务无直接关联",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要讨论JP度规的黑洞成像，属于理论引力测试，未涉及任何高能暂现源、观测事件或团队任务"
       },
       "summary": {
         "paper_id": "arxiv:2607.18751",
@@ -3879,14 +3937,15 @@
         }
       },
       "score": {
-        "score": 78,
+        "score": 70,
         "tags": [
-          "引力波电磁对应体",
-          "多信使触发与联合",
-          "中子星"
+          "由暂现源样本驱动的总体统计、宇宙学与基础物理应用"
         ],
         "layer": "core",
-        "reason": "研究中子星潮汐形变并与GW170817比较，直接关联多信使引力波观测，但侧重修改引力理论。"
+        "reason": "论文通过中子星潮汐形变率计算，直接利用引力波暂现源GW170817的观测来约束Lorentz对称性破缺，服务于团队基础物理应用目标",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "标题中明确利用引力波探测Lorentz对称性破缺，摘要中直接与GW170817潮汐形变率约束比较"
       },
       "summary": {
         "paper_id": "arxiv:2607.18812",
@@ -3966,12 +4025,13 @@
         }
       },
       "score": {
-        "score": 10,
-        "tags": [
-          "恒星物理"
-        ],
+        "score": 5,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文关于恒星金属丰度估计，属于银河系天文学，与高能暂现源研究范围无直接关联。"
+        "reason": "论文主题为恒星金属丰度校准和银河系化学演化，不属于高能暂现源团队的科学关注范围。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题为恒星金属丰度估计，摘要专注于Gaia DR3与LAMOST DR10的均质化金属丰度测量及银河系盘梯度，未涉及任何高能暂现源或相关任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18707",
@@ -4013,12 +4073,13 @@
         }
       },
       "score": {
-        "score": 5,
-        "tags": [
-          "其他"
-        ],
+        "score": 0,
+        "tags": [],
         "layer": "edge",
-        "reason": "纯引力理论论文，与高能暂现观测及天体物理直接相关性较低。"
+        "reason": "论文属于纯引力理论，不在高能暂现源研究团队的关注范围内",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要未涉及任何高能暂现源、观测任务或相关方法，纯理论引力几何学研究"
       },
       "summary": {
         "paper_id": "arxiv:2607.18657",
@@ -4058,13 +4119,13 @@
         }
       },
       "score": {
-        "score": 20,
-        "tags": [
-          "暗物质",
-          "轴子"
-        ],
+        "score": 10,
+        "tags": [],
         "layer": "edge",
-        "reason": "论文使用磁白矮星搜索轴子，属于暗物质和粒子物理，仅因分类在astro-ph.HE而被列为边缘主题，与团队核心的高能暂现源无关。"
+        "reason": "论文主题为轴子粒子物理搜索，与团队高能暂现源研究核心无直接联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要主要关注使用磁白矮星进行轴子搜索，未涉及任何高能暂现源或团队任务"
       },
       "summary": {
         "paper_id": "arxiv:2607.18647",
@@ -4105,10 +4166,13 @@
         }
       },
       "score": {
-        "score": 8,
+        "score": 10,
         "tags": [],
         "layer": "edge",
-        "reason": "论文主题为引力记忆的几何理论，属于纯理论物理，与团队关注的高能暂现源（如GRB、引力波电磁对应体、磁星等）无直接关联。"
+        "reason": "论文纯理论，与高能暂现源及团队观测目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要主要讨论引力记忆在Carrollian几何中的理论分析，未涉及任何高能暂现源或团队任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18675",
@@ -4157,13 +4221,15 @@
         }
       },
       "score": {
-        "score": 65,
+        "score": 20,
         "tags": [
-          "超新星",
-          "暂现源"
+          "高能暂现天体"
         ],
-        "layer": "related",
-        "reason": "论文报告了一颗高红移Ia型超新星候选，属于超新星暂现现象，与团队对暂现源（尤其是超新星激波）的关注相关。"
+        "layer": "edge",
+        "reason": "论文研究光学/红外波段的超新星，与团队核心关注的高能暂现源没有直接联系，属于边缘关注",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题指出是Ia型超新星候选体，摘要分析其作为暂现源对高红移星系搜索的干扰，但未涉及高能辐射或团队任务"
       },
       "summary": {
         "paper_id": "arxiv:2607.18972",
@@ -4284,7 +4350,10 @@
           "太阳耀斑"
         ],
         "layer": "related",
-        "reason": "论文研究太阳型恒星的超级耀斑，与团队关注的太阳耀斑现象相关，但主要聚焦恒星系统物理而非高能暂现源核心主题。"
+        "reason": "论文主要研究太阳型掩食双星及三合星系统，其中探测到的超级耀斑与团队关注的太阳（恒星）耀斑现象有联系，但核心科学问题并非高能暂现源，也未使用团队任务数据。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中提及'Kepler observations further reveal 30 superflares, each with total energies exceeding 10^34 erg'，表明论文涉及恒星超级耀斑；标题'KIC 6464285: A Solar-type Eclipsing Binary...'亦表明太阳型恒星活动。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18811",
@@ -4430,13 +4499,15 @@
         }
       },
       "score": {
-        "score": 25,
+        "score": 30,
         "tags": [
-          "多信使触发与联合",
-          "引力波"
+          "多信使触发与联合"
         ],
         "layer": "edge",
-        "reason": "论文讨论黑洞周期性轨道和引力波波形，与团队关注的引力波触发和多信使方向间接相关，但侧重理论且无电磁对应体，相关性较低。"
+        "reason": "纯引力波理论建模，与团队高能暂现源及电磁对应体核心目标无直接关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要：研究正则黑洞的周期性轨道及引力波波形（EMRI），面向LISA等空间探测器；未涉及高能暂现源、电磁对应体或团队任务。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18627",
@@ -4477,14 +4548,15 @@
         }
       },
       "score": {
-        "score": 70,
+        "score": 40,
         "tags": [
-          "潮汐瓦解事件",
-          "恒星双星演化",
-          "超大质量黑洞"
+          "高能暂现天体"
         ],
-        "layer": "core",
-        "reason": "论文研究超大质量黑洞周围双星演化可能导致的潮汐瓦解事件，属于团队关注的高能暂现天体（TDE）范畴。"
+        "layer": "related",
+        "reason": "论文主要研究双星在超大质量黑洞周围的动力学演化，潮汐瓦解事件(TDE)仅作为可能结局提及，与团队暂现源科学目标间接相关，属于相关层级。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中明确提到‘tidal disruption events’作为双星演化的可能结果之一，但论文主要贡献是双星演化半解析模型，并非TDE的直接观测或分析。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18761",
@@ -4582,14 +4654,17 @@
         }
       },
       "score": {
-        "score": 98,
+        "score": 90,
         "tags": [
           "伽马暴 GRB",
-          "短暴",
-          "磁星"
+          "磁星 / 软伽马重复暴 SGR",
+          "Swift"
         ],
         "layer": "core",
-        "reason": "该论文直接研究短伽马暴（sGRBs）的磁星引擎，属于团队核心主题中的伽马暴（GRB）和磁星领域。"
+        "reason": "论文直接研究短伽马暴的磁星中心引擎普遍标度关系，核心科学问题属于团队关注的伽马暴与磁星主题。",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "标题中包含 'short gamma ray bursts' 和 'magnetar field'；摘要指出 'analyze 33 Swift sGRBs exhibiting prominent X-ray plateaus from newborn millisecond magnetar spin-down, and derive their initial spin period and polar magnetic field'，并建立功率律 B_p–P_0 关联，最终 'quantitatively unifies their magnetar physics with lGRBs'。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18698",
@@ -4708,14 +4783,15 @@
         }
       },
       "score": {
-        "score": 70,
+        "score": 20,
         "tags": [
-          "多信使触发与联合",
-          "引力波探测",
-          "方法"
+          "多信使触发与联合"
         ],
-        "layer": "core",
-        "reason": "改进了引力波搜索的模板库生成效率，对引力波探测及多信使联合观测有间接贡献。"
+        "layer": "edge",
+        "reason": "纯引力波数据分析方法，不直接涉及高能暂现或电磁对应体，仅间接可能用于多信使触发的基础方法",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要讨论基于低差异序列的随机模板库改进引力波匹配滤波搜索，对象是紧凑双星并合，未涉及电磁对应体或高能暂现观测。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18633",
@@ -4794,13 +4870,15 @@
         }
       },
       "score": {
-        "score": 50,
+        "score": 70,
         "tags": [
-          "高能暂现天体",
-          "新星/超新星激波"
+          "高能暂现天体"
         ],
-        "layer": "related",
-        "reason": "论文分析新星的多波段光变曲线，属于高能暂现天体中的新星现象，与团队相关主题吻合。"
+        "layer": "core",
+        "reason": "直接研究快速新星的多波段光变曲线与激波物理，服务团队关于新星/超新星激波的科学目标。",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "标题及摘要明确研究 very fast nova V1723 Sco 的多波段光变曲线，且摘要指出首次 GeV 伽马射线检测与光学峰值同期，支持激波形成机制，属于高能暂现天体中的新星/超新星激波方向。"
       },
       "summary": {
         "paper_id": "arxiv:2607.18595",
@@ -4909,5 +4987,22 @@
       }
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "synced": "2026-07-22",
+      "n_papers": 46,
+      "review": {
+        "date": "2026-07-21",
+        "overview": "今日收录 16 篇。",
+        "highlights": "（综述生成失败）",
+        "trends": "—",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": []
+      }
+    }
+  ]
 }
