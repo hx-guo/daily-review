@@ -1,3 +1,4 @@
+import re
 from pathlib import Path
 from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview, DayData
 from gdr.store import Store
@@ -36,6 +37,15 @@ def test_render_site(tmp_path):
     assert (out / "day" / "2026-07-18.html").exists()
     assert (out / "archive.html").exists()
     assert (out / "static" / "style.css").exists()
+    assert (out / "static" / "fonts" / "fonts.css").exists()
+    assert 'href="static/fonts/fonts.css"' in index
+    assert "fonts.googleapis.com" not in index
+    assert "fonts.gstatic.com" not in index
+    font_css = (out / "static" / "fonts" / "fonts.css").read_text(encoding="utf-8")
+    assert "https://" not in font_css
+    font_files = re.findall(r"url\('\./([^']+\.woff2)'\)", font_css)
+    assert font_files
+    assert all((out / "static" / "fonts" / name).exists() for name in font_files)
 
 
 def test_render_equal_news_stories_without_a_lead(tmp_path):
