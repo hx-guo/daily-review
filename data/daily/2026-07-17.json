@@ -2,9 +2,9 @@
   "date": "2026-07-17",
   "review": {
     "date": "2026-07-17",
-    "overview": "今日收录15篇文献（核心10篇、相关5篇）。主题分布：引力波与多信使5篇（NSBH偏心率参数估计×2、BNS并合后动力学、微透镜偏差、EP暂现源GW对应体搜索），X射线双星与吸积4篇（Z源偏振、混响滞后、规则黑洞吸积盘、宁静黑洞超轨道光变），太阳物理3篇（SEP预测数据集、暗条三维演化、耀斑可解释AI），磁星高能辐射、脉冲星γ射线、磁重联各1篇。整体以引力波参数估计与多信使联合观测为主线，X射线双星观测诊断方法多元化，太阳物理侧重大数据与AI可解释性。",
-    "highlights": "1. 偏心率与高阶模对NSBH参数估计的影响：利用完整IMR波形系统量化偏心率对GW200105类系统内禀参数精度的提升，为偏心NSBH族群推断提供了波形层面的定量基础，与同日收录的族群推断文章形成方法论闭环。\n2. Z型中子星低质量X射线双星的X射线偏振——II：IXPE+NICER+NuSTAR联合实现六颗Z源的分支分辨分光偏振拟合，揭示偏振以康普顿化为主且偏振度随分支演化（水平支~6%→正常支3–4%），盘偏振角与康普顿化不垂直，对理解中子星冕区几何与辐射机制具有重要约束意义。\n3. 高密度声速与并合后动力学：通过声速参数化模型发现声速导数与BNS并合后引力波峰值频率存在近似不依赖物态的普适关系，为并合后引力波探测推断核物质物态提供了新的模型无关标度律。\n4. 爱因斯坦探针快X射线暂现源的引力波对应体可探测性：首次对47个EP快暂现源样本进行系统GW对应体搜索，未发现显著关联并设定BNS/NSBH假设下的90%排除距离，不支持近邻致密天体并合起源，为EP暂现源的本质提供重要限定。",
-    "trends": "1. 偏心率效应成为NSBH引力波科学的新前沿：今日两篇核心文章分别从参数估计精度和族群推断角度切入，表明偏心率不再仅是波形建模的修正项，而是提升渠道鉴别与天体物理推断能力的关键自由度，呼应近期第三代探测器对偏心波形的需求。\n2. 多信使对应体搜索进入大规模系统性阶段：EP暂现源的GW对应体批量搜索标志着时域X射线与引力波联合从个案跟进转向统计样本分析；同日微透镜波形偏差研究则提醒此类搜索需警惕透镜效应导致的GR检验伪信号，两者构成方法论上的互补警示。\n3. X射线偏振与混响映射共同推进吸积几何诊断：Z源分光偏振揭示冕区康普顿化主导的辐射几何，Swift J1727.8–1613混响滞后分析则约束内吸积盘稳定性，两种独立手段均指向吸积流几何演化比此前认知更平滑，不支持剧变图像。\n4. AI可解释性在太阳高能预测中从定性走向定量：Grad-CAM聚焦区域的磁场参数定量验证标志着XAI框架开始具备物理一致性检验能力，与SEP-PRISM多源数据集共同体现太阳高能粒子预测从数据驱动向物理可解释迈进的趋势。"
+    "overview": "今日共收录文献15篇，其中核心文献10篇，相关文献5篇。主题分布聚焦于引力波与多信使天体物理（5篇，涵盖NSBH偏心率参数估计、BNS并合后动力学及EP暂现源对应体搜索）、X射线双星与吸积物理（4篇，涉及偏振、回响滞后与超轨道周期）、太阳高能物理及耀斑预报（3篇）、磁星与脉冲星高能辐射（2篇）以及磁重联理论模拟（1篇）。",
+    "highlights": "1. 偏心率作为放大镜：偏心中子星-黑洞并合带来的高精度族群推断——结合同日另一篇离心率文献，系统论证了偏心率对NSBH参数估计与族群推断的显著增强作用，为未来引力波事件分析提供了新视角。\n2. Z型中子星低质量X射线双星的X射线偏振 II. 能谱偏振分析——对多个Z源进行分支分辨的能谱偏振分析，精细揭示了康普顿化等成分的偏振特性及演化，是X射线偏振探测前沿的重要进展。\n3. 高密度声速与并合后动力学——通过数值相对论模拟单参数控制声速斜率，揭示了其对BNS并合后引力波频率与喷出物的影响，并发现近似普适标度关系，对约束状态方程意义重大。\n4. O4b期间爱因斯坦探针快速X射线暂现源的引力波对应体可探测性——首次系统搜索EP快速X射线暂现源的引力波对应体，展示了EP在多信使时域天文学中的独特价值和约束能力。",
+    "trends": "1. 引力波参数估计与多信使观测持续深化：多篇文献聚焦NSBH并合的偏心率和高阶模效应，以及微透镜对GR检验的潜在干扰，表明引力波天文学正从事件发现向精细化参数估计和系统误差控制迈进。\n2. X射线偏振与定时技术成为探测致密星吸积几何的利器：从Z型中子星的能谱偏振分析到黑洞双星稳定的X射线回响滞后，多维度观测正不断重塑我们对吸积盘内区结构与辐射机制的理解。\n3. 人工智能与多视角观测赋能太阳高能物理：可解释AI在耀斑预测中的物理特征验证，以及多源数据集和多视角三维重建的应用，反映了数据驱动方法在空间天气预报中的实质性进展。\n4. 新兴暂现源设备与多信使联合搜索紧密结合：EP-FXTs的引力波对应体搜索代表了时域高能天文台在多信使时代的关键角色，尽管暂无显著关联，但其排除约束极具科学价值。"
   },
   "items": [
     {
@@ -27,7 +27,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16152v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16152v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -72,7 +73,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16162v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16162v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -113,7 +115,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16158v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16158v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -158,7 +161,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16191v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16191v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -201,7 +205,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16120v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16120v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -243,7 +248,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16160v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16160v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -351,7 +357,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16136v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16136v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 90,
@@ -446,7 +453,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16068v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16068v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -490,7 +498,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16071v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16071v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -546,7 +555,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16059v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16059v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -589,7 +599,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16135v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16135v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 90,
@@ -719,7 +730,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16140v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16140v1",
-        "doi": "10.1051/0004-6361/202659608"
+        "doi": "10.1051/0004-6361/202659608",
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -842,7 +854,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15964v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15964v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -881,7 +894,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16119v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16119v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -978,7 +992,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15914v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15914v1",
-        "doi": "10.1140/epjc/s10052-026-15978-5"
+        "doi": "10.1140/epjc/s10052-026-15978-5",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1028,7 +1043,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15923v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15923v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1082,7 +1098,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15971v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15971v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -1123,7 +1140,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15897v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15897v1",
-        "doi": "10.3390/universe12070215"
+        "doi": "10.3390/universe12070215",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1165,7 +1183,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15850v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15850v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -1206,7 +1225,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15921v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15921v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 50,
@@ -1315,7 +1335,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15827v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15827v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -1354,7 +1375,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15859v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15859v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 35,
@@ -1394,7 +1416,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15913v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15913v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 30,
@@ -1436,7 +1459,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15955v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15955v1",
-        "doi": "10.1093/mnras/stag1351"
+        "doi": "10.1093/mnras/stag1351",
+        "external_ids": {}
       },
       "score": {
         "score": 90,
@@ -1480,7 +1504,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15760v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15760v1",
-        "doi": "10.1103/7th8-m12t"
+        "doi": "10.1103/7th8-m12t",
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -1525,7 +1550,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15797v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15797v1",
-        "doi": "10.1038/s41467-025-65592-4"
+        "doi": "10.1038/s41467-025-65592-4",
+        "external_ids": {}
       },
       "score": {
         "score": 30,
@@ -1577,7 +1603,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15796v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15796v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -1616,7 +1643,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15761v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15761v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -1659,7 +1687,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15731v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15731v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -1699,7 +1728,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15666v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15666v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -1744,7 +1774,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15759v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15759v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 65,
@@ -1830,7 +1861,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15719v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15719v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 80,
@@ -1922,7 +1954,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15601v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15601v1",
-        "doi": "10.1007/s11207-026-02707-0"
+        "doi": "10.1007/s11207-026-02707-0",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1964,7 +1997,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15573v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15573v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2010,7 +2044,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15729v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15729v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -2099,7 +2134,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15564v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15564v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -2143,7 +2179,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15551v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15551v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2194,7 +2231,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15521v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15521v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2240,7 +2278,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15540v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15540v1",
-        "doi": "10.3847/1538-4357/ae7713"
+        "doi": "10.3847/1538-4357/ae7713",
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -2282,7 +2321,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15679v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15679v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 70,
@@ -2324,7 +2364,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.15588v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15588v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -2394,7 +2435,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16522v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16522v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -2432,7 +2474,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16496v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16496v1",
-        "doi": "10.1093/mnras/stag1268"
+        "doi": "10.1093/mnras/stag1268",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2484,7 +2527,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16467v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16467v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2525,7 +2569,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16459v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16459v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -2562,7 +2607,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16437v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16437v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -2605,7 +2651,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16432v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16432v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -2644,7 +2691,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16422v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16422v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -2689,7 +2737,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16423v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16423v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -2762,7 +2811,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16417v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16417v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2805,7 +2855,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16405v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16405v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -2847,7 +2898,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16398v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16398v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -2891,7 +2943,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16395v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16395v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2936,7 +2989,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16458v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16458v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 45,
@@ -2977,7 +3031,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16381v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16381v1",
-        "doi": "10.1016/j.physd.2026.135338"
+        "doi": "10.1016/j.physd.2026.135338",
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -3021,7 +3076,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16420v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16420v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -3119,7 +3175,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16370v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16370v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -3169,7 +3226,8 @@
         "published": "2026-07-17",
         "url": "https://arxiv.org/abs/2607.16397v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16397v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 90,
@@ -3260,6 +3318,59 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18315",
+        "source": "arxiv",
+        "title": "Gas Motions in Hydra-A: XRISM Constraints on ICM Kinematics Across Jet-Inflated Cavities",
+        "authors": [
+          "Anwesh Majumder",
+          "B. R. McNamara",
+          "P. E. J. Nulsen",
+          "H. Russell",
+          "T. Rose",
+          "T. Heckman",
+          "A. Simionescu",
+          "A. Fabian",
+          "M. W. Wise",
+          "N. Werner",
+          "M. McDonald"
+        ],
+        "abstract": "We report on two deep XRISM observations of the central and northern regions of Hydra-A's X-ray atmosphere covering the bubbles inflated by jets from the central galaxy's active galactic nucleus (AGN). We use spatial-spectral mixing that combines Chandra's high spatial resolution with XRISM's high spectral resolution to investigate atmospheric kinematics. The atmospheric velocity dispersion in the northern region, $σ_v = 140^{+30}_{-20}$ km s$^{-1}$, is comparable to that in the central region ($σ_v = 162 \\pm 10$ km s$^{-1}$). We show that the motion of the large-scale cocoon shock front could be responsible for the large dispersion toward the north. The velocity dispersion in the northeast quarter of the central pointing, $σ_v = 260 \\pm 50$ km s$^{-1}$, is among the highest dispersions measured. This region contains an X-ray-bright feature previously identified as metal-rich, possibly consisting of gas uplifted in the wake of previous-generation cavities. The dispersions in all other quarter regions are low ($σ_v \\leq 120$ km s$^{-1}$) and consistent with previous XRISM results from other objects. The kinetic energy at the center is comparable to the enthalpies of the cavities, while in the north, it is roughly an order of magnitude smaller. The jet thus drives gas motion efficiently at smaller scales ($r < 95$ kpc) and inefficiently at larger scales ($95-317$ kpc toward the north along the jet). A bulk flow toward our line of sight of $-100 \\pm 30$ km s$^{-1}$ in the southwest quarter of the central pointing is also observed, possibly due to sloshing.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-17",
+        "url": "https://arxiv.org/abs/2607.18315v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18315v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18315"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "AGN稳态物理"
+        ],
+        "layer": "edge",
+        "reason": "研究星系团内介质运动学和AGN喷流气泡，属于AGN稳态物理，与团队高能暂现源核心关注点关联较低。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18315",
+        "title_zh": "Hydra-A 中的气体运动：XRISM 对喷流膨胀空腔周围 ICM 运动学的约束",
+        "team": "",
+        "tldr": "利用 XRISM 的高光谱分辨率和 Chandra 的高空间分辨率，研究了 Hydra-A 中心及北部区域的星系团内介质运动学，测量了速度弥散，发现中心与北部弥散相当，东北象限弥散最高，并分析了动能与空腔焓的关系及喷流在不同尺度上的驱动效率。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
   "revisions": [
@@ -3271,6 +3382,16 @@
         "overview": "今日概览：共收录12篇文献，其中核心文献8篇，相关文献4篇。主题分布为：引力波与多信使天文学3篇，X射线双星与吸积物理3篇，太阳高能物理3篇，磁星与高能暂现源2篇，脉冲星伽马射线1篇。",
         "highlights": "1. Z型中子星低质量X射线双星的X射线偏振——II. 光谱偏振分析：利用IXPE等多台望远镜对六颗Z源进行分支分辨偏振分析，揭示偏振由康普顿化主导且沿Z轨迹下降的物理机制。\n2. 偏心率与高阶模对中子星-黑洞并合参数估计的影响：系统论证偏心率对NSBH系统参数估计的放大效应，发现偏心率显著提升内禀参数精度，为族群推断提供新视角。\n3. 可解释AI用于太阳耀斑预测：构建定量可解释AI框架，通过Grad-CAM与磁场分析验证CNN模型的物理相关性，为AI在天体物理中的可解释性树立标杆。",
         "trends": "1. 引力波参数估计与致密物态的精细化：从偏心NSBH并合到BNS声速模型，研究正通过引入高阶物理效应（偏心率、高阶模、声速导数）突破传统参数估计极限，深化对致密天体形成通道与物态方程的约束。\n2. X射线偏振与定时刻画吸积几何：IXPE对中子星Z源的光谱偏振测量与黑洞X射线双星的混响延迟研究相呼应，共同推动对极端引力场下吸积流辐射区域与几何演化的精细诊断。\n3. 数据驱动方法向物理可解释性演进：太阳耀斑预测的可解释AI与SEP多源数据集的发布，表明高能天体物理领域的机器学习正从黑盒预测转向物理机制验证与端到端业务应用。"
+      }
+    },
+    {
+      "synced": "2026-07-22",
+      "n_papers": 58,
+      "review": {
+        "date": "2026-07-17",
+        "overview": "今日收录15篇文献（核心10篇、相关5篇）。主题分布：引力波与多信使5篇（NSBH偏心率参数估计×2、BNS并合后动力学、微透镜偏差、EP暂现源GW对应体搜索），X射线双星与吸积4篇（Z源偏振、混响滞后、规则黑洞吸积盘、宁静黑洞超轨道光变），太阳物理3篇（SEP预测数据集、暗条三维演化、耀斑可解释AI），磁星高能辐射、脉冲星γ射线、磁重联各1篇。整体以引力波参数估计与多信使联合观测为主线，X射线双星观测诊断方法多元化，太阳物理侧重大数据与AI可解释性。",
+        "highlights": "1. 偏心率与高阶模对NSBH参数估计的影响：利用完整IMR波形系统量化偏心率对GW200105类系统内禀参数精度的提升，为偏心NSBH族群推断提供了波形层面的定量基础，与同日收录的族群推断文章形成方法论闭环。\n2. Z型中子星低质量X射线双星的X射线偏振——II：IXPE+NICER+NuSTAR联合实现六颗Z源的分支分辨分光偏振拟合，揭示偏振以康普顿化为主且偏振度随分支演化（水平支~6%→正常支3–4%），盘偏振角与康普顿化不垂直，对理解中子星冕区几何与辐射机制具有重要约束意义。\n3. 高密度声速与并合后动力学：通过声速参数化模型发现声速导数与BNS并合后引力波峰值频率存在近似不依赖物态的普适关系，为并合后引力波探测推断核物质物态提供了新的模型无关标度律。\n4. 爱因斯坦探针快X射线暂现源的引力波对应体可探测性：首次对47个EP快暂现源样本进行系统GW对应体搜索，未发现显著关联并设定BNS/NSBH假设下的90%排除距离，不支持近邻致密天体并合起源，为EP暂现源的本质提供重要限定。",
+        "trends": "1. 偏心率效应成为NSBH引力波科学的新前沿：今日两篇核心文章分别从参数估计精度和族群推断角度切入，表明偏心率不再仅是波形建模的修正项，而是提升渠道鉴别与天体物理推断能力的关键自由度，呼应近期第三代探测器对偏心波形的需求。\n2. 多信使对应体搜索进入大规模系统性阶段：EP暂现源的GW对应体批量搜索标志着时域X射线与引力波联合从个案跟进转向统计样本分析；同日微透镜波形偏差研究则提醒此类搜索需警惕透镜效应导致的GR检验伪信号，两者构成方法论上的互补警示。\n3. X射线偏振与混响映射共同推进吸积几何诊断：Z源分光偏振揭示冕区康普顿化主导的辐射几何，Swift J1727.8–1613混响滞后分析则约束内吸积盘稳定性，两种独立手段均指向吸积流几何演化比此前认知更平滑，不支持剧变图像。\n4. AI可解释性在太阳高能预测中从定性走向定量：Grad-CAM聚焦区域的磁场参数定量验证标志着XAI框架开始具备物理一致性检验能力，与SEP-PRISM多源数据集共同体现太阳高能粒子预测从数据驱动向物理可解释迈进的趋势。"
       }
     }
   ]

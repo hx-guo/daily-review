@@ -2,9 +2,9 @@
   "date": "2026-07-20",
   "review": {
     "date": "2026-07-20",
-    "overview": "今日收录13篇文献，核心8篇、相关5篇。主题分布：太阳耀斑3篇，TDE 2篇，超新星2篇，致密天体/引力波2篇，暂现源检测、伽马暴星表、中子星物理各1篇，整体围绕高能暂现源的多平台观测、统一理论建模与方法学创新展开。",
-    "highlights": "1. 「超越自旋：QCD磁星」提出大质量中子星夸克解禁形成QCD磁星的统一框架，将AXP、SGR、超亮超新星、FBOT与FRB纳入同一物理图景，且磁场强度由质量而非自旋决定，理论雄心突出。\n2. LUTRA算法实现欠采样天文图像最优叠加与瞬变源检测，ZTF数据信噪比较现有方法提升约1.25倍，对引力波电磁对应体搜寻等时域任务具有直接实用价值。\n3. GRBAlpha与VZLUSAT-2发布超300个伽马射线暂现源的最大立方星星表，证明低成本纳卫星星座可常规监测伽马射线天空，为未来暂现源监测网络提供新范式。\n4. 时变吸积盘模型引入修正粘滞性与盘风，系统揭示粘滞性可调控辐射压不稳定性，为各类TDE光变曲线提供统一解释框架。",
-    "trends": "1. 跨暂现源统一框架成为理论热点：QCD磁星模型整合五大类高能暂现源，TDE时变吸积盘模型覆盖多种光变形态，反映领域从单源类研究向跨类别物理图景整合的趋势。\n2. 低成本空间监测平台走向成熟：立方星伽马射线星表与地面ZTF时域设施形成天地互补，多平台暂现源监测网络正在成形。\n3. 机器学习方法加速渗透：LUTRA图像叠加检测与II型超新星STELLA神经网络替代模型分别代表检测端与建模端的自动化趋势，快速贝叶斯推断正改变高能暂现源研究效率。\n4. 引力波事件持续驱动致密天体理论深化：GW231123催生气体星团矢量共振弛豫模型，GW190814激发Finsler引力致密星构建，多信使时代对极端物态与动力学的理论需求仍在增长。"
+    "overview": "今日共收录文献15篇（核心9篇，相关6篇）。主题分布集中于高能暂现源与多信使天文学：太阳耀斑4篇，超新星3篇，TDE与引力波/致密天体各2篇，伽马暴、磁星/FRB及图像处理算法各1篇。整体呈现以暂现源物理为核心、多波段与多信使联合观测为手段的活跃态势。",
+    "highlights": "1. 超越自旋：QCD磁星：提出以大质量中子星核心夸克解禁及QCD铁磁性为基础的统一框架，将AXPs、SGRs、SLSNe-I、LFBOTs和FRBs统一为同一类QCD磁星在不同环境与演化阶段的表现，理论视角宏大。\n2. 含时吸积盘在潮汐瓦解事件中的长期光变曲线：引入粘滞指数与盘风参数改进TDE吸积盘模型，成功解释辐射压不稳定性调控下的多种光变曲线形态，并拟合多例TDE光学/紫外观测。\n3. 我们能找到极亮GRB 230812B背后的辐射机制吗？：结合瞬时频谱偏振分析与宽带余辉建模，发现早期热成分与晚期高偏振（≥50%）非热辐射，强约束了宽喷流与有序磁场同步辐射机制。\n4. 欠采样图像的协同叠加与减除：提出LUTRA算法以数学最优方式处理欠采样图像叠加与瞬变源检测，在ZTF数据上实现信噪比提升约1.25倍，为引力波电磁对应体搜寻提供有力开源工具。",
+    "trends": "1. 暂现源多波段与多信使研究的系统化：从引力波事件（GW231123、GW190814）的电磁对应体搜寻算法，到TDE的十年红外尘埃响应与含时吸积盘建模，多信使触发的暂现源研究正从单一发现走向全周期物理机制解析。\n2. 统一理论框架与机器学习代理模型并进：一方面，QCD磁星等理论试图用单一物理机制统一多种极端暂现源（SGR、FRB、SLSNe等）；另一方面，神经网络代理模型被用于实现II型超新星的分钟级贝叶斯推断，展现了复杂物理建模与高效计算结合的新趋势。\n3. 太阳高能物理的多视角联合观测范式：多篇耀斑研究利用双视角微波与硬X射线（SRH与SolO/STIX）及SDO/AIA数据，结合SKAO未来展望，表明多视角、多波段联合诊断已成为解析太阳爆发磁流体动力学过程的标准范式。\n4. 低成本微小卫星星座的常态化监测：立方星（GRBAlpha与VZLUSAT-2）发布四年观测的344个伽马暂现源星表，证明低成本星座在高能暂现源全天常规监测中的巨大潜力。"
   },
   "items": [
     {
@@ -29,7 +29,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18233v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18233v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -71,7 +72,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18234v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18234v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 30,
@@ -113,7 +115,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18223v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18223v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -163,7 +166,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18224v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18224v1",
-        "doi": "10.3847/1538-3881/ae8c38"
+        "doi": "10.3847/1538-3881/ae8c38",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -204,7 +208,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18229v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18229v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -251,7 +256,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18219v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18219v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -295,7 +301,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18207v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18207v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -336,7 +343,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18185v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18185v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -380,7 +388,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18145v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18145v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -418,7 +427,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18136v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18136v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -460,7 +470,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18180v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18180v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -500,7 +511,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18065v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18065v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -542,7 +554,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18107v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18107v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -584,7 +597,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18008v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18008v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -626,7 +640,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18025v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18025v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -676,7 +691,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17976v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17976v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -718,7 +734,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17942v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17942v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 2,
@@ -761,7 +778,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17932v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17932v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -803,7 +821,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17929v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17929v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -847,7 +866,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18054v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18054v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 75,
@@ -968,7 +988,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17887v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17887v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -1013,7 +1034,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.18124v1",
         "pdf_url": "https://arxiv.org/pdf/2607.18124v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -1110,7 +1132,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17875v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17875v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1162,7 +1185,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17821v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17821v1",
-        "doi": "10.1051/0004-6361/202660882"
+        "doi": "10.1051/0004-6361/202660882",
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -1213,7 +1237,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17792v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17792v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -1299,7 +1324,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17971v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17971v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -1386,7 +1412,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17787v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17787v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -1435,7 +1462,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17881v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17881v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 70,
@@ -1535,7 +1563,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17729v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17729v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 30,
@@ -1578,7 +1607,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17727v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17727v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -1619,7 +1649,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17869v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17869v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -1769,7 +1800,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17658v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17658v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -1813,7 +1845,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17648v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17648v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -1863,7 +1896,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17650v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17650v1",
-        "doi": "10.3847/1538-4357/ae3c9c"
+        "doi": "10.3847/1538-4357/ae3c9c",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1907,7 +1941,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17815v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17815v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 80,
@@ -2015,7 +2050,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17659v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17659v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 75,
@@ -2137,7 +2173,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17520v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17520v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -2188,7 +2225,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17682v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17682v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 70,
@@ -2330,7 +2368,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17552v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17552v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -2371,7 +2410,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17685v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17685v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -2453,7 +2493,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17500v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17500v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -2513,7 +2554,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17484v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17484v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -2552,7 +2594,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17556v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17556v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -2653,7 +2696,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17609v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17609v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 60,
@@ -2723,7 +2767,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17483v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17483v1",
-        "doi": "10.1016/j.dark.2026.102402."
+        "doi": "10.1016/j.dark.2026.102402.",
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -2765,7 +2810,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17448v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17448v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 35,
@@ -2813,7 +2859,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17510v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17510v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 60,
@@ -2939,7 +2986,8 @@
         "published": "2026-07-20",
         "url": "https://arxiv.org/abs/2607.17488v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17488v1",
-        "doi": "10.1103/hsms-7v8x36"
+        "doi": "10.1103/hsms-7v8x36",
+        "external_ids": {}
       },
       "score": {
         "score": 70,
@@ -3003,7 +3051,1177 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18551",
+        "source": "arxiv",
+        "title": "Capture of interstellar objects during stellar encounters",
+        "authors": [
+          "Sean N. Raymond",
+          "Nathan A. Kaib",
+          "Matthew J. Hopkins"
+        ],
+        "abstract": "As they orbit within the Galaxy, stars swim through a vast population of interstellar objects (ISOs). In this paper, we use N-body simulations to show that a fraction of ISOs within $\\sim$1 pc of the Sun (its tidal radius) may be captured during the flyby of another star -- a mechanism that requires no planets. Capture is most efficient when the impulse imparted by the flyby is comparable to the escape speed at the widest stable orbit, which is roughly 0.1 km/s for the Sun. ISO capture is dominated by the few highest-impulse stellar flybys, typically involving relatively slow encounters with massive stars. Most ISOs are captured in the outer parts of the Oort cloud, with semimajor axes greater than $\\sim$50,000 au. Using Monte Carlo simulations, we show that the Sun underwent only a small number of ISO-capturing flybys in its history (median [mean] of 1 [1.7]). Using the {Ō}tautahi-Oxford population model, we estimate that a few times $\\sim$$10^{4}$ `Oumuamua-sized ISOs were likely captured by the Sun. This only represents a $\\sim$$10^{-8\\pm1}$ contribution to the total Oort cloud population, yet it contains roughly as many present-day captured ISOs as Jupiter-assisted capture provides. Given that flybys are unavoidable in the Galactic field, most stars should, at any given time, host have sparse Oort clouds populated with ISOs captured during stellar flybys. Massive stars are both the main drivers of capture when they fly by a given star, and more efficient at capturing ISOs around themselves than low-mass stars.",
+        "categories": [
+          "astro-ph.EP",
+          "astro-ph.GA",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18551v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18551v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18551"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [
+          "星际天体",
+          "恒星交会"
+        ],
+        "layer": "edge",
+        "reason": "论文研究星际天体在恒星交会中的捕获，属于太阳系天体动力学，与研究团队关注的高能暂现源（如GRB、引力波对应体、磁星等）完全无关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18551",
+        "title_zh": "恒星交会期间对星际天体的捕获",
+        "team": "",
+        "tldr": "使用N体模拟和蒙特卡洛模拟，研究了恒星飞越对星际天体的捕获机制，并估计了太阳捕获的星际天体数量及其对奥尔特云的贡献。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18521",
+        "source": "arxiv",
+        "title": "Modified Cosmology from Mass-to-Horizon Relation: Observational Bounds",
+        "authors": [
+          "Pranav Prasanthan",
+          "Hussain Gohar",
+          "Vincenzo Salzano"
+        ],
+        "abstract": "We constrain the class of modified cosmologies derived in Paper I [1] from a generalized mass-to-horizon relation (MHR) that enforces thermodynamic consistency between the Cai-Kim horizon temperature and generalized horizon entropies. The modified Friedmann equations depend on an entropy exponent $m$, an MHR coupling parameter $γ$, and an entanglement-correction amplitude $f_B$, with standard $Λ$CDM recovered in the appropriate limit. Using Pantheon$+$/SH0ES Type~Ia supernovae, cosmic chronometers, DESI DR2 baryon acoustic oscillations, and Planck 2018 CMB distance priors, we constrain eight physically motivated sub-cases via Markov chain Monte Carlo and compare models through the Bayesian log-evidence. The entropy exponent is tightly bounded, $|m-1|\\lesssim O(10^{-4})$ when the MHR coupling is fixed ($γ=1$), relaxing to $O(10^{-3})$ along the $m$-$γ$ degeneracy, excluding any macroscopically significant departure from standard horizon thermodynamics. Freeing the MHR coupling parameter or the entanglement amplitude raises the inferred Hubble constant to $h\\simeq0.70$-$0.71$, reducing the CMB-SH0ES tension from ${\\sim}4σ$ to ${\\sim}1.2$-$2.6σ$, but no scenario fully resolves it within a flat universe. The Bayesian log-evidence nevertheless disfavors every extension relative to $Λ$CDM in all dataset combinations ($-16\\lesssimΔ\\ln Z \\lesssim-1$): the improved fits obtained when the SH0ES calibration is included reflect an absorption of the Hubble tension by the additional parameters rather than genuine evidence for modified horizon entropy.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18521v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18521v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18521"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [
+          "修改宇宙学",
+          "哈勃常数",
+          "ΛCDM"
+        ],
+        "layer": "edge",
+        "reason": "论文内容为修改宇宙学模型约束，不涉及高能暂现源相关主题"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18521",
+        "title_zh": "基于质量-视界关系的修正宇宙学：观测限制",
+        "team": "",
+        "tldr": "利用多种宇宙学观测数据约束基于质量-视界关系的修正宇宙学模型，发现贝叶斯证据不倾向于任何扩展模型，且哈勃常数紧张仅部分缓解。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18518",
+        "source": "arxiv",
+        "title": "Vacuum Gravity from Entropy: Stability, Spectra, and Exact Waves",
+        "authors": [
+          "David S. Pereira"
+        ],
+        "abstract": "We analyze the vacuum dynamics of Gravity from Entropy, including its algebraically constrained $G$-field formulation. Evaluating the curvature traces over zero-, one-, and two-form sectors, we show that the complete Minkowski Hessian is exactly that of the quadratic-gravity action $A R+B R_{μν}R^{μν}$, with $A=3β/\\ell_{\\rm P}^{4}$ and $B=5β^{2}/(2\\ell_{\\rm P}^{4})$. For diagonalizable curvature blocks, the same action reduces to a sum over eigenvalue logarithms and reproduces these coefficients exactly. A strict diagonal-curvature restriction on the perturbations is instead only a reduced subsector and excludes non-diagonalizable type-N wave curvatures. Linearizing the $G$-field equations and subsequently imposing the algebraic vacuum constraint reproduces the same reduced metric equation and covariant Minkowski Hessian. The spectrum contains the massless graviton, a scalar with $m_{0}^{2}=3/(5β)$, and an opposite-residue spin-2 branch with $m_{2}^{2}=-6/(5β)=-2m_{0}^{2}$. For the foundational choice $β>0$, conventional Einstein normalization therefore implies a tachyonic spin-2 instability. We also show that every four-dimensional Ricci-flat metric solves the local bulk equations through quadratic curvature order, while square-zero Ricci-flat pp-waves are exact local vacuum solutions of the analytic metric-only logarithmic branch. On the isolated massless transverse-traceless eigenspace, the quadratic translation current has the standard general-relativistic normalization.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18518v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18518v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18518"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文为引力理论真空动力学，不涉及高能暂现天体物理，与团队关注范围无关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18518",
+        "title_zh": "熵致真空引力：稳定性、谱和精确波",
+        "team": "",
+        "tldr": "本文分析了熵致引力的真空动力学，得到其度规Hessian与二次引力等效，谱中包含无质量引力子、一个标量模和一个超光速自旋-2模，并证明了所有四维Ricci平坦度规是局部解，平方零Ricci平坦pp-波是精确解。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18528",
+        "source": "arxiv",
+        "title": "The impact of Hawking radiation from primordial black holes on recombination and the Hubble tension",
+        "authors": [
+          "Adam Batten",
+          "Jeremy Mould"
+        ],
+        "abstract": "Primordial black holes (PBHs) evaporate through Hawking radiation, emitting high-energy photons and ionising their surrounding environment. As contributors to the density of dark matter, Omega_C, if 10^-18 solar mass PBHs are present in the Universe they delay recombination and move the surface of last scattering of the cosmic microwave background (CMB). We perform recombination simulations using the software Recfast, and calculate the PBH fraction of dark matter required to resolve the Hubble tension. We find that nominally a cosmic PBH energy density of Omega_PBH ~ 10^-3 Omega_C would cause an 8.9% increase in the value of H_0, enough to entirely reduce the tension between the early- and late-time observations. This PBH fraction is modified by Gray Body Factors affecting Hawking radiation. Furthermore, also fitting the CMB leaves the Hubble tension not fully relieved with our present PBH prescription. Until relevant non-gravitational properties of the dominant dark matter species are ruled out, we suggest that the hypothesis that the ionisation history of the universe matches the thermal history of the standard LCDM cosmology is too precarious to hang the expansion rate on, and that it is better to measure H_0 locally at z <~ 1.",
+        "categories": [
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18528v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18528v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18528"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "暗物质"
+        ],
+        "layer": "edge",
+        "reason": "研究原初黑洞蒸发对复合和哈勃张力的影响，属于边缘的暗物质和宇宙学主题，与高能暂现源核心研究无直接关系。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18528",
+        "title_zh": "原始黑洞霍金辐射对复合和哈勃常数张力的影响",
+        "team": "",
+        "tldr": "论文通过模拟发现，质量为10^-18太阳质量的原始黑洞若占暗物质能量密度约10^-3，其霍金辐射可使哈勃常数增加8.9%从而基本缓解哈勃张力，但考虑灰体因子后缓解不完全，因此建议更依赖本地测量H_0。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18449",
+        "source": "arxiv",
+        "title": "Detecting Cosmological Stasis with Future Gravitational Wave Observatories",
+        "authors": [
+          "Gabriela Barenboim",
+          "Anne-Katherine Burns"
+        ],
+        "abstract": "We map the observational predictions of cosmological stasis in the inflationary gravitational wave background onto the sensitivity bands of current and planned gravitational wave detectors. Using the closed-form piecewise spectral template derived in the companion paper, we generate detectability maps for four stasis scenarios: canonical, dynamical scalar, vacuum-energy/matter, and vacuum-energy/radiation across the frequency bands probed by NANOGrav, SKA, LISA, DECIGO, BBO, the Einstein Telescope, and Cosmic Explorer. For scenarios in which the spectrum is suppressed, $w_s < 1/3$, the stasis feature is detectable by BBO in the region of $(w_s,ΔN)$ parameter space in which $w_s\\gtrsim 0.2$ for tensor-to-scalar ratios close to the Planck upper limit, r = 0.036. For scenarios in which the spectrum is enhanced, $w_s > 1/3$, the stasis feature is detectable by BBO across the entire $(w_s,ΔN)$ parameter space for tensor-to-scalar ratios of $O(0.01)$. We characterize the Standard Model (SM) $g_*$ fine structure of the IGWB, showing that SM phase transitions introduce spectral steps of $\\approx 20\\%$ (electroweak, at $\\sim 2.6\\times10^{-6}$~Hz) and $\\approx 53\\%$ (QCD, at $\\sim 3.6\\times 10^{-9}$~Hz). For stasis scenarios with end-of-stasis temperatures below the QCD scale these steps fall inside the stasis band and constitute additional spectral features that complement the primary signature. Finally, we model the finite-width end-of-stasis transition phenomenologically, demonstrating that the spectral break at $f_{end}$ is smoothed over a log-frequency window $ΔN_\\mathrm{trans}\\times 3(1+w_s)/4$, and that the consistency relation $C^2=C^2(α)$ remains testable provided $ΔN_\\mathrm{stasis}\\gg ΔN_\\mathrm{trans}$, a condition easily satisfied for all scenarios of phenomenological interest.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO",
+          "gr-qc"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18449v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18449v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18449"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [
+          "宇宙学",
+          "引力波"
+        ],
+        "layer": "edge",
+        "reason": "论文研究宇宙静滞在暴胀引力波背景中的信号，属于宇宙学和引力波范畴，与团队高能暂现源核心主题相关性较低。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18449",
+        "title_zh": "利用未来引力波天文台探测宇宙停滞",
+        "team": "",
+        "tldr": "将宇宙停滞的暴胀引力波背景预测映射到引力波探测器灵敏度带，生成四个停滞场景的可探测性图，并分析了标准模型相变引起的精细结构。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18441",
+        "source": "arxiv",
+        "title": "Detection of cosmic strings by gravitational wave lensing. Predictions for Einstein Telescope",
+        "authors": [
+          "Jakub Szyndler",
+          "Tomasz Bulik"
+        ],
+        "abstract": "Cosmic strings are not yet confirmed, topological defects formed in the early Universe. They can bend light or gravitational waves, which causes an effect similar to the gravitational lensing. Our goal is to check whether cosmic string could be detected as a lenses of gravitational waves by the Einstein Telescope (ET). To do that the apparatus of wave optics had been applied. Firstly we explored the amplification factor strength and behaviour. Next the wave effects in SNRs and waveforms was examined for different inclinations of the source. Lastly we estimated the string tensions based on eight mergers from the \\textsc{StarTrack} simulation, using the Bayesian Inference methods. The wave effects were easily to see in waveforms, SNR and characteristic strains. Also most of the events could be detected, based on their Signal to Noise Ratio values. Almost whole characteristic strain lies in the range of the ET. When it comes to mock observations, we had got estimated vale of a logarithm of the CS tension equal to $\\bar{\\log{Gμ}}=-9.78^{+0.44}_{-0.49} $, which were consistent with injected value equal to $-10$. At the end we conclude that CSs could be detected by the ET.",
+        "categories": [
+          "astro-ph.CO",
+          "gr-qc"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18441v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18441v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18441"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [
+          "宇宙弦",
+          "引力波透镜",
+          "理论预言"
+        ],
+        "layer": "edge",
+        "reason": "论文探讨宇宙弦的引力波透镜效应，与团队关注的高能暂现源和多信使联合观测无直接关联，属于边缘主题。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18441",
+        "title_zh": "通过引力波透镜探测宇宙弦：爱因斯坦望远镜的预测",
+        "team": "",
+        "tldr": "本文运用波动光学和贝叶斯推断，分析放大因子、信噪比和波形，基于模拟并合事件估算宇宙弦张力，论证爱因斯坦望远镜可探测宇宙弦。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18419",
+        "source": "arxiv",
+        "title": "Nancy Grace Roman Space Telescope Wide Field Instrument: Bright Point Source Saturation Response and Persistence Properties from Thermal-Vacuum Testing",
+        "authors": [
+          "Dana R. Louie",
+          "Robert F. Wilson",
+          "Thomas Barclay",
+          "Joshua E. Schlieder",
+          "Nicholas Bond",
+          "Evan Bray",
+          "Mario Cabrera",
+          "Stephanie Cheung",
+          "Ami Choi",
+          "Analia Cillis",
+          "Nicholas Collins",
+          "Tyler D. Groff",
+          "Robert J. Hill",
+          "Jeffrey Kruk",
+          "Gregory Mosby",
+          "Jennie Paine",
+          "Bernard J. Rauscher",
+          "Timothy A. Reichard",
+          "Maxime Rizzo",
+          "Scott Rohrbach",
+          "Nicole Schanche",
+          "Eric R. Switzer"
+        ],
+        "abstract": "The Nancy Grace Roman Space Telescope's Wide Field Instrument (WFI) will observe hundreds of thousands of bright stars across its Core Community Surveys, particularly in the dense stellar fields of the Galactic Bulge Time Domain Survey (GBTDS). Sources brighter than ~17th magnitude will saturate WFI detector pixels in typical survey exposures, with the brightest stars deeply saturating large pixel regions and potentially producing persistence signals that may impact subsequent observations. Prior detector characterization did not explore the regime of deep point source saturation. To address this gap, we conducted a bright star saturation test during WFI's second Thermal Vacuum test campaign (TVAC2) at BAE Space & Mission Systems in Boulder, CO. Using the Stimulus of Ray Cones (SORC) telescope simulator, we projected nine in-focus point sources through the F146 filter onto two Sensor Chip Assemblies (SCAs), with fluxes tuned to approximate stellar magnitudes ranging from ~4 to ~18 in ~170 s exposures. We present analyses of the saturation response and persistence properties of these detectors. We find that the saturated region of a ~4 mag source grows to ~150 pixels in diameter after ~170 s of illumination, compared to ~15 pixels for a ~12 mag source. Pixels adjacent to the expanding saturation front exhibit pronounced non-linear behavior consistent with charge leakage from saturated neighbors. For persistence, we find that the median signal in the first post-illumination dark exposure is broadly consistent across source magnitudes spanning ~4 to ~17, and that persistence decays to detector background levels ($\\lesssim$0.05 e$^{-}$ s$^{-1}$) within approximately 20 minutes, consistent with flat field persistence measurements from the same TVAC2 campaign. These pre-flight characterization results inform community understanding of WFI detector response to prepare for Roman science.",
+        "categories": [
+          "astro-ph.IM",
+          "astro-ph.EP",
+          "astro-ph.GA",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18419v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18419v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18419"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文介绍Roman望远镜探测器性能测试，不属于高能暂现源范畴，与团队科学目标无直接关联。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18419",
+        "title_zh": "南希·格蕾丝·罗曼太空望远镜宽场仪器：热真空测试中的亮点点源饱和响应与持久性特性",
+        "team": "",
+        "tldr": "通过热真空测试，研究了罗曼望远镜宽场仪器对亮星的饱和响应和持久性，发现饱和区域随星等扩大，邻近像素出现非线性电荷泄漏，持久性约20分钟衰减至背景水平。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18399",
+        "source": "arxiv",
+        "title": "Nonradial perturbations of static charged wormholes",
+        "authors": [
+          "Jose Luis Blázquez-Salcedo",
+          "Luis Manuel González-Romero",
+          "Fech Scen Khoo",
+          "Jutta Kunz",
+          "Pablo Navarro Moreno"
+        ],
+        "abstract": "We investigate the nonradial quasinormal-mode spectrum of static charged Ellis--Bronnikov wormholes in Einstein--Maxwell theory minimally coupled to a phantom scalar field. The background solutions are known in closed form and comprise three classes: subcritical, critical and supercritical, which all approach the extremal Reissner--Nordström geometry at the boundary of their domain of existence. We derive the linear perturbation equations for axial and polar sectors, including the coupled gravitational, electromagnetic and phantom-scalar degrees of freedom, and compute the corresponding spectra by means of a Chebyshev spectral method. The uncharged limit reproduces the known Ellis--Bronnikov spectrum and exhibits the expected electromagnetic isospectrality. For charged configurations we track the axial and polar branches across the three families of solutions and identify the effect of the charge on the damping times and oscillation frequencies. In particular, we find that charge can substantially reduce damping rates as the extremal Reissner--Nordström limit is approached. We also uncover a nonradial polar instability, most clearly visible in the fundamental $l=2$ branch for sufficiently large wormhole masses. This instability is distinct from the familiar radial Ellis--Bronnikov instability and shows that the nonradial sector imposes additional constraints on the dynamical viability of charged wormholes.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18399v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18399v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18399"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究静态带电虫洞的非径向微扰，与高能暂现源研究范围无关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18399",
+        "title_zh": "静态带电虫洞的非径向扰动",
+        "team": "",
+        "tldr": "通过推导线性扰动方程并计算非径向拟正则模谱，研究了电荷对阻尼率和振荡频率的影响，并发现了非径向极化不稳定性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18398",
+        "source": "arxiv",
+        "title": "The fermion sector of the SMEFT from asymptotically safe gravity",
+        "authors": [
+          "Astrid Eichhorn",
+          "Moritz Gessner",
+          "Shouryya Ray"
+        ],
+        "abstract": "Quantum gravity impacts Standard Model fields through effective interactions generated by renormalization. These appear as Standard Model Effective Field Theory (SMEFT) operators, where the effects of new physics are parametrized by the values of the higher-order SMEFT coefficients. As a step towards predicting these SMEFT coefficients from the asymptotically safe Standard Model with quantum gravity, we investigate the flow of a representative set of four-fermion operators under gravitational fluctuations. We strengthen the evidence for the near-perturbative nature of asymptotic safety by finding that these dimension-six-interactions remain irrelevant, resulting in the prediction of specific values for the dimensionless ratios of SMEFT coefficients in the IR. We also find a mechanism that can make a specific subset of these operators relevant. This subset is determined by symmetry considerations. On this basis, we provide a categorization of dimension-six-SMEFT interactions into two categories. Interactions in the first category are predicted to be non-zero, but Planck-scale suppressed. Interactions in the second category are predicted to be zero at small gravitational coupling, but may become free parameters of the theory at larger gravitational couplings.",
+        "categories": [
+          "hep-th",
+          "gr-qc",
+          "hep-ph"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18398v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18398v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18398"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "该论文研究量子引力与标准模型有效场论，属于高能理论物理，与高能暂现源完全无关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18398",
+        "title_zh": "来自渐近安全引力的SMEFT费米子扇区",
+        "team": "",
+        "tldr": "基于渐近安全引力，研究四费米子算符的演化，预测SMEFT系数的红外比值，并将六维相互作用分为两类。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18405",
+        "source": "arxiv",
+        "title": "Extreme mass-ratio inspirals into Newtonian Proca stars",
+        "authors": [
+          "João Bernardo Silva",
+          "Richard Brito"
+        ],
+        "abstract": "Massive bosonic fields can form self-gravitating solitonic structures, which for vector fields are known as Proca stars. For ultralight fields, these structures can describe the cores of dark matter haloes surrounding the supermassive black holes at the center of galaxies. It has been argued that future gravitational-wave detectors might be able to probe the properties of dark matter structures. However, most of the analyses considering ultralight dark matter have focused on massive scalar fields. In this work, we study how Proca stars respond to a perturbing small object inspiralling in their interior, in the Newtonian limit. We consider both Newtonian spherically symmetric Proca stars and the non-spherically symmetric ground-state solutions. We compute the total energy lost by the orbiting object and compare it to the case where the bosonic star is composed of a scalar field. Our results show that, at the Newtonian level, the energy lost by the object in a Proca star ground-state is similar to that in its scalar field counterpart, with relative differences of at most $\\sim 20\\%$, while the maximum orbital energy loss rate in the ground-state configuration can be one to two orders of magnitude larger than in the spherically symmetric Proca star, when a central parasitic black hole is present. Our work motivates the need to study extreme mass-ratio inspirals into Proca stars using a fully relativistic setup, where differences between the Proca and scalar boson star ground states are expected to become more significant.",
+        "categories": [
+          "gr-qc",
+          "hep-ph"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18405v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18405v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18405"
+        }
+      },
+      "score": {
+        "score": 25,
+        "tags": [
+          "暗物质"
+        ],
+        "layer": "edge",
+        "reason": "论文研究暗物质结构Proca星中的极端质量比旋进，属于暗物质理论，与团队高能暂现源观测核心主题关联度低，但符合边缘主题中的暗物质物理。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18405",
+        "title_zh": "极端质量比旋进牛顿Proca星",
+        "team": "",
+        "tldr": "研究了牛顿极限下Proca星对旋进小物体的响应，计算了能量损失，并与标量场情形进行了比较。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18395",
+        "source": "arxiv",
+        "title": "Hawking emission of massive vector fields by Kerr black holes",
+        "authors": [
+          "Marco Calzà",
+          "Miguel Faria",
+          "Yuber F. Perez-Gonzalez",
+          "João G. Rosa"
+        ],
+        "abstract": "We compute, for the first time, the Hawking emission spectrum of massive vector (Proca) fields by spinning Kerr black holes, determining the associated greybody factors and the resulting mass and spin loss functions. We show, in particular, that the scalar (longitudinal) polarization of the Proca field has a spectrum approaching that of a free scalar field in the massless limit (in which it becomes a pure gauge mode), although we find substantial differences for finite mass. The contribution of the two vector (transverse) polarization modes coincides, as expected, with the one obtained by Page for the Maxwell field in the massless limit. The black hole's evaporation rate is dominated by the scalar mode for slowly spinning black holes and by the two vector modes as the black hole approaches extremality. As for other fields, we find that Proca Hawking emission is Boltzmann-suppressed for Hawking temperatures $T_H\\lesssim |μ-Ω_H|$, where $μ$ is the field mass and $Ω_H$ is the angular velocity of the black hole's horizon. This implies that highly spinning black holes can efficiently emit massive vector fields at temperatures parametrically below the field's mass. Finally, we also find that superradiant emission is more pronounced for massive vector fields, with a maximum amplification factor of $\\simeq 7\\%$ (compared to $\\simeq 4\\%$ for massless photons).",
+        "categories": [
+          "gr-qc",
+          "astro-ph.CO",
+          "hep-ph"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18395v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18395v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18395"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "理论物理",
+          "黑洞",
+          "霍金辐射"
+        ],
+        "layer": "edge",
+        "reason": "该论文研究Kerr黑洞的Proca场霍金辐射，属于纯粹理论黑洞物理，与高能暂现源（如GRB、引力波对应体、磁星等）无直接关联，归为边缘主题。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18395",
+        "title_zh": "Kerr黑洞发射大质量矢量场的霍金辐射",
+        "team": "",
+        "tldr": "首次计算了旋转Kerr黑洞的大质量矢量(Proca)场的霍金辐射谱，确定了灰体因子和损失函数，发现标量极化模在无质量极限下趋近于自由标量场，矢量极化模趋近于Maxwell场，超辐射放大达约7%。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18572",
+        "source": "arxiv",
+        "title": "Stream-Driven Ignition of a Realistic Undisturbed Helium Shell on a White Dwarf",
+        "authors": [
+          "Nethra Rajavel",
+          "Dean M. Townsley",
+          "Ken J. Shen"
+        ],
+        "abstract": "The dynamically driven double degenerate double detonation (D$^6$) model has emerged as a promising progenitor scenario for Type Ia supernovae. In this model, a carbon-oxygen white dwarf (WD) in a close double WD binary undergoes a double-detonation triggered by dynamical mass transfer from its companion. The mass transfer stream directly impacts the surface of the primary WD, potentially igniting a helium detonation in the surface layer. The resulting shock converges in the core, triggering a carbon detonation that ultimately unbinds the star. While previous studies have demonstrated the viability of this mechanism, the conditions under which the helium shell ignites remain uncertain. We perform two-dimensional simulations using FLASH to study helium detonation ignition driven by stream impact on a carbon-oxygen WD with a realistic, unmixed composition profile left at the end of the previous helium-shell burning phase before the WD was formed. We model WDs with masses of 0.8, 0.9, and 1.0 $,M_\\odot$ and vary stream properties for each case. We find that stream impact leads to helium ignition in all cases, with ignition occurring at varying distances from the impact point. Ignition consistently occurs near the core-shell transition, highlighting the importance of a realistic WD profile. However, the ignition mechanism differs between models and can arise from interactions of neighboring hot, mixed regions rather than a single point. Ultimately, all models but one sustain a propagating detonation capable of traversing the WD surface further reinforcing the viability of the D$^6$ model as a progenitor scenario for Type Ia supernovae.",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18572v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18572v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18572"
+        }
+      },
+      "score": {
+        "score": 60,
+        "tags": [
+          "超新星激波",
+          "白矮星",
+          "双星并合"
+        ],
+        "layer": "related",
+        "reason": "该论文研究双白矮星并合触发Ia超新星的点火机制，属于高能暂现天体中的超新星激波相关理论模拟，与团队关注的超新星激波研究相关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18572",
+        "title_zh": "白矮星上真实未扰动氦壳的吸积流驱动点燃",
+        "team": "",
+        "tldr": "通过二维模拟证实，在不同质量的白矮星上，吸积流撞击均能点燃氦壳爆轰，且点火位置多变，支持D6模型。",
+        "review": "",
+        "highlight": "首次采用来自MESA的真实、连续核-壳过渡剖面，发现点火可发生在星表任何位置，且核合成以中等质量元素为主，符合Ia型超新星观测约束。",
+        "relation": "",
+        "authors_en": "Nethra Rajavel (Department of Physics & Astronomy, The University of Alabama, Tuscaloosa, AL, USA), Dean M. Townsley (Department of Physics & Astronomy, The University of Alabama, Tuscaloosa, AL, USA), Ken J. Shen (Department of Astronomy and Theoretical Astrophysics Center, University of California, Berkeley, CA, USA)",
+        "corresponding_en": "Nethra Rajavel",
+        "context_outlook": "承接[[Rajavel+ 2025]]用简化界面模拟流冲击点燃的研究，以及[[Shen+ 2024]]利用MESA真实剖面研究热斑传播的工作，本研究首次将真实的连续核-壳过渡剖面引入流冲击模拟，发现氦爆轰仍能被触发，但点火位置不再局限于撞击点，而是可以发生在远离撞击点的星体表面任何方位，且点火机制多样。这进一步巩固了D6模型作为Ia型超新星前身场景的可行性，并揭示了核合成产物以中等质量元素为主，符合观测约束。未来三维模拟有望厘清爆轰传播的不对称性以及多次点火的相互作用，更精确地确定爆炸结果和观测特征。",
+        "citations": [
+          {
+            "label": "Rajavel+ 2025",
+            "authors": "Rajavel",
+            "year": "2025",
+            "title": "Local 2D Simulations of the Ignition of a Helium Shell Detonation on a White Dwarf by an Impacting Stream",
+            "ref": "N. Rajavel, D. M. Townsley, and K. J. Shen (2025) Local 2D Simulations of the Ignition of a Helium Shell Detonation on a White Dwarf by an Impacting Stream. The Astrophysical Journal 979 (1), pp. 54. External Links: Document, 2408.10981 Cited by: §I, §I, §I, §II.2, §II.3, §II, §III.1, §IV, §V.",
+            "arxiv": "2408.10981",
+            "doi": "10.3847/1538-4357/ada034",
+            "bibcode": "2025ApJ...979...54R",
+            "url": "https://arxiv.org/abs/2408.10981",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Shen+ 2024",
+            "authors": "Shen",
+            "year": "2024",
+            "title": "Almost All Carbon/Oxygen White Dwarfs Can Support Double Detonations",
+            "ref": "K. J. Shen, S. J. Boos, and D. M. Townsley (2024) Almost All Carbon/Oxygen White Dwarfs Can Support Double Detonations. arXiv e-prints, pp. arXiv:2405.19417. External Links: Document, 2405.19417 Cited by: §I, §I, §I, Figure 1, Figure 13, §II.1, §II.1, §III.3, §III.3, §III.4, §III, §IV, §V.",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/ad7379",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/ad7379",
+            "source": "crossref",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18384",
+        "source": "arxiv",
+        "title": "Bispectrum BAO and the baryon-dark matter relative velocity",
+        "authors": [
+          "Adriana Nadal-Matosas",
+          "Héctor Gil-Marín",
+          "Licia Verde"
+        ],
+        "abstract": "We evaluate the Baryon Acoustic Oscillation (BAO) signal in the bispectrum as a tool to detect and characterize the relative velocity effect. We extend the existing framework by presenting an updated model for the redshift-space tree-level bispectrum that comprehensively incorporates all relative velocity terms. We introduce a novel, unbiased technique to extract the isotropic BAO dilation parameter ($α_{\\rm iso}$) solely from the bispectrum monopole. Validated against N-body simulations, this template-based extraction successfully recovers the acoustic scale and enhances the statistical constraining power by $\\sim30\\%$, when analyzed in tandem with the pre-reconstruction power spectrum, offering a powerful complement to standard post-reconstruction pipelines. We quantify how individual relative velocity components distort both two- and three-point statistics. We find that these effects induce distinct systematic shifts in the extracted $α_{\\rm iso}$ between the two probes. We find systematic discrepancies of up to $2\\%$ for $b_{v^2}=\\pm0.05$ and up to $20\\%$ for $b_{δ^{bc}}\\le-2$. This differences demonstrate that a direct comparison of independent power spectrum and bispectrum BAO measurements can break parameter degeneracies and isolate the amplitude of these biases. Finally, we provide a concrete prescription to detect and constrain the three associated relative velocity bias parameters, showing that a joint analysis is highly sensitive to the $b_{v^2}$ and $b_{δ^{bc}}$ amplitudes. This establishes the bispectrum BAO as a robust cosmological probe for current and next-generation galaxy surveys, serving both as a cross-check for standard analyses and a crucial diagnostic tool against systematic biases.",
+        "categories": [
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18384v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18384v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18384"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [
+          "宇宙学",
+          "BAO"
+        ],
+        "layer": "edge",
+        "reason": "论文研究重子声学振荡与相对速度效应，属于宇宙学，不在团队高能暂现源科学范围内。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18384",
+        "title_zh": "双谱重子声学振荡与重子-暗物质相对速度",
+        "team": "",
+        "tldr": "本文评估双谱中的BAO信号作为探测和表征重子-暗物质相对速度效应的工具，提出全面包含相对速度项的红移空间双谱模型和从双谱单极提取各向同性BAO参数的新技术，通过N体模拟验证其与功率谱联合分析可增强统计约束约30%，并给出检测和约束三个相对速度偏置参数的方法。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18390",
+        "source": "arxiv",
+        "title": "GUEST: Gravitational Universe Exploration with Satellite Tracking. A passive satellite laser-ranging mission for the dark gravitational Universe",
+        "authors": [
+          "Diego Blas",
+          "Aurélien Hees",
+          "F. Javier Atapuerca",
+          "Giada Bargiacchi",
+          "Massimo Bassan",
+          "Joshua N. Benabou",
+          "Bruno Bertrand",
+          "Adrien Bourgoin",
+          "Clare Burrage",
+          "Nicolò Burzillà",
+          "Alfonso Caldiero",
+          "Roberto Campagnola",
+          "Andrea Caputo",
+          "Ana Caramete",
+          "Laurentiu Caramete",
+          "Joan Manel Casalta Escuer",
+          "Julien Chabé",
+          "Gabriel Chiritoi",
+          "Marco Cinelli",
+          "Florin-Ioan Constantin",
+          "Neil J. Cornish",
+          "Clément Courde",
+          "Simone Dell'Agnello",
+          "Alessandro Di Marco",
+          "Sebastian Ellis",
+          "Malcolm Fairbairn",
+          "Ariadna Farrés",
+          "Joshua W. Foster",
+          "Silvia Gasparotto",
+          "Marta Goli",
+          "Yann Gouttenoire",
+          "Michael Häfner",
+          "Antonio J. Iovino",
+          "Maria-Catalina Isfan",
+          "Justin Janquart",
+          "Alexander C. Jenkins",
+          "Jean-Paul Kneib",
+          "Sébastien Le Maistre",
+          "David Lucchesi",
+          "Marco Lucente",
+          "Angus Macdonald",
+          "Jorge Martín Camalich",
+          "Rosa Martínez Rubiella",
+          "Josep J. Masdemont",
+          "Ilia Musco",
+          "Toshimichi Otsubo",
+          "Cristóbal Padilla",
+          "Fco. Rogelio Palomo Pinto",
+          "Alice Paun",
+          "Alice Perego",
+          "Roberto Peron",
+          "Florentina-Crenguta Pislan",
+          "Florin Adrian Popescu",
+          "Luca Porcelli",
+          "Nanda Rea",
+          "Rafael Rebolo",
+          "Marco Reyes",
+          "Ignasi Ribas",
+          "José C. Rodríguez",
+          "Pascal Rosenblatt",
+          "Albert Roura",
+          "Soumen Roy",
+          "Mariano Sánchez Nogales",
+          "Francesco Santoli",
+          "Feliciana Sapio",
+          "Anja Schlicht",
+          "Ulrich Schreiber",
+          "Angela Serrano",
+          "Daniel Serrano Lombillo",
+          "Alberto Sesana",
+          "Carlos F. Sopuerta",
+          "Krzysztof Sośnica",
+          "Nicola Tamanini",
+          "Elisa Todarello",
+          "Sokratis Trifinopoulos",
+          "Miguel Vanvlasselaer",
+          "Dario Vetrano",
+          "Massimo Visco",
+          "Hanxi Wang",
+          "Xiao Xue",
+          "Miguel Zumalacárregui"
+        ],
+        "abstract": "GUEST is a space mission concept whose central objective is the detection of gravitational waves (GWs) in the microhertz band -- a physics-rich frequency window that no other present or planned detector can reach at a significant level. The concept is simple: two dense, passive spheres, covered with cube-corner retroreflectors, deployed in {highly eccentric} Earth orbits ($e \\gtrsim 0.7$, period $P \\gtrsim 33$ h), tracked continuously by the global network of satellite laser-ranging stations over a minimum observation time of 10 years, with an expected total duration of 30 years. The orbits themselves act as resonant detectors of the oscillating gravitational perturbations, with the microhertz sensitivity emerging from the selected orbital parameters. From the same data stream, GUEST delivers a programme of fundamental and applied science that cuts across particle physics, gravitational-wave astronomy, cosmology, astrophysics, and geodesy: the first coherent search for GWs from supermassive black-hole binaries in the $μ$Hz band, the exploration of primordial GW backgrounds in the unexplored energy-scale gap between pulsar-timing arrays and LISA, a dedicated probe of ultra-light dark matter in a parameter region untouched by any other experiment, a new way to search for ultra-light bosons, order-of-magnitude-improved tests of new gravitational interactions at astronomical ranges, and a step change in the absolute determination of $GM_\\oplus$ that underpins the Global Geodetic Observing System and future navigation and Earth-observation missions. This white paper presents the motivation, scientific reach, and mission concept of GUEST.",
+        "categories": [
+          "astro-ph.CO",
+          "gr-qc",
+          "hep-ph",
+          "physics.ins-det"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18390v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18390v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18390"
+        }
+      },
+      "score": {
+        "score": 30,
+        "tags": [
+          "引力波",
+          "宇宙学"
+        ],
+        "layer": "edge",
+        "reason": "GUEST是微赫兹引力波探测任务，主要探测超大大质量黑洞双星和原初引力波背景，与团队聚焦的高能暂现源（GRB、引力波电磁对应体等）相关性较低，但涉及引力波天文学，属于边缘相关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18390",
+        "title_zh": "GUEST：利用卫星跟踪探索引力宇宙——针对暗引力宇宙的被动卫星激光测距任务",
+        "team": "",
+        "tldr": "提出GUEST空间任务概念，通过高偏心地球轨道上的被动卫星激光测距在微赫兹频段探测引力波，并涵盖搜寻超大质量双黑洞、原初引力波背景及超轻暗物质等多学科科学目标",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18378",
+        "source": "arxiv",
+        "title": "Probing large mass-splitting inelastic Dark Matter with RES-NOVA",
+        "authors": [
+          "D. Alloni",
+          "G. Benato",
+          "P. Carniti",
+          "M. Cataldo",
+          "L. Chen",
+          "M. Clemenza",
+          "M. Consonni",
+          "G. Croci",
+          "I. Dafinei",
+          "F. A. Danevich",
+          "C. de Vecchi",
+          "D. Di Martino",
+          "R. Elleboro",
+          "N. Ferreiro Iachellini",
+          "F. Ferroni",
+          "F. Filippini",
+          "S. Ghislandi",
+          "A. Giachero",
+          "L. Gironi",
+          "P. Gorla",
+          "C. Gotti",
+          "D. L. Helis",
+          "D. V. Kasperovych",
+          "V. V. Kobychev",
+          "G. Marcucci",
+          "A. Melchiorre",
+          "A. Menegolli",
+          "S. Nisi",
+          "M. Musa",
+          "L. Pagnanini",
+          "L. Pattavina",
+          "G. Pessina",
+          "S. Pirro",
+          "S. Pozzi",
+          "M. C. Prata",
+          "A. Puiu",
+          "S. Quitadamo",
+          "M. P. Riccardi",
+          "M. Rossella",
+          "R. Rossini",
+          "E. Sala",
+          "F. Saliu",
+          "A. Salvini",
+          "V. I. Tretyak",
+          "L. Trombetta",
+          "D. Trotta",
+          "H. Yuan",
+          "J. Luengas",
+          "H. Ramani"
+        ],
+        "abstract": "Probing inelastic dark matter at large mass splittings requires heavy target nuclei, an extended recoil-energy range, and the high-velocity tail of the dark-matter distribution. We exploit these features with the RES-NOVA prototype detector, featuring a PbWO4 cryogenic calorimeter, produced from archaeological Pb and operated at the deep-underground laboratory of Gran Sasso of INFN (Italy), analyzing a 32.4 g day exposure over 2.5 keV - 1 MeV under both the Standard Halo Model (SHM) and a Large Magellanic Cloud (LMC)-motivated velocity distribution. We extend direct-detection constraints beyond the 330 keV reach of established technologies (e.g. Xe-based TPCs), probing splittings up to 510 (780) keV in the SHM (LMC) benchmark, while future exposures will probe new regions of the parameter space.",
+        "categories": [
+          "astro-ph.CO",
+          "hep-ex",
+          "hep-ph",
+          "physics.ins-det"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18378v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18378v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18378"
+        }
+      },
+      "score": {
+        "score": 25,
+        "tags": [
+          "暗物质",
+          "直接探测"
+        ],
+        "layer": "edge",
+        "reason": "该论文涉及暗物质直接探测，属于高能天体物理边缘主题，与团队核心暂现源研究无关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18378",
+        "title_zh": "利用RES-NOVA探测大质量劈裂的非弹性暗物质",
+        "team": "",
+        "tldr": "利用考古铅制成的PbWO4低温量热计RES-NOVA原型探测器，分析32.4克日曝光数据，在标准晕模型和大麦哲伦云模型下，将大质量劈裂非弹性暗物质的直接探测约束扩展至510-780 keV。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18376",
+        "source": "arxiv",
+        "title": "Dark Energy Bubble as Dynamical Dark Energy: Properties and CMB Constraints",
+        "authors": [
+          "Batia Friedman-Shaw",
+          "Matthew C. Johnson",
+          "Katherine J. Mack"
+        ],
+        "abstract": "Recent DESI results are in tension with the constant dark energy density predicted by the $Λ$CDM model. If dark energy is associated with the vacuum energy of a scalar field in a metastable state, it will undergo a first-order phase transition through the nucleation of bubbles containing a reduced dark energy density. In this paper, we explore the consequences of this model, where dark energy density varies in both space and time. We model a single bubble spacetime using the Israel junction conditions and derive each of the usual distance measures in this inhomogeneous cosmology. We find that the model predictions of Alcock-Paczynski distortion have features that align strikingly well with the DESI measurements if the dark energy phase transition occurred at roughly a redshift of 1.4 and if the bubble of lower dark energy density has roughly 10$\\%$ less dark energy density than the outer cosmology. Despite this feature, we find that the dark energy bubble is heavily constrained by the CMB which excludes the region of parameter space that reproduces the DESI BAO measurements. Still, the peculiar features in the distance measurements of the dark energy bubble cosmology serve as a useful toy model to motivate and inform future work in the currently poorly explored area of spatially varying dynamical dark energy.",
+        "categories": [
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18376v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18376v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18376"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文内容为暗能量气泡模型与CMB约束，不涉及高能暂现源或团队关注的核心及相关科学主题。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18376",
+        "title_zh": "作为动力学暗能量的暗能量气泡：性质与CMB约束",
+        "team": "",
+        "tldr": "论文通过以色列连接条件建模暗能量气泡，发现其Alcock-Paczynski畸变预测与DESI测量吻合，但该参数空间被CMB数据强烈约束。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18369",
+        "source": "arxiv",
+        "title": "Dissecting the Scalar Cosmological Collider with the Cosmic Microwave Background",
+        "authors": [
+          "Oliver H. E. Philcox"
+        ],
+        "abstract": "The cosmological collider program probes ultra-high-energy physics by searching for subtle oscillatory signatures induced by inflationary particle exchange. Due to the non-linear symmetries usually assumed in inflation, these signals do not appear in isolation; moreover, their amplitudes are bounded by perturbativity and unitarity. To comprehensively probe cosmological collider physics, we must jointly analyze the full multi-field inflationary Lagrangian: in this work, we conduct such a study, probing single, double, and triple scalar field exchange and self-interactions across a wide range of masses (in both the complementary and principal series), mixings, and sound-speeds. Using modern theoretical tools (including the cosmological bootstrap and the cosmological flow), we construct a vast library of tree-level primordial bispectra: combining these with recent measurements of the inflationary shape function from Planck and modern sampling techniques, we perform Bayesian exploration of the eight-parameter multi-field likelihood. Most previous studies of cosmological collider physics assume weak mixing, such that the coupling between the scalar field and the Goldstone mode can be treated perturbatively: in our companion study, we demonstrate that this assumption is incompatible with current datasets except at the smallest masses. By solving for the inflationary bispectra numerically using CosmoFlow, we perform the first analysis of the strongly-mixed collider, demonstrating that the Planck constraints are much tighter than the theoretical bounds, though the oscillatory contributions are heavily suppressed. Across the full multi-field landscape, we find no evidence for new physics with a maximal $χ^2$ improvement of $5.3$.",
+        "categories": [
+          "astro-ph.CO",
+          "gr-qc",
+          "hep-ex",
+          "hep-ph",
+          "hep-th"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18369v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18369v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18369"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究暴胀宇宙学与原初非高斯性，与高能暂现源及团队科学范围完全无关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18369",
+        "title_zh": "用宇宙微波背景剖析标量宇宙学对撞机",
+        "team": "",
+        "tldr": "本文联合分析多场膨胀拉氏量，利用Planck数据对单、双、三重标量场交换及自相互作用进行贝叶斯约束，首次考虑强混合情况，未发现新物理证据。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18381",
+        "source": "arxiv",
+        "title": "Gravitational waves from self-resonance during reheating with a quantum-corrected inflaton potential",
+        "authors": [
+          "Tomoya Inada",
+          "Noel Jonathan Jobu",
+          "Kenji Nishiwaki",
+          "Toshifumi Noumi",
+          "Naoki Yamatsu"
+        ],
+        "abstract": "We investigate how localized quantum corrections to the inflaton potential affect preheating dynamics and the resulting stochastic gravitational wave (GW) spectrum. When these corrections sufficiently suppress the quadratic term of the potential near its minimum, inflaton self-resonance can produce a peaked GW spectrum. On the other hand, we find that a smooth and enhanced spectrum can appear if the quadratic term acquires a negative coefficient. As a concrete realization, we analyze the $α$-attractor T-model with a one-loop Coleman--Weinberg correction induced by a heavy scalar and compute the resulting GW spectra using lattice simulations. The GW signals lie in the ultra-high-frequency regime at frequencies above the kHz range. These results suggest that GW signals from preheating may probe quantum corrections to the inflaton potential, thereby providing indirect information about the underlying UV physics.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO",
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18381v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18381v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18381"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "原初引力波"
+        ],
+        "layer": "edge",
+        "reason": "该论文研究再加热期间自共振产生的原初引力波背景，与团队关注的高能暂现源（如引力波电磁对应体、多信使事件）无关，仅涉及引力波产生，属于边缘相关。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18381",
+        "title_zh": "再加热中量子修正暴胀子势自共振产生的引力波",
+        "team": "",
+        "tldr": "本文利用格点模拟研究了量子修正暴胀子势对再加热自共振引力波谱的影响，并以α吸引子T模型为例，揭示了超高频引力波信号可探测暴胀势的量子修正。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18352",
+        "source": "arxiv",
+        "title": "Search for Planetary-mass Black Holes with an Improved Viterbi Algorithm",
+        "authors": [
+          "Raul Rodriguez",
+          "George Alestas",
+          "Sachiko Kuroyanagi",
+          "Juan Garcia-Bellido"
+        ],
+        "abstract": "Primordial black holes in the planetary-mass range have attracted renewed interest; however, the search for gravitational waves from such binaries remains challenging due to their long-lived nature. In this work, we present, define, and validate a fully operational search pipeline developed to detect planetary-mass binaries during their inspiral phase. We use the Viterbi algorithm, a dynamic programming technique that recovers the most likely track based on a Hidden Markov Model. To enhance its performance, we introduce a novel time-frequency representation of the data and a candidate isolation procedure that separates signals from background noise. The evaluation of candidates is carried out using the two detection statistics, $n_σ$ and NMSE, which quantify the power significance and the consistency with the expected binary evolution. We then validate the search method using O3 LIGO Hanford data with a population of injected signals. The pipeline is able to recover most of the signals with a fixed false-alarm ratio of $3\\%$, covering Galactic scales across most of the parameter space and reaching luminosity distances $ \\gtrsim 100$ kpc in the most sensitive region. For each candidate, we also obtain an estimate of the system's chirp mass, whose accuracy remains high throughout the detectable range, enabling a rapid characterization of the system upon detection.",
+        "categories": [
+          "astro-ph.IM",
+          "gr-qc"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18352v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18352v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18352"
+        }
+      },
+      "score": {
+        "score": 30,
+        "tags": [
+          "多信使触发与联合",
+          "边缘主题"
+        ],
+        "layer": "edge",
+        "reason": "该论文使用改进的Viterbi算法搜索行星质量原初黑洞的引力波信号，属于引力波天文学，与团队的多信使触发方向间接相关，但目标源并非高能暂现源，相关度中等偏低。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18352",
+        "title_zh": "利用改进的维特比算法搜寻行星质量黑洞",
+        "team": "",
+        "tldr": "本文提出并验证了一种基于改进Viterbi算法和新型时频表示的搜寻管道，用于探测行星质量双黑洞在旋近阶段的引力波信号，在LIGO O3数据中恢复大多数信号且参数估计准确。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.18437",
+        "source": "arxiv",
+        "title": "Can We Find the Emission Mechanism Behind the Extremely Bright GRB 230812B?",
+        "authors": [
+          "Utkarsh Pathak",
+          "Sameer K. Patil",
+          "Hitesh Tanenia",
+          "Yashowardhan Rai",
+          "Viswajeet Swain",
+          "Anuraag Arya",
+          "Gaurav Waratkar",
+          "Anirudh Salgundi",
+          "Mehul Goyal",
+          "Varun Bhalerao",
+          "Igor Andreoni",
+          "Sarah Antier",
+          "G. C. Anupama",
+          "Sudhanshu Barway",
+          "Dipankar Bhattacharya",
+          "Tanmoy Chattopadhyay",
+          "Michael Coughlin",
+          "Anirban Dutta",
+          "Christoffer Fremling",
+          "Nidhal Guessoum",
+          "Mansi Kasliwal",
+          "Oliver J. Roberts",
+          "Gokul P. Srinivasaragavan",
+          "Rishabh Singh Teja",
+          "Santosh Vadawale",
+          "Peter Veres"
+        ],
+        "abstract": "GRB 230812B is a bright long-duration GRB with a luminous, long-lived afterglow and an AstroSat/CZTI polarization measurement during the prompt phase, enabling a joint study of its prompt spectral evolution, polarization, and broadband afterglow. Time-resolved spectroscopy of the prompt emission shows that during the rising phase, the low-energy Band-function index exceeds the synchrotron line of death, favoring the presence of an additional thermal component. At later times, from $T_0+2$ s to $T_0+32$ s, the prompt spectra are consistent with predominantly non-thermal emission. Polarization analysis of the prompt emission in the $300$-$600$ keV band yields a marginal lower limit on the polarization fraction of $Π\\gtrsim 50\\%$ at the $1σ$ level.   The long X-ray monitoring of the afterglow shows no jet break over the observed baseline. Multiwavelength afterglow modeling favors a wide jet with an inferred half-opening angle of $θ_j = 15^{+6}_{-4}$ degrees observed close to the jet axis with a viewing angle of $θ_v = 0.9^{+1.8}_{-0.6}$ degrees. The inferred circumburst density is low, $n_0 = 1.2^{+0.3}_{-0.1}\\times10^{-4}\\,\\textrm{cm}^{-3}$, and the isotropic-equivalent kinetic energy of the jet is $E_{{\\rm k}, iso} = 4.0^{+1.5}_{-0.8} \\times 10^{53}$ erg.   Taken together, the prompt spectral evolution favors an early phase with a thermal contribution followed by a later phase dominated by non-thermal emission. The polarization constraint in the late prompt phase is consistent with synchrotron emission, although a higher-significance polarization measurement will be required to robustly constrain the magnetic-field geometry and the relative contribution of photospheric emission.",
+        "categories": [
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-20",
+        "url": "https://arxiv.org/abs/2607.18437v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.18437v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.18437"
+        }
+      },
+      "score": {
+        "score": 95,
+        "tags": [
+          "伽马暴",
+          "GRB",
+          "长暴",
+          "余辉",
+          "能谱",
+          "偏振"
+        ],
+        "layer": "core",
+        "reason": "论文研究极亮伽马暴GRB 230812B的辐射机制，涉及prompt谱演化、偏振和宽带余辉建模，属于核心主题中的伽马暴研究"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.18437",
+        "title_zh": "我们能找到极亮GRB 230812B背后的辐射机制吗？",
+        "team": "",
+        "tldr": "本文对极亮GRB 230812B展开瞬时频谱偏振分析与宽带余辉建模，早期瞬时辐射含热成分，晚期为非热谱，偏振下限≥50%；余辉显示宽喷流、视线近轴，指向有序磁场同步辐射机制。",
+        "review": "",
+        "highlight": "稀有案例：同时获得瞬发偏振下限（Π≳50%）和深度多波段余辉建模，将喷流宏观几何（θ_j≈15°、视线近轴）与微观辐射机制（有序磁场同步辐射）直接关联，排除了光球层和各向同性磁场模型。",
+        "relation": "",
+        "authors_en": "U. Pathak (Indian Institute of Technology Bombay), S. K. Patil (Indian Institute of Technology Bombay), H. Tanenia (Indian Institute of Technology Bombay) et al.",
+        "corresponding_en": "",
+        "context_outlook": "以往针对GRB高能偏振的研究主要依赖AstroSat/CZTI等仪器的稀疏样本[[Chattopadhyay+ 2019b]]，理论预测不同辐射机制和磁场结构会产生迥异的偏振信号[[Gill+ 2021]]，但多数事件缺乏深度多波段余辉建模，难以将偏振与喷流几何直接关联。GRB 230812B凭借其极高的亮度和AstroSat/CZTI在非饱和时段的偏振测量，首次实现了瞬时偏振下限（Π≳50%）与详细余辉建模的联合约束，结果表明宽喷流、视线接近轴线情形下有序磁场同步辐射[[Toma+ 2009]]是主要的解释。未来Daksha、POLAR-2等大动态范围偏振仪将能捕获更多强暴的未饱和信号，并辅以快速多波段监测[[Bhalerao+ 2024]]，有望系统地揭示GRB喷流的磁化特性和能量耗散过程。",
+        "citations": [
+          {
+            "label": "Chattopadhyay+ 2019b",
+            "authors": "Chattopadhyay",
+            "year": "2019b",
+            "title": "Prompt Emission Polarimetry of Gamma-Ray Bursts with the AstroSat CZT Imager",
+            "ref": "T. Chattopadhyay, S. V. Vadawale, E. Aarthy, N. P. S. Mithun, V. Chand, A. Ratheesh, R. Basak, A. R. Rao, V. Bhalerao, S. Mate, B. Arvind, V. Sharma, and D. Bhattacharya (2019b) Prompt Emission Polarimetry of Gamma-Ray Bursts with the AstroSat CZT Imager. ApJ 884 (2), pp. 123. External Links: Document, 1707.06595",
+            "arxiv": "1707.06595",
+            "doi": "10.3847/1538-4357/ab40b7",
+            "bibcode": "2019ApJ...884..123C",
+            "url": "https://arxiv.org/abs/1707.06595",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gill+ 2021",
+            "authors": "Gill",
+            "year": "2021",
+            "title": "GRB Polarization: A Unique Probe of GRB Physics",
+            "ref": "R. Gill, M. Kole, and J. Granot (2021) GRB Polarization: A Unique Probe of GRB Physics. Galaxies 9 (4), pp. 82. External Links: Document, 2109.03286",
+            "arxiv": "2109.03286",
+            "doi": "10.3390/galaxies9040082",
+            "bibcode": "2021Galax...9...82G",
+            "url": "https://arxiv.org/abs/2109.03286",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Toma+ 2009",
+            "authors": "Toma",
+            "year": "2009",
+            "title": "Statistical Properties of Gamma-Ray Burst Polarization",
+            "ref": "K. Toma, T. Sakamoto, B. Zhang, J. E. Hill, M. L. McConnell, P. F. Bloser, R. Yamazaki, K. Ioka, and T. Nakamura (2009) Statistical Properties of Gamma-Ray Burst Polarization. ApJ 698 (2), pp. 1042–1053. External Links: Document, 0812.2483",
+            "arxiv": "0812.2483",
+            "doi": "10.1088/0004-637X/698/2/1042",
+            "bibcode": "2009ApJ...698.1042T",
+            "url": "https://arxiv.org/abs/0812.2483",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bhalerao+ 2024",
+            "authors": "Bhalerao",
+            "year": "2024",
+            "title": "Science with the Daksha high energy transients mission",
+            "ref": "V. Bhalerao, D. Sawant, A. Pai, S. Tendulkar, S. Vadawale, D. Bhattacharya, V. Rana, H. K. L. Adalja, G. C. Anupama, S. Bala, S. Banerjee, J. Basu, H. Belatikar, P. Beniamini, M. Bhaganagare, A. Bhaskar, S. Bhattacharjee, S. Bose, B. Cenko, M. Vijay Chanda, G. Dewangan, V. Dixit, A. Dutta, P. Gawade, A. Ghodgaonkar, S. Kumar Goyal, S. Gunasekaran, M. Hemanth, K. Hotokezaka, S. Iyyani, P. J. Guruprasad, M. Kasliwal, J. G. Koyande, S. Kulkarni, A. Kutty, T. Ladiya, S. Mahapatra, D. Marla, S. Mate, A. Mehla, N. P. S. Mithun, S. More, R. Mote, D. Mukherjee, S. Narang, S. Narendranath, A. Nema, S. Nimbalkar, S. Nissanke, S. Palit, J. Patel, A. Patel, B. Paul, P. Pradeep, P. Ramachandran, K. Roy, B. S. B. Saiguhan, J. Saji, M. Saleem, D. Saraogi, P. Sastry, M. Shanmugam, P. Sharma, A. Shetye, N. Singh, S. Singh, A. Singhal, S. Sreekumar, S. Sridhar, R. Srinivasan, S. Tallur, N. K. Tiwari, A. Lakshmi Vadladi, C. S. Vaishnava, S. Vishwakarma, and G. Waratkar (2024) Science with the Daksha high energy transients mission. Experimental Astronomy 57 (3), pp. 23. External Links: Document, 2211.12052",
+            "arxiv": "2211.12052",
+            "doi": "10.1007/s10686-024-09923-1",
+            "bibcode": "2024ExA....57...23B",
+            "url": "https://arxiv.org/abs/2211.12052",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      }
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "synced": "2026-07-22",
+      "n_papers": 48,
+      "review": {
+        "date": "2026-07-20",
+        "overview": "今日收录13篇文献，核心8篇、相关5篇。主题分布：太阳耀斑3篇，TDE 2篇，超新星2篇，致密天体/引力波2篇，暂现源检测、伽马暴星表、中子星物理各1篇，整体围绕高能暂现源的多平台观测、统一理论建模与方法学创新展开。",
+        "highlights": "1. 「超越自旋：QCD磁星」提出大质量中子星夸克解禁形成QCD磁星的统一框架，将AXP、SGR、超亮超新星、FBOT与FRB纳入同一物理图景，且磁场强度由质量而非自旋决定，理论雄心突出。\n2. LUTRA算法实现欠采样天文图像最优叠加与瞬变源检测，ZTF数据信噪比较现有方法提升约1.25倍，对引力波电磁对应体搜寻等时域任务具有直接实用价值。\n3. GRBAlpha与VZLUSAT-2发布超300个伽马射线暂现源的最大立方星星表，证明低成本纳卫星星座可常规监测伽马射线天空，为未来暂现源监测网络提供新范式。\n4. 时变吸积盘模型引入修正粘滞性与盘风，系统揭示粘滞性可调控辐射压不稳定性，为各类TDE光变曲线提供统一解释框架。",
+        "trends": "1. 跨暂现源统一框架成为理论热点：QCD磁星模型整合五大类高能暂现源，TDE时变吸积盘模型覆盖多种光变形态，反映领域从单源类研究向跨类别物理图景整合的趋势。\n2. 低成本空间监测平台走向成熟：立方星伽马射线星表与地面ZTF时域设施形成天地互补，多平台暂现源监测网络正在成形。\n3. 机器学习方法加速渗透：LUTRA图像叠加检测与II型超新星STELLA神经网络替代模型分别代表检测端与建模端的自动化趋势，快速贝叶斯推断正改变高能暂现源研究效率。\n4. 引力波事件持续驱动致密天体理论深化：GW231123催生气体星团矢量共振弛豫模型，GW190814激发Finsler引力致密星构建，多信使时代对极端物态与动力学的理论需求仍在增长。"
+      }
+    }
+  ]
 }
