@@ -32,6 +32,12 @@
   {% endif %}
 {% endmacro %}
 
+{% macro source_links(paper) %}
+        <div class="source-links">
+        {% for link in paper_links(paper) %}<a class="paper-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}
+        </div>
+{% endmacro %}
+
 {% macro paper_card(it, seq) %}
     <article class="card {{ it.score.layer }}" id="{{ anchor(it) }}">
       <div class="card-seq">{{ seq }}</div>
@@ -42,7 +48,7 @@
         <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
         {{ abstract_block(it) }}
         {{ ai_zone(it) }}
-        <a class="arxiv-link" href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv:{{ arxiv_id(it.paper) }} ↗</a>
+        {{ source_links(it.paper) }}
       </div>
     </article>
 {% endmacro %}
@@ -78,7 +84,7 @@
   <header class="masthead">
     <h1>高能暂现源 · 每日文献综述</h1>
     <div class="masthead-sub">HIGH-ENERGY TRANSIENTS · DAILY LITERATURE REVIEW</div>
-    <div class="masthead-meta">{{ meta.cn_date }} {{ meta.weekday }}　·　数据截至 arXiv 最新公告日</div>
+    <div class="masthead-meta">{{ meta.cn_date }} {{ meta.weekday }}　·　数据截至 arXiv / ADS 最新收录日</div>
   </header>
 
   {% set ns.sec = ns.sec + 1 %}
@@ -112,7 +118,7 @@
             <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
             {{ abstract_block(it) }}
             {% if it.summary and it.summary.title_zh %}<p class="zh-title-sm">{{ it.summary.title_zh }}{% if it.summary.tldr %}　·　{{ it.summary.tldr }}{% endif %}</p>{% endif %}
-            <a class="arxiv-link" href="{{ it.paper.url }}" target="_blank" rel="noopener">arXiv:{{ arxiv_id(it.paper) }} ↗</a>
+            {{ source_links(it.paper) }}
           </div>
         </article>
         {% endfor %}
@@ -140,7 +146,7 @@
   {% endif %}
 
   <footer class="paper-footer">
-    本站每日自动汇总，供高能暂现源研究团队内部文献跟踪参考 · 元数据来自 arXiv，版权归各原作者所有 · 综述与翻译由 AI 生成，请以原文为准 · © 2026 高能暂现源研究团队
+    本站每日自动汇总，供高能暂现源研究团队内部文献跟踪参考 · 元数据来自 arXiv 与 NASA ADS，版权归各原作者所有 · 综述与翻译由 AI 生成，请以原文为准 · © 2026 高能暂现源研究团队
   </footer>
 </main>
 {% endblock %}

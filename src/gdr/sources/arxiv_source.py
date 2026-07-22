@@ -23,8 +23,14 @@ def _entry_to_paper(e) -> Paper:
         if link.get("title") == "pdf" or link.get("type") == "application/pdf":
             pdf_url = link.get("href")
     categories = [t.get("term") for t in e.get("tags", []) if t.get("term")]
+    paper_id = _arxiv_id(e.id)
+    bare_id = paper_id.split(":", 1)[-1]
+    doi = e.get("arxiv_doi")
+    external_ids = {"arxiv": bare_id}
+    if doi:
+        external_ids["doi"] = doi
     return Paper(
-        id=_arxiv_id(e.id),
+        id=paper_id,
         source="arxiv",
         title=e.title.strip().replace("\n", " "),
         authors=[a.name for a in e.get("authors", [])],
@@ -33,7 +39,8 @@ def _entry_to_paper(e) -> Paper:
         published=e.get("published", "")[:10],
         url=e.get("link", ""),
         pdf_url=pdf_url,
-        doi=e.get("arxiv_doi"),
+        doi=doi,
+        external_ids=external_ids,
     )
 
 

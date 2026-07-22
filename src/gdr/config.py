@@ -4,6 +4,24 @@ OPENCODE_BASE_URL = os.environ.get("OPENCODE_BASE_URL", "https://opencode.ai/zen
 
 ARXIV_CATEGORIES = ["astro-ph.HE", "gr-qc", "astro-ph.SR", "astro-ph.CO"]
 
+# ADS is the published-journal complement to arXiv. `entdate` is added by
+# ADSSource at request time; this base query stays configurable so a deployment
+# can widen or narrow its journal/subject coverage without a code change.
+_ADS_TOPICS = (
+    'abs:("gamma-ray burst" OR GRB OR magnetar OR "soft gamma repeater" OR '
+    '"fast radio burst" OR FRB OR "gravitational wave" OR kilonova OR '
+    '"neutron star merger" OR "black hole neutron star" OR "multi-messenger" OR '
+    'neutrino OR "tidal disruption event" OR "X-ray transient" OR '
+    '"gamma-ray transient" OR "solar flare" OR "terrestrial gamma-ray flash" OR '
+    '"X-ray binary" OR GECAM OR "Insight-HXMT" OR SVOM OR "Einstein Probe" OR '
+    '"Fermi GBM" OR Swift OR NICER)'
+)
+_ADS_JOURNALS = "bibstem:(ApJ OR ApJL OR ApJS OR A&A OR MNRAS OR NatAs OR RAA)"
+ADS_INGEST_QUERY = os.environ.get(
+    "GDR_ADS_QUERY",
+    f"database:astronomy property:refereed doctype:article ({_ADS_TOPICS} OR {_ADS_JOURNALS})",
+)
+
 # Model tiers. Defaults are display-name-derived; confirm exact ids via scripts/list_models.py.
 MODEL_TRIAGE = os.environ.get("GDR_MODEL_TRIAGE", "deepseek-v4-flash")
 MODEL_WRITE = os.environ.get("GDR_MODEL_WRITE", "deepseek-v4-pro")
@@ -31,9 +49,11 @@ CROSSREF_MAILTO = os.environ.get("GDR_CROSSREF_MAILTO", "daily-review@users.nore
 
 FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
+ADS_PAGE_SIZE = int(os.environ.get("GDR_ADS_PAGE_SIZE", "200"))
 MAX_CONCURRENCY = int(os.environ.get("GDR_MAX_CONCURRENCY", "6"))
 # arXiv asks for ~3s between API requests; pagination sleeps this long between pages.
 ARXIV_REQUEST_DELAY = float(os.environ.get("GDR_ARXIV_REQUEST_DELAY", "3"))
+ADS_REQUEST_DELAY = float(os.environ.get("GDR_ADS_REQUEST_DELAY", "0.5"))
 
 TEAM_PROFILE = """高能暂现源研究团队（同时参与 GECAM、Insight-HXMT、SVOM 等高能天文任务）关注的科学范围，分三层：
 

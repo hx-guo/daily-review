@@ -48,6 +48,32 @@ def test_sync_skips_already_seen(tmp_path, fake_llm_factory):
     assert affected == []
 
 
+def test_sync_skips_ads_alias_of_seen_arxiv_paper(tmp_path, fake_llm_factory):
+    store = Store(tmp_path / "data")
+    store.mark_seen_papers(["arxiv:2607.1"])
+    paper = _paper("ads:2026ApJ...1A", "Published GRB", published="2026-07-18")
+    paper.source = "ads"
+    paper.external_ids = {"ads": "2026ApJ...1A", "arxiv": "2607.1"}
+    affected = sync("2026-07-18", StubSource([paper]), _keyed_llm(fake_llm_factory), store,
+                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
+    assert affected == []
+
+
+def test_sync_marks_all_cross_source_identifiers_seen(tmp_path, fake_llm_factory):
+    store = Store(tmp_path / "data")
+    paper = _paper("ads:2026ApJ...2A", "Published GRB", published="2026-07-18")
+    paper.source = "ads"
+    paper.doi = "10.1/published"
+    paper.external_ids = {
+        "ads": "2026ApJ...2A", "arxiv": "2607.2", "doi": "10.1/published"
+    }
+    sync("2026-07-18", StubSource([paper]), _keyed_llm(fake_llm_factory), store,
+         fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
+    assert store.unseen_ids([
+        "ads:2026apj...2a", "arxiv:2607.2", "doi:10.1/published"
+    ]) == []
+
+
 def test_sync_failed_paper_left_unseen(tmp_path):
     class RaisingLLM:
         def complete(self, model, system, user, temperature=0.3):

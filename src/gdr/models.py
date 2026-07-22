@@ -15,6 +15,11 @@ class Paper:
     url: str
     pdf_url: str | None = None
     doi: str | None = None
+    # Cross-source identifiers, stored without their prefixes where practical,
+    # e.g. {"arxiv": "2607.00001", "ads": "2026ApJ...", "doi": "10..."}.
+    # Keeping these alongside the canonical `id` lets arXiv and ADS records merge
+    # without changing the IDs already persisted in daily JSON files.
+    external_ids: dict[str, str] = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return asdict(self)

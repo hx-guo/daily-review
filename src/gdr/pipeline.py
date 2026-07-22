@@ -3,7 +3,7 @@ import collections
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from gdr import config
 from gdr.citations import resolve_summary
-from gdr.dedup import dedupe
+from gdr.dedup import dedupe, paper_keys
 from gdr.fulltext import fetch_fulltext as _real_fetch_fulltext
 from gdr.relevance import score_paper
 from gdr.summarize import summarize_paper, summarize_edge
@@ -38,9 +38,10 @@ def sync(run_date, source, llm, store: Store, fetch_fulltext=_real_fetch_fulltex
     window_days = window_days or config.FETCH_WINDOW_DAYS
     max_workers = max_workers or config.MAX_CONCURRENCY
 
+    store.ensure_seen_identities()
     papers = dedupe(source.fetch_recent(run_date, window_days))
-    new_ids = set(store.unseen_ids([p.id for p in papers]))
-    papers = [p for p in papers if p.id in new_ids]
+    seen_identities = store.seen_identities()
+    papers = [p for p in papers if seen_identities.isdisjoint(paper_keys(p))]
 
     items = []
     if papers:
@@ -75,5 +76,6 @@ def sync(run_date, source, llm, store: Store, fetch_fulltext=_real_fetch_fulltex
 
     # Persist "seen" ONLY after all days are saved, and only for papers actually processed —
     # a paper skipped by an error stays unseen so the next run retries it.
-    store.mark_seen_papers([it["paper"].id for it in items])
+    processed_keys = sorted({key for it in items for key in paper_keys(it["paper"])})
+    store.mark_seen_papers(processed_keys)
     return sorted(affected)

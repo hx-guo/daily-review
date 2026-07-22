@@ -35,6 +35,23 @@ def test_fetch_fulltext_non_arxiv_returns_none():
     p.source = "journal"
     assert fetch_fulltext(p, http_get=lambda url, timeout=None: None) is None
 
+
+def test_fetch_fulltext_ads_record_uses_linked_arxiv_id():
+    p = _paper()
+    p.id = "ads:2026ApJ...1A"
+    p.source = "ads"
+    p.external_ids = {"ads": "2026ApJ...1A", "arxiv": "2607.00001"}
+
+    class Resp:
+        status_code = 200
+        text = HTML
+
+    def fake_get(url, timeout=None):
+        assert url == "https://arxiv.org/html/2607.00001"
+        return Resp()
+
+    assert "GECAM" in fetch_fulltext(p, http_get=fake_get)
+
 def test_fetch_fulltext_text_access_raises_returns_none():
     class Resp:
         status_code = 200

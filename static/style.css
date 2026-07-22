@@ -150,9 +150,10 @@ a { color: var(--accent); text-decoration: none; }
 }
 a.cite:hover { border-bottom-style: solid; }
 
-/* ---------- arXiv link ---------- */
-.arxiv-link {
-  display: inline-block; margin-top: 16px; font-family: var(--latin); font-size: 13px;
+/* ---------- source links ---------- */
+.source-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 16px; }
+.paper-link, .arxiv-link {
+  display: inline-block; font-family: var(--latin); font-size: 13px;
   color: var(--accent); border-bottom: 1px solid var(--link-rule);
 }
 

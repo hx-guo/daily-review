@@ -15,9 +15,13 @@ def extract_text(html: str) -> str:
 
 
 def fetch_fulltext(paper: Paper, http_get=requests.get) -> str | None:
-    if paper.source != "arxiv":
+    external_ids = getattr(paper, "external_ids", None) or {}
+    if paper.source == "arxiv":
+        bare = paper.id.split(":", 1)[-1]
+    else:
+        bare = (external_ids.get("arxiv") or "").replace("arXiv:", "").replace("arxiv:", "")
+    if not bare:
         return None
-    bare = paper.id.split(":", 1)[-1]
     url = f"https://arxiv.org/html/{bare}"
     try:
         resp = http_get(url, timeout=60)

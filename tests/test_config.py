@@ -25,4 +25,6 @@ def test_profile_and_categories_present():
 def test_sync_constants_present():
     assert config.FETCH_WINDOW_DAYS >= 1
     assert config.ARXIV_PAGE_SIZE >= 1
+    assert config.ADS_PAGE_SIZE >= 1
+    assert "property:refereed" in config.ADS_INGEST_QUERY
     assert config.MAX_CONCURRENCY >= 1

@@ -78,6 +78,36 @@ def arxiv_id(paper) -> str:
     return (paper.url or "").rstrip("/").rsplit("/", 1)[-1]
 
 
+def paper_links(paper) -> list[dict[str, str]]:
+    """Return stable source links for either arXiv- or ADS-origin papers."""
+    external_ids = getattr(paper, "external_ids", None) or {}
+    aid = str(external_ids.get("arxiv") or "").strip()
+    bibcode = str(external_ids.get("ads") or "").strip()
+    doi = str(getattr(paper, "doi", None) or external_ids.get("doi") or "").strip()
+    if paper.source == "arxiv" and not aid:
+        aid = (paper.id or "").split(":", 1)[-1]
+    if paper.source == "ads" and not bibcode:
+        bibcode = (paper.id or "").split(":", 1)[-1]
+
+    known = {
+        "arxiv": {"label": f"arXiv:{aid}", "url": f"https://arxiv.org/abs/{aid}"} if aid else None,
+        "doi": {"label": "DOI", "url": f"https://doi.org/{doi}"} if doi else None,
+        "ads": {"label": f"ADS:{bibcode}",
+                "url": f"https://ui.adsabs.harvard.edu/abs/{bibcode}/abstract"} if bibcode else None,
+    }
+    order = [paper.source, "arxiv", "doi", "ads"]
+    links = []
+    seen_urls = set()
+    for kind in order:
+        link = known.get(kind)
+        if link and link["url"] not in seen_urls:
+            links.append(link)
+            seen_urls.add(link["url"])
+    if not links and paper.url:
+        links.append({"label": (paper.source or "原文").upper(), "url": paper.url})
+    return links
+
+
 _CITE_RE = re.compile(r"\[\[(.+?)\]\]")
 
 
@@ -136,6 +166,7 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
     env.globals["render_authors"] = render_authors
     env.globals["render_outlook"] = render_outlook
     env.globals["arxiv_id"] = arxiv_id
+    env.globals["paper_links"] = paper_links
     env.globals["ROMAN"] = _ROMAN
     days = store.list_days()
     loaded = [(d, store.load_day(d)) for d in days]

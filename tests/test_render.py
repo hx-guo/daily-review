@@ -38,6 +38,32 @@ def test_render_site(tmp_path):
     assert (out / "static" / "style.css").exists()
 
 
+def test_render_ads_paper_shows_ads_doi_and_arxiv_links(tmp_path):
+    st = Store(tmp_path / "data")
+    p = Paper(
+        id="ads:2026ApJ...999...1A", source="ads", title="Published transient",
+        authors=["A"], abstract="abs", categories=["Gamma-ray bursts"],
+        published="2026-07-18",
+        url="https://ui.adsabs.harvard.edu/abs/2026ApJ...999...1A/abstract",
+        doi="10.1234/example", external_ids={
+            "ads": "2026ApJ...999...1A", "arxiv": "2607.00001", "doi": "10.1234/example"
+        },
+    )
+    day = DayData(
+        "2026-07-18", DailyReview("2026-07-18", "o", "", ""),
+        items=[{"paper": p, "score": RelevanceScore(90, ["GRB"], "core", ""),
+                "summary": PaperSummary(p.id, "正式发表论文", "", "", "", "", "")}],
+    )
+    st.save_day(day)
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-18.html").read_text(encoding="utf-8")
+    assert "ADS:2026ApJ...999...1A" in page
+    assert "https://doi.org/10.1234/example" in page
+    assert "https://arxiv.org/abs/2607.00001" in page
+    assert "元数据来自 arXiv 与 NASA ADS" in page
+
+
 def test_render_masthead_meta(tmp_path):
     st = Store(tmp_path / "data")
     st.save_day(DayData(date="2026-07-16",

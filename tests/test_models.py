@@ -18,7 +18,14 @@ def _paper():
 
 def test_paper_roundtrip():
     p = _paper()
+    p.external_ids = {"arxiv": "2607.00001", "doi": "10.1/example"}
     assert Paper.from_dict(p.to_dict()) == p
+
+
+def test_paper_from_old_dict_defaults_external_ids():
+    old = _paper().to_dict()
+    old.pop("external_ids")
+    assert Paper.from_dict(old).external_ids == {}
 
 
 def test_daydata_roundtrip():

@@ -42,6 +42,28 @@ def test_unseen_ids_is_readonly(tmp_path):
     assert st.unseen_ids(["a", "b"]) == ["b"]
 
 
+def test_identities_unseen_matches_any_alias(tmp_path):
+    st = Store(tmp_path)
+    st.mark_seen_papers(["arxiv:2607.1"])
+    assert not st.identities_unseen({"ads:bib", "arxiv:2607.1", "doi:10.1/x"})
+    assert st.identities_unseen({"ads:new", "doi:10.1/new"})
+
+
+def test_ensure_seen_identities_backfills_legacy_daily_papers(tmp_path):
+    st = Store(tmp_path)
+    day = _day("2026-07-18")
+    paper = day.items[0]["paper"]
+    paper.title = "A Legacy GRB Paper"
+    paper.doi = "10.1/legacy"
+    st.save_day(day)
+    st.mark_seen_papers([paper.id])  # old index format only kept the primary ID
+
+    st.ensure_seen_identities()
+
+    assert not st.identities_unseen({"doi:10.1/legacy"})
+    assert not st.identities_unseen({"title:a legacy grb paper"})
+
+
 def test_load_day_or_none(tmp_path):
     st = Store(tmp_path)
     assert st.load_day_or_none("2026-07-14") is None
