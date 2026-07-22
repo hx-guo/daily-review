@@ -35,7 +35,12 @@ def main():
                         if it["summary"] and it["score"].layer in ("core", "related")]
         if not core_related:
             continue
-        day.review = _review_for(date, day.items, llm)
+        regenerated = _review_for(date, day.items, llm)
+        if regenerated.overview == "新闻候选复核生成失败。":
+            print(f"{date}: regeneration failed; previous review preserved",
+                  file=sys.stderr)
+            continue
+        day.review = regenerated
         store.save_day(day)
         print(f"{date}: overview regenerated over {len(core_related)} core/related items")
 

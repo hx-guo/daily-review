@@ -75,6 +75,30 @@ def test_verifier_only_receives_material_for_nominated_papers(fake_llm_factory):
     assert "ORDINARY SOURCE TITLE" not in llm.calls[1]["user"]
 
 
+def test_malformed_json_is_retried_without_lowering_threshold(fake_llm_factory):
+    story = _story("arxiv:1")
+    llm = fake_llm_factory([
+        "not valid json",
+        json.dumps({"candidates": [story], "watchlist": []}),
+        json.dumps({"stories": [story], "watchlist": []}),
+    ])
+
+    review = make_daily_review("2026-07-18", [_item()], llm)
+
+    assert [item["paper_id"] for item in review.stories] == ["arxiv:1"]
+    assert len(llm.calls) == 3
+    assert "不要为了修复格式而降低门槛" in llm.calls[1]["user"]
+
+
+def test_two_malformed_responses_return_failure_review(fake_llm_factory):
+    llm = fake_llm_factory(["not json", "still not json"])
+
+    review = make_daily_review("2026-07-18", [_item()], llm)
+
+    assert review.stories == []
+    assert review.overview == "新闻候选复核生成失败。"
+
+
 def test_invalid_or_incomplete_stories_are_rejected(fake_llm_factory):
     invalid = _story("invented", "breaking")
     incomplete = _story("arxiv:1", "headline")

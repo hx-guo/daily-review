@@ -73,6 +73,29 @@ _NON_RESEARCH_TITLE = re.compile(
 )
 
 
+def _complete_json_object(llm: LLM, user: str) -> dict:
+    retry_note = """
+
+上一次响应无法解析为完整 JSON 对象。请重新执行同一任务，只输出一个语法完整的 JSON 对象；
+不要使用 Markdown 代码块或附加说明。继续严格把关，必要时减少候选，不要为了修复格式而降低门槛。
+"""
+    last_error: Exception | None = None
+    for attempt in range(2):
+        text = llm.complete(
+            model=tier_model("synth"),
+            system=_SYSTEM,
+            user=user if attempt == 0 else user + retry_note,
+        )
+        try:
+            data = extract_json(text)
+            if not isinstance(data, dict):
+                raise TypeError("daily review response must be a JSON object")
+            return data
+        except (ValueError, TypeError) as exc:
+            last_error = exc
+    raise TypeError("daily review returned invalid JSON twice") from last_error
+
+
 def _news_eligible(item: dict) -> bool:
     """Apply only high-confidence source-type exclusions to editorial news."""
     paper = item["paper"]
@@ -174,10 +197,8 @@ def make_daily_review(date: str, items: list[dict], llm: LLM) -> DailyReview:
     # source material only for those candidates, keeping it focused and fast.
     digest = _digest(eligible_items, abstract_limit=1000)
     candidate_user = _CANDIDATE_TMPL.format(date=date, digest=digest)
-    candidate_text = llm.complete(
-        model=tier_model("synth"), system=_SYSTEM, user=candidate_user)
     try:
-        candidate_data = extract_json(candidate_text)
+        candidate_data = _complete_json_object(llm, candidate_user)
         candidate_payload = {
             "candidates": candidate_data.get("candidates", []),
             "watchlist": candidate_data.get("watchlist", []),
@@ -201,9 +222,7 @@ def make_daily_review(date: str, items: list[dict], llm: LLM) -> DailyReview:
             digest=_digest(candidate_items),
             candidates=json.dumps(candidate_payload, ensure_ascii=False),
         )
-        verified_text = llm.complete(
-            model=tier_model("synth"), system=_SYSTEM, user=verify_user)
-        verified = extract_json(verified_text)
+        verified = _complete_json_object(llm, verify_user)
         valid_ids = {it["paper"].id for it in eligible_items}
         stories = _validated_stories(verified.get("stories", []), valid_ids)
         watchlist = [str(x).strip() for x in verified.get("watchlist", [])
