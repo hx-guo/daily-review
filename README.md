@@ -25,6 +25,14 @@ pytest -q
 - 仓库 Settings → Secrets and variables → Actions 新增 `OPENCODE_API_KEY`；如需 ADS
   期刊数据源，再新增 `ADS_API_TOKEN`（在 ADS 账户中生成）。
 - `.github/workflows/daily.yml` 每天 02:00 UTC（北京 10:00）自动运行，也可在 Actions 页手动 `Run workflow`。
+- Vercel 自定义域名备线的隔离部署方案见 [`docs/vercel-backup.md`](docs/vercel-backup.md)。
+
+站点字体已存放在 `static/fonts/` 并随静态页面同源发布，不依赖 Google Fonts。
+需要升级字体版本时运行：
+
+```bash
+python scripts/vendor_fonts.py
+```
 
 ## 架构
 
