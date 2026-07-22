@@ -99,7 +99,7 @@ def _abstract_excerpt(text: str, limit: int = 1400) -> str:
     return text[:limit].rstrip() + "…"
 
 
-def _digest(items: list[dict]) -> str:
+def _digest(items: list[dict], *, abstract_limit: int = 1400) -> str:
     lines = []
     for it in items:
         summ = it["summary"]
@@ -110,7 +110,7 @@ def _digest(items: list[dict]) -> str:
         paper = it["paper"]
         authors = ", ".join(paper.authors[:4]) or "（元数据未提供）"
         doi = paper.doi or paper.external_ids.get("doi", "") or "（无）"
-        abstract = _abstract_excerpt(paper.abstract) or "（无摘要）"
+        abstract = _abstract_excerpt(paper.abstract, abstract_limit) or "（无摘要）"
         lines.append(
             f"- paper_id={paper.id} [{sc.layer}; 优先级 {sc.score}] {title}\n"
             f"  原文标题：{paper.title}\n"
@@ -169,7 +169,10 @@ def make_daily_review(date: str, items: list[dict], llm: LLM) -> DailyReview:
             stories=[], watchlist=[],
         )
 
-    digest = _digest(eligible_items)
+    # The broad nomination pass sees enough of every abstract to identify
+    # plausible candidates. The skeptical pass below then gets the longer
+    # source material only for those candidates, keeping it focused and fast.
+    digest = _digest(eligible_items, abstract_limit=1000)
     candidate_user = _CANDIDATE_TMPL.format(date=date, digest=digest)
     candidate_text = llm.complete(
         model=tier_model("synth"), system=_SYSTEM, user=candidate_user)
@@ -179,8 +182,23 @@ def make_daily_review(date: str, items: list[dict], llm: LLM) -> DailyReview:
             "candidates": candidate_data.get("candidates", []),
             "watchlist": candidate_data.get("watchlist", []),
         }
+        raw_candidates = candidate_payload["candidates"]
+        candidate_ids = {
+            str(candidate.get("paper_id", "")).strip()
+            for candidate in raw_candidates if isinstance(candidate, dict)
+        } if isinstance(raw_candidates, list) else set()
+        candidate_items = [
+            it for it in eligible_items if it["paper"].id in candidate_ids
+        ]
+        if not candidate_items:
+            return DailyReview(
+                date=date,
+                overview="今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+                highlights="—", trends="—", editorial_version=2,
+                stories=[], watchlist=[],
+            )
         verify_user = _VERIFY_TMPL.format(
-            digest=digest,
+            digest=_digest(candidate_items),
             candidates=json.dumps(candidate_payload, ensure_ascii=False),
         )
         verified_text = llm.complete(

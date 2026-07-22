@@ -60,6 +60,21 @@ def test_story_count_has_no_editorial_cap(fake_llm_factory):
     assert len(review.stories) == 6
 
 
+def test_verifier_only_receives_material_for_nominated_papers(fake_llm_factory):
+    nominated = _item("arxiv:nominated", title="NOMINATED SOURCE TITLE")
+    ordinary = _item("arxiv:ordinary", title="ORDINARY SOURCE TITLE")
+    story = _story("arxiv:nominated")
+    llm = fake_llm_factory([
+        json.dumps({"candidates": [story], "watchlist": []}),
+        json.dumps({"stories": [story], "watchlist": []}),
+    ])
+
+    make_daily_review("2026-07-18", [nominated, ordinary], llm)
+
+    assert "NOMINATED SOURCE TITLE" in llm.calls[1]["user"]
+    assert "ORDINARY SOURCE TITLE" not in llm.calls[1]["user"]
+
+
 def test_invalid_or_incomplete_stories_are_rejected(fake_llm_factory):
     invalid = _story("invented", "breaking")
     incomplete = _story("arxiv:1", "headline")
