@@ -73,7 +73,7 @@ _NON_RESEARCH_TITLE = re.compile(
 )
 
 
-def _complete_json_object(llm: LLM, user: str) -> dict:
+def _complete_json_object(llm: LLM, user: str, required_list_key: str) -> dict:
     retry_note = """
 
 上一次响应无法解析为完整 JSON 对象。请重新执行同一任务，只输出一个语法完整的 JSON 对象；
@@ -90,6 +90,10 @@ def _complete_json_object(llm: LLM, user: str) -> dict:
             data = extract_json(text)
             if not isinstance(data, dict):
                 raise TypeError("daily review response must be a JSON object")
+            if (required_list_key not in data
+                    or not isinstance(data[required_list_key], list)):
+                raise TypeError(
+                    f"daily review response must contain a {required_list_key} list")
             return data
         except (ValueError, TypeError) as exc:
             last_error = exc
@@ -198,7 +202,8 @@ def make_daily_review(date: str, items: list[dict], llm: LLM) -> DailyReview:
     digest = _digest(eligible_items, abstract_limit=1000)
     candidate_user = _CANDIDATE_TMPL.format(date=date, digest=digest)
     try:
-        candidate_data = _complete_json_object(llm, candidate_user)
+        candidate_data = _complete_json_object(
+            llm, candidate_user, required_list_key="candidates")
         candidate_payload = {
             "candidates": candidate_data.get("candidates", []),
             "watchlist": candidate_data.get("watchlist", []),
@@ -222,7 +227,8 @@ def make_daily_review(date: str, items: list[dict], llm: LLM) -> DailyReview:
             digest=_digest(candidate_items),
             candidates=json.dumps(candidate_payload, ensure_ascii=False),
         )
-        verified = _complete_json_object(llm, verify_user)
+        verified = _complete_json_object(
+            llm, verify_user, required_list_key="stories")
         valid_ids = {it["paper"].id for it in eligible_items}
         stories = _validated_stories(verified.get("stories", []), valid_ids)
         watchlist = [str(x).strip() for x in verified.get("watchlist", [])

@@ -90,6 +90,21 @@ def test_malformed_json_is_retried_without_lowering_threshold(fake_llm_factory):
     assert "不要为了修复格式而降低门槛" in llm.calls[1]["user"]
 
 
+def test_wrong_json_schema_is_retried_instead_of_becoming_false_zero(
+        fake_llm_factory):
+    story = _story("arxiv:1")
+    llm = fake_llm_factory([
+        json.dumps({"stories": [story]}),
+        json.dumps({"candidates": [story], "watchlist": []}),
+        json.dumps({"stories": [story], "watchlist": []}),
+    ])
+
+    review = make_daily_review("2026-07-18", [_item()], llm)
+
+    assert [item["paper_id"] for item in review.stories] == ["arxiv:1"]
+    assert len(llm.calls) == 3
+
+
 def test_two_malformed_responses_return_failure_review(fake_llm_factory):
     llm = fake_llm_factory(["not json", "still not json"])
 
