@@ -8,6 +8,10 @@ on:
         description: "Optional stored dates to reclassify, separated by spaces"
         required: false
         type: string
+      regenerate_review_dates:
+        description: "Optional stored dates whose news section should be regenerated"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -34,6 +38,12 @@ jobs:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
           GDR_RECLASSIFY_DATES: ${{ inputs.reclassify_dates }}
         run: python scripts/reclassify_days.py $GDR_RECLASSIFY_DATES
+      - name: Regenerate stored news sections
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.regenerate_review_dates != '' }}
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          GDR_REVIEW_DATES: ${{ inputs.regenerate_review_dates }}
+        run: python scripts/regenerate_reviews.py $GDR_REVIEW_DATES
       - name: Run daily pipeline
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}

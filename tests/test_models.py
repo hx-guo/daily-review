@@ -100,3 +100,5 @@ def test_daily_review_from_old_dict_defaults_headline_fields():
                                     "highlights": "", "trends": ""})
     assert review.headline == ""
     assert review.developments == []
+    assert review.editorial_version == 0
+    assert review.stories == []

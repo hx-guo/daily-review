@@ -25,11 +25,8 @@ def _keyed_llm(fake_llm_factory):
         }),
         "综述卡片": json.dumps({"title_zh": "标题", "team": "A 等", "tldr": "t",
                               "review": "r", "highlight": "h", "relation": "—"}),
-        "先判断有无真正的编辑头条": json.dumps({
-            "headline_level": "headline", "headline": "GRB 新进展",
-            "headline_paper_id": "arxiv:2607.1", "headline_reason": "有明确结果。",
-            "developments": [], "watchlist": [],
-        }),
+        "逐篇提名真正可能达到新闻门槛": json.dumps({"candidates": [], "watchlist": []}),
+        "作为第二位、更加怀疑": json.dumps({"stories": [], "watchlist": []}),
     })
 
 

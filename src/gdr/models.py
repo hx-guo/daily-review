@@ -81,6 +81,10 @@ class DailyReview:
     headline_reason: str = ""
     developments: list[dict] = field(default_factory=list)
     watchlist: list[str] = field(default_factory=list)
+    # Editorial v2: every qualifying story stands on equal footing. The legacy
+    # single-headline fields above remain readable for already-persisted days.
+    editorial_version: int = 0
+    stories: list[dict] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)

@@ -21,10 +21,8 @@ def test_reclassify_reuses_items_and_regenerates_headline(tmp_path, fake_llm_fac
             "relation": "enabling", "core_path": "", "evidence": "研究总体率",
             "reason": "范围内的间接支撑",
         }),
-        "先判断有无真正的编辑头条": json.dumps({
-            "headline_level": "none", "headline": "", "headline_paper_id": "",
-            "headline_reason": "没有单篇突破结果。", "developments": [], "watchlist": [],
-        }),
+        "逐篇提名真正可能达到新闻门槛": json.dumps({"candidates": [], "watchlist": []}),
+        "作为第二位、更加怀疑": json.dumps({"stories": [], "watchlist": []}),
     })
 
     result = reclassify_day("2026-07-21", store, llm, synced="2026-07-22", max_workers=1)
@@ -32,5 +30,6 @@ def test_reclassify_reuses_items_and_regenerates_headline(tmp_path, fake_llm_fac
     day = store.load_day("2026-07-21")
     assert result == {"updated": 1, "failed": 0, "core": 0, "related": 1, "edge": 0}
     assert day.items[0]["score"].layer == "related"
-    assert day.review.headline == "今日无突发头条"
+    assert day.review.editorial_version == 2
+    assert day.review.stories == []
     assert day.revisions[0]["review"]["overview"] == "旧概览"

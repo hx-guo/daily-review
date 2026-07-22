@@ -53,6 +53,17 @@
     </article>
 {% endmacro %}
 
+{% macro news_story(story) %}
+    <article class="news-story {{ story.level }}">
+      <div class="headline-kicker">{{ story.level | upper }} · {{ '突发' if story.level == 'breaking' else '头条' }}</div>
+      <h3><a href="#paper-{{ story.paper_id | replace(':', '-') | replace('.', '-') }}">{{ story.title }}</a></h3>
+      <p class="story-evidence"><strong>证据</strong>{{ story.evidence }}</p>
+      <p class="story-impact"><strong>影响</strong>{{ story.impact }}</p>
+      <p class="story-reason">{{ story.reason }}</p>
+      <a class="headline-jump" href="#paper-{{ story.paper_id | replace(':', '-') | replace('.', '-') }}">查看支撑论文 ↓</a>
+    </article>
+{% endmacro %}
+
 {% block drawer %}
 <div class="toc-drawer" data-drawer>
   <button class="toc-tab" data-drawer-toggle aria-expanded="false" title="目次">目次 <span class="toc-arrow">›</span></button>
@@ -62,7 +73,7 @@
         <span class="toc-panel-title">目 次 <span class="etal">· Index</span></span>
         <span class="toc-close" data-drawer-toggle role="button" tabindex="0">×</span>
       </div>
-      <a class="toc-overview" href="#overview">{{ '今日头条' if day.review.headline else '当日总览' }}</a>
+      <a class="toc-overview" href="#overview">{{ '今日头条' if day.review.editorial_version >= 2 or day.review.headline else '当日总览' }}</a>
       {% if core_items %}
       <div class="toc-group">核 心 · {{ core_items|length }}</div>
       {% for it in core_items %}<a class="toc-link" href="#{{ anchor(it) }}">{{ it.summary.title_zh if it.summary and it.summary.title_zh else it.paper.title }}</a>{% endfor %}
@@ -89,8 +100,30 @@
 
   {% set ns.sec = ns.sec + 1 %}
   <section class="sec" id="overview">
-    <div class="sec-head"><span class="sec-num">{{ ROMAN[ns.sec] }}.</span><h2>{{ '今日头条' if day.review.headline else '当日总览' }}</h2></div>
-    {% if day.review.headline %}
+    <div class="sec-head"><span class="sec-num">{{ ROMAN[ns.sec] }}.</span><h2>{{ '今日头条' if day.review.editorial_version >= 2 or day.review.headline else '当日总览' }}</h2></div>
+    {% if day.review.editorial_version >= 2 %}
+      {% set breaking_stories = day.review.stories | selectattr('level', 'equalto', 'breaking') | list %}
+      {% set headline_stories = day.review.stories | selectattr('level', 'equalto', 'headline') | list %}
+      {% if breaking_stories %}
+      <div class="story-group">
+        <h3 class="story-group-title breaking">BREAKING · 突发</h3>
+        {% for story in breaking_stories %}{{ news_story(story) }}{% endfor %}
+      </div>
+      {% endif %}
+      {% if headline_stories %}
+      <div class="story-group">
+        <h3 class="story-group-title headline">HEADLINE · 头条</h3>
+        {% for story in headline_stories %}{{ news_story(story) }}{% endfor %}
+      </div>
+      {% endif %}
+      {% if not day.review.stories %}<div class="news-empty"><strong>今日无重大头条</strong><p>{{ day.review.overview }}</p></div>{% endif %}
+      {% if day.review.watchlist %}
+      <div class="watch-list">
+        <h3>继续观察</h3>
+        <ul>{% for signal in day.review.watchlist %}<li>{{ signal }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    {% elif day.review.headline %}
     <div class="editorial-lead {{ day.review.headline_level or 'none' }}">
       <div class="headline-kicker">
         {% if day.review.headline_level == 'breaking' %}BREAKING · 突发
@@ -164,7 +197,8 @@
         {% for rev in day.revisions|reverse %}
         <div class="revision">
           <h4>同步于 {{ rev.synced }}　·　当时 {{ rev.n_papers }} 篇</h4>
-          {% if rev.review.headline %}<p><strong>{{ rev.review.headline }}</strong>{% if rev.review.headline_reason %}　{{ rev.review.headline_reason }}{% endif %}</p>
+          {% if rev.review.stories %}{% for story in rev.review.stories %}<p><strong>{{ story.level | upper }} · {{ story.title }}</strong>　{{ story.impact }}</p>{% endfor %}
+          {% elif rev.review.headline %}<p><strong>{{ rev.review.headline }}</strong>{% if rev.review.headline_reason %}　{{ rev.review.headline_reason }}{% endif %}</p>
           {% else %}<p>{{ rev.review.overview }}</p>{% endif %}
           {% if rev.review.highlights %}<p>{{ rev.review.highlights }}</p>{% endif %}
           {% if rev.review.trends %}<p>{{ rev.review.trends }}</p>{% endif %}

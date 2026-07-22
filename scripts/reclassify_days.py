@@ -1,7 +1,7 @@
 """Reclassify stored days with the current editorial rubric.
 
-This performs only the inexpensive triage calls and one daily-headline call per
-day. Existing full-text summaries are reused unchanged.
+This performs only the inexpensive triage calls and the two-pass daily news
+review. Existing full-text summaries are reused unchanged.
 
 Usage:
     OPENCODE_API_KEY=... python scripts/reclassify_days.py 2026-07-20 2026-07-21
