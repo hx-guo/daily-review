@@ -57,16 +57,20 @@ Vercel Git integration
 ```json
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
   "installCommand": "python -m pip install --disable-pip-version-check -r requirements-render.txt",
   "buildCommand": "PYTHONPATH=src python scripts/build_site.py",
   "outputDirectory": "site"
 }
 ```
 
+`framework: null` 会在仓库级强制选择 Vercel 的 `Other` preset，避免根目录的
+`pyproject.toml` 被误判成需要 Python Web 入口的应用。
+
 在 Vercel 中：
 
 1. 导入公开仓库 `hx-guo/daily-review`。
-2. Production Branch 选择 `main`，Framework Preset 选择 `Other`。
+2. Production Branch 选择 `main`；`vercel.json` 会把 Framework Preset 强制设为 `Other`。
 3. 不配置 `OPENCODE_API_KEY`、`ADS_API_TOKEN` 或任何 GitHub Actions secret。
 4. 绑定 `review.example.com` 这类自定义子域名。
 5. 若 DNS 托管在 Cloudflare，记录使用 **DNS only（灰云）**，不在 Vercel 前叠加代理。
