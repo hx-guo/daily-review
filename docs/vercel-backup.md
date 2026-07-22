@@ -58,14 +58,16 @@ Vercel Git integration
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "python -m pip install --disable-pip-version-check -r requirements-render.txt",
-  "buildCommand": "PYTHONPATH=src python scripts/build_site.py",
+  "installCommand": "uv venv --python 3.12 .vercel-venv && uv pip install --python .vercel-venv/bin/python -r requirements-render.txt",
+  "buildCommand": "PYTHONPATH=src .vercel-venv/bin/python scripts/build_site.py",
   "outputDirectory": "site"
 }
 ```
 
 `framework: null` 会在仓库级强制选择 Vercel 的 `Other` preset，避免根目录的
 `pyproject.toml` 被误判成需要 Python Web 入口的应用。
+依赖安装在构建目录内独立的 `.vercel-venv`，不修改 Vercel 由 uv 管理的全局
+Python 环境；构建完成后仍只发布 `site/`。
 
 在 Vercel 中：
 

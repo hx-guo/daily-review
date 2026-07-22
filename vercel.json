@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "python -m pip install --disable-pip-version-check -r requirements-render.txt",
-  "buildCommand": "PYTHONPATH=src python scripts/build_site.py",
+  "installCommand": "uv venv --python 3.12 .vercel-venv && uv pip install --python .vercel-venv/bin/python -r requirements-render.txt",
+  "buildCommand": "PYTHONPATH=src .vercel-venv/bin/python scripts/build_site.py",
   "outputDirectory": "site"
 }
