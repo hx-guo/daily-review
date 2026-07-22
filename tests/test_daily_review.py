@@ -58,6 +58,8 @@ def test_make_daily_review_uses_two_passes_and_equal_stories(fake_llm_factory):
     assert len(llm.calls) == 2
     assert "不选择主头条" in llm.calls[0]["user"]
     assert "不选主头条" in llm.calls[1]["user"]
+    assert "机器导读" in llm.calls[0]["user"]
+    assert "机器导读" not in llm.calls[1]["user"]
 
 
 def test_story_count_has_no_editorial_cap(fake_llm_factory):
@@ -164,7 +166,7 @@ def test_secondary_nature_briefing_cannot_become_story(fake_llm_factory):
     assert [story["paper_id"] for story in review.stories] == ["arxiv:original"]
     assert briefing_id not in llm.calls[0]["user"]
     assert "原文摘要" in llm.calls[0]["user"]
-    assert "不能独立作为新闻证据" in llm.calls[0]["user"]
+    assert "不能作为第二轮新闻证据" in llm.calls[0]["user"]
 
 
 def test_both_per_paper_editorial_passes_run_concurrently():
