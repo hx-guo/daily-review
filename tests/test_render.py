@@ -38,6 +38,28 @@ def test_render_site(tmp_path):
     assert (out / "static" / "style.css").exists()
 
 
+def test_render_editorial_headline_and_developments(tmp_path):
+    st = Store(tmp_path / "data")
+    review = DailyReview(
+        date="2026-07-18", overview="首次探测得到摘要证据。", highlights="", trends="",
+        headline_level="breaking", headline="捕获新的磁星巨耀发",
+        headline_paper_id="arxiv:2607.1", headline_reason="首次探测得到摘要证据。",
+        developments=[{"paper_id": "arxiv:2607.1", "title": "磁星爆发",
+                       "reason": "约束了爆发区尺度"}],
+        watchlist=["等待第二台仪器独立确认"],
+    )
+    st.save_day(DayData("2026-07-18", review,
+                        [_item("arxiv:2607.1", 98, "core", "磁星爆发")]))
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "index.html").read_text(encoding="utf-8")
+    assert "今日头条" in page
+    assert "BREAKING · 突发" in page
+    assert "捕获新的磁星巨耀发" in page
+    assert "值得跟进" in page and "继续观察" in page
+    assert 'href="#paper-arxiv-2607-1"' in page
+
+
 def test_render_ads_paper_shows_ads_doi_and_arxiv_links(tmp_path):
     st = Store(tmp_path / "data")
     p = Paper(

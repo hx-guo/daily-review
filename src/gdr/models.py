@@ -35,6 +35,9 @@ class RelevanceScore:
     tags: list[str]
     layer: str
     reason: str
+    relation: str = ""
+    core_path: str = ""
+    evidence: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -72,6 +75,12 @@ class DailyReview:
     overview: str
     highlights: str
     trends: str
+    headline_level: str = ""
+    headline: str = ""
+    headline_paper_id: str = ""
+    headline_reason: str = ""
+    developments: list[dict] = field(default_factory=list)
+    watchlist: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)

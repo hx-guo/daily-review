@@ -29,8 +29,9 @@ def _review_for(date, items, llm) -> DailyReview:
         return make_daily_review(date, summarized, llm)
     except Exception as exc:
         print(f"[gdr] daily review failed for {date}: {exc}", file=sys.stderr)
-        return DailyReview(date=date, overview=f"共收录 {len(summarized)} 篇（总览生成失败）。",
-                           highlights="—", trends="—")
+        return DailyReview(date=date, overview="头条判断生成失败。",
+                           highlights="—", trends="—", headline_level="none",
+                           headline="今日无可靠头条判断")
 
 
 def sync(run_date, source, llm, store: Store, fetch_fulltext=_real_fetch_fulltext,

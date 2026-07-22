@@ -2,7 +2,12 @@ name: daily-review
 on:
   schedule:
     - cron: "0 2 * * *"   # 02:00 UTC = 10:00 Beijing
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      reclassify_dates:
+        description: "Optional stored dates to reclassify, separated by spaces"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -23,6 +28,12 @@ jobs:
           python-version: "3.11"
       - run: pip install -e ".[dev]"
       - run: pytest -q
+      - name: Reclassify stored days
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.reclassify_dates != '' }}
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          GDR_RECLASSIFY_DATES: ${{ inputs.reclassify_dates }}
+        run: python scripts/reclassify_days.py $GDR_RECLASSIFY_DATES
       - name: Run daily pipeline
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}

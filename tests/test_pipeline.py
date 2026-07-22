@@ -19,10 +19,17 @@ def _paper(pid, title, published="2026-07-16"):
 
 def _keyed_llm(fake_llm_factory):
     return fake_llm_factory({
-        "请判断这篇论文与上述范围的相关性": json.dumps({"score": 90, "tags": ["GRB"], "reason": "核心"}),
+        "主题标签与相关层级是两个独立判断": json.dumps({
+            "layer": "core", "score": 90, "tags": ["GRB"], "relation": "direct",
+            "core_path": "science", "evidence": "GRB 是主要研究对象", "reason": "核心",
+        }),
         "综述卡片": json.dumps({"title_zh": "标题", "team": "A 等", "tldr": "t",
                               "review": "r", "highlight": "h", "relation": "—"}),
-        "当日总览": json.dumps({"overview": "今日 1 篇", "highlights": "H", "trends": "T"}),
+        "先判断有无真正的编辑头条": json.dumps({
+            "headline_level": "headline", "headline": "GRB 新进展",
+            "headline_paper_id": "arxiv:2607.1", "headline_reason": "有明确结果。",
+            "developments": [], "watchlist": [],
+        }),
     })
 
 
@@ -115,7 +122,10 @@ def test_sync_fans_out_to_multiple_true_dates(tmp_path, fake_llm_factory):
 
 def test_sync_edge_paper_gets_light_summary_no_fulltext(tmp_path, fake_llm_factory):
     llm = fake_llm_factory({
-        "请判断这篇论文与上述范围的相关性": json.dumps({"score": 20, "tags": [], "reason": "边缘"}),
+        "主题标签与相关层级是两个独立判断": json.dumps({
+            "layer": "edge", "score": 20, "tags": [], "relation": "contextual",
+            "core_path": "", "evidence": "仅背景提及", "reason": "边缘",
+        }),
         "压缩成一行中文": json.dumps({"title_zh": "边缘译名", "tldr": "一句话"}),
     })
     store = Store(tmp_path / "data")

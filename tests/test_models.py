@@ -28,6 +28,14 @@ def test_paper_from_old_dict_defaults_external_ids():
     assert Paper.from_dict(old).external_ids == {}
 
 
+def test_relevance_from_old_dict_defaults_editorial_fields():
+    old = {"score": 70, "tags": ["TDE"], "layer": "related", "reason": "相邻"}
+    score = RelevanceScore.from_dict(old)
+    assert score.relation == ""
+    assert score.core_path == ""
+    assert score.evidence == ""
+
+
 def test_daydata_roundtrip():
     p = _paper()
     score = RelevanceScore(
@@ -85,3 +93,10 @@ def test_daydata_from_dict_without_revisions_defaults_empty():
          "review": DailyReview("2026-07-14", "o", "h", "t").to_dict(),
          "items": [{"paper": p.to_dict(), "score": RelevanceScore(90, [], "core", "").to_dict(), "summary": None}]}
     assert DayData.from_dict(d).revisions == []
+
+
+def test_daily_review_from_old_dict_defaults_headline_fields():
+    review = DailyReview.from_dict({"date": "2026-07-14", "overview": "旧概览",
+                                    "highlights": "", "trends": ""})
+    assert review.headline == ""
+    assert review.developments == []
