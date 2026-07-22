@@ -2,8 +2,8 @@
   "date": "2026-07-19",
   "review": {
     "date": "2026-07-19",
-    "overview": "新闻候选复核生成失败。",
-    "highlights": "（新闻复核生成失败）",
+    "overview": "今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+    "highlights": "—",
     "trends": "—",
     "headline_level": "",
     "headline": "",
