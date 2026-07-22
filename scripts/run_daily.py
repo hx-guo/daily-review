@@ -8,7 +8,7 @@ from gdr.sources.arxiv_source import ArxivSource
 from gdr.sources.composite_source import CompositeSource
 from gdr.store import Store
 from gdr.pipeline import sync
-from gdr.render import render_site
+from gdr.site_build import build_site
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -31,7 +31,7 @@ def main():
 
     affected = sync(date, source, llm, store)
     print(f"{date}: synced; affected dates: {affected}")
-    render_site(store, ROOT / "site", ROOT / "templates", ROOT / "static")
+    build_site(ROOT)
 
 
 if __name__ == "__main__":

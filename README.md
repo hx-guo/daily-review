@@ -10,6 +10,7 @@ export OPENCODE_API_KEY=sk-...
 export ADS_API_TOKEN=...              # 可选；未设置时仅抓 arXiv
 python scripts/list_models.py          # 确认模型 id，如与默认不符用 GDR_MODEL_* 环境变量覆盖
 python scripts/run_daily.py --date 2026-07-17
+python scripts/build_site.py             # 仅从已保存数据重建静态站，不访问网络或模型
 open site/index.html
 ```
 

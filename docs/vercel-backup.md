@@ -3,89 +3,97 @@
 ## 目标
 
 - GitHub Pages 在中国大陆访问异常时，保留一个使用自定义域名的境外入口。
-- 每日流水线只生成一次 `site/`，GitHub Pages 与 Vercel 发布同一份不可变构件。
-- 任一托管平台发布失败时，不阻断另一平台发布。
-- 浏览器加载页面时不依赖 Google Fonts 或其他可能被阻断的关键前端资源。
+- 抓取、模型判断与总结只在 GitHub Actions 运行一次。
+- Vercel 从 `main` 中已经提交的 JSON 数据重新渲染静态网页，不接触模型或数据源密钥。
+- 浏览器加载页面时不依赖 Google Fonts 或其他关键外部前端资源。
 
-这条备线解决的是“站点能否访问”。如果 GitHub Actions 整体不可用，两边仍能访问最后一次成功发布的版本，但不会产生新的日报。独立的内容生产备线应另设香港主机定时任务，并保持冷备，避免两个任务同时写入 `data/`。
+## 数据与构件
 
-## 推荐拓扑
+`data/daily/*.json` 与 `data/seen-index.json` 是持久、可审计的内容源，由每日 GitHub Actions 提交回 `main`。`site/` 是纯派生构件，不进入 Git：
 
 ```text
-GitHub Actions: build
-  ├─ 生成并测试 site/
-  ├─ pages artifact ─────────> GitHub Pages
-  └─ generic site artifact ──> deploy-vercel job ──> Vercel Edge CDN
-
-公开入口
-  ├─ 现有 GitHub Pages URL
-  └─ review-backup.example.com ──CNAME──> Vercel 项目专用目标
+data/ + templates/ + static/ + renderer
+                    │
+                    ▼
+                  site/
 ```
 
-Vercel 只接收已经生成的静态文件，不连接仓库、不重复运行抓取、总结或渲染流程。这样不会重复消耗 API 配额，也不会产生数据提交竞争。
+因此不需要额外的发布分支。历史内容由 JSON 与 Git 历史保存；任何一个提交都可以重新生成对应的完整静态站。
 
-## Vercel 项目设置
+## 构建职责
 
-1. 在 Vercel 创建空项目，Framework Preset 选择 `Other`，关闭 Git 自动部署。
-2. 绑定 `review-backup.example.com` 这类独立子域名。
-3. 按 Vercel 项目域名页给出的专用 CNAME 配置 DNS。若 DNS 托管在 Cloudflare，记录必须使用 **DNS only（灰云）**，不在 Vercel 前叠加 Cloudflare 代理。
-4. 保留 Vercel 自动签发的 HTTPS 证书；不要把 `*.vercel.app` 地址作为对外入口。
+```text
+GitHub Actions
+  抓取 arXiv/ADS + 模型处理
+          │
+          ├─ 纯静态渲染 ──> GitHub Pages artifact
+          │
+          └─ commit data/*.json ──> push main
+                                      │
+                                      ▼
+Vercel Git integration
+  从同一 main commit 执行纯静态渲染 ──> Vercel CDN
+```
 
-使用子域名而不是裸域名，可以让 Vercel 通过 CNAME 调整边缘路由，也便于以后把备线迁移到其他厂商。Vercel 官方说明，自定义域名相较 `*.vercel.app` 更不容易在中国大陆被拦截，但境外托管仍无法承诺大陆可用性。
+这里重复的只有约零点几秒的 Jinja 静态渲染。昂贵且可能非确定的抓取与模型处理不会在 Vercel 重复执行。
 
-## 流水线拆分
+## 可复现构建
 
-在 `.github/workflows/daily.yml` 中保留现有 `build` 与 GitHub Pages `deploy`，再增加一个与 Pages 部署并列的 `deploy-vercel` job：
+两个环境共用 `gdr.site_build.build_site()`：
 
-1. `build` 在生成 `site/` 后，除 Pages 专用 artifact 外，再上传一个普通 `site` artifact。
-2. `deploy-vercel` 使用 `needs: build`，下载普通 artifact。
-3. 将 artifact 放入 Vercel Build Output API 的 `.vercel/output/static/`，同时生成 `.vercel/output/config.json`：
+- `scripts/run_daily.py` 在每日同步结束后调用它，供 GitHub Pages 使用。
+- `scripts/build_site.py` 是 Vercel 和本地的纯渲染入口。
+- 每次构建先删除旧 `site/`，避免已经删除的数据留下过期 HTML。
+- `.python-version` 将托管构建固定到 Python 3.12，GitHub Actions 也使用 Python 3.12。
+- `requirements-render.txt` 只包含渲染所需的固定版本 Jinja2 与 MarkupSafe。
+- 测试会连续执行两次干净构建并比较所有输出文件的 SHA-256。
 
-   ```json
-   { "version": 3 }
-   ```
+纯渲染只读取仓库内的 `data/`、`templates/` 与 `static/`，不读取 API key、不访问网络，也不写回数据。
 
-4. 使用 Vercel CLI 执行预构建部署：
+## Vercel 配置
 
-   ```bash
-   npx vercel deploy --prebuilt --prod --archive=tgz --token="$VERCEL_TOKEN"
-   ```
+仓库根目录的 `vercel.json` 已定义：
 
-5. 部署后请求部署 URL 的 `/index.html` 和 `/static/fonts/fonts.css`，两者均返回 `200` 才算成功。
+```json
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "python -m pip install --disable-pip-version-check -r requirements-render.txt",
+  "buildCommand": "PYTHONPATH=src python scripts/build_site.py",
+  "outputDirectory": "site"
+}
+```
 
-`deploy-vercel` 与 GitHub Pages `deploy` 必须是并列 job，不能把 Vercel 上传步骤插在现有 `build` job 尾部。否则 Vercel 故障会让 `build` 失败，反过来阻断 GitHub Pages 主线。
+在 Vercel 中：
 
-## 凭据
+1. 导入公开仓库 `hx-guo/daily-review`。
+2. Production Branch 选择 `main`，Framework Preset 选择 `Other`。
+3. 不配置 `OPENCODE_API_KEY`、`ADS_API_TOKEN` 或任何 GitHub Actions secret。
+4. 绑定 `review.example.com` 这类自定义子域名。
+5. 若 DNS 托管在 Cloudflare，记录使用 **DNS only（灰云）**，不在 Vercel 前叠加代理。
 
-在 GitHub 的 `vercel-production` Environment 中保存：
-
-- `VERCEL_TOKEN`：只授予目标 Vercel scope 所需权限的部署 token。
-- `VERCEL_ORG_ID`：目标账户或团队 ID。
-- `VERCEL_PROJECT_ID`：空项目的 project ID。
-
-job 通过环境变量读取三个值，不提交 `.vercel/project.json`，也不把 token 写入日志。Environment 可以增加部署分支限制，只允许 `main` 发布生产备线。
+GitHub Actions 每日推送新的数据提交后，Vercel Git integration 会自动构建并部署。仓库是公开仓库，自动化提交不会触发私有仓库的团队成员校验限制。
 
 ## 失败行为
 
-| 故障 | 结果 | 处理 |
-| --- | --- | --- |
-| GitHub Pages 访问异常 | Vercel 自定义域名继续提供最后版本 | 向用户发布备线 URL |
-| Vercel 发布失败 | GitHub Pages 部署不受影响 | 单独重跑 `deploy-vercel` |
-| GitHub Actions 暂停 | 两个平台继续提供旧版本 | 恢复后补跑每日流程 |
-| 自定义域名解析异常 | Vercel 默认域名可能也不适合大陆访问 | 修复 DNS；GitHub Pages 仍是独立入口 |
-| 页面可达但大陆加载慢 | 检查外部字体、脚本和图片 | 关键资源全部同源；从大陆网络做探测 |
+| 故障 | 结果 |
+| --- | --- |
+| GitHub Pages 访问异常 | Vercel 自定义域名继续提供最后一次成功部署 |
+| Vercel 构建异常 | GitHub Pages 部署不受影响 |
+| GitHub Actions 抓取或模型失败 | 不产生新数据提交；两个站继续提供旧版本 |
+| Vercel 暂时无法拉取 GitHub | Vercel 保留旧部署，恢复后可重试该 Git commit |
+| 渲染依赖或模板改变 | 确定性测试与两个托管环境的构建会暴露差异 |
 
 ## 上线顺序
 
-1. 先创建 Vercel 项目和自定义域名，取得三个凭据值。
-2. 实现独立 `deploy-vercel` job，但暂不把备线 URL 对外发布。
-3. 连续观察三次定时日报，比较 GitHub Pages 与 Vercel 页面的日期和文件哈希。
-4. 分别使用移动、联通、电信网络验证自定义域名、CSS 和 WOFF2 请求。
-5. 验证通过后发布备线地址；是否升级为主入口另行决定。
+1. 将本方案相关提交推送到 `main`。
+2. 在 Vercel 导入仓库并完成第一次构建。
+3. 绑定自定义域名，但暂不对外公布。
+4. 连续观察三次日报，比较 GitHub Pages 与 Vercel 页面日期和内容。
+5. 分别使用移动、联通、电信网络验证自定义域名、CSS 和 WOFF2 请求。
 
 ## 官方参考
 
 - [Vercel：从中国大陆访问 Vercel 托管站点](https://vercel.com/kb/guide/accessing-vercel-hosted-sites-from-mainland-china)
+- [Vercel：部署 Git 仓库](https://vercel.com/docs/git)
+- [Vercel：配置构建](https://vercel.com/docs/builds)
 - [Vercel：配置自定义域名](https://vercel.com/docs/domains/set-up-custom-domain)
-- [Vercel：Build Output API](https://vercel.com/docs/build-output-api)
-- [Vercel CLI：deploy](https://vercel.com/docs/cli/deploy)
