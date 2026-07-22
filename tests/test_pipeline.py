@@ -1,4 +1,5 @@
 import json
+import re
 from gdr.models import Paper
 from gdr.sources.base import Source
 from gdr.store import Store
@@ -18,6 +19,14 @@ def _paper(pid, title, published="2026-07-16"):
 
 
 def _keyed_llm(fake_llm_factory):
+    def reject_editorial(user):
+        paper_id = re.search(r"paper_id=([^ ]+)", user).group(1)
+        return json.dumps({
+            "paper_id": paper_id,
+            "decision": "reject",
+            "reason": "未达到重大新闻门槛。",
+        })
+
     return fake_llm_factory({
         "主题标签与相关层级是两个独立判断": json.dumps({
             "layer": "core", "score": 90, "tags": ["GRB"], "relation": "direct",
@@ -25,8 +34,7 @@ def _keyed_llm(fake_llm_factory):
         }),
         "综述卡片": json.dumps({"title_zh": "标题", "team": "A 等", "tldr": "t",
                               "review": "r", "highlight": "h", "relation": "—"}),
-        "逐篇提名真正可能达到新闻门槛": json.dumps({"candidates": [], "watchlist": []}),
-        "作为第二位、更加怀疑": json.dumps({"stories": [], "watchlist": []}),
+        "只复核下面这一篇文献": reject_editorial,
     })
 
 

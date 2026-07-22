@@ -21,8 +21,6 @@ def test_reclassify_reuses_items_and_regenerates_headline(tmp_path, fake_llm_fac
             "relation": "enabling", "core_path": "", "evidence": "研究总体率",
             "reason": "范围内的间接支撑",
         }),
-        "逐篇提名真正可能达到新闻门槛": json.dumps({"candidates": [], "watchlist": []}),
-        "作为第二位、更加怀疑": json.dumps({"stories": [], "watchlist": []}),
     })
 
     result = reclassify_day("2026-07-21", store, llm, synced="2026-07-22", max_workers=1)

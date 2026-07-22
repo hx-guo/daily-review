@@ -52,6 +52,9 @@ FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
 ADS_PAGE_SIZE = int(os.environ.get("GDR_ADS_PAGE_SIZE", "200"))
 MAX_CONCURRENCY = int(os.environ.get("GDR_MAX_CONCURRENCY", "6"))
+# Editorial decisions are intentionally one-paper-per-call for stable, short
+# JSON. Run them concurrently so large ADS days do not become serial bottlenecks.
+EDITORIAL_MAX_CONCURRENCY = int(os.environ.get("GDR_EDITORIAL_MAX_CONCURRENCY", "6"))
 # arXiv asks for ~3s between API requests; pagination sleeps this long between pages.
 ARXIV_REQUEST_DELAY = float(os.environ.get("GDR_ARXIV_REQUEST_DELAY", "3"))
 ADS_REQUEST_DELAY = float(os.environ.get("GDR_ADS_REQUEST_DELAY", "0.5"))

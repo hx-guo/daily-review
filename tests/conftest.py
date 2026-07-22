@@ -14,7 +14,7 @@ class FakeLLM:
         if isinstance(self._responses, dict):
             for key, val in self._responses.items():
                 if key in user:
-                    return val
+                    return val(user) if callable(val) else val
             raise AssertionError(f"no keyed FakeLLM response matched user prompt")
         resp = self._responses[self._i]
         self._i += 1
