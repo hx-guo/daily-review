@@ -4,9 +4,15 @@ from gdr.daily_review import make_daily_review
 from gdr.models import Paper, PaperSummary, RelevanceScore
 
 
-def _item(pid="arxiv:1", layer="core"):
-    paper = Paper(id=pid, source="arxiv", title=f"paper {pid}", authors=[], abstract="",
-                  categories=[], published="2026-07-18", url="")
+def _item(pid="arxiv:1", layer="core", *, title=None, authors=None,
+          abstract=None, doi=None):
+    paper = Paper(
+        id=pid, source="arxiv", title=title or f"paper {pid}",
+        authors=authors if authors is not None else ["A. Researcher"],
+        abstract=abstract if abstract is not None else
+        "We report a directly measured transient result with quantitative evidence.",
+        categories=[], published="2026-07-18", url="", doi=doi,
+    )
     score = RelevanceScore(score=90, tags=["GRB"], layer=layer, reason="直接研究GRB")
     summary = PaperSummary(paper_id=pid, title_zh=f"伽马暴研究 {pid}", team="",
                            tldr="研究了伽马暴", review="", highlight="给出首次观测", relation="")
@@ -67,6 +73,42 @@ def test_invalid_or_incomplete_stories_are_rejected(fake_llm_factory):
 
     assert review.stories == []
     assert "无达到" in review.overview
+
+
+def test_secondary_nature_briefing_cannot_become_story(fake_llm_factory):
+    briefing_id = "ads:2026Natur.655R.285."
+    briefing = _item(
+        briefing_id,
+        title="Neutrino's nursery found: the `Shadow Blaster'",
+        authors=[],
+        abstract="A particle detected at the South Pole was born in a distant galaxy.",
+        doi="10.1038/d41586-026-02034-1",
+    )
+    original = _item("arxiv:original")
+    stories = [_story(briefing_id, "breaking"), _story("arxiv:original")]
+    llm = fake_llm_factory([
+        json.dumps({"candidates": stories, "watchlist": []}),
+        json.dumps({"stories": stories, "watchlist": []}),
+    ])
+
+    review = make_daily_review("2026-07-18", [briefing, original], llm)
+
+    assert [story["paper_id"] for story in review.stories] == ["arxiv:original"]
+    assert briefing_id not in llm.calls[0]["user"]
+    assert "原文摘要" in llm.calls[0]["user"]
+    assert "不能独立作为新闻证据" in llm.calls[0]["user"]
+
+
+def test_correction_and_unbylined_blurb_skip_news_review(fake_llm_factory):
+    llm = fake_llm_factory([])
+    correction = _item("ads:correction", title="Publisher Correction: A result")
+    blurb = _item("ads:blurb", authors=[], abstract="A short editorial blurb.")
+
+    review = make_daily_review("2026-07-18", [correction, blurb], llm)
+
+    assert review.stories == []
+    assert llm.calls == []
+    assert "原始研究" in review.overview
 
 
 def test_empty_day_skips_llm(fake_llm_factory):
