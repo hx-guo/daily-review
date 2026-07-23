@@ -2,9 +2,17 @@
   "date": "2026-07-18",
   "review": {
     "date": "2026-07-18",
-    "overview": "今日共收录4篇核心文献，主题分布涵盖太阳射电暴、中子星状态方程、伽马暴机制以及黑洞吸积时变模型，展现了从观测技术、致密星体理论到高能爆发机制与数值建模的多元分布。",
-    "highlights": "1. 中子星物态方程：系统梳理致密物质状态方程的理论框架与未来方向，对理解引力波电磁对应体及X射线双星物理至关重要。\n2. 正则黑洞形成与物质转化产生的伽玛射线暴：探讨重子物质向正则黑洞坍缩的辐射机制，为伽马暴起源提供了新颖的理论视角。\n3. 用于天体物理源时空变化建模的四维高斯随机场生成器：提出四维各向异性高斯随机场模型，为厚盘和喷流的时变发射建模提供了创新数值工具。",
-    "trends": "1. 致密天体物理的多维度推进：从宏观吸积盘与喷流的时空建模，到微观中子星物态方程，再到黑洞形成机制，全面覆盖了高能天体物理的核心研究对象。\n2. 理论建模与观测技术的协同：ALBATROS阵列的超低频射电监测展现了观测能力的拓展，而四维随机场与正则黑洞模型则反映了理论工具的深化，两者共同推动对高能现象的物理理解。\n3. 瞬变现象的机制探索：伽马暴与太阳射电暴均聚焦于剧烈能量释放过程，结合时变建模工具，反映出学界对天体物理瞬变源动态演化机制的持续关注。"
+    "overview": "今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+    "highlights": "—",
+    "trends": "—",
+    "headline_level": "",
+    "headline": "",
+    "headline_paper_id": "",
+    "headline_reason": "",
+    "developments": [],
+    "watchlist": [],
+    "editorial_version": 2,
+    "stories": []
   },
   "items": [
     {
@@ -23,7 +31,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16939v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16939v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -31,7 +40,10 @@
           "太阳物理"
         ],
         "layer": "edge",
-        "reason": "论文研究太阳表面磁场衰减模型，属于太阳物理，与团队关注的高能暂现源范围无关。"
+        "reason": "论文研究太阳表面磁场衰减模型，属于太阳物理，与团队关注的高能暂现源范围无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16939",
@@ -64,7 +76,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16917v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16917v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -73,7 +86,10 @@
           "宇宙学"
         ],
         "layer": "edge",
-        "reason": "论文研究模糊暗物质与重子物质的相关性，属于暗物质结构和星系形成领域，与高能暂现源研究核心无关。"
+        "reason": "论文研究模糊暗物质与重子物质的相关性，属于暗物质结构和星系形成领域，与高能暂现源研究核心无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16917",
@@ -108,13 +124,17 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16835v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16835v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
         "tags": [],
         "layer": "edge",
-        "reason": "该论文专题为石墨烯缺陷的拓扑电荷与几何相位调节，属于凝聚态物理与广义相对论交叉研究，与高能暂现源天体物理的三大层次主题完全无关。"
+        "reason": "该论文专题为石墨烯缺陷的拓扑电荷与几何相位调节，属于凝聚态物理与广义相对论交叉研究，与高能暂现源天体物理的三大层次主题完全无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16835",
@@ -150,7 +170,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16815v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16815v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -159,7 +180,10 @@
           "白矮星"
         ],
         "layer": "edge",
-        "reason": "论文研究疏散星团中逃离的白矮星候选体，属于恒星天体物理与银河系天文学，与高能暂现源团队关注的核心主题（GRB、引力波电磁对应体、磁星、FRB、X射线双星等）不相关。"
+        "reason": "论文研究疏散星团中逃离的白矮星候选体，属于恒星天体物理与银河系天文学，与高能暂现源团队关注的核心主题（GRB、引力波电磁对应体、磁星、FRB、X射线双星等）不相关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16815",
@@ -191,7 +215,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16842v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16842v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -200,7 +225,10 @@
           "修正传播"
         ],
         "layer": "edge",
-        "reason": "研究Kerr时空引力透镜的修正，与团队高能暂现源主题无直接关联，属于理论工作，相关性较低。"
+        "reason": "研究Kerr时空引力透镜的修正，与团队高能暂现源主题无直接关联，属于理论工作，相关性较低。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16842",
@@ -232,7 +260,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16776v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16776v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -241,7 +270,10 @@
           "机器学习"
         ],
         "layer": "edge",
-        "reason": "论文关注三体引力相遇中的双星形成预测，属于恒星动力学，与团队的高能暂现源研究范围关联度极低。"
+        "reason": "论文关注三体引力相遇中的双星形成预测，属于恒星动力学，与团队的高能暂现源研究范围关联度极低。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16776",
@@ -272,7 +304,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16814v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16814v1",
-        "doi": "10.29020/nybg.ejpam.v18i3.6581"
+        "doi": "10.29020/nybg.ejpam.v18i3.6581",
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -280,7 +313,10 @@
           "宇宙学"
         ],
         "layer": "edge",
-        "reason": "论文研究变化光速宇宙学模型的渐近行为，与高能暂现源现象无直接关联，仅属于边缘的宇宙学领域。"
+        "reason": "论文研究变化光速宇宙学模型的渐近行为，与高能暂现源现象无直接关联，仅属于边缘的宇宙学领域。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16814",
@@ -313,7 +349,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16880v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16880v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -322,7 +359,10 @@
           "电磁辐射"
         ],
         "layer": "edge",
-        "reason": "讨论了黑洞蒸发在外磁场中的电磁辐射，属于黑洞物理理论，与团队关注的高能暂现源核心主题关联度低，属于边缘主题。"
+        "reason": "讨论了黑洞蒸发在外磁场中的电磁辐射，属于黑洞物理理论，与团队关注的高能暂现源核心主题关联度低，属于边缘主题。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16880",
@@ -357,7 +397,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16763v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16763v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -367,7 +408,10 @@
           "机器学习"
         ],
         "layer": "edge",
-        "reason": "论文研究恒星系统中的二体-单体散射，属于恒星动力学，与团队关注的高能暂现源（GRB、引力波电磁对应体、磁星、FRB、X射线双星等）完全无关。"
+        "reason": "论文研究恒星系统中的二体-单体散射，属于恒星动力学，与团队关注的高能暂现源（GRB、引力波电磁对应体、磁星、FRB、X射线双星等）完全无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16763",
@@ -410,7 +454,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16775v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16775v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -420,7 +465,10 @@
           "金属丰度"
         ],
         "layer": "edge",
-        "reason": "论文研究经典造父变星的金属丰度测定，属于恒星物理与银河系化学演化，与高能暂现源、引力波电磁对应体、磁星、FRB、X射线双星等多信使及暂现天体物理完全无关。"
+        "reason": "论文研究经典造父变星的金属丰度测定，属于恒星物理与银河系化学演化，与高能暂现源、引力波电磁对应体、磁星、FRB、X射线双星等多信使及暂现天体物理完全无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16775",
@@ -453,13 +501,17 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16641v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16641v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
         "tags": [],
         "layer": "edge",
-        "reason": "该论文研究黑洞量子大气中的量子失谐，属于量子信息与引力理论，与高能暂现源及团队科学范围无直接关联。"
+        "reason": "该论文研究黑洞量子大气中的量子失谐，属于量子信息与引力理论，与高能暂现源及团队科学范围无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16641",
@@ -503,7 +555,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16734v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16734v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -511,7 +564,10 @@
           "恒星形成"
         ],
         "layer": "edge",
-        "reason": "论文研究恒星形成区分子丰度，不属于高能暂现源范畴。"
+        "reason": "论文研究恒星形成区分子丰度，不属于高能暂现源范畴。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16734",
@@ -545,7 +601,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16585v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16585v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -555,7 +612,10 @@
           "LAMOST"
         ],
         "layer": "edge",
-        "reason": "论文主题为低质量星温度估计和T Tauri星识别，属于恒星天体物理，未涉及高能暂现源、多信使或致密天体等团队核心方向，相关性较低。"
+        "reason": "论文主题为低质量星温度估计和T Tauri星识别，属于恒星天体物理，未涉及高能暂现源、多信使或致密天体等团队核心方向，相关性较低。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16585",
@@ -607,7 +667,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16923v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16923v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 70,
@@ -616,7 +677,10 @@
           "太阳射电暴"
         ],
         "layer": "core",
-        "reason": "论文研究太阳低频射电暴，属于团队关注的相关主题中的太阳耀斑部分，但非核心高能暂现源目标，因此中度相关。"
+        "reason": "论文研究太阳低频射电暴，属于团队关注的相关主题中的太阳耀斑部分，但非核心高能暂现源目标，因此中度相关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16923",
@@ -703,7 +767,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.17006v1",
         "pdf_url": "https://arxiv.org/pdf/2607.17006v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 80,
@@ -713,7 +778,10 @@
           "中子星状态方程"
         ],
         "layer": "core",
-        "reason": "文章综述中子星状态方程，是理解双中子星并合（引力波电磁对应体）及致密天体吸积过程的核心基础，与团队关注的核心主题高度相关。"
+        "reason": "文章综述中子星状态方程，是理解双中子星并合（引力波电磁对应体）及致密天体吸积过程的核心基础，与团队关注的核心主题高度相关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.17006",
@@ -888,7 +956,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16581v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16581v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -897,7 +966,10 @@
           "黑洞微扰"
         ],
         "layer": "edge",
-        "reason": "纯理论推导，不涉及高能暂现源观测。"
+        "reason": "纯理论推导，不涉及高能暂现源观测。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16581",
@@ -930,7 +1002,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16590v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16590v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 80,
@@ -940,7 +1013,10 @@
           "机制"
         ],
         "layer": "core",
-        "reason": "论文提出规则黑洞形成的物质转化作为伽马暴的一种可能机制，直接与伽马暴研究相关。"
+        "reason": "论文提出规则黑洞形成的物质转化作为伽马暴的一种可能机制，直接与伽马暴研究相关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16590",
@@ -974,7 +1050,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16748v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16748v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 35,
@@ -983,7 +1060,10 @@
           "Fermi"
         ],
         "layer": "edge",
-        "reason": "报告一个射电宁静NLS1星系的伽马射线耀发，属于高能暂现，但与团队核心暂现源方向不同，相关度一般。"
+        "reason": "报告一个射电宁静NLS1星系的伽马射线耀发，属于高能暂现，但与团队核心暂现源方向不同，相关度一般。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16748",
@@ -1018,7 +1098,8 @@
         "published": "2026-07-18",
         "url": "https://arxiv.org/abs/2607.16576v1",
         "pdf_url": "https://arxiv.org/pdf/2607.16576v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 70,
@@ -1029,7 +1110,10 @@
           "喷流"
         ],
         "layer": "core",
-        "reason": "论文提出吸积盘和喷流的四维高斯随机场时变模型，直接关联团队关注的X射线双星与黑洞吸积过程，属于核心科学范围，但偏重方法而非具体暂现源观测。"
+        "reason": "论文提出吸积盘和喷流的四维高斯随机场时变模型，直接关联团队关注的X射线双星与黑洞吸积过程，属于核心科学范围，但偏重方法而非具体暂现源观测。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.16576",
@@ -1084,7 +1168,72 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.16988",
+        "source": "arxiv",
+        "title": "How many degrees of freedom describe a quantum N-particle state?",
+        "authors": [
+          "Matthew J. Lake",
+          "Marek L. Miller"
+        ],
+        "abstract": "In Newtonian spacetime, the canonical description of a classical $N$-particle system requires $3N$ degrees of freedom. Not all of these are physical, however, since the conservation of the net momentum implies that only $3(N-1)$ accelerations are independent. Hence, three constraints can be used to eliminate the unphysical centre-of-mass variables, at the level of the Lagrangian, leaving only the subset of observable displacements and momenta, which are relational. Imposing the constraints does not change the dynamics of these variables, at the classical level, and is analogous to a gauge-fixing procedure, which removes redundancy in the description of the system. In classical physics, therefore, the number of physical degrees of freedom equals the number of independent relational degrees of freedom. Here, we show that this is not the case in quantum mechanics. While an operator-analogue of the classical net momentum exists, it cannot be used to impose constraints that restrict the degrees of freedom in the theory, without a loss of physical information. This means that all $3N$ canonical degrees of freedom are physical, even though only $3(N-1)$ of them are relational. We explore the physical consequences of the non-relational variables and show that they give rise to generalised uncertainty relations (GURs), for the relational quantities that define the quantum reference frame (QRF). Hence, it is shown that the non-relational degrees of freedom refer to the frame itself and that the non-Heisenberg terms in the GURs define its Galilean-invariant spreads, in both real space and momentum space. The implications of this result for recent work on relational models, including the ``perspective neutral'' framework for QRFs, are discussed. Its implications for the wider relational program, and, in particular, the relevance of the latter to quantum gravity research, are also critically assessed",
+        "categories": [
+          "quant-ph",
+          "gr-qc",
+          "hep-ph"
+        ],
+        "published": "2026-07-18",
+        "url": "https://arxiv.org/abs/2607.16988v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.16988v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.16988"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为量子基础物理，与团队高能暂现源科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论经典与量子N粒子态的自由度数，未涉及高能暂现源或团队任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.16988",
+        "title_zh": "描述量子N粒子态需要多少个自由度？",
+        "team": "",
+        "tldr": "本文论证在量子力学中，N粒子态的所有3N个正则自由度均为物理的，其中非关系自由度导致了关于量子参考框架的广义不确定关系，与经典力学仅3(N-1)个物理自由度不同。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "synced": "2026-07-23",
+      "n_papers": 19,
+      "review": {
+        "date": "2026-07-18",
+        "overview": "今日共收录4篇核心文献，主题分布涵盖太阳射电暴、中子星状态方程、伽马暴机制以及黑洞吸积时变模型，展现了从观测技术、致密星体理论到高能爆发机制与数值建模的多元分布。",
+        "highlights": "1. 中子星物态方程：系统梳理致密物质状态方程的理论框架与未来方向，对理解引力波电磁对应体及X射线双星物理至关重要。\n2. 正则黑洞形成与物质转化产生的伽玛射线暴：探讨重子物质向正则黑洞坍缩的辐射机制，为伽马暴起源提供了新颖的理论视角。\n3. 用于天体物理源时空变化建模的四维高斯随机场生成器：提出四维各向异性高斯随机场模型，为厚盘和喷流的时变发射建模提供了创新数值工具。",
+        "trends": "1. 致密天体物理的多维度推进：从宏观吸积盘与喷流的时空建模，到微观中子星物态方程，再到黑洞形成机制，全面覆盖了高能天体物理的核心研究对象。\n2. 理论建模与观测技术的协同：ALBATROS阵列的超低频射电监测展现了观测能力的拓展，而四维随机场与正则黑洞模型则反映了理论工具的深化，两者共同推动对高能现象的物理理解。\n3. 瞬变现象的机制探索：伽马暴与太阳射电暴均聚焦于剧烈能量释放过程，结合时变建模工具，反映出学界对天体物理瞬变源动态演化机制的持续关注。",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [],
+        "editorial_version": 0,
+        "stories": []
+      }
+    }
+  ]
 }
