@@ -2931,7 +2931,1088 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21846",
+        "source": "arxiv",
+        "title": "Magnetically guided accretion and extremely slow rotation in a metal-enriched white dwarf",
+        "authors": [
+          "S. Bagnulo",
+          "M. A. Stroet",
+          "C. P. Folsom",
+          "M. A. Hollands",
+          "J. D. Landstreet",
+          "G. Ramsay"
+        ],
+        "abstract": "White dwarfs that show atmospheric metal enrichment offer a direct window into the bulk composition of exoplanetary material and provide some of the most direct constraints on the building blocks of rocky exoplanetary systems. Recent work has suggested that magnetic fields may influence how this material is accreted, potentially channelling debris along field lines and retaining it near magnetic poles rather than allowing it to be redistributed uniformly across the stellar surface. Here we report the discovery of photometric, spectroscopic, and spectropolarimetric variability in the magnetic DZ white dwarf WD1532+129, revealing a rotation period of about 289 days, by far the longest yet directly measured for any degenerate star. The observed period may result from the combined effect of angular-momentum loss during the evolution leading to the white dwarf stage and an unusually slowly rotating progenitor, perhaps a magnetic Ap star. The white dwarf exhibits surface abundance inhomogeneities, with metals concentrated near both magnetic poles, and the observed modulation is consistent with localised metal-rich regions aligned with the magnetic geometry. WD1532+129 is the third of the four known magnetic DZ white dwarfs within 20 pc to show evidence for polar metal enhancement, indicating that magnetically guided inhomogeneities are a common property of magnetic metal-enriched white dwarfs.",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21846v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21846v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21846"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主要研究白矮星的行星物质吸积和磁场引导不均匀性，与高能暂现源及团队任务能力无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于磁白矮星的金属吸积和极慢自转，未提及任何高能暂现现象、任务或团队科学目标"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21846",
+        "title_zh": "磁引导吸积与金属富集白矮星中的极慢自转",
+        "team": "",
+        "tldr": "在磁白矮星WD1532+129中发现约289天的极长自转周期，并证实金属元素沿磁极分布，表明磁引导不均匀吸积是金属富集白矮星的普遍特征。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21837",
+        "source": "arxiv",
+        "title": "Soliton-Black Hole Phase Transitions in the Presence of String Clouds",
+        "authors": [
+          "Ziqing Chen",
+          "Robert B. Mann"
+        ],
+        "abstract": "We study soliton-black hole phase transitions in asymptotically AdS planar spacetimes sourced by a cloud of strings. In the planar background, the string cloud exhibits a brush-like configuration, where the strings are aligned parallel to each other and extend along the radial direction. This leads to a stress tensor with nonvanishing components only along the temporal and radial directions. By comparing the Euclidean on-shell actions of the planar black hole and the corresponding AdS soliton under the same boundary conditions, we obtain the free energy difference between the two phases. Our results show that the string cloud parameter significantly modifies the competition between the black hole phase and the soliton phase. In particular, positive and negative values of the string cloud parameter affect the phase structure in different ways, changing the dominance relation between the black hole and soliton configurations.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21837v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21837v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21837"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "研究属于引力理论，与高能暂现源研究团队的科学目标无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题研究soliton-black hole phase transitions，无任何高能暂现相关关键词；摘要讨论AdS时空中的相变，与天文暂现源无关"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21837",
+        "title_zh": "弦云存在下的孤子-黑洞相变",
+        "team": "",
+        "tldr": "通过比较欧几里得作用量，研究弦云存在下渐近AdS平面时空中的孤子-黑洞相变，发现弦云参数显著影响相竞争且正负值作用不同。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21845",
+        "source": "arxiv",
+        "title": "Rate of caustic crossing microlensing events in stellar binary lenses with significant orbital motion",
+        "authors": [
+          "Arjun Murlidhar",
+          "B. Scott Gaudi",
+          "Todd. A. Thompson"
+        ],
+        "abstract": "Binary lens microlensing events in which the source crosses a caustic produce sharp, distinctive magnification peaks and can therefore be readily identified. In this paper, we explore the importance of binary orbital motion for the binary lens caustic crossing cross section. If the orbital timescale of the binary system is smaller than the Einstein ring crossing timescale, the caustics sweep out a larger area in the source plane, generally enhancing the cross section. We find that face-on binaries in circular orbits exhibit a substantial increase (up to 4$\\times$) in the cross section for caustic crossings. However, highly inclined orbits produce a net decrease relative to a static face-on binary with the same semi-major axis. Using a sample of ~$2800$ synthetic binary microlensing events drawn from a realistic Milky Way population-synthesis model, we calculate the average change in the caustic crossing cross section for individual systems with and without orbital motion. Although orbital motion can significantly alter the cross section for specific geometries, we find that, when averaged over the full population, it produces only a small, negligible increase of ~$0.1\\%$ in the average cross section. We also compute the overall rate of caustic crossing binary events in the simulated sample and find that, with sufficiently dense photometric sampling, $6.3 \\pm 0.2\\%$ of microlensing events with impact parameter $u_0 < 1$ should exhibit caustic crossings. This rate depends on the distributions of binary separation, mass ratio, and multiplicity of stars and compact objects, and can therefore be used to test our understanding of these underlying properties.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.EP",
+          "astro-ph.GA"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21845v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21845v1",
+        "doi": "10.3847/1538-4357/ae8d0c",
+        "external_ids": {
+          "arxiv": "2607.21845",
+          "doi": "10.3847/1538-4357/ae8d0c"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "分类输出解析失败，保守归为边缘",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21845",
+        "title_zh": "具有显著轨道运动的恒星双星透镜中尖点穿越微引力透镜事件发生率",
+        "team": "",
+        "tldr": "本文利用合成样本研究双星轨道运动对微引力透镜尖点穿越截面和事件率的影响，发现轨道运动整体仅使平均截面增加0.1%，尖点穿越事件发生率约为6.3%。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21786",
+        "source": "arxiv",
+        "title": "Static Black Holes and Iyer--Wald Entropy in $f(\\mathcal{R},\\mathcal{K})$ Gravity",
+        "authors": [
+          "I. Díaz-Saldaña",
+          "J. López-Domínguez",
+          "Wilfredo Yunpanqui",
+          "Javier Chagoya",
+          "M. Sabido"
+        ],
+        "abstract": "We investigate static, spherically symmetric black hole solutions in a class of higher-curvature gravitational theories described by a Lagrangian that depends on the Ricci and Kretschmann scalars. The modified Einstein equations contain higher-order curvature terms. We develop a perturbative scheme to look for a black hole solution that deviates parametrically from the Schwarzschild geometry. We obtain first-order corrections to the metric by solving the resulting coupled differential equations. The corresponding Iyer--Wald entropy is then evaluated consistently to first order in the perturbative coupling. We show that the higher-curvature contribution gives rise to a power-law correction to the Bekenstein--Hawking entropy.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21786v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21786v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21786"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究纯理论引力中的黑洞解，与高能暂现源研究团队的科学关注无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均讨论静态黑洞解和Iyer-Wald熵，属于修改引力理论，未涉及任何高能暂现源或观测。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21786",
+        "title_zh": "在$f(\\mathcal{R},\\mathcal{K})$引力中的静态黑洞和Iyer-Wald熵",
+        "team": "",
+        "tldr": "通过微扰方法得到了静态球对称黑洞解的一阶修正，并一致计算了Iyer-Wald熵，发现高曲率贡献导致Bekenstein-Hawking熵的幂律修正。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21815",
+        "source": "arxiv",
+        "title": "Unit Killing Initial Data",
+        "authors": [
+          "Igor Khavkine",
+          "Salvador Mengual Sendra"
+        ],
+        "abstract": "We find a system of differential equations on an initial data surface whose solutions are in bijection with unit vector fields on the Einstein $Λ$-vacuum development that are proportional to a Killing vector. We refer to these conditions as the \\textit{unit Killing initial data} (uKID) equations, analogous to the classical \\textit{Killing initial data} (KID) equations. The uKID equations can be useful in a setting where only the unit-normalized part of the Killing vector is geometrically distinguished. We eliminate the scaling degree of freedom of a general Killing vector to obtain the space-time equations characterizing unit normalized Killing vector fields and also the uKID equations. These equations are also prolonged to canonical connection form, showing their finite type character. Finally, we obtain an independent derivation of the uKID equations by revisiting the propagation identity method, which has previously been used to characterize the initial data of other geometric equations.",
+        "categories": [
+          "gr-qc",
+          "math-ph",
+          "math.DG"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21815v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21815v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21815"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为广义相对论中的数学问题，与高能暂现源研究无实质关联",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均未涉及高能暂现天体、天文观测或相关任务，完全属于广义相对论和数学物理的纯理论工作"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21815",
+        "title_zh": "单位Killing初始数据",
+        "team": "",
+        "tldr": "建立了描述爱因斯坦Λ-真空时空中与Killing向量成比例的单位向量场初始数据的uKID方程。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21834",
+        "source": "arxiv",
+        "title": "The diffraction-lensing interpretation of GW231123 with astrophysical priors",
+        "authors": [
+          "Mark Ho-Yeuk Cheung",
+          "Digvijay Wadekar",
+          "Matias Zaldarriaga",
+          "Tejaswi Venumadhav",
+          "Javier Roulet",
+          "Ajit Kumar Mehta"
+        ],
+        "abstract": "GW231123, if unlensed, is a rare binary black hole merger with high masses and high spins for both progenitors. We show that the signal is better fitted by a lower-mass, lower-spin merger that is diffraction-lensed by an isolated object of redshifted mass $\\sim 1000\\,\\rm M_\\odot$, modeled either as a point mass or as a spherically symmetric compact halo. Because diffraction-lensed events are also rare, hypothesis testing should quote the posterior odds ratio rather than the Bayes factor, which requires quantifying our prior belief in the two hypotheses. We adopt the GWTC-5 population distribution as our source parameter prior, and quantify the prior on the lens hypothesis through the lensing optical depth. For a point-mass lens, observational constraints on the abundance of black holes in the Universe yield an upper bound on the optical depth, and hence on the posterior odds, which do not rule out lensing. However, using a predicted mass function of intermediate-mass black holes formed in star clusters gives a low optical depth that strongly disfavors lensing. For a dark matter halo lens, standard collisionless cold dark matter does not form halos compact enough to give the required optical depth, but self-interacting dark matter with a large cross section at low velocities can trigger gravothermal collapse and form them, in which case the posterior odds are inconclusive. In either case, from a frequentist perspective, we show that detecting a lensed event with properties like GW231123 is unlikely. These conclusions apply to isolated lenses, while a lens embedded in an external gravitational potential could change the picture.",
+        "categories": [
+          "astro-ph.CO",
+          "astro-ph.GA",
+          "astro-ph.HE",
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21834v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21834v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21834"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文讨论引力波事件透镜，与团队核心关注的高能暂现源（如伽马暴、磁星等）无直接联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题中的GW231123是引力波事件，摘要描述其为binary black hole merger，讨论衍射透镜解释，未涉及高能暂现源或电磁对应体"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21834",
+        "title_zh": "基于天体物理先验的GW231123衍射透镜解释",
+        "team": "",
+        "tldr": "本文通过引入天体物理先验和透镜光深计算后验几率比，认为GW231123信号更可能来自被孤立致密天体（点质量或致密暗物质晕）衍射透镜化的低质量、低自旋双黑洞合并，发现点质量透镜不能排除但依赖于中间质量黑洞丰度，而标准冷暗物质晕无法提供所需光深，自相互作用暗物质可能但无定论。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21783",
+        "source": "arxiv",
+        "title": "Quantum-Corrected Thermodynamics, Dirac Perturbations, Geodesic Structure, and Topological Phases of Black Holes with Non-Minimal Logarithmic Coupling",
+        "authors": [
+          "İzzet Sakallı",
+          "Özcan Sert",
+          "Erdem Sucu",
+          "Yusuf Sucu"
+        ],
+        "abstract": "We study the thermodynamic and dynamical properties of static, spherically symmetric BHs in Einstein-Maxwell theory modified by a non-minimal $\\ln(R)F^{2}$ coupling. The Hawking temperature follows from the Hamilton-Jacobi form of the fermionic tunnelling method for spin-$\\tfrac12$ particles, and it carries scale-dependent logarithmic corrections. We then analyze the propagation of massless Dirac fields, compute the quasinormal-mode (QNM) spectrum with the third-order WKB approximation, and read off a quality factor whose balance between oscillation and damping depends on the logarithmic coupling in a mode-dependent way. Moving outward from the horizon, we work out the transmission of the fermionic field and its Hawking emission, and we solve the null and timelike geodesic problems to obtain the photon sphere, the shadow radius, the innermost stable circular orbit (ISCO), the associated zoom-whirl bound orbits, and the orbital and epicyclic frequencies that set the twin-peak quasiperiodic-oscillation (QPO) ratio. A photon-sphere reading of the eikonal QNM frequencies ties the geodesic sector back to the field perturbations. On the thermodynamic side, we build the phase space with quantum-geometric corrections through the Barrow entropy, and we characterize the global phase structure with the topological method, where the winding numbers of the off-shell free energy are governed by the interplay of the fractal Barrow deformation, the electric charge, and the logarithmic coupling. We find that the effective pressure vanishes exactly on the topological defect line, which links the pressure sign to the local stability of each branch.",
+        "categories": [
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21783v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21783v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21783"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文为理论引力/黑洞物理，与高能暂现源及团队观测任务无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "论文研究静态球对称黑洞的量子修正热力学、Dirac扰动、测地线结构和拓扑相，不涉及伽马暴、引力波电磁对应体、磁星、FRB等高能暂现天体或GECAM、Insight-HXMT等任务能力。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21783",
+        "title_zh": "非最小对数耦合黑洞的量子修正热力学、狄拉克扰动、测地线结构与拓扑相",
+        "team": "",
+        "tldr": "本文系统研究了非最小对数耦合Einstein-Maxwell黑洞的量子热力学（霍金温度修正、Barrow熵、拓扑相）和动力学性质（狄拉克场准正则模、测地线结构包括光子球、阴影、ISCO、束缚轨道和QPO频率）",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21770",
+        "source": "arxiv",
+        "title": "Local Geometric Bounds on Generalized Entropy Evolution along Null Horizons",
+        "authors": [
+          "Erik Bertram"
+        ],
+        "abstract": "We develop a local and covariant framework for constraining the evolution of generalized entropy along null horizons, combining classical geometric methods with constraints from quantum field theory. Building on the quantum focusing conjecture (QFC), which restricts entropy evolution along null directions, we derive a Raychaudhuri-type differential inequality for the generalized expansion that makes its local dependence on expansion and shear explicit. The resulting relation, $\\frac{dΘ}{dλ} \\le -θΘ+ \\tfrac{1}{2}θ^2 - σ^2$, reveals a direct interplay between expansion and shear in controlling entropy flow: shear contributes negatively and yields a monotonic suppression of the generalized expansion in shear-dominated regimes, while expansion provides a competing geometric source term. This structure provides a local geometric formulation consistent with the QFC and clarifies its interpretation as a constraint on entropy evolution. We further show that quantum extremal surfaces correspond to configurations characterized by $Θ=0$, whose local stability properties are governed by the same geometric data. In addition, we derive a bound on the exponential separation of nearby null generators, indicating that the same combination of expansion and shear also controls geometric instability. Our results provide a local geometric refinement of entropy bounds in semiclassical gravity and establish a direct connection between null geometry, quantum energy conditions, and entropy flow, offering a local geometric perspective on horizon thermodynamics beyond global formulations.",
+        "categories": [
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21770v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21770v1",
+        "doi": "10.1103/w5wg-m5rc",
+        "external_ids": {
+          "arxiv": "2607.21770",
+          "doi": "10.1103/w5wg-m5rc"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究视界上的广义熵演化，属于基础物理，与高能暂现源无直接或间接关联",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要未提及任何高能暂现源、观测任务或相关天体，内容为纯理论广义相对论与量子场论"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21770",
+        "title_zh": "沿零视界的广义熵演化的局部几何界限",
+        "team": "",
+        "tldr": "本文结合经典几何与量子场论约束，发展了一个局部协变框架，推导出广义膨胀的雷乔杜里型微分不等式，揭示了剪切和膨胀在控制熵演化中的直接相互作用，并证明了量子极端面对应的几何配置与稳定性条件。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21852",
+        "source": "arxiv",
+        "title": "A GRMHD-Calibrated Semi-Analytical Model for Hot Sub-Keplerian Accretion Flows in Kerr Spacetime",
+        "authors": [
+          "Nabin Bhushal",
+          "Manil Khatiwada",
+          "Yogesh Maharjan",
+          "David Garofalo",
+          "Chandra B. Singh"
+        ],
+        "abstract": "We develop a simple, semi-analytical, kinematic model for hot, thick accretion flows, constructed by interpolating between Keplerian and free-fall geodesic solutions in the Kerr metric. Unlike self-consistent general relativistic magnetohydrodynamics (GRMHD) frameworks, our model contains no explicit magnetic fields or stress terms; instead, it uses a smooth, radially varying transition function T(r) to connect the velocity components from near-Keplerian rotation at large distances to a free-fall state near the event horizon. While the coefficients $α$ and $β$ remain constant, the transition function is a true function of radius, allowing the flow properties to vary smoothly with radius. We calibrate and validate this model against time- and azimuthally averaged profiles from long-duration magnetically arrested disk (MAD) simulations spanning a wide range of black hole spins ($a=-0.9$ to $+0.9$). The model successfully captures the properties of accretion flow parameters across both prograde and retrograde configurations. Quantitatively, the predicted radial velocity, angular velocity, and density profiles match the simulation data to within an average factor of approximately 1.8, 1.6, and 1.6, respectively, while the specific angular momentum exhibits the closest agreement, remaining within a factor of approximately 1.2. This fast semi-analytical prescription gives significantly lower errors than previous constant-coefficient models and it is a computationally affordable tool for various applications such as ray tracing, accretion parameter exploration, and spectral modelling.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.GA"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21852v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21852v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21852"
+        }
+      },
+      "score": {
+        "score": 70,
+        "tags": [
+          "X射线双星与吸积致密天体"
+        ],
+        "layer": "related",
+        "reason": "论文聚焦黑洞吸积流半解析模型，虽可用于X射线双星能谱建模，但未直接服务于团队暂现源观测或任务，属于相关方法。",
+        "relation": "enabling",
+        "core_path": "",
+        "evidence": "摘要中描述：'We develop a simple, semi-analytical, kinematic model for hot, thick accretion flows... This fast semi-analytical prescription... it is a computationally affordable tool for various applications such as ray tracing, accretion parameter exploration, and spectral modelling.' 模型通过GRMHD模拟校准，未涉及具体暂现源或任务数据。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21852",
+        "title_zh": "Kerr时空中热亚开普勒吸积流的GRMHD校准半解析模型",
+        "team": "",
+        "tldr": "本文构建了一个通过平滑过渡函数连接开普勒与自由下落解的热厚吸积流半解析运动学模型，并经GRMHD模拟校准，可有效复现流场径向剖面。",
+        "review": "",
+        "highlight": "创新点：引入以ISCO为基准的逻辑斯谛过渡函数取代常数系数，实现了从开普勒到自由下落的平滑径向渐变，与GRMHD模拟吻合度较先前模型显著提升，且计算开销极低。",
+        "relation": "",
+        "authors_en": "Nabin Bhushal (Central Department of Physics, Tribhuvan University, Kirtipur, Kathmandu 44600, Nepal), Manil Khatiwada (Central Department of Physics, Tribhuvan University, Kirtipur, Kathmandu 44600, Nepal), Yogesh Maharjan (Faculty of Physics and Applied Informatics, University of Łódź, Pomorska 149/153, 90-236 Łódź, Poland) et al.",
+        "corresponding_en": "",
+        "context_outlook": "接续早期常数系数混合模型[[Pu+ 2016]]，本研究引入与ISCO相关的逻辑斯谛过渡函数T(r)，并利用长时标MAD模拟数据[[Narayan+ 2022]]校准参数，成功再现了不同黑洞自旋下径向速度、角速度及密度的径向渐变，且比角动量吻合良好。该半解析框架计算成本低，未来可便利地用于光线追踪计算黑洞阴影与能谱，或作为数值模拟的初始/边界条件。但模型为纯运动学，未显含磁场，且自由下落分支的零角动量假设导致内区偏差，后续可加入额外自由度提升精度。",
+        "citations": [
+          {
+            "label": "Pu+ 2016",
+            "authors": "Pu",
+            "year": "2016",
+            "title": "The effects of accretion flow dynamics on the black hole shadow of Sagittarius A",
+            "ref": "Hung-Yi Pu, Kazunori Akiyama, and Keiichi Asada, “The effects of accretion flow dynamics on the black hole shadow of Sagittarius A,” The Astrophysical Journal, vol. 831, no. 1, pp. 4, 2016.",
+            "arxiv": "1608.03035",
+            "doi": "10.3847/0004-637X/831/1/4",
+            "bibcode": "2016ApJ...831....4P",
+            "url": "https://arxiv.org/abs/1608.03035",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Narayan+ 2022",
+            "authors": "Narayan",
+            "year": "2022",
+            "title": "Jets in magnetically arrested hot accretion flows: geometry, power, and black hole spin-down",
+            "ref": "Ramesh Narayan, Andrew Chael, Koushik Chatterjee, Angelo Ricarte, and Brandon Curd, “Jets in magnetically arrested hot accretion flows: geometry, power, and black hole spin-down,” Monthly Notices of the Royal Astronomical Society, vol. 511, no. 3, pp. 3795–3813, 2022.",
+            "arxiv": "2108.12380",
+            "doi": "10.1093/mnras/stac285",
+            "bibcode": "2022MNRAS.511.3795N",
+            "url": "https://arxiv.org/abs/2108.12380",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21747",
+        "source": "arxiv",
+        "title": "On the astrophysical origin of cosmic rays: Constraining the Ultra-High-Energy Cosmic Ray Horizon through Nearby Galaxy Distributions",
+        "authors": [
+          "F. Dávila-Kurbán",
+          "F. Duplancic",
+          "D. Garcia Lambas"
+        ],
+        "abstract": "The origin of ultra-high-energy cosmic rays (UHECR) remains a central open problem in astroparticle physics. The observed large-scale anisotropy of UHECR arrival directions above several EeV, together with the spectral suppression at the highest energies, suggests extragalactic sources confined to a limited volume of the nearby Universe, though the effective spatial scale of this contribution remains poorly constrained.   We aim to constrain the effective propagation horizon of UHECR with energies E >= 8 EeV by studying how well the observed large-scale anisotropy is reproduced by the distribution of nearby galaxies at different distances, accounting for Galactic magnetic-field deflections. We construct volume-limited galaxy samples from the GLADE+ catalogue extending to 10000 km/s (~150 Mpc) and use both dipole comparisons and angular cross-correlation analyses with the Pierre Auger Observatory UHECR flux map (E >= 8 EeV) to characterize the distance dependence of the anisotropy signal, further weighting the galaxy-UHECR correlations using deflection maps derived from a Galactic magnetic field model.   We find that the angular separation between the galaxy and UHECR dipoles is minimized for galaxies within cz < 4000 km/s (< 60 Mpc), where the galaxy dipole amplitude is also maximal. The galaxy-UHECR cross-correlation signal is dominated by this nearby population and weakens rapidly at larger distances. Accounting for Galactic magnetic field deflections enhances the correlation amplitude by more than a factor of two, indicating that magnetic effects significantly shape the observed anisotropy.   Our results indicate that the observed anisotropy of UHECR of 8 EeV and above is primarily driven by sources within ~50-60 Mpc, consistent with expectations from energy losses and magnetic deflections, retaining a measurable imprint of the nearby extragalactic matter distribution.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.CO",
+          "astro-ph.GA"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21747v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21747v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21747"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题是宇宙线起源，并非团队直接关注的高能暂现源或相关任务。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要显示本文研究超高能宇宙线各向异性和传播视界，使用星系分布和奥格天文台数据，未涉及高能暂现源或团队任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21747",
+        "title_zh": "关于宇宙线的天体物理起源：通过邻近星系分布约束超高能宇宙线视界",
+        "team": "",
+        "tldr": "该研究利用附近星系分布和银河磁场模型，约束了能量≥8 EeV的超高能宇宙线的传播视界，发现其各向异性主要由50-60 Mpc内的源驱动。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21734",
+        "source": "arxiv",
+        "title": "Page transition for the complexity of an evaporating black hole",
+        "authors": [
+          "Violet Concepcion",
+          "Yasunori Nomura",
+          "Kyle Ritchie",
+          "Samuel Weiss"
+        ],
+        "abstract": "Recent results demonstrate that there exists a sharp, Page-like transition for the complexity of subsystems of Haar-random states as their fractional subsystem size surpasses one half. They further demonstrate that this transition also occurs for the holographic complexity of boundary subregions of eternal AdS black holes, assuming the Complexity$=$Volume (CV) proposal for subregions. We interpret this transition as a crossover from spectrum-dominated to basis-dominated subsystem complexity, reflecting the breakdown of approximate thermality beyond half-system size. We then apply this reasoning to an evaporating AdS black hole coupled to a bath, modeled by a quantum circuit undergoing random evolution on an interior subsystem of diminishing size. Using the basis-spectrum decomposition of subsystem complexity, we argue for a similar Page-like transition in the radiation complexity. We then show, using CV for subregions, that the same transition appears in the holographic complexity of the radiation subsystem through the emergence of an island, whose volume gives the dominant contribution. We argue that the island volume contribution resolves an apparent complexity paradox analogous to the information paradox.",
+        "categories": [
+          "hep-th",
+          "gr-qc",
+          "quant-ph"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21734v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21734v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21734"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文为纯理论黑洞信息论研究，不涉及团队关注的暂现源观测或相关方法。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于黑洞复杂性及Page-like transition，未涉及任何高能暂现源或观测任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21734",
+        "title_zh": "蒸发黑洞复杂性的Page相变",
+        "team": "",
+        "tldr": "论证了蒸发黑洞辐射复杂性存在Page样转变，并通过全息岛屿体积主导贡献解决了一个复杂度悖论。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21720",
+        "source": "arxiv",
+        "title": "Gravitational Lensing in a Kasner Background: Distinguishing Wormholes and Black Holes",
+        "authors": [
+          "Celio R. Muniz",
+          "Jonathan A. Rebouças",
+          "M. B. Cruz",
+          "R. M. P. Neves"
+        ],
+        "abstract": "We investigate gravitational lensing by compact objects embedded in anisotropic Bianchi-I cosmologies using directional Jacobi maps within the thin-lens approximation. The formalism is developed for a general diagonal Bianchi-I spacetime and specialized to the Kasner solution as an analytically tractable background. Using the Ellis--Bronnikov wormhole and the Schwarzschild black hole as representative lenses, we derive anisotropic lens equations, characteristic axis-aligned lensing scales, and the corresponding critical curves. We show that the directional splitting of the characteristic scales depends on the complete source--lens--observer optical propagation and provides a geometric probe of anisotropic expansion independent of the overall lens scale. By contrast, the exact critical curves exhibit a much weaker deformation, indicating that characteristic-scale splitting and critical-curve morphology probe distinct aspects of the lens mapping. The comparison between wormhole and black-hole lenses further reveals that identical anisotropic backgrounds are filtered differently by distinct weak-field deflection laws. These results provide a simple framework for disentangling cosmological anisotropy from the local geometry of compact lenses.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21720v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21720v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21720"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为理论引力透镜，与高能暂现源研究无直接关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均未涉及高能暂现源或团队任务，其背景为各向异性宇宙学引力透镜，用于区分虫洞和黑洞。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21720",
+        "title_zh": "Kasner背景中的引力透镜：区分虫洞和黑洞",
+        "team": "",
+        "tldr": "在Kasner各向异性宇宙背景下，利用方向雅可比图推导了虫洞和黑洞的引力透镜方程，分析了特征尺度分裂和临界曲线，为区分宇宙各向异性与透镜几何提供了框架。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21713",
+        "source": "arxiv",
+        "title": "Viscosity effects on the shadow of a non-rotating black hole",
+        "authors": [
+          "Sayantani Lahiri",
+          "Sergio Gimeno-Soler",
+          "Alejandro Cruz-Osorio",
+          "José A. Font",
+          "Ziri Younsi"
+        ],
+        "abstract": "We study the effect of shear viscosity in stationary magnetized accretion tori on synthetic images of non-rotating black hole shadows. Shear viscosity and spacetime-curvature contributions are introduced perturbatively in the tori through first and second-order transport coefficients within a second-order causal theory of non-ideal relativistic hydrodynamics. Synthetic black hole shadow images at 230\\,GHz are obtained via general relativistic radiative transfer computations assuming thermal synchrotron emission and for a wide range of plasma magnetization parameters, viewing inclination angles, electron-temperature prescriptions, and viscosity parameters. A comparative pixel-by-pixel analysis using two normalized metrics shows that the largest image differences occur for strongly magnetized tori. While shear viscosity induces only minor changes in the overall shadow morphology, its combined effects with spacetime curvature are more evident in localized modifications of the synchrotron emission and pixel-wise flux distribution. These effects become increasingly pronounced at higher inclination angles, with the largest brightness differences between viscous and non-viscous configurations occurring for larger values of the electron-temperature parameter. Overall, our results indicate that shear viscosity and spacetime curvature leave only modest imprints on black hole shadow images produced by stationary thick disks, with differences remaining at the level of a few $μ$Jy. Since our analysis is limited to stationary tori, the effects of shear viscosity might however be more significant in fully dynamical accretion systems.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21713v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21713v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21713"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为稳态吸积盘的黑洞阴影建模，与高能暂现源及团队科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要指出研究稳态磁化吸积环的合成图像，仅关注粘度对黑洞阴影的微小影响，未涉及任何暂现现象或团队任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21713",
+        "title_zh": "粘度对非旋转黑洞阴影的影响",
+        "team": "",
+        "tldr": "通过广义相对论辐射传输模拟，研究了剪切粘度对静止磁化吸积环中非旋转黑洞阴影合成图像的影响，发现强磁化环中图像差异最大但整体影响较小，亮度变化仅几个微央斯基。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21695",
+        "source": "arxiv",
+        "title": "Dimensional Analysis is a Gauge Theory",
+        "authors": [
+          "Benjamin Muntz"
+        ],
+        "abstract": "I argue that dimensional analysis can appropriately be thought of as a gauge theory. This picture naturally leads to the usual quantity calculus through inherent properties of Lie groups, Lie algebras, and representation theory. The gauge theory interpretation is perhaps strongest for non-constant units. I explain how Stevens's classification of scales of measurement can be understood by choices of different gauge groups. Finally, I reinterpret and rephrase the Buckingham-Π Theorem in a way that also applies to typical gauge theories. Counting the number of ''Π''s becomes a well-known problem of invariant theory.",
+        "categories": [
+          "physics.hist-ph",
+          "gr-qc",
+          "hep-th",
+          "math-ph"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21695v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21695v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21695"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "该论文主题为量纲分析的规范理论诠释，不属于团队科学关注范围",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论量纲分析与规范理论，与高能暂现源及团队任务无任何关联"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21695",
+        "title_zh": "量纲分析是一种规范理论",
+        "team": "",
+        "tldr": "本文提出量纲分析可视为规范理论，并由此导出量纲运算、解释Stevens测量尺度分类和重新表述Buckingham-Π定理。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21689",
+        "source": "arxiv",
+        "title": "Light Antinuclei Coalescence: Femtoscopic Constraints via Neural-Flow Surrogates",
+        "authors": [
+          "M. Korwieser",
+          "L. Fabbietti",
+          "B. Hashemi",
+          "L. Heinrich",
+          "M. Mahlein",
+          "D. L. Mihaylov",
+          "C. S. Zeyn"
+        ],
+        "abstract": "Precise predictions of cosmic-ray antinuclei fluxes, a prime dark matter signature, are limited by the lack of data constraining production rates of antinuclei. We mitigate this bottleneck with a fast, differentiable normalizing-flow surrogate for the femtoscopic source model (CECA), fit to 49 ALICE proton-proton correlation functions, and extrapolated via scaling laws to the low-multiplicity domain relevant for cosmic rays. The surrogate reproduces CECA with sub-percent emulation fidelity, yielding data-constrained source functions that remove the dominant uncertainty in coalescence-based antinuclei production rates. The resulting uncertainties on the coalescence parameters $B_2$ and $B_3$ shrink from factors of 10-100 and ${\\sim}$1000 to the few percent and ten-percent level, respectively, with an additional ${\\sim}15\\%$ wavefunction systematic for $B_{2}$.",
+        "categories": [
+          "astro-ph.HE",
+          "hep-ph"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21689v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21689v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21689"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为宇宙线反核素产生与暗物质间接探测，不属于高能暂现源范畴，与团队目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于宇宙线反核素凝聚模型和暗物质信号，使用ALICE对撞数据，未涉及任何暂现天体或高能暂现任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21689",
+        "title_zh": "轻反核聚并：基于神经流代理的飞秒约束",
+        "team": "",
+        "tldr": "使用可微的正则化流代理模型拟合质子-质子关联函数，通过标度律外推得到数据约束的源函数，将反核聚并参数的不确定性从数量级降低到百分之几。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21702",
+        "source": "arxiv",
+        "title": "An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning",
+        "authors": [
+          "Maximilian Dax",
+          "Theo Heimel",
+          "Gilles Louppe"
+        ],
+        "abstract": "Simulation-based inference (SBI) with machine learning is an increasingly important tool for solving inverse problems in science and engineering, including parameter inference and the inversion of detector effects. We provide an overview of the Bayesian and frequentist statistical frameworks, describe how machine-learning-based SBI methods, such as neural posterior estimation and neural likelihood estimation, can be used for parameter estimation within these frameworks, and show that the same methods can also be applied to Empirical Bayes or unfolding tasks. We also discuss how to validate inference results and the limitations of SBI with machine learning.",
+        "categories": [
+          "cs.LG",
+          "astro-ph.CO",
+          "astro-ph.GA",
+          "hep-ex",
+          "hep-ph",
+          "stat.ML"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21702v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21702v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21702"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文是关于机器学习仿真推理的通用介绍，未涉及高能暂现源，与团队目标无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要没有提及任何高能暂现或相关任务，而是介绍机器学习驱动的仿真推理的一般框架"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21702",
+        "title_zh": "基于机器学习的贝叶斯和频率学派模拟推断导论",
+        "team": "",
+        "tldr": "本文综述了基于机器学习的模拟推断在贝叶斯和频率学派框架下的应用，包括参数估计、经验贝叶斯及解卷积任务，并讨论了验证方法和局限性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21703",
+        "source": "arxiv",
+        "title": "Frame-Dependent Traces and the Third-Particle Paradox",
+        "authors": [
+          "Alessandro Palumbo",
+          "Luca Apadula"
+        ],
+        "abstract": "The Paradox of the Third Particle arises when comparing subsystem descriptions across Quantum Reference Frame (QRF) perspectives. We isolate two distinct origins of the Paradox: the QRF covariance of the partial trace and the failure of the physical Hilbert space to inherit the kinematical tensor-product structure. We give an explicit counterexample to the Relational Trace (RT) resolution: an uncorrelated product state for which the RT statistical condition trivialises. We then introduce a new statistical consistency condition comparing subsystem discarding between external and internal QRFs, together with an associated frame-dependent map, the Perspective Relational Trace (PRT). We argue that our condition captures the operational content of the Paradox: rather than imposing consistency on the whole state space, we characterise exactly the states on which it holds in the Perspective-Neutral (PN) and Quantum-Information (QI) approaches. This separates three levels of description: a PN subsystem of a PN whole, where consistency fails on a characterised set that includes product states; a QI subsystem of a QI whole, where it holds for all states; and a QI subsystem obtained from a PN whole by kinematical partial trace, where the full weakly invariant algebra is recovered, yet consistency holds only on a proper subset. These results show that the PN approach can consistently describe only a closed, isolated system, while the QI approach can accommodate arbitrary subsystems. Tracing out a subsystem from a globally PN state yields a charge-superselected algebra, reproducing in a minimal QRF model the boundary-charge structure of edge modes. We understand the Paradox not as a genuine contradiction, but as the consequence of comparing inequivalent physical layers without tracking which information is externally and which internally accessible.",
+        "categories": [
+          "quant-ph",
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21703v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21703v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21703"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为量子基础理论，与高能暂现源及团队任务无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题 'Frame-Dependent Traces and the Third-Particle Paradox' 及摘要内容讨论量子参考系框架下的悖论，完全未涉及高能暂现源或相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21703",
+        "title_zh": "参考系依赖的迹与第三粒子悖论",
+        "team": "",
+        "tldr": "本文分析第三粒子悖论的两个起源（部分迹的QRF协方差问题和物理希尔伯特空间缺乏运动学张量积结构），提出视角关系迹条件并区分三种描述层次，指出悖论实为不等价物理层比较的结果。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21701",
+        "source": "arxiv",
+        "title": "Formation and scaling of $\\mathbb{Z}_N$ strings for global $\\mathrm{SU}(N)/\\mathbb{Z}_N$ symmetry",
+        "authors": [
+          "Masaki Yamada"
+        ],
+        "abstract": "We numerically investigate networks of global $\\mathbb{Z}_N$ strings with multi-string junctions in a scalar field model whose vacuum manifold is $\\mathrm{PSU}(N)=\\mathrm{SU}(N)/\\mathbb{Z}_N$. The construction of the model is motivated by the Higgs vacua of mass-deformed $\\mathcal{N}=4$ supersymmetric Yang-Mills theory, commonly known as $\\mathcal{N}=1^*$ theory, and provides a tractable effective description of string networks with baryon-vertex-like junctions. We perform classical lattice simulations of the formation and evolution of these networks in a radiation-dominated universe. For $N=2,3,4,5,$ and $8$, we find that the networks approach a scaling regime rather than becoming frustrated. The normalization of the string density grows in proportion to the dimension of the adjoint representation, $N^2-1$, while non-minimal-charge components remain subdominant. These results imply that, at least for $N\\lesssim 8$, the amplitude of the gravitational-wave energy density generated by the cosmic-string network scales as $Ω_{\\rm GW}\\propto μ^2 (N^2-1)^2$, where $μ$ is the tension of a unit-charge string.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO",
+          "hep-th"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21701v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21701v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21701"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "宇宙学与基础物理应用"
+        ],
+        "layer": "edge",
+        "reason": "论文主题为宇宙弦形成与演化的理论模拟，属于宇宙学背景，与高能暂现源及团队核心目标无实质性联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要研究宇宙弦网络的标度行为及引力波能谱（Ω_GW∝μ^2(N^2-1)^2），但未涉及任何高能暂现天体、观测事件或团队任务能力。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21701",
+        "title_zh": "全局 $\\mathrm{SU}(N)/\\mathbb{Z}_N$ 对称性下 $\\mathbb{Z}_N$ 弦的形成与标度",
+        "team": "",
+        "tldr": "数值模拟了具有多弦连接的全局 $\\mathbb{Z}_N$ 弦网络在辐射主导宇宙中的形成与演化，发现对于 $N=2,3,4,5,8$，网络达到标度区，且引力波能谱正比于 $\\mu^2 (N^2-1)^2$。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21679",
+        "source": "arxiv",
+        "title": "Echoes of Star Stories: Integrating Indigenous narratives into modern stellar astrophysics",
+        "authors": [
+          "Dionysios Gakis"
+        ],
+        "abstract": "Indigenous narratives have long preserved observations of celestial phenomena, offering insights that resonate with modern astrophysical research. Deeply embedded in cultural traditions, these stories describe events such as stellar variability, supernovae, eclipses, and planetary alignments. Indigenous communities have also used the stars for navigation and calendar systems, reflecting a sophisticated understanding of celestial patterns. These narratives not only complement historical records but offer human-centric perspectives on stellar life cycles that often parallel modern models. Drawing from traditions from diverse Indigenous communities - including Aboriginal Australians, Pueblo peoples, Inuit, and Polynesians - this paper highlights the profound connections between Indigenous knowledge and stellar astrophysics. Integrating these traditions acknowledges their value, safeguards their relevance in the Space Age, and fosters mutual learning through cross-cultural collaboration. We explore how such narratives can enrich education, public engagement, and even inspire scientific hypotheses, bridging cultural heritage and modern astrophysics.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.GA",
+          "astro-ph.IM",
+          "physics.hist-ph"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21679v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21679v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21679"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文聚焦于文化叙事与传统知识的整合，与团队的高能暂现源研究无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要提到超新星等暂现现象，但主要讨论土著叙事与现代恒星天体物理学的文化整合与教育价值，未涉及高能暂现源的直接观测、方法或科学目标。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21679",
+        "title_zh": "星辰故事的回响：将土著叙事融入现代恒星天体物理学",
+        "team": "",
+        "tldr": "论文探讨了土著叙事记载的天文现象与现代恒星天体物理学的共鸣，并倡导跨文化合作以促进教育、公众参与和科学假设启发。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.20936",
+        "source": "arxiv",
+        "title": "Boundary Completion of Vacuum Persistence Probability",
+        "authors": [
+          "Yu Zhou",
+          "Hai-Qing Zhang"
+        ],
+        "abstract": "The vacuum persistence probability, encoded in the imaginary part of the in-out effective action, is a basic measure of vacuum instability and particle production. However, its evaluation may appear prescription-dependent: the Bogoliubov prescription and the Green's function prescription can yield different expressions. We show that this apparent ambiguity arises because the Green's function prescription omits the nontrivial contribution from the endpoint vacuum wavefunctionals, which should be present in the complete in-out amplitude. Including this contribution accomplishes the boundary completion of the Green's function prescription. The ambiguity is thereby resolved, and the complete result agrees with the Bogoliubov expression.",
+        "categories": [
+          "hep-th",
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.20936v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.20936v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.20936"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "纯量子场论理论论文，与高能暂现源及团队任务目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题为 'Boundary Completion of Vacuum Persistence Probability'，摘要讨论真空持续概率的Bogoliubov与Green's函数方法的歧义，未涉及任何高能暂现天体或观测任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.20936",
+        "title_zh": "真空持久概率的边界完备化",
+        "team": "",
+        "tldr": "通过包含端点真空波函数的贡献，完成了格林函数处方的边界，解决了真空持久概率计算中的处方歧义，使结果与博戈留波夫表达式一致。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21664",
+        "source": "arxiv",
+        "title": "Thermal bath induced suppression of Hawking radiation",
+        "authors": [
+          "Hong Wang",
+          "Jin Wang"
+        ],
+        "abstract": "The cosmic microwave background radiation or particles surrounding a black hole can be modeled as a thermal bath coupled to the black hole. In this study, we investigate the effects of such a thermal bath on black hole radiation. The model involves Hawking radiation particles that are bilinearly coupled to the thermal bath. In this framework, the Hawking radiation particles are treated as the system, and the bath serves as the environment. We analytically derive the effective Keldysh action and the dynamical equation of the system, which are essential for studying the effective dynamics of Hawking radiation. For the specific case of a bath weakly coupled to the radiation particles from a Schwarzschild black hole, we numerically solve the effective dynamical equation. The results indicate that the bath suppresses Hawking radiation. Consequently, an observer located far away from the black hole will detect radiation that is weaker than Hawking's original prediction.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21664v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21664v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21664"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为黑洞霍金辐射的理论修正，与高能暂现源及团队科学目标无实质关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论黑洞辐射与热浴的相互作用，完全不涉及高能暂现源或团队任务目标。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21664",
+        "title_zh": "热浴诱导的霍金辐射抑制",
+        "team": "",
+        "tldr": "通过建模热浴与霍金辐射粒子的耦合，解析推导有效动力学方程并数值求解，发现热浴会抑制霍金辐射，使远处观测到的辐射弱于霍金原始预测。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21668",
+        "source": "arxiv",
+        "title": "Bulk Viscosity and Thermodynamic Approaches to Singularity Resolution in Non-Metric Gravity",
+        "authors": [
+          "M. Sharif",
+          "M. Zeeshan Gul",
+          "Nusrat Fatima"
+        ],
+        "abstract": "This manuscript investigates the impact of bulk viscosity on the viability of cosmic bounce solutions in the context of $f(\\mathcal{Q})$ theory, where $\\mathcal{Q}$ is a non-metricity scalar. To complete this objective, we study the behavior of an isotropic homogeneous universe filled with a perfect fluid and consider a innovative parametrization of bulk viscosity coefficient with an arbitrary constant $ζ_0$ as $ζ=ζ_{0}H$. We consider the particular functional form of this modified theory to explore how this gravitational framework influences the cosmic evolution and explore a range of cosmological parameters to assess the existence and physical viability of bounce solutions. We also investigate the evolution of entropy through the second law of thermodynamics. The positive trend of energy density, negative pressure profile and violation of energy conditions support the existence of viable cosmological bounce scenario and highlights the significance of bulk viscosity in this framework. These results demonstrate that $f(\\mathcal{Q})$ gravity provides a compelling alternative to standard cosmic models and provides deep insights into the nature of gravitational interaction and the early cosmos.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21668v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21668v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21668"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [],
+        "layer": "edge",
+        "reason": "纯理论引力宇宙学论文，与团队的高能暂现观测、任务或科学目标无实质关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题研究非度量引力中的体粘滞与热力学，摘要讨论f(Q)理论中反弹宇宙的物理可行性，未出现任何高能暂现天体、观测、任务或团队关注主题关键词。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21668",
+        "title_zh": "非度量引力中体粘度和热力学方法对奇点消解的研究",
+        "team": "",
+        "tldr": "本文在f(𝒬)非度量引力理论中引入体粘度系数ζ=ζ₀H，研究宇宙反弹解的可行性，并通过能量条件和热力学第二定律验证其物理有效性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "synced": "2026-07-27",
+      "n_papers": 47,
+      "review": {
+        "date": "2026-07-23",
+        "overview": "今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+        "highlights": "—",
+        "trends": "—",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [],
+        "editorial_version": 2,
+        "stories": []
+      }
+    }
+  ]
 }
