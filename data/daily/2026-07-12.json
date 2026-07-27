@@ -2,9 +2,17 @@
   "date": "2026-07-12",
   "review": {
     "date": "2026-07-12",
-    "overview": "今日共收录5篇文献，包含1篇核心文献与4篇相关文献。主题分布聚焦于高能暂现天体（3篇，涵盖超新星与X射线双星）、引力波电磁对应体/千新星（1篇）及多信使天体粒子物理学科史（1篇）。",
-    "highlights": "1. 千新星晚期发射线轮廓研究：通过二维数值模拟揭示抛射物结构对晚期光谱的影响，为解读中子星并合晚期引力波电磁对应体提供关键理论基准。\n2. 错位Be/X射线双星中的恒星风抑制吸积：提出恒星风冲压作为经典螺旋桨机制的补充，为理解X射线暂现源的异常低光度态提供了新物理视角。\n3. 洛希瓣溢出高质量X射线双星的三维SPH模拟：揭示中等X射线电离对星风与溢出流动力学的强烈反馈，重塑了我们对吸积流结构与盘形成的认知。",
-    "trends": "1. 致密天体吸积反馈机制日益精细化：今日两篇X射线双星研究均聚焦于非传统吸积抑制机制（恒星风冲压与X射线电离反馈），表明研究正从经典模型向复杂多流体动力学耦合方向深入。\n2. 暂现源光谱与抛射物结构的深度绑定：无论是千新星的晚期发射线还是超新星的早期光变，均体现出通过多波段观测结合数值模拟来反演爆炸/并合产物三维结构的强烈趋势。\n3. 多信使天文学的历史与理论交汇：从宇宙线到多信使的学科史回顾，与千新星等引力波电磁对应体的前沿模拟形成呼应，凸显了高能天体物理作为交叉学科的持续扩张与理论沉淀。"
+    "overview": "当日 5 篇核心与相关文献均为常规推进，核心 1 篇已按优先级列于下方。",
+    "highlights": "—",
+    "trends": "—",
+    "headline_level": "",
+    "headline": "",
+    "headline_paper_id": "",
+    "headline_reason": "",
+    "developments": [],
+    "watchlist": [],
+    "editorial_version": 2,
+    "stories": []
   },
   "items": [
     {
@@ -34,13 +42,17 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10929v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10929v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
         "tags": [],
         "layer": "edge",
-        "reason": "该论文研究行星状星云中的电子温度，与GECAM关注的伽马暴、磁星、FRB等高能暂现天体完全无关。"
+        "reason": "该论文研究行星状星云中的电子温度，与GECAM关注的伽马暴、磁星、FRB等高能暂现天体完全无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10929",
@@ -71,7 +83,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.11966v1",
         "pdf_url": "https://arxiv.org/pdf/2607.11966v1",
-        "doi": "10.1007/s10509-026-04600-5"
+        "doi": "10.1007/s10509-026-04600-5",
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -80,7 +93,10 @@
           "核反应率"
         ],
         "layer": "edge",
-        "reason": "论文研究恒星内部核反应率的解析表示，属于恒星天体物理学，与GECAM关注的高能暂现天体及其电磁对应体无直接关联，仅可能间接涉及超新星核合成，相关性极低。"
+        "reason": "论文研究恒星内部核反应率的解析表示，属于恒星天体物理学，与GECAM关注的高能暂现天体及其电磁对应体无直接关联，仅可能间接涉及超新星核合成，相关性极低。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.11966",
@@ -126,7 +142,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10845v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10845v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -135,7 +152,10 @@
           "宇宙学"
         ],
         "layer": "edge",
-        "reason": "论文涉及CMB观测，与GECAM关注的高能暂现天体无关。"
+        "reason": "论文涉及CMB观测，与GECAM关注的高能暂现天体无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10845",
@@ -166,7 +186,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10889v2",
         "pdf_url": "https://arxiv.org/pdf/2607.10889v2",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -175,7 +196,10 @@
           "后牛顿动力学"
         ],
         "layer": "edge",
-        "reason": "论文研究扩展引力中的后牛顿N体问题，与GECAM关注的高能暂现源和多信使观测无直接关联。"
+        "reason": "论文研究扩展引力中的后牛顿N体问题，与GECAM关注的高能暂现源和多信使观测无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10889",
@@ -209,7 +233,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10834v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10834v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -217,7 +242,10 @@
           "恒星物理"
         ],
         "layer": "edge",
-        "reason": "论文研究β Cep变星星震学与内部旋转，属于恒星天体物理，不在GECAM关注的高能暂现源、多信使天体物理及相关任务范围内。"
+        "reason": "论文研究β Cep变星星震学与内部旋转，属于恒星天体物理，不在GECAM关注的高能暂现源、多信使天体物理及相关任务范围内。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10834",
@@ -251,7 +279,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10816v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10816v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -259,7 +288,10 @@
           "引力波"
         ],
         "layer": "edge",
-        "reason": "论文聚焦LIGO-Virgo引力波探测中的相关噪声与随机引力波背景假设，不涉及电磁对应体或高能暂现源，与GECAM科学目标关联极弱。"
+        "reason": "论文聚焦LIGO-Virgo引力波探测中的相关噪声与随机引力波背景假设，不涉及电磁对应体或高能暂现源，与GECAM科学目标关联极弱。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10816",
@@ -295,13 +327,17 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10843v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10843v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
         "tags": [],
         "layer": "edge",
-        "reason": "论文属于gr-qc数值相对论，研究真空引力波黑洞阈值，与GECAM高能天体物理及多信使研究无直接关联。"
+        "reason": "论文属于gr-qc数值相对论，研究真空引力波黑洞阈值，与GECAM高能天体物理及多信使研究无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10843",
@@ -334,7 +370,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10730v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10730v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -343,7 +380,10 @@
           "宇宙学"
         ],
         "layer": "edge",
-        "reason": "论文研究早期宇宙标量诱导引力波背景，与GECAM关注的引力波电磁对应体和暂现源无关。"
+        "reason": "论文研究早期宇宙标量诱导引力波背景，与GECAM关注的引力波电磁对应体和暂现源无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10730",
@@ -377,7 +417,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10718v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10718v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
@@ -386,7 +427,10 @@
           "引力理论"
         ],
         "layer": "edge",
-        "reason": "该论文研究标量-张量引力中的非线性电动力学和时空稳定性，属于基础物理理论，与GECAM关注的高能暂现天体和多信使天体物理无直接关联。"
+        "reason": "该论文研究标量-张量引力中的非线性电动力学和时空稳定性，属于基础物理理论，与GECAM关注的高能暂现天体和多信使天体物理无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10718",
@@ -422,7 +466,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10713v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10713v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -430,7 +475,10 @@
           "其他"
         ],
         "layer": "edge",
-        "reason": "规则黑洞的理论研究，与GECAM的高能暂现和多信使观测目标无关。"
+        "reason": "规则黑洞的理论研究，与GECAM的高能暂现和多信使观测目标无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10713",
@@ -461,7 +509,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10701v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10701v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -470,7 +519,10 @@
           "恒星物理"
         ],
         "layer": "edge",
-        "reason": "论文研究普通食双星系统，与GECAM关注的高能暂现源及多信使天体物理无关"
+        "reason": "论文研究普通食双星系统，与GECAM关注的高能暂现源及多信使天体物理无关",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10701",
@@ -502,7 +554,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10760v2",
         "pdf_url": "https://arxiv.org/pdf/2607.10760v2",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -510,7 +563,10 @@
           "宇宙线/暗物质"
         ],
         "layer": "edge",
-        "reason": "论文讨论220 PeV中微子事件，属于高能中微子宇宙线范畴，与GECAM电磁对应体核心关注相关度较低，但属于astro-ph.HE边缘范围。"
+        "reason": "论文讨论220 PeV中微子事件，属于高能中微子宇宙线范畴，与GECAM电磁对应体核心关注相关度较低，但属于astro-ph.HE边缘范围。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10760",
@@ -544,13 +600,17 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10679v2",
         "pdf_url": "https://arxiv.org/pdf/2607.10679v2",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
         "tags": [],
         "layer": "edge",
-        "reason": "该论文研究暴胀模型修正，属于宇宙学，与GECAM关注的高能暂现天体和多信使天体物理无关。"
+        "reason": "该论文研究暴胀模型修正，属于宇宙学，与GECAM关注的高能暂现天体和多信使天体物理无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10679",
@@ -593,7 +653,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10818v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10818v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 95,
@@ -603,7 +664,10 @@
           "中子星并合"
         ],
         "layer": "core",
-        "reason": "该论文研究千新星晚期发射线轮廓，直接属于引力波电磁对应体（kilonova）的核心科学目标。"
+        "reason": "该论文研究千新星晚期发射线轮廓，直接属于引力波电磁对应体（kilonova）的核心科学目标。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10818",
@@ -715,7 +779,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10672v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10672v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 25,
@@ -723,7 +788,10 @@
           "暗物质"
         ],
         "layer": "edge",
-        "reason": "论文主要讨论暗物质候选体，属于GECAM边缘主题中的暗物质相关，与直接科学目标关联不大。"
+        "reason": "论文主要讨论暗物质候选体，属于GECAM边缘主题中的暗物质相关，与直接科学目标关联不大。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10672",
@@ -757,7 +825,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10637v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10637v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -766,7 +835,10 @@
           "高能天体物理"
         ],
         "layer": "edge",
-        "reason": "该论文关注宇宙线空气簇射的无线电重建，属于高能天体物理边缘主题，与GECAM核心目标不直接相关。"
+        "reason": "该论文关注宇宙线空气簇射的无线电重建，属于高能天体物理边缘主题，与GECAM核心目标不直接相关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10637",
@@ -799,7 +871,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10658v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10658v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 15,
@@ -808,7 +881,10 @@
           "偏振"
         ],
         "layer": "edge",
-        "reason": "论文研究Weyl耦合引起的黑洞双阴影与偏振特征，属于理论引力范畴，与GECAM关注的高能暂现天体和多信使科学目标无直接关联。"
+        "reason": "论文研究Weyl耦合引起的黑洞双阴影与偏振特征，属于理论引力范畴，与GECAM关注的高能暂现天体和多信使科学目标无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10658",
@@ -841,7 +917,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10927v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10927v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -850,7 +927,10 @@
           "多信使"
         ],
         "layer": "related",
-        "reason": "论文回顾了天体粒子物理学的历史，包含宇宙线与多信使研究，属于GECAM关注边缘领域。"
+        "reason": "论文回顾了天体粒子物理学的历史，包含宇宙线与多信使研究，属于GECAM关注边缘领域。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10927",
@@ -888,7 +968,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10612v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10612v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 30,
@@ -897,7 +978,10 @@
           "超新星"
         ],
         "layer": "edge",
-        "reason": "论文研究超新星核合成，属于高能暂现天体相关物理，但与GECAM核心科学目标（GRB、引力波对应体等）无直接关联。"
+        "reason": "论文研究超新星核合成，属于高能暂现天体相关物理，但与GECAM核心科学目标（GRB、引力波对应体等）无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10612",
@@ -929,7 +1013,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10614v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10614v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -937,7 +1022,10 @@
           "引力理论"
         ],
         "layer": "edge",
-        "reason": "论文属于纯引力理论，与GECAM高能暂现天体监测无直接关联。"
+        "reason": "论文属于纯引力理论，与GECAM高能暂现天体监测无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10614",
@@ -970,7 +1058,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10603v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10603v1",
-        "doi": "10.1007/s12648-026-04035-2"
+        "doi": "10.1007/s12648-026-04035-2",
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -978,7 +1067,10 @@
           "理论引力"
         ],
         "layer": "edge",
-        "reason": "该论文纯属引力理论中时空解的正则化研究，与GECAM关注的高能暂现天体及多信使天文学无直接关联。"
+        "reason": "该论文纯属引力理论中时空解的正则化研究，与GECAM关注的高能暂现天体及多信使天文学无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10603",
@@ -1012,13 +1104,17 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10600v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10600v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 0,
         "tags": [],
         "layer": "edge",
-        "reason": "论文研究黑洞热力学拓扑与量子引力修正，完全不属于GECAM关注的暂现源天体物理观测范围。"
+        "reason": "论文研究黑洞热力学拓扑与量子引力修正，完全不属于GECAM关注的暂现源天体物理观测范围。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10600",
@@ -1054,7 +1150,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10607v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10607v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -1063,7 +1160,10 @@
           "原初引力波"
         ],
         "layer": "edge",
-        "reason": "论文研究原初引力波背景与超重暗物质，与GECAM团队核心关注的高能暂现天体（如GRB、引力波电磁对应体、磁星等）无直接关联，属于宇宙学理论范畴，仅可能归入边缘主题中的暗物质相关物理。"
+        "reason": "论文研究原初引力波背景与超重暗物质，与GECAM团队核心关注的高能暂现天体（如GRB、引力波电磁对应体、磁星等）无直接关联，属于宇宙学理论范畴，仅可能归入边缘主题中的暗物质相关物理。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10607",
@@ -1097,7 +1197,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10561v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10561v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 10,
@@ -1106,7 +1207,10 @@
           "黑洞量子力学"
         ],
         "layer": "edge",
-        "reason": "论文为黑洞量子力学理论探讨，与GECAM关注的伽马暴、引力波电磁对应体、磁星等高能暂现源观测无关。"
+        "reason": "论文为黑洞量子力学理论探讨，与GECAM关注的伽马暴、引力波电磁对应体、磁星等高能暂现源观测无关。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10561",
@@ -1139,7 +1243,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10533v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10533v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1149,7 +1254,10 @@
           "阴影"
         ],
         "layer": "edge",
-        "reason": "论文专注于广义相对论中的黑洞几何和阴影，与GECAM团队的高能暂现天体、多信使观测等科学目标无直接关联。"
+        "reason": "论文专注于广义相对论中的黑洞几何和阴影，与GECAM团队的高能暂现天体、多信使观测等科学目标无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10533",
@@ -1228,7 +1336,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10671v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10671v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 50,
@@ -1237,7 +1346,10 @@
           "高能暂现天体"
         ],
         "layer": "related",
-        "reason": "论文关注早期IIb型超新星，涉及激波冷却发射，属GECAM相关高能暂现天体研究。"
+        "reason": "论文关注早期IIb型超新星，涉及激波冷却发射，属GECAM相关高能暂现天体研究。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10671",
@@ -1310,7 +1422,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10521v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10521v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -1320,7 +1433,10 @@
           "量子修正"
         ],
         "layer": "edge",
-        "reason": "论文聚焦超轻暗物质自相互作用与量子修正，属边缘主题中的暗物质物理，与GECAM核心高能暂现天体及多信使研究无直接关联。"
+        "reason": "论文聚焦超轻暗物质自相互作用与量子修正，属边缘主题中的暗物质物理，与GECAM核心高能暂现天体及多信使研究无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10521",
@@ -1353,7 +1469,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10516v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10516v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 5,
@@ -1362,7 +1479,10 @@
           "低相关"
         ],
         "layer": "edge",
-        "reason": "论文研究太阳磁开关的径向演化，属于太阳物理（astro-ph.SR），与GECAM团队关注的高能天体物理、引力波电磁对应体、磁星、FRB等核心或相关主题无直接关联。"
+        "reason": "论文研究太阳磁开关的径向演化，属于太阳物理（astro-ph.SR），与GECAM团队关注的高能天体物理、引力波电磁对应体、磁星、FRB等核心或相关主题无直接关联。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10516",
@@ -1393,7 +1513,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10524v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10524v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 20,
@@ -1402,7 +1523,10 @@
           "原初黑洞"
         ],
         "layer": "edge",
-        "reason": "论文主要研究原初黑洞与WIMP暗物质湮灭产生的中微子背景约束，属于暗物质物理，为GECAM边缘主题，与核心科学目标关联度低。"
+        "reason": "论文主要研究原初黑洞与WIMP暗物质湮灭产生的中微子背景约束，属于暗物质物理，为GECAM边缘主题，与核心科学目标关联度低。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10524",
@@ -1434,7 +1558,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10568v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10568v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 65,
@@ -1444,7 +1569,10 @@
           "Be/X射线双星"
         ],
         "layer": "related",
-        "reason": "研究Be/X射线双星中的星风抑制吸积机制，属于高能暂现源中的X射线暂现现象，与GECAM相关主题相符。"
+        "reason": "研究Be/X射线双星中的星风抑制吸积机制，属于高能暂现源中的X射线暂现现象，与GECAM相关主题相符。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10568",
@@ -1517,7 +1645,8 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10579v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10579v1",
-        "doi": null
+        "doi": null,
+        "external_ids": {}
       },
       "score": {
         "score": 40,
@@ -1526,7 +1655,10 @@
           "中子星/黑洞暂现现象"
         ],
         "layer": "related",
-        "reason": "论文研究大质量X射线双星中的吸积流和风相互作用，属于中子星/黑洞吸积过程，与GECAM关注的高能暂现天体有间接关联，但非核心科学目标。"
+        "reason": "论文研究大质量X射线双星中的吸积流和风相互作用，属于中子星/黑洞吸积过程，与GECAM关注的高能暂现天体有间接关联，但非核心科学目标。",
+        "relation": "",
+        "core_path": "",
+        "evidence": ""
       },
       "summary": {
         "paper_id": "arxiv:2607.10579",
