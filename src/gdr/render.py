@@ -158,6 +158,34 @@ def render_outlook(summary) -> Markup:
     return Markup(_CITE_RE.sub(_repl, esc))
 
 
+_WATCH_ID_RE = re.compile(
+    r"[（(\[]?\s*(?:arxiv:\s*(?P<arx>\d{4}\.\d{4,5})(?:v\d+)?"
+    r"|ads:\s*(?P<ads>[^）)\]\s，,]+))\s*[）)\]]?",
+    re.IGNORECASE,
+)
+
+
+def split_watch(signal: str) -> dict:
+    """继续观察 item -> {label, url, text}. The synth writes the source id either
+    leading ("arxiv:2607.19298 预言的…") or trailing in full-width parens
+    ("… 尚需独立后随观测确认（ads:2026ApJ..1006...56A）"); the design renders it as a
+    leading dotted cite link, so pull it out here. label/url are empty when the
+    signal carries no id."""
+    s = (signal or "").strip()
+    m = _WATCH_ID_RE.search(s)
+    if not m:
+        return {"label": "", "url": "", "text": s}
+    arx, ads = m.group("arx"), m.group("ads")
+    if arx:
+        label, url = f"arXiv:{arx}", f"https://arxiv.org/abs/{arx}"
+    else:
+        bib = ads.strip()
+        label = "ADS " + bib
+        url = "https://ui.adsabs.harvard.edu/abs/" + quote(bib)
+    text = (s[: m.start()] + s[m.end():]).strip(" 　·:：、，,；;")
+    return {"label": label, "url": url, "text": text}
+
+
 def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Path) -> None:
     out_dir = Path(out_dir)
     (out_dir / "day").mkdir(parents=True, exist_ok=True)
@@ -165,6 +193,7 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
                       autoescape=select_autoescape(["html"]))
     env.globals["render_authors"] = render_authors
     env.globals["render_outlook"] = render_outlook
+    env.globals["split_watch"] = split_watch
     env.globals["arxiv_id"] = arxiv_id
     env.globals["paper_links"] = paper_links
     env.globals["ROMAN"] = _ROMAN

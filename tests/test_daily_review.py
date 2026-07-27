@@ -213,6 +213,34 @@ def test_correction_and_unbylined_blurb_skip_news_review(fake_llm_factory):
     assert "原始研究" in review.overview
 
 
+def test_quiet_day_overview_carries_the_days_shape(fake_llm_factory):
+    """Design 5c prints this under 「今日无通过复核的重大进展」, so it must add the day's
+    shape rather than restate that there is no headline."""
+    llm = fake_llm_factory([json.dumps(_candidate("arxiv:1", "reject")),
+                            json.dumps(_candidate("arxiv:2", "reject"))])
+
+    review = make_daily_review(
+        "2026-07-18", [_item("arxiv:1"), _item("arxiv:2", layer="related")],
+        llm, editorial_workers=1)
+
+    assert review.stories == []
+    assert review.overview == "当日 2 篇核心与相关文献均为常规推进，核心 1 篇已按优先级列于下方。"
+
+
+def test_watchlist_signals_carry_their_own_paper_id(fake_llm_factory):
+    """The page turns the trailing id into a cite link, so it is attached from the
+    paper under review — an id the model wrote itself must not survive."""
+    verified = _verified("arxiv:1")
+    verified["watchlist"] = ["等待独立确认", "（arxiv:9999.99999）另一路信号需后随观测"]
+    llm = fake_llm_factory([json.dumps(_candidate("arxiv:1")),
+                            json.dumps(verified)])
+
+    review = make_daily_review("2026-07-18", [_item()], llm)
+
+    assert review.watchlist == ["等待独立确认（arxiv:1）",
+                                "另一路信号需后随观测（arxiv:1）"]
+
+
 def test_empty_day_skips_llm(fake_llm_factory):
     llm = fake_llm_factory([])
     review = make_daily_review("2026-07-18", [], llm)

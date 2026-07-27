@@ -128,8 +128,22 @@ def _verified_decision(data: dict, paper_id: str,
         "evidence": evidence,
         "impact": impact,
         "reason": reason,
-        "watchlist": [str(x).strip() for x in raw_watchlist if str(x).strip()],
+        "watchlist": [signal for signal in
+                      (_watch_signal(str(x), paper_id) for x in raw_watchlist)
+                      if signal],
     }
+
+
+_WATCH_ID_RE = re.compile(r"[（(\[]?\s*(?:arxiv|ads):[^）)\]\s，,]+\s*[）)\]]?",
+                          re.IGNORECASE)
+
+
+def _watch_signal(signal: str, paper_id: str) -> str:
+    """继续观察 item -> text plus its source id in trailing parens, which the page
+    renders as a cite link. The id comes from the paper under review here, not from
+    the model, so the link can never point at a paper the signal isn't about."""
+    text = _WATCH_ID_RE.sub("", signal).strip(" 　·:：、，,；;")
+    return f"{text}（{paper_id}）" if text else ""
 
 
 def _parallel_map(fn, values: list, max_workers: int) -> list:
@@ -200,6 +214,15 @@ def _legacy_story_lines(stories: list[dict]) -> str:
     )
 
 
+def _quiet_overview(items: list[dict], lead: str) -> str:
+    """Text under the 「今日头条」empty state (design 5c). The notice line above it
+    already says there is no headline, so this paragraph carries the day's shape
+    instead — how much came in and where to read on."""
+    n_core = sum(1 for it in items if it["score"].layer == "core")
+    tail = f"，核心 {n_core} 篇已按优先级列于下方。" if n_core else "。"
+    return f"当日 {len(items)} 篇核心与相关文献{lead}{tail}"
+
+
 def make_daily_review(date: str, items: list[dict], llm: LLM,
                       editorial_workers: int | None = None) -> DailyReview:
     if not items:
@@ -219,7 +242,7 @@ def make_daily_review(date: str, items: list[dict], llm: LLM,
     if not eligible_items:
         return DailyReview(
             date=date,
-            overview="今日无达到 BREAKING 或 HEADLINE 门槛的原始研究进展。",
+            overview=_quiet_overview(items, "中无原始研究达到新闻门槛"),
             highlights="—", trends="—", editorial_version=2,
             stories=[], watchlist=[],
         )
@@ -241,7 +264,7 @@ def make_daily_review(date: str, items: list[dict], llm: LLM,
         if not candidates:
             return DailyReview(
                 date=date,
-                overview="今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+                overview=_quiet_overview(eligible_items, "均为常规推进"),
                 highlights="—", trends="—", editorial_version=2,
                 stories=[], watchlist=[],
             )
@@ -278,7 +301,7 @@ def make_daily_review(date: str, items: list[dict], llm: LLM,
                 watchlist.extend(decision["watchlist"])
         watchlist = list(dict.fromkeys(watchlist))
         overview = ("今日有通过严格复核的重大进展。" if stories
-                    else "今日无达到 BREAKING 或 HEADLINE 门槛的进展。")
+                    else _quiet_overview(eligible_items, "均为常规推进"))
         return DailyReview(
             date=date,
             overview=overview,

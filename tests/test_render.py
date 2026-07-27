@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview, DayData
 from gdr.store import Store
-from gdr.render import render_site
+from gdr.render import render_site, split_watch
 
 TEMPLATES = Path(__file__).parent.parent / "templates"
 STATIC = Path(__file__).parent.parent / "static"
@@ -31,7 +31,7 @@ def test_render_site(tmp_path):
     # journal masthead + roman-numeral sections
     assert "HIGH-ENERGY TRANSIENTS" in index
     assert 'class="masthead"' in index
-    assert "当日总览" in index and "核心文献" in index
+    assert "今日头条" in index and "核心文献" in index
     # core sorts before related
     assert index.index("核心文章") < index.index("相关文章")
     assert (out / "day" / "2026-07-18.html").exists()
@@ -70,10 +70,99 @@ def test_render_equal_news_stories_without_a_lead(tmp_path):
     assert "今日头条" in page
     assert "BREAKING · 突发" in page
     assert "磁星爆发" in page and "另一项重大进展" in page
-    assert page.count('class="news-story breaking"') == 2
+    # breaking always gets the full treatment
+    assert page.count('class="story breaking"') == 2
     assert "主头条" not in page
-    assert "继续观察" in page
+    assert "继 续 观 察" in page
     assert 'href="#paper-arxiv-2607-1"' in page
+    # impact is the unlabelled payload; evidence is labelled support; reason stays collapsed
+    assert 'class="story-impact">约束爆发区尺度' in page
+    assert "证据" in page and "探测到高能对应体" in page
+    assert "入选依据 ▾" in page and "<details" in page
+
+
+def _story_review(date, n_breaking, n_headline, watchlist=()):
+    stories = [{"paper_id": f"arxiv:b{i}", "level": "breaking", "title": f"突发{i}",
+                "evidence": f"证据{i}", "impact": f"影响{i}", "reason": f"依据{i}"}
+               for i in range(n_breaking)]
+    stories += [{"paper_id": f"arxiv:h{i}", "level": "headline", "title": f"头条{i}",
+                 "evidence": f"证据h{i}", "impact": f"影响h{i}", "reason": f"依据h{i}"}
+                for i in range(n_headline)]
+    return DailyReview(date=date, overview="o", highlights="", trends="",
+                       editorial_version=2, stories=stories, watchlist=list(watchlist))
+
+
+def test_render_heavy_day_tiers_headline_stories(tmp_path):
+    """A heavy day must never print ten full-treatment stories: breaking stays full,
+    every headline drops to the compact ranked row when a breaking exists."""
+    st = Store(tmp_path / "data")
+    review = _story_review("2026-07-19", 2, 8)
+    items = [_item(s["paper_id"], 95, "core", s["title"]) for s in review.stories]
+    st.save_day(DayData("2026-07-19", review, items))
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-19.html").read_text(encoding="utf-8")
+    assert "10 条 · 含 2 突发" in page
+    assert page.count('class="story breaking"') == 2
+    assert page.count('class="story-lite headline"') == 8
+    assert 'class="story headline"' not in page
+    assert "证据与入选依据 ▾" in page          # merged fold on compact rows
+    # sequence numerals run continuously across both tiers
+    assert ">01<" in page and ">10<" in page
+
+
+def test_render_light_day_gives_first_two_headlines_full_treatment(tmp_path):
+    st = Store(tmp_path / "data")
+    review = _story_review("2026-07-21", 0, 4)
+    items = [_item(s["paper_id"], 90, "core", s["title"]) for s in review.stories]
+    st.save_day(DayData("2026-07-21", review, items))
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-21.html").read_text(encoding="utf-8")
+    assert "4 条 · 无突发" in page
+    assert "BREAKING" not in page
+    assert page.count('class="story headline"') == 2
+    assert page.count('class="story-lite headline"') == 2
+
+
+def test_render_empty_headline_day_shows_notice_and_watchlist(tmp_path):
+    st = Store(tmp_path / "data")
+    review = DailyReview(date="2026-07-20", overview="当日 5 篇入库文献均为常规推进。",
+                         highlights="", trends="", editorial_version=2, stories=[],
+                         watchlist=["arxiv:2607.19298 需后续观测验证"])
+    st.save_day(DayData("2026-07-20", review, [_item("arxiv:1", 90, "core", "核心一")]))
+    out = tmp_path / "site"
+    render_site(st, out, TEMPLATES, STATIC)
+    page = (out / "day" / "2026-07-20.html").read_text(encoding="utf-8")
+    assert 'class="hl-empty"' in page
+    assert "今日无通过复核的重大进展" in page
+    assert "当日 5 篇入库文献均为常规推进。" in page
+    assert "No Breaking · 无突发" in page
+    assert 'class="hl-count">无' in page
+    # watchlist still renders below the empty notice, with the id pulled out as a cite link
+    assert 'class="watch-id"' in page
+    assert 'href="https://arxiv.org/abs/2607.19298"' in page
+    assert "需后续观测验证" in page
+
+
+def test_split_watch_pulls_leading_arxiv_id():
+    w = split_watch("arxiv:2607.19298 预言的奇异星 kHz 引力波回波频率需后续观测验证")
+    assert w["label"] == "arXiv:2607.19298"
+    assert w["url"] == "https://arxiv.org/abs/2607.19298"
+    assert w["text"] == "预言的奇异星 kHz 引力波回波频率需后续观测验证"
+
+
+def test_split_watch_pulls_trailing_parenthesised_ads_id():
+    w = split_watch("GRB 231126A：最接近的 GRB-GW 关联候选，尚需独立后随观测确认"
+                    "（ads:2026ApJ..1006...56A）")
+    assert w["label"] == "ADS 2026ApJ..1006...56A"
+    assert w["url"] == "https://ui.adsabs.harvard.edu/abs/2026ApJ..1006...56A"
+    assert w["text"] == "GRB 231126A：最接近的 GRB-GW 关联候选，尚需独立后随观测确认"
+
+
+def test_split_watch_without_id_keeps_text_verbatim():
+    assert split_watch("等待第二台仪器独立确认") == {
+        "label": "", "url": "", "text": "等待第二台仪器独立确认"}
 
 
 def test_render_ads_paper_shows_ads_doi_and_arxiv_links(tmp_path):

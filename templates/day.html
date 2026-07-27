@@ -53,15 +53,61 @@
     </article>
 {% endmacro %}
 
-{% macro news_story(story) %}
-    <article class="news-story {{ story.level }}">
-      <div class="headline-kicker">{{ story.level | upper }} · {{ '突发' if story.level == 'breaking' else '头条' }}</div>
-      <h3><a href="#paper-{{ story.paper_id | replace(':', '-') | replace('.', '-') }}">{{ story.title }}</a></h3>
-      <p class="story-evidence"><strong>证据</strong>{{ story.evidence }}</p>
-      <p class="story-impact"><strong>影响</strong>{{ story.impact }}</p>
-      <p class="story-reason">{{ story.reason }}</p>
-      <a class="headline-jump" href="#paper-{{ story.paper_id | replace(':', '-') | replace('.', '-') }}">查看支撑论文 ↓</a>
+{%- macro paper_anchor(pid) -%}paper-{{ pid | replace(':', '-') | replace('.', '-') }}{%- endmacro -%}
+
+{# full treatment: impact is the unlabelled payload, evidence is footnote-grade,
+   reason stays collapsed (review trace, not content) #}
+{% macro story_full(story, seq) %}
+    <article class="story {{ story.level }}">
+      <div class="story-num">{{ '%02d' % seq }}</div>
+      <div>
+        <h3 class="story-title"><a href="#{{ paper_anchor(story.paper_id) }}">{{ story.title }}</a></h3>
+        <p class="story-impact">{{ story.impact }}</p>
+        {% if story.evidence %}
+        <div class="story-ev">
+          <div class="story-ev-label">证据</div>
+          <p>{{ story.evidence }}</p>
+        </div>
+        {% endif %}
+        <div class="story-foot">
+          {% if story.reason %}<details class="story-why"><summary>入选依据 ▾</summary><p>{{ story.reason }}</p></details>{% else %}<span></span>{% endif %}
+          <a class="story-jump" href="#{{ paper_anchor(story.paper_id) }}">支撑论文 ↓</a>
+        </div>
+      </div>
     </article>
+{% endmacro %}
+
+{% macro story_lite(story, seq) %}
+    <div class="story-lite {{ story.level }}">
+      <div class="story-num">{{ '%02d' % seq }}</div>
+      <div>
+        <h4><a href="#{{ paper_anchor(story.paper_id) }}">{{ story.title }}</a></h4>
+        <p class="story-impact">{{ story.impact }}</p>
+        {% if story.evidence or story.reason %}
+        <details class="story-why">
+          <summary>证据与入选依据 ▾</summary>
+          <p>{{ story.evidence }}{% if story.reason %}<span class="why">　{{ story.reason }}</span>{% endif %}</p>
+        </details>
+        {% endif %}
+      </div>
+    </div>
+{% endmacro %}
+
+{% macro watchlist(signals) %}
+  {% if signals %}
+      <div class="watch">
+        <div class="watch-bar">
+          <span class="watch-bar-label">继 续 观 察</span>
+          <span class="watch-bar-n">Watchlist · {{ '%02d' % signals|length }}</span>
+        </div>
+        <div class="watch-items">
+        {% for signal in signals %}
+          {% set w = split_watch(signal) %}
+          <p>{% if w.label %}<a class="watch-id" href="{{ w.url }}" target="_blank" rel="noopener">{{ w.label }}</a>　{% endif %}{{ w.text }}</p>
+        {% endfor %}
+        </div>
+      </div>
+  {% endif %}
 {% endmacro %}
 
 {% block drawer %}
@@ -73,7 +119,7 @@
         <span class="toc-panel-title">目 次 <span class="etal">· Index</span></span>
         <span class="toc-close" data-drawer-toggle role="button" tabindex="0">×</span>
       </div>
-      <a class="toc-overview" href="#overview">{{ '今日头条' if day.review.editorial_version >= 2 or day.review.headline else '当日总览' }}</a>
+      <a class="toc-overview" href="#overview">今日头条</a>
       {% if core_items %}
       <div class="toc-group">核 心 · {{ core_items|length }}</div>
       {% for it in core_items %}<a class="toc-link" href="#{{ anchor(it) }}">{{ it.summary.title_zh if it.summary and it.summary.title_zh else it.paper.title }}</a>{% endfor %}
@@ -90,7 +136,7 @@
 {% endblock %}
 
 {% block content %}
-{% set ns = namespace(sec=0) %}
+{% set ns = namespace(sec=0, seq=0) %}
 <main class="reading">
   <header class="masthead">
     <h1>高能暂现源 · 每日文献综述</h1>
@@ -99,60 +145,50 @@
   </header>
 
   {% set ns.sec = ns.sec + 1 %}
+  {% set stories = day.review.stories or [] %}
+  {% set breaking = stories | selectattr('level', 'equalto', 'breaking') | list %}
+  {% set headline = stories | selectattr('level', 'equalto', 'headline') | list %}
+  {# density tiering: breaking always full; headline gets the full treatment only when
+     there is no breaking, and then only the first two. Never 10 full stories. #}
+  {% set hl_full = [] if breaking else headline[:2] %}
+  {% set hl_lite = headline if breaking else headline[2:] %}
   <section class="sec" id="overview">
-    <div class="sec-head"><span class="sec-num">{{ ROMAN[ns.sec] }}.</span><h2>{{ '今日头条' if day.review.editorial_version >= 2 or day.review.headline else '当日总览' }}</h2></div>
-    {% if day.review.editorial_version >= 2 %}
-      {% set breaking_stories = day.review.stories | selectattr('level', 'equalto', 'breaking') | list %}
-      {% set headline_stories = day.review.stories | selectattr('level', 'equalto', 'headline') | list %}
-      {% if breaking_stories %}
-      <div class="story-group">
-        <h3 class="story-group-title breaking">BREAKING · 突发</h3>
-        {% for story in breaking_stories %}{{ news_story(story) }}{% endfor %}
-      </div>
-      {% endif %}
-      {% if headline_stories %}
-      <div class="story-group">
-        <h3 class="story-group-title headline">HEADLINE · 头条</h3>
-        {% for story in headline_stories %}{{ news_story(story) }}{% endfor %}
-      </div>
-      {% endif %}
-      {% if not day.review.stories %}<div class="news-empty"><strong>今日无重大头条</strong><p>{{ day.review.overview }}</p></div>{% endif %}
-      {% if day.review.watchlist %}
-      <div class="watch-list">
-        <h3>继续观察</h3>
-        <ul>{% for signal in day.review.watchlist %}<li>{{ signal }}</li>{% endfor %}</ul>
-      </div>
-      {% endif %}
-    {% elif day.review.headline %}
-    <div class="editorial-lead {{ day.review.headline_level or 'none' }}">
-      <div class="headline-kicker">
-        {% if day.review.headline_level == 'breaking' %}BREAKING · 突发
-        {% elif day.review.headline_level == 'headline' %}HEADLINE · 头条
-        {% else %}NO BREAKING · 无突发{% endif %}
-      </div>
-      <h3>{{ day.review.headline }}</h3>
-      {% if day.review.headline_reason %}<p>{{ day.review.headline_reason }}</p>{% endif %}
-      {% if day.review.headline_paper_id %}<a class="headline-jump" href="#paper-{{ day.review.headline_paper_id | replace(':', '-') | replace('.', '-') }}">查看支撑论文 ↓</a>{% endif %}
+    <div class="sec-head">
+      <span class="sec-num">{{ ROMAN[ns.sec] }}.</span>
+      <h2>今日头条</h2>
+      <span class="hl-count">
+        {%- if not stories -%}无
+        {%- else -%}{{ stories|length }} 条{% if breaking %} · 含 {{ breaking|length }} 突发{% else %} · 无突发{% endif %}
+        {%- endif -%}
+      </span>
     </div>
-    {% if day.review.developments %}
-    <div class="news-list">
-      <h3>值得跟进</h3>
-      <ol>
-      {% for item in day.review.developments %}
-        <li><a href="#paper-{{ item.paper_id | replace(':', '-') | replace('.', '-') }}">{{ item.title }}</a><span>{{ item.reason }}</span></li>
-      {% endfor %}
-      </ol>
+
+    {% if breaking %}
+    <div class="hl-bar breaking">
+      <span class="hl-bar-label">BREAKING · 突发</span>
+      <span class="hl-bar-n">{{ '%02d' % breaking|length }}</span>
+    </div>
+    {% for story in breaking %}{% set ns.seq = ns.seq + 1 %}{{ story_full(story, ns.seq) }}{% endfor %}
+    {% endif %}
+
+    {% if headline %}
+    <div class="hl-bar">
+      <span class="hl-bar-label">HEADLINE · 头条</span>
+      <span class="hl-bar-n">{{ '%02d' % headline|length }}</span>
+    </div>
+    {% for story in hl_full %}{% set ns.seq = ns.seq + 1 %}{{ story_full(story, ns.seq) }}{% endfor %}
+    {% for story in hl_lite %}{% set ns.seq = ns.seq + 1 %}{{ story_lite(story, ns.seq) }}{% endfor %}
+    {% endif %}
+
+    {% if not stories %}
+    <div class="hl-empty">
+      <div class="headline-kicker">No Breaking · 无突发</div>
+      <div class="hl-empty-line">今日无通过复核的重大进展</div>
+      {% if day.review.overview %}<p>{{ day.review.overview }}</p>{% endif %}
     </div>
     {% endif %}
-    {% if day.review.watchlist %}
-    <div class="watch-list">
-      <h3>继续观察</h3>
-      <ul>{% for signal in day.review.watchlist %}<li>{{ signal }}</li>{% endfor %}</ul>
-    </div>
-    {% endif %}
-    {% else %}
-    <p class="overview">{{ day.review.overview }}</p>
-    {% endif %}
+
+    {{ watchlist(day.review.watchlist) }}
   </section>
 
   {% if core_items %}
@@ -198,10 +234,7 @@
         <div class="revision">
           <h4>同步于 {{ rev.synced }}　·　当时 {{ rev.n_papers }} 篇</h4>
           {% if rev.review.stories %}{% for story in rev.review.stories %}<p><strong>{{ story.level | upper }} · {{ story.title }}</strong>　{{ story.impact }}</p>{% endfor %}
-          {% elif rev.review.headline %}<p><strong>{{ rev.review.headline }}</strong>{% if rev.review.headline_reason %}　{{ rev.review.headline_reason }}{% endif %}</p>
           {% else %}<p>{{ rev.review.overview }}</p>{% endif %}
-          {% if rev.review.highlights %}<p>{{ rev.review.highlights }}</p>{% endif %}
-          {% if rev.review.trends %}<p>{{ rev.review.trends }}</p>{% endif %}
         </div>
         {% endfor %}
       </div>
