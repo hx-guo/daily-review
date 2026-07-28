@@ -9419,6 +9419,52 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.22735",
+        "source": "arxiv",
+        "title": "Modified electron dispersion relations in degenerate white dwarfs",
+        "authors": [
+          "Edson Otoniel",
+          "Iarley P. Lobo"
+        ],
+        "abstract": "We investigate how modified electron dispersion relations affect the structure of cold white dwarfs (WDs). The deformation is introduced only in the degenerate electron equation of state, through the energy of a single particle and the group velocity, while the stellar mass density remains dominated by ions through the relation $ρ\\simeq μ_e m_u n_e$ imposed by charge neutrality. The resulting equations of state are coupled to the standard TOV equations, with no modification of the gravitational field equations. For a baseline composed of carbon and oxygen with $μ_e=2$, the undeformed limit recovers a maximum mass in the Chandrasekhar scale, validating the normalization of the calculation before the modified cases are considered. The first model of modified dispersion produces only a modest stiffening over the parameter range studied, whereas the logarithmic model depends strongly on the sign of the deformation parameter: negative values increase the pressure and the maximum mass, while positive values soften the sequence. These results show that WDs can isolate the impact of modified electron kinematics on compact star structure, but the logarithmic branch in particular requires further restrictions from its physical domain, stability conditions, and observational constraints on mass and radius.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.HE",
+          "gr-qc"
+        ],
+        "published": "2026-07-22",
+        "url": "https://arxiv.org/abs/2607.22735v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.22735v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.22735"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究白矮星电子色散关系修正，与高能暂现源团队目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要明确研究冷白矮星的结构，不涉及高能暂现现象。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.22735",
+        "title_zh": "简并白矮星中修正的电子色散关系",
+        "team": "",
+        "tldr": "探究了修正的电子色散关系对冷白矮星结构的影响，发现对数模型强烈依赖变形参数符号，负值增加压力与最大质量。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
   "revisions": [
@@ -9464,6 +9510,24 @@
       "review": {
         "date": "2026-07-22",
         "overview": "今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+        "highlights": "—",
+        "trends": "—",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [],
+        "editorial_version": 2,
+        "stories": []
+      }
+    },
+    {
+      "synced": "2026-07-28",
+      "n_papers": 144,
+      "review": {
+        "date": "2026-07-22",
+        "overview": "当日 26 篇核心与相关文献均为常规推进，核心 12 篇已按优先级列于下方。",
         "highlights": "—",
         "trends": "—",
         "headline_level": "",

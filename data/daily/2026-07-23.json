@@ -3993,6 +3993,54 @@
         "context_outlook": "",
         "citations": []
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.21423",
+        "source": "arxiv",
+        "title": "Doubling for chronological diamonds in Lorentzian geometry",
+        "authors": [
+          "Mauricio Che",
+          "Sebastian Gieger",
+          "Clemens Sämann"
+        ],
+        "abstract": "We define doubling conditions for measured Lorentzian length spaces in terms of chronological diamonds, and prove that such conditions are implied by suitable timelike curvature bounds. In particular, for the first time, we relate doubling to curvature bounds in Lorentzian geometry. As a consequence, we obtain compactness results for Lorentzian generalized cones with respect to the Lorentzian Gromov--Hausdorff convergence introduced by Mondino--Sämann.",
+        "categories": [
+          "math.DG",
+          "gr-qc",
+          "math-ph",
+          "math.MG"
+        ],
+        "published": "2026-07-23",
+        "url": "https://arxiv.org/abs/2607.21423v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.21423v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.21423"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文与高能暂现源研究团队的科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均未提及任何高能暂现源、天体物理现象或相关任务（如GECAM、HXMT等），内容纯属洛伦兹几何的数学研究。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.21423",
+        "title_zh": "洛伦兹几何中时序钻石的加倍条件",
+        "team": "",
+        "tldr": "定义了洛伦兹长度空间中基于时序钻石的加倍条件, 证明其由类时曲率界限蕴含, 并由此得到洛伦兹广义锥关于洛伦兹Gromov-Hausdorff收敛的紧致性结果",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
   "revisions": [
@@ -4002,6 +4050,24 @@
       "review": {
         "date": "2026-07-23",
         "overview": "今日无达到 BREAKING 或 HEADLINE 门槛的进展。",
+        "highlights": "—",
+        "trends": "—",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [],
+        "editorial_version": 2,
+        "stories": []
+      }
+    },
+    {
+      "synced": "2026-07-28",
+      "n_papers": 69,
+      "review": {
+        "date": "2026-07-23",
+        "overview": "当日 7 篇核心与相关文献均为常规推进，核心 2 篇已按优先级列于下方。",
         "highlights": "—",
         "trends": "—",
         "headline_level": "",
