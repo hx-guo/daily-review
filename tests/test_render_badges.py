@@ -39,6 +39,24 @@ def test_backfilled_cards_carry_a_badge_and_the_first_batch_does_not(
     assert "本页经 1 次补录" in page
 
 
+def test_edge_cards_get_the_same_badge_and_date_chain_as_core_cards(
+        ritem, build_site_from):
+    out = build_site_from([
+        ("2026-07-18", [ritem("arxiv:1", archive="2026-07-14",
+                              ingested="2026-07-18", layer="edge")]),
+        ("2026-07-22", [ritem("arxiv:2", archive="2026-07-14",
+                              ingested="2026-07-22", layer="edge")])])
+
+    page = (out / "day" / "2026-07-14.html").read_text(encoding="utf-8")
+
+    # both edge cards get a date chain; only the later-arriving one gets a badge
+    assert page.count("backfill-badge") == 1
+    assert "07-22 补录" in page
+    assert page.count("date-chain") == 2
+    assert "预印本 2026-07-14 · 收录 2026-07-18" in page
+    assert "预印本 2026-07-14 · 收录 2026-07-22" in page
+
+
 def test_news_pages_have_no_backfill_badges(ritem, build_site_from):
     out = build_site_from([("2026-07-18", [ritem("arxiv:1",
                                                  archive="2026-07-14",

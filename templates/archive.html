@@ -5,7 +5,7 @@
   <header class="masthead">
     <h1>归档</h1>
     <div class="masthead-sub">ARCHIVE · DAILY LITERATURE REVIEW</div>
-    <div class="masthead-meta">按 arXiv 公告日归档{% if latest_date %}　·　数据截至 {{ latest_date }}{% endif %}</div>
+    <div class="masthead-meta">按论文最早日期归档（预印本／接收／刊出中最早者）{% if latest_date %}　·　数据截至 {{ latest_date }}{% endif %}</div>
   </header>
   <section class="sec">
     {% for g in groups %}
