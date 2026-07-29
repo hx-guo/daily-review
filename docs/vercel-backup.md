@@ -9,7 +9,7 @@
 
 ## 数据与构件
 
-`data/daily/*.json` 与 `data/seen-index.json` 是持久、可审计的内容源，由每日 GitHub Actions 提交回 `main`。`site/` 是纯派生构件，不进入 Git：
+`data/ingest/*.json` 与 `data/seen-index.json` 是持久、可审计的内容源，由每日 GitHub Actions 提交回 `main`。`site/` 是纯派生构件，不进入 Git：
 
 ```text
 data/ + templates/ + static/ + renderer

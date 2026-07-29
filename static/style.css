@@ -350,7 +350,12 @@ details[open] .fold-plus::after { }
   .site-header { padding: 12px 16px; gap: 10px; }
   .sh-title { font-size: 14px; letter-spacing: 0.04em; white-space: normal; }
   .sh-vol, .sh-meta { display: none; }
-  .body-wrap { padding: 40px 18px 48px; }
+  /* Left padding is wider than the right on purpose: .toc-drawer becomes a
+     fixed left:0 tab below (30px wide) once the reading column goes full-width,
+     so every line of content — including the card-seq gutter and its
+     backfill-badge — needs to start at x >= 36px or the tab visually covers it
+     at whatever scroll position happens to put it in the tab's fixed y-band. */
+  .body-wrap { padding: 40px 18px 48px 36px; }
   .reading { max-width: 100%; }
   .masthead h1 { font-size: 25px; white-space: normal; letter-spacing: 0.06em; }
   .masthead-sub { letter-spacing: 0.12em; }
