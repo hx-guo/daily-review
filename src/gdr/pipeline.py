@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from gdr import config
 from gdr.citations import resolve_summary
 from gdr.daily_review import Breaker, review_paper
+from gdr.dates import parse_partial_date
 from gdr.datesource import fetch_arxiv_v1_date, fetch_crossref_dates
 from gdr.dedup import dedupe, paper_keys
 from gdr.fulltext import fetch_fulltext as _real_fetch_fulltext
@@ -14,31 +15,53 @@ from gdr.store import Store
 from gdr.summarize import summarize_edge, summarize_paper
 
 
+# The journal half of the date chain: everything a later record can still
+# contribute to a paper we already hold. `preprint` is deliberately not in this
+# list — see `enrich_seen`.
+_JOURNAL_FIELDS = ("accepted", "published", "published_precision",
+                   "published_source", "received")
+
+
+def _doi_of(paper) -> str:
+    external = getattr(paper, "external_ids", None) or {}
+    return str(getattr(paper, "doi", None) or external.get("doi") or "").strip()
+
+
+def journal_dates(paper, doi: str, *, fetch_dates: bool = True) -> dict:
+    """Acceptance and publication dates for one paper.
+
+    Crossref is the only source that gives a day-precise publication date and an
+    acceptance date, so it is asked first whenever a DOI is known. An ADS record
+    states its own publication date, usually month-only and sometimes as
+    `2026-07-00`; that is the fallback, and it is parsed rather than assumed —
+    the day ADS indexed the record (`paper.published`) is not a journal date and
+    must never be presented as one.
+    """
+    journal = {}
+    if fetch_dates and doi:
+        journal = fetch_crossref_dates(doi, mailto=config.CROSSREF_MAILTO)
+    if paper.source == "ads" and not journal.get("published"):
+        date, precision = parse_partial_date(getattr(paper, "pubdate", ""))
+        if date:
+            journal = {**journal, "published": date,
+                       "published_precision": precision,
+                       "published_source": "ads-pubdate"}
+    return journal
+
+
 def paper_dates(paper, ingested: str, *, fetch_dates: bool = True) -> dict:
     """The four dates for one paper. arXiv records carry their v1 date already;
-    journal dates come from Crossref, which is also the only source that gives a
-    day-precise publication date and an acceptance date."""
+    an ADS record's linked arXiv id has to be looked up to get one."""
     external = getattr(paper, "external_ids", None) or {}
     arxiv_id = str(external.get("arxiv") or "").strip()
-    doi = str(getattr(paper, "doi", None) or external.get("doi") or "").strip()
 
     preprint = paper.published if paper.source == "arxiv" else ""
-    journal = {}
-    if fetch_dates:
-        if not preprint and arxiv_id:
-            preprint = fetch_arxiv_v1_date(arxiv_id)
-        if doi:
-            journal = fetch_crossref_dates(doi, mailto=config.CROSSREF_MAILTO)
-    if not journal and paper.source == "ads":
-        journal = {"published": paper.published, "published_precision": "day",
-                   "published_source": "ads-pubdate"}
+    if fetch_dates and not preprint and arxiv_id:
+        preprint = fetch_arxiv_v1_date(arxiv_id)
+    journal = journal_dates(paper, _doi_of(paper), fetch_dates=fetch_dates)
     return {
         "preprint": preprint,
-        "accepted": journal.get("accepted", ""),
-        "published": journal.get("published", ""),
-        "published_precision": journal.get("published_precision", ""),
-        "published_source": journal.get("published_source", ""),
-        "received": journal.get("received", ""),
+        **{key: journal.get(key, "") for key in _JOURNAL_FIELDS},
         "ingested": ingested,
     }
 
@@ -62,69 +85,78 @@ def _process_paper(paper, llm, fetch_fulltext, run_date, breaker,
     return item
 
 
+def _locate_stored(store: Store, ingest_dates: list[str], target: str, paper):
+    """The stored (day, item) pair for an already-seen paper, or None.
+
+    The seen index already tells us which file holds it; try that file first and
+    only fall back to a full scan if it turns out to be stale (e.g. a seen entry
+    recorded with no matching ingest file — a legacy or test-only state, but not
+    one worth crashing on)."""
+    keys = paper_keys(paper)
+    order = ([target] if target in ingest_dates else []) + \
+            [d for d in reversed(ingest_dates) if d != target]
+    for date in order:
+        day = store.load_ingest(date)
+        for item in day.items:
+            if paper_keys(item["paper"]) & keys:
+                return day, item
+    return None
+
+
+def _merge_identifiers(item: dict, paper) -> bool:
+    """Fold a later record's identifiers into the stored paper. Pure, no network."""
+    stored = item["paper"]
+    changed = False
+    merged = {**(getattr(paper, "external_ids", None) or {}),
+              **(stored.external_ids or {})}
+    if merged != (stored.external_ids or {}):
+        stored.external_ids = merged
+        changed = True
+    doi = _doi_of(paper)
+    if not stored.doi and doi:
+        stored.doi = doi
+        changed = True
+    return changed
+
+
 def enrich_seen(papers, store: Store, *, fetch_dates: bool = True) -> int:
     """Merge later-arriving identifiers and journal dates into papers we already
     hold. Without this a preprint ingested months ago would never learn that it
     was accepted and published. Never re-summarises, never re-reviews, and never
     moves a paper's archive day. Rewrites a stored ingest file only when the
     merge actually adds something new — every day is otherwise touched on every
-    run for every already-seen paper in the fetch window."""
+    run for every already-seen paper in the fetch window.
+
+    Locates the stored item BEFORE touching the network, and then asks only for
+    what is missing: a paper whose journal dates are already complete costs no
+    request at all. The preprint date is never fetched here — `archive_date` is
+    fixed at first ingest and never recomputed, so a v1 date arriving now could
+    only contradict it, which is why `_JOURNAL_FIELDS` stops short of it.
+    """
     seen = store.seen_map()  # one read for the whole call, not one per key per paper
+    ingest_dates = store.list_ingest_dates()
     enriched = 0
     for paper in papers:
         target = next((seen[k] for k in sorted(paper_keys(paper)) if seen.get(k)),
                       None)
         if not target:
             continue
-        external = getattr(paper, "external_ids", None) or {}
-        doi = str(getattr(paper, "doi", None) or external.get("doi") or "").strip()
-        fresh = paper_dates(paper, "", fetch_dates=fetch_dates)
-
-        def mutate(item, external=external, doi=doi, fresh=fresh) -> bool:
-            changed = False
-            stored = item["paper"]
-            merged_external = {**external, **(stored.external_ids or {})}
-            if merged_external != (stored.external_ids or {}):
-                stored.external_ids = merged_external
-                changed = True
-            if not stored.doi and doi:
-                stored.doi = doi
-                changed = True
-            for key in ("accepted", "published", "published_precision",
-                        "published_source", "received"):
-                if not item["dates"].get(key) and fresh.get(key):
+        located = _locate_stored(store, ingest_dates, target, paper)
+        if not located:
+            continue
+        day, item = located
+        enriched += 1
+        changed = _merge_identifiers(item, paper)
+        missing = [key for key in _JOURNAL_FIELDS if not item["dates"].get(key)]
+        if missing:
+            fresh = journal_dates(paper, _doi_of(item["paper"]),
+                                  fetch_dates=fetch_dates)
+            for key in missing:
+                if fresh.get(key):
                     item["dates"][key] = fresh[key]
                     changed = True
-            return changed
-
-        # The seen index already tells us which file holds this paper; try that
-        # file first and only fall back to a full scan if it turns out to be
-        # stale (e.g. a seen entry recorded with no matching ingest file — a
-        # legacy or test-only state, but not one worth crashing on).
-        ingest_dates = store.list_ingest_dates()
-        matched = False
-        if target in ingest_dates:
-            day = store.load_ingest(target)
-            for item in day.items:
-                if paper_keys(item["paper"]) & paper_keys(paper):
-                    if mutate(item):
-                        store.save_ingest(day)
-                    matched = True
-                    break
-        if not matched:
-            for date in reversed(ingest_dates):
-                if date == target:
-                    continue
-                day = store.load_ingest(date)
-                for item in day.items:
-                    if paper_keys(item["paper"]) & paper_keys(paper):
-                        if mutate(item):
-                            store.save_ingest(day)
-                        matched = True
-                        break
-                if matched:
-                    break
-        enriched += 1 if matched else 0
+        if changed:
+            store.save_ingest(day)
     return enriched
 
 
@@ -160,6 +192,37 @@ def repair_decisions(store: Store, llm, window_days: int | None = None,
     return repaired
 
 
+def _mark_stored_but_unseen(store: Store, candidates, stored_at: dict) -> None:
+    """Record the papers the crash-window guard just caught. They are on disk but
+    absent from the seen index, and `enrich_seen` locates a paper through its
+    dated seen entry — without this they would be protected from re-review yet
+    never gain a journal date. The stored copy's own ingest date is the right one:
+    that is the day the interrupted run wrote it."""
+    by_date: dict[str, set[str]] = {}
+    for paper in candidates:
+        keys = paper_keys(paper)
+        date = next((stored_at[k] for k in sorted(keys) if stored_at.get(k)), "")
+        if date:
+            by_date.setdefault(date, set()).update(keys)
+    for date, keys in by_date.items():
+        store.mark_seen(sorted(keys), date)
+
+
+def _merged_day(store: Store, run_date: str, items: list[dict]) -> IngestDay:
+    """This run's harvest combined with whatever an earlier run already stored
+    under the same date. `items` holds only the papers that were fresh in THIS
+    run, so writing it straight out would drop the rest of the day — permanently,
+    because the dropped papers stay in the seen index and are therefore never
+    refetched and no longer locatable by `enrich_seen`. Already-stored entries
+    win, so a paper keeps the summary and decision it was first stored with."""
+    stored = (store.load_ingest(run_date).items
+              if run_date in store.list_ingest_dates() else [])
+    known = {it["paper"].id for it in stored}
+    merged = stored + [it for it in items if it["paper"].id not in known]
+    merged.sort(key=lambda it: it["paper"].id)
+    return IngestDay(ingested=run_date, items=merged)
+
+
 def sync(run_date, source, llm, store: Store,
          fetch_fulltext=_real_fetch_fulltext, window_days=None, max_workers=None,
          fetch_dates=True, sleep=time.sleep) -> list[str]:
@@ -181,8 +244,10 @@ def sync(run_date, source, llm, store: Store,
     # copy into a different ingest file, with both copies then rendering.
     # Cross-check against papers already stored, not just the seen index, to
     # close that window.
-    stored_keys = {key for it in store.all_items() for key in paper_keys(it["paper"])}
-    fresh = [p for p in candidates if stored_keys.isdisjoint(paper_keys(p))]
+    stored_at = {key: it["dates"]["ingested"]
+                 for it in store.all_items() for key in paper_keys(it["paper"])}
+    fresh = [p for p in candidates if stored_at.keys().isdisjoint(paper_keys(p))]
+    _mark_stored_but_unseen(store, candidates, stored_at)
 
     items = []
     if fresh:
@@ -200,8 +265,7 @@ def sync(run_date, source, llm, store: Store,
     if not items:
         return []
 
-    items.sort(key=lambda it: it["paper"].id)
-    store.save_ingest(IngestDay(ingested=run_date, items=items))
+    store.save_ingest(_merged_day(store, run_date, items))
     # Mark everything seen in one write, after the file is safely on disk — a
     # single read-modify-write of the seen index instead of one per paper.
     store.mark_seen(sorted({key for it in items for key in paper_keys(it["paper"])}),

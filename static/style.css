@@ -93,6 +93,15 @@ a { color: var(--accent); text-decoration: none; }
 .version:hover { border-bottom-color: var(--ink-body); }
 .version.is-current { color: var(--ink-mast); border-bottom-color: var(--ink-mast); }
 
+/* ---------- news-day pager (the news axis's counterpart to the version bar) ---------- */
+.news-nav {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 10px; margin: 24px 0 0; padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.news-nav a { font-size: 13px; color: var(--ink-body); border-bottom: 1px solid transparent; }
+.news-nav a:hover { border-bottom-color: var(--ink-body); }
+
 /* ---------- section headings (roman-numeral pattern) ---------- */
 .sec { margin-top: 40px; }
 .sec-head { display: flex; align-items: baseline; gap: 14px; margin: 44px 0 0; }
@@ -254,7 +263,7 @@ a.cite:hover { border-bottom-style: solid; }
   color: var(--accent); border-bottom: 1px solid var(--link-rule);
 }
 
-/* ---------- edge fold & revisions ---------- */
+/* ---------- edge fold ---------- */
 .edge-fold { margin-top: 32px; }
 .fold-bar {
   list-style: none; cursor: pointer;
@@ -270,11 +279,6 @@ details[open] .fold-plus::after { }
 .card.edge { display: block; opacity: 0.92; }
 .card.edge .en-title { font-size: 16px; }
 .zh-title-sm { margin: 12px 0 0; font-size: 14px; color: var(--ink-zh); }
-
-.revisions { margin-top: 12px; }
-.revision { border-left: 3px solid var(--hair); padding-left: 14px; margin: 14px 0; }
-.revision h4 { margin: 0 0 6px; font-size: 12.5px; font-weight: 600; color: var(--ink-meta); }
-.revision p { margin: 6px 0; font-size: 13.5px; line-height: 1.8; color: var(--ink-body); }
 
 /* ---------- footer ---------- */
 .paper-footer {

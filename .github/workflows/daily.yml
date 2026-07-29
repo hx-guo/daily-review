@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       reclassify_dates:
-        description: "Optional stored dates to reclassify, separated by spaces"
+        description: "Optional 收录日 (ingest dates, YYYY-MM-DD) to reclassify, separated by spaces — NOT the 归档日 shown at /day/<date>.html"
         required: false
         type: string
 
@@ -27,7 +27,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -e ".[dev]"
-      - run: pytest -q
+      # Code tests only. The `livedata` checks assert properties of the stored
+      # data, which no code change can fix; letting one publisher's odd date
+      # block this step would silently stop the site updating until a human
+      # noticed. They run after the pipeline instead, advisory.
+      - run: pytest -q -m "not livedata"
       - name: Reclassify stored days
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.reclassify_dates != '' }}
         env:
@@ -39,6 +43,9 @@ jobs:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
           ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
         run: python scripts/run_daily.py
+      - name: Check stored data (advisory)
+        continue-on-error: true
+        run: pytest -q -m livedata
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"

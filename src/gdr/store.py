@@ -15,9 +15,12 @@ class Store:
         self.ingest_dir.mkdir(parents=True, exist_ok=True)
 
     # ---- ingest-keyed storage -------------------------------------------------
-    # `save_ingest` is called once, for a brand-new file, by `gdr.pipeline.sync`.
+    # `save_ingest` replaces a whole day's file with the IngestDay it is handed;
+    # merging is the caller's job (`gdr.pipeline._merged_day` does it for a date
+    # that is synced twice). `gdr.pipeline.sync` normally writes a brand-new file;
     # `gdr.pipeline.enrich_seen` and `gdr.pipeline.repair_decisions` are the only
-    # two call sites that ever rewrite an already-written ingest file in place.
+    # call sites that rewrite an already-written ingest file in place, and both
+    # pass back the day they just loaded.
 
     def save_ingest(self, day: IngestDay) -> None:
         path = self.ingest_dir / f"{day.ingested}.json"
@@ -98,7 +101,9 @@ class Store:
         keeps the potentially expensive ingest-JSON scan strictly one-time. Merges
         new aliases into the existing {key: ingest date} mapping rather than
         rebuilding it as a flat list, so dates already recorded via `mark_seen`
-        are preserved.
+        are preserved. Each alias is recorded with the date of the file it was
+        found in: a dateless entry is seen but not locatable, which would leave
+        the paper protected from re-review yet permanently un-enrichable.
         """
         raw = self._load_seen_raw()
         if _SEEN_IDENTITY_SCHEMA in raw:
@@ -110,6 +115,6 @@ class Store:
                 continue
             for item in day.items:
                 for key in paper_keys(item["paper"]):
-                    raw.setdefault(key, "")
+                    raw.setdefault(key, date)
         raw[_SEEN_IDENTITY_SCHEMA] = ""
         self._write_seen(raw)

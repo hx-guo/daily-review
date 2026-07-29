@@ -155,6 +155,13 @@
     <div class="masthead-meta">{{ meta.cn_date }} {{ meta.weekday }}　·　数据截至 arXiv / ADS 最新收录日</div>
   </header>
 
+  {% if axis == 'news' and (prev_date or next_date) %}
+  <nav class="news-nav" aria-label="按收录日翻页">
+    {% if prev_date %}<a href="{{ static_prefix }}news/{{ prev_date }}.html">‹ 前一收录日 · {{ prev_date[5:] }}</a>{% else %}<span></span>{% endif %}
+    {% if next_date %}<a href="{{ static_prefix }}news/{{ next_date }}.html">后一收录日 · {{ next_date[5:] }} ›</a>{% endif %}
+  </nav>
+  {% endif %}
+
   {% if versions %}
   <nav class="version-bar" aria-label="版本">
     <span class="version-label">版本</span>

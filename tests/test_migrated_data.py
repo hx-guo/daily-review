@@ -1,8 +1,17 @@
 """Acceptance checks on the real stored data. These run against data/ in the
-repository, not a fixture."""
+repository, not a fixture.
+
+Marked `livedata`: a failure here means an anomaly in stored data, not a broken
+code change, so the daily workflow deselects them before running the pipeline
+and re-runs them afterwards as an advisory step. A local `pytest -q` runs them.
+"""
 from pathlib import Path
 
+import pytest
+
 from gdr.store import Store
+
+pytestmark = pytest.mark.livedata
 
 ROOT = Path(__file__).resolve().parent.parent
 

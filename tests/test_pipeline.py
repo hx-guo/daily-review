@@ -2,7 +2,7 @@ import json
 import re
 
 from gdr.models import IngestDay, Paper, RelevanceScore, make_item
-from gdr.pipeline import enrich_seen, repair_decisions, sync
+from gdr.pipeline import enrich_seen, paper_dates, repair_decisions, sync
 from gdr.sources.base import Source
 from gdr.store import Store
 
@@ -19,14 +19,14 @@ class StubSource(Source):
 
 
 def _paper(pid, title=None, published="2026-07-16", source="arxiv", doi=None,
-           external_ids=None):
+           external_ids=None, pubdate=""):
     # Distinct per pid by default: paper_keys includes a normalised-title
     # identity, so a shared literal title would make unrelated fixture papers
     # collide as "the same paper" via title alone.
     return Paper(id=pid, source=source, title=title or f"GRB {pid}", authors=["A"],
                  abstract="abstract " * 40, categories=["astro-ph.HE"],
                  published=published, url=f"https://arxiv.org/abs/{pid}", doi=doi,
-                 external_ids=external_ids or {})
+                 external_ids=external_ids or {}, pubdate=pubdate)
 
 
 def _keyed_llm(fake_llm_factory, editorial="reject"):
@@ -92,6 +92,51 @@ def test_backfill_only_pays_for_the_new_paper(tmp_path, fake_llm_factory):
         assert (tmp_path / "data" / "ingest" / f"{date}.json").read_bytes() == blob
 
 
+def test_an_ads_paper_publishes_on_its_pubdate_not_the_day_ads_indexed_it(tmp_path):
+    """A 2025-03 journal paper that ADS indexes in 2026-08 must not be dated
+    2026-08: that would print the wrong 刊出 date and, with no preprint and no
+    Crossref answer, archive it onto the wrong day for good."""
+    paper = _paper("ads:1", source="ads", published="2026-08-05",
+                   pubdate="2025-03-00")
+
+    dates = paper_dates(paper, "2026-08-05", fetch_dates=False)
+
+    assert dates["published"] == "2025-03"          # month precision preserved
+    assert dates["published_precision"] == "month"
+    assert dates["published_source"] == "ads-pubdate"
+
+
+def test_an_ads_paper_with_no_pubdate_gets_no_published_date(tmp_path):
+    """Better an empty field than a date the source never gave."""
+    paper = _paper("ads:2", source="ads", published="2026-08-05")
+
+    dates = paper_dates(paper, "2026-08-05", fetch_dates=False)
+
+    assert dates["published"] == ""
+    assert dates["published_precision"] == ""
+    assert dates["published_source"] == ""
+
+
+def test_a_second_sync_on_the_same_date_keeps_what_the_first_one_stored(
+        tmp_path, fake_llm_factory):
+    """Re-running a date (`gh workflow run`, GitHub's "re-run failed jobs", a
+    second `run_daily.py --date`) must ADD to that day's file. The run only holds
+    the papers that were fresh this time, so an unconditional write would drop the
+    rest of the day -- and those papers stay in the seen index, so `sync` would
+    never refetch them and `enrich_seen` could never locate them again."""
+    store = Store(tmp_path / "data")
+    first = [_paper(f"arxiv:{i}", published="2026-07-14") for i in range(3)]
+    _sync(store, first, _keyed_llm(fake_llm_factory), run_date="2026-07-18")
+
+    _sync(store, first + [_paper("arxiv:late", published="2026-07-14")],
+          _keyed_llm(fake_llm_factory), run_date="2026-07-18")
+
+    assert store.list_ingest_dates() == ["2026-07-18"]
+    stored = store.load_ingest("2026-07-18").items
+    assert sorted(it["paper"].id for it in stored) == [
+        "arxiv:0", "arxiv:1", "arxiv:2", "arxiv:late"]
+
+
 def test_enrich_merges_journal_dates_into_an_already_stored_paper(tmp_path):
     store = Store(tmp_path / "data")
     item = make_item(_paper("arxiv:1"), RelevanceScore(90, [], "core", "r"), None,
@@ -101,7 +146,8 @@ def test_enrich_merges_journal_dates_into_an_already_stored_paper(tmp_path):
 
     journal = _paper("ads:2026ApJ", source="ads", doi="10.1/x",
                      external_ids={"arxiv": "1", "doi": "10.1/x",
-                                   "ads": "2026ApJ"})
+                                   "ads": "2026ApJ"},
+                     published="2026-07-16", pubdate="2026-07-08")
     n = enrich_seen([journal], store, fetch_dates=False)
 
     stored = store.load_ingest("2026-07-18").items[0]
@@ -110,11 +156,61 @@ def test_enrich_merges_journal_dates_into_an_already_stored_paper(tmp_path):
     assert stored["paper"].external_ids["ads"] == "2026ApJ"
     assert stored["archive_date"] == "2026-03-12"        # archive day never moves
     assert stored["decision"] is None                    # never re-reviewed
-    # ADS-sourced dates synthesise a day-precision published date even
-    # without fetching Crossref; the merge must actually land it.
-    assert stored["dates"]["published"] == "2026-07-16"
+    # The ADS record states its own publication date, so the merge lands one even
+    # without Crossref -- and it is the journal's date, not the ADS entry day.
+    assert stored["dates"]["published"] == "2026-07-08"
     assert stored["dates"]["published_precision"] == "day"
     assert stored["dates"]["published_source"] == "ads-pubdate"
+
+
+def _explode(*args, **kwargs):
+    raise AssertionError("enrich_seen must not hit the network here")
+
+
+def test_enrich_asks_for_nothing_when_the_journal_dates_are_already_complete(
+        tmp_path, monkeypatch):
+    """Around 160 already-seen papers pass through here on every run. One whose
+    five journal fields are all filled has nothing left to learn, so it must cost
+    no request at all -- not even with fetching enabled."""
+    monkeypatch.setattr("gdr.pipeline.fetch_crossref_dates", _explode)
+    monkeypatch.setattr("gdr.pipeline.fetch_arxiv_v1_date", _explode)
+    store = Store(tmp_path / "data")
+    item = make_item(_paper("arxiv:1", doi="10.1/x"),
+                     RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "accepted": "2026-06-21",
+                            "published": "2026-07-08", "published_precision": "day",
+                            "published_source": "crossref-online",
+                            "received": "2026-02-26", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:1"], "2026-07-18")
+
+    assert enrich_seen([_paper("arxiv:1", doi="10.1/x")], store) == 1
+
+
+def test_enrich_never_looks_up_the_preprint_date(tmp_path, monkeypatch):
+    """The arXiv v1 lookup is pure waste on this path: `archive_date` is fixed at
+    first ingest and never recomputed, so a preprint date learned now could only
+    contradict it -- it is excluded from the merge, and always was."""
+    monkeypatch.setattr("gdr.pipeline.fetch_arxiv_v1_date", _explode)
+    monkeypatch.setattr("gdr.pipeline.fetch_crossref_dates",
+                        lambda doi, **kw: {"published": "2026-07-08",
+                                           "published_precision": "day",
+                                           "published_source": "crossref-online"})
+    store = Store(tmp_path / "data")
+    item = make_item(_paper("arxiv:1", doi="10.1/x"),
+                     RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:1"], "2026-07-18")
+
+    incoming = _paper("ads:2026ApJ", source="ads", doi="10.1/x",
+                      external_ids={"arxiv": "1", "doi": "10.1/x"})
+    assert enrich_seen([incoming], store) == 1
+
+    stored = store.load_ingest("2026-07-18").items[0]
+    assert stored["dates"]["published"] == "2026-07-08"   # Crossref still merged
+    assert stored["dates"]["preprint"] == "2026-03-12"    # ...and untouched
+    assert stored["archive_date"] == "2026-03-12"
 
 
 def test_enrich_does_not_rewrite_the_file_when_nothing_changed(tmp_path):
@@ -215,3 +311,26 @@ def test_sync_does_not_duplicate_a_paper_already_stored_but_not_yet_marked_seen(
     assert affected == []
     assert store.list_ingest_dates() == ["2026-07-18"]   # no second copy written
     assert llm.calls == []                                # not reprocessed at all
+    # ...and it is now in the seen index, pointing at the file that holds it:
+    # without that dated entry enrich_seen could never locate it, so the paper
+    # would be safe from re-review but frozen without its journal dates.
+    assert store.locate("arxiv:1") == "2026-07-18"
+
+
+def test_sync_marks_a_stored_but_unseen_paper_seen_with_its_stored_day(
+        tmp_path, fake_llm_factory):
+    """Same crash state, but with the one-time identity migration already done —
+    so it is the stored-papers guard, not `ensure_seen_identities`, that catches
+    the paper. It must still come out of the run locatable."""
+    store = Store(tmp_path / "data")
+    store.ensure_seen_identities()          # an earlier run already migrated
+    paper = _paper("arxiv:1", published="2026-07-14")
+    item = make_item(paper, RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-07-14", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+
+    llm = _keyed_llm(fake_llm_factory)
+    assert _sync(store, [paper], llm, run_date="2026-07-19") == []
+
+    assert llm.calls == []
+    assert store.locate("arxiv:1") == "2026-07-18"

@@ -47,6 +47,27 @@ def test_home_page_is_the_latest_ingest_day(ritem, build_site_from):
     assert "本日收录" in home
 
 
+def test_news_pages_link_to_their_neighbouring_ingest_days(ritem, build_site_from):
+    """Without this the news axis is unreachable: nothing else on the site links
+    to news/*.html, so every page but the newest would need its URL typed."""
+    out = build_site_from([
+        ("2026-07-18", [ritem("arxiv:1", archive="2026-07-18",
+                              ingested="2026-07-18")]),
+        ("2026-07-22", [ritem("arxiv:2", archive="2026-07-22",
+                              ingested="2026-07-22")])])
+
+    newest = (out / "news" / "2026-07-22.html").read_text(encoding="utf-8")
+    oldest = (out / "news" / "2026-07-18.html").read_text(encoding="utf-8")
+    home = (out / "index.html").read_text(encoding="utf-8")
+    archive = (out / "day" / "2026-07-22.html").read_text(encoding="utf-8")
+
+    assert 'href="../news/2026-07-18.html"' in newest and "前一收录日" in newest
+    assert 'href="news/2026-07-18.html"' in home        # the home page is a news page
+    assert "前一收录日" not in oldest                    # nothing precedes the oldest day
+    assert 'href="../news/2026-07-22.html"' in oldest and "后一收录日" in oldest
+    assert 'class="news-nav"' not in archive             # news axis only
+
+
 def test_archive_page_shows_every_paper_of_that_archive_day_whenever_ingested(
         ritem, build_site_from):
     out = build_site_from([

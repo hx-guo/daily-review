@@ -20,6 +20,11 @@ class Paper:
     # Keeping these alongside the canonical `id` lets arXiv and ADS records merge
     # without changing the IDs already persisted in daily JSON files.
     external_ids: dict[str, str] = field(default_factory=dict)
+    # The source's own publication date, kept verbatim and unparsed (ADS deposits
+    # month-only values such as "2026-07-00"). Distinct from `published`, which
+    # for an ADS record is the day ADS indexed it — the fetch-window key, not a
+    # journal date.
+    pubdate: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
