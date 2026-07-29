@@ -90,6 +90,9 @@ def doc_to_paper(doc: dict) -> Paper:
         pdf_url=f"https://arxiv.org/pdf/{aid}" if aid else None,
         doi=doi,
         external_ids=external_ids,
+        # The journal date proper, as ADS states it. `published` above is the
+        # entry date and must stay that way — it keys the fetch window.
+        pubdate=_first(doc.get("pubdate")),
     )
 
 

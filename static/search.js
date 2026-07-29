@@ -48,4 +48,20 @@
   }
   if (document.readyState !== "loading") pruneToggles();
   else document.addEventListener("DOMContentLoaded", pruneToggles);
+
+  // Backfill-note jump buttons: toggle highlighting the cards that arrived in
+  // one particular later ingest run (identified by their data-ingest date).
+  document.querySelectorAll(".backfill-jump").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var want = btn.dataset.ingest;
+      var on = !btn.classList.contains("is-on");
+      document.querySelectorAll(".backfill-jump").forEach(function (b) {
+        b.classList.remove("is-on");
+      });
+      if (on) { btn.classList.add("is-on"); }
+      document.querySelectorAll(".card[data-ingest]").forEach(function (card) {
+        card.classList.toggle("is-flagged", on && card.dataset.ingest === want);
+      });
+    });
+  });
 })();

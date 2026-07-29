@@ -1,7 +1,7 @@
-"""Reclassify stored days with the current editorial rubric.
+"""Reclassify stored ingest days with the current editorial rubric.
 
-This performs only the inexpensive triage calls and the two-pass daily news
-review. Existing full-text summaries are reused unchanged.
+This performs only the inexpensive triage calls, keyed by ingest date. Existing
+full-text summaries and cached decisions are reused unchanged.
 
 Usage:
     OPENCODE_API_KEY=... python scripts/reclassify_days.py 2026-07-20 2026-07-21
@@ -22,18 +22,18 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("dates", nargs="*", help="stored YYYY-MM-DD dates")
-    parser.add_argument("--all", action="store_true", help="reclassify every stored day")
+    parser.add_argument("dates", nargs="*", help="stored YYYY-MM-DD ingest dates")
+    parser.add_argument("--all", action="store_true", help="reclassify every ingest day")
     args = parser.parse_args()
 
     store = Store(ROOT / "data")
     if args.all:
-        dates = store.list_days()
+        dates = store.list_ingest_dates()
     else:
         dates = args.dates
     if not dates:
         parser.error("provide at least one date or --all")
-    available = set(store.list_days())
+    available = set(store.list_ingest_dates())
     for date in dates:
         try:
             dt.date.fromisoformat(date)
@@ -43,9 +43,8 @@ def main() -> None:
             parser.error(f"no stored data for {date}")
 
     llm = OpenCodeLLM(api_key=config.get_api_key())
-    synced = dt.datetime.now(dt.timezone.utc).date().isoformat()
     for date in dates:
-        result = reclassify_day(date, store, llm, synced=synced)
+        result = reclassify_day(date, store, llm)
         print(f"{date}: reclassified; {result}")
 
 

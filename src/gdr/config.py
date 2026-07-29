@@ -48,13 +48,27 @@ ADS_API_URL = os.environ.get("ADS_API_URL", "https://api.adsabs.harvard.edu/v1/s
 CROSSREF_API_URL = os.environ.get("CROSSREF_API_URL", "https://api.crossref.org/works")
 CROSSREF_MAILTO = os.environ.get("GDR_CROSSREF_MAILTO", "daily-review@users.noreply.github.com")
 
+# The first day this site ingested anything. Archive days before it hold only
+# papers that were backfilled later, never that day's full literature.
+SITE_COVERAGE_START = os.environ.get("GDR_SITE_COVERAGE_START", "2026-07-12")
+
 FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
 ADS_PAGE_SIZE = int(os.environ.get("GDR_ADS_PAGE_SIZE", "200"))
 MAX_CONCURRENCY = int(os.environ.get("GDR_MAX_CONCURRENCY", "6"))
-# Editorial decisions are intentionally one-paper-per-call for stable, short
-# JSON. Run them concurrently so large ADS days do not become serial bottlenecks.
-EDITORIAL_MAX_CONCURRENCY = int(os.environ.get("GDR_EDITORIAL_MAX_CONCURRENCY", "6"))
+# One malformed JSON is noise; a dead upstream is a whole day of lost decisions
+# (kimi-k3 400-ed for a full day in 2026-07). Retry hard, then let the
+# cross-run repair pass pick up whatever still failed.
+EDITORIAL_ATTEMPTS = int(os.environ.get("GDR_EDITORIAL_ATTEMPTS", "10"))
+EDITORIAL_BACKOFF = (1, 2, 4, 8, 16, 30, 30, 30, 30)
+# When this many papers in a row exhaust all attempts, upstream is down: stop
+# calling for the rest of the run instead of dragging it out for an hour.
+EDITORIAL_BREAKER_LIMIT = int(os.environ.get("GDR_EDITORIAL_BREAKER_LIMIT", "20"))
+# Transport-level retries (network errors, 5xx, 429) inside the OpenAI SDK.
+OPENAI_MAX_RETRIES = int(os.environ.get("GDR_OPENAI_MAX_RETRIES", "4"))
+# A paper whose decision failed is retried on this many later runs before we
+# give up on it for good.
+REVIEW_MAX_ROUNDS = int(os.environ.get("GDR_REVIEW_MAX_ROUNDS", "3"))
 # arXiv asks for ~3s between API requests; pagination sleeps this long between pages.
 ARXIV_REQUEST_DELAY = float(os.environ.get("GDR_ARXIV_REQUEST_DELAY", "3"))
 ADS_REQUEST_DELAY = float(os.environ.get("GDR_ADS_REQUEST_DELAY", "0.5"))

@@ -4,7 +4,7 @@ the WHOLE paper, not a truncated head) and `resolve_summary` (ADS/Crossref links
 
 One-time migration: re-runs every core/related paper because earlier summaries were
 based on a truncated head of the text and used an older citation schema. Concurrent.
-Leaves edge items and `revisions` untouched.
+Leaves edge items untouched. Operates on the ingest-keyed layout (`data/ingest/`).
 
 Usage:
     OPENCODE_API_KEY=... ADS_API_TOKEN=... python scripts/backfill_outlook.py
@@ -42,8 +42,8 @@ def main():
     llm = OpenCodeLLM(api_key=config.get_api_key())
     store = Store(ROOT / "data")
     total = 0
-    for date in store.list_days():
-        day = store.load_day(date)
+    for date in store.list_ingest_dates():
+        day = store.load_ingest(date)
         todo = [it for it in day.items
                 if it["score"].layer in ("core", "related")
                 and it["summary"] is not None
@@ -58,7 +58,7 @@ def main():
                     it["summary"] = fut.result()
                 except Exception as exc:
                     print(f"  {it['paper'].id} failed: {exc}", file=sys.stderr)
-        store.save_day(day)
+        store.save_ingest(day)
         total += len(todo)
         print(f"{date}: refreshed {len(todo)} core/related summaries")
     print(f"done · {total} summaries refreshed")

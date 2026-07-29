@@ -1,145 +1,336 @@
 import json
 import re
-from gdr.models import Paper
+
+from gdr.models import IngestDay, Paper, RelevanceScore, make_item
+from gdr.pipeline import enrich_seen, paper_dates, repair_decisions, sync
 from gdr.sources.base import Source
 from gdr.store import Store
-from gdr.pipeline import sync
 
 
 class StubSource(Source):
-    def __init__(self, papers): self._papers = papers
-    def fetch(self, date): return list(self._papers)
-    def fetch_recent(self, end_date, days): return list(self._papers)
+    def __init__(self, papers):
+        self._papers = papers
+
+    def fetch(self, date):
+        return list(self._papers)
+
+    def fetch_recent(self, end_date, days):
+        return list(self._papers)
 
 
-def _paper(pid, title, published="2026-07-16"):
-    return Paper(id=pid, source="arxiv", title=title, authors=["A"], abstract="abstract",
-                 categories=["astro-ph.HE"], published=published,
-                 url=f"https://arxiv.org/abs/{pid}")
+def _paper(pid, title=None, published="2026-07-16", source="arxiv", doi=None,
+           external_ids=None, pubdate=""):
+    # Distinct per pid by default: paper_keys includes a normalised-title
+    # identity, so a shared literal title would make unrelated fixture papers
+    # collide as "the same paper" via title alone.
+    return Paper(id=pid, source=source, title=title or f"GRB {pid}", authors=["A"],
+                 abstract="abstract " * 40, categories=["astro-ph.HE"],
+                 published=published, url=f"https://arxiv.org/abs/{pid}", doi=doi,
+                 external_ids=external_ids or {}, pubdate=pubdate)
 
 
-def _keyed_llm(fake_llm_factory):
-    def reject_editorial(user):
+def _keyed_llm(fake_llm_factory, editorial="reject"):
+    def editorial_response(user):
         paper_id = re.search(r"paper_id=([^ ]+)", user).group(1)
-        return json.dumps({
-            "paper_id": paper_id,
-            "decision": "reject",
-            "reason": "未达到重大新闻门槛。",
-        })
+        if "第二位、更加怀疑" in user:
+            return json.dumps({"paper_id": paper_id, "decision": "headline",
+                               "title": "T", "evidence": "E", "impact": "I",
+                               "reason": "R", "watchlist": ["w"]})
+        return json.dumps({"paper_id": paper_id, "decision": editorial,
+                           "reason": "理由。"})
 
     return fake_llm_factory({
         "主题标签与相关层级是两个独立判断": json.dumps({
             "layer": "core", "score": 90, "tags": ["GRB"], "relation": "direct",
-            "core_path": "science", "evidence": "GRB 是主要研究对象", "reason": "核心",
-        }),
+            "core_path": "science", "evidence": "GRB 是主要研究对象", "reason": "核心"}),
         "综述卡片": json.dumps({"title_zh": "标题", "team": "A 等", "tldr": "t",
                               "review": "r", "highlight": "h", "relation": "—"}),
-        "只复核下面这一篇文献": reject_editorial,
+        "只复核下面这一篇文献": editorial_response,
+        "第二位、更加怀疑": editorial_response,
     })
 
 
-def test_sync_files_paper_under_its_true_date(tmp_path, fake_llm_factory):
+def _sync(store, papers, llm, run_date="2026-07-18"):
+    return sync(run_date, StubSource(papers), llm, store,
+                fetch_fulltext=lambda p, **k: "BODY", max_workers=2,
+                fetch_dates=False, sleep=lambda s: None)
+
+
+def test_sync_writes_one_file_keyed_by_the_run_date(tmp_path, fake_llm_factory):
     store = Store(tmp_path / "data")
-    src = StubSource([_paper("arxiv:2607.1", "GRB", published="2026-07-14"),
-                      _paper("arxiv:2607.1", "GRB", published="2026-07-14")])  # dup
-    affected = sync("2026-07-18", src, _keyed_llm(fake_llm_factory), store,
-                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    assert affected == ["2026-07-14"]
-    day = store.load_day("2026-07-14")
-    assert day.date == "2026-07-14"          # filed under TRUE date, not run date 07-18
-    assert len(day.items) == 1               # deduped
-    assert day.items[0]["summary"].title_zh == "标题"
+
+    affected = _sync(store, [_paper("arxiv:1", published="2026-07-14"),
+                             _paper("arxiv:1", published="2026-07-14")], # dup
+                     _keyed_llm(fake_llm_factory))
+
+    assert affected == ["2026-07-18"]
+    assert store.list_ingest_dates() == ["2026-07-18"]
+    day = store.load_ingest("2026-07-18")
+    assert len(day.items) == 1                              # deduped
+    assert day.items[0]["dates"]["ingested"] == "2026-07-18"
+    assert day.items[0]["dates"]["preprint"] == "2026-07-14"
+    assert day.items[0]["archive_date"] == "2026-07-14"     # archive axis is the paper's own date
+    assert day.items[0]["decision"]["level"] == "reject"
 
 
-def test_sync_skips_already_seen(tmp_path, fake_llm_factory):
+def test_backfill_only_pays_for_the_new_paper(tmp_path, fake_llm_factory):
+    """The whole point: adding 1 paper to a big day must not re-review the day."""
     store = Store(tmp_path / "data")
-    store.mark_seen_papers(["arxiv:2607.1"])
-    src = StubSource([_paper("arxiv:2607.1", "GRB", published="2026-07-14")])
-    affected = sync("2026-07-18", src, _keyed_llm(fake_llm_factory), store,
-                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    assert affected == []
+    old = [_paper(f"arxiv:{i}", published="2026-07-14") for i in range(8)]
+    _sync(store, old, _keyed_llm(fake_llm_factory), run_date="2026-07-18")
+    before = {p: (tmp_path / "data" / "ingest" / f"{p}.json").read_bytes()
+              for p in store.list_ingest_dates()}
+
+    llm = _keyed_llm(fake_llm_factory)
+    _sync(store, old + [_paper("arxiv:new", published="2026-07-14")], llm,
+          run_date="2026-07-19")
+
+    editorial = [c for c in llm.calls if "只复核下面这一篇文献" in c["user"]]
+    assert len(editorial) == 1                    # only the new paper was reviewed
+    assert store.list_ingest_dates() == ["2026-07-18", "2026-07-19"]
+    for date, blob in before.items():
+        assert (tmp_path / "data" / "ingest" / f"{date}.json").read_bytes() == blob
 
 
-def test_sync_skips_ads_alias_of_seen_arxiv_paper(tmp_path, fake_llm_factory):
+def test_an_ads_paper_publishes_on_its_pubdate_not_the_day_ads_indexed_it(tmp_path):
+    """A 2025-03 journal paper that ADS indexes in 2026-08 must not be dated
+    2026-08: that would print the wrong 刊出 date and, with no preprint and no
+    Crossref answer, archive it onto the wrong day for good."""
+    paper = _paper("ads:1", source="ads", published="2026-08-05",
+                   pubdate="2025-03-00")
+
+    dates = paper_dates(paper, "2026-08-05", fetch_dates=False)
+
+    assert dates["published"] == "2025-03"          # month precision preserved
+    assert dates["published_precision"] == "month"
+    assert dates["published_source"] == "ads-pubdate"
+
+
+def test_an_ads_paper_with_no_pubdate_gets_no_published_date(tmp_path):
+    """Better an empty field than a date the source never gave."""
+    paper = _paper("ads:2", source="ads", published="2026-08-05")
+
+    dates = paper_dates(paper, "2026-08-05", fetch_dates=False)
+
+    assert dates["published"] == ""
+    assert dates["published_precision"] == ""
+    assert dates["published_source"] == ""
+
+
+def test_a_second_sync_on_the_same_date_keeps_what_the_first_one_stored(
+        tmp_path, fake_llm_factory):
+    """Re-running a date (`gh workflow run`, GitHub's "re-run failed jobs", a
+    second `run_daily.py --date`) must ADD to that day's file. The run only holds
+    the papers that were fresh this time, so an unconditional write would drop the
+    rest of the day -- and those papers stay in the seen index, so `sync` would
+    never refetch them and `enrich_seen` could never locate them again."""
     store = Store(tmp_path / "data")
-    store.mark_seen_papers(["arxiv:2607.1"])
-    paper = _paper("ads:2026ApJ...1A", "Published GRB", published="2026-07-18")
-    paper.source = "ads"
-    paper.external_ids = {"ads": "2026ApJ...1A", "arxiv": "2607.1"}
-    affected = sync("2026-07-18", StubSource([paper]), _keyed_llm(fake_llm_factory), store,
-                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    assert affected == []
+    first = [_paper(f"arxiv:{i}", published="2026-07-14") for i in range(3)]
+    _sync(store, first, _keyed_llm(fake_llm_factory), run_date="2026-07-18")
+
+    _sync(store, first + [_paper("arxiv:late", published="2026-07-14")],
+          _keyed_llm(fake_llm_factory), run_date="2026-07-18")
+
+    assert store.list_ingest_dates() == ["2026-07-18"]
+    stored = store.load_ingest("2026-07-18").items
+    assert sorted(it["paper"].id for it in stored) == [
+        "arxiv:0", "arxiv:1", "arxiv:2", "arxiv:late"]
 
 
-def test_sync_marks_all_cross_source_identifiers_seen(tmp_path, fake_llm_factory):
+def test_enrich_merges_journal_dates_into_an_already_stored_paper(tmp_path):
     store = Store(tmp_path / "data")
-    paper = _paper("ads:2026ApJ...2A", "Published GRB", published="2026-07-18")
-    paper.source = "ads"
-    paper.doi = "10.1/published"
-    paper.external_ids = {
-        "ads": "2026ApJ...2A", "arxiv": "2607.2", "doi": "10.1/published"
-    }
-    sync("2026-07-18", StubSource([paper]), _keyed_llm(fake_llm_factory), store,
-         fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    assert store.unseen_ids([
-        "ads:2026apj...2a", "arxiv:2607.2", "doi:10.1/published"
-    ]) == []
+    item = make_item(_paper("arxiv:1"), RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:1", "doi:10.1/x"], "2026-07-18")
+
+    journal = _paper("ads:2026ApJ", source="ads", doi="10.1/x",
+                     external_ids={"arxiv": "1", "doi": "10.1/x",
+                                   "ads": "2026ApJ"},
+                     published="2026-07-16", pubdate="2026-07-08")
+    n = enrich_seen([journal], store, fetch_dates=False)
+
+    stored = store.load_ingest("2026-07-18").items[0]
+    assert n == 1
+    assert stored["paper"].doi == "10.1/x"
+    assert stored["paper"].external_ids["ads"] == "2026ApJ"
+    assert stored["archive_date"] == "2026-03-12"        # archive day never moves
+    assert stored["decision"] is None                    # never re-reviewed
+    # The ADS record states its own publication date, so the merge lands one even
+    # without Crossref -- and it is the journal's date, not the ADS entry day.
+    assert stored["dates"]["published"] == "2026-07-08"
+    assert stored["dates"]["published_precision"] == "day"
+    assert stored["dates"]["published_source"] == "ads-pubdate"
 
 
-def test_sync_failed_paper_left_unseen(tmp_path):
-    class RaisingLLM:
-        def complete(self, model, system, user, temperature=0.3):
-            raise RuntimeError("api down")
+def _explode(*args, **kwargs):
+    raise AssertionError("enrich_seen must not hit the network here")
+
+
+def test_enrich_asks_for_nothing_when_the_journal_dates_are_already_complete(
+        tmp_path, monkeypatch):
+    """Around 160 already-seen papers pass through here on every run. One whose
+    five journal fields are all filled has nothing left to learn, so it must cost
+    no request at all -- not even with fetching enabled."""
+    monkeypatch.setattr("gdr.pipeline.fetch_crossref_dates", _explode)
+    monkeypatch.setattr("gdr.pipeline.fetch_arxiv_v1_date", _explode)
     store = Store(tmp_path / "data")
-    src = StubSource([_paper("arxiv:2607.9", "GRB", published="2026-07-14")])
-    affected = sync("2026-07-18", src, RaisingLLM(), store,
-                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    assert affected == []                                     # nothing produced
-    assert store.unseen_ids(["arxiv:2607.9"]) == ["arxiv:2607.9"]   # retried next run
+    item = make_item(_paper("arxiv:1", doi="10.1/x"),
+                     RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "accepted": "2026-06-21",
+                            "published": "2026-07-08", "published_precision": "day",
+                            "published_source": "crossref-online",
+                            "received": "2026-02-26", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:1"], "2026-07-18")
+
+    assert enrich_seen([_paper("arxiv:1", doi="10.1/x")], store) == 1
 
 
-def test_sync_backfill_merges_and_snapshots_revision(tmp_path, fake_llm_factory):
+def test_enrich_never_looks_up_the_preprint_date(tmp_path, monkeypatch):
+    """The arXiv v1 lookup is pure waste on this path: `archive_date` is fixed at
+    first ingest and never recomputed, so a preprint date learned now could only
+    contradict it -- it is excluded from the merge, and always was."""
+    monkeypatch.setattr("gdr.pipeline.fetch_arxiv_v1_date", _explode)
+    monkeypatch.setattr("gdr.pipeline.fetch_crossref_dates",
+                        lambda doi, **kw: {"published": "2026-07-08",
+                                           "published_precision": "day",
+                                           "published_source": "crossref-online"})
     store = Store(tmp_path / "data")
-    # first sync: one paper on 07-14
-    sync("2026-07-16", StubSource([_paper("arxiv:2607.1", "GRB A", published="2026-07-14")]),
-         _keyed_llm(fake_llm_factory), store, fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    # second sync: a NEW paper also dated 07-14 arrives late
-    sync("2026-07-18", StubSource([_paper("arxiv:2607.2", "GRB B", published="2026-07-14")]),
-         _keyed_llm(fake_llm_factory), store, fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    day = store.load_day("2026-07-14")
-    assert len(day.items) == 2                                # merged, not overwritten
-    assert len(day.revisions) == 1                            # prior version snapshotted
-    assert day.revisions[0]["n_papers"] == 1
-    assert day.revisions[0]["synced"] == "2026-07-18"
-    assert store.unseen_ids(["arxiv:2607.1", "arxiv:2607.2"]) == []   # both now seen
+    item = make_item(_paper("arxiv:1", doi="10.1/x"),
+                     RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:1"], "2026-07-18")
+
+    incoming = _paper("ads:2026ApJ", source="ads", doi="10.1/x",
+                      external_ids={"arxiv": "1", "doi": "10.1/x"})
+    assert enrich_seen([incoming], store) == 1
+
+    stored = store.load_ingest("2026-07-18").items[0]
+    assert stored["dates"]["published"] == "2026-07-08"   # Crossref still merged
+    assert stored["dates"]["preprint"] == "2026-03-12"    # ...and untouched
+    assert stored["archive_date"] == "2026-03-12"
 
 
-def test_sync_fans_out_to_multiple_true_dates(tmp_path, fake_llm_factory):
+def test_enrich_does_not_rewrite_the_file_when_nothing_changed(tmp_path):
     store = Store(tmp_path / "data")
-    src = StubSource([_paper("arxiv:a", "GRB A", published="2026-07-14"),
-                      _paper("arxiv:b", "GRB B", published="2026-07-15")])
-    affected = sync("2026-07-18", src, _keyed_llm(fake_llm_factory), store,
-                    fetch_fulltext=lambda p, **k: "BODY", max_workers=2)
-    assert affected == ["2026-07-14", "2026-07-15"]
-    assert store.load_day("2026-07-14").items[0]["paper"].id == "arxiv:a"
-    assert store.load_day("2026-07-15").items[0]["paper"].id == "arxiv:b"
+    item = make_item(_paper("arxiv:9"), RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:9"], "2026-07-18")
+
+    rewrites = []
+    original_save = store.save_ingest
+
+    def spy(day):
+        rewrites.append(day.ingested)
+        return original_save(day)
+
+    store.save_ingest = spy
+
+    same_paper = _paper("arxiv:9")   # nothing new: same id, no doi/external_ids/dates to add
+    n = enrich_seen([same_paper], store, fetch_dates=False)
+
+    assert n == 1          # still matched an already-stored paper
+    assert rewrites == []  # ...but nothing changed, so the file was never rewritten
 
 
-def test_sync_edge_paper_gets_light_summary_no_fulltext(tmp_path, fake_llm_factory):
-    llm = fake_llm_factory({
+def test_failed_decision_still_stores_the_paper_and_is_repaired_next_run(
+        tmp_path, fake_llm_factory):
+    store = Store(tmp_path / "data")
+    broken = fake_llm_factory({
         "主题标签与相关层级是两个独立判断": json.dumps({
-            "layer": "edge", "score": 20, "tags": [], "relation": "contextual",
-            "core_path": "", "evidence": "仅背景提及", "reason": "边缘",
-        }),
-        "压缩成一行中文": json.dumps({"title_zh": "边缘译名", "tldr": "一句话"}),
+            "layer": "core", "score": 90, "tags": ["GRB"], "relation": "direct",
+            "core_path": "science", "evidence": "e", "reason": "核心"}),
+        "综述卡片": json.dumps({"title_zh": "标题", "team": "A", "tldr": "t",
+                              "review": "r", "highlight": "h", "relation": "—"}),
+        "只复核下面这一篇文献": "not json",
     })
+
+    sync("2026-07-18", StubSource([_paper("arxiv:1")]), broken, store,
+         fetch_fulltext=lambda p, **k: "BODY", max_workers=1, fetch_dates=False,
+         sleep=lambda s: None)
+
+    stored = store.load_ingest("2026-07-18").items[0]
+    assert stored["decision"] is None
+    assert stored["review_attempts"] == 1
+    assert stored["decision_final"] is False
+
+    repaired = repair_decisions(store, _keyed_llm(fake_llm_factory))
+
+    assert repaired == 1
+    assert store.load_ingest("2026-07-18").items[0]["decision"]["level"] == "reject"
+
+
+def test_repair_gives_up_after_the_configured_number_of_rounds(
+        tmp_path, fake_llm_factory):
     store = Store(tmp_path / "data")
-    src = StubSource([_paper("arxiv:e", "Edge paper", published="2026-07-14")])
-    def no_fulltext(p, **k):
-        raise AssertionError("fetch_fulltext must NOT be called for edge papers")
-    affected = sync("2026-07-18", src, llm, store, fetch_fulltext=no_fulltext, max_workers=2)
-    assert affected == ["2026-07-14"]
-    it = store.load_day("2026-07-14").items[0]
-    assert it["score"].layer == "edge"
-    assert it["summary"].title_zh == "边缘译名"
-    assert it["summary"].tldr == "一句话"
+    item = make_item(_paper("arxiv:1"), RelevanceScore(90, [], "core", "r"), None,
+                     dates={"ingested": "2026-07-18"})
+    item["review_attempts"] = 2
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    broken = fake_llm_factory({"只复核下面这一篇文献": "not json"})
+
+    assert repair_decisions(store, broken, sleep=lambda s: None) == 0
+
+    stored = store.load_ingest("2026-07-18").items[0]
+    assert stored["review_attempts"] == 3
+    assert stored["decision_final"] is True
+
+    # never tried again -- and defensively stubbed so a future regression here
+    # fails fast instead of burning ~151s of real editorial backoff.
+    assert repair_decisions(store, broken, sleep=lambda s: None) == 0
+
+
+def test_sync_skips_already_seen_without_reprocessing(tmp_path, fake_llm_factory):
+    store = Store(tmp_path / "data")
+    store.mark_seen(["arxiv:1"], "2026-07-17")
+    llm = _keyed_llm(fake_llm_factory)
+
+    assert _sync(store, [_paper("arxiv:1")], llm) == []
+    assert not any("综述卡片" in c["user"] for c in llm.calls)
+
+
+def test_sync_does_not_duplicate_a_paper_already_stored_but_not_yet_marked_seen(
+        tmp_path, fake_llm_factory):
+    """Simulates a crash between save_ingest() and mark_seen(): the paper is
+    already on disk, but the seen index was never updated to reflect it. The
+    next sync must not treat it as brand new -- no reprocessing, no second
+    stored copy."""
+    store = Store(tmp_path / "data")
+    paper = _paper("arxiv:1", published="2026-07-14")
+    item = make_item(paper, RelevanceScore(90, [], "core", "r"), None,
+                     dates={"ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    # seen index deliberately left untouched -- this is the crash state.
+
+    llm = _keyed_llm(fake_llm_factory)
+    affected = _sync(store, [paper], llm, run_date="2026-07-19")
+
+    assert affected == []
+    assert store.list_ingest_dates() == ["2026-07-18"]   # no second copy written
+    assert llm.calls == []                                # not reprocessed at all
+    # ...and it is now in the seen index, pointing at the file that holds it:
+    # without that dated entry enrich_seen could never locate it, so the paper
+    # would be safe from re-review but frozen without its journal dates.
+    assert store.locate("arxiv:1") == "2026-07-18"
+
+
+def test_sync_marks_a_stored_but_unseen_paper_seen_with_its_stored_day(
+        tmp_path, fake_llm_factory):
+    """Same crash state, but with the one-time identity migration already done —
+    so it is the stored-papers guard, not `ensure_seen_identities`, that catches
+    the paper. It must still come out of the run locatable."""
+    store = Store(tmp_path / "data")
+    store.ensure_seen_identities()          # an earlier run already migrated
+    paper = _paper("arxiv:1", published="2026-07-14")
+    item = make_item(paper, RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-07-14", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+
+    llm = _keyed_llm(fake_llm_factory)
+    assert _sync(store, [paper], llm, run_date="2026-07-19") == []
+
+    assert llm.calls == []
+    assert store.locate("arxiv:1") == "2026-07-18"

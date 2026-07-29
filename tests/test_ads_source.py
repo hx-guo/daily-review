@@ -1,7 +1,7 @@
 from gdr.sources.ads_source import ADSSource, doc_to_paper
 
 
-def _doc(n=1, *, entdate="2026-07-18"):
+def _doc(n=1, *, entdate="2026-07-18", pubdate="2026-07-00"):
     return {
         "bibcode": f"2026ApJ...999...{n}A",
         "title": [f"A GECAM gamma-ray burst study {n}"],
@@ -10,6 +10,7 @@ def _doc(n=1, *, entdate="2026-07-18"):
         "keyword": ["Gamma-ray bursts"],
         "arxiv_class": ["astro-ph.HE"],
         "entdate": entdate,
+        "pubdate": pubdate,
         "date": "2026-07-01T00:00:00.000Z",
         "doi": ["10.48550/arXiv.2607.00001", f"10.1234/example.{n}"],
         "identifier": [f"arXiv:2607.0000{n}"],
@@ -39,6 +40,21 @@ def test_doc_to_paper_maps_ads_metadata_and_identifiers():
         "doi": "10.1234/example.1",
     }
     assert p.pdf_url == "https://arxiv.org/pdf/2607.00001"
+
+
+def test_doc_to_paper_keeps_the_journal_pubdate_apart_from_the_entry_date():
+    """`published` is the ADS entry day (the fetch-window key); the day the
+    journal published the paper is a different date, often months earlier and
+    often month-only. Both are kept, verbatim."""
+    p = doc_to_paper(_doc(entdate="2026-08-05", pubdate="2025-03-00"))
+    assert p.published == "2026-08-05"
+    assert p.pubdate == "2025-03-00"
+
+
+def test_doc_to_paper_without_a_pubdate_leaves_it_empty():
+    doc = _doc()
+    del doc["pubdate"]
+    assert doc_to_paper(doc).pubdate == ""
 
 
 def test_fetch_recent_queries_entry_window_with_bearer_token_and_paginates():

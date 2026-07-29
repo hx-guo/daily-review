@@ -1,6 +1,7 @@
 import json
 import re
-from concurrent.futures import ThreadPoolExecutor
+import sys
+import time
 from typing import Callable
 
 from gdr import config
@@ -11,7 +12,7 @@ from gdr.models import DailyReview
 
 _SYSTEM = "你是审慎的高能天体物理新闻编辑。严格依据给定论文材料，只输出 JSON。"
 
-_CANDIDATE_TMPL = """今天是 {date}。只复核下面这一篇文献：
+_CANDIDATE_TMPL = """本文预印本日 {preprint}，本站于 {ingested} 收录。只复核下面这一篇文献：
 {digest}
 
 请独立判断这篇论文是否达到新闻门槛；不要与其他论文比较，也不选择主头条：
@@ -69,28 +70,29 @@ _NON_RESEARCH_TITLE = re.compile(
 )
 
 
-def _complete_json_object(
-        llm: LLM, user: str, validate: Callable[[dict], dict]) -> dict:
+def _complete_json_object(llm: LLM, user: str, validate: Callable[[dict], dict],
+                          *, sleep=time.sleep) -> dict:
     retry_note = """
 
 上一次响应无法解析为完整 JSON 对象。请重新执行同一任务，只输出一个语法完整的 JSON 对象；
 不要使用 Markdown 代码块或附加说明。继续严格把关，必要时减少候选，不要为了修复格式而降低门槛。
 """
     last_error: Exception | None = None
-    for attempt in range(2):
-        text = llm.complete(
-            model=tier_model("synth"),
-            system=_SYSTEM,
-            user=user if attempt == 0 else user + retry_note,
-        )
+    for attempt in range(config.EDITORIAL_ATTEMPTS):
+        if attempt:
+            sleep(config.EDITORIAL_BACKOFF[
+                min(attempt - 1, len(config.EDITORIAL_BACKOFF) - 1)])
         try:
+            text = llm.complete(model=tier_model("synth"), system=_SYSTEM,
+                                user=user if attempt == 0 else user + retry_note)
             data = extract_json(text)
             if not isinstance(data, dict):
-                raise TypeError("daily review response must be a JSON object")
+                raise TypeError("editorial response must be a JSON object")
             return validate(data)
-        except (ValueError, TypeError) as exc:
+        except Exception as exc:
             last_error = exc
-    raise TypeError("daily review returned invalid JSON twice") from last_error
+    raise TypeError("editorial decision returned invalid JSON "
+                    f"{config.EDITORIAL_ATTEMPTS} times") from last_error
 
 
 def _candidate_decision(data: dict, paper_id: str) -> dict:
@@ -144,13 +146,6 @@ def _watch_signal(signal: str, paper_id: str) -> str:
     the model, so the link can never point at a paper the signal isn't about."""
     text = _WATCH_ID_RE.sub("", signal).strip(" 　·:：、，,；;")
     return f"{text}（{paper_id}）" if text else ""
-
-
-def _parallel_map(fn, values: list, max_workers: int) -> list:
-    if max_workers <= 1 or len(values) <= 1:
-        return [fn(value) for value in values]
-    with ThreadPoolExecutor(max_workers=min(max_workers, len(values))) as pool:
-        return list(pool.map(fn, values))
 
 
 def _news_eligible(item: dict) -> bool:
@@ -223,97 +218,118 @@ def _quiet_overview(items: list[dict], lead: str) -> str:
     return f"当日 {len(items)} 篇核心与相关文献{lead}{tail}"
 
 
-def make_daily_review(date: str, items: list[dict], llm: LLM,
-                      editorial_workers: int | None = None) -> DailyReview:
+_LEVEL_ORDER = {"breaking": 0, "headline": 1}
+
+
+def compose_review(date: str, items: list[dict]) -> DailyReview:
+    """Build a day's review from the decisions already stored on its papers.
+
+    Pure: no LLM, no I/O, no randomness. Both time axes and every historical
+    version of an archive day are just different item sets fed through here, so
+    this function must stay a deterministic projection of `item["decision"]`.
+    """
     if not items:
-        return DailyReview(
-            date=date, overview="今日无新文献。", highlights="—", trends="—",
-            editorial_version=2, stories=[], watchlist=[],
-        )
+        return DailyReview(date=date, overview="今日无新文献。", highlights="—",
+                           trends="—", editorial_version=2, stories=[], watchlist=[])
 
-    editorial_workers = editorial_workers or config.EDITORIAL_MAX_CONCURRENCY
-    eligible_items = []
-    seen_ids = set()
-    for item in items:
-        paper_id = item["paper"].id
-        if paper_id not in seen_ids and _news_eligible(item):
-            eligible_items.append(item)
-            seen_ids.add(paper_id)
-    if not eligible_items:
-        return DailyReview(
-            date=date,
-            overview=_quiet_overview(items, "中无原始研究达到新闻门槛"),
-            highlights="—", trends="—", editorial_version=2,
-            stories=[], watchlist=[],
-        )
+    considered = [it for it in items if it["score"].layer in ("core", "related")]
+    reviewed = [it for it in considered if it.get("decision")]
+    retained = [it for it in reviewed if it["decision"]["level"] != "reject"]
+    retained.sort(key=lambda it: (_LEVEL_ORDER.get(it["decision"]["level"], 9),
+                                  -it["score"].score))
 
+    stories = [
+        {
+            "paper_id": it["paper"].id,
+            "level": it["decision"]["level"],
+            "title": it["decision"]["title"],
+            "evidence": it["decision"]["evidence"],
+            "impact": it["decision"]["impact"],
+            "reason": it["decision"]["reason"],
+        }
+        for it in retained
+    ]
+    watchlist = []
+    for it in retained:
+        watchlist.extend(it["decision"].get("watchlist") or [])
+    watchlist = list(dict.fromkeys(watchlist))
+
+    if stories:
+        overview = "今日有通过严格复核的重大进展。"
+    elif reviewed:
+        overview = _quiet_overview(considered, "均为常规推进")
+    else:
+        overview = _quiet_overview(considered, "中无原始研究达到新闻门槛")
+
+    return DailyReview(date=date, overview=overview,
+                       highlights=_legacy_story_lines(stories),
+                       trends="\n".join(watchlist), editorial_version=2,
+                       stories=stories, watchlist=watchlist)
+
+
+class Breaker:
+    """Stop calling a dead upstream. One success anywhere resets it."""
+
+    def __init__(self, limit: int | None = None):
+        self.limit = limit or config.EDITORIAL_BREAKER_LIMIT
+        self.consecutive_failures = 0
+
+    def tripped(self) -> bool:
+        return self.consecutive_failures >= self.limit
+
+    def record(self, ok: bool) -> None:
+        self.consecutive_failures = 0 if ok else self.consecutive_failures + 1
+
+
+def review_paper(item: dict, llm: LLM, *, breaker: Breaker | None = None,
+                 sleep=time.sleep) -> dict | None:
+    """Decide one paper's news status, once and for all.
+
+    Returns a decision dict, or None when the paper is not eligible for news
+    review (edge layer, corrections, unbylined blurbs) or when every attempt
+    failed. A None from failure is recoverable: the caller stores it as a missing
+    decision and a later run retries it.
+    """
+    if item["score"].layer not in ("core", "related") or not _news_eligible(item):
+        return None
+    if breaker is not None and breaker.tripped():
+        return None
+
+    paper_id = item["paper"].id
+    dates = item.get("dates") or {}
     try:
-        def nominate(item: dict) -> dict:
-            paper_id = item["paper"].id
-            user = _CANDIDATE_TMPL.format(
-                date=date, digest=_digest([item]))
-            return _complete_json_object(
-                llm, user,
-                lambda data: _candidate_decision(data, paper_id),
-            )
+        candidate = _complete_json_object(
+            llm,
+            _CANDIDATE_TMPL.format(preprint=dates.get("preprint", "") or "未知",
+                                   ingested=dates.get("ingested", "") or "未知",
+                                   digest=_digest([item])),
+            lambda data: _candidate_decision(data, paper_id), sleep=sleep)
+        if candidate["decision"] == "reject":
+            decision = {"paper_id": paper_id, "decision": "reject", "title": "",
+                        "evidence": "", "impact": "",
+                        "reason": candidate["reason"], "watchlist": []}
+        else:
+            decision = _complete_json_object(
+                llm,
+                _VERIFY_TMPL.format(
+                    digest=_digest([item], include_machine_guide=False),
+                    candidate=json.dumps(candidate, ensure_ascii=False)),
+                lambda data: _verified_decision(data, paper_id,
+                                                candidate["decision"]),
+                sleep=sleep)
+    except Exception as exc:
+        print(f"[gdr] review failed for {paper_id}: {exc}", file=sys.stderr)
+        if breaker is not None:
+            breaker.record(False)
+            if breaker.tripped():
+                print(f"[gdr] editorial breaker tripped after "
+                      f"{breaker.consecutive_failures} consecutive failures; "
+                      "pausing further paper reviews", file=sys.stderr)
+        return None
 
-        nominations = _parallel_map(
-            nominate, eligible_items, editorial_workers)
-        candidates = [item for item in nominations
-                      if item["decision"] != "reject"]
-        if not candidates:
-            return DailyReview(
-                date=date,
-                overview=_quiet_overview(eligible_items, "均为常规推进"),
-                highlights="—", trends="—", editorial_version=2,
-                stories=[], watchlist=[],
-            )
-        item_by_id = {item["paper"].id: item for item in eligible_items}
-
-        def verify(candidate: dict) -> dict:
-            paper_id = candidate["paper_id"]
-            user = _VERIFY_TMPL.format(
-                digest=_digest(
-                    [item_by_id[paper_id]], include_machine_guide=False),
-                candidate=json.dumps(candidate, ensure_ascii=False),
-            )
-            return _complete_json_object(
-                llm, user,
-                lambda data: _verified_decision(
-                    data, paper_id, candidate["decision"]),
-            )
-
-        decisions = _parallel_map(verify, candidates, editorial_workers)
-        stories = [
-            {
-                "paper_id": decision["paper_id"],
-                "level": decision["decision"],
-                "title": decision["title"],
-                "evidence": decision["evidence"],
-                "impact": decision["impact"],
-                "reason": decision["reason"],
-            }
-            for decision in decisions if decision["decision"] != "reject"
-        ]
-        watchlist = []
-        for decision in decisions:
-            if decision["decision"] != "reject":
-                watchlist.extend(decision["watchlist"])
-        watchlist = list(dict.fromkeys(watchlist))
-        overview = ("今日有通过严格复核的重大进展。" if stories
-                    else _quiet_overview(eligible_items, "均为常规推进"))
-        return DailyReview(
-            date=date,
-            overview=overview,
-            highlights=_legacy_story_lines(stories),
-            trends="\n".join(watchlist),
-            editorial_version=2,
-            stories=stories,
-            watchlist=watchlist,
-        )
-    except (ValueError, TypeError):
-        return DailyReview(
-            date=date, overview="新闻候选复核生成失败。",
-            highlights="（新闻复核生成失败）", trends="—",
-            editorial_version=2, stories=[], watchlist=[],
-        )
+    if breaker is not None:
+        breaker.record(True)
+    return {"level": decision["decision"], "title": decision["title"],
+            "evidence": decision["evidence"], "impact": decision["impact"],
+            "reason": decision["reason"], "watchlist": decision["watchlist"],
+            "reviewed_at": dates.get("ingested", "")}

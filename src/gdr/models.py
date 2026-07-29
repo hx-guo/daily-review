@@ -20,6 +20,11 @@ class Paper:
     # Keeping these alongside the canonical `id` lets arXiv and ADS records merge
     # without changing the IDs already persisted in daily JSON files.
     external_ids: dict[str, str] = field(default_factory=dict)
+    # The source's own publication date, kept verbatim and unparsed (ADS deposits
+    # month-only values such as "2026-07-00"). Distinct from `published`, which
+    # for an ADS record is the day ADS indexed it — the fetch-window key, not a
+    # journal date.
+    pubdate: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -94,36 +99,72 @@ class DailyReview:
         return cls(**d)
 
 
+EMPTY_DATES = {
+    "preprint": "", "accepted": "", "published": "",
+    "published_precision": "", "published_source": "", "received": "",
+    "ingested": "",
+}
+
+
+def make_item(paper: Paper, score: RelevanceScore, summary: PaperSummary | None, *,
+              dates: dict, decision: dict | None = None) -> dict:
+    """Assemble one stored item. `archive_date` is derived, never passed in, so it
+    can never drift from the dates it is supposed to summarise. A paper with no
+    known academic date falls back to its ingest day — it still has to land on a
+    calendar day somewhere."""
+    from gdr.dates import archive_date  # local import: models must stay import-light
+
+    merged = {**EMPTY_DATES, **(dates or {})}
+    return {
+        "paper": paper,
+        "score": score,
+        "summary": summary,
+        "dates": merged,
+        "archive_date": archive_date(merged) or merged["ingested"],
+        "decision": decision,
+        "review_attempts": 0,
+        "decision_final": False,
+    }
+
+
+def item_to_dict(item: dict) -> dict:
+    return {
+        "paper": item["paper"].to_dict(),
+        "score": item["score"].to_dict(),
+        "summary": item["summary"].to_dict() if item.get("summary") else None,
+        "dates": dict(item["dates"]),
+        "archive_date": item["archive_date"],
+        "decision": item.get("decision"),
+        "review_attempts": item.get("review_attempts", 0),
+        "decision_final": item.get("decision_final", False),
+    }
+
+
+def item_from_dict(d: dict) -> dict:
+    return {
+        "paper": Paper.from_dict(d["paper"]),
+        "score": RelevanceScore.from_dict(d["score"]),
+        "summary": PaperSummary.from_dict(d["summary"]) if d.get("summary") else None,
+        "dates": {**EMPTY_DATES, **(d.get("dates") or {})},
+        "archive_date": d.get("archive_date", ""),
+        "decision": d.get("decision"),
+        "review_attempts": d.get("review_attempts", 0),
+        "decision_final": d.get("decision_final", False),
+    }
+
+
 @dataclass
-class DayData:
-    date: str
-    review: DailyReview
-    items: list[dict]  # {"paper": Paper, "score": RelevanceScore, "summary": PaperSummary | None}
-    revisions: list[dict] = field(default_factory=list)
+class IngestDay:
+    """One run's harvest. Files are keyed by ingest date and, on the normal path,
+    are written once and never rewritten."""
+    ingested: str
+    items: list[dict]
 
     def to_dict(self) -> dict:
-        return {
-            "date": self.date,
-            "review": self.review.to_dict(),
-            "items": [
-                {
-                    "paper": it["paper"].to_dict(),
-                    "score": it["score"].to_dict(),
-                    "summary": it["summary"].to_dict() if it["summary"] else None,
-                }
-                for it in self.items
-            ],
-            "revisions": self.revisions,
-        }
+        return {"ingested": self.ingested,
+                "items": [item_to_dict(it) for it in self.items]}
 
     @classmethod
-    def from_dict(cls, d: dict) -> DayData:
-        items = [
-            {
-                "paper": Paper.from_dict(it["paper"]),
-                "score": RelevanceScore.from_dict(it["score"]),
-                "summary": PaperSummary.from_dict(it["summary"]) if it.get("summary") else None,
-            }
-            for it in d["items"]
-        ]
-        return cls(date=d["date"], review=DailyReview.from_dict(d["review"]), items=items, revisions=d.get("revisions", []))
+    def from_dict(cls, d: dict) -> IngestDay:
+        return cls(ingested=d["ingested"],
+                   items=[item_from_dict(it) for it in d.get("items", [])])

@@ -1,4 +1,6 @@
-from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview, DayData
+import json
+
+from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview
 
 
 def _paper():
@@ -36,47 +38,6 @@ def test_relevance_from_old_dict_defaults_editorial_fields():
     assert score.evidence == ""
 
 
-def test_daydata_roundtrip():
-    p = _paper()
-    score = RelevanceScore(
-        score=88, tags=["GRB"], layer="core", reason="direct GECAM topic"
-    )
-    summ = PaperSummary(
-        paper_id=p.id,
-        title_zh="一项伽马暴研究",
-        team="A. Author 等",
-        tldr="研究了一个伽马暴",
-        review="……",
-        highlight="……",
-        relation="……",
-    )
-    review = DailyReview(
-        date="2026-07-18", overview="今日 1 篇", highlights="……", trends="……"
-    )
-    day = DayData(
-        date="2026-07-18",
-        review=review,
-        items=[{"paper": p, "score": score, "summary": summ}],
-    )
-    back = DayData.from_dict(day.to_dict())
-    assert back == day
-    assert back.items[0]["paper"].title == "A GRB study"
-    assert back.items[0]["summary"].title_zh == "一项伽马暴研究"
-
-
-def test_daydata_revisions_roundtrip():
-    p = _paper()
-    review = DailyReview(date="2026-07-14", overview="o2", highlights="h2", trends="t2")
-    rev = {"synced": "2026-07-16", "n_papers": 3,
-           "review": DailyReview(date="2026-07-14", overview="o1", highlights="h1", trends="t1").to_dict()}
-    day = DayData(date="2026-07-14", review=review,
-                  items=[{"paper": p, "score": RelevanceScore(90, ["GRB"], "core", ""), "summary": None}],
-                  revisions=[rev])
-    back = DayData.from_dict(day.to_dict())
-    assert back == day
-    assert back.revisions[0]["review"]["overview"] == "o1"
-
-
 def test_paper_summary_backcompat_without_english_fields():
     old = {"paper_id": "arxiv:1", "title_zh": "标题", "team": "", "tldr": "", "review": "",
            "highlight": "", "relation": ""}
@@ -87,14 +48,6 @@ def test_paper_summary_backcompat_without_english_fields():
     assert PaperSummary.from_dict(s2.to_dict()) == s2
 
 
-def test_daydata_from_dict_without_revisions_defaults_empty():
-    p = _paper()
-    d = {"date": "2026-07-14",
-         "review": DailyReview("2026-07-14", "o", "h", "t").to_dict(),
-         "items": [{"paper": p.to_dict(), "score": RelevanceScore(90, [], "core", "").to_dict(), "summary": None}]}
-    assert DayData.from_dict(d).revisions == []
-
-
 def test_daily_review_from_old_dict_defaults_headline_fields():
     review = DailyReview.from_dict({"date": "2026-07-14", "overview": "旧概览",
                                     "highlights": "", "trends": ""})
@@ -102,3 +55,64 @@ def test_daily_review_from_old_dict_defaults_headline_fields():
     assert review.developments == []
     assert review.editorial_version == 0
     assert review.stories == []
+
+
+from gdr.models import IngestDay, item_from_dict, item_to_dict, make_item
+
+
+def _ing_paper(pid="arxiv:1"):
+    return Paper(id=pid, source="arxiv", title="t", authors=["A"], abstract="a",
+                 categories=[], published="2026-03-12", url="")
+
+
+def _ing_score():
+    return RelevanceScore(score=90, tags=["GRB"], layer="core", reason="r")
+
+
+def test_make_item_computes_archive_date_from_the_earliest_academic_date():
+    item = make_item(_ing_paper(), _ing_score(), None,
+                     dates={"preprint": "2026-03-12", "accepted": "2026-06-21",
+                            "published": "2026-07-08", "ingested": "2026-07-22"})
+
+    assert item["archive_date"] == "2026-03-12"
+    assert item["dates"]["ingested"] == "2026-07-22"
+    assert item["decision"] is None
+    assert item["review_attempts"] == 0
+    assert item["decision_final"] is False
+
+
+def test_make_item_without_academic_dates_archives_under_the_ingest_day():
+    """A paper we know nothing about still has to land on some calendar day."""
+    item = make_item(_ing_paper(), _ing_score(), None, dates={"ingested": "2026-07-22"})
+
+    assert item["archive_date"] == "2026-07-22"
+
+
+def test_ingest_day_roundtrips_dates_and_decision():
+    decision = {"level": "headline", "title": "T", "evidence": "E", "impact": "I",
+                "reason": "R", "watchlist": ["w（arxiv:1）"], "reviewed_at": "2026-07-22"}
+    item = make_item(_ing_paper(), _ing_score(), None,
+                     dates={"preprint": "2026-03-12", "ingested": "2026-07-22"},
+                     decision=decision)
+    day = IngestDay(ingested="2026-07-22", items=[item])
+
+    back = IngestDay.from_dict(json.loads(json.dumps(day.to_dict())))
+
+    assert back.ingested == "2026-07-22"
+    assert back.items[0]["paper"].id == "arxiv:1"
+    assert back.items[0]["score"].layer == "core"
+    assert back.items[0]["summary"] is None
+    assert back.items[0]["decision"]["level"] == "headline"
+    assert back.items[0]["archive_date"] == "2026-03-12"
+
+
+def test_item_from_dict_defaults_missing_optional_fields():
+    raw = item_to_dict(make_item(_ing_paper(), _ing_score(), None,
+                                 dates={"ingested": "2026-07-22"}))
+    del raw["review_attempts"], raw["decision_final"], raw["decision"]
+
+    item = item_from_dict(raw)
+
+    assert item["decision"] is None
+    assert item["review_attempts"] == 0
+    assert item["decision_final"] is False

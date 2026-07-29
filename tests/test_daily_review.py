@@ -1,251 +1,170 @@
 import json
 import re
-import threading
-import time
 
-from gdr.daily_review import make_daily_review
-from gdr.models import Paper, PaperSummary, RelevanceScore
+from gdr import config
+from gdr.daily_review import Breaker, review_paper
+from gdr.models import Paper, PaperSummary, RelevanceScore, make_item
 
 
-def _item(pid="arxiv:1", layer="core", *, title=None, authors=None,
-          abstract=None, doi=None):
+def _item(pid="arxiv:1", layer="core", *, title=None, authors=None, abstract=None,
+          doi=None, preprint="2026-03-12", ingested="2026-07-18"):
     paper = Paper(
         id=pid, source="arxiv", title=title or f"paper {pid}",
         authors=authors if authors is not None else ["A. Researcher"],
         abstract=abstract if abstract is not None else
         "We report a directly measured transient result with quantitative evidence.",
-        categories=[], published="2026-07-18", url="", doi=doi,
-    )
+        categories=[], published=preprint, url="", doi=doi)
     score = RelevanceScore(score=90, tags=["GRB"], layer=layer, reason="直接研究GRB")
     summary = PaperSummary(paper_id=pid, title_zh=f"伽马暴研究 {pid}", team="",
-                           tldr="研究了伽马暴", review="", highlight="给出首次观测", relation="")
-    return {"paper": paper, "score": score, "summary": summary}
+                           tldr="研究了伽马暴", review="", highlight="给出首次观测",
+                           relation="")
+    return make_item(paper, score, summary,
+                     dates={"preprint": preprint, "ingested": ingested})
 
 
 def _candidate(pid, decision="headline"):
-    return {
-        "paper_id": pid,
-        "decision": decision,
-        "reason": "摘要给出可能达到新闻门槛的具体结果。",
-    }
+    return json.dumps({"paper_id": pid, "decision": decision,
+                       "reason": "摘要给出可能达到新闻门槛的具体结果。"})
 
 
-def _verified(pid, decision="headline"):
+def _verified(pid, decision="headline", watchlist=None):
     retained = decision != "reject"
-    return {
-        "paper_id": pid,
-        "decision": decision,
+    return json.dumps({
+        "paper_id": pid, "decision": decision,
         "title": f"重大进展 {pid}" if retained else "",
         "evidence": "摘要报告了具体的新观测结果。" if retained else "",
         "impact": "改变了对爆发机制的认识。" if retained else "",
         "reason": "结果通过严格复核。" if retained else "未达到重大新闻门槛。",
-        "watchlist": ["等待独立确认"] if retained else [],
-    }
+        "watchlist": watchlist if watchlist is not None else (
+            ["等待独立确认"] if retained else []),
+    })
 
 
-def test_make_daily_review_uses_two_passes_and_equal_stories(fake_llm_factory):
-    llm = fake_llm_factory([
-        json.dumps(_candidate("arxiv:1", "breaking")),
-        json.dumps(_verified("arxiv:1", "breaking")),
-    ])
+def test_review_paper_runs_two_passes_on_a_single_paper(fake_llm_factory):
+    llm = fake_llm_factory([_candidate("arxiv:1", "breaking"),
+                           _verified("arxiv:1", "breaking")])
 
-    review = make_daily_review("2026-07-18", [_item()], llm)
+    decision = review_paper(_item(), llm)
 
-    assert review.editorial_version == 2
-    assert review.stories[0]["level"] == "breaking"
-    assert review.stories[0]["paper_id"] == "arxiv:1"
-    assert review.headline == "" and review.headline_paper_id == ""
+    assert decision["level"] == "breaking"
+    assert decision["title"] == "重大进展 arxiv:1"
+    assert decision["reviewed_at"] == "2026-07-18"
     assert len(llm.calls) == 2
     assert "不选择主头条" in llm.calls[0]["user"]
-    assert "不选主头条" in llm.calls[1]["user"]
-    assert "机器导读" in llm.calls[0]["user"]
-    assert "机器导读" not in llm.calls[1]["user"]
+    assert "第二位、更加怀疑" in llm.calls[1]["user"]
 
 
-def test_story_count_has_no_editorial_cap(fake_llm_factory):
-    items = [_item(f"arxiv:{i}") for i in range(6)]
-    levels = ["breaking" if i % 2 else "headline" for i in range(6)]
-    llm = fake_llm_factory([
-        *[json.dumps(_candidate(f"arxiv:{i}", levels[i])) for i in range(6)],
-        *[json.dumps(_verified(f"arxiv:{i}", levels[i])) for i in range(6)],
-    ])
+def test_prompt_carries_the_papers_own_preprint_and_ingest_dates(fake_llm_factory):
+    """The decision is cached forever, so it must not depend on "today"."""
+    llm = fake_llm_factory([_candidate("arxiv:1"), _verified("arxiv:1")])
 
-    review = make_daily_review(
-        "2026-07-18", items, llm, editorial_workers=1)
+    review_paper(_item(preprint="2026-03-12", ingested="2026-07-18"), llm)
 
-    assert len(review.stories) == 6
-    assert len(llm.calls) == 12
+    assert "本文预印本日 2026-03-12" in llm.calls[0]["user"]
+    assert "本站于 2026-07-18 收录" in llm.calls[0]["user"]
+    assert "今天是" not in llm.calls[0]["user"]
 
 
-def test_verifier_only_receives_nominated_paper(fake_llm_factory):
-    nominated = _item("arxiv:nominated", title="NOMINATED SOURCE TITLE")
-    ordinary = _item("arxiv:ordinary", title="ORDINARY SOURCE TITLE")
-    llm = fake_llm_factory([
-        json.dumps(_candidate("arxiv:nominated")),
-        json.dumps(_candidate("arxiv:ordinary", "reject")),
-        json.dumps(_verified("arxiv:nominated")),
-    ])
+def test_rejected_paper_yields_a_reject_decision_not_none(fake_llm_factory):
+    llm = fake_llm_factory([_candidate("arxiv:1", "reject")])
 
-    make_daily_review(
-        "2026-07-18", [nominated, ordinary], llm, editorial_workers=1)
+    decision = review_paper(_item(), llm)
 
-    assert "NOMINATED SOURCE TITLE" in llm.calls[2]["user"]
-    assert "ORDINARY SOURCE TITLE" not in llm.calls[2]["user"]
-
-
-def test_malformed_json_is_retried_without_lowering_threshold(fake_llm_factory):
-    llm = fake_llm_factory([
-        "not valid json",
-        json.dumps(_candidate("arxiv:1")),
-        json.dumps(_verified("arxiv:1")),
-    ])
-
-    review = make_daily_review("2026-07-18", [_item()], llm)
-
-    assert [item["paper_id"] for item in review.stories] == ["arxiv:1"]
-    assert len(llm.calls) == 3
-    assert "不要为了修复格式而降低门槛" in llm.calls[1]["user"]
-
-
-def test_wrong_json_schema_is_retried_instead_of_becoming_false_zero(
-        fake_llm_factory):
-    llm = fake_llm_factory([
-        json.dumps({"candidates": []}),
-        json.dumps(_candidate("arxiv:1")),
-        json.dumps(_verified("arxiv:1")),
-    ])
-
-    review = make_daily_review("2026-07-18", [_item()], llm)
-
-    assert [item["paper_id"] for item in review.stories] == ["arxiv:1"]
-    assert len(llm.calls) == 3
-
-
-def test_two_malformed_responses_return_failure_review(fake_llm_factory):
-    llm = fake_llm_factory(["not json", "still not json"])
-
-    review = make_daily_review("2026-07-18", [_item()], llm)
-
-    assert review.stories == []
-    assert review.overview == "新闻候选复核生成失败。"
-
-
-def test_invalid_or_incomplete_verified_story_fails_closed(fake_llm_factory):
-    incomplete = _verified("arxiv:1")
-    incomplete["evidence"] = ""
-    llm = fake_llm_factory([
-        json.dumps(_candidate("arxiv:1")),
-        json.dumps(incomplete),
-        json.dumps(incomplete),
-    ])
-
-    review = make_daily_review("2026-07-18", [_item()], llm)
-
-    assert review.stories == []
-    assert review.overview == "新闻候选复核生成失败。"
-
-
-def test_secondary_nature_briefing_cannot_become_story(fake_llm_factory):
-    briefing_id = "ads:2026Natur.655R.285."
-    briefing = _item(
-        briefing_id,
-        title="Neutrino's nursery found: the `Shadow Blaster'",
-        authors=[],
-        abstract="A particle detected at the South Pole was born in a distant galaxy.",
-        doi="10.1038/d41586-026-02034-1",
-    )
-    original = _item("arxiv:original")
-    llm = fake_llm_factory([
-        json.dumps(_candidate("arxiv:original")),
-        json.dumps(_verified("arxiv:original")),
-    ])
-
-    review = make_daily_review(
-        "2026-07-18", [briefing, original], llm, editorial_workers=1)
-
-    assert [story["paper_id"] for story in review.stories] == ["arxiv:original"]
-    assert briefing_id not in llm.calls[0]["user"]
-    assert "原文摘要" in llm.calls[0]["user"]
-    assert "不能作为第二轮新闻证据" in llm.calls[0]["user"]
-
-
-def test_both_per_paper_editorial_passes_run_concurrently():
-    class ConcurrentLLM:
-        def __init__(self):
-            self.active = {"nominate": 0, "verify": 0}
-            self.max_active = {"nominate": 0, "verify": 0}
-            self.lock = threading.Lock()
-
-        def complete(self, model, system, user, temperature=0.3):
-            paper_id = re.search(r"paper_id=([^ ]+)", user).group(1)
-            phase = "verify" if "第二位、更加怀疑" in user else "nominate"
-            with self.lock:
-                self.active[phase] += 1
-                self.max_active[phase] = max(
-                    self.max_active[phase], self.active[phase])
-            time.sleep(0.03)
-            with self.lock:
-                self.active[phase] -= 1
-            response = (_verified(paper_id) if phase == "verify"
-                        else _candidate(paper_id))
-            return json.dumps(response)
-
-    llm = ConcurrentLLM()
-    items = [_item(f"arxiv:{i}") for i in range(8)]
-
-    review = make_daily_review(
-        "2026-07-18", items, llm, editorial_workers=8)
-
-    assert len(review.stories) == 8
-    assert llm.max_active["nominate"] >= 4
-    assert llm.max_active["verify"] >= 4
-
-
-def test_correction_and_unbylined_blurb_skip_news_review(fake_llm_factory):
-    llm = fake_llm_factory([])
-    correction = _item("ads:correction", title="Publisher Correction: A result")
-    blurb = _item("ads:blurb", authors=[], abstract="A short editorial blurb.")
-
-    review = make_daily_review("2026-07-18", [correction, blurb], llm)
-
-    assert review.stories == []
-    assert llm.calls == []
-    assert "原始研究" in review.overview
-
-
-def test_quiet_day_overview_carries_the_days_shape(fake_llm_factory):
-    """Design 5c prints this under 「今日无通过复核的重大进展」, so it must add the day's
-    shape rather than restate that there is no headline."""
-    llm = fake_llm_factory([json.dumps(_candidate("arxiv:1", "reject")),
-                            json.dumps(_candidate("arxiv:2", "reject"))])
-
-    review = make_daily_review(
-        "2026-07-18", [_item("arxiv:1"), _item("arxiv:2", layer="related")],
-        llm, editorial_workers=1)
-
-    assert review.stories == []
-    assert review.overview == "当日 2 篇核心与相关文献均为常规推进，核心 1 篇已按优先级列于下方。"
+    assert decision["level"] == "reject"
+    assert decision["title"] == ""
+    assert len(llm.calls) == 1
 
 
 def test_watchlist_signals_carry_their_own_paper_id(fake_llm_factory):
-    """The page turns the trailing id into a cite link, so it is attached from the
-    paper under review — an id the model wrote itself must not survive."""
-    verified = _verified("arxiv:1")
-    verified["watchlist"] = ["等待独立确认", "（arxiv:9999.99999）另一路信号需后随观测"]
-    llm = fake_llm_factory([json.dumps(_candidate("arxiv:1")),
-                            json.dumps(verified)])
+    llm = fake_llm_factory([
+        _candidate("arxiv:1"),
+        _verified("arxiv:1", watchlist=["等待独立确认",
+                                        "（arxiv:9999.99999）另一路信号需后随观测"])])
 
-    review = make_daily_review("2026-07-18", [_item()], llm)
+    decision = review_paper(_item(), llm)
 
-    assert review.watchlist == ["等待独立确认（arxiv:1）",
-                                "另一路信号需后随观测（arxiv:1）"]
+    assert decision["watchlist"] == ["等待独立确认（arxiv:1）",
+                                     "另一路信号需后随观测（arxiv:1）"]
 
 
-def test_empty_day_skips_llm(fake_llm_factory):
+def test_edge_and_non_research_papers_are_never_sent_to_the_model(fake_llm_factory):
     llm = fake_llm_factory([])
-    review = make_daily_review("2026-07-18", [], llm)
-    assert review.date == "2026-07-18"
+
+    assert review_paper(_item(layer="edge"), llm, sleep=lambda s: None) is None
+    assert review_paper(_item(title="Publisher Correction: A result"), llm,
+                        sleep=lambda s: None) is None
+    assert review_paper(_item(authors=[], abstract="A short editorial blurb."),
+                        llm, sleep=lambda s: None) is None
     assert llm.calls == []
-    assert "无新文献" in review.overview
-    assert review.editorial_version == 2
-    assert review.stories == []
+
+
+def test_nine_bad_responses_then_a_good_one_still_succeeds(fake_llm_factory):
+    llm = fake_llm_factory(["not json"] * 9 + [_candidate("arxiv:1", "reject")])
+    slept = []
+
+    decision = review_paper(_item(), llm, sleep=slept.append)
+
+    assert decision["level"] == "reject"
+    assert len(llm.calls) == 10
+    assert slept == list(config.EDITORIAL_BACKOFF)
+
+
+def test_ten_bad_responses_give_up_and_return_none(fake_llm_factory):
+    llm = fake_llm_factory(["not json"] * 10)
+
+    assert review_paper(_item(), llm, sleep=lambda s: None) is None
+    assert len(llm.calls) == 10
+
+
+def test_wrong_schema_is_retried_rather_than_becoming_a_false_reject(fake_llm_factory):
+    llm = fake_llm_factory([json.dumps({"candidates": []}),
+                            _candidate("arxiv:1"), _verified("arxiv:1")])
+
+    decision = review_paper(_item(), llm, sleep=lambda s: None)
+
+    assert decision["level"] == "headline"
+    assert "不要为了修复格式而降低门槛" in llm.calls[1]["user"]
+
+
+def test_verification_cannot_upgrade_a_headline_to_breaking(fake_llm_factory):
+    llm = fake_llm_factory([_candidate("arxiv:1", "headline")]
+                           + [_verified("arxiv:1", "breaking")] * 10)
+
+    assert review_paper(_item(), llm, sleep=lambda s: None) is None
+    assert len(llm.calls) == 11
+
+
+def test_breaker_trips_after_twenty_consecutive_total_failures(fake_llm_factory):
+    breaker = Breaker(limit=2)
+    llm = fake_llm_factory(["not json"] * 20)
+
+    assert review_paper(_item("arxiv:1"), llm, breaker=breaker,
+                        sleep=lambda s: None) is None
+    assert review_paper(_item("arxiv:2"), llm, breaker=breaker,
+                        sleep=lambda s: None) is None
+    assert breaker.tripped()
+
+    before = len(llm.calls)
+    assert review_paper(_item("arxiv:3"), llm, breaker=breaker,
+                        sleep=lambda s: None) is None
+    assert len(llm.calls) == before          # tripped: no further calls at all
+
+
+def test_one_success_resets_the_breaker(fake_llm_factory):
+    breaker = Breaker(limit=2)
+    llm = fake_llm_factory(["not json"] * 10 + [_candidate("arxiv:2", "reject")])
+
+    review_paper(_item("arxiv:1"), llm, breaker=breaker, sleep=lambda s: None)
+    review_paper(_item("arxiv:2"), llm, breaker=breaker, sleep=lambda s: None)
+
+    assert not breaker.tripped()
+
+
+def test_a_failed_paper_is_logged_to_stderr_with_its_id(fake_llm_factory, capsys):
+    """A dead upstream must show up in the log, not just as a silent decision=None
+    (the exact incident config.py's EDITORIAL_ATTEMPTS comment cites)."""
+    llm = fake_llm_factory(["not json"] * 10)
+
+    assert review_paper(_item("arxiv:42"), llm, sleep=lambda s: None) is None
+
+    assert "arxiv:42" in capsys.readouterr().err

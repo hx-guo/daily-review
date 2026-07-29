@@ -24,3 +24,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+markers = [
+    "livedata: asserts a property of the data committed under data/, not of the code",
+]

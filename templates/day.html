@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ meta.cn_date if meta else day.date }} · 高能暂现源每日文献综述{% endblock %}
+{% block title %}{{ meta.cn_date if meta else date }} · 高能暂现源每日文献综述{% endblock %}
 
 {% macro anchor(it) %}paper-{{ it.paper.id | replace(':', '-') | replace('.', '-') }}{% endmacro %}
 
@@ -38,9 +38,20 @@
         </div>
 {% endmacro %}
 
+{%- macro backfill_badge(it) -%}
+{%- if axis == 'archive' and first_ingest and it.dates.ingested != first_ingest -%}
+<span class="backfill-badge">{{ it.dates.ingested[5:] }} 补录</span>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro date_chain_line(it) -%}
+{%- set dc = date_chain(it) -%}
+{%- if dc %}<p class="date-chain">{% for d in dc %}{% if not loop.first %} · {% endif %}{{ d.label }} {{ d.value }}{% endfor %}</p>{% endif -%}
+{%- endmacro -%}
+
 {% macro paper_card(it, seq) %}
-    <article class="card {{ it.score.layer }}" id="{{ anchor(it) }}">
-      <div class="card-seq">{{ seq }}</div>
+    <article class="card {{ it.score.layer }}" id="{{ anchor(it) }}" data-ingest="{{ it.dates.ingested }}">
+      <div class="card-seq">{{ seq }}{{ backfill_badge(it) }}</div>
       <div class="card-body">
         <div class="tagline">{{ tagline(it) }}</div>
         <h3 class="en-title">{{ it.paper.title }}</h3>
@@ -48,6 +59,7 @@
         <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
         {{ abstract_block(it) }}
         {{ ai_zone(it) }}
+        {{ date_chain_line(it) }}
         {{ source_links(it.paper) }}
       </div>
     </article>
@@ -129,7 +141,6 @@
       {% for it in related_items %}<a class="toc-link" href="#{{ anchor(it) }}">{{ it.summary.title_zh if it.summary and it.summary.title_zh else it.paper.title }}</a>{% endfor %}
       {% endif %}
       {% if edge_items %}<div class="toc-group-plain"><a href="#edge">边缘相关 · {{ edge_items|length }}</a></div>{% endif %}
-      {% if day.revisions %}<div class="toc-group-plain"><a href="#revisions">修订历史 · {{ day.revisions|length }} 版</a></div>{% endif %}
     </div>
   </div>
 </div>
@@ -144,8 +155,31 @@
     <div class="masthead-meta">{{ meta.cn_date }} {{ meta.weekday }}　·　数据截至 arXiv / ADS 最新收录日</div>
   </header>
 
+  {% if axis == 'news' and (prev_date or next_date) %}
+  <nav class="news-nav" aria-label="按收录日翻页">
+    {% if prev_date %}<a href="{{ static_prefix }}news/{{ prev_date }}.html">‹ 前一收录日 · {{ prev_date[5:] }}</a>{% else %}<span></span>{% endif %}
+    {% if next_date %}<a href="{{ static_prefix }}news/{{ next_date }}.html">后一收录日 · {{ next_date[5:] }} ›</a>{% endif %}
+  </nav>
+  {% endif %}
+
+  {% if versions %}
+  <nav class="version-bar" aria-label="版本">
+    <span class="version-label">版本</span>
+    <a class="version {{ 'is-current' if not current_version else '' }}"
+       href="{{ static_prefix }}day/{{ date }}.html">最新 · {{ versions[-1].n }} 篇</a>
+    {% for v in versions if v.date != versions[-1].date %}
+    <a class="version {{ 'is-current' if v.current else '' }}"
+       href="{{ static_prefix }}day/{{ v.href }}">{{ v.date[5:] }} · {{ v.n }} 篇</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+
+  {% if batches %}
+  <p class="backfill-note">本页经 {{ batches|length }} 次补录{% for b in batches %} · <button class="backfill-jump" data-ingest="{{ b.date }}">{{ b.date[5:] }} +{{ b.n }}</button>{% endfor %}</p>
+  {% endif %}
+
   {% set ns.sec = ns.sec + 1 %}
-  {% set stories = day.review.stories or [] %}
+  {% set stories = review.stories or [] %}
   {% set breaking = stories | selectattr('level', 'equalto', 'breaking') | list %}
   {% set headline = stories | selectattr('level', 'equalto', 'headline') | list %}
   {# density tiering: breaking always full; headline gets the full treatment only when
@@ -184,11 +218,11 @@
     <div class="hl-empty">
       <div class="headline-kicker">No Breaking · 无突发</div>
       <div class="hl-empty-line">今日无通过复核的重大进展</div>
-      {% if day.review.overview %}<p>{{ day.review.overview }}</p>{% endif %}
+      {% if review.overview %}<p>{{ review.overview }}</p>{% endif %}
     </div>
     {% endif %}
 
-    {{ watchlist(day.review.watchlist) }}
+    {{ watchlist(review.watchlist) }}
   </section>
 
   {% if core_items %}
@@ -209,33 +243,17 @@
       <summary class="fold-bar"><span>边缘相关 {{ edge_items|length }} 篇 · 低相关性</span><span class="fold-plus">展开 ＋</span></summary>
       <div class="fold-body">
         {% for it in edge_items %}
-        <article class="card edge" id="{{ anchor(it) }}">
+        <article class="card edge" id="{{ anchor(it) }}" data-ingest="{{ it.dates.ingested }}">
           <div class="card-body">
-            <div class="tagline">{{ tagline(it) }}</div>
+            <div class="tagline">{{ tagline(it) }}{{ backfill_badge(it) }}</div>
             <h4 class="en-title">{{ it.paper.title }}</h4>
             <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
             {{ abstract_block(it) }}
             {% if it.summary and it.summary.title_zh %}<p class="zh-title-sm">{{ it.summary.title_zh }}{% if it.summary.tldr %}　·　{{ it.summary.tldr }}{% endif %}</p>{% endif %}
+            {{ date_chain_line(it) }}
             {{ source_links(it.paper) }}
           </div>
         </article>
-        {% endfor %}
-      </div>
-    </details>
-  </section>
-  {% endif %}
-
-  {% if day.revisions %}
-  <section class="revisions" id="revisions">
-    <details>
-      <summary class="fold-bar"><span>修订历史 {{ day.revisions|length }} 版</span><span class="fold-plus">展开 ＋</span></summary>
-      <div class="fold-body">
-        {% for rev in day.revisions|reverse %}
-        <div class="revision">
-          <h4>同步于 {{ rev.synced }}　·　当时 {{ rev.n_papers }} 篇</h4>
-          {% if rev.review.stories %}{% for story in rev.review.stories %}<p><strong>{{ story.level | upper }} · {{ story.title }}</strong>　{{ story.impact }}</p>{% endfor %}
-          {% else %}<p>{{ rev.review.overview }}</p>{% endif %}
-        </div>
         {% endfor %}
       </div>
     </details>

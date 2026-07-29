@@ -3,7 +3,8 @@ core/related summaries by re-running `summarize_paper` (which reads full text).
 
 One-time migration for data stored before these fields existed; normal `sync`
 fills them inline going forward. Idempotent (skips summaries that already have
-`authors_en`). Concurrent. Leaves edge items and `revisions` untouched.
+`authors_en`). Concurrent. Leaves edge items untouched. Operates on the
+ingest-keyed layout (`data/ingest/`).
 
 Usage:
     OPENCODE_API_KEY=... python scripts/backfill_english.py
@@ -28,8 +29,8 @@ def _redo(paper, llm):
 def main():
     llm = OpenCodeLLM(api_key=config.get_api_key())
     store = Store(ROOT / "data")
-    for date in store.list_days():
-        day = store.load_day(date)
+    for date in store.list_ingest_dates():
+        day = store.load_ingest(date)
         todo = [it for it in day.items
                 if it["score"].layer in ("core", "related")
                 and it["summary"] is not None
@@ -44,7 +45,7 @@ def main():
                     it["summary"] = fut.result()
                 except Exception as exc:
                     print(f"  {it['paper'].id} failed: {exc}", file=sys.stderr)
-        store.save_day(day)
+        store.save_ingest(day)
         print(f"{date}: refreshed {len(todo)} core/related summaries")
 
 

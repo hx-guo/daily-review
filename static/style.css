@@ -60,6 +60,7 @@ a { color: var(--accent); text-decoration: none; }
   color: var(--ink-zh); white-space: nowrap;
 }
 .sh-vol { font-family: var(--latin); font-style: italic; font-size: 12.5px; color: var(--accent-sub); white-space: nowrap; }
+.sh-axis { font-size: .72rem; letter-spacing: .08em; color: var(--ink-faint); }
 .sh-right { display: flex; align-items: center; gap: 14px; font-size: 12.5px; color: var(--ink-meta); }
 .sh-meta { display: flex; align-items: center; gap: 14px; }
 .sh-div { color: var(--divider); }
@@ -81,6 +82,25 @@ a { color: var(--accent); text-decoration: none; }
 }
 .masthead-sub { font-family: var(--latin); font-size: 12px; letter-spacing: 0.2em; color: var(--accent-sub); }
 .masthead-meta { margin-top: 14px; font-size: 12.5px; color: var(--ink-meta); letter-spacing: 0.06em; }
+
+/* ---------- version bar (archive-day history switcher) ---------- */
+.version-bar {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  margin: 24px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--rule-soft);
+}
+.version-label { font-size: 11.5px; letter-spacing: 0.18em; color: var(--ink-faint); }
+.version { font-size: 13px; color: var(--ink-body); text-decoration: none; border-bottom: 1px solid transparent; }
+.version:hover { border-bottom-color: var(--ink-body); }
+.version.is-current { color: var(--ink-mast); border-bottom-color: var(--ink-mast); }
+
+/* ---------- news-day pager (the news axis's counterpart to the version bar) ---------- */
+.news-nav {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 10px; margin: 24px 0 0; padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.news-nav a { font-size: 13px; color: var(--ink-body); border-bottom: 1px solid transparent; }
+.news-nav a:hover { border-bottom-color: var(--ink-body); }
 
 /* ---------- section headings (roman-numeral pattern) ---------- */
 .sec { margin-top: 40px; }
@@ -243,7 +263,7 @@ a.cite:hover { border-bottom-style: solid; }
   color: var(--accent); border-bottom: 1px solid var(--link-rule);
 }
 
-/* ---------- edge fold & revisions ---------- */
+/* ---------- edge fold ---------- */
 .edge-fold { margin-top: 32px; }
 .fold-bar {
   list-style: none; cursor: pointer;
@@ -260,11 +280,6 @@ details[open] .fold-plus::after { }
 .card.edge .en-title { font-size: 16px; }
 .zh-title-sm { margin: 12px 0 0; font-size: 14px; color: var(--ink-zh); }
 
-.revisions { margin-top: 12px; }
-.revision { border-left: 3px solid var(--hair); padding-left: 14px; margin: 14px 0; }
-.revision h4 { margin: 0 0 6px; font-size: 12.5px; font-weight: 600; color: var(--ink-meta); }
-.revision p { margin: 6px 0; font-size: 13.5px; line-height: 1.8; color: var(--ink-body); }
-
 /* ---------- footer ---------- */
 .paper-footer {
   margin-top: 44px; padding-top: 18px; border-top: 3px double var(--accent);
@@ -272,10 +287,34 @@ details[open] .fold-plus::after { }
   line-height: 1.9; letter-spacing: 0.03em; text-align: center;
 }
 
+/* ---------- backfill note (version-bar companion) & badge ---------- */
+.backfill-note { font-size: 12.5px; color: var(--ink-faint); margin: 14px 0 0; }
+.backfill-jump {
+  font: inherit; color: var(--ink-body); background: none; border: 0; padding: 0;
+  cursor: pointer; border-bottom: 1px dotted var(--rule-soft);
+}
+.backfill-jump:hover { border-bottom-style: solid; }
+.backfill-jump.is-on { color: var(--ink-mast); border-bottom-style: solid; }
+.backfill-badge {
+  display: block; margin-top: 5px; font-size: 11px; letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+.card.is-flagged { background: color-mix(in oklch, var(--alert) 6%, transparent); }
+
+/* ---------- per-card date chain (preprint / accepted / published / ingested) ---------- */
+.date-chain { font-size: 12.5px; color: var(--ink-faint); margin: 8px 0 0; }
+
 /* ---------- archive list ---------- */
+.archive-group h3 {
+  font-weight: 600; font-size: 15px; letter-spacing: 0.08em; color: var(--ink-mast);
+  margin: 26px 0 6px;
+}
+.archive-note { font-size: 12px; color: var(--ink-faint); margin: 0 0 6px; }
 .archive { list-style: none; padding: 0; margin: 24px 0 0; columns: 2; column-gap: 40px; }
 .archive li { margin: 0 0 10px; font-family: var(--latin); font-size: 15px; }
 .archive a { border-bottom: 1px solid var(--link-rule); }
+.archive-n, .archive-rev { font-size: 12px; color: var(--ink-faint); margin-left: 8px; }
+.archive-breaking { font-size: 11px; color: var(--alert); margin-left: 8px; }
 
 /* ---------- TOC drawer (left-margin bookmark tab + slide-out panel) ---------- */
 .toc-drawer { position: absolute; left: 20px; top: 56px; z-index: 12; }
@@ -315,7 +354,12 @@ details[open] .fold-plus::after { }
   .site-header { padding: 12px 16px; gap: 10px; }
   .sh-title { font-size: 14px; letter-spacing: 0.04em; white-space: normal; }
   .sh-vol, .sh-meta { display: none; }
-  .body-wrap { padding: 40px 18px 48px; }
+  /* Left padding is wider than the right on purpose: .toc-drawer becomes a
+     fixed left:0 tab below (30px wide) once the reading column goes full-width,
+     so every line of content — including the card-seq gutter and its
+     backfill-badge — needs to start at x >= 36px or the tab visually covers it
+     at whatever scroll position happens to put it in the tab's fixed y-band. */
+  .body-wrap { padding: 40px 18px 48px 36px; }
   .reading { max-width: 100%; }
   .masthead h1 { font-size: 25px; white-space: normal; letter-spacing: 0.06em; }
   .masthead-sub { letter-spacing: 0.12em; }

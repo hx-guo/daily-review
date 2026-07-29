@@ -5,12 +5,24 @@
   <header class="masthead">
     <h1>归档</h1>
     <div class="masthead-sub">ARCHIVE · DAILY LITERATURE REVIEW</div>
-    <div class="masthead-meta">按 arXiv 公告日归档{% if latest_date %}　·　数据截至 {{ latest_date }}{% endif %}</div>
+    <div class="masthead-meta">按论文最早日期归档（预印本／接收／刊出中最早者）{% if latest_date %}　·　数据截至 {{ latest_date }}{% endif %}</div>
   </header>
   <section class="sec">
-    <ul class="archive">
-      {% for d in days %}<li><a href="{{ static_prefix }}day/{{ d }}.html">{{ d }}</a></li>{% endfor %}
-    </ul>
+    {% for g in groups %}
+    <section class="archive-group">
+      <h3>{{ g.ym }}</h3>
+      {% if g.ym < coverage_start[:7] %}<p class="archive-note">本站自 {{ coverage_start }} 起收录，此前日期仅含后期补录的论文。</p>{% endif %}
+      <ul class="archive">
+        {% for d in g.days %}
+        <li><a href="{{ static_prefix }}day/{{ d.date }}.html">{{ d.date }}</a>
+          <span class="archive-n">{{ d.n }} 篇</span>
+          {% if d.breaking %}<span class="archive-breaking">突发</span>{% endif %}
+          {% if d.backfills %}<span class="archive-rev">补录 {{ d.backfills }} 次</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
   </section>
   <footer class="paper-footer">
     本站每日自动汇总，供高能暂现源研究团队内部文献跟踪参考 · 元数据来自 arXiv，版权归各原作者所有 · 综述与翻译由 AI 生成，请以原文为准 · © 2026 高能暂现源研究团队
