@@ -12,6 +12,7 @@
     <div class="sh-left">
       <a class="sh-title" href="{{ static_prefix }}index.html">高能暂现源 · 每日文献综述</a>
       {% if meta %}<span class="sh-vol">Vol. {{ meta.vol }} · No. {{ '%03d' % meta.no }}</span>{% endif %}
+      {% if axis %}<span class="sh-axis">{{ '本日收录' if axis == 'news' else '最早日期为此日' }}</span>{% endif %}
     </div>
     <div class="sh-right">
       {% if meta %}

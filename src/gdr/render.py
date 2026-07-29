@@ -9,7 +9,6 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
 
 from gdr.store import Store
-from gdr.models import DayData
 
 _LAYER_ORDER = {"core": 0, "related": 1, "edge": 2}
 _WEEKDAYS = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
@@ -17,9 +16,37 @@ _ROMAN = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
           "XI", "XII", "XIII", "XIV", "XV"]
 
 
-def _ordered_items(day: DayData) -> list[dict]:
-    return sorted(day.items, key=lambda it: (_LAYER_ORDER.get(it["score"].layer, 9),
-                                             -it["score"].score))
+def group_by(items: list[dict], key: str) -> dict[str, list[dict]]:
+    """Group stored items onto one of the two axes. `key` is "archive" (the
+    paper's own earliest academic date) or "ingest" (the day this site saw it)."""
+    field = (lambda it: it["archive_date"]) if key == "archive" else \
+            (lambda it: it["dates"]["ingested"])
+    groups: dict[str, list[dict]] = {}
+    for item in items:
+        value = field(item)
+        if value:
+            groups.setdefault(value, []).append(item)
+    return groups
+
+
+def _sorted_items(items: list[dict]) -> list[dict]:
+    return sorted(items, key=lambda it: (_LAYER_ORDER.get(it["score"].layer, 9),
+                                         -it["score"].score))
+
+
+def page_context(axis: str, date: str, items: list[dict], *, latest_date: str,
+                 prev_date: str = "", next_date: str = "") -> dict:
+    from gdr.daily_review import compose_review
+
+    ordered = _sorted_items(items)
+    core = [it for it in ordered if it["score"].layer == "core"]
+    related = [it for it in ordered if it["score"].layer == "related"]
+    edge = [it for it in ordered if it["score"].layer == "edge"]
+    return dict(axis=axis, date=date, review=compose_review(date, ordered),
+                items=ordered, main_items=core + related, core_items=core,
+                related_items=related, edge_items=edge,
+                meta=_masthead(date, len(core), len(related), len(edge)),
+                latest_date=latest_date, prev_date=prev_date, next_date=next_date)
 
 
 def _masthead(date_str: str, n_core: int, n_related: int, n_edge: int) -> dict:
@@ -187,8 +214,14 @@ def split_watch(signal: str) -> dict:
 
 
 def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Path) -> None:
+    """Render the two time axes from the stored items' cached decisions.
+
+    `news/<ingest date>.html` groups papers by the day this site saw them;
+    `day/<archive date>.html` groups the same papers by their own earliest
+    academic date, however many ingest runs contributed to that day. The home
+    page is always the newest news page.
+    """
     out_dir = Path(out_dir)
-    (out_dir / "day").mkdir(parents=True, exist_ok=True)
     env = Environment(loader=FileSystemLoader(str(templates_dir)),
                       autoescape=select_autoescape(["html"]))
     env.globals["render_authors"] = render_authors
@@ -197,35 +230,41 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
     env.globals["arxiv_id"] = arxiv_id
     env.globals["paper_links"] = paper_links
     env.globals["ROMAN"] = _ROMAN
-    days = store.list_days()
-    loaded = [(d, store.load_day(d)) for d in days]
-    # Home page + as-of date use the newest day that actually HAS papers. The sync model never
-    # saves an empty day, but a stale/empty file must not wedge the home page onto an empty date.
-    home_date = next((d for d, day in loaded if day.items), days[0] if days else None)
-    latest_date = home_date
 
+    items = store.all_items()
+    by_ingest = group_by(items, "ingest")
+    by_archive = group_by(items, "archive")
+    ingest_dates = sorted(by_ingest)
+    archive_dates = sorted(by_archive)
+    latest_date = ingest_dates[-1] if ingest_dates else ""
+
+    (out_dir / "news").mkdir(parents=True, exist_ok=True)
+    (out_dir / "day").mkdir(parents=True, exist_ok=True)
     day_tmpl = env.get_template("day.html")
     index_tmpl = env.get_template("index.html")
     archive_tmpl = env.get_template("archive.html")
 
-    for date, day in loaded:
-        items = _ordered_items(day)
-        main_items = [it for it in items if it["score"].layer != "edge"]
-        edge_items = [it for it in items if it["score"].layer == "edge"]
-        core_items = [it for it in items if it["score"].layer == "core"]
-        related_items = [it for it in items if it["score"].layer == "related"]
-        meta = _masthead(date, len(core_items), len(related_items), len(edge_items))
-        ctx = dict(day=day, items=items, main_items=main_items, edge_items=edge_items,
-                   core_items=core_items, related_items=related_items, meta=meta,
-                   latest_date=latest_date)
-        (out_dir / "day" / f"{date}.html").write_text(
+    for i, date in enumerate(ingest_dates):
+        ctx = page_context("news", date, by_ingest[date], latest_date=latest_date,
+                           prev_date=ingest_dates[i - 1] if i else "",
+                           next_date=ingest_dates[i + 1]
+                           if i + 1 < len(ingest_dates) else "")
+        (out_dir / "news" / f"{date}.html").write_text(
             day_tmpl.render(static_prefix="../", **ctx), encoding="utf-8")
-        if date == home_date:
+        if date == latest_date:
             (out_dir / "index.html").write_text(
                 index_tmpl.render(static_prefix="", **ctx), encoding="utf-8")
 
+    for date in archive_dates:
+        ctx = page_context("archive", date, by_archive[date],
+                           latest_date=latest_date)
+        (out_dir / "day" / f"{date}.html").write_text(
+            day_tmpl.render(static_prefix="../", **ctx), encoding="utf-8")
+
     (out_dir / "archive.html").write_text(
-        archive_tmpl.render(days=days, static_prefix="", latest_date=latest_date), encoding="utf-8")
+        archive_tmpl.render(days=sorted(archive_dates, reverse=True),
+                            static_prefix="", latest_date=latest_date),
+        encoding="utf-8")
 
     dst_static = out_dir / "static"
     if dst_static.exists():

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ meta.cn_date if meta else day.date }} · 高能暂现源每日文献综述{% endblock %}
+{% block title %}{{ meta.cn_date if meta else date }} · 高能暂现源每日文献综述{% endblock %}
 
 {% macro anchor(it) %}paper-{{ it.paper.id | replace(':', '-') | replace('.', '-') }}{% endmacro %}
 
@@ -129,7 +129,6 @@
       {% for it in related_items %}<a class="toc-link" href="#{{ anchor(it) }}">{{ it.summary.title_zh if it.summary and it.summary.title_zh else it.paper.title }}</a>{% endfor %}
       {% endif %}
       {% if edge_items %}<div class="toc-group-plain"><a href="#edge">边缘相关 · {{ edge_items|length }}</a></div>{% endif %}
-      {% if day.revisions %}<div class="toc-group-plain"><a href="#revisions">修订历史 · {{ day.revisions|length }} 版</a></div>{% endif %}
     </div>
   </div>
 </div>
@@ -145,7 +144,7 @@
   </header>
 
   {% set ns.sec = ns.sec + 1 %}
-  {% set stories = day.review.stories or [] %}
+  {% set stories = review.stories or [] %}
   {% set breaking = stories | selectattr('level', 'equalto', 'breaking') | list %}
   {% set headline = stories | selectattr('level', 'equalto', 'headline') | list %}
   {# density tiering: breaking always full; headline gets the full treatment only when
@@ -184,11 +183,11 @@
     <div class="hl-empty">
       <div class="headline-kicker">No Breaking · 无突发</div>
       <div class="hl-empty-line">今日无通过复核的重大进展</div>
-      {% if day.review.overview %}<p>{{ day.review.overview }}</p>{% endif %}
+      {% if review.overview %}<p>{{ review.overview }}</p>{% endif %}
     </div>
     {% endif %}
 
-    {{ watchlist(day.review.watchlist) }}
+    {{ watchlist(review.watchlist) }}
   </section>
 
   {% if core_items %}
@@ -219,23 +218,6 @@
             {{ source_links(it.paper) }}
           </div>
         </article>
-        {% endfor %}
-      </div>
-    </details>
-  </section>
-  {% endif %}
-
-  {% if day.revisions %}
-  <section class="revisions" id="revisions">
-    <details>
-      <summary class="fold-bar"><span>修订历史 {{ day.revisions|length }} 版</span><span class="fold-plus">展开 ＋</span></summary>
-      <div class="fold-body">
-        {% for rev in day.revisions|reverse %}
-        <div class="revision">
-          <h4>同步于 {{ rev.synced }}　·　当时 {{ rev.n_papers }} 篇</h4>
-          {% if rev.review.stories %}{% for story in rev.review.stories %}<p><strong>{{ story.level | upper }} · {{ story.title }}</strong>　{{ story.impact }}</p>{% endfor %}
-          {% else %}<p>{{ rev.review.overview }}</p>{% endif %}
-        </div>
         {% endfor %}
       </div>
     </details>
