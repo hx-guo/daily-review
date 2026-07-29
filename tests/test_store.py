@@ -1,4 +1,7 @@
+import json
+
 from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview, DayData
+from gdr.models import IngestDay, make_item
 from gdr.store import Store
 
 
@@ -69,3 +72,70 @@ def test_load_day_or_none(tmp_path):
     assert st.load_day_or_none("2026-07-14") is None
     st.save_day(_day("2026-07-14"))
     assert st.load_day_or_none("2026-07-14").date == "2026-07-14"
+
+
+def _ing_item(pid, ingested="2026-07-22", layer="core"):
+    paper = Paper(id=pid, source="arxiv", title="t", authors=["A"], abstract="a",
+                  categories=[], published="2026-07-20", url="")
+    score = RelevanceScore(score=90, tags=[], layer=layer, reason="r")
+    return make_item(paper, score, None,
+                     dates={"preprint": "2026-07-20", "ingested": ingested})
+
+
+def test_save_and_load_ingest_day(tmp_path):
+    store = Store(tmp_path / "data")
+    store.save_ingest(IngestDay(ingested="2026-07-22", items=[_ing_item("arxiv:1")]))
+
+    back = store.load_ingest("2026-07-22")
+
+    assert back.ingested == "2026-07-22"
+    assert back.items[0]["paper"].id == "arxiv:1"
+    assert (tmp_path / "data" / "ingest" / "2026-07-22.json").exists()
+
+
+def test_list_ingest_dates_is_ascending_and_all_items_follows_it(tmp_path):
+    store = Store(tmp_path / "data")
+    store.save_ingest(IngestDay("2026-07-23", [_ing_item("arxiv:2", "2026-07-23")]))
+    store.save_ingest(IngestDay("2026-07-22", [_ing_item("arxiv:1", "2026-07-22")]))
+
+    assert store.list_ingest_dates() == ["2026-07-22", "2026-07-23"]
+    assert [it["paper"].id for it in store.all_items()] == ["arxiv:1", "arxiv:2"]
+
+
+def test_seen_map_records_which_ingest_day_holds_each_identity(tmp_path):
+    store = Store(tmp_path / "data")
+    store.mark_seen(["arxiv:1", "doi:10.1/x"], "2026-07-22")
+
+    assert store.seen_map() == {"arxiv:1": "2026-07-22", "doi:10.1/x": "2026-07-22"}
+    assert store.locate("doi:10.1/x") == "2026-07-22"
+    assert store.locate("arxiv:missing") is None
+
+
+def test_seen_index_reads_the_legacy_list_format(tmp_path):
+    """Pre-migration the index was a flat list; those keys are seen but unlocatable."""
+    root = tmp_path / "data"
+    root.mkdir(parents=True)
+    (root / "seen-index.json").write_text(json.dumps(["arxiv:old"]), encoding="utf-8")
+    store = Store(root)
+
+    assert store.seen_identities() == {"arxiv:old"}
+    assert store.locate("arxiv:old") is None
+
+
+def test_update_item_edits_in_place_in_the_owning_ingest_file(tmp_path):
+    store = Store(tmp_path / "data")
+    store.save_ingest(IngestDay("2026-07-22", [_ing_item("arxiv:1"),
+                                               _ing_item("arxiv:2")]))
+    store.mark_seen(["arxiv:1"], "2026-07-22")
+
+    def mutate(item):
+        item["dates"]["published"] = "2026-07-08"
+        item["decision_final"] = True
+
+    assert store.update_item("arxiv:1", mutate) is True
+    assert store.update_item("arxiv:absent", mutate) is False
+
+    items = {it["paper"].id: it for it in store.load_ingest("2026-07-22").items}
+    assert items["arxiv:1"]["dates"]["published"] == "2026-07-08"
+    assert items["arxiv:1"]["decision_final"] is True
+    assert items["arxiv:2"]["dates"]["published"] == ""
