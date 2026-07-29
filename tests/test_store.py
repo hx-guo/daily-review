@@ -2,7 +2,7 @@ import json
 
 from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview, DayData
 from gdr.models import IngestDay, make_item
-from gdr.store import Store
+from gdr.store import Store, _SEEN_IDENTITY_SCHEMA
 
 
 def _day(date):
@@ -139,3 +139,17 @@ def test_update_item_edits_in_place_in_the_owning_ingest_file(tmp_path):
     assert items["arxiv:1"]["dates"]["published"] == "2026-07-08"
     assert items["arxiv:1"]["decision_final"] is True
     assert items["arxiv:2"]["dates"]["published"] == ""
+
+
+def test_ensure_seen_identities_preserves_dated_entries_instead_of_flattening(tmp_path):
+    """ensure_seen_identities is a legacy migration that predates dated entries.
+    If it ever runs after mark_seen() has recorded ingest dates, it must merge
+    new aliases in rather than rebuilding the index as a flat list — otherwise
+    every already-recorded ingest date is silently destroyed."""
+    st = Store(tmp_path)
+    st.mark_seen(["arxiv:1"], "2026-07-22")
+
+    st.ensure_seen_identities()
+
+    assert st.locate("arxiv:1") == "2026-07-22"
+    assert _SEEN_IDENTITY_SCHEMA in st.seen_identities()

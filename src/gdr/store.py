@@ -123,10 +123,13 @@ class Store:
 
         The ADS rollout needs DOI, linked arXiv ID, and normalized title aliases
         for papers already stored before `external_ids` existed. A schema marker
-        keeps the potentially expensive daily-JSON scan strictly one-time.
+        keeps the potentially expensive daily-JSON scan strictly one-time. Merges
+        new aliases into the existing {key: ingest date} mapping rather than
+        rebuilding it as a flat list, so dates already recorded via `mark_seen`
+        are preserved.
         """
-        seen = self._load_seen()
-        if _SEEN_IDENTITY_SCHEMA in seen:
+        raw = self._load_seen_raw()
+        if _SEEN_IDENTITY_SCHEMA in raw:
             return
         for date in self.list_days():
             try:
@@ -134,7 +137,7 @@ class Store:
             except (OSError, ValueError, TypeError, KeyError):
                 continue
             for item in day.items:
-                seen.update(paper_keys(item["paper"]))
-        seen.add(_SEEN_IDENTITY_SCHEMA)
-        self.seen_path.write_text(json.dumps(sorted(seen), ensure_ascii=False, indent=2),
-                                  encoding="utf-8")
+                for key in paper_keys(item["paper"]):
+                    raw.setdefault(key, "")
+        raw[_SEEN_IDENTITY_SCHEMA] = ""
+        self._write_seen(raw)
