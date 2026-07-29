@@ -7,8 +7,8 @@ from gdr.dedup import dedupe, paper_keys
 from gdr.fulltext import fetch_fulltext as _real_fetch_fulltext
 from gdr.relevance import score_paper
 from gdr.summarize import summarize_paper, summarize_edge
-from gdr.daily_review import make_daily_review
-from gdr.models import DayData, DailyReview
+from gdr.daily_review import compose_review
+from gdr.models import DayData
 from gdr.store import Store
 
 
@@ -21,17 +21,6 @@ def _process_paper(paper, llm, fetch_fulltext) -> dict:
     else:
         summary = summarize_edge(paper, llm)   # cheap Chinese title + one-liner, from abstract, no full text
     return {"paper": paper, "score": score, "summary": summary}
-
-
-def _review_for(date, items, llm) -> DailyReview:
-    summarized = [it for it in items if it["summary"] and it["score"].layer in ("core", "related")]
-    try:
-        return make_daily_review(date, summarized, llm)
-    except Exception as exc:
-        print(f"[gdr] daily review failed for {date}: {exc}", file=sys.stderr)
-        return DailyReview(date=date, overview="新闻候选复核生成失败。",
-                           highlights="—", trends="—", editorial_version=2,
-                           stories=[])
 
 
 def sync(run_date, source, llm, store: Store, fetch_fulltext=_real_fetch_fulltext,
@@ -71,7 +60,7 @@ def sync(run_date, source, llm, store: Store, fetch_fulltext=_real_fetch_fulltex
         else:
             revisions = []
             merged = new_items
-        review = _review_for(date, merged, llm)
+        review = compose_review(date, merged)
         store.save_day(DayData(date=date, review=review, items=merged, revisions=revisions))
         affected.append(date)
 

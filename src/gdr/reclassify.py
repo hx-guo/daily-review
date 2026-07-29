@@ -5,7 +5,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from gdr import config
-from gdr.pipeline import _review_for
+from gdr.daily_review import compose_review
 from gdr.relevance import score_paper
 from gdr.store import Store
 
@@ -37,7 +37,7 @@ def reclassify_day(date: str, store: Store, llm, *, synced: str | None = None,
         "n_papers": len(day.items),
         "review": old_review,
     })
-    day.review = _review_for(date, day.items, llm)
+    day.review = compose_review(date, day.items)
     store.save_day(day)
     counts = {layer: sum(item["score"].layer == layer for item in day.items)
               for layer in ("core", "related", "edge")}

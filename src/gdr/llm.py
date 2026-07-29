@@ -21,7 +21,8 @@ def tier_model(tier: str) -> str:
 class OpenCodeLLM:
     def __init__(self, api_key: str, base_url: str = config.OPENCODE_BASE_URL):
         from openai import OpenAI  # imported lazily so tests don't need the network
-        self._client = OpenAI(api_key=api_key, base_url=base_url)
+        self._client = OpenAI(api_key=api_key, base_url=base_url,
+                              max_retries=config.OPENAI_MAX_RETRIES)
 
     def complete(self, model: str, system: str, user: str, temperature: float = 0.3) -> str:
         resp = self._client.chat.completions.create(
