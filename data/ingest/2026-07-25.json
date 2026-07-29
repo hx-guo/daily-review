@@ -1,0 +1,72 @@
+{
+  "ingested": "2026-07-25",
+  "items": [
+    {
+      "paper": {
+        "id": "ads:2016NPGeo..23..175G",
+        "source": "ads",
+        "title": "Multi-scale statistical analysis of coronal solar activity",
+        "authors": [
+          "Gamborino, Diana",
+          "del-Castillo-Negrete, Diego",
+          "Martinell, Julio J."
+        ],
+        "abstract": "Multi-filter images from the solar corona are used to obtain temperature maps that are analyzed using techniques based on proper orthogonal decomposition (POD) in order to extract dynamical and structural information at various scales. Exploring active regions before and after a solar flare and comparing them with quiet regions, we show that the multi-scale behavior presents distinct statistical properties for each case that can be used to characterize the level of activity in a region. Information about the nature of heat transport is also to be extracted from the analysis.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.IM",
+          "physics.plasm-ph",
+          "Astrophysics - Solar and Stellar Astrophysics",
+          "Astrophysics - Instrumentation and Methods for Astrophysics",
+          "Physics - Plasma Physics"
+        ],
+        "published": "2026-07-22",
+        "url": "https://ui.adsabs.harvard.edu/abs/2016NPGeo..23..175G/abstract",
+        "pdf_url": "https://arxiv.org/pdf/1601.07681",
+        "doi": "10.5194/npg-23-175-2016",
+        "external_ids": {
+          "ads": "2016NPGeo..23..175G",
+          "arxiv": "1601.07681",
+          "doi": "10.5194/npg-23-175-2016"
+        }
+      },
+      "score": {
+        "score": 40,
+        "tags": [
+          "太阳耀斑"
+        ],
+        "layer": "edge",
+        "reason": "论文主题为太阳日冕活动统计，太阳耀斑仅作为研究情景，不直接服务高能暂现科学目标或团队方法需求",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题为太阳日冕活动多尺度统计分析，摘要提及使用多滤光图像获取温度图，分析太阳耀斑前后活动区与宁静区的多尺度统计特性，未涉及高能暂现观测或团队任务数据"
+      },
+      "summary": {
+        "paper_id": "ads:2016NPGeo..23..175G",
+        "title_zh": "日冕太阳活动的多尺度统计分析",
+        "team": "",
+        "tldr": "利用日冕多滤镜图像的温度图进行POD多尺度统计分析，揭示了不同活动区域的统计特征，可用于表征活动水平和热传输性质。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2016-01-28",
+        "accepted": "",
+        "published": "2016-07-08",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "",
+        "ingested": "2026-07-25"
+      },
+      "archive_date": "2016-01-28",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    }
+  ]
+}
