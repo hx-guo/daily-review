@@ -7,7 +7,7 @@ from gdr.sources.ads_source import ADSSource
 from gdr.sources.arxiv_source import ArxivSource
 from gdr.sources.composite_source import CompositeSource
 from gdr.store import Store
-from gdr.pipeline import sync
+from gdr.pipeline import repair_decisions, sync
 from gdr.site_build import build_site
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,6 +29,7 @@ def main():
     source = CompositeSource(sources)
     store = Store(ROOT / "data")
 
+    repair_decisions(store, date, llm)
     affected = sync(date, source, llm, store)
     print(f"{date}: synced; affected dates: {affected}")
     build_site(ROOT)

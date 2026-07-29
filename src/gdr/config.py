@@ -52,9 +52,6 @@ FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
 ADS_PAGE_SIZE = int(os.environ.get("GDR_ADS_PAGE_SIZE", "200"))
 MAX_CONCURRENCY = int(os.environ.get("GDR_MAX_CONCURRENCY", "6"))
-# Editorial decisions are intentionally one-paper-per-call for stable, short
-# JSON. Run them concurrently so large ADS days do not become serial bottlenecks.
-EDITORIAL_MAX_CONCURRENCY = int(os.environ.get("GDR_EDITORIAL_MAX_CONCURRENCY", "6"))
 # One malformed JSON is noise; a dead upstream is a whole day of lost decisions
 # (kimi-k3 400-ed for a full day in 2026-07). Retry hard, then let the
 # cross-run repair pass pick up whatever still failed.
