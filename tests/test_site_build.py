@@ -2,7 +2,7 @@ import hashlib
 import shutil
 from pathlib import Path
 
-from gdr.models import DailyReview, DayData
+from gdr.models import IngestDay
 from gdr.site_build import build_site
 from gdr.store import Store
 
@@ -21,13 +21,7 @@ def _manifest(root: Path) -> dict[str, str]:
 def test_build_site_is_clean_and_reproducible(tmp_path):
     shutil.copytree(ROOT / "templates", tmp_path / "templates")
     shutil.copytree(ROOT / "static", tmp_path / "static")
-    Store(tmp_path / "data").save_day(
-        DayData(
-            date="2026-07-22",
-            review=DailyReview("2026-07-22", "确定性构建", "", ""),
-            items=[],
-        )
-    )
+    Store(tmp_path / "data").save_ingest(IngestDay(ingested="2026-07-22", items=[]))
 
     out_dir = build_site(tmp_path)
     first = _manifest(out_dir)

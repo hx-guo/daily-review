@@ -94,41 +94,6 @@ class DailyReview:
         return cls(**d)
 
 
-@dataclass
-class DayData:
-    date: str
-    review: DailyReview
-    items: list[dict]  # {"paper": Paper, "score": RelevanceScore, "summary": PaperSummary | None}
-    revisions: list[dict] = field(default_factory=list)
-
-    def to_dict(self) -> dict:
-        return {
-            "date": self.date,
-            "review": self.review.to_dict(),
-            "items": [
-                {
-                    "paper": it["paper"].to_dict(),
-                    "score": it["score"].to_dict(),
-                    "summary": it["summary"].to_dict() if it["summary"] else None,
-                }
-                for it in self.items
-            ],
-            "revisions": self.revisions,
-        }
-
-    @classmethod
-    def from_dict(cls, d: dict) -> DayData:
-        items = [
-            {
-                "paper": Paper.from_dict(it["paper"]),
-                "score": RelevanceScore.from_dict(it["score"]),
-                "summary": PaperSummary.from_dict(it["summary"]) if it.get("summary") else None,
-            }
-            for it in d["items"]
-        ]
-        return cls(date=d["date"], review=DailyReview.from_dict(d["review"]), items=items, revisions=d.get("revisions", []))
-
-
 EMPTY_DATES = {
     "preprint": "", "accepted": "", "published": "",
     "published_precision": "", "published_source": "", "received": "",

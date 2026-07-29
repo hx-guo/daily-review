@@ -1,34 +1,7 @@
 import json
 
-from gdr.models import Paper, RelevanceScore, PaperSummary, DailyReview, DayData
-from gdr.models import IngestDay, make_item
+from gdr.models import Paper, RelevanceScore, IngestDay, make_item
 from gdr.store import Store, _SEEN_IDENTITY_SCHEMA
-
-
-def _day(date):
-    p = Paper(id="arxiv:1", source="arxiv", title="t", authors=[], abstract="",
-              categories=[], published=date, url="")
-    return DayData(date=date,
-                   review=DailyReview(date=date, overview="o", highlights="h", trends="t"),
-                   items=[{"paper": p,
-                           "score": RelevanceScore(score=90, tags=["GRB"], layer="core", reason=""),
-                           "summary": PaperSummary(paper_id="arxiv:1", title_zh="标题", team="",
-                                                   tldr="", review="", highlight="", relation="")}])
-
-
-def test_save_and_load_day(tmp_path):
-    st = Store(tmp_path)
-    st.save_day(_day("2026-07-18"))
-    back = st.load_day("2026-07-18")
-    assert back.review.overview == "o"
-    assert back.items[0]["summary"].title_zh == "标题"
-
-
-def test_list_days_desc(tmp_path):
-    st = Store(tmp_path)
-    st.save_day(_day("2026-07-17"))
-    st.save_day(_day("2026-07-18"))
-    assert st.list_days() == ["2026-07-18", "2026-07-17"]
 
 
 def test_mark_seen_returns_new_only(tmp_path):
@@ -52,26 +25,20 @@ def test_identities_unseen_matches_any_alias(tmp_path):
     assert st.identities_unseen({"ads:new", "doi:10.1/new"})
 
 
-def test_ensure_seen_identities_backfills_legacy_daily_papers(tmp_path):
+def test_ensure_seen_identities_backfills_legacy_ingest_papers(tmp_path):
     st = Store(tmp_path)
-    day = _day("2026-07-18")
-    paper = day.items[0]["paper"]
-    paper.title = "A Legacy GRB Paper"
-    paper.doi = "10.1/legacy"
-    st.save_day(day)
+    paper = Paper(id="arxiv:1", source="arxiv", title="A Legacy GRB Paper", authors=[],
+                 abstract="", categories=[], published="2026-07-18", url="",
+                 doi="10.1/legacy")
+    score = RelevanceScore(score=90, tags=["GRB"], layer="core", reason="")
+    item = make_item(paper, score, None, dates={"ingested": "2026-07-18"})
+    st.save_ingest(IngestDay(ingested="2026-07-18", items=[item]))
     st.mark_seen_papers([paper.id])  # old index format only kept the primary ID
 
     st.ensure_seen_identities()
 
     assert not st.identities_unseen({"doi:10.1/legacy"})
     assert not st.identities_unseen({"title:a legacy grb paper"})
-
-
-def test_load_day_or_none(tmp_path):
-    st = Store(tmp_path)
-    assert st.load_day_or_none("2026-07-14") is None
-    st.save_day(_day("2026-07-14"))
-    assert st.load_day_or_none("2026-07-14").date == "2026-07-14"
 
 
 def _ing_item(pid, ingested="2026-07-22", layer="core"):

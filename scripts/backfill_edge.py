@@ -2,9 +2,10 @@
 stored before edge-summarization existed (i.e. `summary is None`).
 
 Uses the cheap triage-tier model from the abstract only, concurrently. Leaves
-core/related items and `revisions` untouched. Safe to re-run (skips edge items
-that already have a summary). One-time migration for pre-existing data; normal
-`sync` runs summarize edge papers inline going forward.
+core/related items untouched. Safe to re-run (skips edge items that already
+have a summary). One-time migration for pre-existing data; normal `sync` runs
+summarize edge papers inline going forward. Operates on the ingest-keyed
+layout (`data/ingest/`).
 
 Usage:
     OPENCODE_API_KEY=... python scripts/backfill_edge.py
@@ -24,8 +25,8 @@ ROOT = Path(__file__).resolve().parent.parent
 def main():
     llm = OpenCodeLLM(api_key=config.get_api_key())
     store = Store(ROOT / "data")
-    for date in store.list_days():
-        day = store.load_day(date)
+    for date in store.list_ingest_dates():
+        day = store.load_ingest(date)
         todo = [it for it in day.items if it["score"].layer == "edge" and it["summary"] is None]
         if not todo:
             continue
@@ -37,7 +38,7 @@ def main():
                     it["summary"] = fut.result()
                 except Exception as exc:
                     print(f"  edge {it['paper'].id} failed: {exc}", file=sys.stderr)
-        store.save_day(day)
+        store.save_ingest(day)
         print(f"{date}: backfilled {len(todo)} edge summaries")
 
 
