@@ -223,6 +223,55 @@ def _quiet_overview(items: list[dict], lead: str) -> str:
     return f"当日 {len(items)} 篇核心与相关文献{lead}{tail}"
 
 
+_LEVEL_ORDER = {"breaking": 0, "headline": 1}
+
+
+def compose_review(date: str, items: list[dict]) -> DailyReview:
+    """Build a day's review from the decisions already stored on its papers.
+
+    Pure: no LLM, no I/O, no randomness. Both time axes and every historical
+    version of an archive day are just different item sets fed through here, so
+    this function must stay a deterministic projection of `item["decision"]`.
+    """
+    if not items:
+        return DailyReview(date=date, overview="今日无新文献。", highlights="—",
+                           trends="—", editorial_version=2, stories=[], watchlist=[])
+
+    considered = [it for it in items if it["score"].layer in ("core", "related")]
+    reviewed = [it for it in considered if it.get("decision")]
+    retained = [it for it in reviewed if it["decision"]["level"] != "reject"]
+    retained.sort(key=lambda it: (_LEVEL_ORDER.get(it["decision"]["level"], 9),
+                                  -it["score"].score))
+
+    stories = [
+        {
+            "paper_id": it["paper"].id,
+            "level": it["decision"]["level"],
+            "title": it["decision"]["title"],
+            "evidence": it["decision"]["evidence"],
+            "impact": it["decision"]["impact"],
+            "reason": it["decision"]["reason"],
+        }
+        for it in retained
+    ]
+    watchlist = []
+    for it in retained:
+        watchlist.extend(it["decision"].get("watchlist") or [])
+    watchlist = list(dict.fromkeys(watchlist))
+
+    if stories:
+        overview = "今日有通过严格复核的重大进展。"
+    elif reviewed:
+        overview = _quiet_overview(considered, "均为常规推进")
+    else:
+        overview = _quiet_overview(considered, "中无原始研究达到新闻门槛")
+
+    return DailyReview(date=date, overview=overview,
+                       highlights=_legacy_story_lines(stories),
+                       trends="\n".join(watchlist), editorial_version=2,
+                       stories=stories, watchlist=watchlist)
+
+
 def make_daily_review(date: str, items: list[dict], llm: LLM,
                       editorial_workers: int | None = None) -> DailyReview:
     if not items:
