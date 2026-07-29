@@ -31,7 +31,8 @@
         "external_ids": {
           "ads": "2017PEPS....4...11A",
           "doi": "10.1186/s40645-017-0121-1"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -121,7 +122,8 @@
           "ads": "2023ApJ...945..118K",
           "arxiv": "2302.02017",
           "doi": "10.3847/1538-4357/acb92a"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -197,7 +199,8 @@
           "ads": "2026A&A...711A.139P",
           "arxiv": "2601.09368",
           "doi": "10.1051/0004-6361/202659416"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -337,7 +340,8 @@
           "ads": "2026A&A...711A.140A",
           "arxiv": "2606.19434",
           "doi": "10.1051/0004-6361/202659921"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -410,7 +414,8 @@
           "ads": "2026A&A...711A.164P",
           "arxiv": "2510.14102",
           "doi": "10.1051/0004-6361/202557384"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -547,7 +552,8 @@
           "ads": "2026A&A...711A.175P",
           "arxiv": "2507.23687",
           "doi": "10.1051/0004-6361/202556686"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -627,7 +633,8 @@
           "ads": "2026A&A...711A.176O",
           "arxiv": "2606.22893",
           "doi": "10.1051/0004-6361/202660660"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -698,7 +705,8 @@
           "ads": "2026A&A...711A.183C",
           "arxiv": "2603.04507",
           "doi": "10.1051/0004-6361/202659704"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -765,7 +773,8 @@
           "ads": "2026A&A...711A.211T",
           "arxiv": "2512.02296",
           "doi": "10.1051/0004-6361/202558394"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -939,7 +948,8 @@
           "ads": "2026A&A...711A.212S",
           "arxiv": "2605.27363",
           "doi": "10.1051/0004-6361/202557907"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -1008,7 +1018,8 @@
           "ads": "2026A&A...711A.214S",
           "arxiv": "2606.11133",
           "doi": "10.1051/0004-6361/202659519"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -1174,7 +1185,8 @@
         "external_ids": {
           "ads": "2026A&A...711C...2K",
           "doi": "10.1051/0004-6361/202661330e"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 30,
@@ -1189,16 +1201,30 @@
       },
       "summary": {
         "paper_id": "ads:2026A&A...711C...2K",
-        "title_zh": "中微子耀变体PKS 0735+178中秒差距尺度喷流的动力学（勘误）",
+        "title_zh": "中微子耀变体PKS 0735+178秒差距尺度喷流动力学（勘误）",
         "team": "",
-        "tldr": "对PKS 0735+178秒差距尺度喷流动力学论文的勘误",
+        "tldr": "勘误更正了原论文摘要中喷流组分编号及振荡周期的错误表述。",
         "review": "",
-        "highlight": "",
+        "highlight": "原论文通过VLBI观测发现喷流组分的准周期运动，本勘误纠正了关键数据的误标，确保结论准确性。",
         "relation": "",
-        "authors_en": "",
+        "authors_en": "Yu-Sik Kim, Jae-Young Kim",
         "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "context_outlook": "本文是对 [[Kim & Kim 2025]] 的勘误，修正了原论文摘要中关于喷流组分 B2 与 B3 的混淆，并将振荡周期从 (1.7 ± 0.1) 年更正为约 1.6 年。该研究利用甚长基线干涉测量（VLBI）揭示了中微子耀变体喷流的动力学特征，为高能中微子与喷流活动关联提供了观测依据。未来，更高分辨率和多波段监测将有助于准确测量喷流运动，促进对耀变体喷流中准周期现象物理机制的理解。",
+        "citations": [
+          {
+            "label": "Kim & Kim 2025",
+            "authors": "Kim",
+            "year": "2025",
+            "title": "The dynamics of the parsec-scale jet in the neutrino blazar PKS 0735+178",
+            "ref": "",
+            "arxiv": "2505.13876",
+            "doi": "10.1051/0004-6361/202452111",
+            "bibcode": "2025A&A...699A.381K",
+            "url": "https://arxiv.org/abs/2505.13876",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       },
       "dates": {
         "preprint": "",
@@ -1252,7 +1278,8 @@
           "ads": "2026A&A...711L...6S",
           "arxiv": "2603.20473",
           "doi": "10.1051/0004-6361/202659979"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -1396,7 +1423,8 @@
           "ads": "2026APh...18203276C",
           "arxiv": "2601.06417",
           "doi": "10.1016/j.astropartphys.2026.103276"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -1411,16 +1439,82 @@
       },
       "summary": {
         "paper_id": "ads:2026APh...18203276C",
-        "title_zh": "冰中宇宙线粒子级联的射电信号特征",
+        "title_zh": "宇宙线粒子级联在冰内的射电特征",
         "team": "",
-        "tldr": "利用FAERIE蒙特卡洛框架首次对宇宙线在空气和冰中的射电信号进行表征，分析了其辐射能量、时间、偏振和频谱等特性，为未来冰基射电实验的宇宙线识别与中微子区分提供了关键指导。",
+        "tldr": "利用FAERIE模拟首次系统刻画了宇宙线在冰内和空气中的射电辐射特性，提供了能量、频谱、极化和双脉冲等关键观测量，为冰内射电实验的宇宙线鉴别与中微子辨别奠定基础。",
         "review": "",
-        "highlight": "",
+        "highlight": "首次统一模拟空气和冰内辐射，揭示冰内成分高频占优、径向极化，空气成分低频占优、水平极化，并给出双脉冲事件的空间分布和比率，为宇宙线/中微子识别提供崭新观测标志。",
         "relation": "",
-        "authors_en": "",
+        "authors_en": "S. Chiche (Inter-University Institute For High Energies, Université libre de Bruxelles; Vrije Universiteit Brussel), S. Toscano (Inter-University Institute For High Energies, Université libre de Bruxelles; Vrije Universiteit Brussel), K. D. de Vries (Inter-University Institute For High Energies, Université libre de Bruxelles; Vrije Universiteit Brussel)",
         "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "context_outlook": "既往研究如[[de Vries+ 2016]]预测了宇宙线空气簇射在Askaryan探测器的信号，[[De Kockere+ 2022]]模拟了冰内级联，随后[[De Kockere+ 2024]]开发了FAERIE框架以实现空气-冰内统一模拟。本文首次对宇宙线粒子级联的射电能量、频谱、极化、深度依赖及双脉冲等特征进行系统刻画，为ARA、RNO-G等实验提供了鉴别宇宙线背景和中微子信号的重要观测依据，[[ARA Collaboration 2025]]已报告首批冰内宇宙线射电信号。未来，利用信号幅度对深度的敏感依赖可有效排除远距离人工噪声[[RNO-G collaboration 2025]]，而双脉冲事件有望成为宇宙线的标志性特征，助推中微子探测灵敏度的提升。",
+        "citations": [
+          {
+            "label": "de Vries+ 2016",
+            "authors": "de Vries",
+            "year": "2016",
+            "title": "The cosmic-ray air-shower signal in Askaryan radio detectors",
+            "ref": "K. D. de Vries, S. Buitink, N. van Eijndhoven, T. Meures, A. Ó Murchadha, O. Scholten, The cosmic-ray air-shower signal in Askaryan radio detectors, Astroparticle Physics 74 (2016) 96–104. arXiv:1503.02808, doi:10.1016/j.astropartphys.2015.10.003.",
+            "arxiv": "",
+            "doi": "10.1016/j.astropartphys.2015.10.003",
+            "bibcode": "",
+            "url": "https://doi.org/10.1016/j.astropartphys.2015.10.003",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "De Kockere+ 2022",
+            "authors": "De Kockere",
+            "year": "2022",
+            "title": "Simulation of in-ice cosmic ray air shower induced particle cascades",
+            "ref": "S. De Kockere, K. D. de Vries, N. van Eijndhoven, U. A. Latif, Simulation of in-ice cosmic ray air shower induced particle cascades, Phys. Rev. D106 (4) (2022) 043023. arXiv:2202.09211, doi:10.1103/PhysRevD.106.043023.",
+            "arxiv": "",
+            "doi": "10.1103/physrevd.106.043023",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevd.106.043023",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "De Kockere+ 2024",
+            "authors": "De Kockere",
+            "year": "2024",
+            "title": "Simulation of radio signals from cosmic-ray cascades in air and ice as observed by in-ice Askaryan radio detectors",
+            "ref": "S. De Kockere, D. Van den Broeck, U. A. Latif, K. D. de Vries, N. van Eijndhoven, T. Huege, S. Buitink, Simulation of radio signals from cosmic-ray cascades in air and ice as observed by in-ice Askaryan radio detectors, Phys. Rev. D110 (2) (2024) 023010. arXiv:2403.15358, doi:10.1103/PhysRevD.110.023010.",
+            "arxiv": "",
+            "doi": "10.1103/physrevd.110.023010",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevd.110.023010",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "ARA Collaboration 2025",
+            "authors": "ARA Collaboration",
+            "year": "2025",
+            "title": "Observation of In-ice Askaryan Radiation from High-Energy Cosmic Rays",
+            "ref": "ARA Collaboration, Observation of In-ice Askaryan Radiation from High-Energy Cosmic Rays, arXiv e-prints (2025) arXiv:2510.21104, doi:10.48550/arXiv.2510.21104.",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "RNO-G collaboration 2025",
+            "authors": "RNO-G collaboration",
+            "year": "2025",
+            "title": "Radio emission from airplanes as observed with RNO-G",
+            "ref": "The RNO-G collaboration, Radio emission from airplanes as observed with RNO-G, Journal of Instrumentation 20 (11) (2025) P11015. arXiv:2506.17522, doi:10.1088/1748-0221/20/11/P11015.",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          }
+        ]
       },
       "dates": {
         "preprint": "2026-01-10",
@@ -1478,7 +1572,8 @@
           "ads": "2026ApJ..1005..176S",
           "arxiv": "2601.15198",
           "doi": "10.3847/1538-4357/ae75dc"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -3401,7 +3496,8 @@
           "ads": "2026ApJ..1005..221A",
           "arxiv": "2603.25938",
           "doi": "10.3847/1538-4357/ae77fc"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -5279,7 +5375,8 @@
           "ads": "2026ApJ..1005L..51A",
           "arxiv": "2508.18083",
           "doi": "10.3847/2041-8213/ae771e"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -5458,7 +5555,8 @@
           "ads": "2026ApJ..1005L..64S",
           "arxiv": "2606.07989",
           "doi": "10.3847/2041-8213/ae796b"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 30,
@@ -5564,7 +5662,8 @@
           "ads": "2026ApJ..1005L..68C",
           "arxiv": "2606.10505",
           "doi": "10.3847/2041-8213/ae7bf1"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -5711,7 +5810,8 @@
           "ads": "2026ApJ..1005L..75H",
           "arxiv": "2604.14247",
           "doi": "10.3847/2041-8213/ae825d"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -5892,7 +5992,8 @@
           "ads": "2026ApJ..1005L..78Z",
           "arxiv": "2605.24664",
           "doi": "10.3847/2041-8213/ae82fa"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -6076,7 +6177,8 @@
           "ads": "2026ApJ..1006....3M",
           "arxiv": "2606.15388",
           "doi": "10.3847/1538-4357/ae7dec"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -6247,7 +6349,8 @@
           "ads": "2026ApJ..1006....5C",
           "arxiv": "2605.03128",
           "doi": "10.3847/1538-4357/ae7a66"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -6448,7 +6551,8 @@
           "ads": "2026ApJ..1006...13O",
           "arxiv": "2511.10728",
           "doi": "10.3847/1538-4357/ae8097"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -6526,7 +6630,8 @@
           "ads": "2026ApJ..1006...14G",
           "arxiv": "2606.21827",
           "doi": "10.3847/1538-4357/ae8024"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -6663,7 +6768,8 @@
           "ads": "2026ApJ..1006...20K",
           "arxiv": "2602.04947",
           "doi": "10.3847/1538-4357/ae7a49"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -6796,7 +6902,8 @@
           "ads": "2026ApJ..1006...23H",
           "arxiv": "2605.07255",
           "doi": "10.3847/1538-4357/ae7d24"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -6935,7 +7042,8 @@
           "ads": "2026ApJ..1006...24M",
           "arxiv": "2603.24655",
           "doi": "10.3847/1538-4357/ae7d21"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -7084,7 +7192,8 @@
           "ads": "2026ApJ..1006...28Y",
           "arxiv": "2606.11544",
           "doi": "10.3847/1538-4357/ae7be8"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -7243,7 +7352,8 @@
           "ads": "2026ApJ..1006...31H",
           "arxiv": "2511.05144",
           "doi": "10.3847/1538-4357/ae7a54"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -7377,7 +7487,8 @@
           "ads": "2026ApJ..1006...34Z",
           "arxiv": "2412.12283",
           "doi": "10.3847/1538-4357/ae77ed"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 62,
@@ -7498,7 +7609,8 @@
         "external_ids": {
           "ads": "2026ApJ..1006...35C",
           "doi": "10.3847/1538-4357/ae7722"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -7580,7 +7692,8 @@
           "ads": "2026ApJ..1006...45S",
           "arxiv": "2602.14300",
           "doi": "10.3847/1538-4357/ae7c6e"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -7745,7 +7858,8 @@
           "ads": "2026ApJ..1006...47L",
           "arxiv": "2606.27641",
           "doi": "10.3847/1538-4357/ae80ae"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -7818,7 +7932,8 @@
         "external_ids": {
           "ads": "2026ApJ..1006...56A",
           "doi": "10.3847/1538-4357/ae7a40"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -7913,7 +8028,8 @@
           "ads": "2026ApJ..1006...58O",
           "arxiv": "2605.21837",
           "doi": "10.3847/1538-4357/ae71be"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -8178,7 +8294,8 @@
           "ads": "2026ApJ..1006...63M",
           "arxiv": "2603.11167",
           "doi": "10.3847/1538-4357/ae801e"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -8249,7 +8366,8 @@
           "ads": "2026ApJ..1006...66J",
           "arxiv": "2605.18951",
           "doi": "10.3847/1538-4357/ae7d1b"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -8449,7 +8567,8 @@
           "ads": "2026ApJ..1006...67B",
           "arxiv": "2601.20495",
           "doi": "10.3847/1538-4357/ae7b31"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -8613,7 +8732,8 @@
           "ads": "2026ApJ..1006...70M",
           "arxiv": "2510.14715",
           "doi": "10.3847/1538-4357/ae742b"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -8752,7 +8872,8 @@
           "ads": "2026ApJ..1006...75N",
           "arxiv": "2603.23597",
           "doi": "10.3847/1538-4357/ae7e77"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -8885,7 +9006,8 @@
         "external_ids": {
           "ads": "2026ApJ..1006...81F",
           "doi": "10.3847/1538-4357/ae8020"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -8976,7 +9098,8 @@
           "ads": "2026ApJ..1006L...3S",
           "arxiv": "2605.01994",
           "doi": "10.3847/2041-8213/ae81ac"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -9152,7 +9275,8 @@
           "ads": "2026ApJ..1006L...4S",
           "arxiv": "2604.01196",
           "doi": "10.3847/2041-8213/ae80bb"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -9330,7 +9454,8 @@
           "ads": "2026ApJ..1006L...5A",
           "arxiv": "2506.20731",
           "doi": "10.3847/2041-8213/ae81a9"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -9484,7 +9609,8 @@
           "ads": "2026ApJ..1006L...8C",
           "arxiv": "2604.27480",
           "doi": "10.3847/2041-8213/ae80bc"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -9679,7 +9805,8 @@
           "ads": "2026ApJ..1006L..13O",
           "arxiv": "2606.09992",
           "doi": "10.3847/2041-8213/ae84ba"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -9806,7 +9933,8 @@
           "ads": "2026ApJ..1006L..15Y",
           "arxiv": "2606.16228",
           "doi": "10.3847/2041-8213/ae80c8"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -9938,7 +10066,8 @@
         "external_ids": {
           "ads": "2026ApJS..285...33L",
           "doi": "10.3847/1538-4365/ae7dbe"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -10022,7 +10151,8 @@
         "external_ids": {
           "ads": "2026ApJS..285...35C",
           "doi": "10.3847/1538-4365/ae7a52"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10412,7 +10542,8 @@
           "ads": "2026ApJS..285...36C",
           "arxiv": "2602.13411",
           "doi": "10.3847/1538-4365/ae76cc"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -10427,16 +10558,82 @@
       },
       "summary": {
         "paper_id": "ads:2026ApJS..285...36C",
-        "title_zh": "LHAASO对Mrk 421在2021年3月至2024年3月的观测：多时间尺度爆发及其时间平均行为的综合甚高能星表",
+        "title_zh": "LHAASO对Mrk 421在2021年3月至2024年3月的观测：多时间尺度甚高能爆发综合星表及其时间平均行为",
         "team": "",
-        "tldr": "利用LHAASO三年监测数据识别出Mrk 421的23个甚高能爆发事件，发现其耀变活动占空比约14%，并通过多波段分析揭示了不同活动态的能谱差异及X射线与甚高能波段的强相关性。",
+        "tldr": "利用LHAASO三年无偏监测数据，首次系统编制了Mrk 421的23次TeV爆发事件目录，分析了爆发形态、占空比及多波段相关性，揭示了喷流活动模式。",
         "review": "",
-        "highlight": "",
+        "highlight": "基于LHAASO >98%占空比的无偏巡天，首次获得Mrk 421完备的TeV爆发样本，确定无偏爆发占空比约14.6%，并发现静息态与活跃态通量分布的差异，为喷流能量耗散机制提供新线索。",
         "relation": "",
-        "authors_en": "",
+        "authors_en": "Z. Cao (State Key Laboratory of Particle Astrophysics & Experimental Physics Division & Computing Center, Institute of High Energy Physics, Chinese Academy of Sciences; University of Chinese Academy of Sciences; TIANFU Cosmic Ray Research Center), F. Aharonian (TIANFU Cosmic Ray Research Center; University of Science and Technology of China; Yerevan State University; Max-Planck-Institut for Nuclear Physics), Y.X. Bai (State Key Laboratory of Particle Astrophysics & Experimental Physics Division & Computing Center, Institute of High Energy Physics, Chinese Academy of Sciences; TIANFU Cosmic Ray Research Center) et al.",
         "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "context_outlook": "Mrk 421作为最亮的甚高能耀变体之一，自1992年被发现以来，一直是研究喷流物理和粒子加速的重要探针 [[Punch+ 1992]]。以往成像大气切伦科夫望远镜的观测受限于偏置触发和有限观测时间 [[Acciari+ 2020]]，而广角探测器如ARGO-YBJ和HAWC虽实现长期监测，却因灵敏度不足难以进行逐个耀发分析 [[Bartoli+ 2016, Abeysekara+ 2017]]。本研究利用LHAASO的高灵敏度宽视场监测，首次无偏地记录了2021-2024年间23次多时间尺度TeV爆发，揭示了活动态与静息态的可能双模式能量耗散。未来，此类完备样本将为限制河外背景光模型 [[Saldana-Lopez+ 2021]]、检验多区辐射模型以及引导多信使跟踪观测提供坚实基础。",
+        "citations": [
+          {
+            "label": "Punch+ 1992",
+            "authors": "Punch",
+            "year": "1992",
+            "title": "",
+            "ref": "",
+            "arxiv": "",
+            "doi": "10.1038/358477a0",
+            "bibcode": "1992Natur.358..477P",
+            "url": "https://doi.org/10.1038/358477a0",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Acciari+ 2020",
+            "authors": "Acciari",
+            "year": "2020",
+            "title": "",
+            "ref": "",
+            "arxiv": "1911.06680",
+            "doi": "10.3847/1538-4365/ab5b98",
+            "bibcode": "2020ApJS..247...16A",
+            "url": "https://arxiv.org/abs/1911.06680",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bartoli+ 2016",
+            "authors": "Bartoli",
+            "year": "2016",
+            "title": "",
+            "ref": "",
+            "arxiv": "1511.06851",
+            "doi": "10.3847/0067-0049/222/1/6",
+            "bibcode": "2016ApJS..222....6B",
+            "url": "https://arxiv.org/abs/1511.06851",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abeysekara+ 2017",
+            "authors": "Abeysekara",
+            "year": "2017",
+            "title": "",
+            "ref": "",
+            "arxiv": "1711.06223",
+            "doi": "10.1126/science.aan4880",
+            "bibcode": "2017Sci...358..911A",
+            "url": "https://arxiv.org/abs/1711.06223",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Saldana-Lopez+ 2021",
+            "authors": "Saldana-Lopez",
+            "year": "2021",
+            "title": "",
+            "ref": "",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          }
+        ]
       },
       "dates": {
         "preprint": "2026-02-13",
@@ -10497,7 +10694,8 @@
           "ads": "2026ApJS..285...40C",
           "arxiv": "2606.25352",
           "doi": "10.3847/1538-4365/ae7e7c"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -10602,7 +10800,8 @@
         "doi": null,
         "external_ids": {
           "ads": "2026BlgAJ..45..110K"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10632,13 +10831,13 @@
       "dates": {
         "preprint": "",
         "accepted": "",
-        "published": "2026-07-19",
-        "published_precision": "day",
+        "published": "2026-07",
+        "published_precision": "month",
         "published_source": "ads-pubdate",
         "received": "",
         "ingested": "2026-07-22"
       },
-      "archive_date": "2026-07-19",
+      "archive_date": "2026-07-01",
       "decision": null,
       "review_attempts": 0,
       "decision_final": false
@@ -10666,7 +10865,8 @@
         "external_ids": {
           "ads": "2026DyAtO.11501692A",
           "doi": "10.1016/j.dynatmoce.2026.101692"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -10727,7 +10927,8 @@
         "external_ids": {
           "ads": "2026Ge&Ae.tmp...11D",
           "doi": "10.1134/S0016793226600128"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10792,7 +10993,8 @@
         "external_ids": {
           "ads": "2026GeoRL..5323485A",
           "doi": "10.1029/2026GL123485"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10855,7 +11057,8 @@
           "ads": "2026IJMPD..3550026O",
           "arxiv": "2501.00985",
           "doi": "10.1142/S0218271826500264"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10919,7 +11122,8 @@
           "ads": "2026JCAP...07..032B",
           "arxiv": "2305.17086",
           "doi": "10.1088/1475-7516/2026/07/032"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -10934,16 +11138,56 @@
       },
       "summary": {
         "paper_id": "ads:2026JCAP...07..032B",
-        "title_zh": "太阳作为宇宙射线TeV加速器",
+        "title_zh": "太阳作为宇宙线TeV加速器",
         "team": "",
-        "tldr": "提出宁静太阳能够将宇宙射线加速到TeV能量，通过强子相互作用解释太阳盘高能伽马射线的起源，并预测IceCube-Gen2可验证。",
+        "tldr": "本文提出宁静太阳色球层可加速宇宙线至 TeV 能量，其强子作用产生的伽马射线统一解释了 HAWC 和 Fermi 的观测，并预见 IceCube-Gen2 中微子检验。",
         "review": "",
-        "highlight": "",
+        "highlight": "首次提出宁静太阳自身加速宇宙线至 TeV 能量，并通过强子相互作用统一解释了 HAWC 和 Fermi 观测到的太阳盘面伽马射线异常，同时预言了可检验的中微子信号。",
         "relation": "",
-        "authors_en": "",
-        "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "authors_en": "P. Banik (University of North Bengal), A. Bhadra (University of North Bengal), S. K. Ghosh (Bose Institute)",
+        "corresponding_en": "Sanjay K. Ghosh",
+        "context_outlook": "传统模型（[[Seckel+ 1991]]；[[Mazziotta+ 2020]]）基于银河宇宙线与太阳大气的强子相互作用，但预测的伽马射线通量和谱形与 Fermi-LAT 及 HAWC 观测不符，且未能解释通量随太阳活动的反相关。观测上，伽马射线盘面均匀分布（[[Linden+ 2022]]）暗示辐射源于出射粒子。本文提出宁静太阳色球层有能力通过扩散激波加速宇宙线至 TeV 能量，强子相互作用产生的次级伽马射线与中微子可统一解释上述观测，同时改善了对太阳宇宙线阴影的模拟。未来 IceCube-Gen2 对 TeV 中微子的探测将成为关键检验；若证实，太阳作为粒子加速器的证据将对银河宇宙线起源理论产生深远影响。",
+        "citations": [
+          {
+            "label": "Seckel+ 1991",
+            "authors": "Seckel",
+            "year": "1991",
+            "title": "Signatures of Cosmic-Ray Interactions on the Solar Surface.",
+            "ref": "Seckel, D., Stanev, T. & Gaisser, T. K. Signatures of Cosmic-Ray Interactions on the Solar Surface. ApJ 382, 652 (1991).",
+            "arxiv": "",
+            "doi": "10.1086/170753",
+            "bibcode": "1991ApJ...382..652S",
+            "url": "https://doi.org/10.1086/170753",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mazziotta+ 2020",
+            "authors": "Mazziotta",
+            "year": "2020",
+            "title": "Cosmic-ray interactions with the Sun using the FLUKA code.",
+            "ref": "Mazziotta, M. N. et al. Cosmic-ray interactions with the Sun using the FLUKA code. Phys. Rev. D 101, 083011 (2020).",
+            "arxiv": "2001.09933",
+            "doi": "10.1103/PhysRevD.101.083011",
+            "bibcode": "2020PhRvD.101h3011M",
+            "url": "https://arxiv.org/abs/2001.09933",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Linden+ 2022",
+            "authors": "Linden",
+            "year": "2022",
+            "title": "First observations of solar disk gamma rays over a full solar cycle.",
+            "ref": "Linden, T. et al. First observations of solar disk gamma rays over a full solar cycle. Phys. Rev. D 105, 063013 (2022).",
+            "arxiv": "",
+            "doi": "10.1103/PhysRevD.105.063013",
+            "bibcode": "2022PhRvD.105f3013L",
+            "url": "https://doi.org/10.1103/PhysRevD.105.063013",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       },
       "dates": {
         "preprint": "2023-05-26",
@@ -10993,7 +11237,8 @@
           "ads": "2026JCAP...07..039F",
           "arxiv": "2507.20262",
           "doi": "10.1088/1475-7516/2026/07/039"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11067,7 +11312,8 @@
           "ads": "2026JCAP...07..044L",
           "arxiv": "2509.04538",
           "doi": "10.1088/1475-7516/2026/07/044"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -11184,7 +11430,8 @@
           "ads": "2026JCAP...07..052A",
           "arxiv": "2603.17602",
           "doi": "10.1088/1475-7516/2026/07/052"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -11258,7 +11505,8 @@
           "ads": "2026JCAP...07..056A",
           "arxiv": "2510.27586",
           "doi": "10.1088/1475-7516/2026/07/056"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11327,7 +11575,8 @@
           "ads": "2026JCAP...07..059A",
           "arxiv": "2509.12438",
           "doi": "10.1088/1475-7516/2026/07/059"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 65,
@@ -11510,7 +11759,8 @@
           "ads": "2026JCAP...07..061C",
           "arxiv": "2508.09835",
           "doi": "10.1088/1475-7516/2026/07/061"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -11580,7 +11830,8 @@
         "external_ids": {
           "ads": "2026JHEAp..5400684G",
           "doi": "10.1016/j.jheap.2026.100684"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -11660,7 +11911,8 @@
           "ads": "2026JHEAp..5400689Z",
           "arxiv": "2604.00884",
           "doi": "10.1016/j.jheap.2026.100689"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11739,7 +11991,8 @@
           "ads": "2026JHEAp..5400690L",
           "arxiv": "2603.15028",
           "doi": "10.1016/j.jheap.2026.100690"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -11930,7 +12183,8 @@
         "external_ids": {
           "ads": "2026JHEAp..5400691A",
           "doi": "10.1016/j.jheap.2026.100691"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -12002,7 +12256,8 @@
         "external_ids": {
           "ads": "2026JHEAp..5400692N",
           "doi": "10.1016/j.jheap.2026.100692"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -12081,7 +12336,8 @@
           "ads": "2026JHEAp..5400693A",
           "arxiv": "2603.03984",
           "doi": "10.1016/j.jheap.2026.100693"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -12139,7 +12395,8 @@
         "external_ids": {
           "ads": "2026M&PS...61.1108A",
           "doi": "10.1111/maps.70084"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -12230,7 +12487,8 @@
           "ads": "2026MNRAS.548ag673G",
           "arxiv": "2604.06460",
           "doi": "10.1093/mnras/stag673"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -12305,7 +12563,8 @@
           "ads": "2026MNRAS.550ag798A",
           "arxiv": "2401.13668",
           "doi": "10.1093/mnras/stag798"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -12375,7 +12634,8 @@
           "ads": "2026MNRAS.550g1077B",
           "arxiv": "2604.13711",
           "doi": "10.1093/mnras/stag1077"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -12522,7 +12782,8 @@
           "ads": "2026MNRAS.550g1157B",
           "arxiv": "2606.17754",
           "doi": "10.1093/mnras/stag1157"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -12590,7 +12851,8 @@
           "ads": "2026MNRAS.550g1158A",
           "arxiv": "2510.16121",
           "doi": "10.1093/mnras/stag1158"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -12774,7 +13036,8 @@
           "ads": "2026MNRAS.550g1162S",
           "arxiv": "2603.12317",
           "doi": "10.1093/mnras/stag1162"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -12856,7 +13119,8 @@
           "ads": "2026MNRAS.550g1179M",
           "arxiv": "2606.22190",
           "doi": "10.1093/mnras/stag1179"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -13069,7 +13333,8 @@
           "ads": "2026MNRAS.550g1184M",
           "arxiv": "2602.23646",
           "doi": "10.1093/mnras/stag1184"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -13220,7 +13485,8 @@
           "ads": "2026MNRAS.550g1187C",
           "arxiv": "2606.13806",
           "doi": "10.1093/mnras/stag1187"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -13422,7 +13688,8 @@
           "ads": "2026MNRAS.550g1193B",
           "arxiv": "2602.16559",
           "doi": "10.1093/mnras/stag1193"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -13579,7 +13846,8 @@
           "ads": "2026MNRAS.550g1205S",
           "arxiv": "2606.30141",
           "doi": "10.1093/mnras/stag1205"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -13701,7 +13969,8 @@
           "ads": "2026MNRAS.550g1209H",
           "arxiv": "2606.27225",
           "doi": "10.1093/mnras/stag1209"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -13845,7 +14114,8 @@
           "ads": "2026MNRAS.550g1231C",
           "arxiv": "2601.06251",
           "doi": "10.1093/mnras/stag1231"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -13862,14 +14132,80 @@
         "paper_id": "ads:2026MNRAS.550g1231C",
         "title_zh": "大质量多星系统的形成：早期迁移与并合",
         "team": "",
-        "tldr": "本文通过恒星团形成模拟，揭示大于2太阳质量的大质量双星主要通过环绕双星盘驱动的迁移在0.1百万年内硬化至10天文单位以内，并经历多次并合产生极端质量比，最终可能演化为包含黑洞或中子星的致密双星。",
+        "tldr": "利用高分辨率星团模拟，揭示大质量双星通过盘驱动迁移和并合形成紧密系统，并发现轨道取向各向同性、恒星并合频繁。",
         "review": "",
-        "highlight": "",
+        "highlight": "首次系统证认了太阳金属丰度下大质量双星的硬化机制：所有最终间距<10 au 的双星均经历了环双星盘演化阶段；发现双星轨道倾角呈各向同性分布，提示湍流与少体动力学在组装过程中起决定作用。",
         "relation": "",
-        "authors_en": "",
+        "authors_en": "S. Chon (Max-Planck-Institut für Astrophysik, Garching, Germany), A. Vigna-Gómez (Niels Bohr International Academy, University of Copenhagen, Copenhagen, Denmark)",
         "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "context_outlook": "大质量恒星的高多重性比例及不同分离度分布[[Sana+2012, Moe+2017]]，使得其形成与早期演化成为恒星天体物理的前沿课题[[Offner+2023]]。本文采用高分辨率辐射流体星团形成模拟[[Chon+2024]]，揭示了早期盘驱动迁移、环双星盘硬化和频繁并合是产生紧密大质量双星的核心路径，并量化了形成通道与最终间距的关系。未来研究需融合非理想磁流体效应、更高数值分辨率以及不同金属丰度环境[[Bate 2019]]，以构建从分子云坍缩到致密天体并合前身星形成的大质量双星完整演化图景。",
+        "citations": [
+          {
+            "label": "Sana+2012",
+            "authors": "Sana",
+            "year": "2012",
+            "title": "Binary Interaction Dominates the Evolution of Massive Stars",
+            "ref": "H. Sana, S. E. de Mink, A. de Koter, N. Langer, C. J. Evans, M. Gieles, E. Gosset, R. G. Izzard, J.-B. Le Bouquin, and F. R. N. Schneider (2012) Binary Interaction Dominates the Evolution of Massive Stars. Science 337 (6093), pp. 444.",
+            "arxiv": "1207.6397",
+            "doi": "10.1126/science.1223344",
+            "bibcode": "2012Sci...337..444S",
+            "url": "https://arxiv.org/abs/1207.6397",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Moe+2017",
+            "authors": "Moe",
+            "year": "2017",
+            "title": "Mind Your Ps and Qs: The Interrelation between Period (P) and Mass-ratio (Q) Distributions of Binary Stars",
+            "ref": "M. Moe and R. Di Stefano (2017) Mind Your Ps and Qs: The Interrelation between Period (P) and Mass-ratio (Q) Distributions of Binary Stars. ApJS 230 (2), pp. 15.",
+            "arxiv": "",
+            "doi": "10.3847/1538-4365/aa6fb6",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4365/aa6fb6",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Offner+2023",
+            "authors": "Offner",
+            "year": "2023",
+            "title": "The Origin and Evolution of Multiple Star Systems",
+            "ref": "S. S. R. Offner, M. Moe, K. M. Kratter, S. I. Sadavoy, E. L. N. Jensen, and J. J. Tobin (2023) The Origin and Evolution of Multiple Star Systems. In Protostars and Planets VII, S. Inutsuka, Y. Aikawa, T. Muto, K. Tomida, and M. Tamura (Eds.), Astronomical Society of the Pacific Conference Series, Vol. 534, pp. 275.",
+            "arxiv": "2203.10066",
+            "doi": "10.48550/arXiv.2203.10066",
+            "bibcode": "2023ASPC..534..275O",
+            "url": "https://arxiv.org/abs/2203.10066",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Chon+2024",
+            "authors": "Chon",
+            "year": "2024",
+            "title": "Impact of radiative feedback on the initial mass function of metal-poor stars",
+            "ref": "S. Chon, T. Hosokawa, K. Omukai, and R. Schneider (2024) Impact of radiative feedback on the initial mass function of metal-poor stars. MNRAS 530 (3), pp. 2453–2474.",
+            "arxiv": "2312.13339",
+            "doi": "10.1093/mnras/stae1027",
+            "bibcode": "2024MNRAS.530.2453C",
+            "url": "https://arxiv.org/abs/2312.13339",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bate 2019",
+            "authors": "Bate",
+            "year": "2019",
+            "title": "The statistical properties of stars and their dependence on metallicity",
+            "ref": "M. R. Bate (2019) The statistical properties of stars and their dependence on metallicity. MNRAS 484 (2), pp. 2341–2361.",
+            "arxiv": "1901.03713",
+            "doi": "10.1093/mnras/stz103",
+            "bibcode": "2019MNRAS.484.2341B",
+            "url": "https://arxiv.org/abs/1901.03713",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       },
       "dates": {
         "preprint": "2026-01-09",
@@ -13919,7 +14255,8 @@
           "ads": "2026MNRAS.550g1236X",
           "arxiv": "2603.07620",
           "doi": "10.1093/mnras/stag1236"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -14110,7 +14447,8 @@
           "ads": "2026MNRAS.550g1242Z",
           "arxiv": "2607.00226",
           "doi": "10.1093/mnras/stag1242"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -14241,7 +14579,8 @@
         "external_ids": {
           "ads": "2026MNRAS.550g1250S",
           "doi": "10.1093/mnras/stag1250"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -14317,7 +14656,8 @@
           "ads": "2026MNRAS.550g1257T",
           "arxiv": "2510.19729",
           "doi": "10.1093/mnras/stag1257"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -14430,7 +14770,8 @@
         "external_ids": {
           "ads": "2026MNRAS.550g1320S",
           "doi": "10.1093/mnras/stag1320"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -14499,7 +14840,8 @@
           "ads": "2026MNRAS.tmp.1193L",
           "arxiv": "2603.17922",
           "doi": "10.1093/mnras/stag1278"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -14652,7 +14994,8 @@
           "ads": "2026MNRAS.tmp.1200W",
           "arxiv": "2607.01604",
           "doi": "10.1093/mnras/stag1259"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -14793,7 +15136,8 @@
           "ads": "2026MNRAS.tmp.1210A",
           "arxiv": "2601.04406",
           "doi": "10.1093/mnras/stag1285"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -14966,7 +15310,8 @@
           "ads": "2026MNRAS.tmp.1211H",
           "arxiv": "2607.05182",
           "doi": "10.1093/mnras/stag1283"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -15038,7 +15383,8 @@
           "ads": "2026MNRAS.tmp.1219F",
           "arxiv": "2601.15732",
           "doi": "10.1093/mnras/stag1295"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -15189,7 +15535,8 @@
           "ads": "2026MNRAS.tmp.1220F",
           "arxiv": "2607.07813",
           "doi": "10.1093/mnras/stag1298"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -15255,7 +15602,8 @@
           "ads": "2026MNRAS.tmp.1221J",
           "arxiv": "2607.07568",
           "doi": "10.1093/mnras/stag1302"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 78,
@@ -15376,7 +15724,8 @@
         "external_ids": {
           "ads": "2026MNRAS.tmp.1229K",
           "doi": "10.1093/mnras/stag1306"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -15460,7 +15809,8 @@
           "ads": "2026MNRAS.tmp.1244M",
           "arxiv": "2607.09004",
           "doi": "10.1093/mnras/stag1317"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -15523,7 +15873,8 @@
           "ads": "2026MNRAS.tmp.1245G",
           "arxiv": "2605.17735",
           "doi": "10.1093/mnras/stag1307"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 65,
@@ -15538,16 +15889,56 @@
       },
       "summary": {
         "paper_id": "ads:2026MNRAS.tmp.1245G",
-        "title_zh": "利用X射线和光学观测将IGR J20084+3221分类为中介偏振星",
+        "title_zh": "利用X射线和光学观测将IGR J20084+3221归类为中等偏振激变变星",
         "team": "",
-        "tldr": "通过XMM-Newton、NuSTAR和Hale望远镜的观测将未分类源IGR J20084+3221确定为中介偏振星，发现其白矮星自转周期为635秒，质量约为1.09M⊙。",
+        "tldr": "通过XMM-Newton、NuSTAR及Palomar光学观测，将IGR J20084+3221确认为一颗具有635秒白矮星自旋周期的中等偏振（IP）磁激变变星，并测得白矮星质量约1.09太阳质量。",
         "review": "",
-        "highlight": "",
+        "highlight": "综合X射线计时、光谱和多波段测光，首次明确排除该源的高质量X射线双星（HMXB）可能，将其定性为IP，并采用后激波区模型得到高于CV平均水平的白矮星质量，为研究大质量白矮星演化提供新样本。",
         "relation": "",
-        "authors_en": "",
-        "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "authors_en": "Julian Gerber (University of California, San Diego), Jeremy Hare (NASA Goddard Space Flight Center), John A. Tomsick (Space Sciences Laboratory, University of California, Berkeley) et al.",
+        "corresponding_en": "Julian Gerber",
+        "context_outlook": "这项研究通过X射线和光学多波段分析，将IGR J20084+3221明确归类为IP，并测得其白矮星自旋周期约635秒、质量约1.09太阳质量。该工作延续了利用Chandra定位及多波段测光系统性证认INTEGRAL硬X射线源的方法 [[Tomsick+ 2021]]，并进一步扩展了其中高质量白矮星IP的样本 [[Gerber+ 2024]] [[Coughenour+ 2022]]。随着INTEGRAL任务在2025年结束并发布最终源表，未来有望发现更多类似IP。若能对这类源开展光学径向速度或红外光谱观测，将有助于测定其轨道周期并限制伴星性质，从而深入理解高质量白矮星在磁CV中的演化路径。",
+        "citations": [
+          {
+            "label": "Tomsick+ 2021",
+            "authors": "Tomsick",
+            "year": "2021",
+            "title": "Using Chandra Localizations and Gaia Distances and Proper Motions to Classify Hard X-Ray Sources Discovered by INTEGRAL",
+            "ref": "J. A. Tomsick, B. M. Coughenour, J. Hare, R. Krivonos, A. Bodaghee, S. Chaty, M. Clavel, F. M. Fornasini, J. Rodriguez, and A. W. Shaw (2021) Using Chandra Localizations and Gaia Distances and Proper Motions to Classify Hard X-Ray Sources Discovered by INTEGRAL . ApJ 914 ( 1 ), pp. 48 . External Links: Document , 2104.09646",
+            "arxiv": "2104.09646",
+            "doi": "10.3847/1538-4357/abfa1a",
+            "bibcode": "2021ApJ...914...48T",
+            "url": "https://arxiv.org/abs/2104.09646",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Gerber+ 2024",
+            "authors": "Gerber",
+            "year": "2024",
+            "title": "X-ray measurement of a high-mass white dwarf and its spin for the intermediate polar IGR J18434-0508",
+            "ref": "J. Gerber, J. Hare, J. A. Tomsick, B. M. Coughenour, A. W. Shaw, M. Clavel, F. Fornasini, J. Halpern, A. Joens, R. Krivonos, and K. Mukai (2024) X-ray measurement of a high-mass white dwarf and its spin for the intermediate polar IGR J18434-0508 . Monthly Notices of the Royal Astronomical Society 530 , pp. 861–869 . Note: ADS Bibcode: 2024MNRAS.530..861G External Links: ISSN 0035-8711 , Link , Document",
+            "arxiv": "2403.19170",
+            "doi": "10.1093/mnras/stae896",
+            "bibcode": "2024MNRAS.530..861G",
+            "url": "https://arxiv.org/abs/2403.19170",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Coughenour+ 2022",
+            "authors": "Coughenour",
+            "year": "2022",
+            "title": "Classifying IGR J18007-4146 as an intermediate polar using XMM and NuSTAR",
+            "ref": "B. M. Coughenour, J. A. Tomsick, A. W. Shaw, K. Mukai, M. Clavel, J. Hare, R. Krivonos, and F. M. Fornasini (2022) Classifying IGR J18007-4146 as an intermediate polar using XMM and NuSTAR . Monthly Notices of the Royal Astronomical Society 511 , pp. 4582–4589 . Note: ADS Bibcode: 2022MNRAS.511.4582C External Links: ISSN 0035-8711 , Link , Document",
+            "arxiv": "2201.11170",
+            "doi": "10.1093/mnras/stac263",
+            "bibcode": "2022MNRAS.511.4582C",
+            "url": "https://arxiv.org/abs/2201.11170",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       },
       "dates": {
         "preprint": "2026-05-18",
@@ -15610,7 +16001,8 @@
           "ads": "2026MNRAS.tmp.1259D",
           "arxiv": "2605.18731",
           "doi": "10.1093/mnras/stag1340"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -15719,7 +16111,8 @@
           "ads": "2026MNRAS.tmp.1260Y",
           "arxiv": "2603.17615",
           "doi": "10.1093/mnras/stag1325"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -15827,7 +16220,8 @@
         "external_ids": {
           "ads": "2026MNRAS.tmp.1265F",
           "doi": "10.1093/mnras/stag1337"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -15911,7 +16305,8 @@
         "external_ids": {
           "ads": "2026NatAs.tmp..148P",
           "doi": "10.1038/s41550-026-02910-w"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -16016,7 +16411,8 @@
           "ads": "2026NatAs.tmp..153T",
           "arxiv": "2507.08070",
           "doi": "10.1038/s41550-026-02916-4"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -16137,7 +16533,8 @@
         "external_ids": {
           "ads": "2026Natur.655R.285.",
           "doi": "10.1038/d41586-026-02034-1"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -16152,15 +16549,15 @@
       },
       "summary": {
         "paper_id": "ads:2026Natur.655R.285.",
-        "title_zh": "中微子摇篮发现：“暗影冲击者”",
+        "title_zh": "中微子摇篮的发现：‘暗影冲击者’",
         "team": "",
-        "tldr": "一个在南极探测到的粒子诞生于一个在宇宙年轻时大量产生恒星的星系。",
+        "tldr": "南极探测到的一个中微子，源于早期宇宙中一个剧烈形成恒星的星系（“暗影冲击者”）。",
         "review": "",
-        "highlight": "首次将高能中微子溯源至早期星暴星系，揭示了中微子天文学的新源类。",
+        "highlight": "首次将高能宇宙中微子直接溯源至一个具体的星爆星系，打破了以往难以精确定位中微子源的僵局。",
         "relation": "",
         "authors_en": "",
         "corresponding_en": "",
-        "context_outlook": "此项发现将高能中微子与早期宇宙的恒星形成活动联系起来。传统上，活动星系核和伽马射线暴被认为是主要中微子源，而这一结果凸显了星暴星系的潜在贡献。随着冰立方等探测器的灵敏度提升和实时多信使预警网络完善，对中微子诞生地的定位和证认正在加速。未来结合更深的电磁巡天，有望揭示更多此类“中微子摇篮”，并检验星系演化模型。",
+        "context_outlook": "高能中微子的天体物理起源长期是未解之谜，先前多认为主要来自活动星系核或伽马射线暴。该发现暗示，宇宙年轻时大量产生恒星的星爆星系也可能是重要中微子工厂。这一突破推动多信使天文学的发展，未来利用升级的 IceCube-Gen2 等设备对更多事件进行精确溯源，系统研究中微子源的宇宙学演化，有望彻底揭开高能宇宙线和中微子的产生机制。",
         "citations": []
       },
       "dates": {
@@ -16234,7 +16631,8 @@
           "ads": "2026NewA..12802610S",
           "arxiv": "2606.30727",
           "doi": "10.1016/j.newast.2026.102610"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -16300,7 +16698,8 @@
         "external_ids": {
           "ads": "2026NewA..12802618A",
           "doi": "10.1016/j.newast.2026.102618"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -16370,7 +16769,8 @@
           "ads": "2026OJAp....964520K",
           "arxiv": "2512.18786",
           "doi": "10.33232/001c.164520"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -16492,7 +16892,8 @@
           "ads": "2026OJAp....964830K",
           "arxiv": "2512.24936",
           "doi": "10.33232/001c.164830"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -16630,7 +17031,8 @@
           "ads": "2026OJAp....964902G",
           "arxiv": "2603.01934",
           "doi": "10.33232/001c.164902"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -16694,7 +17096,8 @@
           "ads": "2026PASJ..tmp..183S",
           "arxiv": "2601.21336",
           "doi": "10.1093/pasj/psag085"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -16710,16 +17113,108 @@
       },
       "summary": {
         "paper_id": "ads:2026PASJ..tmp..183S",
-        "title_zh": "星系与宇宙色散测量的互相关：利用2MASS星系和133个定位快速射电暴约束气体-晕质量关系",
+        "title_zh": "星系与宇宙色散量的互相关：从2MASS星系和133个定位快速射电暴约束气体-晕质量关系",
         "team": "",
-        "tldr": "对2MASS星系与133个FRB的色散测量进行互相关分析，观测信号为零，表明质量10^12-13太阳质量的晕中热气体质量分数需低于TNG300模拟预测，上限约为全局重子比例的10%。",
+        "tldr": "利用2MASS星系和133个定位FRB的互相关分析，在亚Mpc尺度限制晕中热气体质量分数，揭示IllustrisTNG-300模拟在10^{12-13} M_⊙晕中高估热气体，并给出不依赖电子温度的上限。",
         "review": "",
-        "highlight": "",
+        "highlight": "首创使用精确定位FRB与光谱红移星系在实空间进行互相关，成功探测0.01–1 Mpc尺度的自由电子轮廓；发现TNG300的热气体分数需调低至宇宙重子份额的~10%，与X射线、SZ观测约束一致，且不依赖电子温度假设。",
         "relation": "",
-        "authors_en": "",
-        "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "authors_en": "Masato Shirasaki (National Astronomical Observatory of Japan / Institute of Statistical Mathematics), Ryuichi Takahashi (Hirosaki University), Ken Osato (Chiba University / Kavli IPMU) et al.",
+        "corresponding_en": "Masato Shirasaki",
+        "context_outlook": "星系与快速射电暴（FRB）色散量的互相关为探测晕中热气体提供了新途径。早期互相关研究（如[[Shirasaki+ 2022]]）多限于角向分析，[[Hussaini+ 2025]]虽用测光红移模拟互相关却难以触及亚Mpc尺度。本工作基于[[Takahashi+ 2025]]汇编的精确定位FRB样本与[[Ando+ 2018]]标定的星系HOD模型，构建了背景选择稳健的实空间估计量，获得与零结果一致的信号，借此揭示IllustrisTNG-300模拟高估了10^{12–13} M_⊙晕中的热气体质量。所得上限与X射线堆叠（[[Popesso+ 2024]]）、热Sunyaev–Zel’dovich效应（[[Lim+ 2021]]）及运动SZ效应（[[Bigwood+ 2024]]）等独立约束相符。未来更大样本的定位FRB将可细分红移和星系性质，精细刻画反馈过程中的热气体演化。",
+        "citations": [
+          {
+            "label": "Shirasaki+ 2022",
+            "authors": "Shirasaki",
+            "year": "2022",
+            "title": "",
+            "ref": "Shirasaki, M., Takahashi, R., Osato, K., & Ioka, K. 2022, MNRAS, 512, 1730",
+            "arxiv": "2108.12205",
+            "doi": "10.1093/mnras/stac490",
+            "bibcode": "2022MNRAS.512.1730S",
+            "url": "https://arxiv.org/abs/2108.12205",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Hussaini+ 2025",
+            "authors": "Hussaini",
+            "year": "2025",
+            "title": "",
+            "ref": "Hussaini, M., Connor, L., Konietzka, R. M., et al. 2025, ApJ, 993, L27",
+            "arxiv": "2506.04186",
+            "doi": "10.3847/2041-8213/ae0a49",
+            "bibcode": "2025ApJ...993L..27H",
+            "url": "https://arxiv.org/abs/2506.04186",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Takahashi+ 2025",
+            "authors": "Takahashi",
+            "year": "2025",
+            "title": "",
+            "ref": "Takahashi, R., Ioka, K., Shirasaki, M., & Osato, K. 2025, arXiv e-prints, arXiv:2511.02155",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Ando+ 2018",
+            "authors": "Ando",
+            "year": "2018",
+            "title": "",
+            "ref": "Ando, S., Benoit-Lévy, A., & Komatsu, E. 2018, MNRAS, 473, 4318",
+            "arxiv": "1802.06393",
+            "doi": "10.1103/PhysRevD.97.103528",
+            "bibcode": "2018PhRvD..97j3528A",
+            "url": "https://arxiv.org/abs/1802.06393",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Popesso+ 2024",
+            "authors": "Popesso",
+            "year": "2024",
+            "title": "",
+            "ref": "Popesso, P., Biviano, A., Marini, I., et al. 2024, arXiv e-prints, arXiv:2411.16555",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Lim+ 2021",
+            "authors": "Lim",
+            "year": "2021",
+            "title": "",
+            "ref": "Lim, S. H., Barnes, D., Vogelsberger, M., et al. 2021, MNRAS, 504, 5131",
+            "arxiv": "2004.13408",
+            "doi": "10.1098/rsta.2020.0209",
+            "bibcode": "2021RSPTA.37900209L",
+            "url": "https://arxiv.org/abs/2004.13408",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bigwood+ 2024",
+            "authors": "Bigwood",
+            "year": "2024",
+            "title": "",
+            "ref": "Bigwood, L., Amon, A., Schneider, A., et al. 2024, MNRAS, 534, 655",
+            "arxiv": "2404.06098",
+            "doi": "10.1093/mnras/stae2100",
+            "bibcode": "2024MNRAS.534..655B",
+            "url": "https://arxiv.org/abs/2404.06098",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       },
       "dates": {
         "preprint": "2026-01-29",
@@ -16781,7 +17276,8 @@
           "ads": "2026PASP..138g4102K",
           "arxiv": "2605.15360",
           "doi": "10.1088/1538-3873/ae829b"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -16933,7 +17429,8 @@
           "ads": "2026PASP..138g4202O",
           "arxiv": "2606.26288",
           "doi": "10.1088/1538-3873/ae81e6"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -17002,7 +17499,8 @@
           "ads": "2026PDU....5302389R",
           "arxiv": "2511.15542",
           "doi": "10.1016/j.dark.2026.102389"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -17165,7 +17663,8 @@
           "ads": "2026PDU....5302396A",
           "arxiv": "2604.20066",
           "doi": "10.1016/j.dark.2026.102396"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -17228,7 +17727,8 @@
         "external_ids": {
           "ads": "2026PDU....5302397J",
           "doi": "10.1016/j.dark.2026.102397"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -17244,15 +17744,15 @@
       },
       "summary": {
         "paper_id": "ads:2026PDU....5302397J",
-        "title_zh": "通过引力退耦耦合高斯密度和BEC暗物质密度分布的现实紧凑星模型",
+        "title_zh": "基于引力解耦的现实致密星模型：高斯密度与BEC暗物质密度剖面的耦合",
         "team": "",
-        "tldr": "本文利用引力退耦方法，结合高斯密度和BEC暗物质密度分布，建立了各向异性带电紧凑星模型，分析了其物理特性和稳定性，并预测了多个脉冲星的半径和转动惯量。",
+        "tldr": "利用引力解耦方法，构建同时包含高斯普通物质和BEC暗物质密度剖面的致密星模型，验证其物理合理性并与NICER观测相符。",
         "review": "",
-        "highlight": "",
+        "highlight": "首次将高斯密度与BEC暗物质密度通过MGD方法耦合，构建各向异性带电致密星，并成功应用于多颗脉冲星，预测半径与观测一致。",
         "relation": "",
-        "authors_en": "",
+        "authors_en": "M. K. Jasim, Meraj Ali Khan, S. K. Maurya et al.",
         "corresponding_en": "",
-        "context_outlook": "",
+        "context_outlook": "致密星内部结构是天体物理的前沿课题，引力解耦方法为研究多组分物质提供了有力工具。以往研究多采用单一密度剖面或多项式状态方程，难以反映真实物质分布。本研究采用高斯型密度作为种子源，并引入BEC暗物质密度作为新源，通过Karmarkar条件获得了解析解，拓展了双流体模型的适用范围。该方法未来可进一步用于探讨暗物质对致密星质量-半径关系和潮汐形变的影响，并结合更多多信使观测数据进行精细检验。",
         "citations": []
       },
       "dates": {
@@ -17312,7 +17812,8 @@
         "external_ids": {
           "ads": "2026PSJ.....7..169M",
           "doi": "10.3847/PSJ/ae7e6f"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -17376,7 +17877,8 @@
           "ads": "2026PhRvD.114b2003T",
           "arxiv": "2512.10795",
           "doi": "10.1103/q9pv-lrpq"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -17479,7 +17981,8 @@
           "ads": "2026PhRvD.114b3010S",
           "arxiv": "2509.00469",
           "doi": "10.1103/3gvb-rv11"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 25,
@@ -17541,7 +18044,8 @@
           "ads": "2026PhRvD.114b3012S",
           "arxiv": "2606.25773",
           "doi": "10.1103/dcdn-gl9v"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -17606,7 +18110,8 @@
           "ads": "2026PhRvD.114b3013B",
           "arxiv": "2512.09997",
           "doi": "10.1103/j6pw-vm1c"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -17671,7 +18176,8 @@
           "ads": "2026PhRvD.114b3016X",
           "arxiv": "2506.22781",
           "doi": "10.1103/66yl-pg5k"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -17848,7 +18354,8 @@
           "ads": "2026PhRvD.114b3018C",
           "arxiv": "2604.23503",
           "doi": "10.1103/8pb2-9t2x"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -17968,7 +18475,8 @@
           "ads": "2026PhRvD.114b3517A",
           "arxiv": "2603.15036",
           "doi": "10.1103/v7dk-q18l"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -18034,7 +18542,8 @@
           "ads": "2026PhRvD.114b3521H",
           "arxiv": "2505.01517",
           "doi": "10.1103/1kj4-s4ts"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -18098,7 +18607,8 @@
           "ads": "2026PhRvD.114b3527B",
           "arxiv": "2506.02116",
           "doi": "10.1103/9dr4-6cjf"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -18166,7 +18676,8 @@
           "ads": "2026PhRvD.114b4021R",
           "arxiv": "2601.21086",
           "doi": "10.1103/6gm3-q143"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -18280,7 +18791,8 @@
           "ads": "2026PhRvD.114b4022Z",
           "arxiv": "2601.03374",
           "doi": "10.1103/ckd6-tgn6"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -18345,7 +18857,8 @@
           "ads": "2026PhRvD.114b4027B",
           "arxiv": "2511.03574",
           "doi": "10.1103/dx64-mmmz"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -18411,7 +18924,8 @@
           "ads": "2026PhRvD.114b4031L",
           "arxiv": "2605.14711",
           "doi": "10.1103/qk33-vb4j"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 30,
@@ -18479,7 +18993,8 @@
           "ads": "2026PhRvL.137b1405C",
           "arxiv": "2510.06948",
           "doi": "10.1103/pqcz-cvsv"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -18550,7 +19065,8 @@
           "ads": "2026PhRvL.137b1407L",
           "arxiv": "2509.23897",
           "doi": "10.1103/qyfv-wkv1"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -18698,7 +19214,8 @@
           "ads": "2026PhRvL.137b1408Z",
           "arxiv": "2601.16567",
           "doi": "10.1103/d9jf-gxk5"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -18765,7 +19282,8 @@
           "ads": "2026PhRvL.137b1409Y",
           "arxiv": "2605.13960",
           "doi": "10.1103/3tcp-hqf9"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -18831,7 +19349,8 @@
           "ads": "2026PhRvL.137b1410W",
           "arxiv": "2511.04218",
           "doi": "10.1103/5hvn-3lmh"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -19000,7 +19519,8 @@
           "ads": "2026RAA....26h4010W",
           "arxiv": "2606.22390",
           "doi": "10.1088/1674-4527/ae8428"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -19221,7 +19741,8 @@
           "ads": "2026RAA....26h4012Z",
           "arxiv": "2605.08595",
           "doi": "10.1088/1674-4527/ae8425"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -19396,7 +19917,8 @@
           "ads": "2026SoPh..301..107A",
           "arxiv": "2604.26036",
           "doi": "10.1007/s11207-026-02701-6"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -19513,7 +20035,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18315"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -19575,7 +20098,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18352"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 30,
@@ -19637,7 +20161,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18369"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -19695,7 +20220,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18376"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -19802,7 +20328,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18378"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -19865,7 +20392,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18381"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -19923,7 +20451,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18384"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -20062,7 +20591,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18390"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -20123,7 +20653,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18395"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -20183,7 +20714,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18398"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -20243,7 +20775,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18399"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -20301,7 +20834,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18405"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -20383,7 +20917,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18419"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -20464,7 +20999,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18437"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -20585,7 +21121,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18441"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -20644,7 +21181,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18449"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -20700,7 +21238,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18518"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -20759,7 +21298,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18521"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -20816,7 +21356,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18528"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -20876,7 +21417,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18551"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -20934,7 +21476,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18572"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -21029,7 +21572,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18595"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -21191,7 +21735,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18627"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 30,
@@ -21252,7 +21797,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18633"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -21353,7 +21899,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18647"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -21414,7 +21961,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18657"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -21474,7 +22022,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18675"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -21538,7 +22087,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18698"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -21688,7 +22238,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18707"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -21752,7 +22303,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18743"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -21813,7 +22365,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18751"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -21873,7 +22426,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18761"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -21992,7 +22546,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18764"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -22052,7 +22607,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18800"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -22110,7 +22666,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18805"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -22169,7 +22726,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18810"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -22238,7 +22796,8 @@
         "external_ids": {
           "arxiv": "2607.18811",
           "doi": "10.3847/1538-4357/ae677e"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -22414,7 +22973,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18812"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -22523,7 +23083,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18851"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -22583,7 +23144,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18871"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -22646,7 +23208,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18889"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -22705,7 +23268,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18919"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -22764,7 +23328,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18920"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -22820,7 +23385,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18971"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -22888,7 +23454,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18972"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -23013,7 +23580,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.18980"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -23084,7 +23652,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19002"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -23144,7 +23713,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19113"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -23213,7 +23783,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19138"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -23332,7 +23903,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19141"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -23388,7 +23960,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19145"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -23445,7 +24018,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19152"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -23502,7 +24076,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19169"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -23566,7 +24141,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19175"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -23630,7 +24206,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19220"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -23692,7 +24269,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19222"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -23812,7 +24390,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19225"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -23872,7 +24451,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19244"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -23938,7 +24518,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19254"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -24071,7 +24652,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19273"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 65,
@@ -24192,7 +24774,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19277"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -24209,14 +24792,80 @@
         "paper_id": "arxiv:2607.19277",
         "title_zh": "GPU上的天体物理学：介绍AGILE 1.0",
         "team": "",
-        "tldr": "论文介绍了AGILE，一个基于GPU的自适应网格细化框架，用于求解天体物理和太阳物理中的守恒律，支持多种物理模块，并在大量GPU上展示了高性能和可扩展性。",
+        "tldr": "本文介绍了GPU加速的自适应网格细化框架AGILE 1.0，用于求解天体与太阳物理中的守恒律，并展示其性能与科学应用。",
         "review": "",
-        "highlight": "",
+        "highlight": "AGILE在保持与MPI-AMRVAC兼容的同时，通过OpenACC实现高效GPU加速，支持仅16³块大小的深度嵌套AMR模拟，在2048个GPU上展现了良好的强缩放性能。",
         "relation": "",
-        "authors_en": "",
-        "corresponding_en": "",
-        "context_outlook": "",
-        "citations": []
+        "authors_en": "O. Porth (Anton Pannekoek Institute for Astronomy, University of Amsterdam), A. Kelly (Centre for mathematical Plasma Astrophysics, Department of Mathematics, KU Leuven), O. Willocx (Centre for mathematical Plasma Astrophysics, Department of Mathematics, KU Leuven) et al.",
+        "corresponding_en": "Oliver Porth",
+        "context_outlook": "AGILE脱胎于MPI-AMRVAC（[[Keppens+ 2012]]; [[Porth+ 2014]]; [[Keppens+ 2023]]），其GPU实现借鉴了foap4（[[Teunissen+ 2026]]）的宏内核策略，在多个天体物理应用中展现了高效性与可扩展性。相较于纯CPU方案，AGILE将成本降低了一个数量级，并已测试至2048块GPU。未来版本计划纳入BHAC（[[Porth+ 2017]]）的广义相对论求解器，并引入约束输运和非笛卡尔网格，从而覆盖从太阳物理到相对论喷流的更广泛参数空间。",
+        "citations": [
+          {
+            "label": "Keppens+ 2012",
+            "authors": "Keppens",
+            "year": "2012",
+            "title": "Parallel, grid-adaptive approaches for relativistic hydro and magnetohydrodynamics",
+            "ref": "R. Keppens, Z. Meliani, A. J. van Marle, P. Delmont, A. Vlasis, and B. van der Holst (2012) Parallel, grid-adaptive approaches for relativistic hydro and magnetohydrodynamics. Journal of Computational Physics 231 (3), pp. 718–744. External Links: Document",
+            "arxiv": "",
+            "doi": "10.1016/j.jcp.2011.01.020",
+            "bibcode": "2012JCoPh.231..718K",
+            "url": "https://doi.org/10.1016/j.jcp.2011.01.020",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Porth+ 2014",
+            "authors": "Porth",
+            "year": "2014",
+            "title": "MPI-AMRVAC for solar and astrophysics",
+            "ref": "O. Porth, C. Xia, T. Hendrix, S. P. Moschou, and R. Keppens (2014) MPI-AMRVAC for solar and astrophysics. The Astrophysical Journal Supplement Series 214, pp. 4. External Links: 1407.2052, Document, Link",
+            "arxiv": "1407.2052",
+            "doi": "10.1088/0067-0049/214/1/4",
+            "bibcode": "2014ApJS..214....4P",
+            "url": "https://arxiv.org/abs/1407.2052",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Keppens+ 2023",
+            "authors": "Keppens",
+            "year": "2023",
+            "title": "MPI-AMRVAC 3.0: Updates to an open-source simulation framework",
+            "ref": "R. Keppens, B. Popescu Braileanu, Y. Zhou, W. Ruan, C. Xia, Y. Guo, N. Claes, and F. Bacchini (2023) MPI-AMRVAC 3.0: Updates to an open-source simulation framework. Astronomy and Astrophysics 673, pp. A66. External Links: ISSN 0004-6361, Document, Link",
+            "arxiv": "2303.03026",
+            "doi": "10.1051/0004-6361/202245359",
+            "bibcode": "2023A&A...673A..66K",
+            "url": "https://arxiv.org/abs/2303.03026",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Teunissen+ 2026",
+            "authors": "Teunissen",
+            "year": "2026",
+            "title": "Foap4: Adaptive mesh refinement with OpenACC, MPI, and p4est",
+            "ref": "J. Teunissen, H. R. Olivares Sánchez, J. Vos, L. Oostrum, J. Hidding, V. Azizi, Y. Zhou, H. Wu, A. Kelly, O. Willocx, C. Xia, R. Keppens, and O. Porth (2026) Foap4: Adaptive mesh refinement with OpenACC, MPI, and p4est. arXiv.",
+            "arxiv": "2605.07612",
+            "doi": "10.48550/arXiv.2605.07612",
+            "bibcode": "2026arXiv260507612T",
+            "url": "https://arxiv.org/abs/2605.07612",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Porth+ 2017",
+            "authors": "Porth",
+            "year": "2017",
+            "title": "The black hole accretion code",
+            "ref": "O. Porth, H. Olivares, Y. Mizuno, Z. Younsi, L. Rezzolla, M. Moscibrodzka, H. Falcke, and M. Kramer (2017) The black hole accretion code. Computational Astrophysics and Cosmology 4, pp. 1. External Links: 1611.09720, Document, Link",
+            "arxiv": "1611.09720",
+            "doi": "10.1186/s40668-017-0020-2",
+            "bibcode": "2017ComAC...4....1P",
+            "url": "https://arxiv.org/abs/1611.09720",
+            "source": "ads",
+            "verified": true
+          }
+        ]
       },
       "dates": {
         "preprint": "2026-07-21",
@@ -24406,7 +25055,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19290"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -26287,7 +26937,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19293"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -26358,7 +27009,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19298"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -26518,7 +27170,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19299"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -26576,7 +27229,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19320"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -26634,7 +27288,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.19329"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
