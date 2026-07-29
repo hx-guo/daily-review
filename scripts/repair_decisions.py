@@ -7,7 +7,6 @@ resummarises, and never touches a decision that already succeeded.
 Usage:
     OPENCODE_API_KEY=... python scripts/repair_decisions.py
 """
-import datetime as dt
 from pathlib import Path
 
 from gdr import config
@@ -21,8 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 def main():
     llm = OpenCodeLLM(api_key=config.get_api_key())
     store = Store(ROOT / "data")
-    run_date = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    print(f"repaired {repair_decisions(store, run_date, llm)} decisions")
+    print(f"repaired {repair_decisions(store, llm)} decisions")
 
 
 if __name__ == "__main__":

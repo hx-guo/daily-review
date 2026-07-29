@@ -29,7 +29,7 @@ def main():
     source = CompositeSource(sources)
     store = Store(ROOT / "data")
 
-    repair_decisions(store, date, llm)
+    repair_decisions(store, llm)
     affected = sync(date, source, llm, store)
     print(f"{date}: synced; affected dates: {affected}")
     build_site(ROOT)

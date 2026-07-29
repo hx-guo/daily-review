@@ -34,6 +34,9 @@ class Store:
         return sorted((p.stem for p in self.daily_dir.glob("*.json")), reverse=True)
 
     # ---- ingest-keyed storage -------------------------------------------------
+    # `save_ingest` is called once, for a brand-new file, by `gdr.pipeline.sync`.
+    # `gdr.pipeline.enrich_seen` and `gdr.pipeline.repair_decisions` are the only
+    # two call sites that ever rewrite an already-written ingest file in place.
 
     def save_ingest(self, day: IngestDay) -> None:
         path = self.ingest_dir / f"{day.ingested}.json"
@@ -52,18 +55,6 @@ class Store:
         for date in self.list_ingest_dates():
             items.extend(self.load_ingest(date).items)
         return items
-
-    def update_item(self, paper_id: str, mutate) -> bool:
-        """Edit one stored item in place. The only path that rewrites a historical
-        ingest file — used by enrichment and by the decision repair pass."""
-        for date in reversed(self.list_ingest_dates()):
-            day = self.load_ingest(date)
-            for item in day.items:
-                if item["paper"].id == paper_id:
-                    mutate(item)
-                    self.save_ingest(day)
-                    return True
-        return False
 
     # ---- seen index ------------------------------------------------------------
 

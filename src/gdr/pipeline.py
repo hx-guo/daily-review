@@ -66,44 +66,70 @@ def enrich_seen(papers, store: Store, *, fetch_dates: bool = True) -> int:
     """Merge later-arriving identifiers and journal dates into papers we already
     hold. Without this a preprint ingested months ago would never learn that it
     was accepted and published. Never re-summarises, never re-reviews, and never
-    moves a paper's archive day."""
+    moves a paper's archive day. Rewrites a stored ingest file only when the
+    merge actually adds something new — every day is otherwise touched on every
+    run for every already-seen paper in the fetch window."""
+    seen = store.seen_map()  # one read for the whole call, not one per key per paper
     enriched = 0
     for paper in papers:
-        target = next((store.locate(k) for k in sorted(paper_keys(paper))
-                       if store.locate(k)), None)
+        target = next((seen[k] for k in sorted(paper_keys(paper)) if seen.get(k)),
+                      None)
         if not target:
             continue
         external = getattr(paper, "external_ids", None) or {}
         doi = str(getattr(paper, "doi", None) or external.get("doi") or "").strip()
         fresh = paper_dates(paper, "", fetch_dates=fetch_dates)
 
-        def mutate(item, external=external, doi=doi, fresh=fresh):
+        def mutate(item, external=external, doi=doi, fresh=fresh) -> bool:
+            changed = False
             stored = item["paper"]
-            stored.external_ids = {**external, **(stored.external_ids or {})}
+            merged_external = {**external, **(stored.external_ids or {})}
+            if merged_external != (stored.external_ids or {}):
+                stored.external_ids = merged_external
+                changed = True
             if not stored.doi and doi:
                 stored.doi = doi
+                changed = True
             for key in ("accepted", "published", "published_precision",
                         "published_source", "received"):
                 if not item["dates"].get(key) and fresh.get(key):
                     item["dates"][key] = fresh[key]
+                    changed = True
+            return changed
 
+        # The seen index already tells us which file holds this paper; try that
+        # file first and only fall back to a full scan if it turns out to be
+        # stale (e.g. a seen entry recorded with no matching ingest file — a
+        # legacy or test-only state, but not one worth crashing on).
+        ingest_dates = store.list_ingest_dates()
         matched = False
-        for date in reversed(store.list_ingest_dates()):
-            day = store.load_ingest(date)
+        if target in ingest_dates:
+            day = store.load_ingest(target)
             for item in day.items:
                 if paper_keys(item["paper"]) & paper_keys(paper):
-                    mutate(item)
-                    store.save_ingest(day)
+                    if mutate(item):
+                        store.save_ingest(day)
                     matched = True
                     break
-            if matched:
-                break
+        if not matched:
+            for date in reversed(ingest_dates):
+                if date == target:
+                    continue
+                day = store.load_ingest(date)
+                for item in day.items:
+                    if paper_keys(item["paper"]) & paper_keys(paper):
+                        if mutate(item):
+                            store.save_ingest(day)
+                        matched = True
+                        break
+                if matched:
+                    break
         enriched += 1 if matched else 0
     return enriched
 
 
-def repair_decisions(store: Store, run_date: str, llm,
-                     window_days: int | None = None, sleep=time.sleep) -> int:
+def repair_decisions(store: Store, llm, window_days: int | None = None,
+                     sleep=time.sleep) -> int:
     """Retry decisions that failed on an earlier run. This is the safety net for a
     dead upstream: a whole day of missing decisions comes back the next morning."""
     window_days = window_days or config.FETCH_WINDOW_DAYS
@@ -143,9 +169,20 @@ def sync(run_date, source, llm, store: Store,
     store.ensure_seen_identities()
     papers = dedupe(source.fetch_recent(run_date, window_days))
     seen = store.seen_identities()
-    fresh = [p for p in papers if seen.isdisjoint(paper_keys(p))]
+    candidates = [p for p in papers if seen.isdisjoint(paper_keys(p))]
     enrich_seen([p for p in papers if not seen.isdisjoint(paper_keys(p))], store,
                 fetch_dates=fetch_dates)
+
+    # Guard against the crash window between save_ingest() and mark_seen()
+    # below: if a run is interrupted there, a paper is written to disk but
+    # never makes it into the seen index, so the seen-index check above alone
+    # would treat it as brand new on the next run — re-fetching, re-scoring,
+    # re-summarising and re-reviewing it (real LLM cost) and writing a second
+    # copy into a different ingest file, with both copies then rendering.
+    # Cross-check against papers already stored, not just the seen index, to
+    # close that window.
+    stored_keys = {key for it in store.all_items() for key in paper_keys(it["paper"])}
+    fresh = [p for p in candidates if stored_keys.isdisjoint(paper_keys(p))]
 
     items = []
     if fresh:
@@ -165,6 +202,8 @@ def sync(run_date, source, llm, store: Store,
 
     items.sort(key=lambda it: it["paper"].id)
     store.save_ingest(IngestDay(ingested=run_date, items=items))
-    for item in items:
-        store.mark_seen(sorted(paper_keys(item["paper"])), run_date)
+    # Mark everything seen in one write, after the file is safely on disk — a
+    # single read-modify-write of the seen index instead of one per paper.
+    store.mark_seen(sorted({key for it in items for key in paper_keys(it["paper"])}),
+                    run_date)
     return [run_date]

@@ -1,4 +1,3 @@
-import hashlib
 import json
 import re
 
@@ -54,7 +53,7 @@ def _keyed_llm(fake_llm_factory, editorial="reject"):
 def _sync(store, papers, llm, run_date="2026-07-18"):
     return sync(run_date, StubSource(papers), llm, store,
                 fetch_fulltext=lambda p, **k: "BODY", max_workers=2,
-                fetch_dates=False)
+                fetch_dates=False, sleep=lambda s: None)
 
 
 def test_sync_writes_one_file_keyed_by_the_run_date(tmp_path, fake_llm_factory):
@@ -111,6 +110,34 @@ def test_enrich_merges_journal_dates_into_an_already_stored_paper(tmp_path):
     assert stored["paper"].external_ids["ads"] == "2026ApJ"
     assert stored["archive_date"] == "2026-03-12"        # archive day never moves
     assert stored["decision"] is None                    # never re-reviewed
+    # ADS-sourced dates synthesise a day-precision published date even
+    # without fetching Crossref; the merge must actually land it.
+    assert stored["dates"]["published"] == "2026-07-16"
+    assert stored["dates"]["published_precision"] == "day"
+    assert stored["dates"]["published_source"] == "ads-pubdate"
+
+
+def test_enrich_does_not_rewrite_the_file_when_nothing_changed(tmp_path):
+    store = Store(tmp_path / "data")
+    item = make_item(_paper("arxiv:9"), RelevanceScore(90, [], "core", "r"), None,
+                     dates={"preprint": "2026-03-12", "ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    store.mark_seen(["arxiv:9"], "2026-07-18")
+
+    rewrites = []
+    original_save = store.save_ingest
+
+    def spy(day):
+        rewrites.append(day.ingested)
+        return original_save(day)
+
+    store.save_ingest = spy
+
+    same_paper = _paper("arxiv:9")   # nothing new: same id, no doi/external_ids/dates to add
+    n = enrich_seen([same_paper], store, fetch_dates=False)
+
+    assert n == 1          # still matched an already-stored paper
+    assert rewrites == []  # ...but nothing changed, so the file was never rewritten
 
 
 def test_failed_decision_still_stores_the_paper_and_is_repaired_next_run(
@@ -134,7 +161,7 @@ def test_failed_decision_still_stores_the_paper_and_is_repaired_next_run(
     assert stored["review_attempts"] == 1
     assert stored["decision_final"] is False
 
-    repaired = repair_decisions(store, "2026-07-19", _keyed_llm(fake_llm_factory))
+    repaired = repair_decisions(store, _keyed_llm(fake_llm_factory))
 
     assert repaired == 1
     assert store.load_ingest("2026-07-18").items[0]["decision"]["level"] == "reject"
@@ -149,13 +176,15 @@ def test_repair_gives_up_after_the_configured_number_of_rounds(
     store.save_ingest(IngestDay("2026-07-18", [item]))
     broken = fake_llm_factory({"只复核下面这一篇文献": "not json"})
 
-    assert repair_decisions(store, "2026-07-19", broken, sleep=lambda s: None) == 0
+    assert repair_decisions(store, broken, sleep=lambda s: None) == 0
 
     stored = store.load_ingest("2026-07-18").items[0]
     assert stored["review_attempts"] == 3
     assert stored["decision_final"] is True
 
-    assert repair_decisions(store, "2026-07-20", broken) == 0   # never tried again
+    # never tried again -- and defensively stubbed so a future regression here
+    # fails fast instead of burning ~151s of real editorial backoff.
+    assert repair_decisions(store, broken, sleep=lambda s: None) == 0
 
 
 def test_sync_skips_already_seen_without_reprocessing(tmp_path, fake_llm_factory):
@@ -165,3 +194,24 @@ def test_sync_skips_already_seen_without_reprocessing(tmp_path, fake_llm_factory
 
     assert _sync(store, [_paper("arxiv:1")], llm) == []
     assert not any("综述卡片" in c["user"] for c in llm.calls)
+
+
+def test_sync_does_not_duplicate_a_paper_already_stored_but_not_yet_marked_seen(
+        tmp_path, fake_llm_factory):
+    """Simulates a crash between save_ingest() and mark_seen(): the paper is
+    already on disk, but the seen index was never updated to reflect it. The
+    next sync must not treat it as brand new -- no reprocessing, no second
+    stored copy."""
+    store = Store(tmp_path / "data")
+    paper = _paper("arxiv:1", published="2026-07-14")
+    item = make_item(paper, RelevanceScore(90, [], "core", "r"), None,
+                     dates={"ingested": "2026-07-18"})
+    store.save_ingest(IngestDay("2026-07-18", [item]))
+    # seen index deliberately left untouched -- this is the crash state.
+
+    llm = _keyed_llm(fake_llm_factory)
+    affected = _sync(store, [paper], llm, run_date="2026-07-19")
+
+    assert affected == []
+    assert store.list_ingest_dates() == ["2026-07-18"]   # no second copy written
+    assert llm.calls == []                                # not reprocessed at all

@@ -122,25 +122,6 @@ def test_seen_index_reads_the_legacy_list_format(tmp_path):
     assert store.locate("arxiv:old") is None
 
 
-def test_update_item_edits_in_place_in_the_owning_ingest_file(tmp_path):
-    store = Store(tmp_path / "data")
-    store.save_ingest(IngestDay("2026-07-22", [_ing_item("arxiv:1"),
-                                               _ing_item("arxiv:2")]))
-    store.mark_seen(["arxiv:1"], "2026-07-22")
-
-    def mutate(item):
-        item["dates"]["published"] = "2026-07-08"
-        item["decision_final"] = True
-
-    assert store.update_item("arxiv:1", mutate) is True
-    assert store.update_item("arxiv:absent", mutate) is False
-
-    items = {it["paper"].id: it for it in store.load_ingest("2026-07-22").items}
-    assert items["arxiv:1"]["dates"]["published"] == "2026-07-08"
-    assert items["arxiv:1"]["decision_final"] is True
-    assert items["arxiv:2"]["dates"]["published"] == ""
-
-
 def test_ensure_seen_identities_preserves_dated_entries_instead_of_flattening(tmp_path):
     """ensure_seen_identities is a legacy migration that predates dated entries.
     If it ever runs after mark_seen() has recorded ingest dates, it must merge
