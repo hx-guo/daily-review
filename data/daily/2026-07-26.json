@@ -3,38 +3,36 @@
   "review": {
     "date": "2026-07-26",
     "overview": "今日有通过严格复核的重大进展。",
-    "highlights": "[HEADLINE] XRISM首次在黑洞X射线双星明亮软态中探测到前所未有的窄发射线：展示了XRISM高分辨率光谱在探测黑洞X射线双星复杂发射线方面的新能力，揭示了明亮软态下此前未观测到的高度电离等离子体和高速外流现象，为理解喷流/盘风机制及与微类星体SS 433的潜在联系提供了新线索。\n[HEADLINE] 天鹅座X-1喷流被星风弯曲：18年射电成像首次实测黑洞瞬时喷流功率：首次以经验数据直接比较黑洞喷流瞬时功率与吸积光度，将星系形成模拟和黑洞吸积标度模型中长期采用的喷流能量学ad hoc假设置于实测基础之上，实质改变领域对喷流-吸积能量关系的认识依据。",
-    "trends": "MAXI J1744-294后续观测对6.7-7.1 keV异常发射线性质的确认（ads:2026ApJ..1006..152P）\n蓝移Fe线外流速度(-1300至-6000 km/s)的物理机制验证（ads:2026ApJ..1006..152P）\n其他BH-LMXB软态高分辨率光谱观测以确认此类窄发射线的普遍性（ads:2026ApJ..1006..152P）\n其他黑洞X射线双星是否可复现类似喷流弯曲与功率测量方法（ads:2026NatAs..10.1039P）\n该瞬时功率与吸积光度的标度关系在更大样本中是否普遍成立（ads:2026NatAs..10.1039P）\n星系形成模拟采用该经验值后对反馈效率预测的具体影响（ads:2026NatAs..10.1039P）",
+    "highlights": "[HEADLINE] 18年射电观测揭示天鹅座X-1喷流弯曲并首次测定其瞬时动能：解决了此前缺乏瞬时喷流功率测量而无法与吸积光度直接比较的问题，为星系形成模拟和黑洞吸积标度模型中长期依赖的黑洞喷流能量学假设提供了坚实的经验基础。\n[HEADLINE] 观测证实恒星级黑洞喷流与超大质量黑洞同样具有相对论性：推翻了恒星级黑洞喷流相对论性较弱的长期认知，为跨质量尺度统一理解黑洞喷流机制提供了关键观测证据。",
+    "trends": "其他黑洞X射线双星中是否也能观测到喷流弯曲并测定瞬时功率（ads:2026NatAs..10.1039P）\n星系形成模拟中引入该经验标度后的反馈效果变化（ads:2026NatAs..10.1039P）\n4U 1543−47 未来爆发中的喷流洛伦兹因子测量（ads:2026NatCo..17.6477Z）\n其他恒星级黑洞X射线双星的喷流洛伦兹因子测量（ads:2026NatCo..17.6477Z）",
     "headline_level": "",
     "headline": "",
     "headline_paper_id": "",
     "headline_reason": "",
     "developments": [],
     "watchlist": [
-      "MAXI J1744-294后续观测对6.7-7.1 keV异常发射线性质的确认（ads:2026ApJ..1006..152P）",
-      "蓝移Fe线外流速度(-1300至-6000 km/s)的物理机制验证（ads:2026ApJ..1006..152P）",
-      "其他BH-LMXB软态高分辨率光谱观测以确认此类窄发射线的普遍性（ads:2026ApJ..1006..152P）",
-      "其他黑洞X射线双星是否可复现类似喷流弯曲与功率测量方法（ads:2026NatAs..10.1039P）",
-      "该瞬时功率与吸积光度的标度关系在更大样本中是否普遍成立（ads:2026NatAs..10.1039P）",
-      "星系形成模拟采用该经验值后对反馈效率预测的具体影响（ads:2026NatAs..10.1039P）"
+      "其他黑洞X射线双星中是否也能观测到喷流弯曲并测定瞬时功率（ads:2026NatAs..10.1039P）",
+      "星系形成模拟中引入该经验标度后的反馈效果变化（ads:2026NatAs..10.1039P）",
+      "4U 1543−47 未来爆发中的喷流洛伦兹因子测量（ads:2026NatCo..17.6477Z）",
+      "其他恒星级黑洞X射线双星的喷流洛伦兹因子测量（ads:2026NatCo..17.6477Z）"
     ],
     "editorial_version": 2,
     "stories": [
       {
-        "paper_id": "ads:2026ApJ..1006..152P",
-        "level": "headline",
-        "title": "XRISM首次在黑洞X射线双星明亮软态中探测到前所未有的窄发射线",
-        "evidence": "XRISM首次观测BH-LMXB候选体MAXI J1744-294的明亮软态，识别出系统内在的窄静态发射成分（σ ∼ 500─1000 km s−1），并探测到至少三个在6.7至7.1 keV之间无对应静止框架原子跃迁的窄发射特征，推断为高度电离蓝移Fe线，外流速度达-1300至-6000 km s−1。",
-        "impact": "展示了XRISM高分辨率光谱在探测黑洞X射线双星复杂发射线方面的新能力，揭示了明亮软态下此前未观测到的高度电离等离子体和高速外流现象，为理解喷流/盘风机制及与微类星体SS 433的潜在联系提供了新线索。",
-        "reason": "第一轮候选定为breaking主要依赖摘要中的“unprecedented”修辞及单源首次观测。严格审查后，该结果虽为XRISM首次在BH-LMXB明亮软态中探测到窄发射线并发现异常蓝移Fe线，实现了新仪器的探测能力，但其物理起源（喷流/盘风多相产生）及与SS 433的相似性均处于“explore scenarios”和“discuss”阶段，未由真实数据确证。作为单源增量观测，其当前结果不足以构成breaking所需的重大且确证的影响，故降级为headline。"
-      },
-      {
         "paper_id": "ads:2026NatAs..10.1039P",
         "level": "headline",
-        "title": "天鹅座X-1喷流被星风弯曲：18年射电成像首次实测黑洞瞬时喷流功率",
-        "evidence": "摘要明确报告：利用18年高分辨射电成像探测到Cygnus X-1喷流被恒星风弯曲；通过喷流-星风相互作用建模，测定当前瞬时喷流动能功率 log10[L_jet(erg/s)]=37.3(+0.1/-0.2)，与bolometric X射线光度可比。摘要指出此前缺乏瞬时喷流功率直接测量，无法与吸积光度比较，反馈模型只能依赖ad hoc假设。",
-        "impact": "首次以经验数据直接比较黑洞喷流瞬时功率与吸积光度，将星系形成模拟和黑洞吸积标度模型中长期采用的喷流能量学ad hoc假设置于实测基础之上，实质改变领域对喷流-吸积能量关系的认识依据。",
-        "reason": "论文报告了领域内长期缺失的瞬时喷流功率直接测量，解决了反馈模型依赖ad hoc假设的关键问题，符合headline标准。非breaking：非突发事件或首次发现新天体/现象，而是18年监测数据的积累性分析结果。证据链完整，事实前提均由摘要直接支持，不依赖外推或未来验证。"
+        "title": "18年射电观测揭示天鹅座X-1喷流弯曲并首次测定其瞬时动能",
+        "evidence": "利用18年高分辨率射电成像探测到黑洞X射线双星Cygnus X-1中由星风引起的喷流弯曲；通过喷流-星风相互作用建模，测得当前喷流瞬时动能功率为log10[L_jet(erg s^-1)]=37.3+0.1/-0.2，与热X射线光度相当。",
+        "impact": "解决了此前缺乏瞬时喷流功率测量而无法与吸积光度直接比较的问题，为星系形成模拟和黑洞吸积标度模型中长期依赖的黑洞喷流能量学假设提供了坚实的经验基础。",
+        "reason": "论文通过18年观测首次实现黑洞喷流瞬时功率测量并与吸积光度直接比较，为星系形成和黑洞吸积模型中长期依赖的ad hoc能量学假设提供了经验基础，符合实现此前不可能的能力并实质改变领域级认识的标准，保留为headline。"
+      },
+      {
+        "paper_id": "ads:2026NatCo..17.6477Z",
+        "level": "headline",
+        "title": "观测证实恒星级黑洞喷流与超大质量黑洞同样具有相对论性",
+        "evidence": "对银河系X射线双星4U 1543−47单次爆发期间两次喷流抛射的射电干涉测量显示，其初始洛伦兹因子可能约为8，95%置信度下最小为4.6。",
+        "impact": "推翻了恒星级黑洞喷流相对论性较弱的长期认知，为跨质量尺度统一理解黑洞喷流机制提供了关键观测证据。",
+        "reason": "论文通过射电干涉测量直接测得恒星级黑洞喷流的高洛伦兹因子，直接否定了该领域长期存在的“恒星级黑洞喷流相对论性较弱”的假设，符合实质改变领域级认识的重大进展标准，保留为 headline。"
       }
     ]
   },
@@ -4941,7 +4939,277 @@
         "context_outlook": "低质量伴星的黑洞/中子星双星的形成对传统孤立双星演化模型构成挑战，等级式三体演化成为一种有力的替代机制。近期对V404 Cygni系统的观测发现了一个宽轨道的1.2太阳质量三级体，为这一图景提供了重要支持。本研究通过对多个类似系统的高对比度成像巡天，未探测到新的宽轨道三级体，揭示出明亮主序或年轻白矮星三级体可能相对稀少，或者它们已演化成更暗的冷白矮星。未来更灵敏的JWST成像与自行测量，将能够系统性地探索冷三级体的存在性，从而对致密天体形成理论施加更强的统计约束。",
         "citations": []
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24858",
+        "source": "arxiv",
+        "title": "Topology-dependent relativistic degradation of multipartite entanglement",
+        "authors": [
+          "Shu-Min Wu",
+          "Si-Han Shang",
+          "Xu Han",
+          "Hui-Chen Yang",
+          "Qianqian Liu"
+        ],
+        "abstract": "The influence of relativistic motion on quantum entanglement is commonly attributed to acceleration-induced thermal noise. Here we show that, for asymmetric multipartite states, the topology of entanglement can become equally important. Considering a three-qubit Star state in the Unruh-DeWitt detector framework, we compare two inequivalent acceleration configurations in which either the central or a peripheral qubit undergoes uniform acceleration. We demonstrate that these physically equivalent accelerations lead to qualitatively different entanglement dynamics: acceleration of a peripheral qubit induces a revival of one-tangle that is absent when the central qubit accelerates, whereas genuine tripartite entanglement decays monotonically but with markedly different robustness. Our results uncover a topology-dependent mechanism for relativistic entanglement degradation, showing that the response of multipartite quantum correlations is determined jointly by Unruh thermalization and the structural role of the accelerated subsystem. This work identifies asymmetric quantum networks as a distinct platform for controlling relativistic quantum resources.",
+        "categories": [
+          "quant-ph",
+          "gr-qc"
+        ],
+        "published": "2026-07-26",
+        "url": "https://arxiv.org/abs/2607.24858v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24858v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24858"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "与高能暂现源研究团队的科学关注范围无关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "论文主题为相对论运动对多体纠缠的影响（量子信息与广义相对论交叉），未涉及任何高能暂现天体、观测或团队相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24858",
+        "title_zh": "多体纠缠的拓扑依赖相对论退化",
+        "team": "",
+        "tldr": "本文通过比较三量子比特Star态中中心或外围量子比特加速时的纠缠动力学，揭示了多体纠缠的相对论退化具有拓扑依赖性，外围加速导致单线程纠缠复苏而中心加速则无，表明纠缠拓扑结构在相对论量子资源控制中的关键作用。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "ads:2026FrASS..1311903Z",
+        "source": "ads",
+        "title": "Doppler pulling suppression in arm locking systems for space-based gravitational wave detection",
+        "authors": [
+          "Zhang, Yi",
+          "Shen, Yulin",
+          "Yang, Jie",
+          "Zhang, Ke",
+          "Pan, Dehui",
+          "Yao, Jiahui",
+          "Xin, Ming"
+        ],
+        "abstract": "Gravitational-wave detection provides humanity with unique access to extreme astrophysical and cosmological phenomena. In space-based missions, however, the Doppler frequency pulling induced by orbital motion severely limits the precise extraction of gravitational-wave signals. This work shows that by introducing properly designed low-pass filters into established laser arm-locking systems, it is possible to maintain a high suppression ratio of laser frequency noise while drastically reducing Doppler pulling. Moreover, with the proposed scheme, the arm-locking system can precisely predict the Doppler frequency without the need to know the real-time distance between satellites, thereby greatly simplifying the complexity of hardware implementation. These results can be generalized and applied to other arm-locking configurations operating in more complex multi-perturbation environments.",
+        "categories": [
+          "arm locking",
+          "Doppler pulling",
+          "feedback control",
+          "gravitational wave detection",
+          "stability"
+        ],
+        "published": "2026-07-26",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026FrASS..1311903Z/abstract",
+        "pdf_url": null,
+        "doi": "10.3389/fspas.2026.1811903",
+        "external_ids": {
+          "ads": "2026FrASS..1311903Z",
+          "doi": "10.3389/fspas.2026.1811903"
+        }
+      },
+      "score": {
+        "score": 30,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文专注于空间引力波探测硬件技术，与团队直接关注的高能暂现源观测和任务能力无实质联系，仅通过多信使天文学背景间接相关。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题明确为空间引力波探测中的臂锁定系统，摘要讨论技术细节（多普勒牵引抑制、滤波器设计），未提及任何高能暂现源或团队参与的任务（如GECAM、HXMT、SVOM等）。"
+      },
+      "summary": {
+        "paper_id": "ads:2026FrASS..1311903Z",
+        "title_zh": "空间引力波探测臂锁定系统中的多普勒牵引抑制",
+        "team": "",
+        "tldr": "提出在臂锁定系统中加入低通滤波器，在保持激光频率噪声高抑制比的同时大幅降低多普勒牵引，并能预测多普勒频率，简化硬件实现。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114b3034S",
+        "source": "ads",
+        "title": "Expectations for the first supermassive black-hole binary resolved by PTAs. I. Model efficacy",
+        "authors": [
+          "Schult, Levi",
+          "Petrov, Polina",
+          "Taylor, Stephen R.",
+          "Pol, Nihan",
+          "Laal, Nima",
+          "Charisi, Maria",
+          "Ma, Chung-Pei"
+        ],
+        "abstract": "One of the most promising targets for pulsar timing arrays (PTAs) is identifying an individual supermassive black hole binary (SMBHB) out of the population of binaries theorized to produce a gravitational wave background (GWB). In this work, we emulate an evolving PTA dataset, complete with an increasing number of pulsars and timing baselines, into which we inject a single binary on top of a Gaussian GWB signal. We vary the binary's source parameters, including sky position and frequency, and create ten noise realizations for each source/PTA combination to synthesize an ensemble of simulated datasets with which we assess current Bayesian binary search techniques. We develop a novel, cross-correlation based model tuned for individual SMBHBs and compare its binary detection and characterization capabilities to two waveform-based template models. This spike pixel (SP) technique is designed to identify the frequency-specific anisotropy induced by an individual SMBHB. We find that a template-based search, including the full gravitational wave signal structure (i.e., both the Earth and pulsar effects of an incident GW) returns the highest Bayes factors (BF) and has the most robust parameter estimations. SP attains a realization-median <inline-formula><mml:math><mml:mrow><mml:mi>BF</mml:mi><mml:mo>&gt;</mml:mo><mml:mn>10</mml:mn></mml:mrow></mml:math></inline-formula> at source strengths <inline-formula><mml:math><mml:mrow><mml:mn>7</mml:mn><mml:mo>&lt;</mml:mo><mml:mo>(</mml:mo><mml:mi>S</mml:mi><mml:mo>/</mml:mo><mml:mi>N</mml:mi><mml:mo>)</mml:mo><mml:mo>&lt;</mml:mo><mml:mn>15</mml:mn></mml:mrow></mml:math></inline-formula>. Interestingly, despite being a deterministic model, the Earth-term template struggles to identify and characterize low-frequency binaries (i.e., at 5 nHz). These binaries require higher source strengths (<inline-formula><mml:math><mml:mrow><mml:mn>16</mml:mn><mml:mo>&lt;</mml:mo><mml:mo>(</mml:mo><mml:mi>S</mml:mi><mml:mo>/</mml:mo><mml:mi>N</mml:mi><mml:mo>)</mml:mo><mml:mo>&lt;</mml:mo><mml:mn>19</mml:mn></mml:mrow></mml:math></inline-formula>) to reach the same BF threshold. This is likely due to neglected confusion effects between the pulsar and Earth terms. By contrast, the SP shows promise for parameter estimation despite treating a binary's GW signal as excess directional GW power without phase modeling. Sky location and frequency parameter constraints returned by the SP are only surpassed by the Earth-term template model at <inline-formula><mml:math><mml:mrow><mml:mo>(</mml:mo><mml:mi>S</mml:mi><mml:mo>/</mml:mo><mml:mi>N</mml:mi><mml:mo>)</mml:mo><mml:mo>∼</mml:mo><mml:mn>12</mml:mn><mml:mi>─</mml:mi><mml:mn>13</mml:mn></mml:mrow></mml:math></inline-formula>. Milestones for a first detection using the full-signal GW model are included in a following paper, Petrov et al. [Expectations for the first supermassive black-hole binary resolved by PTAs. II. Milestones for binary characterization, Phys Rev. D 114, 023033 (2026).10.1103/zp2x-r4mp].",
+        "categories": [
+          "astro-ph.IM",
+          "astro-ph.HE",
+          "Astrophysics and astroparticle physics",
+          "Instrumentation and Methods for Astrophysics",
+          "High Energy Astrophysical Phenomena"
+        ],
+        "published": "2026-07-26",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114b3034S/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2510.01317",
+        "doi": "10.1103/vncm-5j2n",
+        "external_ids": {
+          "ads": "2026PhRvD.114b3034S",
+          "arxiv": "2510.01317",
+          "doi": "10.1103/vncm-5j2n"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文主题为纳赫兹引力波探测与建模，与团队核心关注的高能暂现源及高频引力波电磁对应体无直接关联，仅作为引力波背景方法处于边缘地带。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要明确聚焦于脉冲星计时阵（PTA）对超大质量黑洞双星（SMBHB）的探测方法模型，如“Expectations for the first supermassive black-hole binary resolved by PTAs”、“pulsar timing arrays (PTAs) … identify an individual supermassive black hole binary”、“develop a novel, cross-correlation based model”，未涉及任何高能暂现源、电磁信号或团队相关任务（GECAM、HXMT、SVOM等）。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114b3034S",
+        "title_zh": "对脉冲星计时阵列首次分辨出的超大质量黑洞双星系统的预期。I. 模型效能",
+        "team": "",
+        "tldr": "本文通过模拟脉冲星计时阵列数据集，注入单个双星信号，评估了多种模型在探测和表征超质量黑洞双星方面的效能，发现包含完整引力波信号结构的模板搜索模型表现最佳。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvC.114a5806H",
+        "source": "ads",
+        "title": "<inline-formula><mml:math><mml:mi>β</mml:mi></mml:math></inline-formula>-decay measurements near the <inline-formula><mml:math><mml:mrow><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>40</mml:mn></mml:mrow></mml:math></inline-formula> island of inversion to quantify cooling of accreted neutron star crusts",
+        "authors": [
+          "Hermansen, K.",
+          "Ong, W.-J.",
+          "Schatz, H.",
+          "Browne, J.",
+          "Chester, A.",
+          "Childers, K.",
+          "Jain, R.",
+          "Liddick, S.",
+          "Lyons, S.",
+          "Miskovich, S. A.",
+          "Möller, P.",
+          "Montes, F.",
+          "Owens-Fryar, J.",
+          "Palmisano-Kyle, A.",
+          "Richard, A. L.",
+          "Rijal, N.",
+          "Smith, M. K.",
+          "Soltesz, D.",
+          "Spyrou, A.",
+          "Subedi, S. K.",
+          "Wagner, L."
+        ],
+        "abstract": "Understanding the thermal structure of the outer crust of accreting neutron stars is important for interpreting astronomical x-ray observations. Ground-state to ground-state <inline-formula><mml:math><mml:mi>β</mml:mi></mml:math></inline-formula>-decay transitions of neutron-rich nuclei comprising the crust enable Urca neutrino cooling processes that affect this thermal structure. Here we constrain the ground-state to ground-state transition strengths for the decays of <inline-formula><mml:math><mml:mmultiscripts><mml:mi>Sc</mml:mi><mml:mn>57</mml:mn></mml:mmultiscripts><mml:mo>,</mml:mo><mml:mo> </mml:mo><mml:mmultiscripts><mml:mi>Ti</mml:mi><mml:mn>57</mml:mn></mml:mmultiscripts></mml:math></inline-formula>, and <inline-formula><mml:math><mml:mmultiscripts><mml:mi>Ti</mml:mi><mml:mn>59</mml:mn></mml:mmultiscripts></mml:math></inline-formula> based on experimental data. The data were obtained by combining total absorption <inline-formula><mml:math><mml:mi>γ</mml:mi></mml:math></inline-formula>-spectroscopy data from the SuN detection system with <inline-formula><mml:math><mml:mi>β</mml:mi></mml:math></inline-formula>-delayed neutron emission data from the NERO detection system at Michigan State University's National Superconducting Cyclotron Laboratory. We find <inline-formula><mml:math><mml:mrow><mml:mo>log</mml:mo><mml:mi>f</mml:mi><mml:mi>t</mml:mi><mml:mo>=</mml:mo><mml:mn>5</mml:mn><mml:mo>.</mml:mo><mml:msubsup><mml:mn>8</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>0.2</mml:mn></mml:mrow><mml:mrow><mml:mo>+</mml:mo><mml:mn>0.3</mml:mn></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> and <inline-formula><mml:math><mml:mrow><mml:mo>log</mml:mo><mml:mi>f</mml:mi><mml:mi>t</mml:mi><mml:mo>=</mml:mo><mml:mn>5</mml:mn><mml:mo>.</mml:mo><mml:msubsup><mml:mn>34</mml:mn><mml:mrow><mml:mo>−</mml:mo><mml:mn>0.24</mml:mn></mml:mrow><mml:mrow><mml:mo>+</mml:mo><mml:mn>0.08</mml:mn></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> for the decays of <inline-formula><mml:math><mml:mmultiscripts><mml:mi>Ti</mml:mi><mml:mn>57</mml:mn></mml:mmultiscripts></mml:math></inline-formula> and <inline-formula><mml:math><mml:mmultiscripts><mml:mi>Ti</mml:mi><mml:mn>59</mml:mn></mml:mmultiscripts></mml:math></inline-formula>, respectively, and find no evidence for ground-state feeding in the decay of <inline-formula><mml:math><mml:mmultiscripts><mml:mi>Sc</mml:mi><mml:mn>57</mml:mn></mml:mmultiscripts></mml:math></inline-formula>. The results indicate weaker transitions than predicted by theory and indicated by previous measurements, resulting in reduced efficiency of neutrino cooling in accreted neutron star crusts in systems that exhibit x-ray superbursts.",
+        "categories": [
+          "Nuclear Astrophysics"
+        ],
+        "published": "2026-07-26",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvC.114a5806H/abstract",
+        "pdf_url": null,
+        "doi": "10.1103/vmfw-c2kb",
+        "external_ids": {
+          "ads": "2026PhRvC.114a5806H",
+          "doi": "10.1103/vmfw-c2kb"
+        }
+      },
+      "score": {
+        "score": 85,
+        "tags": [
+          "X射线双星与吸积致密天体"
+        ],
+        "layer": "core",
+        "reason": "提供中子星外壳冷却的关键核数据，直接用于解释X射线超级暴的观测。",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "摘要指出 understanding the thermal structure of the outer crust of accreting neutron stars is important for interpreting astronomical x-ray observations, 且结果 resulting in reduced efficiency of neutrino cooling in accreted neutron star crusts in systems that exhibit x-ray superbursts"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvC.114a5806H",
+        "title_zh": "N=40反转岛附近β衰变测量以量化吸积中子星外壳冷却",
+        "team": "",
+        "tldr": "测量了Ti-57、Ti-59和Sc-57的β衰变基态馈送强度，发现跃迁比理论预期更弱，从而降低吸积中子星外壳的Urca中微子冷却效率，影响超暴模型。",
+        "review": "",
+        "highlight": "结合全吸收γ谱与β延迟中子数据，首次给出Ti-57和Ti-59的精确log ft值，并发现Sc-57无基态馈送，实验约束显著弱于壳模型等理论预测，为致密天体冷却研究提供关键输入。",
+        "relation": "",
+        "authors_en": "K. Hermansen, W.-J. Ong, H. Schatz et al.",
+        "corresponding_en": "",
+        "context_outlook": "吸积中子星外壳的Urca冷却机制依赖于富中子核的β衰变基态跃迁强度。先前基于理论模型的研究预测了较强的冷却效率，但缺乏N=40反转岛附近的直接实验数据。本研究通过精密测量揭示实际跃迁强度更弱，与近期在较轻核区发现的趋势一致。未来随着稀有同位素束流发展，类似测量可拓展至更丰中子核区，系统性地约束致密天体热演化模型，并检验核结构反转岛区域的理论描述。",
+        "citations": []
+      }
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "synced": "2026-07-29",
+      "n_papers": 80,
+      "review": {
+        "date": "2026-07-26",
+        "overview": "今日有通过严格复核的重大进展。",
+        "highlights": "[HEADLINE] XRISM首次在黑洞X射线双星明亮软态中探测到前所未有的窄发射线：展示了XRISM高分辨率光谱在探测黑洞X射线双星复杂发射线方面的新能力，揭示了明亮软态下此前未观测到的高度电离等离子体和高速外流现象，为理解喷流/盘风机制及与微类星体SS 433的潜在联系提供了新线索。\n[HEADLINE] 天鹅座X-1喷流被星风弯曲：18年射电成像首次实测黑洞瞬时喷流功率：首次以经验数据直接比较黑洞喷流瞬时功率与吸积光度，将星系形成模拟和黑洞吸积标度模型中长期采用的喷流能量学ad hoc假设置于实测基础之上，实质改变领域对喷流-吸积能量关系的认识依据。",
+        "trends": "MAXI J1744-294后续观测对6.7-7.1 keV异常发射线性质的确认（ads:2026ApJ..1006..152P）\n蓝移Fe线外流速度(-1300至-6000 km/s)的物理机制验证（ads:2026ApJ..1006..152P）\n其他BH-LMXB软态高分辨率光谱观测以确认此类窄发射线的普遍性（ads:2026ApJ..1006..152P）\n其他黑洞X射线双星是否可复现类似喷流弯曲与功率测量方法（ads:2026NatAs..10.1039P）\n该瞬时功率与吸积光度的标度关系在更大样本中是否普遍成立（ads:2026NatAs..10.1039P）\n星系形成模拟采用该经验值后对反馈效率预测的具体影响（ads:2026NatAs..10.1039P）",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [
+          "MAXI J1744-294后续观测对6.7-7.1 keV异常发射线性质的确认（ads:2026ApJ..1006..152P）",
+          "蓝移Fe线外流速度(-1300至-6000 km/s)的物理机制验证（ads:2026ApJ..1006..152P）",
+          "其他BH-LMXB软态高分辨率光谱观测以确认此类窄发射线的普遍性（ads:2026ApJ..1006..152P）",
+          "其他黑洞X射线双星是否可复现类似喷流弯曲与功率测量方法（ads:2026NatAs..10.1039P）",
+          "该瞬时功率与吸积光度的标度关系在更大样本中是否普遍成立（ads:2026NatAs..10.1039P）",
+          "星系形成模拟采用该经验值后对反馈效率预测的具体影响（ads:2026NatAs..10.1039P）"
+        ],
+        "editorial_version": 2,
+        "stories": [
+          {
+            "paper_id": "ads:2026ApJ..1006..152P",
+            "level": "headline",
+            "title": "XRISM首次在黑洞X射线双星明亮软态中探测到前所未有的窄发射线",
+            "evidence": "XRISM首次观测BH-LMXB候选体MAXI J1744-294的明亮软态，识别出系统内在的窄静态发射成分（σ ∼ 500─1000 km s−1），并探测到至少三个在6.7至7.1 keV之间无对应静止框架原子跃迁的窄发射特征，推断为高度电离蓝移Fe线，外流速度达-1300至-6000 km s−1。",
+            "impact": "展示了XRISM高分辨率光谱在探测黑洞X射线双星复杂发射线方面的新能力，揭示了明亮软态下此前未观测到的高度电离等离子体和高速外流现象，为理解喷流/盘风机制及与微类星体SS 433的潜在联系提供了新线索。",
+            "reason": "第一轮候选定为breaking主要依赖摘要中的“unprecedented”修辞及单源首次观测。严格审查后，该结果虽为XRISM首次在BH-LMXB明亮软态中探测到窄发射线并发现异常蓝移Fe线，实现了新仪器的探测能力，但其物理起源（喷流/盘风多相产生）及与SS 433的相似性均处于“explore scenarios”和“discuss”阶段，未由真实数据确证。作为单源增量观测，其当前结果不足以构成breaking所需的重大且确证的影响，故降级为headline。"
+          },
+          {
+            "paper_id": "ads:2026NatAs..10.1039P",
+            "level": "headline",
+            "title": "天鹅座X-1喷流被星风弯曲：18年射电成像首次实测黑洞瞬时喷流功率",
+            "evidence": "摘要明确报告：利用18年高分辨射电成像探测到Cygnus X-1喷流被恒星风弯曲；通过喷流-星风相互作用建模，测定当前瞬时喷流动能功率 log10[L_jet(erg/s)]=37.3(+0.1/-0.2)，与bolometric X射线光度可比。摘要指出此前缺乏瞬时喷流功率直接测量，无法与吸积光度比较，反馈模型只能依赖ad hoc假设。",
+            "impact": "首次以经验数据直接比较黑洞喷流瞬时功率与吸积光度，将星系形成模拟和黑洞吸积标度模型中长期采用的喷流能量学ad hoc假设置于实测基础之上，实质改变领域对喷流-吸积能量关系的认识依据。",
+            "reason": "论文报告了领域内长期缺失的瞬时喷流功率直接测量，解决了反馈模型依赖ad hoc假设的关键问题，符合headline标准。非breaking：非突发事件或首次发现新天体/现象，而是18年监测数据的积累性分析结果。证据链完整，事实前提均由摘要直接支持，不依赖外推或未来验证。"
+          }
+        ]
+      }
+    }
+  ]
 }

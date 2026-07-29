@@ -4047,6 +4047,55 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24836",
+        "source": "arxiv",
+        "title": "Can a quantum circuit detect the Unruh effect?",
+        "authors": [
+          "Pravin Kumar Dahal",
+          "Timothy C. Ralph",
+          "William J. Munro",
+          "Arkady Fedorov",
+          "James Q. Quach"
+        ],
+        "abstract": "The Unruh effect predicts that an accelerating observer perceives the Minkowski vacuum as a thermal bath, yet direct detection remains experimentally inaccessible. Its timelike counterpart, arising from the entanglement of massless fields between the future and past light cones, offers a more feasible route but requires a detector whose transition frequency follows a specific conformal-time scaling. We propose and analyze a practical implementation of such a detector using superconducting fluxonium circuits, which naturally provide two quasi-degenerate ground states and a tunable excited state, forming an effective $Λ$-system. By modulating the excited-state transition frequency in Minkowski time, the detector accumulates a geometric phase associated with the timelike Unruh effect. Open-system simulations predict $\\sim 10\\%$ shift in the ground-state population within $530$ ns, representing a three-order-of-magnitude sensitivity enhancement over two-level Unruh-DeWitt detectors. These results establish a realistic quantum-circuit platform for experimentally probing the timelike Unruh effect and, more broadly, for testing fundamental nature of quantum fields using engineered quantum systems.",
+        "categories": [
+          "quant-ph",
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-24",
+        "url": "https://arxiv.org/abs/2607.24836v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24836v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24836"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为量子场论效应的实验探测，与高能暂现天体及团队任务无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题明确讨论量子电路探测Unruh效应，摘要聚焦于超导电路实现和几何相位，未涉及任何高能暂现源、任务或多信使内容。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24836",
+        "title_zh": "量子电路能否探测到安鲁效应？",
+        "team": "",
+        "tldr": "本文提出利用超导fluxonium电路构成有效Λ系统，通过调制激发态跃迁频率积累几何相位来探测类时安鲁效应，模拟显示可在530纳秒内实现约10%的基态布居数偏移，灵敏度较传统二能级探测器提高三个数量级。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
     }
   ],
   "revisions": [
@@ -4056,6 +4105,24 @@
       "review": {
         "date": "2026-07-24",
         "overview": "当日 10 篇核心与相关文献均为常规推进，核心 2 篇已按优先级列于下方。",
+        "highlights": "—",
+        "trends": "—",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [],
+        "editorial_version": 2,
+        "stories": []
+      }
+    },
+    {
+      "synced": "2026-07-29",
+      "n_papers": 64,
+      "review": {
+        "date": "2026-07-24",
+        "overview": "当日 12 篇核心与相关文献均为常规推进，核心 2 篇已按优先级列于下方。",
         "highlights": "—",
         "trends": "—",
         "headline_level": "",

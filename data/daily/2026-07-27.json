@@ -2,7 +2,7 @@
   "date": "2026-07-27",
   "review": {
     "date": "2026-07-27",
-    "overview": "当日 4 篇核心与相关文献均为常规推进，核心 2 篇已按优先级列于下方。",
+    "overview": "当日 6 篇核心与相关文献均为常规推进，核心 3 篇已按优先级列于下方。",
     "highlights": "—",
     "trends": "—",
     "headline_level": "",
@@ -2719,7 +2719,1792 @@
           }
         ]
       }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25113",
+        "source": "arxiv",
+        "title": "Emergence and Detection of Electron-Scale Current Sheets in Turbulence with MMS Observations and fully kinetic 3D simulations",
+        "authors": [
+          "Zachary Davis",
+          "Alexandros Chasepis",
+          "Colby Haggerty",
+          "Luca Comisso",
+          "Derek Sikorski"
+        ],
+        "abstract": "The solar wind is characterized by turbulence, where a cascade produces intermittent current structures called current sheets (CS) that efficiently dissipate energy into the plasma. These have been studied with in situ spacecraft observations, but single-spacecraft techniques such as the partial variance of increments (PVI) are inherently limited since they lack spatial context. A combined analysis of in situ observations and numerical simulations can provide significant insight into the properties of intermittent structures forming in heliospheric turbulence. Understanding the size and distribution of these structures is crucial in tracing the pathways of energy dissipation and particle energization in space plasma. Using 3D fully kinetic simulations of magnetized turbulence, we identify CS via machine learning and find a complex broken-power-law distribution for the CS widths, where the power-law breaks separate ion-scale CS from electron-scale CS. Electron-scale CS dominate, with widths peaking near $2d_e$. Comparing simulations with MMS data, we test PVI as a CS detector and show it can infer CS scale, though oblique crossings inflate inferred sizes. The prevalence of electron-scale sheets suggests they may contribute to plasma heating in aggregate.",
+        "categories": [
+          "physics.plasm-ph",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25113v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25113v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25113"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文关注太阳风湍流基础等离子体物理，与高能暂现现象无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均围绕太阳风湍流中的电子尺度电流片，使用MMS观测与3D模拟，未涉及任何高能暂现源或团队关注的任务对象。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25113",
+        "title_zh": "利用MMS观测和全动力学三维模拟研究湍流中电子尺度电流片的出现与探测",
+        "team": "",
+        "tldr": "结合MMS观测和三维全动力学模拟，通过机器学习识别湍流中的电流片，发现电子尺度电流片占主导且宽度峰值在2倍电子惯性长附近，并评估了PVI方法在推断电流片尺度时的有效性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25083",
+        "source": "arxiv",
+        "title": "Radiation-Driven Evolution and Gas Kinematics of the Bright-Rimmed Cloud SFO 25",
+        "authors": [
+          "Puja Porel",
+          "Archana Soam",
+          "William D. Vacca",
+          "Janik Karoly"
+        ],
+        "abstract": "Bright-rimmed clouds (BRCs) are valuable laboratories for investigating how ionizing radiation from massive stars reshapes molecular clouds and influences star formation. We present a kinematic and dynamical study of the BRC SFO 25 using archival JCMT-HARP observations of the $^{12}$CO, $^{13}$CO, and C$^{18}$O ($J = 3-2$) transitions at an angular resolution of about 14-15 arcsec (0.051-0.054 pc). Gaia parallaxes of young stellar objects associated with the cloud yield a revised distance placing SFO 25 behind the ionizing O7V star HD 47839, implying that ultraviolet radiation can directly affect both the head and tail. The molecular gas exhibits a pronounced head-tail velocity gradient, with the tail systematically redshifted relative to the head, inconsistent with the expectations of classical radiation-driven implosion (RDI) and suggestive of an evolved phase dominated by radiative dispersal and photoevaporation. The head is moderately denser than the tail, while a compact C$^{18}$O clump associated with IRAS 06382+1017 reaches densities of $10^4~\\mathrm{cm}^{-3}$. Virial and energy analyses indicate that the head, tail, and dense clump are gravitationally unbound, with kinetic energy exceeding both the gravitational binding energy and the external ionized gas pressure. Class II young stellar object candidates identified in the tail demonstrate that star formation is not confined to the dense head. Although RDI may have triggered earlier star formation in the head, it cannot readily explain the activity observed in the tail, pointing to a more complex evolutionary history than predicted by the classical RDI scenario.",
+        "categories": [
+          "astro-ph.GA",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25083v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25083v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25083"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "研究内容为恒星形成区的分子云演化，与高能暂现源及团队能力无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要研究亮缘云SFO 25的辐射演化和气体运动学，未涉及任何高能暂现源或相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25083",
+        "title_zh": "亮缘云SFO 25的辐射驱动演化和气体运动学",
+        "team": "",
+        "tldr": "利用JCMT-HARP的CO谱线观测和Gaia视差，分析了亮缘云SFO 25的气体运动学与动力学，发现头尾速度梯度与经典辐射驱动坍缩模型不符，表明其处于辐射消散和光致蒸发主导的演化阶段，且尾部也有恒星形成活动。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25104",
+        "source": "arxiv",
+        "title": "Magnetic pressure anisotropy in ultra-dense white dwarfs: Landau quantization and neutronization effects",
+        "authors": [
+          "Edson Otoniel",
+          "Juan M. Z. Pretel",
+          "Victor B. T. Alves",
+          "César O. V. Flores",
+          "Clésio E. Mota"
+        ],
+        "abstract": "Strong magnetic fields modify the thermodynamics of white dwarf (WD) matter by quantizing the transverse motion of degenerate electrons into Landau levels and splitting the pressure into components parallel and perpendicular to the magnetic field. We investigate how this microscopic pressure anisotropy affects ultra-dense WD sequences when Coulomb lattice contributions, electron capture thresholds, neutron drip limits, and nuclear composition are treated consistently in the equation of state (EoS). The stellar equilibrium structure is obtained by solving an anisotropic extension of the Tolman--Oppenheimer--Volkoff (TOV) equations, where $P_r = P_\\parallel$ and $P_t = P_\\perp$ denote the radial and tangential pressures, respectively. We compare the post-electron-capture branches with their corresponding pre-capture sequences for pure $^{12}\\rm{C}$, $^{16}\\rm{O}$, $^{20}\\rm{Ne}$, and $^{24}\\rm{Mg}$ compositions, as well as for fixed 50/50 C/O, Ne/O, and Mg/Ne mixtures. The EoS predicts $P_\\perp < P_\\parallel$ in density ranges where only a few Landau levels are occupied. Consequently, pressure anisotropy shifts the stellar sequences toward smaller radii, with only minor changes in the maximum masses. We also find that post-capture configurations cannot be interpreted from the mass--radius plane alone, since the corresponding $M(ρ_c)$ curves reveal unstable portions after the maximum mass is reached. Our results show that strong magnetic fields significantly reduce the radii of low-mass WDs, yielding better agreement with the observational data available in the Montreal White Dwarf Database and suggesting that future high-precision observations of massive magnetic WDs could help assess the role of magnetic pressure anisotropy in determining their masses and radii.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.HE",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25104v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25104v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25104"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文关注白矮星内部磁场各向异性及其对结构的影响，与团队关注的高能暂现源没有直接关联，属于边缘关注。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "论文主要研究强磁场下白矮星内部的Landau量子化导致的压力各向异性及其对致密白矮星序列的影响，内容完全集中于稳态白矮星结构，不涉及任何暂现源现象。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25104",
+        "title_zh": "超密白矮星中的磁压力各向异性：朗道量子化和中子化效应",
+        "team": "",
+        "tldr": "本文研究强磁场通过朗道量子化引起白矮星物质压力各向异性，并分析该效应对超密白矮星序列及质量-半径关系的影响，发现磁场使低质量白矮星半径显著减小，与观测更吻合。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25073",
+        "source": "arxiv",
+        "title": "Fixing IR tail of gravitational waves from domain walls",
+        "authors": [
+          "Ivan Dankovsky",
+          "Dmitry Gorbunov"
+        ],
+        "abstract": "Numerical simulations of gravitational waves (GW) production during violent evolution of matter inhomogeneities in the early Universe yield highly wiggle infrared parts of the spectra. Obtained directly from the two-point correlation function, these wiggles are nonphysical, corresponding to the parasitic, double frequency terms in naively averaged squared oscillation amplitudes of GW, and hence must be washed out. The deep infrared behavior can be predicted on general grounds, e.g. fixed by causality considerations. However, what matters for real observations, e.g. like that of NANOGrav, and what can be only inferred from numerical simulations, is the infrared slope near the maximum of the spectrum. It reflects the dynamics responsible for the GW production in its heyday, and hence must be accurately predicted. We illustrate the problem with numerical simulations of the Domain Wall network performed with the help of code CosmoLattice. We suggest a numerical procedure to smooth out these parasitic wiggles, which allows us to recover the true spectrum. Being quite generic, it may be applied to numerical simulations of other hypothetical sources of GW possibly operating in the early Universe. The procedure requires to extend the simulation by a few Hubble times after termination of the GW production. We checked with numerical simulations, that the technically natural long-time extension of simulations, which becomes available via artificial scaling of different parts in the scalar sector equations provided by PRS prescription, gives wrong GW spectra even if the source terms are properly rescaled.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.CO",
+          "hep-ph"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25073v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25073v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25073"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主要关于宇宙早期引力波背景的数值方法，与高能暂现源及团队科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论畴壁产生的引力波的数值模拟，涉及早期宇宙和NANOGrav，但未涉及任何高能暂现天体或团队任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25073",
+        "title_zh": "修复畴壁引力波的红外尾部",
+        "team": "",
+        "tldr": "针对畴壁网络引力波数值模拟中的非物理红外波动，提出一种平滑程序以恢复真实光谱，并论证了简单延长模拟方法的局限性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25067",
+        "source": "arxiv",
+        "title": "A discrete series gauge field at the late-time boundary of $dS_4$",
+        "authors": [
+          "Manizheh Botshekananfard",
+          "Elif Büşra Güraksın",
+          "Vasileios A. Letsios",
+          "Gizem Şengör"
+        ],
+        "abstract": "We study the free Maxwell field on the planar patch of four-dimensional de Sitter spacetime ($dS_4$). We review its bulk canonical quantization in the Bunch-Davies vacuum, and we give a representation-theoretic viewpoint by studying the transformation properties of single-particle states under infinitesimal dS transformations. By taking the late-time limit, we identify two late-time operators with scaling dimensions $Δ=1$ (leading) and $Δ=2$ (subleading). We introduce CFT-inspired inner products invariant under the dS group ($SO(4,1)$) for states created by late-time operators acting on the Bunch-Davies vacuum. We explain how the unitary discrete series representations of $SO(4,1)$ associated with the photon are furnished by both operators, in contrast with the Maxwell field on $AdS$ where the $Δ=1$ operator corresponds to a non-normalizable mode. We also explain how the corresponding discrete series representations of $SO(4,1)$ split into a direct sum of representations corresponding to two helicities $+1$ and $-1$. This is achieved by taking advantage of the dS invariance of the self-dual and anti-self-dual sectors of the photon field strength. In our outlook, we draw inspiration from a recent proposal for the microscopic description of $dS_4$ higher-spin gravity where conformal gauge fields in 3 dimensions play a central role, and we investigate a possible connection of the $Δ=1$ late-time operator with a conformal spin-1 gauge field in 3 dimensions.",
+        "categories": [
+          "hep-th",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25067v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25067v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25067"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题与团队的高能暂现源研究方向无实质关联",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均未涉及任何暂现天体或高能观测任务，完全专注于de Sitter时空的量子场论与表示论"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25067",
+        "title_zh": "$dS_4$晚期边界上的离散系列规范场",
+        "team": "",
+        "tldr": "在$dS_4$晚期边界上识别出与光子对应的离散系列规范场算符，揭示了其SO(4,1)表示论性质及与三维共形规范场的潜在联系。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25055",
+        "source": "arxiv",
+        "title": "Localized magnetic pressure anisotropy in strange dwarfs with crystalline crusts",
+        "authors": [
+          "Mila Leite Garcia Reis",
+          "Daniela Eller Uliana",
+          "Jaziel G. Coelho",
+          "Edson Otoniel"
+        ],
+        "abstract": "We study equilibrium sequences of magnetized strange dwarfs composed of a self bound MIT bag strange matter core, with \\(B_{\\rm bag}^{1/4}=145\\,{\\rm MeV}\\), and an ordinary crystalline crust. The aim is to determine how nuclear composition changes and magnetic pressure anisotropy in the crust modify the mass radius relation. The strange core is kept isotropic, while the crust is described either by pure nuclei stopped at the first inverse beta threshold or by electron capture sequences extended to neutron drip for C, O, Ne, and Mg compositions; selected mixed crusts are also considered up to the first instability. The stellar structure is solved with the radial pressure as the integrated pressure and with the anisotropic contribution \\(2(P_t-P_r)/r\\) restricted to the crust. This treatment is compared with ordinary white dwarf sequences and with scalar pressure branch calculations. We find that extending the crust to neutron drip produces more compact strange dwarf branches than stopping at the inverse beta threshold, because the evolved crust is softer and the core crust transition occurs at higher pressure. Magnetic anisotropy further shifts the selected branches toward smaller radii, with the effect visible across the compositions studied and clearer at fixed stellar mass. The comparison with compact objects from the Montreal White Dwarf Database is used only as an observational reference plane, but it indicates that compact white dwarf candidates are a relevant region for testing small core strange dwarf scenarios.",
+        "categories": [
+          "astro-ph.SR",
+          "nucl-th"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25055v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25055v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25055"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为奇怪矮星的结构与磁各向异性，与高能暂现源研究方向无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要未提及任何高能暂现源或团队任务，仅以'Montreal White Dwarf Database'作为观测参考平面，且主要研究奇怪矮星的理论结构。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25055",
+        "title_zh": "具有结晶壳层的奇异矮星中的局部磁压各向异性",
+        "team": "",
+        "tldr": "通过构建由奇异物质核和结晶壳层组成的磁化奇异矮星平衡序列，发现壳层延伸至中子滴和磁压各向异性会使矮星变得更紧凑。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24989",
+        "source": "arxiv",
+        "title": "Cross-Correlations of Metric and Monopole Perturbations from Holographic Cosmology",
+        "authors": [
+          "Matheus Cravo",
+          "Juliana Z. Finotti",
+          "Horatiu Nastase"
+        ],
+        "abstract": "In this paper, we present the 1-loop calculation of the three-point function $\\langle TJJ \\rangle$ of the stress-energy tensor and two insertions of $SO(3)$ global currents, using a 3d toy model for holographic cosmology. By applying the holographic dictionary that relates these QFT $n$-point functions to cosmological correlators, together with the $Sl(2,\\mathbb{Z})$ duality that maps the electric Noether current to a magnetic vortex current dual to cosmological magnetic monopoles, we relate the $\\langle TJJ \\rangle$ correlator to the cross-correlations between metric perturbations and the bulk magnetic monopole field, specifically mapping to the non-Gaussianities $\\langle ξ\\tilde{A} \\tilde{A} \\rangle$ and $\\langle γ\\tilde{A} \\tilde{A} \\rangle$. We calculate the semi-local contact terms necessary to achieve the exact factorization of the cosmological correlators in the squeezed limit, $p_1 \\to 0$. Finally, we evaluate the effective non-linear parameters, showing that the scalar-monopole cross-correlation vanishes at leading order, $f_{NL}^{ξ\\tilde{A} \\tilde{A}} = 0$, while the tensor-monopole cross-correlation yields a non-zero $f_{NL}^{γ\\tilde A\\tilde A}$. These results respect the expected amplitude hierarchy of the non-Gaussian correlators, while pointing at new directions in which holographic cosmology can be tested experimentally.",
+        "categories": [
+          "hep-th",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24989v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24989v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24989"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为全息宇宙学的理论关联函数，与团队的高能暂现源科学目标和任务能力无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论全息宇宙学中度量与单极子扰动的交叉关联，属于理论高能物理与宇宙学，不涉及高能暂现天体或团队关注的任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24989",
+        "title_zh": "全息宇宙学中度量与单极扰动的互相关",
+        "team": "",
+        "tldr": "用全息宇宙学模型计算了度规与磁单极扰动的互相关，发现标量-单极互相关为零，张量-单极互相关非零。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25035",
+        "source": "arxiv",
+        "title": "How massive and clumpy must a quasar wind be to create emission line blueshifts?",
+        "authors": [
+          "James H. Matthews"
+        ],
+        "abstract": "Blue asymmetries (``Blueshifts'') in the C IV 1550A emission line are common in luminous quasars. If they are formed in winds, how much energy, momentum and mass do those winds transport? We address this question by considering how much mass must be supplied through the line-forming region to maintain a given density and ionization state. Using a combination of 1D analytic and 2D numerical models, we find that for blueshifted C IV lines to form in a wind, the wind must have mass outflow rates of $\\sim 50 f_V$ times the accretion rate, where $f_V \\leq 1$ is the volume filling factor accounting for clumping. Our results therefore disfavour line formation in a smooth disc wind and point towards one of two scenarios: either the wind is clumpy, with required clumping factors suggestively close to those in hot star winds; alternatively, if the mass is instead swept up from the ambient medium, the wind need not be clumpy and MHD and radiative winds can provide the original source of momentum and energy. The power of the outflow depends on the square of the terminal velocity of the flow, $v_\\infty$. If the wind is also the BAL outflow, with $v_\\infty \\sim10,000~{\\rm km~s}^{-1}$, the wind power is significant and important for feedback. There are various caveats which moderate our conclusions, motivating i) a better theoretical understanding of wind driving and clump formation physics and ii) improved observational constraints on the physical conditions where the lines are formed.",
+        "categories": [
+          "astro-ph.GA",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25035v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25035v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25035"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为类星体宽吸收线风，不属于团队关注的高能暂现源范畴。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论类星体风的团块和质量流失率，未提及任何高能暂现源或团队任务，与高能暂现研究无实质联系。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25035",
+        "title_zh": "类星体风必须有多大的质量和团块才能产生发射线蓝移？",
+        "team": "",
+        "tldr": "该论文通过分析和数值模型，发现产生蓝移C IV发射线的类星体风需要约50倍吸积率的质量流出率和显著团块性，从而不支持平滑盘风模型，并指出团块风或环境扫集是两种可能机制。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.25004",
+        "source": "arxiv",
+        "title": "Regarding the Rotational Unruh Effect",
+        "authors": [
+          "A. Deur",
+          "S. J. Brodsky",
+          "C. D. Roberts",
+          "B. Terzi{ć}"
+        ],
+        "abstract": "We study the rotational Unruh effect by identifying the pseudodynamics which emerges when fundamental spacetime symmetries are violated. We show that there is, fundamentally, no rotational Unruh effect, in agreement with the first explicit calculations of the literature, and that, when such an effect has been claimed to exist in later articles, its origin traces back to the derivation of the standard Unruh effect involving linear acceleration. Such a linear Unruh effect intrudes because the chosen reference frames do not respect the cylindrical symmetry of the system, and thus the analyses require Lorentz boosts. Our study also confirms previous findings that the Unruh effect is a consequence of the pseudodynamics which arises because Instant-Form dynamics explicitly breaks a fundamental symmetry of spacetime: Poincaré invariance.",
+        "categories": [
+          "hep-ph",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.25004v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.25004v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.25004"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究基础物理中的Unruh效应，与高能暂现源天文研究没有实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论旋转Unruh效应，属于量子场论在弯曲时空的基础理论，未涉及任何高能暂现天体、观测或任务数据。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.25004",
+        "title_zh": "关于旋转Unruh效应",
+        "team": "",
+        "tldr": "通过识别破坏时空对称性时出现的伪动力学，证明旋转Unruh效应并不存在，其声称源于线性Unruh效应的侵入，并确认Unruh效应是即时形式动力学破坏庞加莱不变性而产生的伪动力学结果。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24982",
+        "source": "arxiv",
+        "title": "Coupled Gravitoelectromagnetic Response of a Magnetically Supported Generalized Hayward Black Hole in Nonlinear Electrodynamics",
+        "authors": [
+          "Anirudh Pradhan",
+          "K. Ghaderi",
+          "M. Zeyauddin",
+          "A. Gulhane"
+        ],
+        "abstract": "We construct the exterior coupled gravitational and electromagnetic response of a magnetically supported generalized Hayward black hole within a specified nonlinear electrodynamic completion. Both parity sectors reduce to canonical two channel wave systems with explicit potentials and the correct Schwarzschild and effective Reissner--Nordström limits. We compute the quasinormal spectrum, metric and optical characteristics, extremal throat weights, quadrupolar wave conversion, finite bandwidth transfer, and coherent absorption eigenchannels while verifying exterior hyperbolicity and flux conservation. An effective charged operator captures the leading weak core geometry and mode mixing; after its subtraction, the residual hierarchy is consistent with cubic spectral corrections in the primarily electromagnetic branch and quartic corrections in the primarily gravitational branch and principal scattering observables. The fundamental quadrupolar branches become intrinsically linewidth separated near $χ\\simeq0.70$, whereas parity splitting remains subleading. Metric and optical characteristic families separate monotonically toward extremality. At $χ=0.9$, positive parity reflected conversion reaches $45.8\\%$ and remains $40.8\\%$ after moderate bandwidth averaging, while coherent incident combinations yield $98.4\\%$ bright and $1.3\\%$ dark absorption. These independently evaluated observables provide mutually consistent diagnostics of the same nonlinear electrodynamic operator.",
+        "categories": [
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24982v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24982v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24982"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "由暂现源样本驱动的总体统计、宇宙学与基础物理应用"
+        ],
+        "layer": "edge",
+        "reason": "纯理论黑洞物理研究，与高能暂现源及团队任务无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于广义Hayward黑洞的耦合引力电磁响应、准正则模与散射特性，未提及任何暂现天体、观测或任务数据。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24982",
+        "title_zh": "非线性电动力学中磁支撑广义Hayward黑洞的耦合引力电磁响应",
+        "team": "",
+        "tldr": "本文构建了磁支撑广义Hayward黑洞在非线性电动力学中的外部耦合引力电磁响应，系统计算了其准正则谱、度规光学特性及相干吸收本征通道，并验证了外部双曲性和通量守恒。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24956",
+        "source": "arxiv",
+        "title": "Empirical H- and K-band Limb Darkening for 31 CHARA Stars: A Near-Infrared Benchmark for Stellar-Atmosphere Models",
+        "authors": [
+          "Narsireddy Anugu",
+          "John D. Monnier",
+          "Antoine Mérand",
+          "Becky Flores",
+          "Alexandre Gallenne",
+          "Douglas R. Gies",
+          "Mayra Gutierrez",
+          "Robert Klement",
+          "Stefan Kraus",
+          "Jayadev Rajagopal",
+          "Rachael M. Roettenbacher",
+          "Gail H. Schaefer"
+        ],
+        "abstract": "Limb darkening, the decrease in stellar intensity from the disk center to the limb, encodes the temperature structure and opacity of stellar atmospheres. Direct spatially resolved measurements of this center-to-limb variation remain scarce, especially in the near-infrared. We present interferometric limb-darkening measurements for 31 stars observed simultaneously in the $H$ and $K$ bands with the CHARA Array. The sample spans spectral types F--M and luminosity classes IV--I. The targets are well resolved in $H$ and, for most targets, also in $K$. This coverage constrains the visibility curvature associated with limb darkening in joint $H+K$ fits. We fit the combined $H{+}K$ squared visibilities with four analytic limb-darkening laws and compare the resulting coefficients with bandpass-matched predictions from five stellar-atmosphere grids (Kurucz, MPS1, MPS2, Stagger, and spherical SATLAS, with reported coefficients placed on the Rosseland-radius convention) spanning one-dimensional plane-parallel, three-dimensional radiation--hydrodynamic, and spherical low-gravity models. The associated limb-darkened angular diameters are measured with median formal precisions of $\\simeq 0.2$--0.3\\%. The CHARA results show expected weaker limb darkening at longer wavelengths and also with increasing $T_{\\rm eff}$. The clearest discrepancy with the atmosphere grids is in the wavelength dependence: the median fractional decrease in the power-law coefficient from $H$ to $K$ is $\\simeq 39\\%$ in the CHARA sample, compared with only $\\simeq 17$--$22\\%$ with model predictions. Relative to the MPS2 comparison, the empirical coefficients are higher by $\\simeq 21\\%$ in $H$ and lower by $\\simeq 5\\%$ in $K$. These results provide multi-band interferometric limb darkening as a near-infrared benchmark for stellar-atmosphere models.",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24956v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24956v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24956"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为恒星临边昏暗的观测与模型基准，与高能暂现源研究无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论恒星临边昏暗的干涉测量和大气模型对比，未涉及任何高能暂现源或团队相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24956",
+        "title_zh": "31颗CHARA星的H和K波段经验临边昏暗：恒星大气模型的近红外基准",
+        "team": "",
+        "tldr": "利用CHARA阵列测量了31颗F-M型星在H和K波段的干涉临边昏暗，并与五种恒星大气模型比较，发现模型低估了H到K波段临边昏暗系数的下降幅度，提供了多波段基准。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24978",
+        "source": "arxiv",
+        "title": "CosmoLattice 2.0",
+        "authors": [
+          "Jorge Baeza-Ballesteros",
+          "Daniel G. Figueroa",
+          "Adrien Florio",
+          "Nicolás Loayza",
+          "Franz R. Sattler",
+          "Francisco Torrentí",
+          "Ander Urio"
+        ],
+        "abstract": "This paper introduces $\\tt {\\mathcal C}osmo{\\mathcal L}attice$ $\\tt v2.0$, a major upgrade that substantially broadens the physical scope and computational capabilities of the code. It introduces lattice implementations of scalar fields non-minimally coupled to gravity through $φ^2R$, as well as axion-like fields coupled to Abelian gauge sectors as $φF_{μν}\\widetilde F^{μν}$. It also provides new procedures for generating specialized initial conditions, including scaling networks of cosmic defects ($\\it e.g.$ strings and domain walls), and fields with arbitrary power spectra. The release also incorporates low-storage Runge-Kutta integrators for non-symplectic systems (suitable $\\it e.g.$ for non-minimal scalar kinetic terms as $\\mathcal{G}_{ab}\\partial_μφ^a\\partial^μφ^b$), scalar-field simulations on reduced $(1+1)$- and $(2+1)$-dimensional lattices, new optimized gravitational-wave evolution, more flexible field and energy-density outputs, and GPU support that can accelerate simulations by a factor $\\mathcal{O}(10)$ relative to CPU execution. Extensive documentation on the use of the code is provided on https://www.cosmolattice.com",
+        "categories": [
+          "astro-ph.CO",
+          "hep-ph"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24978v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24978v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24978"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "该论文主要介绍宇宙学模拟代码，与高能暂现源研究团队的目标没有直接或间接联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要仅描述宇宙学晶格模拟代码CosmoLattice 2.0的升级，涉及标量场、轴子场、宇宙缺陷和引力波演化，未提及任何高能暂现源或相关观测任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24978",
+        "title_zh": "宇宙晶格2.0",
+        "team": "",
+        "tldr": "介绍了CosmoLattice代码的2.0版本，大幅扩展了物理范围和计算能力，包括非最小耦合标量场、轴子场、新初始条件生成、低存储积分器、降维模拟、引力波演化优化和GPU加速等。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24976",
+        "source": "arxiv",
+        "title": "Quantum reference frames beyond subsystems: a reconstruction and generalization of the perspective-neutral framework",
+        "authors": [
+          "Stefan L. Ludescher",
+          "Manuel Mekonnen",
+          "Thomas D. Galley",
+          "Markus P. Mueller"
+        ],
+        "abstract": "We generalize the notion of quantum reference frames (QRFs) to cases where the frame does not necessarily correspond to a tensor factor subsystem, but to a covariant quantum instrument. This unlocks a variety of physical applications: \"frames of labeling\" for indistinguishable particles, suggesting explanations for the symmetrization postulate and the absence of parastatistics, and yielding a transparent description of the entanglement of bosons and fermions; and relational clocks reproducing the Schrödinger equation exactly even when all subsystems are interacting or when there are frequency superselection sectors. Our work generalizes the perspective-neutral approach to QRFs pioneered by Höhn and co-authors, which we reconstruct from a simple operational scenario. We give a resource-theoretic grounding of this framework, and show how the notion of completely covariant operations explains the relevance of the charge-zero sector and the pure-state transformation behavior across perspectives. This also suggests operational clarifications of some aspects of constraint quantization, e.g. of the meaning of constraint equations such as $C|ψ\\rangle=0$. Some of our results, such as our generalization of relationalization maps to instruments, apply more broadly to other QRF frameworks too, and they contribute to bridging the gap between operational quantum information theory and the internal QRF research program.",
+        "categories": [
+          "quant-ph",
+          "gr-qc",
+          "hep-th"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24976v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24976v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24976"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为量子参考系，与高能暂现天体物理无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题'Quantum reference frames beyond subsystems'和摘要内容未涉及高能暂现源、高能天文任务或相关天体现象"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24976",
+        "title_zh": "超越子系统的量子参考框架：视角中性框架的重建与推广",
+        "team": "",
+        "tldr": "将量子参考框架概念从子系统推广至协变量子仪器，重建并推广视角中性框架，应用于不可区分粒子标记、关系时钟及约束量化的操作澄清。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24948",
+        "source": "arxiv",
+        "title": "A Test of FeH Line Parameters using DR19 APOGEE spectra of Benchmark M Dwarfs",
+        "authors": [
+          "Anderson Silva-Andrade",
+          "Diogo Souto",
+          "Katia Cunha",
+          "Verne V. Smith",
+          "Carlos Allende Prieto",
+          "Ricardo P. Schiavon",
+          "Verónica Loaiza-Tacuri",
+          "Aida Behmard",
+          "Dmitry Bizyaev",
+          "Ilija Medan",
+          "Dan Qiu",
+          "Bárbara Rojas-Ayala"
+        ],
+        "abstract": "Recent studies have suggested a mismatch of up to 0.20 dex between iron abundances derived from Fe I and FeH lines in the H-band spectra of M dwarfs, and in this work we investigate the nature of this possible offset. We analyze near-infrared H-band APOGEE spectra of stars in 18 binaries composed of a G-dwarf primary and an M-dwarf secondary, together with four M-dwarf stars having measured angular diameters from the literature, and six M-dwarf members of the Hyades and Coma Berenices open clusters. These three families of benchmarks were used to evaluate the FeH line list and check for possible systematic uncertainties in the FeH $gf$-values. Our tests used 1-D LTE plane-parallel model atmospheres, a radiative transfer code, and the baseline APOGEE spectral line list to derive metallicities for the binary G-dwarf primaries using Fe I lines, while stellar parameters and metallicities for the M dwarfs used both FeH and Fe I lines. The mean metallicity obtained for the Hyades M-dwarfs was $\\langle$[Fe/H]$\\rangle$=+0.08$\\pm$0.04, and for Coma Berenices $\\langle$[Fe/H]$\\rangle$=+0.02$\\pm$0.08. The metallicities of the G- and M-dwarfs in binary systems showed excellent agreement (0.06 dex), and the mean metallicities for the open clusters were also consistent with literature values from high-resolution optical analyses. We investigated the consistency between the spectroscopic and interferometric $T_{\\rm eff}$ scales, finding agreement within the uncertainties. Forcing full agreement between the spectroscopic and interferometric $T_{\\rm eff}$ scales resulted in a poorer match for the metallicities in the binaries and the open clusters. We conclude that the best overall concordance is obtained when no adjustments are made to the FeH $gf$-values, which are based on the Hargreaves et al. (2010) line list.",
+        "categories": [
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24948v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24948v1",
+        "doi": "10.3847/1538-4357/ae8bad",
+        "external_ids": {
+          "arxiv": "2607.24948",
+          "doi": "10.3847/1538-4357/ae8bad"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题与高能暂现源无关",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要关于M矮星FeH谱线参数测试，不涉及高能暂现源"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24948",
+        "title_zh": "利用DR19 APOGEE光谱对基准M矮星的FeH谱线参数进行测试",
+        "team": "",
+        "tldr": "通过分析双星、角直径星和星团M矮星的APOGEE光谱，测试FeH谱线参数，发现使用原始gf值能获得最佳一致性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24969",
+        "source": "arxiv",
+        "title": "A radio view on Gamma-Loud Protostars: Derivation of jet mechanical luminosity",
+        "authors": [
+          "Javier Méndez-Gallego",
+          "Carlos Carrasco-González",
+          "Rubén López-Coto",
+          "Iván Agudo",
+          "Stefano Menchiari",
+          "Rubén Fedriani",
+          "Emma de Oña Wilhelmi",
+          "Guillem Anglada"
+        ],
+        "abstract": "Context. Gamma-Loud Protostars (GLPs) have been recently reported as Galactic hadronic accelerators whose acceleration site is situated in their protostellar jets. Theoretical and observational analysis situate radio cm luminosity as a thermal tracer of jet activity, presenting an unique opportunity to study jet properties as accelerators.   Aims. We aim to develop a way to estimate the kinetic power of protostellar jets and compare their energetics with those extracted from the non-thermal gamma-ray side of GLPs.   Methods. We combine theoretical and phenomenological relations to estimate the jet mechanical luminosity based on the radio cm luminosity. We relate the resulting values to the non-thermal contribution of GLPs, studying its behaviour and efficiency.   Results. The derivation of the jet power successfully reproduces infrared and radio observations. The cosmic-ray energy correlates to the injected mechanical energy, implying an acceleration efficiency of 1--10%. Future radio observations are needed to find the definite accelerators and obtain reliable efficiencies.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.SR"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24969v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24969v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24969"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主要关注原恒星喷流的射电-伽马关系推导，不属于团队高能暂现源的主要科学目标，且未涉及暂现现象或团队任务，因此归类为边缘关注。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "论文标题为'A radio view on Gamma-Loud Protostars: Derivation of jet mechanical luminosity'，摘要指出GLPs是银河系强子加速器，通过射电光度推导喷流机械功率，并与伽马射线比较。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24969",
+        "title_zh": "伽马噪原恒星射电视角：喷流机械光度的推导",
+        "team": "",
+        "tldr": "基于射电厘米光度推导原恒星喷流机械功率，并与伽马射线能量对比，得到1-10%的粒子加速效率。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24952",
+        "source": "arxiv",
+        "title": "Reaching the Metallicity Floor at $z\\sim 10$: Lensed Star Clusters at Cosmic Dawn and Cosmic Noon",
+        "authors": [
+          "Raul Jimenez",
+          "Elena Tomasetti",
+          "Carmela Lardo",
+          "Licia Verde"
+        ],
+        "abstract": "Origins of globular clusters (GCs) are linked to the assembly of their host galaxies. We analyze star-cluster populations in two strongly lensed systems that bracket Cosmic Dawn and Cosmic Noon: the Cosmic Gems arc (GEMS) at z=9.625, among the first galaxies, and the Sparkler at z=1.378. New STARRED deconvolution photometry of GEMS provides SEDs for ten unique, doubly imaged cluster candidates, while a homogeneous Bayesian analysis places both populations on a common cosmological timeline. The GEMS clusters formed at $z_{\\rm form}\\approx 10$--$11$ (median $\\simeq10.2$), consistent with halo assembly at or above the atomic-cooling scale. Their photometry requires low metallicities: individual clusters are consistent with $[Z/{\\rm H}] \\lesssim -1.2$, and the data exclude $[Z/{\\rm H}]\\geq-0.5$, though they cannot distinguish reliably below $[Z/{\\rm H}] \\simeq -1.5$. This conclusion is unchanged when using stellar-population models including binary evolution---important for ultraviolet emission at this age---yielding similarly low metallicities, $[Z/{\\rm H}]=-2.2$ to $-2.7$. The formal estimate, $[Z/{\\rm H}] = -2.3\\pm0.3$, is consistent with the Milky Way GC metallicity floor, though its value remains prior-dependent. The Sparkler clusters formed $\\sim2.5$ Gyr later, at $z_{\\rm form}\\approx 2$--$3.5$ in a Cosmic Noon dwarf galaxy, and are more enriched ($[Z/{\\rm H}] \\approx -0.5$). Comparison with Milky Way GCs places GEMS in an exceptionally early, metal-poor regime and the Sparkler among later, more enriched populations, though neither association uniquely determines an in-situ or ex-situ origin. Closed-box and gas-regulator calculations show both systems are compatible with limited pre-enrichment followed by rapid enrichment and accretion-regulated growth. Together, they probe distinct cluster-forming environments from Cosmic Dawn to Cosmic Noon.",
+        "categories": [
+          "astro-ph.GA",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24952v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24952v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24952"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文聚焦星团形成与金属丰度，与高能暂现研究无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论z~10和z~1.4的透镜星团金属丰度，未涉及任何高能暂现源或团队任务"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24952",
+        "title_zh": "在z~10处达到金属丰度下限：宇宙黎明与宇宙正午的透镜星团",
+        "team": "",
+        "tldr": "通过均匀贝叶斯分析两个强透镜星系中的星团样本，揭示了宇宙黎明时期星团金属丰度可低至球状星团下限，而宇宙正午时期星团金属丰度较高，为星团形成与演化提供了观测约束。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24960",
+        "source": "arxiv",
+        "title": "Fast, accurate, and differentiable: a neural-network surrogate for NRSur7dq4 precessing binary black hole waveforms",
+        "authors": [
+          "Michael Pürrer",
+          "Ashwin Girish",
+          "Lucy M. Thomas",
+          "Scott E. Field",
+          "Vijay Varma"
+        ],
+        "abstract": "We present a neural network surrogate model that emulates the NRSur7dq4 gravitational waveform model for precessing binary black hole mergers. The surrogate decomposes the waveform into constituent quantities and trains an independent multilayer perceptron (MLP) for each. We validate the surrogate against NRSur7dq4 on 10,000 waveforms spanning its full parameter space ($1 \\leq q \\leq 4$, $|χ_{A,B}| \\leq 0.8$). For representative total masses between 60 and 300 $M_\\odot$, median sky-averaged frequency-domain mismatches range from $8.0 \\times 10^{-5}$ to $1.7 \\times 10^{-4}$, with 95th percentiles below $10^{-3}$. On an NVIDIA L40S GPU the JAX surrogate evaluates a single waveform in about 1 ms end-to-end, roughly 10 times faster than the LALSimulation C implementation of NRSur7dq4, and sustains about 140 times the LALSimulation throughput at batch size 64, making it well suited for both low-latency parameter-estimation samplers and large-scale waveform generation. The full NRSur7dq4 NN waveform-to-likelihood pipeline is implemented in JAX and is differentiable. This is the first neural-network surrogate of a precessing numerical-relativity waveform model to combine validated NR-faithful accuracy with a fully differentiable, GPU-accelerated inference pipeline, enabling gradient-based inference approaches via automatic differentiation including Fisher information matrices, GPU-accelerated nested sampling, gradient-based MCMC and importance sampling.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE",
+          "astro-ph.IM",
+          "cs.LG"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24960v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24960v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24960"
+        }
+      },
+      "score": {
+        "score": 25,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文主要内容为引力波波形建模，与高能暂现及电磁后随无直接关联",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要描述针对双黑洞并合的引力波波形代理模型，未涉及任何高能暂现天体或团队任务"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24960",
+        "title_zh": "快速、准确且可微分：用于NRSur7dq4进动双黑洞波形的神经网络替代模型",
+        "team": "",
+        "tldr": "提出了一种神经网络代理模型来模拟NRSur7dq4进动双黑洞并合引力波波形，通过波形分解和独立MLP训练，实现了高精度、快速生成及完全可微分，支持梯度推断。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24951",
+        "source": "arxiv",
+        "title": "Gravitational Wave Modeling of White-Dwarf--Compact-Object Binaries and Observational Outlook",
+        "authors": [
+          "Tristan S. Weaver",
+          "David Radice",
+          "Donghui Jeong",
+          "Victor Liu"
+        ],
+        "abstract": "We investigate the end stages of circular white-dwarf--compact-object binaries by developing a novel integrator implementing mass transfer and 2.5-order Post-Newtonian kinematics. White-dwarf--compact-object binaries are subject to two phases: a slow inspiral during which binary evolution is dominated by weak-gravity radiation reaction and a quicker ``outspiral\" dominated by mass transfer. These systems have unique gravitational waveforms with several characteristic features including an accumulation of signal near the maximum cutoff frequency set by the transition between in- and outspiral. We investigate trends in gravitational wave parameters based on component masses. In particular, maximum cutoff frequency depends strongly on white dwarf mass and compactness. It is unlikely that extragalactic binaries will be measured by LISA or current or future terrestrial detectors. However, white-dwarf--compact-object binary end stages will be an important source for future decihertz detectors such as DECIGO and LGWA: The final inspiral of tens of white-dwarf--neutron-star binaries will be detected annually by LGWA, and millions of inspirals along with thousands of outspirals will be detected by DECIGO. The ultimate fates of these binaries are diverse and dependent upon the intricacies of angular momentum loss. In particular, we show that white dwarfs with partners of sufficiently low/high mass can end their lives in common envelopes/mergers, while white dwarfs do not enter contact with partners of intermediate mass. The highest frequencies produced by white-dwarf--compact-object binaries in our tests are 10--20 Hz---incapable of mimicking sub-solar-mass compact object signals in terrestrial detectors or explaining S251112cm-like signals.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.SR",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24951v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24951v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24951"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究白矮星致密双星引力波建模，未涉及高能暂现现象或团队任务能力，与团队关注范围无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "论文主要研究白矮星致密双星的引力波建模和探测前景，未涉及任何高能暂现源、电磁对应体或团队参与的任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24951",
+        "title_zh": "白矮星-致密天体双星的引力波建模与观测展望",
+        "team": "",
+        "tldr": "本文开发了新型积分器来模拟白矮星-致密天体双星末期的引力波，分析了波形特征和探测前景，并揭示了双星最终命运的多样性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24955",
+        "source": "arxiv",
+        "title": "Simulation of combined radio and radar signals at the Radar Echo Telescope for Cosmic Rays",
+        "authors": [
+          "K. Nivedita",
+          "I. Loudon",
+          "J. Loonen",
+          "P. Allison",
+          "J. J. Beatty",
+          "D. Z. Besson",
+          "A. Connolly",
+          "A. Cummings",
+          "C. Deaconu",
+          "S. de Kockere",
+          "K. D. de Vries",
+          "I. Esteban",
+          "D. Frikken",
+          "C. Hast",
+          "E. Huesca Santiago",
+          "C. -Y. Kuo",
+          "A. Kyriacou",
+          "U. A. Latif",
+          "V. Lukic",
+          "C. McLennan",
+          "K. Mulrey",
+          "J. Nam",
+          "S. Prohira",
+          "J. P. Ralston",
+          "M. F. H. Seikh",
+          "N. Shahid",
+          "R. S. Stanley",
+          "J. Stoffels",
+          "S. Toscano",
+          "D. van den Broeck",
+          "N. van Eijndhoven",
+          "S. Wissel"
+        ],
+        "abstract": "To explore neutrino astronomy at high energies (> 10 PeV), the Radar Echo Telescope for Cosmic Rays (RET-CR) was developed to assess the feasibility of a radar technique for detecting particle cascades in ice, serving as a precursor to the Radar Echo Telescope for Neutrinos (RET-N). The main concept of RET-CR is that, as a high-energy cosmic-ray air-shower core propagates into the high-altitude ice sheet, a dense secondary-particle cascade is created, which is very similar to that of an in-ice high-energy neutrino-induced cascade. At RET-CR, the expected signal consists of three distinct components: radio emission from the in-air particle shower, Askaryan radio emission from the secondary in-ice cascade, and the radar signal itself arising from the reflection of the transmitted radio signal from the ionisation trail of the in-ice secondary cascade. In this work, we present the first combined simulation-based package and study aimed at characterising the combined radio and radar signals at the in-ice receivers at RET-CR. We describe the simulation framework and provide a detailed discussion of the salient features of the radio and radar signals, including their spatial footprints and temporal characteristics, as predicted for the shallow in-ice detectors.",
+        "categories": [
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24955v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24955v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24955"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文涉及极高能中微子探测技术，属于多信使领域，但与团队关注的暂现源事件没有直接关联，属于边缘关注",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要提及neutrino astronomy和雷达技术用于中微子探测，但未涉及任何高能暂现源事件或观测"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24955",
+        "title_zh": "宇宙射线雷达回波望远镜处组合射电和雷达信号的模拟",
+        "team": "",
+        "tldr": "本文首次模拟了RET-CR中冰下探测器处的组合射电和雷达信号，并描述了其空间足迹和时间特性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24940",
+        "source": "arxiv",
+        "title": "EFT-Ramses: a code to simulate the effective field theory of dark energy",
+        "authors": [
+          "Nathaniel Ota Woodcock",
+          "Sownak Bose",
+          "Yunhao Gao",
+          "Baojiu Li"
+        ],
+        "abstract": "While the standard $Λ$CDM paradigm is in excellent agreement with most current cosmological observations, theoretical challenges surrounding the cosmological constant ($Λ$) have strongly motivated the exploration of dynamical dark energy (DE) and modified gravity (MG) models. Investigating the physical nature of the cosmic acceleration requires N-body simulations to probe the non-linear growth of cosmic structure and prepare for the high-precision data from Stage-IV surveys. In this paper, we present EFT-RAMSES, a comprehensive extension of the ECOSMOG cosmological simulation code designed to explore non-linear structure formation in DE and MG scenarios. We embed the effective field theory of dark energy (EFTofDE) framework into this new numerical pipeline, utilising the $α$-basis parameterisation to provide a versatile, model-agnostic, computational engine. By consolidating diverse scalar and vector-tensor theories---including the normal and self-accelerating Dvali-Gabadadze-Porrati (DGP) models, cubic Galileons (cubic scalar Galileon (csG), cubic vector Galileon (cvG) and generalised cubic covariant Galileon (GCCG)), and generic effective field theory (EFT) parameterisation---into a single \"master\" Vainshtein equation, this pipeline bypasses the need for model-specific solvers and easily specialises to any particular model. As validations, we perform high-resolution N-body simulations for the normal-branch DGP (nDGP), csG, GCCG, and EFT models, comparing the resulting matter power spectra against dependent and independent codes such as legacy ECOSMOG and HiCOLA, as well as linear theory, and find excellent agreement. EFT-RAMSES provides a robust and versatile computational tool for precision cosmological tests of DE and MG using upcoming cosmological surveys. The code is available for download from the GitHub EFT-RAMSES repository.",
+        "categories": [
+          "astro-ph.CO",
+          "gr-qc",
+          "physics.comp-ph"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24940v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24940v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24940"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为暗能量模拟，与高能暂现源及团队目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要重点介绍暗能量有效场论模拟代码EFT-RAMSES，讨论修改引力模型与N体模拟，未提及高能暂现天体、多信使或团队相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24940",
+        "title_zh": "EFT-Ramses：模拟暗能量有效场论的代码",
+        "team": "",
+        "tldr": "开发了一个名为EFT-RAMSES的N体模拟代码，通过嵌入暗能量有效场论框架并提供通用求解器，高效模拟了多种暗能量和修正引力模型，并验证了其准确性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24941",
+        "source": "arxiv",
+        "title": "Investigating the Observational Progenitor Mass Gap in the White Dwarf Initial-Final Mass Relation. I. Cluster Census and Characterization of the First White Dwarfs in the Gap",
+        "authors": [
+          "David R. Miller",
+          "Jeremy Heyl",
+          "Pier-Emmanuel Tremblay"
+        ],
+        "abstract": "In recent years, Gaia has been the primary driver of the expansion of the white dwarf (WD) initial-final mass relation (IFMR) in open clusters. The increased sample size has highlighted a pronounced observational gap at progenitor masses of $\\simeq2$--$2.7\\,M_\\odot$, with no spectroscopically confirmed cluster-member WDs in this range. Analysis of the Milky Way open cluster census shows that this absence is primarily driven by the scarcity of appropriately aged, nearby clusters capable of hosting Gaia-detectable WDs, implying that deeper, targeted photometry will be required to build a substantial sample in this progenitor mass range. We further searched for previously unexamined Gaia WD candidates in clusters with ages consistent with producing gap progenitors and identified two viable targets, which we observed spectroscopically with Gemini GMOS-N. Both targets yield inferred progenitor masses within the observational gap, making them the first spectroscopically confirmed cluster-member WDs in this progenitor mass range. The NGC 6991 candidate, in particular, is confirmed as a DA WD with an inferred progenitor mass of $2.12^{+0.04}_{-0.15}\\,M_\\odot$, providing further support for a non-monotonic trend in the IFMR.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.GA"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24941v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24941v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24941"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为白矮星演化，与高能暂现源研究团队目标缺乏实质关联",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题明确研究白矮星初始-最终质量关系，摘要未提及任何高能暂现现象或相关任务"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24941",
+        "title_zh": "研究白矮星初始-最终质量关系中的观测前身质量间隙. I. 星团普查和间隙中首批白矮星的特征描述",
+        "team": "",
+        "tldr": "本文通过银河系疏散星团普查和Gemini光谱观测，在前身质量为2–2.7太阳质量间隙中发现了首批光谱证认的星团白矮星，支持了初始-最终质量关系的非单调趋势。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24939",
+        "source": "arxiv",
+        "title": "Primordial Physics in the Nonlinear Universe: Revealing the oscillating halo bias from cosmological collider models",
+        "authors": [
+          "Dhayaa Anbajagane",
+          "Neal Dalal"
+        ],
+        "abstract": "The initial conditions of our Universe contain a wealth of information about the particle physics of very high energies. One such class of signatures, called cosmological colliders, generates oscillations in the three-point correlations (or bispectra) of the primordial density field, and these imprint scale-dependent oscillations in the halo bias. We develop a new method for simulating cosmological collider models that foregoes traditional template-based basis-decomposition methods and can reproduce the scale-dependent signals of the input template at percent-level accuracy. Using this method, we produce simulations for one class of collider models and present the first measurements of oscillating halo bias in simulations. The amplitude and phase of the oscillations show a clear dependence on halo mass, with a factor of ten shift in halo mass causing a factor of two shift in the location of the oscillations. Increasing the frequency of the primordial bispectra model suppresses the signal in the halo bias, as the oscillations average down over the window function of the halo. The phase of the signal is also sensitive to assembly bias. In all cases, the scale-dependent halo bias can be accurately modeled using a simple peak background-split theory. The oscillations and their mass/selection-dependent phase offsets are a unique signature that is not easily mimicked by known observational systematics and is therefore a more robust target. Our simulations and underlying initial conditions code are both made publicly available.",
+        "categories": [
+          "astro-ph.CO",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24939v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24939v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24939"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文内容为早期宇宙物理与结构形成，与高能暂现源及团队科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要主要讨论早期宇宙原初扰动的振荡晕偏压，不涉及任何高能暂现源、多信使天体或相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24939",
+        "title_zh": "非线性宇宙中的原初物理：从宇宙对撞机模型揭示振荡晕偏置",
+        "team": "",
+        "tldr": "提出模拟宇宙对撞机模型的新方法，首次在模拟中测量到振荡晕偏置，发现其振幅和相位对晕质量具有依赖性，且该信号对组装偏置敏感，可用峰值背景分离理论准确建模。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24926",
+        "source": "arxiv",
+        "title": "Syntriod: A Robust Initial Parameter Estimator for Radial Velocity Curve Solutions Beyond Conventional Sampling Limits",
+        "authors": [
+          "Emre Barbaros",
+          "Hasan Ak",
+          "N. Filiz Ak"
+        ],
+        "abstract": "We present Syntriod, an orbital-phase domain radial velocity (RV) template-based algorithm designed to provide robust initial orbital parameter estimates for spectroscopic binaries across diverse observational sampling conditions. Rather than performing full orbital inference, Syntriod constrains the parameter space with physically consistent solutions to guide subsequent optimization procedures.   We evaluate its performance using 10,000 synthetic Keplerian orbits spanning diverse configurations and sampling regimes. For well-sampled datasets ($N_{obs} \\ge 8$), Syntriod recovers orbital periods with relative accuracies of order $10^{-3}$. At the theoretical sampling limit ($N_{obs} = 6$), the method maintains a ~94% success rate, while classical period-search techniques like Lomb-Scargle become increasingly affected by aliasing. Even below this limit ($N_{obs} = 5$), Syntriod recovers the correct orbital solution in ~83% of cases, showing gradual degradation rather than catastrophic failure.   We further evaluate the method on 12 real spectroscopic binary systems (HD 160934, Phi Cyg, Capella A, Kepler 16, KIC 3858884, KIC 6867766, KIC 2445134, KIC 3003991, DU Boo, HL Dra, FP Boo, and AK Her) spanning broad orbital periods and eccentricities. Syntriod consistently reproduces literature solutions even when datasets are randomly subsampled to sparse regimes. Where a full Keplerian solution becomes underconstrained ($N_{obs} \\le 4$), the algorithm transitions to linear dynamical relations, recovering parameters such as mass ratio ($q$) and systemic velocity ($γ$) with success rates exceeding 99%.   These results demonstrate that Syntriod provides reliable, computationally efficient initial parameter estimates across well-sampled and sparse regimes, making it a practical pre-solver for modern orbit-fitting pipelines and large spectroscopic surveys.",
+        "categories": [
+          "astro-ph.SR",
+          "astro-ph.IM"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24926v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24926v1",
+        "doi": "10.1088/1538-3873/ae8575",
+        "external_ids": {
+          "arxiv": "2607.24926",
+          "doi": "10.1088/1538-3873/ae8575"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "研究内容为天体物理中的双星轨道拟合方法，与团队高能暂现源研究无直接联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要专注于光谱双星的轨道参数估计，未提及任何高能暂现源、宇宙学、多信使或团队相关任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24926",
+        "title_zh": "Syntriod：一种超越传统采样极限的径向速度曲线解鲁棒初始参数估计器",
+        "team": "",
+        "tldr": "提出了Syntriod算法，用于为光谱双星提供稳健的初始轨道参数估计，在稀疏采样下仍保持高成功率，并在真实双星系统验证。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24931",
+        "source": "arxiv",
+        "title": "S301 and friends: Measuring the spin of Sgr A*",
+        "authors": [
+          "T. Piran",
+          "P. Amaro-Seoane",
+          "B. Aytac",
+          "G. Bourdarot",
+          "A. Burkert",
+          "D. Calderon",
+          "J. Cuadra",
+          "F. Eisenhauer",
+          "R. Genzel",
+          "S. Gillessen",
+          "S. Joharle",
+          "F. Mang",
+          "T. Naab",
+          "T. Ott",
+          "H. B. Perets",
+          "D. C. Ribeiro",
+          "M. Sadun Bordoni",
+          "R. Sari"
+        ],
+        "abstract": "The discovery of S301 (GRAVITY Collaboration et al., 2026) with pericenter distance rp= 280rg and eccentricity e=0.9825, opens the prospect of measuring the spin parameter of Sgr A* through Lense--Thirring (LT) nodal precession. A major obstacle is Newtonian confusion: any non-spherical extended mass distribution can also induce nodal precession. We aim to separate the LT spin signal of S301 from the Newtonian nodal precession. We compare the secular Newtonian torque exerted by a disk or flattened mass distribution on the orbits of S301 and of the apocenter-matched reference stars S2, S55, and S38, using analytic estimates validated by numerical orbit-averaged torque calculations. For a disk or flattened distribution extending beyond the stellar pericenters, the secular Newtonian torque on a highly eccentric orbit is controlled mainly by the apocenter, whereas the LT signal is controlled mainly by the pericenter. Thus stars with apocenters comparable to S301's but much larger pericenters, in particular S2, but also S55, and S38, experience comparable Newtonian torques while having ~ 30 times smaller LT signals (for S2). Their measured precessions, or upper limits on them, can therefore calibrate the mass and orientation of the Newtonian background for subtraction from S301's precession. The Schwarzschild apsidal advance of S301 further rotates the orbit's pericenter relative to any disk, producing a systematic time dependence in the Newtonian contribution, while the LT signal remains fixed by the spin vector. Granularity of the perturber population sets a stochastic floor on this subtraction, which orbit- and star-averaging suppress. With continued GRAVITY+ astrometry and Extremely Large Telescope (ELT) spectroscopy, the in-plane spin projection may be within near-term reach; the full spin vector requires a much longer-term accumulation of the LT apsidal signal.",
+        "categories": [
+          "astro-ph.GA",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24931v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24931v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24931"
+        }
+      },
+      "score": {
+        "score": 20,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文专注于银河系中心黑洞自旋测量，不属于团队关注的高能暂现源范畴，与团队目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要主要讨论利用S301星的Lense-Thirring进动测量Sgr A*自旋参数，未提及任何暂现源、高能现象或团队任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24931",
+        "title_zh": "S301及其伙伴：测量人马座A*的自旋",
+        "team": "",
+        "tldr": "通过比较S301与S2等参考星的轨道进动，分离莱斯-瑟林自旋信号和牛顿背景，以测量人马座A*的自旋参数。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24930",
+        "source": "arxiv",
+        "title": "Gravitational waves decay in vacuum: a low energy effect of quantized gravitation",
+        "authors": [
+          "Diego Blas",
+          "José Antonio Oller"
+        ],
+        "abstract": "Classical gravitational waves (GWs) are stable in vacuum. We show that treated as coherent graviton states, they decay into photon pairs, a quantum process forbidden classically and semiclassically and enhanced by the graviton number squared $N^2$. We estimate the resulting rates for compact binaries and a stochastic background, including the effect from stimulated decay to the CMB. In theories with light degrees of freedom, an analogous decay into them is also possible, and more relevant for ultralight dark matter, as it can entail huge occupation numbers. We derive first constraints on cosmological GW sources by the corresponding injection of photons from CMB spectral distortions, extragalactic backgrounds, and light-nuclei photofission. In summary, the decay of GWs into photons offers a new (challenging) handle into the detection of GW sources, with the extra appealing feature of being only possible by the quantum nature of the gravitational field.",
+        "categories": [
+          "hep-ph",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24930v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24930v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24930"
+        }
+      },
+      "score": {
+        "score": 30,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合",
+          "由暂现源样本驱动的总体统计、宇宙学与基础物理应用"
+        ],
+        "layer": "edge",
+        "reason": "纯理论量子引力效应研究，未使用团队观测数据或任务能力，仅间接涉及引力波电磁对应体概念。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中明确指出引力波衰变成光子，对致密双星和随机背景有影响，并导出宇宙学约束。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24930",
+        "title_zh": "真空中的引力波衰变：量子引力的低能效应",
+        "team": "",
+        "tldr": "本文证明经典稳定的真空引力波作为相干引力子态会衰变成光子对，该过程由引力子数平方增强，并估计了致密双星和随机背景的衰变率及受激衰变影响，同时首次从CMB谱畸变等导出对宇宙学引力波源的约束。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24917",
+        "source": "arxiv",
+        "title": "Interlopers as Signal in Line Intensity Mapping",
+        "authors": [
+          "Anirban Roy"
+        ],
+        "abstract": "Line intensity mapping measures the combined emission of atomic and molecular lines from unresolved galaxies, offering a way to map cosmic structure across enormous volumes. A single observed frequency, however, contains emission from several spectral lines at different redshifts. These interlopers are usually removed before cosmological inference. We show that this removal is not always optimal. Once the possible emitting lines and their redshifts are included in the model, interlopers become additional tracers of large-scale structure at other epochs, projected into the coordinate system of the target line. We formulate interloper treatment as a Fisher decision problem, requiring both improved precision and parameter bias below a chosen tolerance. In SPHEREx forecasts for H$α$ with [O III], H$β$, and [O II] interlopers, and in FYST forecasts for [C II] with CO interlopers, $Ω_m h^2$ and baryon acoustic oscillation (BAO) distance measurements are comparatively robust to astrophysical calibration errors, whereas the clustering amplitude $σ_8$ and the dark energy parameters $w_0$ and $w_a$ are more sensitive to the adopted line model and priors. The BAO distance measurement gives a simple physical picture: modeling interlopers turns two observed bands into a transverse BAO distance ladder over $0.7\\lesssim z\\lesssim5.8$. Interlopers are therefore not only contaminants to remove, but a calibrated component of the cosmological signal model for future LIM surveys.",
+        "categories": [
+          "astro-ph.CO",
+          "astro-ph.GA",
+          "astro-ph.IM"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24917v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24917v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24917"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "宇宙学与基础物理应用"
+        ],
+        "layer": "edge",
+        "reason": "论文主题为线强度映射宇宙学，与高能暂现源及团队核心目标无实质关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要提及SPHEREx和FYST的线强度映射，测量宇宙大尺度结构和BAO、暗能量参数，与高能暂现源及其观测任务无直接联系。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24917",
+        "title_zh": "线强度成图中的干扰源作为信号",
+        "team": "",
+        "tldr": "论文提出在线强度成图中，应将干扰谱线视为大尺度结构的额外示踪剂而非污染物，通过Fisher决策分析在SPHEREx和FYST预测中评估了该方法对宇宙学参数测量的影响，表明BAO距离测量稳健而暗能量参数敏感。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24909",
+        "source": "arxiv",
+        "title": "OPE = QNM",
+        "authors": [
+          "Paolo Arnaudo",
+          "Cristoforo Iossa",
+          "Robin Karlsson",
+          "Benjamin Withers"
+        ],
+        "abstract": "At microscopic scales the linear response of thermal states of large-$N$ CFTs is governed by a thermal operator product expansion (OPE), while at large scales response is governed by collective excitations known as quasinormal modes (QNM). We show that the OPE and QNM representations of the retarded correlator in mixed time and spatial momentum coordinates have an overlapping region of convergence in the complex time plane, giving a map between OPE and QNM data. We show that large-overtone QNM asymptotics are related to OPE singularities, while low-overtone QNM data appear in analytic continuation from short to large times. Using this approach we obtain new analytic results for QNM asymptotics, and numerically obtain low-overtone QNMs from OPE data for the Schwarzschild-AdS$_5$ black brane. We further show that the OPE spectrum is intimately related to QNM data through a set of sum rules which we derive in Mellin space. Finally, using the lightcone OPE, we argue that stress tensor correlators at large spatial momentum thermalise slower as the conformal collider bounds approach saturation. This work points to a new thermal bootstrap programme where OPE and QNM data constrain each other.",
+        "categories": [
+          "hep-th",
+          "cond-mat.stat-mech",
+          "cond-mat.str-el",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24909v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24909v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24909"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "纯理论工作，不涉及高能暂现源观测或团队任务",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要讨论热CFT中OPE和QNM的关系，属于高能理论物理，与高能暂现源观测和任务无直接联系"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24909",
+        "title_zh": "OPE = QNM：热算符乘积展开与准正规模的等价关系",
+        "team": "",
+        "tldr": "本文证明了热CFT中推迟关联函数的算符乘积展开与准正规模表示在复时间平面上的等价性，并建立了二者之间的映射，获得了准正规模的新解析和数值结果。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24912",
+        "source": "arxiv",
+        "title": "Correlated signals of ultralight scalar dark matter in pulsar timing",
+        "authors": [
+          "Joshua W. Foster",
+          "Kimberly K. Boddy",
+          "Jeff A. Dror",
+          "Vincent S. H. Lee",
+          "Andrea Mitridate",
+          "Tristan L. Smith",
+          "Kelsie Taylor",
+          "Tanner Trickle"
+        ],
+        "abstract": "Pulsar timing arrays (PTAs) are sensitive to ultralight dark matter (ULDM) in the $10^{-24}$-$10^{-20}\\,\\mathrm{eV}$ mass range, with existing datasets already probing otherwise open parameter space and future PTAs promising substantial improvements in reach. Thus far, however, PTA searches for ULDM have typically been formulated using limiting descriptions. Analyses are performed in either the fully correlated limit, in which the local ULDM amplitude is shared across the array, or the fully uncorrelated limit, in which each pulsar has an independent local amplitude. Because the transition between these regimes occurs within the PTA-sensitive mass range, projected sensitivities and data-derived constraints can depend on which limiting description is assumed. For the first time, we develop a self-consistent analysis that treats the ULDM field as a Gaussian random field with finite spatial correlations, allowing the amplitude prior used in PTA signal models to interpolate continuously between the fully correlated and fully uncorrelated limits. We apply the framework to both linearly and quadratically coupled scalar ULDM, the latter including the universal gravitational signal sourced by the oscillating ULDM pressure. Pulsar-distance uncertainties are incorporated through an augmented latent-field prior, and the resulting distance-marginalized latent-amplitude distribution is represented with a normalizing-flow surrogate. We validate the method on mock PTA datasets, including blinded signal injection tests.",
+        "categories": [
+          "astro-ph.CO",
+          "gr-qc",
+          "hep-ph"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24912v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24912v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24912"
+        }
+      },
+      "score": {
+        "score": 15,
+        "tags": [],
+        "layer": "edge",
+        "reason": "与高能暂现源研究团队的暂现天体、多信使、任务等核心关注无实质联系，仅可能提供间接方法或背景。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要全文专注于超轻标量暗物质在脉冲星计时阵中的关联信号分析，未提及任何高能暂现源或团队相关任务/科学目标。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24912",
+        "title_zh": "脉冲星计时中的超轻标量暗物质相关信号",
+        "team": "",
+        "tldr": "开发了自洽分析方法，将超轻标量暗物质场视为具有有限空间相关性的高斯随机场，在脉冲星计时阵列信号模型中实现振幅先验在完全相关与完全不相关极限间的连续插值，并在线性和二次耦合情形下通过模拟数据验证。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24910",
+        "source": "arxiv",
+        "title": "Cosmological evolution with decaying dark matter: an integral-equation approach",
+        "authors": [
+          "Nanoom Lee",
+          "Anna Bencke",
+          "Marc Kamionkowski",
+          "José Luis Bernal"
+        ],
+        "abstract": "We present CLASSIER-DDM, an extension of the Boltzmann solver CLASSIER that implements the decaying dark matter (DDM) model via its integral-equation approach. The code handles generic two-body decays of a dark matter particle into two lighter decay products with arbitrary masses, naturally encompassing both massless (dark radiation) and massive (warm) decay products, with their perturbations evaluated via integral equations solved iteratively. We describe the numerical implementation in detail, including the background evolution, the iterative perturbation evolution, and a small-scale analytic approximation. A modest number of iterations is sufficient to achieve sub-$0.1\\%$ convergence in the matter power spectrum and the CMB lensing power spectrum across the observationally relevant parameter space. We find that a hundred momentum bins for the decay product perturbations are sufficient to achieve $\\mathcal{O}(0.1\\%)$ accuracy in the matter power spectrum today up to $k \\sim 3\\,{\\rm Mpc}^{-1}$. The code achieves $\\mathcal{O}(1\\,{\\rm min})$ runtimes per evaluation, requiring neither a Boltzmann hierarchy nor any fluid approximation, making parameter estimation with the DDM model numerically tractable. We also discuss the impact of DDM on cosmological observables, focusing on the case of two massive decay products. This work further establishes the integral-equation approach as a versatile and efficient framework for modeling non-cold relics in cosmological perturbation theory.",
+        "categories": [
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24910v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24910v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24910"
+        }
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文内容属于宇宙学暗物质模型，与高能暂现源研究无直接或间接关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论衰变暗物质宇宙学模型及其对CMB和物质功率谱的影响，未提及任何高能暂现天体、任务或相关观测。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24910",
+        "title_zh": "衰变暗物质的宇宙学演化：一种积分方程方法",
+        "team": "",
+        "tldr": "本文开发了CLASSIER-DDM扩展，通过积分方程方法高效模拟暗物质两体衰变的宇宙学演化，实现了高精度扰动计算，使衰变暗物质模型的参数估计数值可行。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24883",
+        "source": "arxiv",
+        "title": "Wald-like entropy and Islands in Dimensionally Reduced Einstein-Hilbert Gravity",
+        "authors": [
+          "Krishna Jalan"
+        ],
+        "abstract": "We study the island formula and Page curve for the asymptotically flat eternal and quasi-stationary evaporating black hole solutions within the dimensionally reduced Einstein-Hilbert (DREH) model. In this model, the four-dimensional Einstein-Hilbert action reduces to a two-dimensional dilaton gravity, on top of which the quantum corrections can be incorporated via the Polyakov-Liouville (PL) action for a two-dimensional conformal field theory with a large central charge $c$. This gravity model arises from the s-wave approximation of four-dimensional Einstein-Hilbert gravity and provides a fully gravitational setting in which we study the islands, i.e., we will not require a non-gravitational bath region to collect the radiation, instead it lives in the black hole spacetime itself. The fine-grained entropy of Hawking radiation in the eternal and evaporating black holes within the DREH model was derived using the island rule in \\cite{djordjevic2022eternal, djordevic2025evaporating}. The island rule is based on the replica method using the Euclidean gravitational path integral. In this work, we complement the Euclidean approach by providing a Lorentzian prescription for the generalized entropy $S_{\\text{gen}}$, in the island formula without invoking the replica trick to compute $S_{\\text{gen}}$. The generalized entropy is shown to coincide with Wald-like Noether charge of the combined DREH-PL action. Using this generalized entropy, we determine the quantum extremal surface, the Page time, and the Page curve for the eternal and the evaporating black hole. We conclude with a discussion of the possible extension to the full four-dimensional geometry incorporating vacuum polarization corrections.",
+        "categories": [
+          "hep-th",
+          "gr-qc"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24883v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24883v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24883"
+        }
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题与高能暂现源研究没有实质联系，仅为纯理论工作。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论黑洞岛公式和Page曲线，属于理论物理，不涉及高能暂现源或团队任务。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24883",
+        "title_zh": "降维爱因斯坦-希尔伯特引力中的瓦尔德型熵与岛屿",
+        "team": "",
+        "tldr": "本文在降维爱因斯坦-希尔伯特（DREH）引力模型中，提供了一种洛伦兹方法推导广义熵，无需依赖复制技巧，并将该熵识别为瓦尔德型诺特电荷，从而确定了永恒和蒸发黑洞的量子极端面、佩奇时间与佩奇曲线。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24911",
+        "source": "arxiv",
+        "title": "Vigorous turbulence driven by quasar-mode feedback in a cluster core",
+        "authors": [
+          "Satoshi Yamada",
+          "Shutaro Ueda",
+          "Hirofumi Noda",
+          "Yutaka Fujita",
+          "Misaki Mizumoto",
+          "Kentaro Nagamine",
+          "Claudio Ricci",
+          "Shoji Ogawa",
+          "Taiki Kawamuro",
+          "Shinya Yamada",
+          "Yuichi Terashima",
+          "Yoshihiro Ueda"
+        ],
+        "abstract": "Quasars are among the most luminous objects. They are powered by accretion onto supermassive black holes. They are thought to impact cosmological evolution primarily through energetic winds, known as quasar-mode feedback, yet the efficiency and spatial extent of this process remain poorly constrained. Here we present X-Ray Imaging and Spectroscopy Mission (XRISM) observations of H1821+643---the nearest galaxy cluster with a central quasar (redshift z = 0.297)---which was a rare opportunity to directly probe quasar-mode feedback in the intracluster medium. High-resolution spectroscopy reveals exceptionally broadened Fe XXV emission lines from the intracluster medium, with a velocity dispersion of approximately 300 km/s, far exceeding values observed in nearby cluster cores. These lines originate predominantly at radii of 20-100 kpc from the centre. Assuming that turbulence from a quasar-driven shock led to the broadening of the lines, the energy injected by the quasar beyond galactic scales ($\\gtrsim$20 kpc) is estimated to be $\\gtrsim$1-10% of its radiative energy. Notably, this feedback efficiency exceeds previous multiwavelength estimates by orders of magnitude ($\\lesssim$0.01%) and reaches the levels required by the latest cosmological hydrodynamical simulations. This finding of vigorous turbulence indicates that quasar-mode feedback plays a central role in regulating galaxy and cluster evolution at high redshift.",
+        "categories": [
+          "astro-ph.GA",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24911v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24911v1",
+        "doi": "10.1038/s41550-026-02939-x",
+        "external_ids": {
+          "arxiv": "2607.24911",
+          "doi": "10.1038/s41550-026-02939-x"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文研究AGN反馈对星系团演化的影响，与高能暂现源没有实质联系，属于边缘关注。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于类星体反馈在星系团核心驱动的湍流，未提及任何高能暂现源事件或相关观测方法。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24911",
+        "title_zh": "星系团核心中由类星体模式反馈驱动的剧烈湍流",
+        "team": "",
+        "tldr": "利用XRISM对中心类星体星系团H1821+643的观测，发现速度弥散约300 km/s的宽化Fe XXV发射线，表明类星体反馈在20-100 kpc尺度上产生剧烈湍流，注入能量达辐射能的1-10%，反馈效率远超此前估计并达到宇宙学模拟要求。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24908",
+        "source": "arxiv",
+        "title": "TempLat: a versatile C++ engine for lattice field theories",
+        "authors": [
+          "Adrien Florio",
+          "Franz R. Sattler"
+        ],
+        "abstract": "We present TempLat, a C++ framework for lattice field theory simulations in arbitrary dimensions. Its symbolic language, built on expression templates, translates mathematical expressions almost verbatim into C++ while compiling to highly optimized kernels, in contexts ranging from classical-statistical to Monte Carlo simulations. TempLat is performance-portable: building on Kokkos, it supports large CPU clusters, as well as NVIDIA and AMD GPUs. Its abstraction of hardware into a device concept makes TempLat extensible to future architectures. We demonstrate excellent strong and weak scaling on both CPUs and GPUs. We also present ParaFaFT, a standalone parallel discrete Fourier transform library supporting arbitrary dimensions on all of the above hardware, and benchmark its scaling. Both are open source and available on GitHub, and power a new release of CosmoLattice, a widely used early-universe simulation library now available on GPUs.",
+        "categories": [
+          "hep-lat",
+          "astro-ph.CO",
+          "cond-mat.stat-mech",
+          "hep-ph"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24908v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24908v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24908"
+        }
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文内容为格子场论模拟软件框架，属于计算物理和早期宇宙模拟，与团队关注的高能暂现源现象无关。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要描述 TempLat 是用于任意维度格子场论模拟的 C++ 框架，并提到 CosmoLattice 早期宇宙模拟库，但与高能暂现源研究没有直接联系。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24908",
+        "title_zh": "TempLat：一种用于晶格场论的多功能C++引擎",
+        "team": "",
+        "tldr": "提出了一种基于表达式模板的高性能可移植晶格场论模拟框架TempLat及并行傅里叶变换库ParaFaFT。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24938",
+        "source": "arxiv",
+        "title": "Tidal deformation of an accreting compact object",
+        "authors": [
+          "Avijit Chowdhury",
+          "Chiranjeeb Singha",
+          "Kazuharu Bamba",
+          "Sumanta Chakraborty"
+        ],
+        "abstract": "Tidal deformation of a compact object serves as a sensitive probe of the strong-gravity regime and nature of the compact object. It captures how a compact object responds to the external perturbing field of a companion. In realistic astrophysical settings, compact objects are typically immersed in matter-rich environments, which can significantly alter the response. In this work, we investigate the static deformability of Schwarzschild-like exotic compact objects (ECOs) embedded in a quasi-stationary, self-gravitating thin accretion disk. By modelling the external spacetime with a relativistic thin-disk solution, we isolate environmental contributions to the scalar and spin-1 response while maintaining analytical control. We show that, for perfectly reflecting ECOs, the characteristic logarithmic dependence of the scalar and spin-1 response on compactness, set by near-horizon physics, remains intact even in the presence of accretion. The disk primarily amplifies the overall magnitude of the response significantly. These findings highlight that environmental effects can seriously impact tidal signatures, while still permitting, under suitable conditions, the distinguishability of horizonless compact objects from black holes in gravitational-wave observations.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24938v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24938v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24938"
+        }
+      },
+      "score": {
+        "score": 50,
+        "tags": [
+          "X射线双星与吸积致密天体"
+        ],
+        "layer": "related",
+        "reason": "论文研究吸积致密天体潮汐形变理论，与团队关注的吸积致密天体相关，但非暂现事件本身，属于理论计算",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题涉及accreting compact object的潮汐形变，摘要提到嵌入吸积盘中的致密天体以及引力波观测中的可区分性"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24938",
+        "title_zh": "吸积致密天体的潮汐形变",
+        "team": "",
+        "tldr": "本文计算了吸积薄盘包围的类史瓦西奇异致密天体（ECO）的静态标量和矢量洛夫数，发现其与紧致度的对数依赖关系在吸积下依然保持，但盘显著放大响应幅度。",
+        "review": "",
+        "highlight": "首次系统研究吸积盘对ECO潮汐洛夫数的影响，证明近地平物理主导的对数标度律在环境存在时依然稳健，为引力波区分ECO与黑洞提供新视角。",
+        "relation": "",
+        "authors_en": "A. Chowdhury (Indian Institute of Astrophysics, India), C. Singha (Inter-University Centre for Astronomy and Astrophysics, India), K. Bamba (Fukushima University, Japan) et al.",
+        "corresponding_en": "",
+        "context_outlook": "潮汐洛夫数（LNs）是探测强引力场和致密天体性质的关键观测量。孤立黑洞的静态LNs为零，而奇异致密天体（ECO）因无地平性质具有非零LNs，且呈现与紧致度相关的对数标度律 [[Chakraborty+ 2024]]。近期工作开始关注环境物质（如暗物质晕、吸积盘）对LNs的修正，例如吸积黑洞的LNs计算显示了显著放大效应 [[Cannizzaro+ 2024]]，暗物质晕中ECO的研究也拓展了这一方向 [[Chakravarti+ 2025]]。本文通过解析与数值结合，首次计算了吸积盘包围的类史瓦西ECO的静态标量和矢量LNs，证实近地平对数依赖保持，而吸积主要贡献为幅度增强。未来需纳入旋转、引力扰动及更真实的吸积模型，以全面评估环境在引力波观测中区分ECO与黑洞的能力。",
+        "citations": [
+          {
+            "label": "Chakraborty+ 2024",
+            "authors": "Chakraborty",
+            "year": "2024",
+            "title": "Dynamical tidal Love numbers of Kerr-like compact objects",
+            "ref": "S. Chakraborty, E. Maggio, M. Silvestrini, and P. Pani (2024) Dynamical tidal Love numbers of Kerr-like compact objects. Phys. Rev. D 110 (8), pp. 084042. External Links: 2310.06023, Document",
+            "arxiv": "2310.06023",
+            "doi": "10.1103/PhysRevD.110.084042",
+            "bibcode": "2024PhRvD.110h4042C",
+            "url": "https://arxiv.org/abs/2310.06023",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Cannizzaro+ 2024",
+            "authors": "Cannizzaro",
+            "year": "2024",
+            "title": "Tidal deformability of black holes surrounded by thin accretion disks",
+            "ref": "E. Cannizzaro, V. De Luca, and P. Pani (2024) Tidal deformability of black holes surrounded by thin accretion disks. Phys. Rev. D 110 (12), pp. 123004. External Links: 2408.14208, Document",
+            "arxiv": "2408.14208",
+            "doi": "10.1103/PhysRevD.110.123004",
+            "bibcode": "2024PhRvD.110l3004C",
+            "url": "https://arxiv.org/abs/2408.14208",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Chakravarti+ 2025",
+            "authors": "Chakravarti",
+            "year": "2025",
+            "title": "Tidal Love numbers and quasi-normal modes of the ECO in a Dark Matter halo",
+            "ref": "K. Chakravarti and C. Singha (2025-09) Tidal Love numbers and quasi-normal modes of the ECO in a Dark Matter halo. External Links: 2509.03556",
+            "arxiv": "2509.03556",
+            "doi": "10.48550/arXiv.2509.03556",
+            "bibcode": "2025arXiv250903556C",
+            "url": "https://arxiv.org/abs/2509.03556",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "paper": {
+        "id": "arxiv:2607.24918",
+        "source": "arxiv",
+        "title": "Probing long-range $L_e-L_μ$ forces with supernova neutronization burst neutrinos",
+        "authors": [
+          "Amol Dighe",
+          "Sadashiv Sahoo",
+          "Manibrata Sen"
+        ],
+        "abstract": "Ultralight gauge bosons associated with flavour-dependent leptonic symmetries generate long-range potentials that can modify neutrino flavour evolution over astrophysical distances. We investigate the sensitivity of neutronization-burst neutrinos from core-collapse supernovae for such interactions in the anomaly-free $U(1)'_{L_e-L_μ}$ framework. Incorporating the long-range potential into supernova neutrino oscillations, we simulate the corresponding signal in the Deep Underground Neutrino Experiment (DUNE) using a realistic detector response of its 40 kt Liquid Argon Time Projection Chamber. We show that in the range where the long-range potential dominates over or is comparable to the vacuum oscillation term, the electron-neutrino survival probability can be significantly modified. This would produce observable distortions in the time and energy distributions of the neutronization burst neutrino spectra. Our results demonstrate that future observations of galactic supernova neutrinos, particularly from a nearby event such as Betelgeuse, can provide a sensitive and complementary probe of flavour-dependent long-range leptonic interactions.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO"
+        ],
+        "published": "2026-07-27",
+        "url": "https://arxiv.org/abs/2607.24918v1",
+        "pdf_url": "https://arxiv.org/pdf/2607.24918v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2607.24918"
+        }
+      },
+      "score": {
+        "score": 80,
+        "tags": [
+          "高能暂现天体",
+          "多信使触发与联合",
+          "宇宙学与基础物理应用"
+        ],
+        "layer": "core",
+        "reason": "利用超新星中子化爆裂中微子进行基础物理探索，直接服务于团队关于高能暂现源基础物理应用的目标。",
+        "relation": "direct",
+        "core_path": "science",
+        "evidence": "标题直接提及 supernova neutronization burst neutrinos；摘要明确使用来自 core-collapse supernovae 的中子化爆裂中微子探测长程力，属于基础物理应用。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2607.24918",
+        "title_zh": "利用超新星中子化暴中微子探测长程 $L_e-L_\\mu$ 相互作用",
+        "team": "",
+        "tldr": "通过模拟 DUNE 对 Betelgeuse 型超新星中子化暴中微子的探测，评估了异常自由的 $U(1)'_{L_e-L_\\mu}$ 长程轻子力的灵敏度，发现未来观测可大幅提升对超弱耦合的限制。",
+        "review": "",
+        "highlight": "利用中子化暴极其纯净的 $\\nu_e$ 源和长程势对有效混合角的强修正，使得电子中微子存活概率可从标准值 ~0.02(NMO) 或 ~0.3(IMO) 升至接近 1，产生鲜明的可测信号；DUNE 的灵敏度可超越当前 IceCube DeepCore 约束，并独立于超新星爆发机制的细节。",
+        "relation": "",
+        "authors_en": "Amol Dighe (Tata Institute of Fundamental Research), Sadashiv Sahoo (Indian Institute of Technology Bombay), Manibrata Sen (Indian Institute of Technology Bombay)",
+        "corresponding_en": "",
+        "context_outlook": "长程轻子力的搜寻已从太阳中微子 [[Bandyopadhyay+ 2007]] 拓展到高能天体粒子，近期 [[Garg+ 2026]] 利用 IceCube 大气中微子数据给出了 L_e-L_μ 参数空间的新约束。超新星中微子自 SN1987A 以来便是味转化的天然实验室，其中中子化暴阶段凭借其纯净的味组成和可忽略的集体效应，成为新物理的灵敏探针。本研究结合对标准超新星味演化 [[Dighe+ 2000]] 的理解，首次系统展示了 DUNE 通过近邻超新星（如 Betelgeuse）可探测到极微弱的耦合，甚至能区分中微子质量顺序。未来该方法可延伸至其他味对称性，并与扩散超新星中微子背景的宇宙学基线探针结合，形成多信使长程力探测网络。",
+        "citations": [
+          {
+            "label": "Bandyopadhyay+ 2007",
+            "authors": "Bandyopadhyay",
+            "year": "2007",
+            "title": "Constraints on flavor-dependent long range forces from solar neutrinos and KamLAND",
+            "ref": "A. Bandyopadhyay, A. Dighe, and A. S. Joshipura, Constraints on flavor-dependent long range forces from solar neutrinos and KamLAND, Phys. Rev. D 75 (2007) 093005, [hep-ph/0610263].",
+            "arxiv": "hep-ph/0610263",
+            "doi": "10.1103/PhysRevD.75.093005",
+            "bibcode": "2007PhRvD..75i3005B",
+            "url": "https://arxiv.org/abs/hep-ph/0610263",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Garg+ 2026",
+            "authors": "Garg",
+            "year": "2026",
+            "title": "First Constraints on Long-Range Neutrino Interactions using IceCube DeepCore",
+            "ref": "G. Garg, J. Krishnamoorthi, A. Kumar, and S. K. Agarwalla, First Constraints on Long-Range Neutrino Interactions using IceCube DeepCore, arXiv:2601.01220.",
+            "arxiv": "2601.01220",
+            "doi": "10.48550/arXiv.2601.01220",
+            "bibcode": "2026arXiv260101220G",
+            "url": "https://arxiv.org/abs/2601.01220",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Dighe+ 2000",
+            "authors": "Dighe",
+            "year": "2000",
+            "title": "Identifying the neutrino mass spectrum from the neutrino burst from a supernova",
+            "ref": "A. S. Dighe and A. Yu. Smirnov, Identifying the neutrino mass spectrum from the neutrino burst from a supernova, Phys. Rev. D62 (2000) 033007, [hep-ph/9907423].",
+            "arxiv": "",
+            "doi": "10.1103/physrevd.62.033007",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevd.62.033007",
+            "source": "crossref",
+            "verified": true
+          }
+        ]
+      }
     }
   ],
-  "revisions": []
+  "revisions": [
+    {
+      "synced": "2026-07-29",
+      "n_papers": 51,
+      "review": {
+        "date": "2026-07-27",
+        "overview": "当日 4 篇核心与相关文献均为常规推进，核心 2 篇已按优先级列于下方。",
+        "highlights": "—",
+        "trends": "—",
+        "headline_level": "",
+        "headline": "",
+        "headline_paper_id": "",
+        "headline_reason": "",
+        "developments": [],
+        "watchlist": [],
+        "editorial_version": 2,
+        "stories": []
+      }
+    }
+  ]
 }
