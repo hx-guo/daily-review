@@ -38,9 +38,20 @@
         </div>
 {% endmacro %}
 
+{%- macro backfill_badge(it) -%}
+{%- if axis == 'archive' and first_ingest and it.dates.ingested != first_ingest -%}
+<span class="backfill-badge">{{ it.dates.ingested[5:] }} 补录</span>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro date_chain_line(it) -%}
+{%- set dc = date_chain(it) -%}
+{%- if dc %}<p class="date-chain">{% for d in dc %}{% if not loop.first %} · {% endif %}{{ d.label }} {{ d.value }}{% endfor %}</p>{% endif -%}
+{%- endmacro -%}
+
 {% macro paper_card(it, seq) %}
-    <article class="card {{ it.score.layer }}" id="{{ anchor(it) }}">
-      <div class="card-seq">{{ seq }}</div>
+    <article class="card {{ it.score.layer }}" id="{{ anchor(it) }}" data-ingest="{{ it.dates.ingested }}">
+      <div class="card-seq">{{ seq }}{{ backfill_badge(it) }}</div>
       <div class="card-body">
         <div class="tagline">{{ tagline(it) }}</div>
         <h3 class="en-title">{{ it.paper.title }}</h3>
@@ -48,6 +59,7 @@
         <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
         {{ abstract_block(it) }}
         {{ ai_zone(it) }}
+        {{ date_chain_line(it) }}
         {{ source_links(it.paper) }}
       </div>
     </article>
@@ -155,6 +167,10 @@
   </nav>
   {% endif %}
 
+  {% if batches %}
+  <p class="backfill-note">本页经 {{ batches|length }} 次补录{% for b in batches %} · <button class="backfill-jump" data-ingest="{{ b.date }}">{{ b.date[5:] }} +{{ b.n }}</button>{% endfor %}</p>
+  {% endif %}
+
   {% set ns.sec = ns.sec + 1 %}
   {% set stories = review.stories or [] %}
   {% set breaking = stories | selectattr('level', 'equalto', 'breaking') | list %}
@@ -220,13 +236,14 @@
       <summary class="fold-bar"><span>边缘相关 {{ edge_items|length }} 篇 · 低相关性</span><span class="fold-plus">展开 ＋</span></summary>
       <div class="fold-body">
         {% for it in edge_items %}
-        <article class="card edge" id="{{ anchor(it) }}">
+        <article class="card edge" id="{{ anchor(it) }}" data-ingest="{{ it.dates.ingested }}">
           <div class="card-body">
-            <div class="tagline">{{ tagline(it) }}</div>
+            <div class="tagline">{{ tagline(it) }}{{ backfill_badge(it) }}</div>
             <h4 class="en-title">{{ it.paper.title }}</h4>
             <p class="authors">{{ render_authors(it.paper, it.summary) }}</p>
             {{ abstract_block(it) }}
             {% if it.summary and it.summary.title_zh %}<p class="zh-title-sm">{{ it.summary.title_zh }}{% if it.summary.tldr %}　·　{{ it.summary.tldr }}{% endif %}</p>{% endif %}
+            {{ date_chain_line(it) }}
             {{ source_links(it.paper) }}
           </div>
         </article>

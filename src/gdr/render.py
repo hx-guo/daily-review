@@ -8,6 +8,7 @@ from urllib.parse import quote
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
 
+from gdr import config
 from gdr.store import Store
 
 _LAYER_ORDER = {"core": 0, "related": 1, "edge": 2}
@@ -46,6 +47,47 @@ def _version_href(date: str, version: str, latest: str) -> str:
     return f"{date}.html" if version == latest else f"{date}.as-of-{version}.html"
 
 
+_DATE_LABELS = (("preprint", "预印本"), ("accepted", "接收"),
+                ("published", "刊出"), ("ingested", "收录"))
+
+
+def backfill_batches(items: list[dict]) -> list[dict]:
+    """Later arrivals to one archive day, grouped by the run that brought them.
+    The day's first ingest is the day itself, not a backfill, so it never
+    appears here."""
+    counts: dict[str, int] = {}
+    for item in items:
+        ingested = item["dates"]["ingested"]
+        counts[ingested] = counts.get(ingested, 0) + 1
+    dates = sorted(counts)
+    return [{"date": d, "n": counts[d]} for d in dates[1:]]
+
+
+def date_chain(item: dict) -> list[dict]:
+    """The four dates printed on a card. Unknown dates are omitted rather than
+    guessed, and a month-precision `published` value is printed as a month,
+    never padded into a full date."""
+    dates = item["dates"]
+    return [{"label": label, "value": dates.get(key, "")}
+            for key, label in _DATE_LABELS if dates.get(key)]
+
+
+def archive_groups(by_archive: dict[str, list[dict]]) -> list[dict]:
+    """Archive days grouped into year-month sections, newest first, for the
+    archive index page."""
+    groups: dict[str, list[dict]] = {}
+    for date, items in by_archive.items():
+        groups.setdefault(date[:7], []).append({
+            "date": date,
+            "n": len(items),
+            "breaking": any((it.get("decision") or {}).get("level") == "breaking"
+                            for it in items),
+            "backfills": len(backfill_batches(items)),
+        })
+    return [{"ym": ym, "days": sorted(days, key=lambda d: d["date"], reverse=True)}
+            for ym, days in sorted(groups.items(), reverse=True)]
+
+
 def page_context(axis: str, date: str, items: list[dict], *, latest_date: str,
                  prev_date: str = "", next_date: str = "",
                  versions=(), current_version: str = "") -> dict:
@@ -55,12 +97,21 @@ def page_context(axis: str, date: str, items: list[dict], *, latest_date: str,
     core = [it for it in ordered if it["score"].layer == "core"]
     related = [it for it in ordered if it["score"].layer == "related"]
     edge = [it for it in ordered if it["score"].layer == "edge"]
+    # Backfill badges/note are archive-only, and only on the latest version of
+    # an archive page — a historical as-of page is a snapshot of what existed
+    # back then, so showing what arrived even later would be meaningless.
+    batches = backfill_batches(items) if axis == "archive" else []
+    first_ingest = min((it["dates"]["ingested"] for it in ordered), default="")
+    if current_version:
+        batches = []
+        first_ingest = ""
     return dict(axis=axis, date=date, review=compose_review(date, ordered),
                 items=ordered, main_items=core + related, core_items=core,
                 related_items=related, edge_items=edge,
                 meta=_masthead(date, len(core), len(related), len(edge)),
                 latest_date=latest_date, prev_date=prev_date, next_date=next_date,
-                versions=list(versions), current_version=current_version)
+                versions=list(versions), current_version=current_version,
+                batches=batches, first_ingest=first_ingest)
 
 
 def _masthead(date_str: str, n_core: int, n_related: int, n_edge: int) -> dict:
@@ -243,6 +294,7 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
     env.globals["split_watch"] = split_watch
     env.globals["arxiv_id"] = arxiv_id
     env.globals["paper_links"] = paper_links
+    env.globals["date_chain"] = date_chain
     env.globals["ROMAN"] = _ROMAN
 
     items = store.all_items()
@@ -291,7 +343,8 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
                 day_tmpl.render(static_prefix="../", **ctx), encoding="utf-8")
 
     (out_dir / "archive.html").write_text(
-        archive_tmpl.render(days=sorted(archive_dates, reverse=True),
+        archive_tmpl.render(groups=archive_groups(by_archive),
+                            coverage_start=config.SITE_COVERAGE_START,
                             static_prefix="", latest_date=latest_date),
         encoding="utf-8")
 

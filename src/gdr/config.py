@@ -48,6 +48,10 @@ ADS_API_URL = os.environ.get("ADS_API_URL", "https://api.adsabs.harvard.edu/v1/s
 CROSSREF_API_URL = os.environ.get("CROSSREF_API_URL", "https://api.crossref.org/works")
 CROSSREF_MAILTO = os.environ.get("GDR_CROSSREF_MAILTO", "daily-review@users.noreply.github.com")
 
+# The first day this site ingested anything. Archive days before it hold only
+# papers that were backfilled later, never that day's full literature.
+SITE_COVERAGE_START = os.environ.get("GDR_SITE_COVERAGE_START", "2026-07-12")
+
 FETCH_WINDOW_DAYS = int(os.environ.get("GDR_FETCH_WINDOW_DAYS", "7"))
 ARXIV_PAGE_SIZE = int(os.environ.get("GDR_ARXIV_PAGE_SIZE", "100"))
 ADS_PAGE_SIZE = int(os.environ.get("GDR_ADS_PAGE_SIZE", "200"))
