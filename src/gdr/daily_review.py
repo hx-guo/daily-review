@@ -1,5 +1,6 @@
 import json
 import re
+import sys
 import time
 from typing import Callable
 
@@ -316,9 +317,14 @@ def review_paper(item: dict, llm: LLM, *, breaker: Breaker | None = None,
                 lambda data: _verified_decision(data, paper_id,
                                                 candidate["decision"]),
                 sleep=sleep)
-    except Exception:
+    except Exception as exc:
+        print(f"[gdr] review failed for {paper_id}: {exc}", file=sys.stderr)
         if breaker is not None:
             breaker.record(False)
+            if breaker.tripped():
+                print(f"[gdr] editorial breaker tripped after "
+                      f"{breaker.consecutive_failures} consecutive failures; "
+                      "pausing further paper reviews", file=sys.stderr)
         return None
 
     if breaker is not None:

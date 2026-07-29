@@ -90,10 +90,11 @@ def test_watchlist_signals_carry_their_own_paper_id(fake_llm_factory):
 def test_edge_and_non_research_papers_are_never_sent_to_the_model(fake_llm_factory):
     llm = fake_llm_factory([])
 
-    assert review_paper(_item(layer="edge"), llm) is None
-    assert review_paper(_item(title="Publisher Correction: A result"), llm) is None
+    assert review_paper(_item(layer="edge"), llm, sleep=lambda s: None) is None
+    assert review_paper(_item(title="Publisher Correction: A result"), llm,
+                        sleep=lambda s: None) is None
     assert review_paper(_item(authors=[], abstract="A short editorial blurb."),
-                        llm) is None
+                        llm, sleep=lambda s: None) is None
     assert llm.calls == []
 
 
@@ -130,6 +131,7 @@ def test_verification_cannot_upgrade_a_headline_to_breaking(fake_llm_factory):
                            + [_verified("arxiv:1", "breaking")] * 10)
 
     assert review_paper(_item(), llm, sleep=lambda s: None) is None
+    assert len(llm.calls) == 11
 
 
 def test_breaker_trips_after_twenty_consecutive_total_failures(fake_llm_factory):
@@ -143,7 +145,8 @@ def test_breaker_trips_after_twenty_consecutive_total_failures(fake_llm_factory)
     assert breaker.tripped()
 
     before = len(llm.calls)
-    assert review_paper(_item("arxiv:3"), llm, breaker=breaker) is None
+    assert review_paper(_item("arxiv:3"), llm, breaker=breaker,
+                        sleep=lambda s: None) is None
     assert len(llm.calls) == before          # tripped: no further calls at all
 
 
@@ -155,3 +158,13 @@ def test_one_success_resets_the_breaker(fake_llm_factory):
     review_paper(_item("arxiv:2"), llm, breaker=breaker, sleep=lambda s: None)
 
     assert not breaker.tripped()
+
+
+def test_a_failed_paper_is_logged_to_stderr_with_its_id(fake_llm_factory, capsys):
+    """A dead upstream must show up in the log, not just as a silent decision=None
+    (the exact incident config.py's EDITORIAL_ATTEMPTS comment cites)."""
+    llm = fake_llm_factory(["not json"] * 10)
+
+    assert review_paper(_item("arxiv:42"), llm, sleep=lambda s: None) is None
+
+    assert "arxiv:42" in capsys.readouterr().err
