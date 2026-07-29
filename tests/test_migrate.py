@@ -54,6 +54,31 @@ def test_ingest_dates_come_from_the_commit_that_first_introduced_each_paper(tmp_
                    "arxiv:3": "2026-07-21"}
 
 
+def test_ingest_dates_survive_a_commit_that_empties_data_daily(tmp_path):
+    """Regression for a real crash: deleting the only file in data/daily makes
+    the directory vanish from the tree at that commit (git doesn't track empty
+    directories), so `ls-tree <sha>:data/daily` exits 128. The walk must treat
+    that as an empty listing and move on, not blow up."""
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    _git(repo, "init", "-q")
+    _write_day(repo, "2026-07-14", ["arxiv:1"])
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "first", date="2026-07-18T10:00:00 +0000")
+
+    (repo / "data" / "daily" / "2026-07-14.json").unlink()
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "delete only file", date="2026-07-19T10:00:00 +0000")
+
+    _write_day(repo, "2026-07-20", ["arxiv:2"])
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "new day", date="2026-07-21T10:00:00 +0000")
+
+    got = ingest_dates_from_git(repo)
+
+    assert got == {"arxiv:1": "2026-07-18", "arxiv:2": "2026-07-21"}
+
+
 def _day_with_story():
     paper = Paper(id="arxiv:1", source="arxiv", title="t", authors=["A"],
                   abstract="a", categories=[], published="2026-07-14", url="")
@@ -97,6 +122,17 @@ def test_watchlist_without_an_id_goes_to_the_only_story_of_that_day():
     assert got["arxiv:1"]["watchlist"] == ["信号一（arxiv:1）", "无标识的信号（arxiv:1）"]
 
 
+def test_watchlist_signal_naming_an_unknown_paper_is_dropped_not_reassigned():
+    """A signal that explicitly names a paper id must never be re-attributed to
+    a different paper, even when that other paper is the day's only story."""
+    day = _day_with_story()
+    day.review.watchlist = ["信号一（arxiv:1）", "别的信号（arxiv:99）"]
+
+    got = decisions_from_review(day)
+
+    assert got["arxiv:1"]["watchlist"] == ["信号一（arxiv:1）"]
+
+
 def test_build_ingest_days_groups_by_ingest_date_and_computes_archive_date():
     day = _day_with_story()
     ingest = {"arxiv:1": "2026-07-18", "arxiv:2": "2026-07-21"}
@@ -113,3 +149,20 @@ def test_build_ingest_days_groups_by_ingest_date_and_computes_archive_date():
     assert out["2026-07-18"].items[0]["archive_date"] == "2026-07-14"
     assert out["2026-07-18"].items[0]["decision"]["level"] == "breaking"
     assert out["2026-07-21"].items[0]["decision"] is None       # edge
+
+
+def test_build_ingest_days_sets_reviewed_at_to_the_ingest_date_not_the_archive_date():
+    """Matches the online path (daily_review.py), which records `reviewed_at`
+    as the ingest date. The day's archive date ("2026-07-14" here) and its
+    ingest date ("2026-07-18") differ on purpose so the two can't be confused."""
+    day = _day_with_story()
+    ingest = {"arxiv:1": "2026-07-18", "arxiv:2": "2026-07-21"}
+
+    out = {d.ingested: d for d in build_ingest_days(
+        [day], ingest,
+        resolve_dates=lambda paper, ingested: {
+            "preprint": "2026-07-14", "accepted": "", "published": "",
+            "published_precision": "", "published_source": "", "received": "",
+            "ingested": ingested})}
+
+    assert out["2026-07-18"].items[0]["decision"]["reviewed_at"] == "2026-07-18"
