@@ -43,7 +43,8 @@
         "external_ids": {
           "ads": "2026A&A...711A.224F",
           "doi": "10.1051/0004-6361/202453642"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -186,7 +187,8 @@
         "external_ids": {
           "ads": "2026A&A...711A.225F",
           "doi": "10.1051/0004-6361/202453643"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 72,
@@ -271,8 +273,10 @@
         "doi": "10.1051/0004-6361/202659313",
         "external_ids": {
           "ads": "2026A&A...711A.230F",
+          "arxiv": "2602.04519",
           "doi": "10.1051/0004-6361/202659313"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -346,8 +350,10 @@
         "doi": "10.1051/0004-6361/202660232",
         "external_ids": {
           "ads": "2026A&A...711A.234M",
+          "arxiv": "2606.10926",
           "doi": "10.1051/0004-6361/202660232"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -422,8 +428,10 @@
         "doi": "10.1051/0004-6361/202558199",
         "external_ids": {
           "ads": "2026A&A...711A.250R",
+          "arxiv": "2606.18155",
           "doi": "10.1051/0004-6361/202558199"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -484,8 +492,10 @@
         "doi": "10.1051/0004-6361/202659823",
         "external_ids": {
           "ads": "2026A&A...711A.251R",
+          "arxiv": "2606.20368",
           "doi": "10.1051/0004-6361/202659823"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -568,8 +578,10 @@
         "doi": "10.1051/0004-6361/202659237",
         "external_ids": {
           "ads": "2026A&A...711A.259J",
+          "arxiv": "2604.21621",
           "doi": "10.1051/0004-6361/202659237"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -638,8 +650,10 @@
         "doi": "10.1051/0004-6361/202659875",
         "external_ids": {
           "ads": "2026A&A...711A.279S",
+          "arxiv": "2606.19335",
           "doi": "10.1051/0004-6361/202659875"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -713,8 +727,10 @@
         "doi": "10.1051/0004-6361/202558054",
         "external_ids": {
           "ads": "2026A&A...711A.293H",
+          "arxiv": "2511.07996",
           "doi": "10.1051/0004-6361/202558054"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -779,8 +795,10 @@
         "doi": "10.1051/0004-6361/202660202",
         "external_ids": {
           "ads": "2026A&A...711L..11I",
+          "arxiv": "2606.04428",
           "doi": "10.1051/0004-6361/202660202"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 65,
@@ -854,7 +872,8 @@
         "external_ids": {
           "ads": "2026AJ....172..102W",
           "doi": "10.3847/1538-3881/ae81b5"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -923,8 +942,10 @@
         "doi": "10.3847/1538-4357/ae839d",
         "external_ids": {
           "ads": "2026ApJ..1006...96Z",
+          "arxiv": "2511.04540",
           "doi": "10.3847/1538-4357/ae839d"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 25,
@@ -994,8 +1015,10 @@
         "doi": "10.3847/1538-4357/ae80a8",
         "external_ids": {
           "ads": "2026ApJ..1006...97A",
+          "arxiv": "2603.24678",
           "doi": "10.3847/1538-4357/ae80a8"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -1118,8 +1141,10 @@
         "doi": "10.3847/1538-4357/ae7f15",
         "external_ids": {
           "ads": "2026ApJ..1006..101K",
+          "arxiv": "2606.18849",
           "doi": "10.3847/1538-4357/ae7f15"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -1239,8 +1264,10 @@
         "doi": "10.3847/1538-4357/ae7e7b",
         "external_ids": {
           "ads": "2026ApJ..1006..102L",
+          "arxiv": "2606.17444",
           "doi": "10.3847/1538-4357/ae7e7b"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -1317,8 +1344,10 @@
         "doi": "10.3847/1538-4357/ae7b21",
         "external_ids": {
           "ads": "2026ApJ..1006..103L",
+          "arxiv": "2606.05944",
           "doi": "10.3847/1538-4357/ae7b21"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -1403,8 +1432,10 @@
         "doi": "10.3847/1538-4357/ae7a45",
         "external_ids": {
           "ads": "2026ApJ..1006..106S",
+          "arxiv": "2509.19585",
           "doi": "10.3847/1538-4357/ae7a45"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 65,
@@ -1479,7 +1510,8 @@
         "external_ids": {
           "ads": "2026ApJ..1006..108D",
           "doi": "10.3847/1538-4357/ae7a3d"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -1556,8 +1588,10 @@
         "doi": "10.3847/1538-4357/ae7a33",
         "external_ids": {
           "ads": "2026ApJ..1006..109C",
+          "arxiv": "2606.05321",
           "doi": "10.3847/1538-4357/ae7a33"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -1624,8 +1658,10 @@
         "doi": "10.3847/1538-4357/ae80a6",
         "external_ids": {
           "ads": "2026ApJ..1006..118B",
+          "arxiv": "2607.08876",
           "doi": "10.3847/1538-4357/ae80a6"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -1700,7 +1736,8 @@
         "external_ids": {
           "ads": "2026ApJ..1006..120V",
           "doi": "10.3847/1538-4357/ae7f0c"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -1782,8 +1819,10 @@
         "doi": "10.3847/1538-4357/ae7d29",
         "external_ids": {
           "ads": "2026ApJ..1006..121T",
+          "arxiv": "2604.05020",
           "doi": "10.3847/1538-4357/ae7d29"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -1865,8 +1904,10 @@
         "doi": "10.3847/1538-4357/ae7c69",
         "external_ids": {
           "ads": "2026ApJ..1006..127B",
+          "arxiv": "2603.04557",
           "doi": "10.3847/1538-4357/ae7c69"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -1950,8 +1991,10 @@
         "doi": "10.3847/1538-4357/ae8099",
         "external_ids": {
           "ads": "2026ApJ..1006..128J",
+          "arxiv": "2603.10792",
           "doi": "10.3847/1538-4357/ae8099"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -2024,8 +2067,10 @@
         "doi": "10.3847/1538-4357/ae80bf",
         "external_ids": {
           "ads": "2026ApJ..1006..132C",
+          "arxiv": "2604.01294",
           "doi": "10.3847/1538-4357/ae80bf"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -2099,8 +2144,10 @@
         "doi": "10.3847/1538-4357/ae81aa",
         "external_ids": {
           "ads": "2026ApJ..1006..139F",
+          "arxiv": "2607.06777",
           "doi": "10.3847/1538-4357/ae81aa"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -2174,8 +2221,10 @@
         "doi": "10.3847/1538-4357/ae80a7",
         "external_ids": {
           "ads": "2026ApJ..1006..146P",
+          "arxiv": "2606.23818",
           "doi": "10.3847/1538-4357/ae80a7"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -2272,8 +2321,10 @@
         "doi": "10.3847/1538-4357/ae77de",
         "external_ids": {
           "ads": "2026ApJ..1006..151P",
+          "arxiv": "2603.27236",
           "doi": "10.3847/1538-4357/ae77de"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -2368,8 +2419,10 @@
         "doi": "10.3847/1538-4357/ae77f5",
         "external_ids": {
           "ads": "2026ApJ..1006..152P",
+          "arxiv": "2603.27235",
           "doi": "10.3847/1538-4357/ae77f5"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -2456,8 +2509,10 @@
         "doi": "10.3847/1538-4357/ae8398",
         "external_ids": {
           "ads": "2026ApJ..1006..154L",
+          "arxiv": "2606.31289",
           "doi": "10.3847/1538-4357/ae8398"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -2531,7 +2586,8 @@
         "external_ids": {
           "ads": "2026ApJ..1006..155S",
           "doi": "10.3847/1538-4357/ae8251"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 75,
@@ -2671,8 +2727,10 @@
         "doi": "10.3847/1538-4357/ae81a4",
         "external_ids": {
           "ads": "2026ApJ..1006..157L",
+          "arxiv": "2605.00372",
           "doi": "10.3847/1538-4357/ae81a4"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -2751,8 +2809,10 @@
         "doi": "10.3847/1538-4357/ae7d28",
         "external_ids": {
           "ads": "2026ApJ..1006..162S",
+          "arxiv": "2606.17490",
           "doi": "10.3847/1538-4357/ae7d28"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -2825,8 +2885,10 @@
         "doi": "10.3847/2041-8213/ae884e",
         "external_ids": {
           "ads": "2026ApJ..1006L..23G",
+          "arxiv": "2607.09036",
           "doi": "10.3847/2041-8213/ae884e"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -2907,8 +2969,10 @@
         "doi": "10.3847/2041-8213/ae86ef",
         "external_ids": {
           "ads": "2026ApJ..1006L..34H",
+          "arxiv": "2607.07610",
           "doi": "10.3847/2041-8213/ae86ef"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -3080,8 +3144,10 @@
         "doi": "10.3847/2041-8213/ae7a68",
         "external_ids": {
           "ads": "2026ApJ..1006L..36S",
+          "arxiv": "2512.10239",
           "doi": "10.3847/2041-8213/ae7a68"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 88,
@@ -3159,8 +3225,10 @@
         "doi": "10.3847/1538-4365/ae8193",
         "external_ids": {
           "ads": "2026ApJS..285...42B",
+          "arxiv": "2606.23482",
           "doi": "10.3847/1538-4365/ae8193"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 70,
@@ -3235,8 +3303,10 @@
         "doi": "10.3847/1538-4365/ae82ee",
         "external_ids": {
           "ads": "2026ApJS..285...45M",
+          "arxiv": "2606.25623",
           "doi": "10.3847/1538-4365/ae82ee"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -3305,7 +3375,8 @@
         "external_ids": {
           "ads": "2026FrASS..1304296Z",
           "doi": "10.3389/fspas.2026.1904296"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -3366,7 +3437,8 @@
         "external_ids": {
           "ads": "2026GApFD.120..122G",
           "doi": "10.1080/03091929.2026.2677115"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -3428,8 +3500,10 @@
         "doi": "10.1088/1475-7516/2026/07/064",
         "external_ids": {
           "ads": "2026JCAP...07..064M",
+          "arxiv": "2512.00165",
           "doi": "10.1088/1475-7516/2026/07/064"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -3495,8 +3569,10 @@
         "doi": "10.1088/1475-7516/2026/07/065",
         "external_ids": {
           "ads": "2026JCAP...07..065M",
+          "arxiv": "2602.08911",
           "doi": "10.1088/1475-7516/2026/07/065"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -3569,8 +3645,10 @@
         "doi": "10.1088/1475-7516/2026/07/068",
         "external_ids": {
           "ads": "2026JCAP...07..068B",
+          "arxiv": "2603.22397",
           "doi": "10.1088/1475-7516/2026/07/068"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -3629,8 +3707,10 @@
         "doi": "10.1088/1475-7516/2026/07/072",
         "external_ids": {
           "ads": "2026JCAP...07..072A",
+          "arxiv": "2512.02642",
           "doi": "10.1088/1475-7516/2026/07/072"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -3703,8 +3783,10 @@
         "doi": "10.1088/1475-7516/2026/07/074",
         "external_ids": {
           "ads": "2026JCAP...07..074K",
+          "arxiv": "2512.06807",
           "doi": "10.1088/1475-7516/2026/07/074"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -3763,8 +3845,10 @@
         "doi": "10.1088/1475-7516/2026/07/076",
         "external_ids": {
           "ads": "2026JCAP...07..076C",
+          "arxiv": "2507.15791",
           "doi": "10.1088/1475-7516/2026/07/076"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -3823,8 +3907,10 @@
         "doi": "10.1088/1475-7516/2026/07/079",
         "external_ids": {
           "ads": "2026JCAP...07..079C",
+          "arxiv": "2601.03346",
           "doi": "10.1088/1475-7516/2026/07/079"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -3882,8 +3968,10 @@
         "doi": "10.1088/1475-7516/2026/07/082",
         "external_ids": {
           "ads": "2026JCAP...07..082O",
+          "arxiv": "2501.15748",
           "doi": "10.1088/1475-7516/2026/07/082"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -3941,8 +4029,10 @@
         "doi": "10.1093/mnras/stag1367",
         "external_ids": {
           "ads": "2026MNRAS.tmp.1287B",
+          "arxiv": "2605.04781",
           "doi": "10.1093/mnras/stag1367"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -4022,7 +4112,8 @@
         "external_ids": {
           "ads": "2026NatAs..10.1020W",
           "doi": "10.1038/s41550-026-02836-3"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -4097,7 +4188,8 @@
           "ads": "2026NatAs..10.1039P",
           "arxiv": "2512.09645",
           "doi": "10.1038/s41550-026-02828-3"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -4239,7 +4331,8 @@
           "ads": "2026NatAs..10.1049A",
           "arxiv": "2509.04637",
           "doi": "10.1038/s41550-026-02847-0"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -4376,8 +4469,10 @@
         "doi": "10.1038/s41467-026-72897-5",
         "external_ids": {
           "ads": "2026NatCo..17.6477Z",
+          "arxiv": "2504.11945",
           "doi": "10.1038/s41467-026-72897-5"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -4453,7 +4548,8 @@
           "ads": "2026PASA...43...87R",
           "arxiv": "2026.10227",
           "doi": "10.1017/pasa.2026.10227"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -4526,8 +4622,10 @@
         "doi": "10.1088/1538-3873/ae8699",
         "external_ids": {
           "ads": "2026PASP..138g4204N",
+          "arxiv": "2605.16498",
           "doi": "10.1088/1538-3873/ae8699"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 35,
@@ -4597,7 +4695,8 @@
         "external_ids": {
           "ads": "2026SSPMA..5614211X",
           "doi": "10.1360/SSPMA-2025-0545"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -4661,8 +4760,10 @@
         "doi": "10.1007/s11214-026-01310-w",
         "external_ids": {
           "ads": "2026SSRv..222...58S",
+          "arxiv": "2607.08917",
           "doi": "10.1007/s11214-026-01310-w"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -4724,7 +4825,8 @@
         "external_ids": {
           "ads": "2026SerAJ.212..107S",
           "doi": "10.2298/SAJ2612107S"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -4799,7 +4901,8 @@
         "external_ids": {
           "ads": "2026SoPh..301..110T",
           "doi": "10.1007/s11207-026-02705-2"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 65,
@@ -4870,7 +4973,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.21423"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -4928,7 +5032,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22481"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -4987,7 +5092,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22735"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5047,7 +5153,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22787"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5107,7 +5214,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22791"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -5164,7 +5272,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22796"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5225,7 +5334,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22802"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5283,7 +5393,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22809"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -5347,7 +5458,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22812"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -5410,7 +5522,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22814"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 60,
@@ -5519,7 +5632,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22815"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5579,7 +5693,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22816"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5640,7 +5755,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22817"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5713,7 +5829,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22822"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5812,7 +5929,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22836"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -5894,7 +6012,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22839"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -5952,7 +6071,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22856"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -6009,7 +6129,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22873"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -6067,7 +6188,8 @@
         "external_ids": {
           "arxiv": "2607.22876",
           "doi": "10.1016/j.nuclphysb.2026.117555"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -6127,7 +6249,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22893"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -6186,7 +6309,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22907"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -6247,7 +6371,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22909"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 30,
@@ -6322,7 +6447,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22911"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -6381,7 +6507,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22938"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -6441,7 +6568,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22967"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -6500,7 +6628,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.22977"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -6560,7 +6689,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23022"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -6623,7 +6753,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23043"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -6681,7 +6812,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23060"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -6740,7 +6872,8 @@
         "external_ids": {
           "arxiv": "2607.23061",
           "doi": "10.22201/ia.30618649e.2026.62.02.7465"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -6799,7 +6932,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23093"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -6859,7 +6993,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23095"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -6924,7 +7059,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23114"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 85,
@@ -7113,7 +7249,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23119"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -7174,7 +7311,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23140"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -7234,7 +7372,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23152"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7291,7 +7430,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23172"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7352,7 +7492,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23200"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7410,7 +7551,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23282"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7467,7 +7609,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23300"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7532,7 +7675,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23329"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7592,7 +7736,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23339"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -7648,7 +7793,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23374"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7707,7 +7853,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23387"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7764,7 +7911,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23398"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -7821,7 +7969,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23403"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -7878,7 +8027,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23470"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -7943,7 +8093,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23494"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -8004,7 +8155,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23527"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8063,7 +8215,8 @@
         "external_ids": {
           "arxiv": "2607.23535",
           "doi": "10.1093/mnras/stag1315"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8122,7 +8275,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23552"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -8180,7 +8334,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23564"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -8238,7 +8393,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23593"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8297,7 +8453,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23644"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -8356,7 +8513,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23646"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8414,7 +8572,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23661"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8491,7 +8650,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23690"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 45,
@@ -8624,7 +8784,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23716"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -8688,7 +8849,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23741"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -8748,7 +8910,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23742"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8805,7 +8968,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23776"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -8872,7 +9036,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23829"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -8929,7 +9094,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23849"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 50,
@@ -9063,7 +9229,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23852"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9120,7 +9287,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23892"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -9182,7 +9350,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23903"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9241,7 +9410,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23965"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9298,7 +9468,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23973"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -9371,7 +9542,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.23992"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9429,7 +9601,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24045"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 80,
@@ -9576,7 +9749,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24091"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -9637,7 +9811,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24100"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -9694,7 +9869,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24119"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9751,7 +9927,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24132"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -9809,7 +9986,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24141"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9869,7 +10047,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24144"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -9930,7 +10109,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24154"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -9989,7 +10169,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24201"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10053,7 +10234,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24214"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10120,7 +10302,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24234"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10179,7 +10362,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24242"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10238,7 +10422,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24254"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10298,7 +10483,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24277"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10360,7 +10546,8 @@
         "external_ids": {
           "arxiv": "2607.24284",
           "doi": "10.3847/1538-4357/ae8390"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10420,7 +10607,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24289"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10481,7 +10669,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24307"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -10539,7 +10728,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24335"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10597,7 +10787,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24347"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -10656,7 +10847,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24349"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10717,7 +10909,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24390"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10778,7 +10971,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24397"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -10842,7 +11036,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24404"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -10901,7 +11096,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24412"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -10960,7 +11156,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24418"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11023,7 +11220,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24421"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -11080,7 +11278,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24443"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -11141,7 +11340,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24450"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -11200,7 +11400,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24457"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11262,7 +11463,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24458"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 45,
@@ -11469,7 +11671,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24460"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -11531,7 +11734,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24461"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11587,7 +11791,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24469"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -11667,7 +11872,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24510"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -11724,7 +11930,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24517"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 40,
@@ -11849,7 +12056,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24525"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -11910,7 +12118,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24531"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 90,
@@ -11983,7 +12192,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24544"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -12043,7 +12253,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24576"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -12106,7 +12317,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24580"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 5,
@@ -12165,7 +12377,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24614"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -12224,7 +12437,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24654"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -12280,7 +12494,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24694"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 0,
@@ -12338,7 +12553,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24713"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 15,
@@ -12399,7 +12615,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24723"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
@@ -12458,7 +12675,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24734"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 20,
@@ -12522,7 +12740,8 @@
         "doi": null,
         "external_ids": {
           "arxiv": "2607.24742"
-        }
+        },
+        "pubdate": ""
       },
       "score": {
         "score": 10,
