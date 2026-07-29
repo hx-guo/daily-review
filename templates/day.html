@@ -143,6 +143,18 @@
     <div class="masthead-meta">{{ meta.cn_date }} {{ meta.weekday }}　·　数据截至 arXiv / ADS 最新收录日</div>
   </header>
 
+  {% if versions %}
+  <nav class="version-bar" aria-label="版本">
+    <span class="version-label">版本</span>
+    <a class="version {{ 'is-current' if not current_version else '' }}"
+       href="{{ static_prefix }}day/{{ date }}.html">最新 · {{ versions[-1].n }} 篇</a>
+    {% for v in versions if v.date != versions[-1].date %}
+    <a class="version {{ 'is-current' if v.current else '' }}"
+       href="{{ static_prefix }}day/{{ v.href }}">{{ v.date[5:] }} · {{ v.n }} 篇</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+
   {% set ns.sec = ns.sec + 1 %}
   {% set stories = review.stories or [] %}
   {% set breaking = stories | selectattr('level', 'equalto', 'breaking') | list %}

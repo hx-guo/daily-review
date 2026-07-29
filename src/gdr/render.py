@@ -34,8 +34,21 @@ def _sorted_items(items: list[dict]) -> list[dict]:
                                          -it["score"].score))
 
 
+def versions_for(items: list[dict]) -> list[str]:
+    """Ingest days that contributed to one archive day. A day that arrived in one
+    piece has no versions — there is nothing to switch between."""
+    dates = sorted({it["dates"]["ingested"] for it in items
+                    if it["dates"].get("ingested")})
+    return dates if len(dates) > 1 else []
+
+
+def _version_href(date: str, version: str, latest: str) -> str:
+    return f"{date}.html" if version == latest else f"{date}.as-of-{version}.html"
+
+
 def page_context(axis: str, date: str, items: list[dict], *, latest_date: str,
-                 prev_date: str = "", next_date: str = "") -> dict:
+                 prev_date: str = "", next_date: str = "",
+                 versions=(), current_version: str = "") -> dict:
     from gdr.daily_review import compose_review
 
     ordered = _sorted_items(items)
@@ -46,7 +59,8 @@ def page_context(axis: str, date: str, items: list[dict], *, latest_date: str,
                 items=ordered, main_items=core + related, core_items=core,
                 related_items=related, edge_items=edge,
                 meta=_masthead(date, len(core), len(related), len(edge)),
-                latest_date=latest_date, prev_date=prev_date, next_date=next_date)
+                latest_date=latest_date, prev_date=prev_date, next_date=next_date,
+                versions=list(versions), current_version=current_version)
 
 
 def _masthead(date_str: str, n_core: int, n_related: int, n_edge: int) -> dict:
@@ -256,10 +270,25 @@ def render_site(store: Store, out_dir: Path, templates_dir: Path, static_dir: Pa
                 index_tmpl.render(static_prefix="", **ctx), encoding="utf-8")
 
     for date in archive_dates:
-        ctx = page_context("archive", date, by_archive[date],
-                           latest_date=latest_date)
-        (out_dir / "day" / f"{date}.html").write_text(
-            day_tmpl.render(static_prefix="../", **ctx), encoding="utf-8")
+        all_day_items = by_archive[date]
+        versions = versions_for(all_day_items)
+        latest_version = versions[-1] if versions else ""
+        bar = [{"date": v, "href": _version_href(date, v, latest_version),
+                "n": sum(1 for it in all_day_items
+                         if it["dates"]["ingested"] <= v),
+                "current": False} for v in versions]
+        for version in [""] + versions:
+            shown = (all_day_items if not version else
+                     [it for it in all_day_items
+                      if it["dates"]["ingested"] <= version])
+            if version and version == latest_version:
+                continue                       # the latest version IS the bare URL
+            marked = [{**b, "current": b["date"] == version} for b in bar]
+            ctx = page_context("archive", date, shown, latest_date=latest_date,
+                               versions=marked, current_version=version)
+            name = f"{date}.html" if not version else f"{date}.as-of-{version}.html"
+            (out_dir / "day" / name).write_text(
+                day_tmpl.render(static_prefix="../", **ctx), encoding="utf-8")
 
     (out_dir / "archive.html").write_text(
         archive_tmpl.render(days=sorted(archive_dates, reverse=True),

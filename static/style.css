@@ -83,6 +83,16 @@ a { color: var(--accent); text-decoration: none; }
 .masthead-sub { font-family: var(--latin); font-size: 12px; letter-spacing: 0.2em; color: var(--accent-sub); }
 .masthead-meta { margin-top: 14px; font-size: 12.5px; color: var(--ink-meta); letter-spacing: 0.06em; }
 
+/* ---------- version bar (archive-day history switcher) ---------- */
+.version-bar {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  margin: 24px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--rule-soft);
+}
+.version-label { font-size: 11.5px; letter-spacing: 0.18em; color: var(--ink-faint); }
+.version { font-size: 13px; color: var(--ink-body); text-decoration: none; border-bottom: 1px solid transparent; }
+.version:hover { border-bottom-color: var(--ink-body); }
+.version.is-current { color: var(--ink-mast); border-bottom-color: var(--ink-mast); }
+
 /* ---------- section headings (roman-numeral pattern) ---------- */
 .sec { margin-top: 40px; }
 .sec-head { display: flex; align-items: baseline; gap: 14px; margin: 44px 0 0; }
