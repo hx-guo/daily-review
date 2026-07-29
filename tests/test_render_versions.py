@@ -64,6 +64,24 @@ def test_version_bar_links_every_version_and_marks_the_current_one(
     assert "最新" in latest
 
 
+def test_version_bar_latest_link_shows_the_true_latest_count(
+        ritem, build_site_from):
+    """The 「最新」 link always points at the newest version, so its count must
+    stay pinned to that version's paper total — not silently regress to
+    whatever subset the page currently being viewed happens to show."""
+    out = build_site_from([
+        ("2026-07-18", [ritem("arxiv:1", archive="2026-07-14",
+                              ingested="2026-07-18")]),
+        ("2026-07-22", [ritem("arxiv:2", archive="2026-07-14",
+                              ingested="2026-07-22")])])
+
+    older = (out / "day" / "2026-07-14.as-of-2026-07-18.html").read_text(
+        encoding="utf-8")
+
+    assert "最新 · 2 篇" in older
+    assert "最新 · 1 篇" not in older
+
+
 def test_news_pages_have_no_version_bar(ritem, build_site_from):
     """An ingest day is immutable by construction — nothing to version."""
     out = build_site_from([("2026-07-18", [ritem("arxiv:1",
