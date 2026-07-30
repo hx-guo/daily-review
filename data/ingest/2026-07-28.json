@@ -10906,9 +10906,10 @@
         "published": "2026-07-27",
         "url": "https://arxiv.org/abs/2607.24390v1",
         "pdf_url": "https://arxiv.org/pdf/2607.24390v1",
-        "doi": null,
+        "doi": "10.25518/0037-9565.12630",
         "external_ids": {
-          "arxiv": "2607.24390"
+          "arxiv": "2607.24390",
+          "doi": "10.25518/0037-9565.12630"
         },
         "pubdate": ""
       },
@@ -10937,9 +10938,9 @@
       "dates": {
         "preprint": "2026-07-27",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026",
+        "published_precision": "year",
+        "published_source": "crossref-print",
         "received": "",
         "ingested": "2026-07-28"
       },
@@ -10968,9 +10969,10 @@
         "published": "2026-07-27",
         "url": "https://arxiv.org/abs/2607.24397v1",
         "pdf_url": "https://arxiv.org/pdf/2607.24397v1",
-        "doi": null,
+        "doi": "10.1051/0004-6361/202661115",
         "external_ids": {
-          "arxiv": "2607.24397"
+          "arxiv": "2607.24397",
+          "doi": "10.1051/0004-6361/202661115"
         },
         "pubdate": ""
       },
