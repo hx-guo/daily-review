@@ -11003,9 +11003,9 @@
       "dates": {
         "preprint": "2026-07-27",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-03",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-07-28"
       },
