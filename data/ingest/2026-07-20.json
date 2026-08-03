@@ -4265,7 +4265,11 @@
         "url": "https://arxiv.org/abs/2607.15955v1",
         "pdf_url": "https://arxiv.org/pdf/2607.15955v1",
         "doi": "10.1093/mnras/stag1351",
-        "external_ids": {},
+        "external_ids": {
+          "ads": "2026MNRAS.550g1351S",
+          "arxiv": "2607.15955",
+          "doi": "10.1093/mnras/stag1351"
+        },
         "pubdate": ""
       },
       "score": {

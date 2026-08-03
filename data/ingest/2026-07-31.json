@@ -2872,8 +2872,9 @@
         "pdf_url": "https://arxiv.org/pdf/2607.27439v1",
         "doi": "10.1093/mnras/stag1370",
         "external_ids": {
-          "arxiv": "2607.27439",
-          "doi": "10.1093/mnras/stag1370"
+          "ads": "2026MNRAS.tmp.1300C",
+          "doi": "10.1093/mnras/stag1370",
+          "arxiv": "2607.27439"
         },
         "pubdate": ""
       },
