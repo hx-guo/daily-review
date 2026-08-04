@@ -6919,9 +6919,10 @@
         "published": "2026-07-29",
         "url": "https://arxiv.org/abs/2607.27046v1",
         "pdf_url": "https://arxiv.org/pdf/2607.27046v1",
-        "doi": null,
+        "doi": "10.1016/j.jheap.2026.100720",
         "external_ids": {
-          "arxiv": "2607.27046"
+          "arxiv": "2607.27046",
+          "doi": "10.1016/j.jheap.2026.100720"
         },
         "pubdate": ""
       },
@@ -6952,9 +6953,9 @@
       "dates": {
         "preprint": "2026-07-29",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-07-30",
+        "published_precision": "day",
+        "published_source": "crossref-created",
         "received": "",
         "ingested": "2026-07-30"
       },
