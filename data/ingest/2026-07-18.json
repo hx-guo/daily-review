@@ -11135,8 +11135,12 @@
         "published": "2026-07-14",
         "url": "https://arxiv.org/abs/2607.12708v1",
         "pdf_url": "https://arxiv.org/pdf/2607.12708v1",
-        "doi": null,
-        "external_ids": {},
+        "doi": "10.1093/mnras/stag1374",
+        "external_ids": {
+          "ads": "2026MNRAS.550g1374C",
+          "arxiv": "2607.12708",
+          "doi": "10.1093/mnras/stag1374"
+        },
         "pubdate": ""
       },
       "score": {
@@ -11167,9 +11171,9 @@
       "dates": {
         "preprint": "2026-07-14",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-07-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-07-18"
       },
@@ -15584,8 +15588,12 @@
         "published": "2026-07-15",
         "url": "https://arxiv.org/abs/2607.13388v1",
         "pdf_url": "https://arxiv.org/pdf/2607.13388v1",
-        "doi": null,
-        "external_ids": {},
+        "doi": "10.3847/2041-8213/ae8907",
+        "external_ids": {
+          "ads": "2026ApJ..1006L..61M",
+          "arxiv": "2607.13388",
+          "doi": "10.3847/2041-8213/ae8907"
+        },
         "pubdate": ""
       },
       "score": {
@@ -15615,11 +15623,11 @@
       },
       "dates": {
         "preprint": "2026-07-15",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-07-10",
+        "published": "2026-07-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-04-26",
         "ingested": "2026-07-18"
       },
       "archive_date": "2026-07-15",
@@ -20118,6 +20126,7 @@
         "doi": "10.3847/2041-8213/ae89a4",
         "external_ids": {
           "ads": "2026ApJ..1006L..44C",
+          "arxiv": "2607.14317",
           "doi": "10.3847/2041-8213/ae89a4"
         },
         "pubdate": ""
