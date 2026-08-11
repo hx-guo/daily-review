@@ -6921,8 +6921,9 @@
         "pdf_url": "https://arxiv.org/pdf/2607.27046v1",
         "doi": "10.1016/j.jheap.2026.100720",
         "external_ids": {
-          "arxiv": "2607.27046",
-          "doi": "10.1016/j.jheap.2026.100720"
+          "ads": "2027JHEAp..5500720A",
+          "doi": "10.1016/j.jheap.2026.100720",
+          "arxiv": "2607.27046"
         },
         "pubdate": ""
       },
