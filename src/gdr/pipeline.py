@@ -250,6 +250,7 @@ def sync(run_date, source, llm, store: Store,
     _mark_stored_but_unseen(store, candidates, stored_at)
 
     items = []
+    failure = None
     if fresh:
         breaker = Breaker()
         with ThreadPoolExecutor(max_workers=max_workers) as pool:
@@ -260,7 +261,17 @@ def sync(run_date, source, llm, store: Store,
                 try:
                     items.append(fut.result())
                 except Exception as exc:  # per-paper resilience
+                    failure = exc
                     print(f"[gdr] skipping {paper.id}: {exc}", file=sys.stderr)
+
+    # Per-paper resilience must not swallow a whole-pipeline outage. Losing
+    # every single paper is never a quiet day -- fetch_fulltext and the date
+    # lookups already absorb their own network failures, so what reaches here
+    # is the model layer being down. Fail the run so the workflow goes red
+    # instead of reporting success with nothing ingested.
+    if fresh and not items:
+        raise RuntimeError(
+            f"all {len(fresh)} fresh papers failed to process; last error: {failure}")
 
     if not items:
         return []

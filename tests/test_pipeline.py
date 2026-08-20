@@ -1,6 +1,8 @@
 import json
 import re
 
+import pytest
+
 from gdr.models import IngestDay, Paper, RelevanceScore, make_item
 from gdr.pipeline import enrich_seen, paper_dates, repair_decisions, sync
 from gdr.sources.base import Source
@@ -334,3 +336,46 @@ def test_sync_marks_a_stored_but_unseen_paper_seen_with_its_stored_day(
 
     assert llm.calls == []
     assert store.locate("arxiv:1") == "2026-07-18"
+
+
+class _DeadLLM:
+    """Every call fails the way opencode's RegionError did on 2026-08-03."""
+
+    def complete(self, *a, **k):
+        raise RuntimeError("Error code: 403 - RegionError")
+
+
+def test_sync_fails_loudly_when_every_fresh_paper_fails(tmp_path):
+    # A whole-pipeline outage must not look like a quiet day: on 2026-08-03
+    # opencode started 403-ing the triage model, every paper was skipped by the
+    # per-paper handler, and the workflow stayed green for 17 days.
+    store = Store(tmp_path / "data")
+    papers = [_paper("2608.1"), _paper("2608.2"), _paper("2608.3")]
+
+    with pytest.raises(RuntimeError, match="403"):
+        _sync(store, papers, _DeadLLM())
+
+
+class _FlakyLLM:
+    """Delegates, but fails every call that mentions one paper."""
+
+    def __init__(self, inner, doomed):
+        self._inner, self._doomed = inner, doomed
+
+    def complete(self, *a, **k):
+        if any(self._doomed in str(x) for x in a) or \
+           any(self._doomed in str(v) for v in k.values()):
+            raise RuntimeError("boom")
+        return self._inner.complete(*a, **k)
+
+
+def test_sync_stores_the_survivors_when_only_one_paper_fails(tmp_path, fake_llm_factory):
+    # The all-failed guard must not fire on ordinary per-paper flakiness.
+    store = Store(tmp_path / "data")
+    papers = [_paper("2608.1"), _paper("2608.2"), _paper("2608.3")]
+    llm = _FlakyLLM(_keyed_llm(fake_llm_factory), "2608.2")
+
+    _sync(store, papers, llm)
+
+    stored = {it["paper"].id for it in store.load_ingest("2026-07-18").items}
+    assert stored == {"2608.1", "2608.3"}
