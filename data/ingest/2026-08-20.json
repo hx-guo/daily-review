@@ -21079,8 +21079,8 @@
       },
       "archive_date": "2026-05-29",
       "decision": null,
-      "review_attempts": 2,
-      "decision_final": false
+      "review_attempts": 3,
+      "decision_final": true
     },
     {
       "paper": {
@@ -76984,6 +76984,7 @@
         "pdf_url": "https://arxiv.org/pdf/2608.07318v2",
         "doi": "10.1103/ckkf-2t3z",
         "external_ids": {
+          "ads": "2026PhRvD.114d4042T",
           "arxiv": "2608.07318",
           "doi": "10.1103/ckkf-2t3z"
         },

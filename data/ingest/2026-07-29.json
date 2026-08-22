@@ -5755,9 +5755,11 @@
         "published": "2026-07-28",
         "url": "https://arxiv.org/abs/2607.25766v1",
         "pdf_url": "https://arxiv.org/pdf/2607.25766v1",
-        "doi": null,
+        "doi": "10.1103/sczy-p7f5",
         "external_ids": {
-          "arxiv": "2607.25766"
+          "ads": "2026PhRvD.114d3029P",
+          "arxiv": "2607.25766",
+          "doi": "10.1103/sczy-p7f5"
         },
         "pubdate": ""
       },
@@ -5786,10 +5788,10 @@
       "dates": {
         "preprint": "2026-07-28",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "published": "2026-08-11",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-02-27",
         "ingested": "2026-07-29"
       },
       "archive_date": "2026-07-28",
