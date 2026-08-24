@@ -35017,6 +35017,7 @@
         "doi": "10.1103/sjgs-2px8",
         "external_ids": {
           "ads": "2026PhRvD.114b4089W",
+          "arxiv": "2604.27734",
           "doi": "10.1103/sjgs-2px8"
         },
         "pubdate": "2026-07-00"
@@ -53472,8 +53473,10 @@
         "published": "2026-08-03",
         "url": "https://arxiv.org/abs/2608.02584v1",
         "pdf_url": "https://arxiv.org/pdf/2608.02584v1",
-        "doi": null,
+        "doi": "10.1093/rasti/rzag055",
         "external_ids": {
+          "ads": "2026RASTI...5ag055L",
+          "doi": "10.1093/rasti/rzag055",
           "arxiv": "2608.02584"
         },
         "pubdate": ""
@@ -53559,9 +53562,9 @@
       "dates": {
         "preprint": "2026-08-03",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-05",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-20"
       },
@@ -72922,8 +72925,9 @@
         "pdf_url": "https://arxiv.org/pdf/2608.06487v1",
         "doi": "10.1007/s10714-026-03599-y",
         "external_ids": {
-          "arxiv": "2608.06487",
-          "doi": "10.1007/s10714-026-03599-y"
+          "ads": "2026GReGr..58...93V",
+          "doi": "10.1007/s10714-026-03599-y",
+          "arxiv": "2608.06487"
         },
         "pubdate": ""
       },
@@ -85086,8 +85090,10 @@
         "published": "2026-08-10",
         "url": "https://arxiv.org/abs/2608.09192v1",
         "pdf_url": "https://arxiv.org/pdf/2608.09192v1",
-        "doi": null,
+        "doi": "10.1088/1538-3873/ae918e",
         "external_ids": {
+          "ads": "2026PASP..138h4103R",
+          "doi": "10.1088/1538-3873/ae918e",
           "arxiv": "2608.09192"
         },
         "pubdate": ""
@@ -85186,11 +85192,11 @@
       },
       "dates": {
         "preprint": "2026-08-10",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-07-28",
+        "published": "2026-08-18",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-01-22",
         "ingested": "2026-08-20"
       },
       "archive_date": "2026-08-10",
