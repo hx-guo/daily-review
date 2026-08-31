@@ -1282,8 +1282,10 @@
         "published": "2026-08-19",
         "url": "https://arxiv.org/abs/2608.19332v1",
         "pdf_url": "https://arxiv.org/pdf/2608.19332v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1589",
         "external_ids": {
+          "ads": "2026MNRAS.tmp.1478S",
+          "doi": "10.1093/mnras/stag1589",
           "arxiv": "2608.19332"
         },
         "pubdate": ""
@@ -1371,9 +1373,9 @@
       "dates": {
         "preprint": "2026-08-19",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-21",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-21"
       },

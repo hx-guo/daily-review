@@ -8032,8 +8032,9 @@
         "pdf_url": "https://arxiv.org/pdf/2608.20881v1",
         "doi": "10.1093/mnras/stag1586",
         "external_ids": {
-          "arxiv": "2608.20881",
-          "doi": "10.1093/mnras/stag1586"
+          "ads": "2026MNRAS.tmp.1462F",
+          "doi": "10.1093/mnras/stag1586",
+          "arxiv": "2608.20881"
         },
         "pubdate": ""
       },

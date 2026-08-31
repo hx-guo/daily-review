@@ -51145,8 +51145,10 @@
         "published": "2026-08-03",
         "url": "https://arxiv.org/abs/2608.01993v1",
         "pdf_url": "https://arxiv.org/pdf/2608.01993v1",
-        "doi": null,
+        "doi": "10.3847/1538-4365/ae91e2",
         "external_ids": {
+          "ads": "2026ApJS..286...18C",
+          "doi": "10.3847/1538-4365/ae91e2",
           "arxiv": "2608.01993"
         },
         "pubdate": ""
@@ -51231,11 +51233,11 @@
       },
       "dates": {
         "preprint": "2026-08-03",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-07-24",
+        "published": "2026-08-21",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2025-09-04",
         "ingested": "2026-08-20"
       },
       "archive_date": "2026-08-03",
@@ -102705,8 +102707,10 @@
         "published": "2026-08-12",
         "url": "https://arxiv.org/abs/2608.12177v1",
         "pdf_url": "https://arxiv.org/pdf/2608.12177v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1551",
         "external_ids": {
+          "ads": "2026MNRAS.551g1551W",
+          "doi": "10.1093/mnras/stag1551",
           "arxiv": "2608.12177"
         },
         "pubdate": ""
@@ -102781,9 +102785,9 @@
       "dates": {
         "preprint": "2026-08-12",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-20",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-20"
       },
@@ -130351,8 +130355,10 @@
         "published": "2026-08-19",
         "url": "https://arxiv.org/abs/2608.18615v1",
         "pdf_url": "https://arxiv.org/pdf/2608.18615v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1574",
         "external_ids": {
+          "ads": "2026MNRAS.tmp.1467S",
+          "doi": "10.1093/mnras/stag1574",
           "arxiv": "2608.18615"
         },
         "pubdate": ""
@@ -130427,9 +130433,9 @@
       "dates": {
         "preprint": "2026-08-19",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-20",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-20"
       },

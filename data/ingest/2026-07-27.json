@@ -8408,8 +8408,9 @@
         "pdf_url": "https://arxiv.org/pdf/2607.22418v1",
         "doi": "10.3390/galaxies14040072",
         "external_ids": {
-          "arxiv": "2607.22418",
-          "doi": "10.3390/galaxies14040072"
+          "ads": "2026Galax..14...72G",
+          "doi": "10.3390/galaxies14040072",
+          "arxiv": "2607.22418"
         },
         "pubdate": ""
       },
