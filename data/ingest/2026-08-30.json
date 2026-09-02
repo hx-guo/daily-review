@@ -32,6 +32,7 @@
         "doi": "10.1146/annurev-astro-071221-055307",
         "external_ids": {
           "ads": "2026ARA&A..64..321H",
+          "arxiv": "2512.10002",
           "doi": "10.1146/annurev-astro-071221-055307"
         },
         "pubdate": "2026-08-00"
@@ -111,6 +112,7 @@
         "doi": "10.1146/annurev-astro-122325-025132",
         "external_ids": {
           "ads": "2026ARA&A..64..537S",
+          "arxiv": "2512.18822",
           "doi": "10.1146/annurev-astro-122325-025132"
         },
         "pubdate": "2026-08-00"
@@ -249,6 +251,7 @@
         "doi": "10.1103/8gvn-3gbn",
         "external_ids": {
           "ads": "2026PhRvC.114b5804W",
+          "arxiv": "2412.19777",
           "doi": "10.1103/8gvn-3gbn"
         },
         "pubdate": "2026-08-00"
@@ -318,6 +321,7 @@
         "doi": "10.1103/6xyd-83v5",
         "external_ids": {
           "ads": "2026PhRvC.114b5806D",
+          "arxiv": "2605.04814",
           "doi": "10.1103/6xyd-83v5"
         },
         "pubdate": "2026-08-00"
@@ -2141,6 +2145,7 @@
         "doi": "10.1103/wq57-sjt2",
         "external_ids": {
           "ads": "2026PhRvD.114d2001A",
+          "arxiv": "2508.20721",
           "doi": "10.1103/wq57-sjt2"
         },
         "pubdate": "2026-08-00"
@@ -2222,6 +2227,7 @@
         "doi": "10.1103/hxnc-xbm9",
         "external_ids": {
           "ads": "2026PhRvD.114d2002M",
+          "arxiv": "2608.16327",
           "doi": "10.1103/hxnc-xbm9"
         },
         "pubdate": "2026-08-00"
@@ -2282,6 +2288,7 @@
         "doi": "10.1103/zpyz-7vsq",
         "external_ids": {
           "ads": "2026PhRvD.114d3047N",
+          "arxiv": "2510.12873",
           "doi": "10.1103/zpyz-7vsq"
         },
         "pubdate": "2026-08-00"
@@ -2342,6 +2349,7 @@
         "doi": "10.1103/9zgv-fg7g",
         "external_ids": {
           "ads": "2026PhRvD.114d3048D",
+          "arxiv": "2602.06121",
           "doi": "10.1103/9zgv-fg7g"
         },
         "pubdate": "2026-08-00"
@@ -2404,6 +2412,7 @@
         "doi": "10.1103/fcbm-kwzn",
         "external_ids": {
           "ads": "2026PhRvD.114d3052L",
+          "arxiv": "2512.16441",
           "doi": "10.1103/fcbm-kwzn"
         },
         "pubdate": "2026-08-00"
@@ -2465,6 +2474,7 @@
         "doi": "10.1103/j5b2-5q2p",
         "external_ids": {
           "ads": "2026PhRvD.114d3054G",
+          "arxiv": "2605.18972",
           "doi": "10.1103/j5b2-5q2p"
         },
         "pubdate": "2026-08-00"
@@ -2535,6 +2545,7 @@
         "doi": "10.1103/8kcg-l79c",
         "external_ids": {
           "ads": "2026PhRvD.114d3055H",
+          "arxiv": "2605.01099",
           "doi": "10.1103/8kcg-l79c"
         },
         "pubdate": "2026-08-00"
@@ -2598,6 +2609,7 @@
         "doi": "10.1103/qq4j-1nx6",
         "external_ids": {
           "ads": "2026PhRvD.114d3057A",
+          "arxiv": "2606.14229",
           "doi": "10.1103/qq4j-1nx6"
         },
         "pubdate": "2026-08-00"
@@ -2667,6 +2679,7 @@
         "doi": "10.1103/w92f-58lx",
         "external_ids": {
           "ads": "2026PhRvD.114d3058G",
+          "arxiv": "2512.24703",
           "doi": "10.1103/w92f-58lx"
         },
         "pubdate": "2026-08-00"
@@ -2730,6 +2743,7 @@
         "doi": "10.1103/ffmc-8z5s",
         "external_ids": {
           "ads": "2026PhRvD.114d3060S",
+          "arxiv": "2607.13363",
           "doi": "10.1103/ffmc-8z5s"
         },
         "pubdate": "2026-08-00"
@@ -2851,6 +2865,7 @@
         "doi": "10.1103/9wq2-gqkh",
         "external_ids": {
           "ads": "2026PhRvD.114d3063Q",
+          "arxiv": "2604.20975",
           "doi": "10.1103/9wq2-gqkh"
         },
         "pubdate": "2026-08-00"
@@ -2914,6 +2929,7 @@
         "doi": "10.1103/mdvc-wq7t",
         "external_ids": {
           "ads": "2026PhRvD.114d3537L",
+          "arxiv": "2506.03536",
           "doi": "10.1103/mdvc-wq7t"
         },
         "pubdate": "2026-08-00"
@@ -3049,6 +3065,7 @@
         "doi": "10.1103/npk4-61t8",
         "external_ids": {
           "ads": "2026PhRvD.114d4059V",
+          "arxiv": "2602.17154",
           "doi": "10.1103/npk4-61t8"
         },
         "pubdate": "2026-08-00"
@@ -3110,6 +3127,7 @@
         "doi": "10.1103/9m6m-bvc6",
         "external_ids": {
           "ads": "2026PhRvD.114d4060N",
+          "arxiv": "2604.15240",
           "doi": "10.1103/9m6m-bvc6"
         },
         "pubdate": "2026-08-00"
@@ -3175,6 +3193,7 @@
         "doi": "10.1103/9zlj-fngj",
         "external_ids": {
           "ads": "2026PhRvD.114d4062D",
+          "arxiv": "2602.18290",
           "doi": "10.1103/9zlj-fngj"
         },
         "pubdate": "2026-08-00"
@@ -3247,6 +3266,7 @@
         "doi": "10.1103/wcxq-z67v",
         "external_ids": {
           "ads": "2026PhRvD.114d4064B",
+          "arxiv": "2606.27431",
           "doi": "10.1103/wcxq-z67v"
         },
         "pubdate": "2026-08-00"
@@ -3307,6 +3327,7 @@
         "doi": "10.1103/crgg-hkkr",
         "external_ids": {
           "ads": "2026PhRvD.114d4066L",
+          "arxiv": "2604.27880",
           "doi": "10.1103/crgg-hkkr"
         },
         "pubdate": "2026-08-00"
@@ -3372,6 +3393,7 @@
         "doi": "10.1103/g2d9-b4s9",
         "external_ids": {
           "ads": "2026PhRvD.114d4068F",
+          "arxiv": "2504.16988",
           "doi": "10.1103/g2d9-b4s9"
         },
         "pubdate": "2026-08-00"
@@ -3435,6 +3457,7 @@
         "doi": "10.1103/26wy-s7tf",
         "external_ids": {
           "ads": "2026PhRvD.114d4070I",
+          "arxiv": "2510.11685",
           "doi": "10.1103/26wy-s7tf"
         },
         "pubdate": "2026-08-00"
@@ -3499,6 +3522,7 @@
         "doi": "10.1103/1q92-j84n",
         "external_ids": {
           "ads": "2026PhRvD.114d4071T",
+          "arxiv": "2604.22021",
           "doi": "10.1103/1q92-j84n"
         },
         "pubdate": "2026-08-00"
@@ -3561,6 +3585,7 @@
         "doi": "10.1103/qcwf-b6ps",
         "external_ids": {
           "ads": "2026PhRvD.114d4073Z",
+          "arxiv": "2605.05512",
           "doi": "10.1103/qcwf-b6ps"
         },
         "pubdate": "2026-08-00"
@@ -3623,6 +3648,7 @@
         "doi": "10.1103/3r53-k7hq",
         "external_ids": {
           "ads": "2026PhRvD.114d4075R",
+          "arxiv": "2606.08838",
           "doi": "10.1103/3r53-k7hq"
         },
         "pubdate": "2026-08-00"
@@ -4186,6 +4212,7 @@
         "doi": "10.1103/qyvw-kb4d",
         "external_ids": {
           "ads": "2026PhRvL.137i1401F",
+          "arxiv": "2504.15334",
           "doi": "10.1103/qyvw-kb4d"
         },
         "pubdate": "2026-08-00"
