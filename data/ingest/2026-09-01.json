@@ -8304,9 +8304,9 @@
       "dates": {
         "preprint": "2026-08-31",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-09-02",
+        "published_precision": "day",
+        "published_source": "crossref-print",
         "received": "",
         "ingested": "2026-09-01"
       },
