@@ -1,4 +1,4 @@
-from gdr.llm import tier_model
+from gdr.llm import OpenCodeLLM, tier_model
 from gdr import config
 
 
@@ -14,3 +14,17 @@ def test_fake_llm_records_and_replies(fake_llm_factory):
     assert out == "hello"
     assert llm.calls[0]["model"] == "m"
     assert llm.calls[0]["user"] == "u"
+
+
+def test_client_carries_an_opencode_session_header():
+    # opencode requires x-opencode-session to optimise routing; from 2026-09-06
+    # requests without it may be rejected outright.
+    llm = OpenCodeLLM(api_key="k")
+
+    assert llm._client.default_headers.get("x-opencode-session")
+
+
+def test_an_explicit_session_id_is_used_verbatim():
+    llm = OpenCodeLLM(api_key="k", session_id="daily-review-2026-09-05")
+
+    assert llm._client.default_headers["x-opencode-session"] == "daily-review-2026-09-05"

@@ -1,4 +1,6 @@
+import uuid
 from typing import Protocol
+
 from gdr import config
 
 
@@ -19,10 +21,16 @@ def tier_model(tier: str) -> str:
 
 
 class OpenCodeLLM:
-    def __init__(self, api_key: str, base_url: str = config.OPENCODE_BASE_URL):
+    def __init__(self, api_key: str, base_url: str = config.OPENCODE_BASE_URL,
+                 session_id: str = ""):
+        # opencode uses x-opencode-session to group a caller's requests; from
+        # 2026-09-06 it may reject requests that omit it. One id per instance
+        # means one id per pipeline run, which is the grouping they want.
+        self.session_id = session_id or f"daily-review-{uuid.uuid4().hex}"
         from openai import OpenAI  # imported lazily so tests don't need the network
         self._client = OpenAI(api_key=api_key, base_url=base_url,
-                              max_retries=config.OPENAI_MAX_RETRIES)
+                              max_retries=config.OPENAI_MAX_RETRIES,
+                              default_headers={"x-opencode-session": self.session_id})
 
     def complete(self, model: str, system: str, user: str, temperature: float = 0.3) -> str:
         resp = self._client.chat.completions.create(
