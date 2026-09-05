@@ -1,0 +1,87 @@
+{
+  "ingested": "2026-09-05",
+  "items": [
+    {
+      "paper": {
+        "id": "ads:2018AnGeo..36.1347D",
+        "source": "ads",
+        "title": "First joint observations of space weather events over Mexico",
+        "authors": [
+          "De la Luz, Victor",
+          "Gonzalez-Esparza, J. Americo",
+          "Sergeeva, Maria A.",
+          "Corona-Romero, Pedro",
+          "González, L. Xavier",
+          "Mejia-Ambriz, Julio C.",
+          "Valdés-Galicia, Jose F.",
+          "Aguilar-Rodriguez, Ernesto",
+          "Rodriguez-Martinez, Mario",
+          "Romero-Hernandez, Esmeralda",
+          "Andrade, Ernesto",
+          "Villanueva, Pablo",
+          "Huipe-Domratcheva, Elizandro",
+          "Cifuentes, Gerardo",
+          "Hernandez, Esteban",
+          "Monstein, Christian"
+        ],
+        "abstract": "The Mexican Space Weather Service (SCiESMEX in Spanish) and National Space Weather Laboratory (LANCE in Spanish) were organized in 2014 and in 2016, respectively, to provide space weather monitoring and alerts, as well as scientific research in Mexico. In this work, we present the results of the first joint observations of two events (22 June and 29 September 2015) with our local network of instruments and their related products. This network includes the MEXART radio telescope (solar flare and radio burst), the Compact Astronomical Low-frequency, Low-cost Instrument for Spectroscopy in Transportable Observatories (CALLISTO) at the MEXART station (solar radio burst), the Mexico City Cosmic Ray Observatory (cosmic ray fluxes), GPS receiver networks (ionospheric disturbances), and the Teoloyucan Geomagnetic Observatory (geomagnetic field). The observations show that we detected significant space weather effects over the Mexican territory: geomagnetic and ionospheric disturbances (22 June 2015), variations in cosmic ray fluxes, and also radio communications' interferences (29 September 2015). The effects of these perturbations were registered, for the first time, using space weather products by SCiESMEX: total electron content (TEC) maps, regional geomagnetic index <inline-formula><mml:math><mml:mrow><mml:msub><mml:mi>K</mml:mi><mml:mi>mex</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>, radio spectrographs of low frequency, and cosmic ray fluxes. These results prove the importance of monitoring space weather phenomena in the region and the need to strengthening the instrumentation network.",
+        "categories": [
+          "physics.space-ph",
+          "astro-ph.SR",
+          "Solar physics",
+          "astrophysics",
+          "and astronomy (instruments and techniques)",
+          "Physics - Space Physics",
+          "Astrophysics - Solar and Stellar Astrophysics"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2018AnGeo..36.1347D/abstract",
+        "pdf_url": "https://arxiv.org/pdf/1808.07425",
+        "doi": "10.5194/angeo-36-1347-2018",
+        "external_ids": {
+          "ads": "2018AnGeo..36.1347D",
+          "arxiv": "1808.07425",
+          "doi": "10.5194/angeo-36-1347-2018"
+        },
+        "pubdate": "2018-10-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "太阳耀斑"
+        ],
+        "layer": "edge",
+        "reason": "论文主题为空间天气事件的地基联合观测，与高能暂现源研究无实质联系，仅太阳耀斑作为背景提及。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要提到太阳耀斑和射电暴，但主要关注墨西哥空间天气监测与电离层、地磁效应，未涉及高能暂现源或相关任务能力。"
+      },
+      "summary": {
+        "paper_id": "ads:2018AnGeo..36.1347D",
+        "title_zh": "墨西哥上空空间天气事件的首次联合观测",
+        "team": "",
+        "tldr": "论文介绍了墨西哥空间天气服务与实验室利用本地仪器网络首次联合观测2015年两次空间天气事件，并展示了相关产品和效应。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2018-08-20",
+        "accepted": "",
+        "published": "2018-10-11",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "",
+        "ingested": "2026-09-05"
+      },
+      "archive_date": "2018-08-20",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    }
+  ]
+}
