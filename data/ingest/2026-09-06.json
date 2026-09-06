@@ -1,0 +1,2255 @@
+{
+  "ingested": "2026-09-06",
+  "items": [
+    {
+      "paper": {
+        "id": "ads:2026CQGra..43p5022I",
+        "source": "ads",
+        "title": "Cryogenic sub-Hz cROss torsion bar detector with quantum NOn-demolition speed meter (CHRONOS) for gravitational-wave detection",
+        "authors": [
+          "Inoue, Yuki",
+          "Tanabe, Daiki",
+          "Ismail, M. Afif",
+          "Kumar, Vivek",
+          "Onglao, Mario Juvenal S., III",
+          "Yu, Ta-Chun"
+        ],
+        "abstract": "We present the optical design and sensitivity modeling of the Cryogenic sub-Hz cROss torsion-bar detector with quantum NOn-demolition Speed meter (CHRONOS), a triangular Sagnac speed-meter interferometer incorporating power- and signal-recycling techniques. Using ABCD-matrix analysis and FINESSE3 simulations, we show that stable eigenmodes are obtained with optimized mirror curvatures and focal placements, achieving mode-matching efficiencies above 99.5%. The configuration reaches a quantum-noise-limited strain sensitivity of <inline-formula> <mml:math><mml:mrow><mml:mi>h</mml:mi><mml:mo>≃</mml:mo><mml:mn>1</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>-</mml:mo><mml:mn>18</mml:mn></mml:mrow></mml:msup><mml:mstyle></mml:mstyle><mml:mrow><mml:msup><mml:mi>Hz</mml:mi><mml:mrow><mml:mo>-</mml:mo><mml:mn>1</mml:mn><mml:mrow><mml:mo>/</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> at 2 Hz, with a ring-cavity finesse <inline-formula> <mml:math><mml:mrow><mml:mrow><mml:mi>F</mml:mi></mml:mrow><mml:mo>≃</mml:mo><mml:mn>3.1</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula> and a round-trip Gouy phase <inline-formula> <mml:math><mml:mrow><mml:mi>ψ</mml:mi><mml:mo>≈</mml:mo><mml:msup><mml:mn>153</mml:mn><mml:mrow><mml:mo>∘</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>. The power-recycling cavity detuning (<inline-formula> <mml:math><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mrow><mml:mi>p</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msup><mml:mn>5</mml:mn><mml:mrow><mml:mo>∘</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>) dominates the low-frequency quantum noise, while the signal-recycling cavity detuning (<inline-formula> <mml:math><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi><mml:mrow><mml:mi>s</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msup><mml:mn>0</mml:mn><mml:mrow><mml:mo>∘</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>) mainly introduces a uniform quadrature rotation. The optimal homodyne angle (<inline-formula> <mml:math><mml:mrow><mml:mi>ζ</mml:mi><mml:mo>≃</mml:mo><mml:msup><mml:mn>46</mml:mn><mml:mrow><mml:mo>∘</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>) balances shot noise and radiation-pressure effects to give the best sensitivity near 1 Hz. Assuming an end-mirror reflectivity <inline-formula> <mml:math><mml:mrow><mml:msub><mml:mi>R</mml:mi><mml:mrow><mml:mrow><mml:mi>ETM</mml:mi></mml:mrow></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>99.9999</mml:mn><mml:mi>%</mml:mi></mml:mrow></mml:math></inline-formula> under cryogenic operation at 8 K, CHRONOS can achieve quantum-noise-limited performance on a laboratory scale and serve as a testbed for future long-baseline cryogenic interferometers probing sub-hertz gravitational waves. The projected science reach includes the detection of intermediate-mass black-hole binaries with total masses of <inline-formula> <mml:math><mml:mrow><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>--<inline-formula> <mml:math><mml:mrow><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mn>5</mml:mn></mml:mrow></mml:msup><mml:mstyle></mml:mstyle><mml:msub><mml:mi>M</mml:mi><mml:mrow><mml:mo>⊙</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>, reaching a maximum detection distance of <inline-formula> <mml:math><mml:mrow><mml:mrow><mml:mo>~</mml:mo></mml:mrow><mml:mn>271</mml:mn><mml:mstyle></mml:mstyle><mml:mrow><mml:mrow><mml:mi>Mpc</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> for binaries with total masses around <inline-formula> <mml:math><mml:mrow><mml:mn>9</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msup><mml:mstyle></mml:mstyle><mml:msub><mml:mi>M</mml:mi><mml:mrow><mml:mo>⊙</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> (SNR = 1). The detector also achieves a best power-integrated sensitivity to stochastic gravitational-wave backgrounds of <inline-formula> <mml:math><mml:mrow><mml:msub><mml:mi>Ω</mml:mi><mml:mrow><mml:mrow><mml:mi>GW</mml:mi></mml:mrow></mml:mrow></mml:msub><mml:mo>≃</mml:mo><mml:mn>4.7</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>-</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula> at <inline-formula> <mml:math><mml:mrow><mml:mn>2.15</mml:mn><mml:mstyle></mml:mstyle><mml:mrow><mml:mrow><mml:mi>Hz</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula> after 10 years of observation, probes Yukawa-type deviations from Newtonian gravity down to <inline-formula> <mml:math><mml:mrow><mml:mo>|</mml:mo><mml:mi>α</mml:mi><mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mo>~</mml:mo><mml:mn>2</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>-</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>, and can detect prompt gravity-gradient signals from nearby M5.2 earthquakes out to distances of approximately <inline-formula> <mml:math><mml:mrow><mml:mn>90</mml:mn><mml:mstyle></mml:mstyle><mml:mrow><mml:mrow><mml:mi>km</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:math></inline-formula>.",
+        "categories": [
+          "physics.ins-det",
+          "astro-ph.CO",
+          "astro-ph.IM",
+          "gr-qc",
+          "gravitational wave",
+          "black hole",
+          "stochastic background",
+          "optics",
+          "gravity",
+          "speed meter",
+          "Instrumentation and Detectors",
+          "Cosmology and Nongalactic Astrophysics",
+          "Instrumentation and Methods for Astrophysics",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026CQGra..43p5022I/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2510.24780",
+        "doi": "10.1088/1361-6382/ae91c4",
+        "external_ids": {
+          "ads": "2026CQGra..43p5022I",
+          "arxiv": "2510.24780",
+          "doi": "10.1088/1361-6382/ae91c4"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 65,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "该论文介绍了一种新型引力波探测器设计，其探测能力与团队的多信使触发与联合研究目标相关，但属于技术方法层面，而非直接的高能暂现源观测或数据分析。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "标题和摘要描述了一种用于引力波探测的低温亚赫兹扭摆探测器（CHRONOS），其科学目标包括探测中等质量黑洞双星和随机引力波背景。"
+      },
+      "summary": {
+        "paper_id": "ads:2026CQGra..43p5022I",
+        "title_zh": "用于引力波探测的低温亚赫兹交叉扭杆探测器与量子非破坏速度计（CHRONOS）",
+        "team": "",
+        "tldr": "提出并优化 CHRONOS 的 2.5 m Sagnac 速度计光学设计与量子噪声模型，在 1 Hz 达到 h≈3×10^-18 Hz^{-1/2}，并评估其亚赫兹科学能力。",
+        "review": "",
+        "highlight": "将低温扭杆测试质量与 Sagnac 速度计、功率/信号回收腔结合，实现 QND 型角动量读出；模式匹配效率>99.5%，1 Hz 量子噪声极限约 3×10^-18 Hz^{-1/2}，可桥接中质量黑洞与随机背景等亚赫兹科学目标。",
+        "relation": "",
+        "authors_en": "Yuki Inoue (Department of Physics, National Central University, Taoyuan, Taiwan), Daiki Tanabe (Institute of Physics, Academia Sinica, Taipei, Taiwan), M. Afif Ismail (Department of Physics, National Central University, Taoyuan, Taiwan) et al.",
+        "corresponding_en": "Yuki Inoue",
+        "context_outlook": "从前期的亚赫兹地面验证装置看，扭杆天线 [[Ando+ 2010]] 和扭摆双振子 [[McManus+ 2017]] 已证明原理可行，但尚未同时实现低温扭杆与量子噪声抑制。CHRONOS 在此基础上采用 Sagnac 速度计拓扑，将测量对象由角位移转为角动量，从而有望在宏观尺度首次实现 QND 角动量测量 [[Nishino+ 2026]]。其速度计响应与辐射压噪声抑制继承了 [[Chen 2003]] 对 Sagnac 拓扑的理论分析，并采用 [[Buonanno+ Chen 2001]] 的输入输出形式刻画量子噪声。未来随着低损耗低温镜膜、更长基线和更高功率的引入，该类地面装置可望填补 LISA 与高频探测器之间的亚赫兹空白，并推动中质量黑洞、随机背景及非牛顿引力检验的多频段协同观测。",
+        "citations": [
+          {
+            "label": "Ando+ 2010",
+            "authors": "Ando",
+            "year": "2010",
+            "title": "",
+            "ref": "Ando M et al.\n2010\nPhys. Rev. Lett.\n105\n161101",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "McManus+ 2017",
+            "authors": "McManus",
+            "year": "2017",
+            "title": "",
+            "ref": "McManus D J,\net al.\n2017\nPhys. Rev. Lett.\n118\n231101\nURL\nhttps://doi.org/10.1103/PhysRevLett.118.231101",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Nishino+ 2026",
+            "authors": "Nishino",
+            "year": "2026",
+            "title": "",
+            "ref": "Nishino Y, Akutsu T, Aso Y, Otsuka M, Kranzhoff L and Tomaru T 2026\nPhys.\nRev. D\n113\n(2) 022004\nURL\nhttps://link.aps.org/doi/10.1103/5zyh-lg9b",
+            "arxiv": "",
+            "doi": "10.1103/5zyh-lg9b",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/5zyh-lg9b",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Chen 2003",
+            "authors": "Chen",
+            "year": "2003",
+            "title": "",
+            "ref": "Chen Y 2003\nPhys. Rev. D\n67\n122004",
+            "arxiv": "",
+            "doi": "10.1021/es034354c",
+            "bibcode": "2003EnST...37.5701C",
+            "url": "https://doi.org/10.1021/es034354c",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Buonanno+ Chen 2001",
+            "authors": "Buonanno",
+            "year": "2001",
+            "title": "",
+            "ref": "Buonanno A and Chen Y 2001\nPhysical Review D\n64\n042006",
+            "arxiv": "gr-qc/0102012",
+            "doi": "10.1103/PhysRevD.64.042006",
+            "bibcode": "2001PhRvD..64d2006B",
+            "url": "https://arxiv.org/abs/gr-qc/0102012",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2025-10-25",
+        "accepted": "2026-07-28",
+        "published": "2026-08-27",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-02-08",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-10-25",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该论文是探测器光学设计与量子噪声建模的模拟研究（ABCD 矩阵分析与 FINESSE3 仿真），所有灵敏度与科学产出均为未经真实数据验证的预期值，属于技术方法层面的常规进展，不构成突发性或领域级重大突破。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026EPJST.tmp..487L",
+        "source": "ads",
+        "title": "Nuclear equation-of-state at high density and multi-messenger astronomy: contribution of heavy-ion collisions",
+        "authors": [
+          "Le Fèvre, Arnaud"
+        ],
+        "abstract": "In the past decades, heavy-ion collisions (HIC) at intermediate energies have allowed to probe the nuclear equation-of-state (EoS) of both symmetric and asymmetric nuclear matter over a broad range of densities. In particular, flow has proven to be a powerful observable. Combining the symmetry energy and the symmetric nuclear matter constraints of the EoS from HIC allowed to predict a density dependence of the pressure in a neutron star, up to about 2.5 times saturation density (n<SUB>sat</SUB>), which agrees with recent astronomical measurements deduced from gravitational waves and pulsar observations. So far, the accuracy from HIC expectations is comparable to the latter up to 1.5 n<SUB>sat</SUB>. In these studies, a fundamental aspect is the determination of the profile of densities that are probed by experimental observables used to constrain the EoS. In the near future, new experiments like ASY-EOS performed at higher incident energy and with better accuracy will push further the frontier of the knowledge of the symmetry energy at higher density. These efforts cannot be conclusive without a reliable uncertainty determination, which is related to the reliability of transport model dependencies. Improvements and breakthroughs in transport model simulations and nuclear theory are therefore expected in a joint effort towards HIC contributions to the field of neutron-star physics, including the contribution of strangeness and of the QCD phase transition.",
+        "categories": [
+          "nucl-th",
+          "astro-ph.HE",
+          "nucl-ex",
+          "Nuclear Theory",
+          "High Energy Astrophysical Phenomena",
+          "Nuclear Experiment"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026EPJST.tmp..487L/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2606.29588",
+        "doi": "10.1140/epjs/s11734-026-02541-2",
+        "external_ids": {
+          "ads": "2026EPJST.tmp..487L",
+          "arxiv": "2606.29588",
+          "doi": "10.1140/epjs/s11734-026-02541-2"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 60,
+        "tags": [
+          "多信使触发与联合",
+          "引力波电磁对应体",
+          "X 射线双星与吸积致密天体"
+        ],
+        "layer": "related",
+        "reason": "论文主要贡献在核物理与重离子碰撞，但其EoS约束直接支撑中子星及引力波电磁对应体研究，属于可迁移方法，非直接观测或任务数据。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "摘要讨论重离子碰撞约束核物质状态方程，并与引力波和中子星观测比较，为多信使天文学提供核物理输入。"
+      },
+      "summary": {
+        "paper_id": "ads:2026EPJST.tmp..487L",
+        "title_zh": "高密度核物质状态方程与多信使天文学：重离子碰撞的贡献",
+        "team": "",
+        "tldr": "这是一篇综述：总结中能重离子碰撞如何约束高密度核物质状态方程与对称能，并与中子星多信使观测互为补充。",
+        "review": "",
+        "highlight": "系统梳理中能重离子碰撞的流、介子产生、对称能探针；将 FOPI/ASY-EOS 约束与引力波/NICER 多信使观测进行贝叶斯联合，明确各探针的密度敏感区间和输运模型不确定性，并对 ASY-EOS II、奇异性与 QCD 相变等未来方向做出展望。",
+        "relation": "",
+        "authors_en": "Arnaud Le Fèvre (Research Division, GSI Helmholtzzentrum für Schwerionenforschung GmbH, Darmstadt, Germany)",
+        "corresponding_en": "Arnaud Le Fèvre",
+        "context_outlook": "早期中能重离子碰撞的 FOPI 流测量已经表明对称核物质状态方程在超饱和密度区偏软，并给出约两倍饱和密度的 SNM 约束（[[Le Fèvre+ 2016]]）。随后 ASY-EOS 等 GSI 实验通过中子/带电粒子椭圆流比把对称能约束推进到约 1.5 倍饱和密度（[[Russotto+ 2023]]）。基于这些实验室约束，[[Huth+ 2022]] 将重离子碰撞数据与引力波、NICER 等多信使观测放入同一贝叶斯框架，显示 HIC 对约 1.5–2.5 倍饱和密度的中子星物态压力有实质性补充。近期讨论转向先验偏差和输运模型依赖性；未来 ASY-EOS II、FAIR/CBM、FRIB 等更高精度实验以及含奇异自由度、QCD 相变的理论发展，有望把约束推向更高密度并形成更一致的多信使物态图景。",
+        "citations": [
+          {
+            "label": "Le Fèvre+ 2016",
+            "authors": "Le Fèvre",
+            "year": "2016",
+            "title": "Constraining the nuclear matter equation of state around twice saturation density",
+            "ref": "A. Le Fèvre, Y. Leifels, W. Reisdorf, J. Aichelin, and Ch. Hartnack\nConstraining the nuclear matter equation of state around twice saturation density\n.\nNuclear Physics A\n945\n,\npp. 112–133\n.\nExternal Links:\nISSN 0375-9474\n,\nDocument\n,\nLink\nCited by:\nFigure 4\n,\nFigure 5\n,\n§3.2\n,\n§3.2\n,\n§3.2\n,\n§3.3\n,\n§3.3\n,\n§3.3\n,\n§3.3\n,\nfootnote 12\n.",
+            "arxiv": "",
+            "doi": "10.1016/j.nuclphysa.2015.09.015",
+            "bibcode": "",
+            "url": "https://doi.org/10.1016/j.nuclphysa.2015.09.015",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Russotto+ 2023",
+            "authors": "Russotto",
+            "year": "2023",
+            "title": "Studies of the equation-of-state of nuclear matter by heavy-ion collisions at intermediate energy in the multi-messenger era: A review focused on GSI results",
+            "ref": "P. Russotto, M. D. Cozma, E. De Filippo, A. L. Fèvre, Y. Leifels, and J. Łukasik\nStudies of the equation-of-state of nuclear matter by heavy-ion collisions at intermediate energy in the multi-messenger era: A review focused on GSI results\n.\nRiv. Nuovo Cim.\n46\n(\n1\n),\npp. 1–70\n.\nExternal Links:\n2302.01453\n,\nDocument\n,\nLink\nCited by:\nFigure 5\n,\nFigure 7\n,\nFigure 11\n,\n§5.1\n,\n§6.2\n.",
+            "arxiv": "2302.01453",
+            "doi": "10.1007/s40766-023-00039-4",
+            "bibcode": "2023NCimR..46....1R",
+            "url": "https://arxiv.org/abs/2302.01453",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Huth+ 2022",
+            "authors": "Huth",
+            "year": "2022",
+            "title": "Constraining neutron-star matter with microscopic and macroscopic collisions",
+            "ref": "S. Huth, P. T. H. Pang, I. Tews, T. Dietrich, A. Le Fèvre, A. Schwenk, W. Trautmann, K. Agarwal, M. Bulla, M. W. Coughlin, and C. Van Den Broeck\nConstraining neutron-star matter with microscopic and macroscopic collisions\n.\nNature\n606\n(\n7913\n),\npp. 276–280\n.\nExternal Links:\nDocument\n,\nLink\n,\n2107.06229\nCited by:\nFigure 6\n,\nFigure 10\n,\nFigure 12\n,\n§5.1\n,\n§5.1\n,\n§5.2\n,\n§6.5\n.",
+            "arxiv": "2107.06229",
+            "doi": "10.1038/s41586-022-04750-w",
+            "bibcode": "2022Natur.606..276H",
+            "url": "https://arxiv.org/abs/2107.06229",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2026-06-28",
+        "accepted": "2026-07-13",
+        "published": "2026-08-13",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-03-25",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-06-28",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "摘要通篇是对过去数十年重离子碰撞EoS约束及其与引力波/脉冲星测量相符性的回顾，以及对未来ASY-EOS实验和输运模型改进的展望，属宽泛综述，未报告任何新的原始结果或突破性能力。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026JSPC....500286G",
+        "source": "ads",
+        "title": "Rapidly spinning massive pulsars as an indicator of quark deconfinement",
+        "authors": [
+          "Gärtlein, Christoph",
+          "Sagun, Violetta",
+          "Ivanytskyi, Oleksii",
+          "Blaschke, David",
+          "Lopes, Ilídio"
+        ],
+        "abstract": "We study rotating hybrid stars, with particular emphasis on the effect of spin on the deconfinement phase transition and star properties. Our analysis is based on a hybrid equation of state with a phase transition from hadronic matter containing hyperons to color-superconducting quark matter, where the quark phase is modeled within a relativistic density functional approach. By varying the strength of the vector repulsion and diquark pairing couplings in the microscopic quark Lagrangian, we construct a set of hybrid star sequences with different quark-matter onset densities. This framework ensures consistency with astrophysical and gravitational wave constraints on mass, radius, and tidal deformability. We show how increasing the rotational frequency affects the maximum gravitational mass, oblateness, central energy density of compact stars, as well as the onset of quasiradial oscillations and nonaxisymmetric instabilities. Our results indicate that, for the most favorable parameter sets with strong vector coupling, hybrid stars containing a color-superconducting quark-matter core can account for the fastest-spinning and most massive known neutron star, PSR J0952-0607. In contrast, this pulsar cannot be explained by the purely hadronic equation of state considered in this study. These findings are highly relevant for future observations with the Square Kilometre Array (SKA), which will significantly expand the known pulsar population and enable precise measurements of masses and spin frequencies.",
+        "categories": [
+          "nucl-th",
+          "astro-ph.HE",
+          "hep-ph",
+          "Neutron stars",
+          "Equation of state",
+          "Pulsars",
+          "Rotational",
+          "Phase transitions in 97.60.jd",
+          "26.60.Kp",
+          "97.60.Gb",
+          "25.75.Nq",
+          "45.40.Bb",
+          "Nuclear Theory",
+          "High Energy Astrophysical Phenomena",
+          "High Energy Physics - Phenomenology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026JSPC....500286G/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2512.07977",
+        "doi": "10.1016/j.jspc.2026.100286",
+        "external_ids": {
+          "ads": "2026JSPC....500286G",
+          "arxiv": "2512.07977",
+          "doi": "10.1016/j.jspc.2026.100286"
+        },
+        "pubdate": "2026-06-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "中子星",
+          "脉冲星",
+          "夸克物质",
+          "状态方程"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦中子星内部结构和状态方程，与高能暂现源及团队任务能力无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要研究旋转混合星、夸克退禁闭相变和状态方程，涉及脉冲星 PSR J0952-0607，但未涉及暂现爆发、吸积或高能辐射事件。"
+      },
+      "summary": {
+        "paper_id": "ads:2026JSPC....500286G",
+        "title_zh": "快速自转的大质量脉冲星作为夸克解禁闭的指示器",
+        "team": "",
+        "tldr": "研究旋转混合星，发现含色超导夸克核心的模型可解释最快自转且最重的中子星PSR J0952-0607，而纯强子模型不能，预示夸克解禁闭。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2025-12-08",
+        "accepted": "",
+        "published": "2026-01-11",
+        "published_precision": "day",
+        "published_source": "crossref-created",
+        "received": "",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-12-08",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026JSPC....500400K",
+        "source": "ads",
+        "title": "Maximal mass of neutron stars constrained by neutron star observations",
+        "authors": [
+          "Kasza, Gábor",
+          "Wolf, György"
+        ],
+        "abstract": "We investigate constraints on the high-density equation of state (EOS) of neutron star matter by analyzing the probability distributions of the endpoints of mass--radius M(R) sequences within a Bayesian weighting framework. Starting from two representative hadronic baseline EOSs, SFHo and DD2, matched at higher densities to an extended linear sigma model description and constrained to approach perturbative QCD (pQCD) results, we construct families of causal hybrid EOSs spanning a broad range of stiffness at supranuclear densities. Observational constraints from the binary neutron-star merger GW170817, mass--radius measurements from the Neutron Star Interior Composition Explorer (NICER), and candidate low-mass and mass-gap compact objects are incorporated through Bayesian likelihood weighting. This approach allows us to determine probability distributions for the maximum neutron-star mass M<SUB>TOV</SUB> and the corresponding radius R<SUB>TOV</SUB>, i.e., the endpoints of the M(R) sequences. We find that the maximum-mass distributions are largely determined by observational constraints and show only weak sensitivity to the choice of baseline EOS, favoring values around 2.2--2.3 M<SUB>⊙</SUB> when the most robust constraints are applied. In contrast, the corresponding radius distributions exhibit a stronger dependence on the underlying hadronic EOS, with typical preferred values near 12 ± 1 km. Additional tidal-deformability constraints further restrict the allowed parameter space and disfavor very stiff EOS realizations when interpreted together with the possible mass-gap neutron-star candidate. Our results demonstrate that endpoint distributions of M(R) sequences provide a sensitive and complementary diagnostic for constraining the high-density behavior of the neutron-star EOS within a multimessenger Bayesian framework.",
+        "categories": [
+          "astro-ph.HE",
+          "hep-ph",
+          "nucl-th",
+          "Maximal mass of neutron stars",
+          "Neutron stars",
+          "Strong interaction",
+          "Equation of state",
+          "High Energy Astrophysical Phenomena",
+          "High Energy Physics - Phenomenology",
+          "Nuclear Theory"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026JSPC....500400K/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2605.00437",
+        "doi": "10.1016/j.jspc.2026.100400",
+        "external_ids": {
+          "ads": "2026JSPC....500400K",
+          "arxiv": "2605.00437",
+          "doi": "10.1016/j.jspc.2026.100400"
+        },
+        "pubdate": "2026-06-00"
+      },
+      "score": {
+        "score": 70,
+        "tags": [
+          "X 射线双星与吸积致密天体",
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "论文聚焦中子星状态方程约束，虽涉及多信使数据，但主要贡献为方法学，与团队暂现源目标间接相关。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "摘要中利用 GW170817、NICER 质量-半径测量等观测约束中子星最大质量，属于致密天体状态方程研究，与团队关注的致密天体物理相关，但非直接暂现事件观测。"
+      },
+      "summary": {
+        "paper_id": "ads:2026JSPC....500400K",
+        "title_zh": "Maximal mass of neutron stars constrained by neutron star observations",
+        "team": "",
+        "tldr": "",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-05-01",
+        "accepted": "",
+        "published": "2026-05-14",
+        "published_precision": "day",
+        "published_source": "crossref-created",
+        "received": "",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-05-01",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该工作是基于已有观测数据（GW170817、NICER 等）对中子星状态方程最大质量的常规贝叶斯约束分析，所得 M_TOV 约 2.2-2.3 太阳质量与既有认识一致，属方法学增量进展，无新暂现事件或突破性结果。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PTEP.2026g3F01S",
+        "source": "ads",
+        "title": "Low-Energy Atmospheric Neutrino Flux Calculation with Accelerator-Data-Driven Tuning",
+        "authors": [
+          "Sato, Kazufumi",
+          "Menjo, Hiroaki",
+          "Itow, Yoshitaka",
+          "Honda, Morihiro"
+        ],
+        "abstract": "We have incorporated a hadron interaction tuning based on accelerator data into our atmospheric neutrino flux calculation, which has been used to analyze atmospheric neutrino oscillations at Super-Kamiokande. This new approach enables a more direct evaluation of the flux uncertainty than a conventional tuning using atmospheric muons. The neutrino flux calculated with this new tuning is 5%--10% smaller but still consistent with our previously published prediction within its uncertainty. The flavor ratio <inline-formula><tex-math>$(\\nu _{\\mu }+\\bar{\\nu }_{\\mu })/(\\nu _e+\\bar{\\nu }_e)$</tex-math></inline-formula> and <inline-formula><tex-math>$\\bar{\\nu }/\\nu$</tex-math></inline-formula> ratio were consistent with the previous prediction. Based on the measurement errors of the accelerator data, we evaluated the flux uncertainty associated with the new tuning to be 7%--9% in the <inline-formula><tex-math>$E_{\\nu } \\lt $</tex-math></inline-formula> 1 GeV region, which was difficult to assess with the conventional tuning. The flux uncertainty in the <inline-formula><tex-math>$1\\lt E_{\\nu }\\lt 10$</tex-math></inline-formula> GeV region was evaluated to be 5%--7%, which is an improvement over the conventional tuning.",
+        "categories": [
+          "astro-ph.HE",
+          "hep-ph",
+          "High Energy Astrophysical Phenomena",
+          "High Energy Physics - Phenomenology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PTEP.2026g3F01S/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2603.09334",
+        "doi": "10.1093/ptep/ptag103",
+        "external_ids": {
+          "ads": "2026PTEP.2026g3F01S",
+          "arxiv": "2603.09334",
+          "doi": "10.1093/ptep/ptag103"
+        },
+        "pubdate": "2026-07-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文主要贡献是大气中微子通量计算方法，与高能暂现源研究无实质联系，仅作为中微子背景的间接参考。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于大气中微子通量计算及加速器数据调优，用于Super-Kamiokande的大气中微子振荡分析，未涉及高能暂现源或团队任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PTEP.2026g3F01S",
+        "title_zh": "基于加速器数据调制的低能大气中微子通量计算",
+        "team": "",
+        "tldr": "本文采用加速器数据驱动的强子相互作用调制，改进了大气中微子通量计算，新方法使通量降低5%-10%，并在低能区（<1 GeV）实现了7%-9%的不确定性评估，优于传统方法。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-03-10",
+        "accepted": "",
+        "published": "2026-06-08",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-03-10",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PTEP.2026h3F01I",
+        "source": "ads",
+        "title": "Improving Calibration Accuracy with a Torque-Coupled Gravity Field Calibrator for Sub-Hz Gravitational Wave Observation in CHRONOS",
+        "authors": [
+          "Inoue, Y",
+          "Tanabe, D",
+          "Kumar, V"
+        ],
+        "abstract": "A fundamental challenge in low-frequency gravitational-wave detectors is the limited signal-to-noise ratio (SNR) of calibration lines, particularly in torsion-bar systems where the response is governed by rotational dynamics. In this work, we resolve this issue by optimizing the geometrical configuration of a torque-coupled gravity field calibrator (GCal), achieving an improvement in calibration-line SNR by more than an order of magnitude compared with conventional layouts. For the Cryogenic sub-Hz cROss torsion-bar detector with quantum NOn-demolition Speed-meter (CHRONOS), the calibration signal appears as a monochromatic line within the 0.1--<inline-formula><tex-math>$10~\\mathrm{Hz}$</tex-math></inline-formula> band. At <inline-formula><tex-math>$1~\\mathrm{Hz}$</tex-math></inline-formula>, the strain-equivalent calibration amplitude reaches <inline-formula><tex-math>$|h_{\\rm GCal}| = 1.16 \\times 10^{-14}$</tex-math></inline-formula>, corresponding to an SNR density of <inline-formula><tex-math>$|h_{\\rm GCal}|/S_h = 4.16 \\times 10^{3}$</tex-math></inline-formula>. This demonstrates for the first time that a high-SNR calibration line can be directly injected into the sub-Hz band of a torsion-bar detector. A first-order perturbative error propagation analysis yields a total fractional systematic uncertainty of <inline-formula><tex-math>$\\delta h_{\\rm GCal}/h_{\\rm GCal} = 0.24\\%$</tex-math></inline-formula>, dominated by geometric alignment uncertainties, while contributions from mass uncertainties and the gravitational constant remain subdominant. The corresponding absolute systematic uncertainty is <inline-formula><tex-math>$\\delta h_{\\rm GCal} \\sim 10^{-17}$</tex-math></inline-formula> at <inline-formula><tex-math>$1~\\mathrm{Hz}$</tex-math></inline-formula>. These results establish torque-coupled gravitational calibration as a practical solution to the longstanding low-SNR problem in sub-Hz torsion-bar detectors and provide a robust pathway toward precision absolute calibration in the low-frequency regime.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.IM",
+          "General Relativity and Quantum Cosmology",
+          "Instrumentation and Methods for Astrophysics"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PTEP.2026h3F01I/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2602.19436",
+        "doi": "10.1093/ptep/ptag118",
+        "external_ids": {
+          "ads": "2026PTEP.2026h3F01I",
+          "arxiv": "2602.19436",
+          "doi": "10.1093/ptep/ptag118"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 15,
+        "tags": [
+          "任务方法"
+        ],
+        "layer": "edge",
+        "reason": "论文主要贡献是低频引力波探测器的标定技术，与团队高能暂现源科学目标无直接联系，仅作为可迁移的仪器标定方法背景提及。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题与摘要聚焦于CHRONOS亚赫兹扭摆探测器（低频引力波探测器）的标定精度改进，属于引力波探测器的仪器标定方法，而非高能暂现源观测或团队任务（GECAM、Insight-HXMT、SVOM等）的直接工作。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PTEP.2026h3F01I",
+        "title_zh": "面向CHRONOS亚赫兹引力波观测的扭矩耦合引力场校准器提升校准精度",
+        "team": "",
+        "tldr": "通过优化扭矩耦合引力校准器的几何构型，将亚赫兹扭摆探测器校准线信噪比提升一个数量级以上，并在1 Hz实现高精度绝对校准，总系统不确定度0.24%。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-02-23",
+        "accepted": "",
+        "published": "2026-08-17",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-02-23",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhLB..88040829L",
+        "source": "ads",
+        "title": "Sub-GeV right-handed neutrino as a probe of neutrino mass generation in the minimal left-right symmetric model",
+        "authors": [
+          "Li, Gang",
+          "Li, Ying-Ying",
+          "Lu, Sida",
+          "Zhou, Ye-Ling"
+        ],
+        "abstract": "The minimal left-right symmetric model (mLRSM) provides an elegant and testable framework for addressing the origin of neutrino masses. We examine the constraints on the sub-GeV right-handed (RH) neutrino in the type-II seesaw scenario of the mLRSM without left-right mixing, taking limits from collider searches, meson decays, supernovae, neutrinoless double beta (0νββ) decay and cosmology. Specifically, we derive the 0νββ decay constraints using the advanced effective field theory approach and up-to-date nuclear matrix element calculations. Besides, we update the SN1987A cooling bound with the state-of-the-art simulations, provide new constraints from the energy deposition in the supernova ejecta, and incorporate the stringent RH neutrino lifetime upper limit τ ≲ 0.023 s from the big bang nucleosynthesis. Our results identify the parameter region compatible with all current experimental and observational constraints, where the RH neutrino mass lies between 700 MeV and 1 GeV and the RH W boson mass is slightly below 20 TeV. This region is exclusively probed by the future tonne-scale 0νββ decay experiments, providing a unique window to test the mLRSM and the possible origin of neutrino masses.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.HE",
+          "Sterile neutrino",
+          "Neutrino mass",
+          "Left-right symmetric model",
+          "Neutrinoless double beta decay",
+          "High Energy Physics - Phenomenology",
+          "High Energy Astrophysical Phenomena"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhLB..88040829L/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2508.15609",
+        "doi": "10.1016/j.physletb.2026.140829",
+        "external_ids": {
+          "ads": "2026PhLB..88040829L",
+          "arxiv": "2508.15609",
+          "doi": "10.1016/j.physletb.2026.140829"
+        },
+        "pubdate": "2026-09-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "多信使触发与联合",
+          "高能暂现天体"
+        ],
+        "layer": "edge",
+        "reason": "论文核心是粒子物理模型与中微子质量起源，仅以超新星作为约束条件，未直接服务团队的高能暂现源科学目标。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中提及超新星（supernovae）和SN1987A冷却约束，但主要研究对象是亚GeV右手中微子与最小左右对称模型，属于粒子物理现象学，与高能暂现源观测无直接关联。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhLB..88040829L",
+        "title_zh": "亚GeV右手中微子作为最小左右对称模型中微子质量产生的探针",
+        "team": "",
+        "tldr": "本文在最小左右对称模型的II型跷跷板机制下，综合多种实验和观测约束，确定了右手中微子质量在700 MeV至1 GeV且右W玻色子质量略低于20 TeV的参数区域，该区域可由未来吨级无中微子双β衰变实验独家探测。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2025-08-21",
+        "accepted": "",
+        "published": "2026-08-07",
+        "published_precision": "day",
+        "published_source": "crossref-created",
+        "received": "",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-08-21",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114c1703L",
+        "source": "ads",
+        "title": "Gauge-invariant bubble nucleation and gravitational waves from first-order electroweak phase transitions",
+        "authors": [
+          "Liu, Jie",
+          "Qin, Renhui",
+          "Bian, Ligong"
+        ],
+        "abstract": "A long-standing problem in electroweak phase transition studies is the spurious gauge dependence of bubble nucleation rate calculations, which introduces large systematic uncertainties in predictions of gravitational waves and related cosmological phenomena. We address this issue by presenting a systematic study of gauge-invariant bubble nucleation within a phenomenologically realistic effective field theory framework. Using the three-dimensional thermal effective field theory formalism with a consistent power-counting scheme, we rigorously establish the gauge invariance of the physical nucleation rate up to two-loop order. This proof eliminates the gauge-parameter dependence of key phase transition parameters, providing a robust theoretical foundation for precise calculations of gravitational waves, electroweak baryogenesis, and primordial magnetogenesis.",
+        "categories": [
+          "hep-ph",
+          "astro-ph.CO",
+          "hep-th",
+          "High Energy Physics - Phenomenology",
+          "Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Theory"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114c1703L/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2512.05565",
+        "doi": "10.1103/45ks-x47h",
+        "external_ids": {
+          "ads": "2026PhRvD.114c1703L",
+          "arxiv": "2512.05565",
+          "doi": "10.1103/45ks-x47h"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "宇宙学与基础物理应用"
+        ],
+        "layer": "edge",
+        "reason": "论文主要解决粒子物理中的规范依赖问题，引力波仅为背景应用，与高能暂现源研究无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于电弱相变中气泡成核率的规范不变性，涉及引力波预测，但未提及任何高能暂现源或具体天文任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114c1703L",
+        "title_zh": "规范不变的泡泡成核与一阶电弱相变产生的引力波",
+        "team": "",
+        "tldr": "本文在有效场论框架下严格证明了泡泡成核率在双圈阶的规范不变性，消除了相变参数对规范参数的依赖，为引力波等宇宙学现象预测提供了坚实基础。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2025-12-05",
+        "accepted": "",
+        "published": "2026-08-31",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-01-04",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-12-05",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d1306L",
+        "source": "ads",
+        "title": "Dynamical equilibria of fast neutrino flavor conversion",
+        "authors": [
+          "Liu, Jiabao",
+          "Johns, Lucas",
+          "Nagakura, Hiroki",
+          "Zaizen, Masamichi",
+          "Yamada, Shoichi"
+        ],
+        "abstract": "Dense neutrino systems, which display collectivity mediated by weak interaction, have both parallels and dissimilarities with kinetic systems with collective interactions mediated by other fundamental forces. We first identify analogues in fast flavor conversion of some time-honored nonlinear phenomena in plasmas and self-gravitating systems, focusing in particular on nonlinear Landau damping and collisionless equilibria. We then demonstrate the previously unexplored phenomenon of flavor-wave synchronization, which to our knowledge is a distinguishing characteristic of dense neutrino systems. The phenomena we exhibit are likely important pieces of the unsolved puzzle of neutrino oscillations in core-collapse supernovae and neutron star mergers.",
+        "categories": [
+          "astro-ph.HE",
+          "hep-th",
+          "High Energy Astrophysical Phenomena",
+          "High Energy Physics - Theory"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d1306L/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2509.26418",
+        "doi": "10.1103/ydrn-np36",
+        "external_ids": {
+          "ads": "2026PhRvD.114d1306L",
+          "arxiv": "2509.26418",
+          "doi": "10.1103/ydrn-np36"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 60,
+        "tags": [
+          "高能暂现天体：TDE、X/γ 射线暂现、新星/超新星激波、中子星/黑洞暂现现象"
+        ],
+        "layer": "related",
+        "reason": "该论文研究致密中微子系统的非线性动力学，虽与超新星和中子星合并相关，但主要贡献在理论物理，不直接服务高能暂现源的观测或任务目标。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要提到该研究对核心坍缩超新星和中子星合并中的中微子振荡有重要意义，但主要关注中微子快速味转换的动力学平衡，属于理论物理范畴。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d1306L",
+        "title_zh": "快速中微子味转换的动力学平衡态",
+        "team": "",
+        "tldr": "这篇论文在双束快味转换模型中识别出非线性朗道阻尼、单波摆和 BGK 无碰撞平衡等类似物，并提出味波同步概念来刻画从规则振荡到多波不可逆弛豫的过渡。",
+        "review": "",
+        "highlight": "首次在 FFC 中建立单波味波摆方程，稳定不动点对应中微子 BGK 模；提出味波同步作为动力学平衡判据，并展示多波退相干导致的不可逆弛豫。",
+        "relation": "",
+        "authors_en": "Jiabao Liu (Department of Physics and Applied Physics, School of Advanced Science & Engineering, Waseda University, Tokyo 169-8555, Japan), Lucas Johns (Theoretical Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA), Hiroki Nagakura (Division of Science, National Astronomical Observatory of Japan, 2-21-1 Osawa, Mitaka, Tokyo 181-8588, Japan) et al.",
+        "corresponding_en": "",
+        "context_outlook": "既往对中微子集体振荡的研究已借鉴 Vlasov 动力学，讨论过线性朗道阻尼等无碰撞弛豫机制（[[Fiorillo+ 2024]]），而粗粒化模型常以某种混合平衡或亚格子无序为假设（[[Johns 2025a]]）。本文接续等离子体物理的历史脉络，将 [[O'Neil 1965]] 的单波非线性朗道阻尼和 [[Bernstein+ 1957]] 的 BGK 无碰撞平衡概念移植到 FFC，先隔离单波得到味波摆，再展示多波退相干如何带来有效不可逆的动力学平衡。新提出的味波同步、对齐与偏振为区分相混合与相锁定平衡提供了直观判据。未来这些概念可帮助改进超新星与并合模拟中的亚格子输运方案，但需先解决简并点对慢变近似的破坏这一理论问题。",
+        "citations": [
+          {
+            "label": "Johns 2025a",
+            "authors": "Johns",
+            "year": "2025",
+            "title": "",
+            "ref": "L. Johns,\nPhys. Rev. D\n112\n, 063032 (2025a)\n.",
+            "arxiv": "",
+            "doi": "10.1103/y8qs-w8lq",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/y8qs-w8lq",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Fiorillo+ 2024",
+            "authors": "Fiorillo",
+            "year": "2024",
+            "title": "",
+            "ref": "D. F. G. Fiorillo and G. G. Raffelt, J. High Energy Phys. 2024 (225).",
+            "arxiv": "2310.18254",
+            "doi": "10.3847/2041-8213/ad192b",
+            "bibcode": "2024ApJ...961L..14F",
+            "url": "https://arxiv.org/abs/2310.18254",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "O'Neil 1965",
+            "authors": "O'Neil",
+            "year": "1965",
+            "title": "",
+            "ref": "T. O’Neil,\nPhys. Fluids\n8\n, 2255 (1965)\n.",
+            "arxiv": "",
+            "doi": "10.1063/1.1761193",
+            "bibcode": "1965PhFl....8.2255O",
+            "url": "https://doi.org/10.1063/1.1761193",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Bernstein+ 1957",
+            "authors": "Bernstein",
+            "year": "1957",
+            "title": "",
+            "ref": "I. B. Bernstein, J. M. Greene, and M. D. Kruskal,\nPhys. Rev.\n108\n, 546 (1957)\n.",
+            "arxiv": "",
+            "doi": "10.1103/PhysRev.108.546",
+            "bibcode": "1957PhRv..108..546B",
+            "url": "https://doi.org/10.1103/PhysRev.108.546",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2025-09-30",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2025-09-30",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-09-30",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该论文是纯理论工作，将等离子体与自引力系统中已知的非线性朗道阻尼、BGK 无碰撞平衡等概念类推到快味转换并提出味波同步概念，未经任何观测或真实数据验证，属常规理论增量，未推翻长期关键认识或带来已证实的新能力，不构成领域级重大进展。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3019L",
+        "source": "ads",
+        "title": "Assessment of normalizing flows for parameter estimation on time-frequency representations of gravitational-wave data",
+        "authors": [
+          "Lanchares, Daniel",
+          "Freitas, Osvaldo Gramaxo",
+          "Mornas, Lysiane",
+          "Font, José A.",
+          "González-Nuevo, Joaquín",
+          "Toffolatti, Luigi",
+          "Vischia, Pietro"
+        ],
+        "abstract": "The speedup of parameter estimation is an active field of research in gravitational-wave data analysis. In this paper, we present GP15, a deep-learning method that merges residual networks and normalizing flows into a general-purpose, image-based estimator of binary black hole (BBH) parameters. Building on our early work, we map BBH spectrograms from the Advanced LIGO and Advanced Virgo detectors to color channels in an RGB image amenable to be processed with residual networks. GP15 is trained on simulated data for BBH mergers obtained with the IMRPhenomXPHM waveform approximant and tested for all three-detector events from the gravitational-wave transient catalogs GWTC-3 and GWTC-2.1 reported by the LIGO-Virgo-KAGRA (LVK) Collaboration. Overall, our model yields good agreement with the LVK results over most parameters. Our simple model can produce large amounts of posterior samples on the order of a second, complementing existing approaches with normalizing flows based on time or frequency representation of gravitational-wave data. We also discuss current shortcomings of our model and possible improvements for future extensions (e.g., including noise conditioning from the detectors' power spectral density or splitting the parameter space into intrinsic and extrinsic subspaces).",
+        "categories": [
+          "gr-qc",
+          "astro-ph.IM",
+          "Astrophysics and astroparticle physics",
+          "General Relativity and Quantum Cosmology",
+          "Instrumentation and Methods for Astrophysics"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3019L/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2505.08089",
+        "doi": "10.1103/pz2n-b4m5",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3019L",
+          "arxiv": "2505.08089",
+          "doi": "10.1103/pz2n-b4m5"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文主要贡献是引力波数据处理方法，与团队高能暂现源科学目标无直接联系，仅作为背景方法提及。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题聚焦于引力波数据的参数估计方法（normalizing flows），摘要主要讨论BBH参数估计，未涉及电磁对应体、暂现源观测或高能天文任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3019L",
+        "title_zh": "基于引力波数据时频表示的归一化流参数估计评估",
+        "team": "",
+        "tldr": "本文提出GP15深度学习方法，结合残差网络和归一化流，从引力波时频图像快速估计双黑洞参数，与LVK结果吻合且可在秒级生成大量后验样本。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2025-05-12",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-04-10",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-05-12",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3059T",
+        "source": "ads",
+        "title": "Dynamic competition of fast and collisional neutrino flavor instabilities with collisional damping in spatially inhomogeneous systems",
+        "authors": [
+          "Takahashi, Shota",
+          "Nagakura, Hiroki",
+          "Zaizen, Masamichi",
+          "Kato, Chinami",
+          "Liu, Jiabao"
+        ],
+        "abstract": "Neutrino flavor evolution in dense astrophysical environments such as core-collapse supernova (CCSN) is influenced by collective effects. While the Fast Flavor Instability (FFI) and the Collisional Flavor Instability (CFI) are recognized as key drivers of rapid flavor conversion, their nonlinear competition with collisional damping in spatially inhomogeneous systems remains poorly understood. Motivated by recent findings that FFI and resonancelike CFI cooccur in the postbounce phase in CCSN, we scrutinize their dynamic competitions and asymptotic states. To this end, we perform numerical simulations of the quantum kinetic neutrino transport, incorporating both spatial advection and the collision terms. We demonstrate that the interplay between these coexisting neutrino flavor instabilities and collisions leads to rich dynamics. Rather than merely inducing simple decoherence, collisional damping can substantially alter the overall dynamics of collective flavor oscillations, driving the system through complex evolutionary pathways. In all cases where flavor instability develops, we find that the system converges to the same flavor-equilibrated asymptotic state, despite the diversity of intermediate dynamics. Our results suggest that realistic collisional effects drive the system to an asymptotic state distinct from the one predicted by the collisionless FFI picture. This highlights the importance of incorporating collisional effects when modeling the asymptotic outcome of flavor conversion in CCSN models.",
+        "categories": [
+          "astro-ph.HE",
+          "hep-ph",
+          "Astrophysics and astroparticle physics",
+          "High Energy Astrophysical Phenomena",
+          "High Energy Physics - Phenomenology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3059T/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2605.10435",
+        "doi": "10.1103/7c32-rfjb",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3059T",
+          "arxiv": "2605.10435",
+          "doi": "10.1103/7c32-rfjb"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "高能暂现天体",
+          "超新星"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦CCSN中微子输运的理论模拟，与团队高能暂现源观测及任务目标无实质联系，仅背景相关。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要研究核心-坍缩超新星（CCSN）中的中微子味不稳定性（FFI/CFI）及其碰撞阻尼的动力学竞争，属于中微子输运理论，未涉及任何高能暂现观测、任务或方法。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3059T",
+        "title_zh": "空间非均匀系统中快速与碰撞中微子味不稳定性与碰撞阻尼的动态竞争",
+        "team": "",
+        "tldr": "本文通过数值模拟研究超新星环境中快速味不稳定性和碰撞味不稳定性共存时的非线性竞争，发现碰撞阻尼驱动系统达到与无碰撞预测不同的味平衡终态。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-05-11",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-05-12",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-05-11",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3065Y",
+        "source": "ads",
+        "title": "Assessing the astrophysical foreground subtraction in DECIGO using compact binary populations inferred from the first part of the LIGO-Virgo-KAGRA's fourth observation run",
+        "authors": [
+          "Yamamoto, Takahiro S."
+        ],
+        "abstract": "Detecting the stochastic gravitational wave background (SGWB) from our Universe under the inflationary era is one of the primary scientific objectives of DECi-hertz Interferometer Gravitational wave Observatory (DECIGO), a space-borne gravitational wave detector sensitive in the <inline-formula><mml:math><mml:mo>~</mml:mo><mml:mn>0.1</mml:mn><mml:mtext> </mml:mtext><mml:mtext> </mml:mtext><mml:mi>Hz</mml:mi></mml:math></inline-formula> frequency band. This frequency band is dominated by the gravitational waves from inspiraling compact object binaries. Subtracting these signals is necessary to search for the primordial SGWB. In this paper, we assess the feasibility of the subtraction of such binary signals by employing the population model inferred from the latest gravitational wave event catalogue of the LIGO-Virgo-KAGRA Collaboration. We find that the projection scheme, which was originally proposed by Cutler and Harms (2005), is necessary to reduce the binary signals to the level where DECIGO can detect the primordial background.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.IM",
+          "Astrophysics and astroparticle physics",
+          "General Relativity and Quantum Cosmology",
+          "Instrumentation and Methods for Astrophysics"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3065Y/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2601.18378",
+        "doi": "10.1103/vvg3-6vt2",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3065Y",
+          "arxiv": "2601.18378",
+          "doi": "10.1103/vvg3-6vt2"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 55,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "论文主要关注引力波背景探测和前景减除方法，虽涉及致密双星并合群体，但与高能暂现源观测及团队任务能力的直接联系较弱，属于间接相关的方法学探讨。",
+        "relation": "enabling",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于DECIGO对原初随机引力波背景的探测，以及利用LIGO-Virgo-KAGRA第四轮观测的致密双星并合群体模型来评估前景减除的可行性。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3065Y",
+        "title_zh": "利用 LIGO-Virgo-KAGRA 第四轮观测运行第一阶段推断的致密双星群体评估 DECIGO 天体物理前景减除",
+        "team": "",
+        "tldr": "本文利用 GWTC-4 群体模型评估 DECIGO 频段内致密双星前景减除的可行性，发现必须采用 Cutler & Harms 投影方案才能将残差压低到可探测原初引力波背景的水平。",
+        "review": "",
+        "highlight": "首次基于最新 GWTC-4 群体模型系统分解 DECIGO 前景为不可分辨、亚阈值和参数估计误差三部分，并量化投影方案对参数估计误差的抑制效果（约两个数量级），为未来空间探测器探测原初背景提供关键可行性依据。",
+        "relation": "",
+        "authors_en": "Takahiro S. Yamamoto (Research Center for the Early Universe (RESCEU), Graduate School of Science, The University of Tokyo, Tokyo 113-0033, Japan)",
+        "corresponding_en": "Takahiro S. Yamamoto",
+        "context_outlook": "在空间引力波探测中，致密双星前景一直是提取原初背景的主要障碍。Cutler & Harms 最早提出对最佳拟合波形残差施加投影以压低参数估计误差 [[Cutler & Harms 2006]]，本文在其框架下利用 GWTC-4 的群体模型 [[Abac+ 2025]] 对 DECIGO 频段的 BNS/BBH 前景进行三组分分解，确认仅靠波形扣除不够，投影可使误差降至原初背景以下。这与地面探测器上的早期前景评估 [[Zhu+ 2013]] 以及贝叶斯联合估计思路 [[Biscoveanu+ 2020]] 形成互补。展望未来，爱因斯坦望远镜等下一代地面探测器 [[Abac+ 2026]] 有望更严格约束高红移并合历史，减少前景不确定性；同时长时信号的快速参数估计与模拟推断工具将成为实际减除流程的关键。",
+        "citations": [
+          {
+            "label": "Cutler & Harms 2006",
+            "authors": "Cutler",
+            "year": "2006",
+            "title": "BBO and the neutron-star-binary subtraction problem",
+            "ref": "C. Cutler and J. Harms (2006) BBO and the neutron-star-binary subtraction problem. Phys. Rev. D 73, pp. 042001. External Links: gr-qc/0511092, Document",
+            "arxiv": "gr-qc/0511092",
+            "doi": "10.1103/PhysRevD.73.042001",
+            "bibcode": "2006PhRvD..73d2001C",
+            "url": "https://arxiv.org/abs/gr-qc/0511092",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abac+ 2025",
+            "authors": "Abac",
+            "year": "2025",
+            "title": "GWTC-4.0: Population Properties of Merging Compact Binaries",
+            "ref": "A. G. Abac et al. (2025) GWTC-4.0: Population Properties of Merging Compact Binaries. External Links: 2508.18083",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Zhu+ 2013",
+            "authors": "Zhu",
+            "year": "2013",
+            "title": "On the gravitational wave background from compact binary coalescences in the band of ground-based interferometers",
+            "ref": "X. Zhu, E. J. Howell, D. G. Blair, and Z. Zhu (2013) On the gravitational wave background from compact binary coalescences in the band of ground-based interferometers. Mon. Not. Roy. Astron. Soc. 431 (1), pp. 882–899. External Links: 1209.0595, Document",
+            "arxiv": "1209.0595",
+            "doi": "10.1093/mnras/stt207",
+            "bibcode": "2013MNRAS.431..882Z",
+            "url": "https://arxiv.org/abs/1209.0595",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Biscoveanu+ 2020",
+            "authors": "Biscoveanu",
+            "year": "2020",
+            "title": "Measuring the primordial gravitational-wave background in the presence of astrophysical foregrounds",
+            "ref": "S. Biscoveanu, C. Talbot, E. Thrane, and R. Smith (2020) Measuring the primordial gravitational-wave background in the presence of astrophysical foregrounds. Phys. Rev. Lett. 125, pp. 241101. External Links: 2009.04418, Document",
+            "arxiv": "2009.04418",
+            "doi": "10.1103/PhysRevLett.125.241101",
+            "bibcode": "2020PhRvL.125x1101B",
+            "url": "https://arxiv.org/abs/2009.04418",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abac+ 2026",
+            "authors": "Abac",
+            "year": "2026",
+            "title": "The Science of the Einstein Telescope",
+            "ref": "A. Abac et al. (2026) The Science of the Einstein Telescope. JCAP 03, pp. 081. External Links: 2503.12263, Document",
+            "arxiv": "2503.12263",
+            "doi": "10.1088/1475-7516/2026/03/081",
+            "bibcode": "2026JCAP...03..081A",
+            "url": "https://arxiv.org/abs/2503.12263",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2026-01-26",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-02-16",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-01-26",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "这是一项面向未来 DECIGO 任务的前景减除可行性方法学评估，基于群体模型模拟而非真实数据验证，未产生新探测或改变现有科学认识，且与高能暂现源观测的直接联系较弱。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3071H",
+        "source": "ads",
+        "title": "Large gravitational wave phase shifts from strong three-body interactions in dense stellar clusters",
+        "authors": [
+          "Hendriks, Kai",
+          "Atallah, Dany",
+          "Martinez, Miguel",
+          "Zevin, Michael",
+          "Zwick, Lorenz",
+          "Trani, Alessandro A.",
+          "Saini, Pankaj",
+          "Takátsy, János",
+          "Samsing, Johan"
+        ],
+        "abstract": "The phase evolution of gravitational waves (GWs) can be modulated by the astrophysical environment surrounding the source, which provides a probe for the origin of individual binary black holes (BBHs) using GWs alone. We here study the evolving phase of the GW waveform derived from a large set of simulations of BBH mergers forming in dense stellar clusters through binary-single interactions. We uncover that a well-defined fraction of the assembled eccentric GW sources will have a notable GW phase shift induced by the remaining third object. The magnitude of the GW phase shift often exceeds conservative analytical estimates due to strong three-body interactions, which occasionally results in GW sources with clearly shifted and perturbed GW waveforms. This opens up promising opportunities for current and future GW detectors, as observing such a phase shift can identify the formation environment of a BBH, as well as help to characterise the local properties of its surrounding environment.",
+        "categories": [
+          "astro-ph.HE",
+          "Astrophysics and astroparticle physics",
+          "High Energy Astrophysical Phenomena"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3071H/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2411.08572",
+        "doi": "10.1103/h7q4-sd3m",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3071H",
+          "arxiv": "2411.08572",
+          "doi": "10.1103/h7q4-sd3m"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 30,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "论文属于引力波天体物理，与团队的多信使触发方向有背景关联，但主要问题并非高能暂现源或团队任务目标。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于稠密星团三体相互作用引起的引力波相位偏移，用于识别BBH形成环境，未涉及高能暂现或电磁对应体。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3071H",
+        "title_zh": "致密星团中强三体相互作用导致的大引力波相位偏移",
+        "team": "",
+        "tldr": "通过后牛顿少体模拟，作者发现致密星团中双星-单星散射形成的三体并合可产生由第三体引起的显著引力波相位偏移，幅度常超解析估计，为单事件追溯 BBH 形成环境提供新探针。",
+        "review": "",
+        "highlight": "对大量双星-单星散射的 PN 模拟显示，混沌三体过程可让第三体比初始分离更靠近并合双星，产生从约 0.01 rad 到接近 1 rad 的相移，突破线性解析上限；这些源主要落在 1–10 Hz 第三代探测器频带，提供单事件识别动力学形成渠道的可能。",
+        "relation": "",
+        "authors_en": "K. Hendriks (Niels Bohr International Academy, Niels Bohr Institute; Northwestern University; CIERA), D. Atallah (Northwestern University; CIERA), M. Martinez (Northwestern University; CIERA), et al.",
+        "corresponding_en": "Kai Hendriks",
+        "context_outlook": "过去对引力波相位偏移的讨论多从三体系统视线加速度出发 [[Meiron+ 2017]]，[[Samsing+ 2024]] 进一步给出偏心 BBH 的解析相移估计；但其线性极限预测的最大值仅约 10^-2 rad。本文通过大量后牛顿双星-单星散射模拟，发现强三体混沌过程可将第三体带到并合双星极近处，产生超过解析上限的 0.01–1 rad 相移，且主要集中在 1–10 Hz 的第三代探测器频带。这使三体并合这一已知星团偏心源子类 [[Samsing 2018]] 成为潜在的单事件环境探针。未来可结合注入研究与更精细波形模型，并将方法推广至 AGN 盘等更紧凑环境 [[Tagawa+ 2026]]，以量化可探测性与反演三体轨道性质。",
+        "citations": [
+          {
+            "label": "Meiron+ 2017",
+            "authors": "Meiron",
+            "year": "2017",
+            "title": "Detecting Triple Systems with Gravitational Wave Observations",
+            "ref": "Y. Meiron, B. Kocsis, and A. Loeb (2017) Detecting Triple Systems with Gravitational Wave Observations. ApJ 834 (2), pp. 200. External Links: Document, 1604.02148",
+            "arxiv": "1604.02148",
+            "doi": "10.3847/1538-4357/834/2/200",
+            "bibcode": "2017ApJ...834..200M",
+            "url": "https://arxiv.org/abs/1604.02148",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Samsing+ 2024",
+            "authors": "Samsing",
+            "year": "2024",
+            "title": "Gravitational Wave Phase Shifts in Eccentric Black Hole Mergers as a Probe of Dynamical Formation Environments",
+            "ref": "J. Samsing, K. Hendriks, L. Zwick, D. J. D’Orazio, and B. Liu (2024) Gravitational Wave Phase Shifts in Eccentric Black Hole Mergers as a Probe of Dynamical Formation Environments. arXiv e-prints, pp. arXiv:2403.05625. External Links: Document, 2403.05625",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/ad9f3d",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/ad9f3d",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Samsing 2018",
+            "authors": "Samsing",
+            "year": "2018",
+            "title": "Eccentric black hole mergers forming in globular clusters",
+            "ref": "J. Samsing (2018) Eccentric black hole mergers forming in globular clusters. Phys. Rev. D 97 (10), pp. 103014. External Links: 1711.07452, Document",
+            "arxiv": "1711.07452",
+            "doi": "10.1103/PhysRevD.97.103014",
+            "bibcode": "2018PhRvD..97j3014S",
+            "url": "https://arxiv.org/abs/1711.07452",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Tagawa+ 2026",
+            "authors": "Tagawa",
+            "year": "2026",
+            "title": "Gravitational Wave Phase Shifts of Black Hole Mergers in AGN Disks",
+            "ref": "H. Tagawa, C. Rowan, J. Takátsy, L. Zwick, K. Hendriks, W. Han, and J. Samsing (2026) Gravitational Wave Phase Shifts of Black Hole Mergers in AGN Disks. ApJ 998 (2), pp. 244. External Links: Document, 2511.15193",
+            "arxiv": "2511.15193",
+            "doi": "10.3847/1538-4357/ae3a87",
+            "bibcode": "2026ApJ...998..244T",
+            "url": "https://arxiv.org/abs/2511.15193",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2024-11-13",
+        "accepted": "",
+        "published": "2026-08-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2025-08-19",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2024-11-13",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该研究是基于后牛顿少体模拟的纯理论可观测预测，指出三体相互作用可产生超过解析估计的引力波相位偏移，但未经真实探测数据验证，属于对已知环境效应建模的常规推进，未推翻关键认识或带来已证实的全新观测能力。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3073K",
+        "source": "ads",
+        "title": "Frequency shift and viewing direction variations in gravitational lensing",
+        "authors": [
+          "Korzyński, Mikołaj",
+          "Kulejewski, Mateusz"
+        ],
+        "abstract": "In a gravitational lensing system, the relative transverse velocities of the lens, source, and observer induce a frequency shift in the observed radiation. While this shift is typically negligible in most astrophysical contexts, strategies for its detection have been proposed for both electromagnetic and gravitational waves. This paper provides a rigorous theoretical treatment of the effect, deriving general expressions for the frequency shift within a lensing system embedded in a cosmological spacetime. Our formulation remains valid for arbitrary distances and velocities---including highly relativistic regimes---under any Friedmann-Lemaître-Robertson-Walker metric. Expanding upon previous papers on moving lenses, we provide a detailed analysis of frequency effects induced by lenses moving at relativistic speeds. Furthermore, we extend standard lensing theory by deriving an exact formula for the variation in the source's viewing direction. This result is of interest for strongly anisotropic emitters, such as compact binary systems emitting gravitational waves. Finally, we quantify the apparent misalignment between the lens and the source's two images produced by time-delay effects in lens systems moving with high velocity.",
+        "categories": [
+          "astro-ph.CO",
+          "astro-ph.GA",
+          "gr-qc",
+          "Astrophysics and astroparticle physics",
+          "Cosmology and Nongalactic Astrophysics",
+          "Astrophysics of Galaxies",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3073K/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2601.13912",
+        "doi": "10.1103/ltkk-jxx1",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3073K",
+          "arxiv": "2601.13912",
+          "doi": "10.1103/ltkk-jxx1"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "引力透镜",
+          "频率偏移",
+          "引力波"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦引力透镜理论效应，虽提及引力波发射体，但与高能暂现源及团队任务目标无实质联系，仅作为背景或示例。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要主要讨论引力透镜系统中的频率偏移和视角变化，涉及引力波发射体（如致密双星）作为应用示例，但未涉及高能暂现源观测或团队任务数据。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3073K",
+        "title_zh": "引力透镜中的频率偏移与观测方向变化",
+        "team": "",
+        "tldr": "本文在宇宙学时空下严格推导了引力透镜系统中频率偏移的一般表达式，并扩展了透镜理论，给出了源观测方向变化的精确公式，适用于任意距离和速度（包括相对论性情形），还量化了高速运动透镜系统中时间延迟导致的像与源的表观错位。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-01-20",
+        "accepted": "",
+        "published": "2026-08-27",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-01-26",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-01-20",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3075K",
+        "source": "ads",
+        "title": "New framework to detect multimessenger signals from the bright sporadic stochastic gravitational wave background",
+        "authors": [
+          "Kuralkar, Hardik Jitendra",
+          "Sah, Mohit Raj",
+          "Mukherjee, Suvodip"
+        ],
+        "abstract": "The temporal dependence of the astrophysical stochastic gravitational-wave (GW) background (SGWB) in the hecto-hertz band brings a unique avenue to identify multimessenger signals to these sources by using coincident detection in both GW and multiband electromagnetic (EM) signals. We developed a new analysis pipeline, multimessenger cross-correlation (<inline-formula><mml:math><mml:mrow><mml:msup><mml:mrow><mml:mi>MC</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math></inline-formula>) that can search for EM counterparts to the SGWB signal originating from both modeled and unmodeled sources by harnessing the nearly full-sky gamma-ray sky map. We provide an observation strategy that can be followed by current and future missions to discover EM counterparts to the weak GW signal hidden in the SGWB. We demonstrate the ability of this technique to drastically reduce the false alarm rates when involving EM multiband analysis. This formalism aims toward advancing the multimessenger observation frontier and improving our understanding of the population of bright SGWB sources present in the high-redshift universe and can also be applied to other messengers such as neutrinos in the future.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.CO",
+          "gr-qc",
+          "Astrophysics and astroparticle physics",
+          "High Energy Astrophysical Phenomena",
+          "Cosmology and Nongalactic Astrophysics",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3075K/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2507.18955",
+        "doi": "10.1103/dtw2-5kv2",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3075K",
+          "arxiv": "2507.18955",
+          "doi": "10.1103/dtw2-5kv2"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 85,
+        "tags": [
+          "多信使触发与联合",
+          "引力波电磁对应体",
+          "伽马暴 GRB",
+          "任务方法"
+        ],
+        "layer": "core",
+        "reason": "论文开发了直接服务于团队多信使触发与联合目标的新分析流程和观测策略，属于可直接采用的方法，且与GECAM等伽马射线任务能力高度相关。",
+        "relation": "direct",
+        "core_path": "method",
+        "evidence": "标题提出'探测来自明亮零星随机引力波背景的多信使信号的新框架'；摘要详述了开发的新分析流程'多信使互相关(MC2)'，用于搜索SGWB信号的电磁对应体，并利用近全天伽马射线天图，为当前和未来任务提供观测策略。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3075K",
+        "title_zh": "从明亮零星随机引力波背景中探测多信使信号的新框架",
+        "team": "",
+        "tldr": "提出了 MC² 多信使时域互相关管道，利用 SGWB 时间涨落与多波段电磁信号关联，从噪声中挖掘亚阈值或未建模引力波源并显著压低误报。",
+        "review": "",
+        "highlight": "把随机引力波背景的短时标涨落当作信号而非噪声：先以 GRB 触发，再对 γ/X/光学/射电多波段做时域互相关，可在单事件匹配滤波失效时发现深埋的亚阈值 GW；多波段联合使 FAR 下降若干量级，且对未建模源同样适用。",
+        "relation": "",
+        "authors_en": "H. J. Kuralkar (Department of Physics, Indian Institute of Science Education and Research (IISER) Bhopal, Bhopal, India), M. R. Sah (Department of Astronomy & Astrophysics, Tata Institute of Fundamental Research, Mumbai, India), S. Mukherjee (Department of Astronomy & Astrophysics, Tata Institute of Fundamental Research, Mumbai, India)",
+        "corresponding_en": "",
+        "context_outlook": "自 GW170817 的多信使观测 [[Abbott+ 2017]] 以来，短 GRB 与千新星/余辉已被确立为 BNS 并合的关键电磁对应体，但大量弱事件仍淹没在随机引力波背景中。Mukherjee 与 Silk 先后指出天体物理 SGWB 具有时间涨落 [[Mukherjee+ 2020]]，并提出利用时域 GW 背景与电磁信号的相关性进行探测 [[Mukherjee+ 2021]]。Sah 与 Mukherjee 进一步构建了非稳态 SGWB 仿真框架 [[Sah+ 2023]]，为本文的 mock 数据与事件率估计奠定基础。本文的 MC² 管道把这一思路拓展到多波段电磁触发与 FAR 控制，展示了对已建模和未建模源的模型无关搜索能力。未来随着 Roman [[Wang+ 2022]]、Rubin、SKA 等大视场/高灵敏巡天及中微子、档案数据的引入，这类时域多信使互相关有望成为挖掘高红移弱源的标准工具。",
+        "citations": [
+          {
+            "label": "Abbott+ 2017",
+            "authors": "Abbott",
+            "year": "2017",
+            "title": "Gw170817: observation of gravitational waves from a binary neutron star inspiral",
+            "ref": "[11] B.P. Abbott et al. (2017) Gw170817: observation of gravitational waves from a binary neutron star inspiral . Physical Review Letters 119 ( 16 ), pp. 161101 . External Links: ISSN 0031-9007, 1079-7114 , Link , Document Cited by: §I , §V.2 , §V.2 , §V , §VIII .",
+            "arxiv": "1710.05832",
+            "doi": "10.1103/PhysRevLett.119.161101",
+            "bibcode": "2017PhRvL.119p1101A",
+            "url": "https://arxiv.org/abs/1710.05832",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mukherjee+ 2020",
+            "authors": "Mukherjee",
+            "year": "2020",
+            "title": "Time-dependence of the astrophysical stochastic gravitational wave background",
+            "ref": "[78] S. Mukherjee and J. Silk (2020) Time-dependence of the astrophysical stochastic gravitational wave background . Mon. Not. Roy. Astron. Soc. 491 ( 4 ), pp. 4690–4701 . External Links: 1912.07657 , Document Cited by: §I , §V.1.1 .",
+            "arxiv": "1912.07657",
+            "doi": "10.1093/mnras/stz3226",
+            "bibcode": "2020MNRAS.491.4690M",
+            "url": "https://arxiv.org/abs/1912.07657",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Mukherjee+ 2021",
+            "authors": "Mukherjee",
+            "year": "2021",
+            "title": "Fundamental physics using the temporal gravitational wave background",
+            "ref": "[79] S. Mukherjee and J. Silk (2021) Fundamental physics using the temporal gravitational wave background . Physical Review D 104 ( 6 ), pp. 063518 . External Links: ISSN 2470-0010, 2470-0029 , Link , Document Cited by: §IV .",
+            "arxiv": "2008.01082",
+            "doi": "10.1103/PhysRevD.104.063518",
+            "bibcode": "2021PhRvD.104f3518M",
+            "url": "https://arxiv.org/abs/2008.01082",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sah+ 2023",
+            "authors": "Sah",
+            "year": "2023",
+            "title": "Non-stationary astrophysical stochastic gravitational-wave background: a new probe to the high redshift population of binary black holes",
+            "ref": "[93] M. R. Sah and S. Mukherjee (2023) Non-stationary astrophysical stochastic gravitational-wave background: a new probe to the high redshift population of binary black holes . External Links: 2307.06405 , Link Cited by: §V.1.1 , §V.1.1 .",
+            "arxiv": "",
+            "doi": "10.1093/mnras/stad3365",
+            "bibcode": "",
+            "url": "https://doi.org/10.1093/mnras/stad3365",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Wang+ 2022",
+            "authors": "Wang",
+            "year": "2022",
+            "title": "The high latitude spectroscopic survey on the nancy grace roman space telescope",
+            "ref": "[108] Y. Wang, Z. Zhai, A. Alavi, E. Massara, A. Pisani, A. Benson, C. M. Hirata, L. Samushia, D. H. Weinberg, J. Colbert, O. Doré, T. Eifler, C. Heinrich, S. Ho, E. Krause, N. Padmanabhan, D. Spergel, and H. I. Teplitz (2022) The high latitude spectroscopic survey on the nancy grace roman space telescope . The Astrophysical Journal 928 ( 1 ), pp. 1 . External Links: ISSN 0004-637X, 1538-4357 , Link , Document Cited by: Table 1 , §IX .",
+            "arxiv": "2110.01829",
+            "doi": "10.3847/1538-4357/ac4973",
+            "bibcode": "2022ApJ...928....1W",
+            "url": "https://arxiv.org/abs/2110.01829",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2025-07-25",
+        "accepted": "",
+        "published": "2026-08-31",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-01-22",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2025-07-25",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "摘要仅报告新分析管道MC²与观测策略的提出及误报率降低的方法学演示，未报告任何真实数据验证的探测结果或已证实的对应体，属于未经真实数据验证的方法类工作。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3550R",
+        "source": "ads",
+        "title": "Heavy tailed non-Gaussianity of the supermassive black hole gravitational wave background",
+        "authors": [
+          "Raidal, Juhan",
+          "Urrutia, Juan",
+          "Vaskonen, Ville",
+          "Veermäe, Hardi"
+        ],
+        "abstract": "We study the non-Gaussian features of the gravitational wave (GW) background generated by a population of inspiraling supermassive black hole (SMBH) binaries. We show that the SMBH GW amplitude distribution (GWAD) features a universal heavy power-law tail <inline-formula><mml:math><mml:mo>∝</mml:mo><mml:msup><mml:mi>A</mml:mi><mml:mrow><mml:mo>-</mml:mo><mml:mn>4</mml:mn></mml:mrow></mml:msup></mml:math></inline-formula>, while the low-amplitude tail depends on the SMBH merger rate and the energy-loss mechanisms of the binaries. The distribution of the induced timing residuals inherits this heavy tail. As a result, the ensemble averaged statistical moments of order three and higher diverge, limiting their usefulness as measures of non-Gaussianity, and the GW background from SMBH binaries exhibits the single loud source principle, according to which the strongest signals are more likely to be caused by a small number of loud sources. We confirm that the variance-averaged Gaussian approximation accurately describes the timing residual statistics. This approximation justifies a factored likelihood structure that combines standard Gaussian-process PTA posteriors with the non-Gaussian population prior, enabling consistent incorporation of non-Gaussian effects into SMBH model inference. We provide a fast and flexible Python implementation to compute the distribution of timing residuals from a given SMBH merger rate or GWAD.",
+        "categories": [
+          "astro-ph.CO",
+          "astro-ph.HE",
+          "gr-qc",
+          "Cosmology",
+          "Cosmology and Nongalactic Astrophysics",
+          "High Energy Astrophysical Phenomena",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3550R/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2604.08506",
+        "doi": "10.1103/kjg1-mwpx",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3550R",
+          "arxiv": "2604.08506",
+          "doi": "10.1103/kjg1-mwpx"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦引力波背景的统计性质，与团队暂现源科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要研究SMBH双星引力波背景的非高斯统计与定时残差分布，未涉及高能暂现源或电磁对应体。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3550R",
+        "title_zh": "超大质量黑洞引力波背景的重尾非高斯性",
+        "team": "",
+        "tldr": "研究并发现超大质量黑洞双星引力波背景的振幅分布具有普适的重尾幂律，且验证了方差平均高斯近似，提供了计算定时残差分布的Python实现。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-04-09",
+        "accepted": "",
+        "published": "2026-08-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-05-08",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-04-09",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d3555B",
+        "source": "ads",
+        "title": "Gravitational wave landscape of cosmic string networks with varying tension",
+        "authors": [
+          "Brunelli, Luca",
+          "Revello, Filippo",
+          "Villa, Gonzalo"
+        ],
+        "abstract": "We fully classify the phenomenology of gravitational wave emission from scaling cosmic string networks with varying tension and compute the spectral indices of the resulting stochastic backgrounds. In string compactifications, periods of varying tension occur when moduli acquire a time dependence. We present concrete examples in type IIB string theory as D3- and NS5-branes wrapping internal cycles, which become dynamical due to the effect of moduli potentials. Moreover, we use swampland constraints to derive general bounds on the allowed time variation of the effective string tension in Friedmann-Lemaitre-Robertson-Walker backgrounds and on the resulting spectral indices.",
+        "categories": [
+          "hep-th",
+          "astro-ph.CO",
+          "hep-ph",
+          "Cosmology",
+          "High Energy Physics - Theory",
+          "Cosmology and Nongalactic Astrophysics",
+          "High Energy Physics - Phenomenology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d3555B/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2601.10790",
+        "doi": "10.1103/6npx-fnnw",
+        "external_ids": {
+          "ads": "2026PhRvD.114d3555B",
+          "arxiv": "2601.10790",
+          "doi": "10.1103/6npx-fnnw"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "引力波",
+          "宇宙学"
+        ],
+        "layer": "edge",
+        "reason": "论文主要讨论宇宙弦引力波背景的理论分类，与高能暂现源及团队观测能力无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于宇宙弦网络的引力波背景谱指数，属于宇宙学理论，未涉及高能暂现源或团队任务数据。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d3555B",
+        "title_zh": "变张力宇宙弦网络引力波景观",
+        "team": "",
+        "tldr": "该论文完整分类了变张力标度宇宙弦网络的引力波发射现象，计算了随机背景的谱指数，并在IIB型弦论中给出具体例子，同时利用沼泽地约束推导了有效弦张力时间变化的普遍界限。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-01-15",
+        "accepted": "",
+        "published": "2026-08-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-01-28",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-01-15",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d4083K",
+        "source": "ads",
+        "title": "Fisher information velocity: A new geometric channel for precision glitch identification in gravitational-wave detectors",
+        "authors": [
+          "Kennington, James",
+          "Yarbrough, Zach"
+        ],
+        "abstract": "Gravitational-wave detectors operate in inherently nonstationary environments, requiring robust detector characterization (DetChar) to distinguish instrumental transients from astrophysical signals. Traditional DetChar frameworks typically rely on morphological classifiers or energy-based projections, such as band-limited root-mean-square (BLRMS) metrics, which can conflate global amplitude scaling with physical reconfigurations of the spectrum. In this work, we introduce Fisher information velocity, a novel geometric channel that models the detector's power spectral density as a point on a Riemannian manifold. By tracking the kinematic drift of the noise floor and utilizing exterior algebra to calculate tangent divergence (<inline-formula><mml:math><mml:mi>sin</mml:mi><mml:mi>θ</mml:mi></mml:math></inline-formula>), we mathematically decouple simple energy surges from spectral warps, or differential redistributions of power across frequency bands. Applying this framework via the SGN-DRIFT streaming pipeline to <inline-formula><mml:math><mml:mo>~</mml:mo><mml:mn>40</mml:mn></mml:math></inline-formula> hours of high-cadence Advanced LIGO O4a data, we evaluate <inline-formula><mml:math><mml:mi>N</mml:mi><mml:mo>=</mml:mo><mml:mn>282</mml:mn></mml:math></inline-formula>, 080 independent manifold velocity samples. High-resolution phase space mapping reveals a bimodal taxonomy of severe instrumental nonstationarity, classifying events into structural pivots (87.2%) and isotropic surges (12.8%). Among codetected events, the geometric channel achieves higher significance than standard BLRMS monitors in 74% of cases with a median sensitivity ratio of <inline-formula><mml:math><mml:mi>Γ</mml:mi><mml:mo>=</mml:mo><mml:mn>1.65</mml:mn></mml:math></inline-formula>. The two channels detect largely nonoverlapping populations, increasing the total anomaly catalog by 87% over BLRMS alone. Systematic validation on 10 confirmed GWTC-4.0 events and <inline-formula><mml:math><mml:mo>~</mml:mo><mml:mn>5</mml:mn></mml:math></inline-formula>, 000 simulated injections demonstrates robust insensitivity to astrophysical signals, establishing this geometric channel as a sensitive, complementary, and veto-safe diagnostic for current and next-generation detector networks.",
+        "categories": [
+          "astro-ph.IM",
+          "gr-qc",
+          "General relativity",
+          "alternative theories of gravity",
+          "Instrumentation and Methods for Astrophysics",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d4083K/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2605.21531",
+        "doi": "10.1103/9mr6-7vts",
+        "external_ids": {
+          "ads": "2026PhRvD.114d4083K",
+          "arxiv": "2605.21531",
+          "doi": "10.1103/9mr6-7vts"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文主要贡献是引力波探测器表征方法，与团队高能暂现科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要聚焦于引力波探测器噪声瞬变识别（DetChar），使用Fisher信息速度几何通道分析Advanced LIGO O4a数据，未涉及任何高能暂现天体或团队任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d4083K",
+        "title_zh": "费舍尔信息速度：引力波探测器精密毛刺识别的新几何通道",
+        "team": "",
+        "tldr": "提出费舍尔信息速度作为几何通道，通过黎曼流形上的功率谱密度动力学区分仪器瞬变与天体物理信号，并在LIGO O4a数据上验证其高灵敏度和互补性。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-05-19",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-06-03",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-05-19",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d4086C",
+        "source": "ads",
+        "title": "End-to-end pipeline for Bayesian burst inference and model classification in gravitational-wave data",
+        "authors": [
+          "Cuceu, Iuliu",
+          "Bizouard, Marie Anne"
+        ],
+        "abstract": "We present BASILIC, a dedicated pipeline for Bayesian model selection and parameter estimation of short-duration gravitational-wave burst signals observable with ground-based detectors. Built on top of the Bilby framework, BASILIC combines modularity, preimplemented burst models, and HTCondor integration to enable rapid, user-friendly analyses with minimal technical overhead. This work outlines the design philosophy, operational flow, and a set of example use cases demonstrating its scientific potential. As a case study, we also undertake an in-depth exploration of the comparison between a binary black hole merger and a cosmic-string signal, through a parameter space exploration injection campaign. In addition to the well-known high-mass binary black-hole signal morphology degeneracy with cosmic-string-like signals, we find that high antialigned component spins, even at moderate mass, can result in a similar degeneracy. Motivated by the likely low-SNR regime expected of possible future detections, we propose a data-driven study of model degeneracy, to be employed in the event of an inconclusive Bayes factor.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE",
+          "General relativity",
+          "alternative theories of gravity",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Astrophysical Phenomena"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d4086C/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2604.13839",
+        "doi": "10.1103/qfjy-59d2",
+        "external_ids": {
+          "ads": "2026PhRvD.114d4086C",
+          "arxiv": "2604.13839",
+          "doi": "10.1103/qfjy-59d2"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 60,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "该流水线可服务于引力波暂现源的后随观测和分类，但主要面向引力波数据分析，与团队的高能暂现源观测目标为间接支持关系。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "标题和摘要介绍了一个用于引力波短时标爆发现象的贝叶斯推断和模型分类的端到端流水线（BASILIC），并讨论了黑洞合并与宇宙弦信号的简并性。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d4086C",
+        "title_zh": "Basilic：引力波数据中贝叶斯爆发推断与模型分类的端到端流水线",
+        "team": "",
+        "tldr": "提出 Basilic 端到端流水线，用于短时标引力波爆发信号的贝叶斯模型选择与参数估计，并通过 BBH-宇宙弦注入研究揭示高反平行自旋可造成模型混淆。",
+        "review": "",
+        "highlight": "基于 bilby 的模块化爆发推断流水线，集成 HTCondor 与后处理，支持大规模注入与模型比较；发现除高质量 BBH 外，高反平行自旋在中等质量下也会与宇宙弦波形产生证据简并，并提出 PPC+波形 match 的两级诊断。",
+        "relation": "",
+        "authors_en": "Iuliu Cuceu (Université Côte d’Azur, Observatoire de la Côte d’Azur, CNRS, Laboratoire Artemis, 06300 Nice, France), Marie Anne Bizouard (Université Côte d’Azur, Observatoire de la Côte d’Azur, CNRS, Laboratoire Artemis, 06300 Nice, France)",
+        "corresponding_en": "",
+        "context_outlook": "该工作填补了从爆发信号检测到贝叶斯模型分类的流水线空白：它承继 [[Ashton+ 2019]] 的 bilby 基础与 [[Romero-Shaw+ 2020]] 的 CBC 生产级流水线思路，并整合了 [[Divakarla+ 2020]] 中的宇宙弦/记忆效应模型及 [[Powell+ 2022]]、[[Villegas+ 2025]] 的超新星模板。其 BBH-宇宙弦混淆研究扩展了 [[Abbott+ 2020]] 对 GW190521 和 [[Cuceu+ 2026]] 对 GW231123 的单事件讨论，系统揭示高质量与高反平行自旋区域的证据简并。展望上，低信噪比下贝叶斯因子不确定将愈发常见，Basilic 实现的后验预测检验与波形 match 二级诊断有望成为爆发候选体分类的标准步骤，并推动模型注册表与注入研究向更广泛的短时标源扩展。",
+        "citations": [
+          {
+            "label": "Ashton+ 2019",
+            "authors": "Ashton",
+            "year": "2019",
+            "title": "BILBY: A user-friendly Bayesian inference library for gravitational-wave astronomy",
+            "ref": "[12] G. Ashton et al. (2019) BILBY: A user-friendly Bayesian inference library for gravitational-wave astronomy. Astrophys. J. Suppl. 241 (2), pp. 27. External Links: 1811.02042, Document",
+            "arxiv": "1811.02042",
+            "doi": "10.3847/1538-4365/ab06fc",
+            "bibcode": "2019ApJS..241...27A",
+            "url": "https://arxiv.org/abs/1811.02042",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Romero-Shaw+ 2020",
+            "authors": "Romero-Shaw",
+            "year": "2020",
+            "title": "Bayesian inference for compact binary coalescences with bilby: validation and application to the first LIGO–Virgo gravitational-wave transient catalogue",
+            "ref": "[32] I. M. Romero-Shaw et al. (2020) Bayesian inference for compact binary coalescences with bilby: validation and application to the first LIGO–Virgo gravitational-wave transient catalogue. Mon. Not. Roy. Astron. Soc. 499 (3), pp. 3295–3319. External Links: 2006.00714, Document",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Divakarla+ 2020",
+            "authors": "Divakarla",
+            "year": "2020",
+            "title": "Memory Effect or Cosmic String? Classifying Gravitational-Wave Bursts with Bayesian Inference",
+            "ref": "[18] A. K. Divakarla, E. Thrane, P. D. Lasky, and B. F. Whiting (2020) Memory Effect or Cosmic String? Classifying Gravitational-Wave Bursts with Bayesian Inference. Phys. Rev. D 102 (2), pp. 023010. External Links: 1911.07998, Document",
+            "arxiv": "1911.07998",
+            "doi": "10.1103/PhysRevD.102.023010",
+            "bibcode": "2020PhRvD.102b3010D",
+            "url": "https://arxiv.org/abs/1911.07998",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Powell+ 2022",
+            "authors": "Powell",
+            "year": "2022",
+            "title": "Inferring astrophysical parameters of core-collapse supernovae from their gravitational-wave emission",
+            "ref": "[31] J. Powell and B. Müller (2022) Inferring astrophysical parameters of core-collapse supernovae from their gravitational-wave emission. Phys. Rev. D 105 (6), pp. 063018. External Links: 2201.01397, Document",
+            "arxiv": "2201.01397",
+            "doi": "10.1103/PhysRevD.105.063018",
+            "bibcode": "2022PhRvD.105f3018P",
+            "url": "https://arxiv.org/abs/2201.01397",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Villegas+ 2025",
+            "authors": "Villegas",
+            "year": "2025",
+            "title": "Parameter estimation from the core-bounce phase of rotating core collapse supernovae in real interferometer noise",
+            "ref": "[39] L. O. Villegas, C. Moreno, M. A. Pajkos, M. Zanolin, and J. M. Antelis (2025) Parameter estimation from the core-bounce phase of rotating core collapse supernovae in real interferometer noise. Class. Quant. Grav. 42 (11), pp. 115001. External Links: 2304.01267, Document",
+            "arxiv": "",
+            "doi": "10.1088/1361-6382/add235",
+            "bibcode": "2025CQGra..42k5001V",
+            "url": "https://doi.org/10.1088/1361-6382/add235",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abbott+ 2020",
+            "authors": "Abbott",
+            "year": "2020",
+            "title": "GW190521: A Binary Black Hole Merger with a Total Mass of 150 M_{\\odot}",
+            "ref": "[5] R. Abbott et al. (2020) GW190521: A Binary Black Hole Merger with a Total Mass of 150 M_{\\odot}. Phys. Rev. Lett. 125 (10), pp. 101102. External Links: 2009.01075, Document",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Cuceu+ 2026",
+            "authors": "Cuceu",
+            "year": "2026",
+            "title": "GW231123: Binary black hole merger or cosmic string?",
+            "ref": "[16] I. Cuceu, M. A. Bizouard, N. Christensen, and M. Sakellariadou (2026) GW231123: Binary black hole merger or cosmic string? Phys. Rev. D 113 (2), pp. L021302. External Links: 2507.20778, Document",
+            "arxiv": "2507.20778",
+            "doi": "10.1103/zd8m-tzxd",
+            "bibcode": "2026PhRvD.113b1302C",
+            "url": "https://arxiv.org/abs/2507.20778",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2026-04-15",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-04-21",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-04-15",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该文是基于 Bilby 的软件流水线与方法学工作，其 BBH-宇宙弦简并结论来自注入模拟而非真实探测，属于常规增量进展，未构成改变科学认识或观测能力的领域级突破。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d4090D",
+        "source": "ads",
+        "title": "Gravitational wave-black hole imaging correspondence for modified black holes",
+        "authors": [
+          "Díaz-Guerra, David",
+          "Rincón, Ángel",
+          "Rubiera-Garcia, Diego",
+          "Gomez, Diego Saez-Chillon"
+        ],
+        "abstract": "Black holes (BHs) can be studied via fundamentally different observational channels that probe complementary aspects of their physics. While BH imaging provides access to the quasistatic space-time geometry via the strong bending of light rays, gravitational wave (GW) observations probe the dynamical response of the space-time to time-dependent processes in the inspiral, merger and ringdown phases. Both messengers---electromagnetic imaging probes and ringdown GW spectroscopy---provide access to essentially the same region---the one between the BH event horizon and the photon region---but they do it via conceptually different methods, encoding different physical information. However, it has been shown in the literature that physical quantities supposedly exclusive of each such messenger are actually tightly related to each another via a correspondence that occurs in the eikonal limit (i.e. large values of the multipole number <inline-formula><mml:math><mml:mo>ℓ</mml:mo></mml:math></inline-formula>) of the geometric-optics approximation. In this paper we clarify the actual identification of observables within such a correspondence and test its accuracy for modified spherically symmetric BH geometries proposed in the literature. We find that even for low values of <inline-formula><mml:math><mml:mo>ℓ</mml:mo></mml:math></inline-formula> the correspondence is surprisingly accurate in relating the real and imaginary parts of quasinormal modes in the GW ringdown phase with the critical impact parameter and Lyapunov exponent of nearly bound light trajectories for every such model analyzed. We discuss the applicability of such a result both for each messenger individually, and also for foreseeable tests of BHs combining both messengers.",
+        "categories": [
+          "gr-qc",
+          "General relativity",
+          "alternative theories of gravity",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d4090D/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2606.01915",
+        "doi": "10.1103/qrjq-3rnh",
+        "external_ids": {
+          "ads": "2026PhRvD.114d4090D",
+          "arxiv": "2606.01915",
+          "doi": "10.1103/qrjq-3rnh"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主要贡献是修改黑洞的理论对应关系，与高能暂现源及团队科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论修改黑洞的引力波-成像对应关系，属于引力理论与黑洞物理，未涉及高能暂现源、观测事件或团队任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d4090D",
+        "title_zh": "修正黑洞的引力波-黑洞成像对应关系",
+        "team": "",
+        "tldr": "本文澄清了修正球对称黑洞中引力波环降准正模式与黑洞成像观测量的对应关系，并验证其在低多极数下仍高度准确。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-06-01",
+        "accepted": "",
+        "published": "2026-08-25",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-06-04",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-06-01",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d4091F",
+        "source": "ads",
+        "title": "Modeling the merger-ringdown of an eccentric test-mass inspiral into a Kerr black hole using the effective-one-body framework",
+        "authors": [
+          "Faggioli, Guglielmo",
+          "Buonanno, Alessandra",
+          "van de Meent, Maarten",
+          "Khanna, Gaurav"
+        ],
+        "abstract": "We characterize and phenomenologically model the merger-ringdown of gravitational waves emitted by a small compact object that plunges and merges into a Kerr black hole from equatorial-eccentric inspirals. The waveforms are generated employing a time-domain Teukolsky code sourced with trajectories computed using the effective-one-body framework. We span values of the Kerr spin <inline-formula><mml:math><mml:mi>a</mml:mi><mml:mo>∈</mml:mo><mml:mo>[</mml:mo><mml:mo>-</mml:mo><mml:mn>0.9</mml:mn><mml:mo>,</mml:mo><mml:mn>0.9</mml:mn><mml:mo>]</mml:mo></mml:math></inline-formula>, eccentricity at the last stable orbit (LSO) <inline-formula><mml:math><mml:msub><mml:mi>e</mml:mi><mml:mrow><mml:mi>LSO</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:mo>[</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mn>0.9</mml:mn><mml:mo>]</mml:mo></mml:math></inline-formula>, and relativistic anomaly <inline-formula><mml:math><mml:msub><mml:mi>ξ</mml:mi><mml:mrow><mml:mi>LSO</mml:mi></mml:mrow></mml:msub><mml:mo>∈</mml:mo><mml:mo>[</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mi>π</mml:mi><mml:mo>]</mml:mo></mml:math></inline-formula>. We characterize the last peak of the waveform and ringdown features across the parameter space, finding that the eccentricity mainly affects the last peak features, while it has a smaller impact on the ringdown signal. In contrast, the relativistic anomaly measured at the LSO influences the morphology of the last peak in a restricted portion of the parameter space and has no impact on the ringdown part. We perform the analysis for all the spin-weighted spherical harmonic modes normally included in the SEOBNR family of models, <inline-formula><mml:math><mml:mo>(</mml:mo><mml:mo>ℓ</mml:mo><mml:mo>,</mml:mo><mml:mi>m</mml:mi><mml:mo>)</mml:mo><mml:mo>∈</mml:mo><mml:mo>{</mml:mo><mml:mo>(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mo>(</mml:mo><mml:mn>3</mml:mn><mml:mo>,</mml:mo><mml:mn>3</mml:mn><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mo>(</mml:mo><mml:mn>4</mml:mn><mml:mo>,</mml:mo><mml:mn>4</mml:mn><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mo>(</mml:mo><mml:mn>5</mml:mn><mml:mo>,</mml:mo><mml:mn>5</mml:mn><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mo>(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mo>(</mml:mo><mml:mn>3</mml:mn><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mo>)</mml:mo><mml:mo>,</mml:mo><mml:mo>(</mml:mo><mml:mn>4</mml:mn><mml:mo>,</mml:mo><mml:mn>3</mml:mn><mml:mo>)</mml:mo><mml:mo>}</mml:mo></mml:math></inline-formula>. Finally, we introduce a merger-ringdown model for SEOBE-TML, a forthcoming inspiral-merger-ringdown waveform model for eccentric spin-aligned binary black holes in the test-mass limit, whose features can be extended to comparable-mass regimes. The model also accounts for quasinormal mode mixing during the ringdown. It provides a first step toward incorporating the impact of residual eccentricity close to merger into spin-aligned effective-one-body merger-ringdown models for binary black holes.",
+        "categories": [
+          "gr-qc",
+          "General relativity",
+          "alternative theories of gravity",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d4091F/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2603.19913",
+        "doi": "10.1103/f1lp-z5d2",
+        "external_ids": {
+          "ads": "2026PhRvD.114d4091F",
+          "arxiv": "2603.19913",
+          "doi": "10.1103/f1lp-z5d2"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 5,
+        "tags": [],
+        "layer": "edge",
+        "reason": "纯引力波理论/波形建模，与团队高能暂现源科学目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要均为引力波波形建模（偏心测试质量体旋进并合到Kerr黑洞的merger-ringdown），未涉及任何高能暂现源、电磁对应体或团队任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d4091F",
+        "title_zh": "使用有效单体框架模拟偏心测试质量旋进进入Kerr黑洞的合并-振铃",
+        "team": "",
+        "tldr": "本文利用Teukolsky代码和有效单体框架生成波形，表征并唯象建模偏心测试质量旋进合并到Kerr黑洞的合并-振铃特征，发现偏心率主要影响最后峰值而相对论异常影响有限，并引入SEOBE-TML合并-振铃模型。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-03-20",
+        "accepted": "",
+        "published": "2026-08-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-03-30",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-03-20",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d4094G",
+        "source": "ads",
+        "title": "Gravitational memory from hairy binary black hole mergers",
+        "authors": [
+          "Gasparotto, Silvia",
+          "Zosso, Jann",
+          "Saló, Llibert Aresté",
+          "Doneva, Daniela D.",
+          "Yazadjiev, Stoytcho S."
+        ],
+        "abstract": "Gravitational-wave memory is a low-frequency, nonoscillatory component of the radiation field that provides a potentially powerful but as yet undetected probe of strong-field gravity. We present the first calculation of gravitational memory from full inspiral-merger-ringdown waveforms in a theory beyond general relativity, focusing on scalar-Gauss-Bonnet gravity as a theoretically well-motivated and numerically accessible extension of GR. Starting from the general memory formulas in Horndeski gravity, we derive explicit spin-weighted spherical-harmonic expressions for the tensor null memory in scalar-Gauss-Bonnet theory and evaluate them on existing numerical-relativity waveforms for both shift-symmetric and dynamically scalarizing binary black hole mergers. We find that the dominant effect is an indirect modification of the tensor memory through changes in the nonlinear merger dynamics, while the direct scalar contribution to the tensor memory remains suppressed by orders of magnitude for the systems considered in this work. For the largest deviations in our dataset, the final memory amplitude differs from the corresponding GR prediction by a few percent and by up to <inline-formula><mml:math><mml:mrow><mml:mo>~</mml:mo><mml:mn>4</mml:mn><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula> when compared to the GR template that minimizes the waveform mismatch in a detector-oriented analysis. We further show that including memory increases the mismatch between GR and scalar-Gauss-Bonnet waveforms by more than an order of magnitude, indicating that memory can provide complementary information for testing gravity with third-generation detectors, especially for low-mass binaries.",
+        "categories": [
+          "gr-qc",
+          "General relativity",
+          "alternative theories of gravity",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d4094G/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2604.09350",
+        "doi": "10.1103/6sry-t38l",
+        "external_ids": {
+          "ads": "2026PhRvD.114d4094G",
+          "arxiv": "2604.09350",
+          "doi": "10.1103/6sry-t38l"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 20,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文主要讨论引力波记忆的理论计算，与高能暂现源观测及团队任务目标无直接联系，仅作为引力波相关背景。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要聚焦于标量-高斯-博内引力中的引力波记忆效应，属于引力理论检验，未涉及高能暂现源观测或任务数据。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d4094G",
+        "title_zh": "带毛黑洞并合产生的引力记忆",
+        "team": "",
+        "tldr": "本文首次在标量-高斯-博内引力中计算了完整旋近-并合-铃宕波形的引力记忆，发现主要效应来自非线性并合动力学对张量记忆的间接修正，直接标量贡献被压制，但记忆可显著增大与广义相对论的波形失配，为第三代探测器检验引力提供补充信息。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-04-10",
+        "accepted": "",
+        "published": "2026-08-26",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-04-20",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-04-10",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114d4099S",
+        "source": "ads",
+        "title": "Ringdown analysis of GW250114 with orthonormal modes",
+        "authors": [
+          "Suzuki, Motoki",
+          "Kubota, Kei-ichiro",
+          "Morisaki, Soichiro",
+          "Motohashi, Hayato",
+          "Watarai, Daiki"
+        ],
+        "abstract": "GW250114 is the loudest gravitational wave event to date observed by LIGO-Virgo-KAGRA Collaboration. Owing to its high signal-to-noise ratio (SNR), previous analyses based on quasinormal mode (QNM) superpositions have suggested evidence of the fundamental and the first overtone of the <inline-formula><mml:math><mml:mo>ℓ</mml:mo><mml:mo>=</mml:mo><mml:mi>m</mml:mi><mml:mo>=</mml:mo><mml:mn>2</mml:mn></mml:math></inline-formula> mode in this event. However, QNMs are not orthogonal and the inclusion of multiple QNMs induces correlations among them, which can hinder the robust identification of subdominant QNMs. To address this challenge, we apply an analysis based on orthonormalized QNMs [S. Morisaki , Phys. Rev. D 112, 124083 (2025)PRVDAQ2470-001010.1103/lhkp-w6hm] to GW250114. We find that, in the model including three <inline-formula><mml:math><mml:mo>ℓ</mml:mo><mml:mo>=</mml:mo><mml:mi>m</mml:mi><mml:mo>=</mml:mo><mml:mn>2</mml:mn></mml:math></inline-formula> QNMs up to the second overtone, the first overtone of the <inline-formula><mml:math><mml:mo>ℓ</mml:mo><mml:mo>=</mml:mo><mml:mi>m</mml:mi><mml:mo>=</mml:mo><mml:mn>2</mml:mn></mml:math></inline-formula> mode is more strongly supported than in previous nonorthogonal analyses, with the inferred significance increasing from 86.2% to 99.9%. Furthermore, we estimate deviations from the Kerr prediction using the orthonormal QNM framework and find no significant deviation, consistent with previous analyses. These results demonstrate that the orthonormal QNM framework provides a more robust way to identify subdominant modes in high-SNR ringdown signals, highlighting its potential for future gravitational wave observations.",
+        "categories": [
+          "gr-qc",
+          "General relativity",
+          "alternative theories of gravity",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114d4099S/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2605.03576",
+        "doi": "10.1103/6x5z-q9ml",
+        "external_ids": {
+          "ads": "2026PhRvD.114d4099S",
+          "arxiv": "2605.03576",
+          "doi": "10.1103/6x5z-q9ml"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "edge",
+        "reason": "论文聚焦于引力波事件本身的振铃信号分析，属于引力波天文学与基础物理检验，与高能暂现源（如GRB、磁星、FRB等）及其电磁对应体没有直接联系，仅作为引力波事件背景提及，与团队目标无实质关联。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题为'Ringdown analysis of GW250114 with orthonormal modes'，摘要讨论LIGO-Virgo-KAGRA观测到的引力波事件GW250114的振铃分析，使用正交化QNM框架识别次主导模式，并估计与Kerr预言的偏差。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114d4099S",
+        "title_zh": "基于正交模的GW250114振铃分析",
+        "team": "",
+        "tldr": "该论文用正交化准正则模框架分析GW250114事件，发现其第一泛音支持度从86.2%提升至99.9%，且未发现与Kerr预测的显著偏差。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-05-05",
+        "accepted": "",
+        "published": "2026-08-26",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-05-14",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-05-05",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026Symm...18.1329T",
+        "source": "ads",
+        "title": "Testing f(R) Gravity Using Gravitational-Wave Signals from Binary Mergers",
+        "authors": [
+          "Torri, Marco Danilo Claudio"
+        ],
+        "abstract": "Recently, several studies have investigated the validity of General Relativity's predictions. Gravitational waves provide an ideal probe for testing the theory in the strong-field regime. In this work, we consider a class of modified-gravity theories, specifically <inline-formula><mml:math><mml:semantics><mml:mrow><mml:mi>f</mml:mi><mml:mo>(</mml:mo><mml:mi>R</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula>, and scrutinize their predictions for the gravitational-wave emission from the coalescence of two astrophysical compact objects. We also assess the impact of next-generation gravitational-wave detectors on the ability to test these extensions of General Relativity.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE",
+          "extended theories of gravity",
+          "f(R) theories",
+          "gravitational waves",
+          "binary merger",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Astrophysical Phenomena"
+        ],
+        "published": "2026-09-03",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026Symm...18.1329T/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2608.21432",
+        "doi": "10.3390/sym18081329",
+        "external_ids": {
+          "ads": "2026Symm...18.1329T",
+          "arxiv": "2608.21432",
+          "doi": "10.3390/sym18081329"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 55,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "论文主要检验修正引力理论，虽使用引力波信号但未涉及电磁对应体或多信使联合观测，与团队高能暂现目标为间接相关。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题明确涉及引力波信号与双星并合，摘要讨论f(R)引力理论对引力波辐射的预测及下一代探测器测试能力。"
+      },
+      "summary": {
+        "paper_id": "ads:2026Symm...18.1329T",
+        "title_zh": "利用双致密天体并合引力波信号检验 f(R) 引力理论",
+        "team": "",
+        "tldr": "本文在 f(R) 引力框架下统一处理双星并合的引力波产生与色散传播效应，并通过 Fisher 模拟比较下一代探测器不同几何布局对色散参数与标量质量的约束能力。",
+        "review": "",
+        "highlight": "首次将 f(R) 引力波产生与传播效应统一到色散参数 β 的波形框架，直接连接具体模型参数与第三代探测器灵敏度；2 万次蒙特卡洛模拟揭示 ET 三角布局与地理分离双 L 布局的互补性：双 L 对色散/标量质量约束平均更优，三角布局对呼吸极化重建更好。",
+        "relation": "",
+        "authors_en": "M.D.C. Torri (Dipartimento di Fisica, Università degli Studi di Milano)",
+        "corresponding_en": "Marco Danilo Claudio Torri",
+        "context_outlook": "过去关于 f(R) 引力波的研究常分散处理有质量标量模式的产生、传播或探测器响应：[[Capozziello+ 2008]] 早期提出 LISA 可能探测 f(R) 有质量引力波，[[Sotiriou+ 2014]] 表明黑洞无毛使中子星系统成为更现实的标量发射探针，而 [[Abbott+ 2017]] 的多信使约束进一步压缩了许多替代理论但 f(R) 仍留有空间；[[Branchesi+ 2023]] 等系统比较了 ET 不同设计的一般科学能力。本文将这些生成与传播效应统一到色散参数 β 的 Fisher 框架，并量化了下一代探测器几何布局的互补性。展望未来，完整网络 Fisher 分析结合 [[Punturo+ 2010]] 提出的爱因斯坦望远镜及 LISA 多波段观测，有望改善参数简并、进一步约束标量子质量，并为针对不同修正引力签名优化探测器网络提供物理依据。",
+        "citations": [
+          {
+            "label": "Capozziello+ 2008",
+            "authors": "Capozziello",
+            "year": "2008",
+            "title": "Massive gravitational waves from f(R) theories of gravity: Potential detection with LISA",
+            "ref": "S. Capozziello, C. Corda and M. F. De Laurentis, \"Massive gravitational waves from f(R) theories of gravity: Potential detection with LISA,\" Phys. Lett. B 669 (2008), 255-259 doi:10.1016/j.physletb.2008.10.001 [arXiv:0812.2272 [astro-ph]].",
+            "arxiv": "",
+            "doi": "10.1016/j.physletb.2008.10.001",
+            "bibcode": "",
+            "url": "https://doi.org/10.1016/j.physletb.2008.10.001",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Sotiriou+ 2014",
+            "authors": "Sotiriou",
+            "year": "2014",
+            "title": "Black hole hair in generalized scalar-tensor gravity",
+            "ref": "T. P. Sotiriou and S. Y. Zhou, \"Black hole hair in generalized scalar-tensor gravity,\" Phys. Rev. Lett. 112 (2014), 251102 doi:10.1103/PhysRevLett.112.251102 [arXiv:1312.3622 [gr-qc]].",
+            "arxiv": "1312.3622",
+            "doi": "10.1103/PhysRevLett.112.251102",
+            "bibcode": "2014PhRvL.112y1102S",
+            "url": "https://arxiv.org/abs/1312.3622",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Abbott+ 2017",
+            "authors": "Abbott",
+            "year": "2017",
+            "title": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+            "ref": "B. P. Abbott et al. [LIGO Scientific and Virgo], \"GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral,\" Phys. Rev. Lett. 119 (2017) no.16, 161101 doi:10.1103/PhysRevLett.119.161101 [arXiv:1710.05832 [gr-qc]].",
+            "arxiv": "1710.05832",
+            "doi": "10.1103/PhysRevLett.119.161101",
+            "bibcode": "2017PhRvL.119p1101A",
+            "url": "https://arxiv.org/abs/1710.05832",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Branchesi+ 2023",
+            "authors": "Branchesi",
+            "year": "2023",
+            "title": "Science with the Einstein Telescope: a comparison of different designs",
+            "ref": "M. Branchesi, M. Maggiore, D. Alonso, C. Badger, B. Banerjee, F. Beirnaert, E. Belgacem, S. Bhagwat, G. Boileau and S. Borhanian, et al. \"Science with the Einstein Telescope: a comparison of different designs,\" JCAP 07 (2023), 068 doi:10.1088/1475-7516/2023/07/068 [arXiv:2303.15923 [gr-qc]].",
+            "arxiv": "2303.15923",
+            "doi": "10.1088/1475-7516/2023/07/068",
+            "bibcode": "2023JCAP...07..068B",
+            "url": "https://arxiv.org/abs/2303.15923",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Punturo+ 2010",
+            "authors": "Punturo",
+            "year": "2010",
+            "title": "The Einstein Telescope: A third-generation gravitational wave observatory",
+            "ref": "M. Punturo, M. Abernathy, F. Acernese, B. Allen, N. Andersson, K. Arun, F. Barone, B. Barr, M. Barsuglia and M. Beker, et al. \"The Einstein Telescope: A third-generation gravitational wave observatory,\" Class. Quant. Grav. 27 (2010), 194002 doi:10.1088/0264-9381/27/19/194002.",
+            "arxiv": "",
+            "doi": "10.1088/0264-9381/27/19/194002",
+            "bibcode": "2010CQGra..27s4002P",
+            "url": "https://doi.org/10.1088/0264-9381/27/19/194002",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "2026-08-17",
+        "accepted": "",
+        "published": "2026-08-06",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "",
+        "ingested": "2026-09-06"
+      },
+      "archive_date": "2026-08-06",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该工作是基于 Fisher 与蒙特卡洛模拟的纯理论可观测性预测，评估下一代探测器对 f(R) 参数的约束潜力，未经真实数据验证，也未产生新探测或对应体结果，属于常规增量方法研究而非领域级重大进展。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-06"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    }
+  ]
+}
