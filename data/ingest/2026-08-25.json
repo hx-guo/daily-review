@@ -1758,8 +1758,10 @@
         "published": "2026-08-22",
         "url": "https://arxiv.org/abs/2608.22051v1",
         "pdf_url": "https://arxiv.org/pdf/2608.22051v1",
-        "doi": null,
+        "doi": "10.1016/j.jheap.2026.100736",
         "external_ids": {
+          "ads": "2027JHEAp..5500736B",
+          "doi": "10.1016/j.jheap.2026.100736",
           "arxiv": "2608.22051"
         },
         "pubdate": ""
@@ -1859,9 +1861,9 @@
       "dates": {
         "preprint": "2026-08-22",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-22",
+        "published_precision": "day",
+        "published_source": "crossref-created",
         "received": "",
         "ingested": "2026-08-25"
       },

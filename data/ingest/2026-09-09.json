@@ -14978,9 +14978,10 @@
         "published": "2026-09-08",
         "url": "https://arxiv.org/abs/2609.09026v1",
         "pdf_url": "https://arxiv.org/pdf/2609.09026v1",
-        "doi": null,
+        "doi": "10.5281/zenodo.22663067",
         "external_ids": {
-          "arxiv": "2609.09026"
+          "arxiv": "2609.09026",
+          "doi": "10.5281/zenodo.22663067"
         },
         "pubdate": ""
       },
