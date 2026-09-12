@@ -1,0 +1,547 @@
+{
+  "ingested": "2026-09-12",
+  "items": [
+    {
+      "paper": {
+        "id": "ads:2018NPNew..28...12R",
+        "source": "ads",
+        "title": "Photonuclear Reactions in Astrophysics",
+        "authors": [
+          "Rauscher, T."
+        ],
+        "abstract": "Nucleosynthesis in stars and stellar explosions proceeds via nuclear reactions in thermalized plasmas. Nuclear reactions not only transmutate elements and their isotopes, and thus create all known elements from primordial hydrogen and helium, they also release energy to keep stars in hydrostatic equilibrium over astronomical timescales. A stellar plasma has to be hot enough to provide sufficient kinetic energy to the plasma components to overcome Coulomb barriers and to allow interactions between them. Plasma components in thermal equilibrium are bare atomic nuclei, free electrons, and photons (radiation). Typical temperatures of plasmas experiencing nuclear burning range from 10<SUP>7</SUP> K for hydrostatic hydrogen burning (mainly interactions among protons and He isotopes) to 10<SUP>10</SUP> K or more in explosive events, such as supernovae or neutron star mergers. This still translates into low interaction energies by nuclear physics standards, as the most probable energy E between reaction partners in terms of temperature is derived from Maxwell-Boltzmann statistics and yields E = T<SUB>9</SUB>/11.6045 MeV, where T<SUB>9</SUB> is the plasma temperature in GK.",
+        "categories": [
+          "astro-ph.HE",
+          "nucl-ex",
+          "nucl-th",
+          "Astrophysics - High Energy Astrophysical Phenomena",
+          "Nuclear Experiment",
+          "Nuclear Theory"
+        ],
+        "published": "2026-09-10",
+        "url": "https://ui.adsabs.harvard.edu/abs/2018NPNew..28...12R/abstract",
+        "pdf_url": "https://arxiv.org/pdf/1803.10581",
+        "doi": "10.1080/10619127.2018.1463016",
+        "external_ids": {
+          "ads": "2018NPNew..28...12R",
+          "arxiv": "1803.10581",
+          "doi": "10.1080/10619127.2018.1463016"
+        },
+        "pubdate": "2018-07-00"
+      },
+      "score": {
+        "score": 10,
+        "tags": [
+          "核合成",
+          "恒星爆炸",
+          "中子星并合"
+        ],
+        "layer": "edge",
+        "reason": "论文主要关注核天体物理中的光核反应，仅将中子星并合作为背景示例，与高能暂现源研究团队的直接目标无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要讨论恒星和恒星爆炸中的核合成，提及超新星或中子星并合等爆炸事件，但未涉及具体高能暂现源观测或任务数据。"
+      },
+      "summary": {
+        "paper_id": "ads:2018NPNew..28...12R",
+        "title_zh": "天体物理中的光核反应",
+        "team": "",
+        "tldr": "本文概述了恒星及恒星爆炸中热等离子体环境下的核合成过程，强调光核反应在元素生成和能量释放中的作用，并讨论了不同温度下的反应能量尺度。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "",
+        "accepted": "",
+        "published": "2018-09-12",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "",
+        "ingested": "2026-09-12"
+      },
+      "archive_date": "2018-09-12",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2025PhRvX..15c1048K",
+        "source": "ads",
+        "title": "Multimessenger Search for Exotic Field Emission with a Global Magnetometer Network",
+        "authors": [
+          "Khamis, Sami S.",
+          "Sulai, Ibrahim A.",
+          "Hamilton, Paul",
+          "Afach, S.",
+          "Buchler, B. C.",
+          "Budker, D.",
+          "Figueroa, N. L.",
+          "Folman, R.",
+          "Gavilán-Martín, D.",
+          "Givon, M.",
+          "Grujić, Z. D.",
+          "Guo, H.",
+          "Hedges, M. P.",
+          "Kimball, D. F. Jackson",
+          "Kim, D.",
+          "Klinger, E.",
+          "Kornack, T.",
+          "Kryemadhi, A.",
+          "Kukowski, N.",
+          "Łukasiewicz, G.",
+          "Masia-Roig, H.",
+          "Padniuk, M.",
+          "Palm, C. A.",
+          "Park, S. Y.",
+          "Peng, X.",
+          "Pospelov, M.",
+          "Pustelny, S.",
+          "Rosenzweig, Y.",
+          "Ruimi, O. M.",
+          "Segura, P. C.",
+          "Scholtes, T.",
+          "Semertzidis, Y. K.",
+          "Shin, Y. C.",
+          "Stalnaker, J. E.",
+          "Tandon, D.",
+          "Weis, A.",
+          "Wickenbrock, A.",
+          "Wilson, T. Z.",
+          "Wu, T.",
+          "Zhang, J.",
+          "Zhao, Y."
+        ],
+        "abstract": "The history of astronomy has shown that advances in sensing methods open up new windows to the Universe and often lead to unexpected discoveries. Quantum sensor networks in combination with traditional astronomical observations are emerging as a novel modality for multimessenger astronomy. Here we develop a generic analysis framework that uses a data-driven approach to model the sensitivity of a quantum sensor network to astrophysical signals as a consequence of beyond-the-standard model (BSM) physics. The analysis method evaluates correlations between sensors to search for BSM signals coincident with astrophysical triggers, such as black hole mergers, supernovae, or fast radio bursts. Complementary to astroparticle approaches that search for particlelike signals (e.g., weakly interacting massive particles), quantum sensors are sensitive to wavelike signals from exotic quantum fields. This analysis method can be applied to networks of different types of quantum sensors, such as atomic clocks, matter-wave interferometers, and nuclear clocks, which can probe many types of interactions between BSM fields and standard model particles. We use this analysis method to carry out the first direct search utilizing a terrestrial network of precision quantum sensors for BSM fields emitted during a black hole merger. Specifically, we use the global network of optical magnetometers for exotic physics (GNOME) to perform a search for exotic low-mass field (ELF) bursts generated in coincidence with a gravitational-wave signal from a binary black hole merger (GW200311_115853) detected by LIGO/Virgo on the March 11, 2020. The associated gravitational wave heralds the arrival of the ELF burst that interacts with the spins of fermions in the magnetometers. This enables GNOME to serve as a tool for multimessenger astronomy. Our search found no significant events and, consequently, we place the first lab-based limits on combinations of ELF production and coupling parameters.",
+        "categories": [
+          "astro-ph.HE",
+          "astro-ph.IM",
+          "hep-ex",
+          "physics.atom-ph",
+          "quant-ph",
+          "High Energy Astrophysical Phenomena",
+          "Instrumentation and Methods for Astrophysics",
+          "High Energy Physics - Experiment",
+          "Atomic Physics",
+          "Quantum Physics"
+        ],
+        "published": "2026-09-10",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025PhRvX..15c1048K/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2407.13919",
+        "doi": "10.1103/fsc8-6sl5",
+        "external_ids": {
+          "ads": "2025PhRvX..15c1048K",
+          "arxiv": "2407.13919",
+          "doi": "10.1103/fsc8-6sl5"
+        },
+        "pubdate": "2025-07-00"
+      },
+      "score": {
+        "score": 55,
+        "tags": [
+          "多信使触发与联合"
+        ],
+        "layer": "related",
+        "reason": "论文提供了一种可迁移的多信使搜索方法，但主要目标是奇异场（BSM）物理，与团队核心的电磁暂现源研究间接相关。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "摘要中开发了通用分析框架，搜索与天体物理触发（如黑洞并合、超新星、快速射电暴）同时发生的BSM信号，并利用GNOME网络对GW200311_115853进行搜索，声称GNOME可作为多信使天文学工具。"
+      },
+      "summary": {
+        "paper_id": "ads:2025PhRvX..15c1048K",
+        "title_zh": "利用全球磁强计网络对奇异场发射的多信使搜索",
+        "team": "",
+        "tldr": "开发并应用数据驱动的量子传感器网络分析流水线，利用 GNOME 对黑洞并合 GW200311_115853 进行了首次奇异低质量场（ELF）爆发搜索，未发现显著信号并给出首个实验室极限。",
+        "review": "",
+        "highlight": "首次用全球光学磁强计网络作为多信使天文工具，对真实黑洞并合事件的 ELF 发射进行直接搜索；自适应谱图分块+时间平移+似然比检验的组合建立了可推广到其他量子传感器网络的通用框架。",
+        "relation": "",
+        "authors_en": "S. S. Khamis (Department of Physics and Astronomy, University of California, Los Angeles, California 90095, USA), I. A. Sulai (Department of Physics and Astronomy, Bucknell University, Lewisburg, Pennsylvania 17837, USA), P. Hamilton (Department of Physics and Astronomy, University of California, Los Angeles, California 90095, USA) et al.",
+        "corresponding_en": "Sami S. Khamis",
+        "context_outlook": "在 [[Dailey+ 2021]] 提出把量子传感器网络用作‘奇异场望远镜’、利用天体物理触发信号对齐 ELF 波包的思路之后，本文将其落地为可操作的数据驱动流水线：自适应谱图分块匹配啁啾、过功率粗筛、似然比检验和 Feldman-Cousins 置信带，并以 GW200311_115853 这一黑洞并合事件为真实触发进行了首次地面网络搜索。与 [[Sen+ 2024]] 用 GPS 原子钟网络分析 GW170817 时因太阳电子通量干扰而未能给出约束不同，本文在无显著候选后得到了首个实验室尺度的 ELF 产生-耦合参数上限。随着 [[Afach+ 2023]] 所述 Advanced GNOME 共磁强计升级以及更多引力波/快速射电暴触发的积累，该方法有望把灵敏度推进到间接天体物理界限之外，并可能发展为无触发全天搜索，使量子传感器网络成为真正可定位的多信使‘望远镜’。",
+        "citations": [
+          {
+            "label": "Dailey+ 2021",
+            "authors": "Dailey",
+            "year": "2021",
+            "title": "Quantum sensor networks as exotic field telescopes for multi-messenger astronomy.",
+            "ref": "C. Dailey et al.\nQuantum sensor networks as exotic field telescopes for\nmulti-messenger astronomy.\nNature Astronomy\n, 5(2):150–158, Feb 2021.",
+            "arxiv": "2002.04352",
+            "doi": "10.1038/s41550-020-01242-7",
+            "bibcode": "2021NatAs...5..150D",
+            "url": "https://arxiv.org/abs/2002.04352",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Sen+ 2024",
+            "authors": "Sen",
+            "year": "2024",
+            "title": "Multi-messenger astronomy in the new physics modality with GPS constellation.",
+            "ref": "Arko P Sen, Kalia Pfeffer, Paul Ries, Geoff Blewitt, and Andrei Derevianko.\nMulti-messenger astronomy in the new physics modality with GPS\nconstellation.\nIn\nJournal of Physics: Conference Series\n, volume 2889, page\n012003, 2024.",
+            "arxiv": "2312.12752",
+            "doi": "10.1088/1742-6596/2889/1/012003",
+            "bibcode": "2024JPhCS2889a2003S",
+            "url": "https://arxiv.org/abs/2312.12752",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Afach+ 2023",
+            "authors": "Afach",
+            "year": "2023",
+            "title": "What can a GNOME do? Search targets for the global network of optical magnetometers for exotic physics searches.",
+            "ref": "S. Afach et al.\nWhat can a GNOME do? Search targets for the global network of\noptical magnetometers for exotic physics searches.\nAnnalen der Physik\n, 531(1):2300083, 2023.",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "",
+        "accepted": "",
+        "published": "2025-08-20",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2024-07-22",
+        "ingested": "2026-09-12"
+      },
+      "archive_date": "2025-08-20",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "摘要明确表明搜索未发现显著事件，仅为对GW200311_115853的首次奇异低质量场搜索的零结果并给出实验室参数上限，属方法首次应用而非探测突破或显著改变科学认识与观测能力的领域级进展。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-12"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026ChPhC..50h5102D",
+        "source": "ads",
+        "title": "Origin of quasi-periodic oscillations and accretion process in X-ray binaries around quantum Lee-Wick black hole",
+        "authors": [
+          "Donmez, Orhan",
+          "Mustafa, G.",
+          "Yousaf, M.",
+          "Javed, Faisal",
+          "Saidov, Ikhtiyor",
+          "Atamurotov, Farruh"
+        ],
+        "abstract": "In this study, we investigate the accretion dynamics and test particle motion around a non-rotating, spherically symmetric Lee-Wick black hole (BH) to reveal how the model parameters affect orbital stability and the quasi-periodic oscillations (QPOs) observed in X-ray binary systems. In this work, we deliberately explore parameter values both within the admissible region defined by <inline-formula> <tex-math>$ S_2 \\gt 0 $</tex-math> </inline-formula> and <inline-formula> <tex-math>$ -2\\sqrt{S_2} \\lt S_1 \\lt 2\\sqrt{S_2} $</tex-math> </inline-formula> and beyond this constraint to investigate the effect of Lee-Wick gravity. The spacetime geometry, characterized by the BH mass and the coupling parameters <inline-formula> <tex-math>$ S_1 $</tex-math> </inline-formula> and <inline-formula> <tex-math>$ S_2 $</tex-math> </inline-formula>, includes exponential and oscillatory corrections arising from the Lee-Wick terms. Using the effective potential approach, we derive specific energy, angular momentum, epicyclic frequencies, and the locations of the innermost stable circular orbits (ISCOs) of test particles. In addition to the analytical analysis, we explore the effects of the Lee-Wick spacetime parameters on the shock-cone morphology produced by Bondi-Hoyle-Lyttleton (BHL) accretion. To this end, we perform general relativistic hydrodynamic simulations in two characteristic regimes: Block-1 (weak Lee-Wick regime) and Block-2 (strong Lee-Wick regime). The results show that Block-1 solutions closely resemble the Schwarzschild case, while Block-2 models develop denser and asymmetric shock cones accompanied by stronger QPO activity, shifting from low-frequency to high-frequency QPOs. These variations yield distinct observational signatures that may be detectable in high-resolution X-ray timing data. Our analytical and numerical findings demonstrate that the Lee-Wick parameters <inline-formula> <tex-math>$ S_1 $</tex-math> </inline-formula> and <inline-formula> <tex-math>$ S_2 $</tex-math> </inline-formula> cause measurable changes in the morphology of the accretion flow and in the frequency ratios near the BH. This suggests that future multi-wavelength observations could provide an important avenue to test higher-derivative gravity theories.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE",
+          "circular orbits",
+          "particle motion",
+          "shock cone oscillations",
+          "quasi-periodic oscillations",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Astrophysical Phenomena"
+        ],
+        "published": "2026-09-10",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026ChPhC..50h5102D/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2512.17358",
+        "doi": "10.1088/1674-1137/ae6632",
+        "external_ids": {
+          "ads": "2026ChPhC..50h5102D",
+          "arxiv": "2512.17358",
+          "doi": "10.1088/1674-1137/ae6632"
+        },
+        "pubdate": "2026-08-00"
+      },
+      "score": {
+        "score": 55,
+        "tags": [
+          "X 射线双星与吸积致密天体",
+          "QPO"
+        ],
+        "layer": "related",
+        "reason": "论文主要贡献是修改引力理论对吸积流和 QPO 的理论建模，与团队观测目标间接相关，属于可迁移的理论背景。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要中明确研究 X 射线双星中观测到的准周期振荡（QPOs）以及 Lee-Wick 黑洞周围的吸积动力学，并讨论高分辨率 X 射线定时数据的可探测特征。"
+      },
+      "summary": {
+        "paper_id": "ads:2026ChPhC..50h5102D",
+        "title_zh": "量子 Lee-Wick 黑洞周围 X 射线双星准周期振荡起源与吸积过程",
+        "team": "",
+        "tldr": "用广义相对论流体模拟研究非旋转 Lee-Wick 黑洞的轨道动力学和 BHL 吸积，揭示耦合参数 S1、S2 对激波锥形态与 QPO 频率的影响。",
+        "review": "",
+        "highlight": "首次将 Lee-Wick 高阶导数引力参数与 BHL 激波锥形态及 QPO 从低频到高频的转变联系起来，数值得到的 3:2、2:1 共振比与 GRO J1655-40、XTE J1550-564、GRS 1915+105 等观测吻合。",
+        "relation": "",
+        "authors_en": "O. Donmez (College of Engineering and Technology, American University of the Middle East, Egaila 54200, Kuwait), G. Mustafa (Department of Physics, Zhejiang Normal University, Jinhua 321004, China), M. Yousaf (Department of Mathematics, Virtual University of Pakistan, 54-Lawrence Road, Lahore 54000, Pakistan), et al.",
+        "corresponding_en": "",
+        "context_outlook": "Lee-Wick 引力利用复共轭极点保持幺正，[[Bambi+ 2017]] 构造了相应规则黑洞度规，后续 [[Burzillà+ 2023]]、[[Batic+ 2024]] 对视界结构、准正则模和热力学开展了分析。本文承接 [[Donmez+ 2024]] 的 BHL 激波锥数值框架，将该度规放入广义相对论流体模拟，把有效势、ISCO、外流振荡与 PSD 相结合，系统研究 S1、S2 对吸积形态和 QPO 的影响。结果表明弱 Lee-Wick 区接近 Schwarzschild，而强振荡区产生宽非对称激波锥和弓形激波，QPO 从低频向高频转变，并自然出现 3:2、2:1 等共振比，呼应 [[Kluzniak+ 2005]]、[[Remillard+ 2006]] 所讨论的观测特征。随着 eXTP、STROBE-X、Athena 等高时间分辨率任务 [[Zhang+ 2025]]、[[Froning+ 2024]] 的推进，这类参数依赖的时序特征有望为高阶导数量子引力提供可检验的观测通道。",
+        "citations": [
+          {
+            "label": "Bambi+ 2017",
+            "authors": "Bambi",
+            "year": "2017",
+            "title": "",
+            "ref": "C. Bambi, L. Modesto, and Y. Wang, Phys. Lett. B 764, 306 (2017).",
+            "arxiv": "1509.03884",
+            "doi": "10.1103/RevModPhys.89.025001",
+            "bibcode": "2017RvMP...89b5001B",
+            "url": "https://arxiv.org/abs/1509.03884",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Burzillà+ 2023",
+            "authors": "Burzillà",
+            "year": "2023",
+            "title": "",
+            "ref": "N. Burzillà, B. L. Giacchini, T. de Paula Netto, and L. Modesto, JCAP 11, 067 (2023).",
+            "arxiv": "",
+            "doi": "10.1088/1475-7516/2023/11/067",
+            "bibcode": "",
+            "url": "https://doi.org/10.1088/1475-7516/2023/11/067",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Batic+ 2024",
+            "authors": "Batic",
+            "year": "2024",
+            "title": "",
+            "ref": "D. Batic, D. Dutykh, B. L. Giacchini.: Physical Review D, 110(8)(2024)084032.",
+            "arxiv": "2406.03353",
+            "doi": "10.1140/epjc/s10052-024-12981-6",
+            "bibcode": "2024EPJC...84..622B",
+            "url": "https://arxiv.org/abs/2406.03353",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Donmez+ 2024",
+            "authors": "Donmez",
+            "year": "2024",
+            "title": "",
+            "ref": "O. Donmez and Dogan, F.: Phys. Dark Universe 46 (2024)101718.",
+            "arxiv": "2311.08388",
+            "doi": "10.1140/epjc/s10052-024-12876-6",
+            "bibcode": "2024EPJC...84..524D",
+            "url": "https://arxiv.org/abs/2311.08388",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Kluzniak+ 2005",
+            "authors": "Kluzniak",
+            "year": "2005",
+            "title": "",
+            "ref": "W. Kluzniak and M. A. Abramowicz, Astrophysics and Space Science 300 143-148 (2005).",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Remillard+ 2006",
+            "authors": "Remillard",
+            "year": "2006",
+            "title": "",
+            "ref": "R. A. Remillard and J. E. McClintock.: Ann. Rev. Astron. Astrophys. 44(2006)49-92.",
+            "arxiv": "astro-ph/0606352",
+            "doi": "10.1146/annurev.astro.44.051905.092532",
+            "bibcode": "2006ARA&A..44...49R",
+            "url": "https://arxiv.org/abs/astro-ph/0606352",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Zhang+ 2025",
+            "authors": "Zhang",
+            "year": "2025",
+            "title": "",
+            "ref": "S. N. Zhang, A. Santangelo, Y. Xu, et al.: Mech. Astron. 68, 119502 (2025). https://doi.org/10.1007/s11433-025-2786-6",
+            "arxiv": "",
+            "doi": "",
+            "bibcode": "",
+            "url": "",
+            "source": "",
+            "verified": false
+          },
+          {
+            "label": "Froning+ 2024",
+            "authors": "Froning",
+            "year": "2024",
+            "title": "STROBE-X: capturing the universe in motion",
+            "ref": "C. S. Froning, et al. STROBE-X: capturing the universe in motion, Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series 2024. https://doi.org/10.1117/12.3020140",
+            "arxiv": "",
+            "doi": "10.1117/12.3020140",
+            "bibcode": "2024SPIE13093E..29F",
+            "url": "https://doi.org/10.1117/12.3020140",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "",
+        "accepted": "",
+        "published": "2026-04-29",
+        "published_precision": "day",
+        "published_source": "crossref-created",
+        "received": "2026-03-03",
+        "ingested": "2026-09-12"
+      },
+      "archive_date": "2026-04-29",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该文是对修改引力（Lee-Wick）黑洞吸积与 QPO 的纯理论建模与数值模拟，摘要仅提出未来观测可能检验该理论的预测性签名，未提供任何真实观测数据验证或突破性结果。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-12"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "ads:2026PhRvD.114f3006Z",
+        "source": "ads",
+        "title": "Novel method to construct frequency-domain gravitational waveforms for accelerating sources",
+        "authors": [
+          "Zhao, Xinmiao",
+          "Yan, Han",
+          "Chen, Xian"
+        ],
+        "abstract": "Accurately modeling the inspiral-merger-ringdown (IMR) signal of coalescing compact objects is essential for the test of general relativity. However, it is known that astrophysical environments can distort gravitational-wave (GW) signal and, if ignored, may bias parameter estimation or even our understanding of gravity. Previous studies suggest that the leading-order effects of many astrophysical environments can be modeled in a unified way by introducing an effective acceleration. However, such models are based on stationary phase approximation (SPA) and post-Newtonian (PN) formalism, which are inconsistent with the fast orbital evolution and strong gravity in the final merger-ringdown phase. To overcome this limit, we introduce frequency-domain spectral differentiation (FSD), which maps the time shift of the signal caused by acceleration into a differentiation in the frequency domain. The mapping does not rely on SPA or PN formalism, therefore can be used to construct the accelerated waveform across the entire IMR phases. We compare the FSD waveforms with the conventional <inline-formula><mml:math><mml:mrow><mml:mi>SPA</mml:mi><mml:mo>+</mml:mo><mml:mi>PN</mml:mi></mml:mrow></mml:math></inline-formula> ones, and find that the former more faithfully match the simulated signals of accelerating sources, especially in the merger-ringdown phase and when higher-order FSD corrections are included. A Fisher information matrix analysis suggests that FSD waveforms can achieve higher precision than <inline-formula><mml:math><mml:mrow><mml:mi>SPA</mml:mi><mml:mo>+</mml:mo><mml:mi>PN</mml:mi></mml:mrow></mml:math></inline-formula> waveforms in measuring effective acceleration. Therefore, the FSD method offers a more self-consistent treatment of the accelerationlike class of astrophysical environmental effects in the final merger-ringdown phase of binary GW sources.",
+        "categories": [
+          "astro-ph.HE",
+          "gr-qc",
+          "Astrophysics and astroparticle physics",
+          "High Energy Astrophysical Phenomena",
+          "General Relativity and Quantum Cosmology"
+        ],
+        "published": "2026-09-10",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026PhRvD.114f3006Z/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2604.00253",
+        "doi": "10.1103/swkb-nkgg",
+        "external_ids": {
+          "ads": "2026PhRvD.114f3006Z",
+          "arxiv": "2604.00253",
+          "doi": "10.1103/swkb-nkgg"
+        },
+        "pubdate": "2026-09-00"
+      },
+      "score": {
+        "score": 85,
+        "tags": [
+          "引力波电磁对应体",
+          "多信使触发与联合"
+        ],
+        "layer": "core",
+        "reason": "论文提出新的引力波波形构建方法，直接提升团队对引力波事件及多信使后随观测的分析能力。",
+        "relation": "enabling",
+        "core_path": "method",
+        "evidence": "标题为“Novel method to construct frequency-domain gravitational waveforms for accelerating sources”，摘要提出FSD方法，可构造整个IMR阶段的加速波形，并在测量有效加速度上比SPA+PN更精确。"
+      },
+      "summary": {
+        "paper_id": "ads:2026PhRvD.114f3006Z",
+        "title_zh": "构建加速源频域引力波形的新方法",
+        "team": "",
+        "tldr": "提出频域谱微分（FSD）方法，将加速度引起的时域伸缩映射为频域导数，无需稳态相位/后牛顿近似即可构建全 IMR 加速源波形。",
+        "review": "",
+        "highlight": "FSD 不依赖 SPA/PN，可在并合–铃铛阶段更忠实地建模加速度效应；高阶 FSD 展开可显著提升吸气阶段精度，比传统 SPA+PN 方法更接近时间域拉伸基准。",
+        "relation": "",
+        "authors_en": "X. Zhao (Department of Astronomy, School of Physics, Peking University, Beijing 100871, People’s Republic of China), H. Yan (Department of Astronomy, School of Physics, Peking University, Beijing 100871, People’s Republic of China), X. Chen (Department of Astronomy, School of Physics, Peking University, Beijing 100871, People’s Republic of China; Kavli Institute for Astronomy and Astrophysics, Peking University, Beijing 100871, People’s Republic of China)",
+        "corresponding_en": "Xian Chen",
+        "context_outlook": "以往研究已尝试将多种天体物理环境影响统一为有效加速度，并借助稳态相位近似（SPA）与后牛顿（PN）展开的解析相位修正建模（[[Chamberlain+ 2019]]、[[Vijaykumar+ 2023]]、[[Lazarow+ 2024]]）。本文提出频域谱微分（FSD），把加速度引起的时域伸缩映射为频域导数，不依赖 SPA 或 PN，因此可直接作用于 IMRPhenomXPHM、SEOBNRv5PHM 等完整 IMR 模板（[[Pratten+ 2021]]）。与时间域拉伸基准相比，FSD 在并合–铃铛阶段更准确，高阶展开可进一步改善吸气和低频精度。展望上，该方法为未来数值相对论模板、偏心率与旋进波形以及空间探测器的周期加速场景提供了可扩展的统一框架，有助于在强场检验中分离环境效应与真实非广义相对论信号。",
+        "citations": [
+          {
+            "label": "Chamberlain+ 2019",
+            "authors": "Chamberlain",
+            "year": "2019",
+            "title": "",
+            "ref": "K. Chamberlain, C. J. Moore, D. Gerosa, and N. Yunes, Phys. Rev. D 99, 024025 (2019).",
+            "arxiv": "",
+            "doi": "10.1103/physrevd.99.024025",
+            "bibcode": "",
+            "url": "https://doi.org/10.1103/physrevd.99.024025",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Vijaykumar+ 2023",
+            "authors": "Vijaykumar",
+            "year": "2023",
+            "title": "",
+            "ref": "A. Vijaykumar, A. Tiwari, S. J. Kapadia, K. G. Arun, and P. Ajith, ApJ 954, 105 (2023).",
+            "arxiv": "",
+            "doi": "10.3847/1538-4357/acd77d",
+            "bibcode": "",
+            "url": "https://doi.org/10.3847/1538-4357/acd77d",
+            "source": "crossref",
+            "verified": true
+          },
+          {
+            "label": "Lazarow+ 2024",
+            "authors": "Lazarow",
+            "year": "2024",
+            "title": "",
+            "ref": "M. Lazarow, N. Leslie, and L. Dai, Phys. Rev. D 110, 083008 (2024).",
+            "arxiv": "2401.04175",
+            "doi": "10.1103/PhysRevD.110.083008",
+            "bibcode": "2024PhRvD.110h3008L",
+            "url": "https://arxiv.org/abs/2401.04175",
+            "source": "ads",
+            "verified": true
+          },
+          {
+            "label": "Pratten+ 2021",
+            "authors": "Pratten",
+            "year": "2021",
+            "title": "",
+            "ref": "G. Pratten, C. García-Quirós, M. Colleoni, A. Ramos-Buades, H. Estellés, M. Mateu-Lucena, R. Jaume, M. Haney, D. Keitel, J. E. Thompson, and S. Husa, Phys. Rev. D 103, 104056 (2021).",
+            "arxiv": "2004.06503",
+            "doi": "10.1103/PhysRevD.103.104056",
+            "bibcode": "2021PhRvD.103j4056P",
+            "url": "https://arxiv.org/abs/2004.06503",
+            "source": "ads",
+            "verified": true
+          }
+        ]
+      },
+      "dates": {
+        "preprint": "",
+        "accepted": "",
+        "published": "2026-09-04",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-04-07",
+        "ingested": "2026-09-12"
+      },
+      "archive_date": "2026-09-04",
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "该论文提出频域谱微分（FSD）波形构建方法，但仅通过与模拟信号比较和 Fisher 矩阵分析验证，未经真实观测数据检验，属于方法学上的有意义增量进展，不构成改变领域认识的重大突破。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-12"
+      },
+      "review_attempts": 0,
+      "decision_final": false
+    }
+  ]
+}
