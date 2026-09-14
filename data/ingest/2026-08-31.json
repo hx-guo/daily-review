@@ -7972,9 +7972,11 @@
         "published": "2026-08-27",
         "url": "https://arxiv.org/abs/2608.27691v1",
         "pdf_url": "https://arxiv.org/pdf/2608.27691v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1614",
         "external_ids": {
-          "arxiv": "2608.27691"
+          "ads": "2026MNRAS.551g1614M",
+          "arxiv": "2608.27691",
+          "doi": "10.1093/mnras/stag1614"
         },
         "pubdate": ""
       },
@@ -8060,9 +8062,9 @@
       "dates": {
         "preprint": "2026-08-27",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-27",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-31"
       },

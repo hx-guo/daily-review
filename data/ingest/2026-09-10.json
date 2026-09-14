@@ -643,6 +643,7 @@
         "doi": "10.1093/mnras/stag1611",
         "external_ids": {
           "ads": "2026MNRAS.tmp.1520A",
+          "arxiv": "2606.02691",
           "doi": "10.1093/mnras/stag1611"
         },
         "pubdate": "2026-08-00"
@@ -6000,8 +6001,10 @@
         "published": "2026-09-09",
         "url": "https://arxiv.org/abs/2609.09919v1",
         "pdf_url": "https://arxiv.org/pdf/2609.09919v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1715",
         "external_ids": {
+          "ads": "2026MNRAS.tmp.1591B",
+          "doi": "10.1093/mnras/stag1715",
           "arxiv": "2609.09919"
         },
         "pubdate": ""
@@ -6034,9 +6037,9 @@
       "dates": {
         "preprint": "2026-09-09",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-09-09",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-09-10"
       },

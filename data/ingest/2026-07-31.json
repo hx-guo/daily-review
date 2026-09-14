@@ -4506,9 +4506,11 @@
         "published": "2026-07-30",
         "url": "https://arxiv.org/abs/2607.27730v1",
         "pdf_url": "https://arxiv.org/pdf/2607.27730v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1474",
         "external_ids": {
-          "arxiv": "2607.27730"
+          "ads": "2026MNRAS.551g1474S",
+          "arxiv": "2607.27730",
+          "doi": "10.1093/mnras/stag1474"
         },
         "pubdate": ""
       },
@@ -4605,9 +4607,9 @@
       "dates": {
         "preprint": "2026-07-30",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-08-04",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-07-31"
       },
