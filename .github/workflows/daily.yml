@@ -80,7 +80,11 @@ jobs:
           done
       - uses: actions/upload-pages-artifact@v3
         id: upload
-        if: ${{ !cancelled() && steps.pipeline.conclusion != 'skipped' }}
+        # A partial outage still renders a site, so it is published. A failure
+        # early enough that build_site never ran leaves no site/ at all (it is
+        # gitignored, so the checkout has none either) -- skip rather than add a
+        # second red step that hides the real one.
+        if: ${{ !cancelled() && hashFiles('site/index.html') != '' }}
         with:
           path: site
   deploy:
