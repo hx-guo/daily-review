@@ -6,7 +6,8 @@
 
 ```bash
 pip install -e ".[dev]"
-export OPENCODE_API_KEY=sk-...
+export HEPAI_API_KEY=sk-...           # 默认后端为所内 HEPAI 平台
+# 切回 opencode：export GDR_LLM_PROVIDER=opencode + OPENCODE_API_KEY
 export ADS_API_TOKEN=...              # 可选；未设置时仅抓 arXiv
 python scripts/list_models.py          # 确认模型 id，如与默认不符用 GDR_MODEL_* 环境变量覆盖
 python scripts/run_daily.py --date 2026-07-17
@@ -23,7 +24,7 @@ pytest -q
 ## 部署
 
 - 仓库 Settings → Pages → Source 选 **GitHub Actions**。
-- 仓库 Settings → Secrets and variables → Actions 新增 `OPENCODE_API_KEY`；如需 ADS
+- 仓库 Settings → Secrets and variables → Actions 新增 `HEPAI_API_KEY`；如需 ADS
   期刊数据源，再新增 `ADS_API_TOKEN`（在 ADS 账户中生成）。
 - `.github/workflows/daily.yml` 每天 02:00 UTC（北京 10:00）自动运行，也可在 Actions 页手动 `Run workflow`。
 - Vercel 自定义域名备线的隔离部署方案见 [`docs/vercel-backup.md`](docs/vercel-backup.md)。
