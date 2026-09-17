@@ -8344,6 +8344,127 @@
     },
     {
       "paper": {
+        "id": "arxiv:2609.14160",
+        "source": "arxiv",
+        "title": "Quantum black hole ringdown",
+        "authors": [
+          "Konstantinos Topaloglou",
+          "Elena Cuoco",
+          "Roberto Casadio"
+        ],
+        "abstract": "The ringdown of a black hole following a merger is a potential candidate for revealing the signatures of quantum gravity in the emerging gravitational waves. In quantum theory, black holes are expected to have a discrete area and energy spectrum, which conflicts with the classical notion of an horizon that absorbs all infalling perturbations. We propose that the quantum black hole dissipates the energy it cannot absorb by emitting ``soft'' gravitons that carry away the energy difference between the energy of the infalling perturbation and the quantum transition energy. We find that the ringdown spectrum is consequently enriched with low-frequency components, and that there exists a weak low-frequency flux that persists for a timescale much longer than the ringdown itself.",
+        "categories": [
+          "gr-qc",
+          "astro-ph.HE",
+          "hep-th"
+        ],
+        "published": "2026-09-12",
+        "url": "https://arxiv.org/abs/2609.14160v1",
+        "pdf_url": "https://arxiv.org/pdf/2609.14160v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2609.14160"
+        },
+        "pubdate": ""
+      },
+      "score": {
+        "score": 10,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文聚焦量子引力对黑洞ringdown的理论修正，与高能暂现源及团队观测目标无实质联系",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要讨论黑洞并合后的ringdown和量子引力修正，不涉及高能暂现源观测或团队任务"
+      },
+      "summary": {
+        "paper_id": "arxiv:2609.14160",
+        "title_zh": "量子黑洞的振铃",
+        "team": "",
+        "tldr": "论文提出量子黑洞通过发射软引力子耗散无法吸收的能量，导致振铃谱出现低频成分和持久的低频通量。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-09-12",
+        "accepted": "",
+        "published": "",
+        "published_precision": "",
+        "published_source": "",
+        "received": "",
+        "ingested": "2026-09-17"
+      },
+      "archive_date": "2026-09-12",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
+        "id": "arxiv:2609.14165",
+        "source": "arxiv",
+        "title": "Modular flow and the area operator",
+        "authors": [
+          "Xi Dong",
+          "Donald Marolf",
+          "Pratik Rath"
+        ],
+        "abstract": "In the context of the AdS/CFT correspondence, the Jafferis-Lewkowycz-Maldacena-Suh (JLMS) formula relates the boundary modular Hamiltonian to the HRT area operator and the corresponding bulk modular Hamiltonian. In standard discussions of a holographic code built from perturbative excitations on a fixed classical background, the $A/4G$ term dominates over the bulk modular Hamiltonian in the limit $G \\to 0$. However, this setup is insufficient to describe the action of boundary modular flows that change the classical background. In contrast, our recent discussion of `large' codes provides a useful framework to obtain a JLMS formula that relates bulk and boundary modular flows acting on appropriate states in the code. Here, one sees that the bulk modular Hamiltonian is not in fact subdominant when the modular flow defined by one state acts on another state peaked around a sufficiently different classical background. Instead, the bulk modular Hamiltonian can be of order $1/G$ and can dominate over the $A/4G$ term. Nevertheless, we show that if the two states have the same classical background except for data conjugate to the HRT area then, under mild assumptions and over a large range of flow parameters, the modular-flowed state is described by a classical background given by the HRT-area flow alone.",
+        "categories": [
+          "hep-th",
+          "gr-qc"
+        ],
+        "published": "2026-09-12",
+        "url": "https://arxiv.org/abs/2609.14165v1",
+        "pdf_url": "https://arxiv.org/pdf/2609.14165v1",
+        "doi": null,
+        "external_ids": {
+          "arxiv": "2609.14165"
+        },
+        "pubdate": ""
+      },
+      "score": {
+        "score": 0,
+        "tags": [],
+        "layer": "edge",
+        "reason": "论文主题为量子引力中的模流，与高能暂现源研究无关。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题和摘要讨论AdS/CFT中的模流和面积算符，属于量子引力/高能理论，未提及任何高能暂现源、任务或相关方法。"
+      },
+      "summary": {
+        "paper_id": "arxiv:2609.14165",
+        "title_zh": "模流与面积算子",
+        "team": "",
+        "tldr": "在大编码框架下研究AdS/CFT中的模流，发现体模哈密顿量在经典背景不同时可能主导面积算子项，但若背景仅差HRT面积共轭数据，则模流状态仅由面积流描述",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2026-09-12",
+        "accepted": "",
+        "published": "",
+        "published_precision": "",
+        "published_source": "",
+        "received": "",
+        "ingested": "2026-09-17"
+      },
+      "archive_date": "2026-09-12",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    },
+    {
+      "paper": {
         "id": "arxiv:2609.14199",
         "source": "arxiv",
         "title": "From massless wormholes to massive black bounces: Shadows and multiple light rings",
