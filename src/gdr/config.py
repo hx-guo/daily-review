@@ -100,6 +100,13 @@ EDITORIAL_BACKOFF = (1, 2, 4, 8, 16, 30, 30, 30, 30)
 EDITORIAL_BREAKER_LIMIT = int(os.environ.get("GDR_EDITORIAL_BREAKER_LIMIT", "20"))
 # Transport-level retries (network errors, 5xx, 429) inside the OpenAI SDK.
 OPENAI_MAX_RETRIES = int(os.environ.get("GDR_OPENAI_MAX_RETRIES", "4"))
+# Losing every paper is not the only way to lose a day. On 2026-09-16 the model
+# account drained mid-run: 211 of 288 papers were lost and the run still went
+# green because 77 made it. A run is flagged only when its losses clear BOTH
+# bars -- the ratio alone would cry outage on a thin day (2 of 3 papers), the
+# count alone would cry outage on a big one (5 of 300).
+PARTIAL_FAILURE_RATIO = float(os.environ.get("GDR_PARTIAL_FAILURE_RATIO", "0.33"))
+PARTIAL_FAILURE_MIN = int(os.environ.get("GDR_PARTIAL_FAILURE_MIN", "5"))
 # A paper whose decision failed is retried on this many later runs before we
 # give up on it for good.
 REVIEW_MAX_ROUNDS = int(os.environ.get("GDR_REVIEW_MAX_ROUNDS", "3"))

@@ -1,5 +1,6 @@
 import argparse
 import datetime as dt
+import sys
 from pathlib import Path
 from gdr import config
 from gdr.llm import make_llm
@@ -7,7 +8,7 @@ from gdr.sources.ads_source import ADSSource
 from gdr.sources.arxiv_source import ArxivSource
 from gdr.sources.composite_source import CompositeSource
 from gdr.store import Store
-from gdr.pipeline import repair_decisions, sync
+from gdr.pipeline import PartialFailure, repair_decisions, sync
 from gdr.site_build import build_site
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,9 +31,19 @@ def main():
     store = Store(ROOT / "data")
 
     repair_decisions(store, llm)
-    affected = sync(date, source, llm, store)
+    partial = None
+    try:
+        affected = sync(date, source, llm, store)
+    except PartialFailure as exc:
+        # The survivors are already on disk. Render and commit them as usual,
+        # then end the run red -- a day that quietly lost most of its papers is
+        # exactly what went unnoticed on 2026-09-16.
+        partial, affected = exc, exc.dates
+        print(f"[gdr] {exc}", file=sys.stderr)
     print(f"{date}: synced; affected dates: {affected}")
     build_site(ROOT)
+    if partial is not None:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

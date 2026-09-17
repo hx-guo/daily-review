@@ -4,7 +4,8 @@ import re
 import pytest
 
 from gdr.models import IngestDay, Paper, RelevanceScore, make_item
-from gdr.pipeline import enrich_seen, paper_dates, repair_decisions, sync
+from gdr.pipeline import (PartialFailure, enrich_seen, paper_dates,
+                          repair_decisions, sync)
 from gdr.sources.base import Source
 from gdr.store import Store
 
@@ -360,11 +361,12 @@ class _FlakyLLM:
     """Delegates, but fails every call that mentions one paper."""
 
     def __init__(self, inner, doomed):
-        self._inner, self._doomed = inner, doomed
+        self._inner = inner
+        self._doomed = [doomed] if isinstance(doomed, str) else list(doomed)
 
     def complete(self, *a, **k):
-        if any(self._doomed in str(x) for x in a) or \
-           any(self._doomed in str(v) for v in k.values()):
+        blob = " ".join([str(x) for x in a] + [str(v) for v in k.values()])
+        if any(d in blob for d in self._doomed):
             raise RuntimeError("boom")
         return self._inner.complete(*a, **k)
 
@@ -379,3 +381,44 @@ def test_sync_stores_the_survivors_when_only_one_paper_fails(tmp_path, fake_llm_
 
     stored = {it["paper"].id for it in store.load_ingest("2026-07-18").items}
     assert stored == {"2608.1", "2608.3"}
+
+
+def test_sync_flags_a_partial_outage_after_storing_the_survivors(
+        tmp_path, fake_llm_factory):
+    # 2026-09-16: the account drained mid-run, 211 of 288 papers were lost, and
+    # the run still went green because *some* papers made it. The survivors have
+    # to reach disk, and the run still has to go red.
+    store = Store(tmp_path / "data")
+    papers = [_paper(f"2609.{i}") for i in range(10)]
+    doomed = [f"2609.{i}" for i in range(6)]
+    llm = _FlakyLLM(_keyed_llm(fake_llm_factory), doomed)
+
+    with pytest.raises(PartialFailure) as caught:
+        _sync(store, papers, llm)
+
+    assert (caught.value.failed, caught.value.fresh) == (6, 10)
+    stored = {it["paper"].id for it in store.load_ingest("2026-07-18").items}
+    assert stored == {"2609.6", "2609.7", "2609.8", "2609.9"}
+
+
+def test_sync_stays_quiet_when_too_few_papers_failed(tmp_path, fake_llm_factory):
+    # 4 of 10 is over the ratio but under the absolute floor -- ordinary
+    # flakiness on a thin day must not cry outage.
+    store = Store(tmp_path / "data")
+    papers = [_paper(f"2609.{i}") for i in range(10)]
+    llm = _FlakyLLM(_keyed_llm(fake_llm_factory), [f"2609.{i}" for i in range(4)])
+
+    _sync(store, papers, llm)
+
+    assert len(store.load_ingest("2026-07-18").items) == 6
+
+
+def test_sync_stays_quiet_when_the_failed_share_is_small(tmp_path, fake_llm_factory):
+    # 5 of 40 clears the absolute floor but is well under the ratio.
+    store = Store(tmp_path / "data")
+    papers = [_paper(f"2609.{i:03d}") for i in range(40)]
+    llm = _FlakyLLM(_keyed_llm(fake_llm_factory), [f"2609.{i:03d}" for i in range(5)])
+
+    _sync(store, papers, llm)
+
+    assert len(store.load_ingest("2026-07-18").items) == 35

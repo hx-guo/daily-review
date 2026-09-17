@@ -22,6 +22,20 @@ _JOURNAL_FIELDS = ("accepted", "published", "published_precision",
                    "published_source", "received")
 
 
+class PartialFailure(Exception):
+    """Enough of a run's papers failed that the day is not trustworthy -- even
+    though the ones that succeeded were stored. Raised after the survivors are
+    on disk, so the caller can publish them and still end the run red.
+    """
+
+    def __init__(self, fresh: int, failed: int, last_error, dates=()):
+        self.fresh, self.failed, self.last_error = fresh, failed, last_error
+        self.dates = list(dates)
+        super().__init__(
+            f"{failed} of {fresh} fresh papers failed ({failed / fresh:.0%}); "
+            f"the survivors were stored. last error: {last_error}")
+
+
 def _doi_of(paper) -> str:
     external = getattr(paper, "external_ids", None) or {}
     return str(getattr(paper, "doi", None) or external.get("doi") or "").strip()
@@ -281,4 +295,11 @@ def sync(run_date, source, llm, store: Store,
     # single read-modify-write of the seen index instead of one per paper.
     store.mark_seen(sorted({key for it in items for key in paper_keys(it["paper"])}),
                     run_date)
+
+    # Everything above is durable now, so a partial outage is reported rather
+    # than thrown away: the caller still renders and commits what survived.
+    failed = len(fresh) - len(items)
+    if (failed >= config.PARTIAL_FAILURE_MIN
+            and failed >= len(fresh) * config.PARTIAL_FAILURE_RATIO):
+        raise PartialFailure(len(fresh), failed, failure, [run_date])
     return [run_date]

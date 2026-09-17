@@ -25,6 +25,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.upload.outcome == 'success' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -43,6 +45,7 @@ jobs:
           GDR_RECLASSIFY_DATES: ${{ inputs.reclassify_dates }}
         run: python scripts/reclassify_days.py $GDR_RECLASSIFY_DATES
       - name: Run daily pipeline
+        id: pipeline
         env:
           HEPAI_API_KEY: ${{ secrets.HEPAI_API_KEY }}
           ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
@@ -53,9 +56,12 @@ jobs:
           [ -n "$GDR_FETCH_WINDOW_DAYS" ] || unset GDR_FETCH_WINDOW_DAYS
           python scripts/run_daily.py
       - name: Check stored data (advisory)
+        if: ${{ !cancelled() && steps.pipeline.conclusion != 'skipped' }}
         continue-on-error: true
         run: pytest -q -m livedata
       - name: Commit data
+        # A partial outage still stored real papers; they must reach the repo.
+        if: ${{ !cancelled() && steps.pipeline.conclusion != 'skipped' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -73,10 +79,15 @@ jobs:
             fi
           done
       - uses: actions/upload-pages-artifact@v3
+        id: upload
+        if: ${{ !cancelled() && steps.pipeline.conclusion != 'skipped' }}
         with:
           path: site
   deploy:
     needs: build
+    # A red build that still produced a site artifact (a partial outage) must
+    # deploy what survived; a build that never got that far must not.
+    if: ${{ !cancelled() && needs.build.outputs.published == 'true' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
