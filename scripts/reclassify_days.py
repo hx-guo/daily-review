@@ -4,15 +4,15 @@ This performs only the inexpensive triage calls, keyed by ingest date. Existing
 full-text summaries and cached decisions are reused unchanged.
 
 Usage:
-    OPENCODE_API_KEY=... python scripts/reclassify_days.py 2026-07-20 2026-07-21
-    OPENCODE_API_KEY=... python scripts/reclassify_days.py --all
+    HEPAI_API_KEY=... python scripts/reclassify_days.py 2026-07-20 2026-07-21
+    HEPAI_API_KEY=... python scripts/reclassify_days.py --all
 """
 import argparse
 import datetime as dt
 from pathlib import Path
 
 from gdr import config
-from gdr.llm import OpenCodeLLM
+from gdr.llm import make_llm
 from gdr.reclassify import reclassify_day
 from gdr.store import Store
 
@@ -42,7 +42,7 @@ def main() -> None:
         if date not in available:
             parser.error(f"no stored data for {date}")
 
-    llm = OpenCodeLLM(api_key=config.get_api_key())
+    llm = make_llm()
     for date in dates:
         result = reclassify_day(date, store, llm)
         print(f"{date}: reclassified; {result}")

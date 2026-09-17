@@ -7,14 +7,14 @@ based on a truncated head of the text and used an older citation schema. Concurr
 Leaves edge items untouched. Operates on the ingest-keyed layout (`data/ingest/`).
 
 Usage:
-    OPENCODE_API_KEY=... ADS_API_TOKEN=... python scripts/backfill_outlook.py
+    HEPAI_API_KEY=... ADS_API_TOKEN=... python scripts/backfill_outlook.py
 """
 import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from gdr import config
-from gdr.llm import OpenCodeLLM
+from gdr.llm import make_llm
 from gdr.store import Store
 from gdr.fulltext import fetch_fulltext
 from gdr.summarize import summarize_paper
@@ -39,7 +39,7 @@ def _redo(paper, llm):
 
 
 def main():
-    llm = OpenCodeLLM(api_key=config.get_api_key())
+    llm = make_llm()
     store = Store(ROOT / "data")
     total = 0
     for date in store.list_ingest_dates():

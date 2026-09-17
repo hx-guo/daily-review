@@ -1,4 +1,4 @@
-from gdr.llm import OpenCodeLLM, tier_model
+from gdr.llm import make_llm, tier_model
 from gdr import config
 
 
@@ -16,15 +16,31 @@ def test_fake_llm_records_and_replies(fake_llm_factory):
     assert llm.calls[0]["user"] == "u"
 
 
-def test_client_carries_an_opencode_session_header():
+def test_opencode_client_carries_a_session_header():
     # opencode requires x-opencode-session to optimise routing; from 2026-09-06
     # requests without it may be rejected outright.
-    llm = OpenCodeLLM(api_key="k")
+    llm = make_llm(api_key="k", provider="opencode")
 
     assert llm._client.default_headers.get("x-opencode-session")
 
 
 def test_an_explicit_session_id_is_used_verbatim():
-    llm = OpenCodeLLM(api_key="k", session_id="daily-review-2026-09-05")
+    llm = make_llm(api_key="k", provider="opencode",
+                   session_id="daily-review-2026-09-05")
 
     assert llm._client.default_headers["x-opencode-session"] == "daily-review-2026-09-05"
+
+
+def test_hepai_client_sends_no_opencode_header():
+    # x-opencode-session is meaningless to any other host; sending a vendor
+    # header to HEPAI is at best noise and at worst a rejected request.
+    llm = make_llm(api_key="k", provider="hepai")
+
+    assert "x-opencode-session" not in llm._client.default_headers
+    assert str(llm._client.base_url).startswith("https://aiapi.ihep.ac.cn/apiv2")
+
+
+def test_make_llm_defaults_to_the_configured_provider():
+    llm = make_llm(api_key="k")
+
+    assert str(llm._client.base_url).startswith("https://aiapi.ihep.ac.cn/apiv2")

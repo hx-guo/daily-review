@@ -1,8 +1,10 @@
 import json
 import re
 
+import pytest
+
 from gdr import config
-from gdr.daily_review import Breaker, review_paper
+from gdr.daily_review import Breaker, review_paper, _complete_json_object
 from gdr.models import Paper, PaperSummary, RelevanceScore, make_item
 
 
@@ -168,3 +170,52 @@ def test_a_failed_paper_is_logged_to_stderr_with_its_id(fake_llm_factory, capsys
     assert review_paper(_item("arxiv:42"), llm, sleep=lambda s: None) is None
 
     assert "arxiv:42" in capsys.readouterr().err
+
+
+class _HTTPError(Exception):
+    """Stand-in for an openai.APIStatusError, which carries a status_code."""
+
+    def __init__(self, status_code, message="boom"):
+        super().__init__(f"Error code: {status_code} - {message}")
+        self.status_code = status_code
+
+
+class _CountingLLM:
+    def __init__(self, exc):
+        self.exc = exc
+        self.calls = 0
+
+    def complete(self, **kwargs):
+        self.calls += 1
+        raise self.exc
+
+
+def test_billing_failure_is_not_retried():
+    # A 401 never becomes a 200 on a retry. Burning all 10 attempts per paper is
+    # what turned a drained account into a 14-minute run that blamed bad JSON.
+    llm = _CountingLLM(_HTTPError(401, "Insufficient balance"))
+
+    with pytest.raises(_HTTPError) as caught:
+        _complete_json_object(llm, "u", lambda d: d, sleep=lambda s: None)
+
+    assert caught.value.status_code == 401
+    assert llm.calls == 1
+
+
+def test_server_errors_are_still_retried():
+    # A 500 or a rate limit is exactly what the retry loop exists for.
+    llm = _CountingLLM(_HTTPError(500))
+
+    with pytest.raises(TypeError):
+        _complete_json_object(llm, "u", lambda d: d, sleep=lambda s: None)
+
+    assert llm.calls == config.EDITORIAL_ATTEMPTS
+
+
+def test_exhausted_retries_name_the_underlying_error():
+    # "invalid JSON 10 times" on its own sent us hunting a parser bug while the
+    # real cause was upstream; the last error has to survive into the message.
+    llm = _CountingLLM(_HTTPError(500, "upstream exploded"))
+
+    with pytest.raises(TypeError, match="upstream exploded"):
+        _complete_json_object(llm, "u", lambda d: d, sleep=lambda s: None)

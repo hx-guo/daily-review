@@ -1,6 +1,39 @@
 import os
 
-OPENCODE_BASE_URL = os.environ.get("OPENCODE_BASE_URL", "https://opencode.ai/zen/go/v1")
+# Two interchangeable OpenAI-compatible backends. Model ids are NOT portable
+# between them: HEPAI namespaces every model under its vendor and `glm-5.2` has
+# no bare alias there, so a host and its tier set always have to move together.
+_PROVIDERS = {
+    "opencode": {
+        "base_url": "https://opencode.ai/zen/go/v1",
+        "key_env": "OPENCODE_API_KEY",
+        "session_header": "x-opencode-session",
+        "models": {"triage": "deepseek-v4-flash",
+                   "write": "deepseek-v4-pro",
+                   "synth": "glm-5.2"},
+    },
+    "hepai": {
+        "base_url": "https://aiapi.ihep.ac.cn/apiv2",
+        "key_env": "HEPAI_API_KEY",
+        "models": {"triage": "deepseek-ai/deepseek-v4-flash",
+                   "write": "deepseek-ai/deepseek-v4-pro",
+                   "synth": "zhipu/glm-5.2"},
+    },
+}
+
+
+def resolve_provider(name: str) -> dict:
+    """Host, key variable and tier model ids for one LLM backend."""
+    try:
+        return _PROVIDERS[name]
+    except KeyError:
+        raise RuntimeError(
+            f"unknown GDR_LLM_PROVIDER {name!r}; known: {sorted(_PROVIDERS)}") from None
+
+
+LLM_PROVIDER = os.environ.get("GDR_LLM_PROVIDER", "hepai")
+_provider = resolve_provider(LLM_PROVIDER)
+LLM_BASE_URL = os.environ.get("GDR_LLM_BASE_URL", _provider["base_url"])
 
 ARXIV_CATEGORIES = ["astro-ph.HE", "gr-qc", "astro-ph.SR", "astro-ph.CO"]
 
@@ -23,11 +56,12 @@ ADS_INGEST_QUERY = os.environ.get(
     f"database:astronomy property:refereed doctype:article {_ADS_TOPICS}",
 )
 
-# Model tiers. Defaults are display-name-derived; confirm exact ids via scripts/list_models.py.
-MODEL_TRIAGE = os.environ.get("GDR_MODEL_TRIAGE", "deepseek-v4-flash")
-MODEL_WRITE = os.environ.get("GDR_MODEL_WRITE", "deepseek-v4-pro")
+# Model tiers. Defaults follow the selected provider; confirm exact ids against a
+# new host via scripts/list_models.py. Each tier stays individually overridable.
 # synth: glm-5.2 — kimi-k3 was persistently 400-ing on opencode's upstream (2026-07-18).
-MODEL_SYNTH = os.environ.get("GDR_MODEL_SYNTH", "glm-5.2")
+MODEL_TRIAGE = os.environ.get("GDR_MODEL_TRIAGE", _provider["models"]["triage"])
+MODEL_WRITE = os.environ.get("GDR_MODEL_WRITE", _provider["models"]["write"])
+MODEL_SYNTH = os.environ.get("GDR_MODEL_SYNTH", _provider["models"]["synth"])
 
 LAYER_CORE_MIN = 70
 LAYER_RELATED_MIN = 40
@@ -97,9 +131,12 @@ TEAM_PROFILE = """高能暂现源研究团队（同时参与 GECAM、Insight-HXM
 
 
 def get_api_key() -> str:
-    key = os.environ.get("OPENCODE_API_KEY")
+    """The API key for the selected provider. Each backend reads its own variable
+    so both can sit in the environment at once and switching is one setting."""
+    env = _provider["key_env"]
+    key = os.environ.get(env)
     if not key:
-        raise RuntimeError("OPENCODE_API_KEY environment variable is not set")
+        raise RuntimeError(f"{env} environment variable is not set")
     return key
 
 

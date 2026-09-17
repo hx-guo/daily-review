@@ -2,7 +2,7 @@ import argparse
 import datetime as dt
 from pathlib import Path
 from gdr import config
-from gdr.llm import OpenCodeLLM
+from gdr.llm import make_llm
 from gdr.sources.ads_source import ADSSource
 from gdr.sources.arxiv_source import ArxivSource
 from gdr.sources.composite_source import CompositeSource
@@ -19,7 +19,7 @@ def main():
     args = ap.parse_args()
     date = args.date or dt.datetime.now(dt.timezone.utc).date().isoformat()
 
-    llm = OpenCodeLLM(api_key=config.get_api_key())
+    llm = make_llm()
     sources = [ArxivSource(categories=config.ARXIV_CATEGORIES)]
     ads_token = config.get_ads_token()
     if ads_token:

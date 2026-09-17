@@ -5,12 +5,12 @@ ONLY papers whose editorial decision is missing — it never refetches, rescores
 resummarises, and never touches a decision that already succeeded.
 
 Usage:
-    OPENCODE_API_KEY=... python scripts/repair_decisions.py
+    HEPAI_API_KEY=... python scripts/repair_decisions.py
 """
 from pathlib import Path
 
 from gdr import config
-from gdr.llm import OpenCodeLLM
+from gdr.llm import make_llm
 from gdr.pipeline import repair_decisions
 from gdr.store import Store
 
@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def main():
-    llm = OpenCodeLLM(api_key=config.get_api_key())
+    llm = make_llm()
     store = Store(ROOT / "data")
     print(f"repaired {repair_decisions(store, llm)} decisions")
 

@@ -70,6 +70,17 @@ _NON_RESEARCH_TITLE = re.compile(
 )
 
 
+# Auth, billing and permission failures are verdicts, not weather. Retrying a
+# drained account ten times per paper only turns one dead run into a slow one,
+# and buries the real cause under a generic "invalid JSON" at the end.
+_FATAL_STATUS = frozenset({401, 402, 403})
+
+
+def _is_fatal(exc: Exception) -> bool:
+    """True for upstream errors that no amount of retrying will change."""
+    return getattr(exc, "status_code", None) in _FATAL_STATUS
+
+
 def _complete_json_object(llm: LLM, user: str, validate: Callable[[dict], dict],
                           *, sleep=time.sleep) -> dict:
     retry_note = """
@@ -90,9 +101,12 @@ def _complete_json_object(llm: LLM, user: str, validate: Callable[[dict], dict],
                 raise TypeError("editorial response must be a JSON object")
             return validate(data)
         except Exception as exc:
+            if _is_fatal(exc):
+                raise
             last_error = exc
     raise TypeError("editorial decision returned invalid JSON "
-                    f"{config.EDITORIAL_ATTEMPTS} times") from last_error
+                    f"{config.EDITORIAL_ATTEMPTS} times; last error: "
+                    f"{last_error}") from last_error
 
 
 def _candidate_decision(data: dict, paper_id: str) -> dict:
