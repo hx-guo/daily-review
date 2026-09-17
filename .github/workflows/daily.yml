@@ -28,8 +28,8 @@ jobs:
     outputs:
       published: ${{ steps.upload.outcome == 'success' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -e ".[dev]"
@@ -78,7 +78,7 @@ jobs:
               exit 1
             fi
           done
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         id: upload
         # A partial outage still renders a site, so it is published. A failure
         # early enough that build_site never ran leaves no site/ at all (it is
@@ -98,4 +98,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
