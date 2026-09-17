@@ -99,8 +99,16 @@
         "ingested": "2026-09-16"
       },
       "archive_date": "2026-09-14",
-      "decision": null,
-      "review_attempts": 1,
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "纯理论模拟研究，结论为现实冷却时标下孪生星动力学形成受阻，属致密星物理的增量性约束结果，不构成领域级重大进展或突发性发现。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-16"
+      },
+      "review_attempts": 2,
       "decision_final": false
     },
     {
@@ -350,8 +358,16 @@
         "ingested": "2026-09-16"
       },
       "archive_date": "2026-09-14",
-      "decision": null,
-      "review_attempts": 1,
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "对已知超新星遗迹仙后座A的形态学重新解释与三维模拟，属常规增量工作，未推翻长期关键认识或带来此前不可能的已证实能力。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-16"
+      },
+      "review_attempts": 2,
       "decision_final": false
     },
     {
@@ -603,8 +619,16 @@
         "ingested": "2026-09-16"
       },
       "archive_date": "2026-09-14",
-      "decision": null,
-      "review_attempts": 1,
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "纯三维流体模拟研究，无观测数据验证，且作者自述内盘区域模拟不再适用、逃逸增长可能性仍需进一步研究，属未经验证的理论增量工作。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-16"
+      },
+      "review_attempts": 2,
       "decision_final": false
     },
     {
@@ -767,8 +791,16 @@
         "ingested": "2026-09-16"
       },
       "archive_date": "2026-09-14",
-      "decision": null,
-      "review_attempts": 1,
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "对M33中单个候选HMXB供体星的光谱证认与参数测量，属于单源形态更新级别的常规增量工作，未达到领域级重大进展或突发性突破的新闻门槛。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-16"
+      },
+      "review_attempts": 2,
       "decision_final": false
     },
     {
@@ -1412,8 +1444,16 @@
         "ingested": "2026-09-16"
       },
       "archive_date": "2026-09-14",
-      "decision": null,
-      "review_attempts": 1,
+      "decision": {
+        "level": "reject",
+        "title": "",
+        "evidence": "",
+        "impact": "",
+        "reason": "纯理论数值模拟预测，未获真实观测验证，属于将已知普适关系检验方法拓展到夸克-强子交叉状态方程的常规增量工作。",
+        "watchlist": [],
+        "reviewed_at": "2026-09-16"
+      },
+      "review_attempts": 2,
       "decision_final": false
     },
     {
