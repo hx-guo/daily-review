@@ -2679,8 +2679,9 @@
         "pdf_url": "https://arxiv.org/pdf/2608.25538v1",
         "doi": "10.1051/0004-6361/202660214",
         "external_ids": {
-          "arxiv": "2608.25538",
-          "doi": "10.1051/0004-6361/202660214"
+          "ads": "2026A&A...713A.184B",
+          "doi": "10.1051/0004-6361/202660214",
+          "arxiv": "2608.25538"
         },
         "pubdate": ""
       },
@@ -2711,9 +2712,9 @@
       "dates": {
         "preprint": "2026-08-26",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-09-14",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-27"
       },

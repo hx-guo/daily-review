@@ -5071,8 +5071,9 @@
         "pdf_url": "https://arxiv.org/pdf/2607.26826v1",
         "doi": "10.1103/gys2-q6bk",
         "external_ids": {
-          "arxiv": "2607.26826",
-          "doi": "10.1103/gys2-q6bk"
+          "ads": "2026PhRvD.114f3017Y",
+          "doi": "10.1103/gys2-q6bk",
+          "arxiv": "2607.26826"
         },
         "pubdate": ""
       },

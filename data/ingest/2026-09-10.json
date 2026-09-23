@@ -6962,8 +6962,9 @@
         "pdf_url": "https://arxiv.org/pdf/2609.10128v1",
         "doi": "10.1016/j.astropartphys.2026.103292",
         "external_ids": {
-          "arxiv": "2609.10128",
-          "doi": "10.1016/j.astropartphys.2026.103292"
+          "ads": "2027APh...18403292S",
+          "doi": "10.1016/j.astropartphys.2026.103292",
+          "arxiv": "2609.10128"
         },
         "pubdate": ""
       },

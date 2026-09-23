@@ -2864,8 +2864,10 @@
         "published": "2026-07-28",
         "url": "https://arxiv.org/abs/2607.25261v1",
         "pdf_url": "https://arxiv.org/pdf/2607.25261v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1720",
         "external_ids": {
+          "ads": "2026MNRAS.tmp.1611W",
+          "doi": "10.1093/mnras/stag1720",
           "arxiv": "2607.25261"
         },
         "pubdate": ""
@@ -2926,9 +2928,9 @@
       "dates": {
         "preprint": "2026-07-28",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-09-11",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-07-29"
       },
