@@ -12366,8 +12366,9 @@
         "pdf_url": "https://arxiv.org/pdf/2609.26436v1",
         "doi": "10.3390/universe12090273",
         "external_ids": {
-          "arxiv": "2609.26436",
-          "doi": "10.3390/universe12090273"
+          "ads": "2026Univ...12..273S",
+          "doi": "10.3390/universe12090273",
+          "arxiv": "2609.26436"
         },
         "pubdate": ""
       },
