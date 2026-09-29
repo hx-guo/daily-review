@@ -14421,11 +14421,11 @@
       },
       "dates": {
         "preprint": "2026-09-25",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-08-31",
+        "published": "2026-09-29",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-06-01",
         "ingested": "2026-09-28"
       },
       "archive_date": "2026-09-25",
