@@ -25320,8 +25320,9 @@
         "pdf_url": null,
         "doi": "10.1093/mnras/stag1483",
         "external_ids": {
-          "ads": "2026MNRAS.tmp.1392C",
-          "doi": "10.1093/mnras/stag1483"
+          "arxiv": "2609.38553",
+          "doi": "10.1093/mnras/stag1483",
+          "ads": "2026MNRAS.tmp.1392C"
         },
         "pubdate": "2026-08-00"
       },
