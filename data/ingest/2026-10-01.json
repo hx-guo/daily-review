@@ -5034,9 +5034,10 @@
         "published": "2026-09-30",
         "url": "https://arxiv.org/abs/2609.39501v1",
         "pdf_url": "https://arxiv.org/pdf/2609.39501v1",
-        "doi": null,
+        "doi": "10.3847/1538-4357/aeaf4b",
         "external_ids": {
-          "arxiv": "2609.39501"
+          "arxiv": "2609.39501",
+          "doi": "10.3847/1538-4357/aeaf4b"
         },
         "pubdate": ""
       },
