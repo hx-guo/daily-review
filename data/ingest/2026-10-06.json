@@ -7152,11 +7152,11 @@
       },
       "dates": {
         "preprint": "2026-10-05",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-08-19",
+        "published": "2026-10-06",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-06-16",
         "ingested": "2026-10-06"
       },
       "archive_date": "2026-10-05",
