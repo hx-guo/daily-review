@@ -322,8 +322,11 @@
         "published": "2026-07-12",
         "url": "https://arxiv.org/abs/2607.10568v1",
         "pdf_url": "https://arxiv.org/pdf/2607.10568v1",
-        "doi": null,
-        "external_ids": {},
+        "doi": "10.1093/pasj/psag097",
+        "external_ids": {
+          "ads": "2026PASJ...78.1741O",
+          "doi": "10.1093/pasj/psag097"
+        },
         "pubdate": ""
       },
       "score": {
@@ -395,9 +398,9 @@
       "dates": {
         "preprint": "2026-07-12",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-09-02",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-07-18"
       },

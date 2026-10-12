@@ -8221,8 +8221,10 @@
         "published": "2026-09-21",
         "url": "https://arxiv.org/abs/2609.24633v1",
         "pdf_url": "https://arxiv.org/pdf/2609.24633v1",
-        "doi": null,
+        "doi": "10.1016/j.jheap.2026.100754",
         "external_ids": {
+          "ads": "2027JHEAp..5600754B",
+          "doi": "10.1016/j.jheap.2026.100754",
           "arxiv": "2609.24633"
         },
         "pubdate": ""
@@ -8336,9 +8338,9 @@
       "dates": {
         "preprint": "2026-09-21",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-09-23",
+        "published_precision": "day",
+        "published_source": "crossref-created",
         "received": "",
         "ingested": "2026-09-22"
       },
