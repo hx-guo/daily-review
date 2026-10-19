@@ -4403,9 +4403,11 @@
         "published": "2026-09-10",
         "url": "https://arxiv.org/abs/2609.11068v1",
         "pdf_url": "https://arxiv.org/pdf/2609.11068v1",
-        "doi": null,
+        "doi": "10.1017/pasa.2026.10266",
         "external_ids": {
-          "arxiv": "2609.11068"
+          "ads": "2026PASA...43..127H",
+          "arxiv": "2609.11068",
+          "doi": "10.1017/pasa.2026.10266"
         },
         "pubdate": ""
       },
@@ -4439,9 +4441,9 @@
       "dates": {
         "preprint": "2026-09-10",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-10-15",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-09-11"
       },

@@ -6068,8 +6068,10 @@
         "published": "2026-09-30",
         "url": "https://arxiv.org/abs/2609.39842v1",
         "pdf_url": "https://arxiv.org/pdf/2609.39842v1",
-        "doi": null,
+        "doi": "10.1093/pasj/psag124",
         "external_ids": {
+          "ads": "2026PASJ..tmp..222H",
+          "doi": "10.1093/pasj/psag124",
           "arxiv": "2609.39842"
         },
         "pubdate": ""
@@ -6170,9 +6172,9 @@
       "dates": {
         "preprint": "2026-09-30",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-10-14",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-10-01"
       },
