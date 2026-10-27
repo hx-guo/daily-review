@@ -127775,8 +127775,10 @@
         "published": "2026-08-18",
         "url": "https://arxiv.org/abs/2608.18201v1",
         "pdf_url": "https://arxiv.org/pdf/2608.18201v1",
-        "doi": null,
+        "doi": "10.1093/mnras/stag1996",
         "external_ids": {
+          "ads": "2026MNRAS.tmp.1840P",
+          "doi": "10.1093/mnras/stag1996",
           "arxiv": "2608.18201"
         },
         "pubdate": ""
@@ -127901,9 +127903,9 @@
       "dates": {
         "preprint": "2026-08-18",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-10-21",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-08-20"
       },

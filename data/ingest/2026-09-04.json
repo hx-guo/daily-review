@@ -3183,8 +3183,10 @@
         "published": "2026-09-03",
         "url": "https://arxiv.org/abs/2609.03714v1",
         "pdf_url": "https://arxiv.org/pdf/2609.03714v1",
-        "doi": null,
+        "doi": "10.1051/0004-6361/202658935",
         "external_ids": {
+          "ads": "2026A&A...714A.305A",
+          "doi": "10.1051/0004-6361/202658935",
           "arxiv": "2609.03714"
         },
         "pubdate": ""
@@ -3285,9 +3287,9 @@
       "dates": {
         "preprint": "2026-09-03",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-10-16",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-09-04"
       },

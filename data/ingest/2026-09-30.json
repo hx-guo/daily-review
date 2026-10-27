@@ -4708,8 +4708,10 @@
         "published": "2026-09-29",
         "url": "https://arxiv.org/abs/2609.36961v1",
         "pdf_url": "https://arxiv.org/pdf/2609.36961v1",
-        "doi": null,
+        "doi": "10.1103/j834-gdhp",
         "external_ids": {
+          "ads": "2026PhRvD.114h3035W",
+          "doi": "10.1103/j834-gdhp",
           "arxiv": "2609.36961"
         },
         "pubdate": ""
@@ -4741,10 +4743,10 @@
       "dates": {
         "preprint": "2026-09-29",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "published": "2026-10-19",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-07-02",
         "ingested": "2026-09-30"
       },
       "archive_date": "2026-09-29",

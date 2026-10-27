@@ -12432,8 +12432,10 @@
         "published": "2026-09-14",
         "url": "https://arxiv.org/abs/2609.15301v1",
         "pdf_url": "https://arxiv.org/pdf/2609.15301v1",
-        "doi": null,
+        "doi": "10.1051/0004-6361/202662017",
         "external_ids": {
+          "ads": "2026A&A...714A.405M",
+          "doi": "10.1051/0004-6361/202662017",
           "arxiv": "2609.15301"
         },
         "pubdate": ""
@@ -12546,9 +12548,9 @@
       "dates": {
         "preprint": "2026-09-14",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-10-20",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-09-17"
       },
