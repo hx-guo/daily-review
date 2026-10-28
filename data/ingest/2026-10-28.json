@@ -1,0 +1,74 @@
+{
+  "ingested": "2026-10-28",
+  "items": [
+    {
+      "paper": {
+        "id": "ads:2025GeoRL..5214583C",
+        "source": "ads",
+        "title": "Multidirectional Dune Dynamics Under Seasonal Winds on Mars",
+        "authors": [
+          "Chojnacki, Matthew",
+          "Vaz, David A.",
+          "Acharya, Pruthviraj J.",
+          "Silvestro, Simone",
+          "Smith, Isaac B."
+        ],
+        "abstract": "We present a systematic assessment of the complex aeolian bedforms across the western rim of Hellas Planitia, the largest impact basin on Mars. Repeat orbital imaging shows crescentic, transverse, and star dunes across the Hellespontus Montes region migrate, converge, and occasionally reverse course. Dune morphology and sand ripple migration identify three effective wind regimes that vary spatially and temporally, correlating with atmospheric modeling. Peak sand transport occurs during southern spring and summer to the west and southwest, driven by daytime anabatic slope winds originating from Hellas. Migration rates decline with waning temperatures, when eastward drainage winds into Hellas dominate nights annually and during the colder seasons. However, these diurnally and seasonally cyclic slope winds can be highly localized, as nearby barchan fields swiftly migrate exclusively west where eastward winds are mitigated by topography. These novel findings highlight the complexity of surface--atmosphere interactions in shaping aeolian systems on Mars.",
+        "categories": [
+          "Mars",
+          "aeolian",
+          "bedforms",
+          "dynamics",
+          "reversing dunes"
+        ],
+        "published": "2026-10-25",
+        "url": "https://ui.adsabs.harvard.edu/abs/2025GeoRL..5214583C/abstract",
+        "pdf_url": null,
+        "doi": "10.1029/2024GL114583",
+        "external_ids": {
+          "ads": "2025GeoRL..5214583C",
+          "doi": "10.1029/2024GL114583"
+        },
+        "pubdate": "2025-06-00"
+      },
+      "score": {
+        "score": 3,
+        "tags": [
+          "行星科学",
+          "火星风沙地貌"
+        ],
+        "layer": "edge",
+        "reason": "该文为火星沙丘动力学的地质/行星科学研究，与团队高能暂现源科学及观测任务能力无实质联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "标题与摘要全部围绕火星 Hellas Planitia 西缘沙丘形态、沙纹迁移与季节性风场（anabatic slope winds、drainage winds），属于火星风沙地貌与地表-大气相互作用研究，未涉及任何高能暂现源、伽马暴、引力波、FRB、X 射线双星或 GECAM/HXMT/SVOM 等任务数据与方法。"
+      },
+      "summary": {
+        "paper_id": "ads:2025GeoRL..5214583C",
+        "title_zh": "火星季节性风下的多向沙丘动力学",
+        "team": "",
+        "tldr": "利用重复轨道成像分析火星Hellas Planitia西缘沙丘与沙纹迁移，识别出三种时空变化的有效风况，揭示季节性坡风和地形控制下沙丘的多向迁移、汇聚与反向。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "",
+        "accepted": "2025-06-12",
+        "published": "2025-06-18",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2025-01-01",
+        "ingested": "2026-10-28"
+      },
+      "archive_date": "2025-06-12",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    }
+  ]
+}
