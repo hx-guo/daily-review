@@ -1,0 +1,79 @@
+{
+  "ingested": "2026-10-31",
+  "items": [
+    {
+      "paper": {
+        "id": "ads:2026AnPhy.49470642R",
+        "source": "ads",
+        "title": "Spherically symmetric charged (anti-)de Sitter black hole in f(R,T) gravity coupled with nonlinear electrodynamics",
+        "authors": [
+          "Ren, Tianyou",
+          "Ban, Zhenglong",
+          "Hua, Yaobin",
+          "Yang, Rong-Jia"
+        ],
+        "abstract": "We investigate black hole solutions in quadratic <mml:math><mml:mrow><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>R</mml:mi><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>R</mml:mi><mml:mo>+</mml:mo><mml:mi>k</mml:mi><mml:msup><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math> gravity coupled with nonlinear electrodynamics <mml:math><mml:mrow><mml:mi>L</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>F</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>α</mml:mi><mml:mo>-</mml:mo><mml:mi>F</mml:mi><mml:mo>/</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mn>4</mml:mn><mml:mi>π</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mi>γ</mml:mi><mml:msup><mml:mrow><mml:mi>F</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math>. Solving the field equations yields an exact magnetically charged (anti-)de Sitter black hole metric featuring novel <mml:math><mml:msup><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mo>-</mml:mo><mml:mn>6</mml:mn></mml:mrow></mml:msup></mml:math> and <mml:math><mml:msup><mml:mrow><mml:mi>r</mml:mi></mml:mrow><mml:mrow><mml:mo>-</mml:mo><mml:mn>14</mml:mn></mml:mrow></mml:msup></mml:math> correction terms. The horizon structure can exhibit up to four horizons depending on the parameters. Thermodynamic analysis reveals that the heat capacity exhibits critical phase transitions, with the critical point significantly shifted by the coupled corrections. Using the effective metric formalism, we study the photon sphere and black hole shadow, finding that the magnetic charge <mml:math><mml:mi>Q</mml:mi></mml:math> shrinks the shadow while the nonlinear parameter <mml:math><mml:mi>γ</mml:mi></mml:math> enlarges it. Constraints from Event Horizon Telescope observations of M87* and Sgr A* place the parameter <mml:math><mml:mi>γ</mml:mi></mml:math> at the order of <mml:math><mml:mrow><mml:mn>1</mml:mn><mml:msup><mml:mrow><mml:mn>0</mml:mn></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msup></mml:mrow></mml:math> at <mml:math><mml:mrow><mml:mn>1</mml:mn><mml:mi>σ</mml:mi></mml:mrow></mml:math> and <mml:math><mml:mrow><mml:mn>2</mml:mn><mml:mi>σ</mml:mi></mml:mrow></mml:math> confidence levels. Our results demonstrate that quadratic <mml:math><mml:mrow><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>R</mml:mi><mml:mo>,</mml:mo><mml:mi>T</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math> gravity combined with nonlinear electrodynamics provides a consistent framework for strong-field gravity phenomenology.",
+        "categories": [
+          "gr-qc",
+          "hep-th",
+          "Modified gravity",
+          "f(R",
+          "T) gravity",
+          "Nonlinear electrodynamics",
+          "Black hole shadows",
+          "General Relativity and Quantum Cosmology",
+          "High Energy Physics - Theory"
+        ],
+        "published": "2026-10-29",
+        "url": "https://ui.adsabs.harvard.edu/abs/2026AnPhy.49470642R/abstract",
+        "pdf_url": "https://arxiv.org/pdf/2511.20055",
+        "doi": "10.1016/j.aop.2026.170642",
+        "external_ids": {
+          "ads": "2026AnPhy.49470642R",
+          "arxiv": "2511.20055",
+          "doi": "10.1016/j.aop.2026.170642"
+        },
+        "pubdate": "2026-11-00"
+      },
+      "score": {
+        "score": 5,
+        "tags": [
+          "黑洞",
+          "修改引力",
+          "黑洞阴影"
+        ],
+        "layer": "edge",
+        "reason": "论文属于修改引力黑洞理论及阴影研究，与团队高能暂现源科学和任务能力无实质直接联系。",
+        "relation": "contextual",
+        "core_path": "",
+        "evidence": "摘要主要研究 f(R,T) 引力与非线性电动力学耦合的带电 (反) de Sitter 黑洞解、热力学、光子球与黑洞阴影，并用 EHT 的 M87* 和 Sgr A* 观测约束参数；未涉及高能暂现源、暂现触发、时域分析或 GECAM/Insight-HXMT/SVOM 等任务。"
+      },
+      "summary": {
+        "paper_id": "ads:2026AnPhy.49470642R",
+        "title_zh": "f(R,T)引力中耦合非线性电动力学的球对称带电（反）德西特黑洞",
+        "team": "",
+        "tldr": "在二次f(R,T)=R+kT²引力中耦合非线性电动力学L(F)=α−F/4π+γF²，求得含r⁻⁶与r⁻¹⁴修正项的精确磁荷（反）德西特黑洞解，分析其最多四重视界结构、热容量临界相变及光子球与黑洞阴影，并用EHT对M87*和Sgr A*的观测将参数γ约束在10³量级。",
+        "review": "",
+        "highlight": "",
+        "relation": "",
+        "authors_en": "",
+        "corresponding_en": "",
+        "context_outlook": "",
+        "citations": []
+      },
+      "dates": {
+        "preprint": "2025-11-25",
+        "accepted": "",
+        "published": "2026-07-22",
+        "published_precision": "day",
+        "published_source": "crossref-created",
+        "received": "",
+        "ingested": "2026-10-31"
+      },
+      "archive_date": "2025-11-25",
+      "decision": null,
+      "review_attempts": 0,
+      "decision_final": false
+    }
+  ]
+}
