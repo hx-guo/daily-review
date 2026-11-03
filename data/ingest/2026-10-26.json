@@ -2105,8 +2105,9 @@
         "pdf_url": "https://arxiv.org/pdf/2610.32028v1",
         "doi": "10.3390/universe12100313",
         "external_ids": {
-          "arxiv": "2610.32028",
-          "doi": "10.3390/universe12100313"
+          "ads": "2026Univ...12..313F",
+          "doi": "10.3390/universe12100313",
+          "arxiv": "2610.32028"
         },
         "pubdate": ""
       },

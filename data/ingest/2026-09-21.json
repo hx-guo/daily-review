@@ -2554,8 +2554,9 @@
         "pdf_url": "https://arxiv.org/pdf/2609.21278v1",
         "doi": "10.3390/galaxies14050084",
         "external_ids": {
-          "arxiv": "2609.21278",
-          "doi": "10.3390/galaxies14050084"
+          "ads": "2026Galax..14...84S",
+          "doi": "10.3390/galaxies14050084",
+          "arxiv": "2609.21278"
         },
         "pubdate": ""
       },
