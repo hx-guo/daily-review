@@ -634,9 +634,11 @@
         "published": "2026-08-24",
         "url": "https://arxiv.org/abs/2608.23684v1",
         "pdf_url": "https://arxiv.org/pdf/2608.23684v1",
-        "doi": null,
+        "doi": "10.1016/j.physletb.2026.141070",
         "external_ids": {
-          "arxiv": "2608.23684"
+          "ads": "2026PhLB..88241070M",
+          "arxiv": "2608.23684",
+          "doi": "10.1016/j.physletb.2026.141070"
         },
         "pubdate": ""
       },
@@ -665,9 +667,9 @@
       "dates": {
         "preprint": "2026-08-24",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-10-15",
+        "published_precision": "day",
+        "published_source": "crossref-created",
         "received": "",
         "ingested": "2026-08-26"
       },

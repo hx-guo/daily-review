@@ -6093,11 +6093,11 @@
       },
       "dates": {
         "preprint": "2026-11-04",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-10-07",
+        "published": "2026-11-06",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-07-07",
         "ingested": "2026-11-05"
       },
       "archive_date": "2026-11-04",
