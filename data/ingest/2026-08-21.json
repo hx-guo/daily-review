@@ -6034,9 +6034,11 @@
         "published": "2026-08-20",
         "url": "https://arxiv.org/abs/2608.20222v1",
         "pdf_url": "https://arxiv.org/pdf/2608.20222v1",
-        "doi": null,
+        "doi": "10.1103/z1n3-tbnc",
         "external_ids": {
-          "arxiv": "2608.20222"
+          "ads": "2026PhRvD.114h4094G",
+          "arxiv": "2608.20222",
+          "doi": "10.1103/z1n3-tbnc"
         },
         "pubdate": ""
       },
@@ -6108,10 +6110,10 @@
       "dates": {
         "preprint": "2026-08-20",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "published": "2026-10-28",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-08-16",
         "ingested": "2026-08-21"
       },
       "archive_date": "2026-08-20",

@@ -9747,9 +9747,11 @@
         "published": "2026-07-27",
         "url": "https://arxiv.org/abs/2607.24091v1",
         "pdf_url": "https://arxiv.org/pdf/2607.24091v1",
-        "doi": null,
+        "doi": "10.1103/spll-61sx",
         "external_ids": {
-          "arxiv": "2607.24091"
+          "ads": "2026PhRvD.114h3053L",
+          "arxiv": "2607.24091",
+          "doi": "10.1103/spll-61sx"
         },
         "pubdate": ""
       },
@@ -9780,10 +9782,10 @@
       "dates": {
         "preprint": "2026-07-27",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "published": "2026-10-30",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-07-28",
         "ingested": "2026-07-28"
       },
       "archive_date": "2026-07-27",

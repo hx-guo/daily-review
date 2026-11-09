@@ -2146,6 +2146,7 @@
         "pdf_url": "https://arxiv.org/pdf/2610.24356v1",
         "doi": "10.1088/1361-6633/aeb557",
         "external_ids": {
+          "ads": "2026RPPh...89k6901K",
           "arxiv": "2610.24356",
           "doi": "10.1088/1361-6633/aeb557"
         },
@@ -2175,11 +2176,11 @@
       },
       "dates": {
         "preprint": "2026-10-17",
-        "accepted": "",
+        "accepted": "2026-10-16",
         "published": "2026-10-16",
         "published_precision": "day",
         "published_source": "crossref-online",
-        "received": "",
+        "received": "2026-06-15",
         "ingested": "2026-10-20"
       },
       "archive_date": "2026-10-16",
