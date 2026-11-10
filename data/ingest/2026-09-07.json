@@ -1242,8 +1242,9 @@
         "pdf_url": null,
         "doi": "10.1103/189y-7pjv",
         "external_ids": {
-          "ads": "2026PhRvD.114d4089G",
-          "doi": "10.1103/189y-7pjv"
+          "arxiv": "2611.11895",
+          "doi": "10.1103/189y-7pjv",
+          "ads": "2026PhRvD.114d4089G"
         },
         "pubdate": "2026-08-00"
       },
