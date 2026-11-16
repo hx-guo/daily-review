@@ -5296,6 +5296,7 @@
         "doi": "10.1093/mnras/stag1997",
         "external_ids": {
           "ads": "2026MNRAS.tmp.1843D",
+          "arxiv": "2604.11542",
           "doi": "10.1093/mnras/stag1997"
         },
         "pubdate": "2026-10-00"
@@ -5821,6 +5822,7 @@
         "doi": "10.1016/j.dark.2026.102489",
         "external_ids": {
           "ads": "2026PDU....5402489M",
+          "arxiv": "2607.06112",
           "doi": "10.1016/j.dark.2026.102489"
         },
         "pubdate": "2026-12-00"
@@ -12249,8 +12251,10 @@
         "published": "2026-10-25",
         "url": "https://arxiv.org/abs/2610.34217v1",
         "pdf_url": "https://arxiv.org/pdf/2610.34217v1",
-        "doi": null,
+        "doi": "10.3847/2041-8213/aeb946",
         "external_ids": {
+          "ads": "2026ApJ..1011L..67S",
+          "doi": "10.3847/2041-8213/aeb946",
           "arxiv": "2610.34217"
         },
         "pubdate": ""
@@ -12362,11 +12366,11 @@
       },
       "dates": {
         "preprint": "2026-10-25",
-        "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
-        "received": "",
+        "accepted": "2026-10-23",
+        "published": "2026-11-10",
+        "published_precision": "day",
+        "published_source": "crossref-online",
+        "received": "2026-07-30",
         "ingested": "2026-10-27"
       },
       "archive_date": "2026-10-25",

@@ -6395,8 +6395,9 @@
         "pdf_url": "https://arxiv.org/pdf/2611.06785v1",
         "doi": "10.1016/j.jheap.2026.100769",
         "external_ids": {
-          "arxiv": "2611.06785",
-          "doi": "10.1016/j.jheap.2026.100769"
+          "ads": "2027JHEAp..5600769S",
+          "doi": "10.1016/j.jheap.2026.100769",
+          "arxiv": "2611.06785"
         },
         "pubdate": ""
       },
