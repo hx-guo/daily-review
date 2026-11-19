@@ -8265,9 +8265,10 @@
         "published": "2026-11-16",
         "url": "https://arxiv.org/abs/2611.21041v1",
         "pdf_url": "https://arxiv.org/pdf/2611.21041v1",
-        "doi": null,
+        "doi": "10.3390/plasma9040049",
         "external_ids": {
-          "arxiv": "2611.21041"
+          "arxiv": "2611.21041",
+          "doi": "10.3390/plasma9040049"
         },
         "pubdate": ""
       },
@@ -8296,9 +8297,9 @@
       "dates": {
         "preprint": "2026-11-16",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-11-17",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-11-17"
       },
