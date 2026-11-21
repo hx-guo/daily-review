@@ -4050,9 +4050,9 @@
       "dates": {
         "preprint": "2026-11-19",
         "accepted": "",
-        "published": "",
-        "published_precision": "",
-        "published_source": "",
+        "published": "2026-11-20",
+        "published_precision": "day",
+        "published_source": "crossref-online",
         "received": "",
         "ingested": "2026-11-20"
       },
